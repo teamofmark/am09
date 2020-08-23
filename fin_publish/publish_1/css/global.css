@@ -4,6 +4,7 @@ section.videoArea h2,
 section.expArea ul li > *,
 section.teamArea div ul li figure figcaption dl,
 section.teamArea div ul + p,
+section.worksArea h2 a,
 footer > div *{
     font-family: 'Roboto';
 }
@@ -12,7 +13,8 @@ body > figure figcaption h2,
 section.expArea h2,
 section.expArea > p,
 section.teamArea h2,
-section.teamArea div > p:not(:last-of-type){
+section.teamArea div > p:not(:last-of-type),
+section.worksArea h2{
     font-family: 'Playfair Display';
 }
 
