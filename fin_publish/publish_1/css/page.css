@@ -189,4 +189,62 @@
         max-width: 140px; margin: 0 auto;
     }
     /* worksArea Fin */
+
+    .talkArea{
+        background: url('../images/bg_04.png') no-repeat left top;
+        background-size: cover; padding: 70px 0;
+        text-align: center;
+    }
+    .talkArea p{
+        max-width: 940px; margin: 0 auto 45px;
+        background: url('../images/quote.png') no-repeat center top;
+        padding-top: 70px; font-size: 16px; color: white;
+        line-height: 26px; font-weight: 400;
+    }
+    .talkArea p > *{
+        display: block;
+    }
+    .talkArea p strong{
+        font-size: 14px; line-height: 14px;
+        font-weight: 900; margin: 50px 0 5px;
+    }
+    .talkArea p span{
+        font-size: 13px; font-weight: 300;
+    }
+
+    .talkArea div{
+        max-width: 940px; margin: 0 auto;
+        text-align: center;
+    }
+    .talkArea div > *{
+        display: inline-block; vertical-align: middle;
+    }
+    .talkArea div > a{
+        font-size: 22px; color: rgba(255,255,255,0.5);
+    }
+    .talkArea div ul{
+        max-width: 310px; width: 33.33%;
+    }
+    .talkArea div ul li{
+        float: left; display: block; width: 20%;
+    }
+    .talkArea div ul li a{
+        display: block; text-align: center;
+    }
+    .talkArea div ul li:not(.active) a{
+        padding: 15px 0;
+        transition: padding 0.35s ease-in-out;
+    }
+    .talkArea div ul li:not(.active):hover a{
+        padding: 0;
+    }
+    .talkArea div ul li:not(.active) a img{
+        width: 50%; transition: width 0.35s ease-in-out; 
+    }
+    .talkArea div ul li:not(.active):hover a img,
+    .talkArea div ul li.active a img{
+        width: 100%;
+    }
+    /* ? talkArea Fin */
+
 }

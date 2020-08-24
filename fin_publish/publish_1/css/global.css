@@ -5,6 +5,7 @@ section.expArea ul li > *,
 section.teamArea div ul li figure figcaption dl,
 section.teamArea div ul + p,
 section.worksArea h2 a,
+.talkArea p > *,
 footer > div *{
     font-family: 'Roboto';
 }
@@ -14,7 +15,8 @@ section.expArea h2,
 section.expArea > p,
 section.teamArea h2,
 section.teamArea div > p:not(:last-of-type),
-section.worksArea h2{
+section.worksArea h2,
+.talkArea p{
     font-family: 'Playfair Display';
 }
 
