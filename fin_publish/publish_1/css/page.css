@@ -5,10 +5,10 @@
         clear: both;
     }
     body > figure img{
-        float: left; max-width: 235px; width: 25%;
+        float: left; max-width: 235px; width: 32%;
     }
     body > figure figcaption{
-        margin-left: 10%; width: 65%; float: left;
+        margin-left: 8%; width: 60%; float: left;
     }
     body > figure figcaption > *:not(a){
         margin-bottom: 30px;
@@ -63,7 +63,7 @@
     }
     section.expArea ul li{
         width: 33.33%; float: left; display: block;
-        padding: 120px 3.5% 40px; box-sizing: border-box;
+        padding: 120px 2.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat;
         background-position: center 30px;
         border-top: 1px solid rgba(0,0,0,0.2); /* psd 상 값은 0.03 */
@@ -137,7 +137,7 @@
     }
     section.teamArea div ul li figure{
         background: url('https://via.placeholder.com/220x230') no-repeat center top;
-        background-size: contain; padding-top: 230px;
+        background-size: contain; padding-top: 180px;
     }
     section.teamArea div ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5);
@@ -165,7 +165,7 @@
     section.worksArea h2{
         font-size: 22px; font-weight: 700;
         color: #413d4b; position: relative;
-        max-width: 940px; margin: 0 auto;
+        max-width: 728px; margin: 0 auto;
         margin-bottom: 70px;
     }
     section.worksArea h2 a{
@@ -196,7 +196,7 @@
         text-align: center;
     }
     .talkArea p{
-        max-width: 940px; margin: 0 auto 45px;
+        max-width: 728px; margin: 0 auto 45px;
         background: url('../images/quote.png') no-repeat center top;
         padding-top: 70px; font-size: 16px; color: white;
         line-height: 26px; font-weight: 400;
