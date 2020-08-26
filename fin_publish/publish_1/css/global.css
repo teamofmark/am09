@@ -39,6 +39,224 @@ section[class *= Area] hr{
 }
 /* All Using */
 
+@media screen and (max-width: 767px){
+    body > figure,
+    section.expArea,
+    section.teamArea div,
+    section.contactArea,
+    footer > div{
+        max-width: 600px; margin: 0 auto;
+        padding: 70px 0;
+    }
+    .btn_more{
+        text-align: center; color: #00e0d0;
+        border: 1px solid #00e0d0; display: block;
+        padding: 15px 0.93%;
+    }
+
+    header{
+        padding: 15px 0 70px;
+        background: url('../images/bg_01.png') no-repeat left top;
+        background-size: cover;
+    }
+    header > div{
+        max-width: 600px; margin: 0 auto;
+        position: relative;
+    }
+    header > div h1{
+        max-width: 128px; width: 35%; float: left;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div a img{
+        width: 100%;
+    }
+    header > div nav{
+        float: right; margin-left: 15%;
+        text-align: right; width: 50%;
+    }
+    header > div nav label.mui{
+        border: 1px solid white; border-radius: 3px;
+        width: 22px; display: block;
+        margin: 15px 0 15px auto;
+        padding: 3px 3px 0 3px;
+    }
+    header > div nav label.mui span{
+        border-top: 3px solid white;
+        display: block; margin-bottom: 3px;
+    }
+    header > div nav ul{
+        height: 0; overflow-y: hidden;
+        transition: height 0.75s ease-in;
+    }
+    header > div nav label.mui + input[type='checkbox']#mnav:checked + ul{
+        height: 300px;
+    }
+    header > div nav ul li{
+        display: block;
+    }
+    /* header > div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    } */
+    header > div nav ul li a{
+        font-size: 13px; font-weight: 900; color: white;
+        display: block; line-height: 40px;
+    }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ?header Nav Fin */
+
+    header > div > ul{
+        margin-bottom: 125px; clear: both;
+    }
+    header > div > ul li{
+        padding-top: 65px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; 
+        font-weight: 900; text-align: center;
+        padding-bottom: 23px; margin-bottom: 30px;
+        background: url("../images/bd_01.png") no-repeat center bottom;
+    }
+    header > div > ul li p{
+        font-size: 14px;  font-weight: 300;
+        line-height: 24px; margin-bottom: 50px;
+        text-align: center; color: white;
+    }
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; text-indent: -9999px;
+        width: 10px; height: 10px; border-radius: 5px;
+        border: 1px solid rgba(255,255,255,0.8);
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0;
+        border-color: #00e0d0;
+    }
+    /* ? header Fin */
+
+    footer{
+        background: url('../images/bg_05.png') no-repeat left top;
+        background-size: cover;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        width: 47.5%; float: left; margin: 0 0 70px;
+    }
+    footer > div div:nth-of-type(2){
+        margin-left: 5%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0; font-weight: 300;
+    }
+    footer > div div > h2{
+        margin-bottom: 20px;
+    }
+    footer > div div:first-of-type h2{
+        line-height: 0;
+    }
+    footer > div div:not(:first-of-type) h2{
+        font-size: 15px; font-weight: 900;
+        line-height: 50px; color: white;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px;
+        color: white;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px;
+        box-sizing: border-box; font-weight: 300;
+        background-repeat: no-repeat; background-position: left 5px;
+    }
+    footer > div div:nth-of-type(2) address span a{
+        display: block; color: white;
+    }
+    footer > div div:nth-of-type(2) address span:first-child{
+        background-image: url('../images/bul_map.png');
+    }
+    footer > div div:nth-of-type(2) address span:last-child{
+        background-image: url('../images/bul_phone.png');
+    }
+    
+    footer > div div:nth-of-type(3) > input{
+        float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) > input[type='email']{
+        font-size: 14px; color: rgba(255,255,255,0.75);
+        line-height: 40px; width: 35%; padding: 0 15px;
+        border: 1px solid rgba(255,255,255,0.5);
+        box-sizing: border-box; font-weight: 300;
+        background-color: transparent;
+    }
+    footer > div div:nth-of-type(3) > input[type='submit']{
+        width: 10%; margin-left: 2%; text-indent: -9999px;
+        line-height: 40px; border: none;
+        background: rgba(255,255,255,0.5) url('../images/btn_send.png') no-repeat center;
+    }
+    footer > div div:nth-of-type(3) > ul{
+        float: left; margin-left: 8%; width: 45%;
+    }
+    footer > div div:nth-of-type(3) > ul li{
+        display: inline-block; width: 35px;
+        line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) > ul li:not(:first-child){
+        margin-left: 5%;
+    }
+    footer > div div:nth-of-type(3) > ul li a{
+        display: block; background-repeat: no-repeat;
+        background-size: contain; text-indent: -9999px;
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(1){
+        background-image: url('../images/ico_sns_01.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(2){
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(3){
+        background-image: url('../images/ico_sns_03.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(4){
+        background-image: url('../images/ico_sns_04.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(5){
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(6){
+        background-image: url('../images/ico_sns_06.png');
+    }
+
+    footer > div div:last-of-type{
+        width: 100%; clear: left;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block; color: white;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
+    /* ? footer Fin */
+}
+/* ? mobile Fin */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     body > figure,
