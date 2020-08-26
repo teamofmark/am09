@@ -46,7 +46,7 @@ section[class *= Area] hr{
     section.contactArea,
     footer > div{
         max-width: 600px; margin: 0 auto;
-        padding: 70px 0;
+        padding: 70px 3%;
     }
     .btn_more{
         text-align: center; color: #00e0d0;
@@ -61,7 +61,7 @@ section[class *= Area] hr{
     }
     header > div{
         max-width: 600px; margin: 0 auto;
-        position: relative;
+        position: relative; padding: 0 3%;
     }
     header > div h1{
         max-width: 128px; width: 35%; float: left;
