@@ -156,7 +156,7 @@
     section.worksArea h2{
         font-size: 22px; font-weight: 700;
         color: #413d4b; position: relative;
-        max-width: 728px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
         margin-bottom: 70px;
     }
     section.worksArea h2 a{
@@ -166,12 +166,15 @@
     section.worksArea ul{
         margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     section.worksArea ul li{
-        float: left; display: block; width: 16.66%;
-        line-height: 0;
+        /* float: left; width: 16.66%; */
+        line-height: 0; display: block;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.worksArea ul li img{
         width: 100%;
@@ -187,9 +190,9 @@
         text-align: center;
     }
     .talkArea p{
-        max-width: 728px; margin: 0 auto 45px;
+        max-width: 600px; margin: 0 auto 45px;
         background: url('../images/quote.png') no-repeat center top;
-        padding-top: 70px; font-size: 16px; color: white;
+        padding: 70px 3% 0; font-size: 16px; color: white;
         line-height: 26px; font-weight: 400;
     }
     .talkArea p > *{
@@ -204,7 +207,7 @@
     }
 
     .talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
         text-align: center;
     }
     .talkArea div > *{
@@ -214,7 +217,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     .talkArea div ul{
-        max-width: 310px; width: 33.33%;
+        max-width: 310px; width: 80%;
     }
     .talkArea div ul li{
         float: left; display: block; width: 20%;
@@ -237,6 +240,7 @@
         width: 100%;
     }
     /* ? talkArea Fin */
+    
     section.contactArea:after{
         content: ''; display: block; visibility: hidden;
         clear: both;
