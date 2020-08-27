@@ -1,0 +1,45 @@
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+input[type='checkbox'],
+input[type='radio']{
+    display: none;
+}
+/* All Using */
+
+@media screen and (min-width: 1280px){
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+
+    header{
+        background-color: white;
+        border-bottom: 1px solid #f0f2f7;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header > div label{
+        max-width: 60px; width: 5.3%;
+        border-right: 1px solid #f0f2f7;
+    }
+    header > div label{
+        display: block; line-height: 90px !important;
+    }
+    header > div h1{
+        min-width: 125px; width: 10.7%;
+    }
+    header > div h1 a{
+        display: block; text-align: right;
+        line-height: 90px;
+    }
+    header > div h1 a img{
+        max-width: 92px; width: 100%;
+    }
+}
