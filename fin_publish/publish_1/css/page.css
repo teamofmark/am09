@@ -116,18 +116,19 @@
     section.teamArea div ul{
         margin-bottom: 70px;
     }
-    section.teamArea div ul:after{
+    /* section.teamArea div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     section.teamArea div ul li{
-        width: 23.5%; float: left; display: block;
+        /* width: 23.5%; float: left; */
+        display: block;
     }
-    section.teamArea div ul li:not(:first-child){
-        margin-left: 2%;
+    section.teamArea div ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea div ul li figure{
         background: url('https://via.placeholder.com/220x230') no-repeat center top;
-        background-size: contain; padding-top: 180px;
+        background-size: cover; padding-top: 180px;
     }
     section.teamArea div ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5);
