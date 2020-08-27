@@ -240,20 +240,21 @@
         width: 100%;
     }
     /* ? talkArea Fin */
-    
-    section.contactArea:after{
+
+    /* section.contactArea:after{
         content: ''; display: block; visibility: hidden;
         clear: both;
-    } 
+    }  */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
-        float: left; display: block;
-    }
+        float: left; 
+    } */
     section.contactArea form fieldset{
-        width: 50%;
+        /* width: 50%;  */
+        display: block; margin-bottom: 25px;
     }
     section.contactArea form fieldset legend,
     section.contactArea div h3{
@@ -274,15 +275,15 @@
     }
     section.contactArea form fieldset .btn_more{
         background-color: transparent; cursor: pointer;
-        min-width: 120px;
+        min-width: 120px; margin-left: auto;
     }
     /* contactArea Left Fin */
     
 
 
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 10%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
