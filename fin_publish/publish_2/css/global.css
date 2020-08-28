@@ -8,6 +8,9 @@ input[type='checkbox'],
 input[type='radio']{
     display: none;
 }
+a{
+    text-decoration: none;
+}
 /* All Using */
 
 @media screen and (min-width: 1280px){
@@ -25,21 +28,64 @@ input[type='radio']{
     header > div:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    header > div label{
+    header > div label.material-icons{
         max-width: 60px; width: 5.3%;
         border-right: 1px solid #f0f2f7;
-    }
-    header > div label{
-        display: block; line-height: 90px !important;
+        display: block; line-height: 90px;
     }
     header > div h1{
         min-width: 125px; width: 10.7%;
     }
     header > div h1 a{
         display: block; text-align: right;
-        line-height: 90px;
+        padding: 31px 0;
     }
     header > div h1 a img{
         max-width: 92px; width: 100%;
     }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 4.68%;
+    }
+    header > div nav ul li a{
+        font-size: 14px; display: block;
+        line-height: 90px; color: #343e5c;
+        font-weight: 700;
+    }
+    header > div div{
+        width: 29.3%; font-size: 11px;
+        color: #343e5c; line-height: 90px;
+        text-align: right;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 17px;
+        background: url('../images/bul_cart.png') no-repeat left center;
+    }
+    header > div div span{
+        width: 30px; line-height: 30px; border-radius: 15px;
+        /* 
+            width: 24px; line-height: 24px;
+            border-radius: 12px;
+        */
+        background-color: #e3e8f0; 
+        text-align: center; font-weight: 700;
+        margin-left: 2%;
+    }
+    header > div div input[type='button']{
+        font-size: 11px; padding: 10px 15px;
+        background-color: white; border-radius: 16px;
+        border: 2px solid #e5e8f0; margin-left: 5%;
+    }
+
 }
