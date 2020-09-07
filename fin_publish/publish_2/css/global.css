@@ -4,6 +4,9 @@ body{
 .mont{
     font-family: 'Montserrat', sans-serif;
 }
+.crim{
+    font-family: 'Crimson Text', serif;
+}
 input[type='checkbox'],
 input[type='radio']{
     display: none;
@@ -15,7 +18,8 @@ a{
 
 @media screen and (min-width: 1280px){
     header > div,
-    footer > div{
+    footer > div,
+    header+nav .slideNav{
         max-width: 1170px; margin: 0 auto;
     }
 
