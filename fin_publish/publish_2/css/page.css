@@ -138,5 +138,32 @@
     .contentArea > form fieldset input[type='text']{
         width: 5%;
     }
+    .contentArea > form fieldset span.sbSelect{
+        margin-left: 4.27%;
+    }
+    .contentArea > form fieldset label[for='sb_keywords'],
+    .contentArea > form fieldset label[for='ship_Select']{
+        padding-left: 2.56%; margin-left: 1.7%;
+        border-left: 1px solid rgba(0,0,0,0.05);
+    }
+    .contentArea > form fieldset input[type='search'],
+    .contentArea > form fieldset input[id='range_minprice']{
+        margin-left: 1.02%;
+    }
+    .contentArea > form fieldset label[for='range_minprice'],
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        margin-left: 2.56%;
+    }
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; color: #343e5c;
+        transition-duration: 0.5s;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
+    .contentArea > form fieldset span.shipSelect{
+        padding-left: 6.83%;
+    }
+    /* sortBy Fin */
 
 }
