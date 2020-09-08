@@ -103,4 +103,40 @@
         color: white; font-weight: 700;
     }
     /* slider Fin */
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 4px;
+        line-height: 56px; padding: 0 1.7%; box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .contentArea > form fieldset label{
+        font-size: 11px; color: #a1a7bd; font-weight: 700;
+        display: inline-block; vertical-align: middle;
+    }
+    .contentArea > form fieldset select{
+        border: none; box-shadow: none; background-image: none;
+        background-color: transparent;
+        -moz-appearance: none; -webkit-appearance: none;
+        padding: 10px 0; font-size: 11px; color: #343e5c;
+        font-weight: 700;
+    }
+    .contentArea > form fieldset span.selectBox{
+        display: inline-block; padding-right: 20px;
+        box-sizing: border-box;
+        background:url('../images/bg_arrow.png') no-repeat right center;
+    }
+    .contentArea > form fieldset input:not([type='checkbox']){
+        font-size: 13px; background-color: #f0f2f7;
+        border: 1px solid #e3e8f0; padding: 10px 0.94%;
+        border-radius: 20px; font-weight: 700;
+    }
+    .contentArea > form fieldset input[type='search']{
+        width: 14%;
+    }
+    .contentArea > form fieldset input[type='text']{
+        width: 5%;
+    }
+
 }
