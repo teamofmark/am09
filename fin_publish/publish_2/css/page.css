@@ -235,8 +235,18 @@
         display: inline-block; width: 15%; max-width: 76px;
         text-align: center;
     }
-    .contentArea aside fieldset label[for*='ava']{
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
         width: 83%; max-width: 215px;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width: 93%; max-width: 270px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; max-width: 135px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 2px solid #f0f2f7;
     }
     
     .contentArea aside fieldset input[type='radio']+label{
@@ -245,9 +255,12 @@
     .contentArea aside fieldset input[type='radio']:checked+label{
         background-image: url('../images/on_radio.png');
     }
-
-    
-
+    .contentArea aside fieldset input[type='checkbox']+label{
+        background: url('../images/off_check.png') no-repeat 10% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked+label{
+        background-image: url('../images/on_check.png');
+    }
     /* aside Fin */
 
 
