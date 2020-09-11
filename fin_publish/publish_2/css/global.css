@@ -21,7 +21,8 @@ a{
     footer > div,
     header+nav .slideNav,
     .contentArea,
-    section.bestArea{
+    section.bestArea,
+    section.tosayArea > div{
         max-width: 1170px; margin: 0 auto;
     }
 
