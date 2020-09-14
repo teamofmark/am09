@@ -206,7 +206,7 @@
 
     .contentArea aside fieldset{
         background-color: white; border-radius: 5px;
-        padding-top: 27px;
+        padding-top: 40px;
     }
     .contentArea aside fieldset:not(:last-of-type){
         margin-bottom: 30px;
@@ -223,17 +223,20 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer;
-        display: inline-block; padding-left: 20.37%;
-        box-sizing: border-box;
+        display: inline-block; padding-left: 30px;
+        box-sizing: border-box; margin-bottom: 20px;
     }
-    .contentArea aside fieldset label,
-    .contentArea aside fieldset span{
-        line-height: 50px;
+    .contentArea aside fieldset label
+    /* ,.contentArea aside fieldset span */
+    {
+        line-height: 21px;
     }
     .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3;
-        display: inline-block; width: 15%; max-width: 76px;
-        text-align: center;
+        display: none;
+        /* font-size: 11px; color: #bdbfd3;
+         width: 15%; max-width: 76px;
+        text-align: center; */
+
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
@@ -250,13 +253,13 @@
     }
     
     .contentArea aside fieldset input[type='radio']+label{
-        background: url('../images/off_radio.png') no-repeat 10% center;
+        background: url('../images/off_radio.png') no-repeat 5px center;
     }
     .contentArea aside fieldset input[type='radio']:checked+label{
         background-image: url('../images/on_radio.png');
     }
     .contentArea aside fieldset input[type='checkbox']+label{
-        background: url('../images/off_check.png') no-repeat 10% center;
+        background: url('../images/off_check.png') no-repeat 3px center;
     }
     .contentArea aside fieldset input[type='checkbox']:checked+label{
         background-image: url('../images/on_check.png');
