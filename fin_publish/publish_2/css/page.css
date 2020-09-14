@@ -391,6 +391,9 @@
     section.bestArea ul li:not(:first-child){
         border-left: 1px solid #f0f2f7;
     }
+    section.bestArea ul li figure img{
+        width: 100%;
+    }
     section.bestArea ul li figure figcaption dl{
         text-align: center;
     }
@@ -407,47 +410,64 @@
         color: #a1a8bd; margin-right: 20px;
     }
     /* bestArea Fin */
-    
-    section.tosayArea{
-        background-color: white;
+    .tosayArea{
+        background-color:white;
     }
     section.tosayArea > div{
-        padding: 75px 0 85px;
+        padding:75px 0 90px 0;
     }
     section.tosayArea > div h2{
-        font-size: 32px; color: #222328; text-align: center;
-        font-weight: 900; margin-bottom: 15px; letter-spacing: -1px;
+        font-size:32px;
+        color:#222328;
+        text-align:center;
+        margin-bottom:20px;
+        font-weight:900;
+        letter-spacing:-1px;        
     }
     section.tosayArea > div > p{
-        font-size: 16px; color: #b9bed1; text-align: center;
-        margin-bottom: 50px; font-style:italic;
-    }
-    section.tosayArea > div ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
+        font-size:16px;
+        color:#b9bed1;
+        text-align:center;
+        margin-bottom:50px;
+        font-style:italic;
     }
     section.tosayArea > div ul li{
-        display: block; float: left; width: 27.64%;
+        display:block;
+        width:80%;
+        margin:0 auto 30px auto;
     }
-    section.tosayArea > div ul li:not(:first-child){
-        margin-left: 8.54%;
+    section.tosayArea > div ul li:last-child{
+        margin-bottom:0;
     }
     section.tosayArea > div ul li figure:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-        margin-bottom: 25px;
+        content:'';
+        display:block;
+        visibility:hidden;
+        clear:both;
+        margin-bottom:25px;
     }
     section.tosayArea > div ul li figure img{
-        float: left; margin-right: 20px;
+        float:left;
+        margin-right:20px;
     }
     section.tosayArea > div ul li figure figcaption dl dt{
-        font-size: 14px; color: #3a405b; line-height: 20px;
-        margin-bottom: 5px; font-weight: 700;
+        font-size:14px;
+        color:#3a405b;
+        line-height:20px;
+        margin-bottom:5px;
+        font-weight:500;
     }
     section.tosayArea > div ul li figure figcaption dl dd{
-        font-style: italic; font-size: 14px; color: #b9bed1;
+        font-style:italic;
+        font-size:14px;
+        color:#b9bed1;
     }
     section.tosayArea > div ul li p{
-        font-size: 16px; color: #3a405b; line-height: 24px;
+        font-size:16px;
+        color:#3a405b;
+        line-height:24px;
     }
+    /*tosayArea Fin*/
 }
 /* tablet fin */
 
