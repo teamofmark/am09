@@ -14,9 +14,6 @@ input[type='radio']{
 a{
     text-decoration: none;
 }
-img{
-    width: 100%;
-}
 /* All Using */
 
 @media screen and (max-width: 767px){
