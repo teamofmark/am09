@@ -48,10 +48,10 @@ img{
     }
     header > div h1 a{
         display: block; text-align: center;
-        padding: 31px 0;
+        padding: 38px 0;
     }
     header > div h1 a img{
-        max-width: 130px;
+        max-width: 92px;
     }
     header > div input[type='checkbox']#mui+nav{
         height: 0; overflow-y: hidden;
@@ -83,7 +83,7 @@ img{
     }
     header > div div{
         width: 15%; font-size: 11px;
-        color: #343e5c; line-height: 90px;
+        color: #343e5c; line-height: 104px;
         /* text-align: right; */
     }
     /* header > div div *:not(input){
