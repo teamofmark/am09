@@ -115,10 +115,11 @@ img{
     /* header Fin */
 
     .paging{
-        position: relative; background-color: white;
-        border-radius: 5px; clear: both;
+        display: none;
+        /* position: relative; background-color: white; */
+        /* border-radius: 5px; clear: both; */
     }
-    .paging > a{
+    /* .paging > a{
         position: absolute; width: 16%;
         line-height: 90px; font-size: 18px;
         font-weight: 700; color: #343e5c;
@@ -146,7 +147,7 @@ img{
     }
     .paging ol li a:hover{
         box-shadow: 0 5px 20px rgba(168,172,185,0.62);
-    }
+    } */
     /* pager Fin */
 
     footer{
@@ -159,26 +160,26 @@ img{
         position: absolute; display: block;
     }
     footer > div:first-child{
-        padding: 60px 0; border-bottom: 1px solid rgba(255,255,255, 0.05);
+        padding: 60px 15px; border-bottom: 1px solid rgba(255,255,255, 0.05);
     }
     footer > div:first-child h2{
-        max-width: 92px; width: 7.86%; position: absolute;
-        left: 0;
+        max-width: 92px; width: 25%; position: absolute;
+        left: 15px;
     }
     footer > div:first-child ul{
-        text-align: center; padding: 0 10%;
+        text-align: center; padding: 0 25%;
     }
     footer > div:first-child ul li{
-        display: inline-block;
+        display: block;
     }
-    footer > div:first-child ul li:not(:first-child){
-        margin-left: 2.56%;
+    footer > div:first-child ul li:not(:last-child){
+        margin-bottom: 15px;
     }
     footer > div:first-child ul li a{
         display: block; color: white; font-size: 12px; font-weight: 700;
     }
     footer > div:first-child span{
-        right: 0; top: 60px; width: 12%;
+        right: 15px; top: 60px; width: 25%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -199,7 +200,7 @@ img{
     }
 
     footer > div:nth-of-type(2){
-        padding: 50px 0;
+        padding: 50px 15px;
     }
     footer > div:nth-of-type(2) p{
         font-size:14px; font-style: italic; max-width: 510px;
@@ -207,15 +208,15 @@ img{
         line-height: 22px;
     }
     footer > div:nth-of-type(2) span{
-        right: 0; top: 50px; width: 50%; text-align: right;
+        right: 15px; top: 50px; width: 50%; text-align: right;
     }
     footer > div:nth-of-type(2) span a{
         font-size: 11px; font-weight: 700;
         color: rgba(255,255,255,0.3);
-        display: inline-block;
+        display: block;
     }
-    footer > div:nth-of-type(2) span a:last-of-type{
-        margin-left: 2.56%;
+    footer > div:nth-of-type(2) span a:first-of-type{
+        margin-bottom: 15px;
     }
     /* footer Fin */
 }
