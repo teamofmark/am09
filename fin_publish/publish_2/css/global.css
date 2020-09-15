@@ -43,14 +43,15 @@ img{
         display: block; width: 15%; padding: 40px 0; text-align: center;
     }
     header > div h1{
-        max-width: 125px; width: 15%;
+        /* max-width: 125px; */
+        width: 70%;
     }
     header > div h1 a{
         display: block; text-align: center;
         padding: 31px 0;
     }
     header > div h1 a img{
-        max-width: 92px; width: 100%;
+        max-width: 130px;
     }
     header > div input[type='checkbox']#mui+nav{
         height: 0; overflow-y: hidden;
@@ -81,30 +82,35 @@ img{
         font-weight: 700;
     }
     header > div div{
-        width: 25%; font-size: 11px;
+        width: 15%; font-size: 11px;
         color: #343e5c; line-height: 90px;
-        text-align: right;
+        /* text-align: right; */
     }
-    header > div div *:not(input){
+    /* header > div div *:not(input){
         display: inline-block;
-    }
+    } */
     header > div div strong{
-        line-height: 17px;
+        /* line-height: 17px; */
+        display: none;
     }
     header > div div span{
-        width: 30px; line-height: 30px; border-radius: 15px;
-        /* 
+         /* width: 30px; line-height: 30px; border-radius: 15px;
+       
             width: 24px; line-height: 24px;
             border-radius: 12px;
-        */
+        
         background-color: #e3e8f0; 
         text-align: center; font-weight: 700;
         margin-left: 2%;
-    }
+        */
+        display: none;
+        }
     header > div div input[type='button']{
-        font-size: 11px; padding: 10px 15px;
+        width: 100%;
+        font-size: 11px; padding: 10px 0;
         background-color: white; border-radius: 16px;
-        border: 2px solid #e5e8f0; margin-left: 5%;
+        border: 2px solid #e5e8f0;
+        /* margin-left: 5%; */
     }
     /* header Fin */
 
