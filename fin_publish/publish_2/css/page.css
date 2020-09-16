@@ -147,7 +147,7 @@
     .contentArea > form fieldset input[type='search']
     /* ,.contentArea > form fieldset input[id='range_minprice'] */
     {
-        margin-left: 1.02%;
+        margin-left: 1%;
     }
     /* .contentArea > form fieldset label[for='range_minprice'],
     .contentArea > form fieldset label[for='freeShipCheck']{
@@ -169,8 +169,10 @@
     /* sortBy Fin */
     
     .contentArea aside{
-        width: 23%; float: left;
+        /* width: 23%; float: left; */
+        display: none;
     }
+    /*
     .contentArea aside nav{
         background-color: white; border-radius: 5px;
         margin-bottom: 30px;
@@ -204,8 +206,8 @@
         font-size: 11px; opacity: 1; padding: 15px 7.4%;
         border-top: 1px solid #dfe4ee;
     }
-    /* aside Nav Fin */
-
+     aside Nav Fin */
+/* 
     .contentArea aside fieldset{
         background-color: white; border-radius: 5px;
         padding-top: 40px;
@@ -227,19 +229,19 @@
         font-size: 13px; color: #343e5c; cursor: pointer;
         display: inline-block; padding-left: 30px;
         box-sizing: border-box; margin-bottom: 20px;
-    }
-    .contentArea aside fieldset label
+    } */
+    /* .contentArea aside fieldset label */
     /* ,.contentArea aside fieldset span */
-    {
+    /* {
         line-height: 21px;
-    }
-    .contentArea aside fieldset span{
-        display: none;
+    } */
+    /* .contentArea aside fieldset span{
+        display: none; */
         /* font-size: 11px; color: #bdbfd3;
          width: 15%; max-width: 76px;
         text-align: center; */
 
-    }
+    /* }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
         width: 83%; max-width: 215px;
@@ -265,19 +267,20 @@
     }
     .contentArea aside fieldset input[type='checkbox']:checked+label{
         background-image: url('../images/on_check.png');
-    }
+    } */
     /* aside Fin */
 
 
     .contentArea section{
-        width: 74.44%; margin-left: 2.56%; float: left;
+        width: 100%;
+        /* margin-left: 2.56%; float: left; */
     }
     .contentArea section h3{
         display: none;
     }
-    .contentArea section ul::after{
+    /* .contentArea section ul::after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     /*
     .contentArea section ul li{
         display: block; width: 48%; margin: 0 0 33px 3.5%;
@@ -291,15 +294,23 @@
     }
     */
     .contentArea section ul li:not(:nth-child(5)){
-        display: block; width: 48%; margin: 0 0 33px 3.5%;
-        background-color: white; box-sizing: border-box;
-        border-radius: 4px; float: left;
-        min-height: 360px; max-height: 510px; 
+        display: block;
+        background-color: white; 
+        border-radius: 4px;
+        min-height: 300px;
+        margin: 0 0 33px 0;
+        /* box-sizing: border-box; */
+        /* max-height: 510px;  */
+        /* width: 48%; */
+        /* float: left; */
     }
      .contentArea section ul li:nth-child(5){
-        display: block; clear:both; margin-bottom: 33px;
-        background-color: white; box-sizing: border-box;
-        border-radius: 4px; 
+        display: block;  
+        background-color: white;
+        border-radius: 4px;
+        margin-bottom: 33px;
+        /* box-sizing: border-box; */
+        /* clear:both;  */
     }
 
     .contentArea section ul li:nth-child(1),
