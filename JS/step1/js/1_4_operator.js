@@ -58,6 +58,35 @@ function numbOP2(){
     console.log(result);
 }
 // todo.1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
-
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
 
 // todo.2 'hi'가 담긴 변수 a 와 'WEB'이 담긴 변수 b 를 합쳐 'hiWEB' 을 출력.
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a + b);
+}
+// * case.3 ul, li 구조의 태그를 html 페이지에 삽입 후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hi</li>';
+    list += '   <li>JS!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// todo.3 다음 코드를 복합대입연산자를 이용하여 간소화.
+
+function compareOperator(){
+    var a = 10;
+    console.log('a = ' + (a+=20));
+}
+function numberPlusAfter(){
+    var number = 10; //? number 변수 선언 및 10으로 초기화.
+    alert(number++); //? 10을 출력후 더해서 다시 number로-
+    alert(number++); //? 11을 출력후 더해서 다시 number로-
+    alert(number++); //? 12를 출력후 더해서 다시 number로- 고로 12에서 출력끝. 현재 값 13
+}
