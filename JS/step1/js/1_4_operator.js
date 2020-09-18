@@ -57,3 +57,7 @@ function numbOP2(){
     var result = a*b/10;
     console.log(result);
 }
+// todo.1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
+
+
+// todo.2 'hi'가 담긴 변수 a 와 'WEB'이 담긴 변수 b 를 합쳐 'hiWEB' 을 출력.
