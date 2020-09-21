@@ -90,3 +90,35 @@ function numberPlusAfter(){
     alert(number++); //? 11을 출력후 더해서 다시 number로-
     alert(number++); //? 12를 출력후 더해서 다시 number로- 고로 12에서 출력끝. 현재 값 13
 }
+function numberPlusBefore(){
+    var number = 10; //? number 변수 선언 및 10으로 초기화.
+    alert(++number); //? 11
+    alert(number--); //? 11
+    alert(number++); //? 10
+    alert(--number); //? 10
+}
+// todo.4 다음 코드를 증감연산자를 이용하여 간소화.
+function numberOperator(){
+    var a = 10;
+    a++; // a = a + 1;
+    console.log('a = ' + a);
+}
+
+// * case.6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a > b;
+    console.log("10 > 20 = " + result);
+}
+// * case.7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력. 
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log('10 = 20 ?' + result);
+}
+// todo.5 다음 코드를 작성 후 결과를 예상한 다음 출력하라.
+function compareOperator3(){
+    console.log(30 > 20 > 10); //? 30 > 20 선비교 = 1, 1 > 10 = false
+}
