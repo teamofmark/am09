@@ -70,6 +70,29 @@ function bgColorRandom(){
     },1000);
 }
 
+// todo.1 변수 test 에 들어있는 숫자 100을 문자 형으로 변형. result에 대입하라(출력해라).
+
+// todo. 1-1 암시적 형변환
+
+function todo1(){
+    var test = 100;
+    var result = test + ""; //? 빈문자열 선언으로 강제변환
+    console.log(typeof(result) + " = " + result);
+}
+// todo. 1-2 string 사용.
+function todo2(){
+    var test = 100;
+    var result = String(test);
+    console.log(typeof(result) + " = " + result);
+}
+
+// todo. 1-3 toString 사용.
+function todo3(){
+    var test = 100;
+    var result = test.toString();
+    console.log(typeof(result) + " = " + result);
+}
+
 
 // *case.6 test에 들어있는 문자를 숫자로 형변환.
 /*
@@ -88,10 +111,16 @@ function numbString(){
     var result = parseInt(test) + 10;
     console.log('result = ' + result); 
 }
-// todo.1 변수 test 에 들어있는 숫자 100을 문자 형으로 변형. result에 대입하라(출력해라).
 
-// todo. 1-1 암시적 형변환
+// *case.7 문자 형을 숫자 형으로 변환, 연산가능하게 바꾸기
+function todo4(){
+    var test = '100.50';
+    var result = parseFloat(test) + 150 + parseInt("20");
+    console.log('result = ' + result);
+}
 
-// todo. 1-2 string 사용.
-
-// todo. 1-3 toString 사용.
+function todo5(){
+    var test = '100.50';
+    var result = Number(test) + 150 + Number("20");
+    console.log("result = " + result);
+}
