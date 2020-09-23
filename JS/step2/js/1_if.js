@@ -72,22 +72,64 @@ function numbJudgment(){
 
     //*exp.3 다음 세과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
     function avgScore(){
-        var koreanScore = prompt('국어점수를 입력하시오', '');
-        var englishScore = prompt('영어점수를 입력하시오', '');
-        var mathScore = prompt('수학점수를 입력하시오', '');
+        var koreanScore = prompt('국어점수를 입력하시오.','');
+        var englishScore = prompt('영어점수를 입력하시오.','');
+        var mathScore = prompt('수학점수를 입력하시오.','');
         var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
 
-        if (avg > 100) {
-            alert('100점이넘는 과목은 없습니다. 사기구먼.');
-        } else if (avg >= 90) {
-            alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼');
-        } else if (avg >= 80) {
-            alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼');
-        } else if (avg >= 70) {
-            alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼');
-        } else if (avg >= 60) {
-            alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼');
-        } else{
-            alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼');
+        if(avg > 100){
+            alert('100점이 넘는 과목이 어딨어. 사기꾼아.');
+        } else if (avg >= 90){
+            alert('평균' + avg + '점 \n' + '수. 특급!');
+        } else if (avg >= 80){
+            alert('평균' + avg + '점 \n' + '우. 우수!');
+        } else if (avg >= 70){
+            alert('평균' + avg + '점 \n' + '미. 괜찮!');
+        } else if (avg >= 60){
+            alert('평균' + avg + '점 \n' + '양. 망했!');
+        } else {
+            alert('평균' + avg + '점 \n' + '가. 맞겠!');
         }
     }    
+
+    
+//*exp.4 숫자를 입력받아 홀,짝 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력','홀,짝구분가능');
+    if(numb%2 == 0){
+        alert('짝수!');
+    }else{
+        alert('홀수!');
+    }
+}
+// *case. 4 사용자 id를 입력받아 맞다면 승인 메시지 출력. 
+
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID == "Mark"){
+        alert('접속승인!');
+    }else{
+        alert('잘못된 ID입니다.');
+    }
+}
+
+
+   //todo.5 사용자 id "mark"와 password"1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
+
+   function userInfoCheck(){
+       
+   }
+   //todo.5 사용자 id "mark"와 password"1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+   
+   function userInfoCheck2(){
+       var userID = window.prompt('사용자 아이디');
+       var userPW = window.prompt('사용자의 패스워드');
+
+       if(userID=="Mark" && userPW=="1234"){
+            alert('Mark님으로 확인되었습니다.');
+       }else if(userID != "Mark"){
+           alert('ID가 존재하지 않습니다.');
+       }else{
+           alert('password가 틀렸습니다.');
+       }
+   }
