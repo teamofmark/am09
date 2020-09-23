@@ -117,7 +117,15 @@ function userIDCheck(){
    //todo.5 사용자 id "mark"와 password"1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
 
    function userInfoCheck(){
-       
+        var userID = window.prompt('userID');
+        var userPW = window.prompt('user Password');
+        // if(userID=="Mark"&&userPW=="1234"){
+        //     alert("Mark님으로 확인되었습니다.");
+        // }else if(userID!="Mark"||userPW!="1234"){
+        //     alert("ID 혹은 Password가 틀렸습니다.");
+        // }
+
+        (userID=="Mark"&&userPW=="1234")? alert("Mark 어서와!") : alert('ID 혹은 password가 틀렸습니다.');
    }
    //todo.5 사용자 id "mark"와 password"1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
    
