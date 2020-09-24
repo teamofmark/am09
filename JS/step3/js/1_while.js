@@ -31,7 +31,7 @@ function whileContinue(){
         document.write(i+"<br>");
     }
     document.write("최종 i = "+ i + "<br>"); //?
-
+}
 //* exp.3 while Break
 function whileBreak(){
     var i = 1;
