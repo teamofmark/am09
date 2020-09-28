@@ -46,6 +46,21 @@ function thinkJS(){
     document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
 }
 
+function answer1(){
+    for(var i=0; i<10; i++){ //? 10보다 작을때 (0~9) 까지 만 반복 수행
+        document.write((i+1)+"<br>");//? 1~ 10번 까지 출력
+    }
+}
+function answer2(){
+    for(var i=1; i<=10; i++){ //? 10보다 작거나 같을때 (1~10)까지 만 반복 수행
+        document.write(i+"<br>"); //? 1~10번 까지 출력
+    }
+}
+function answer3(){
+    for(var i=100; i<110; i++){ //? 110보다 작거나 같을때 (100~109)까지만 반복 수행
+        document.write((i-99)+"<br>"); //?1~10번 까지 출력
+    }
+}
 function answer4(){
     for (var i =1; i<=10; i+=2){
         document.write(i+'<br>');
