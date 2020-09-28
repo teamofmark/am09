@@ -37,3 +37,24 @@ function namePrint500(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+
+// *exp.4 js engine처럼 생각하기
+function thinkJS(){
+    for (var i = 0; i < 10; i++){ //? 10보다 작을때(0~9)까지만 반복수행
+        document.write('i = ' + i, '<br>'); //? 0 ~ 9번까지 출력.
+    }
+    document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
+}
+
+function answer4(){
+    for (var i =1; i<=10; i+=2){
+        document.write(i+'<br>');
+        document.write((i+1) + '<br>');
+    }
+}
+
+function answer5(){
+    for(var i = 10; i >= 1; i--){
+        document.write((11-1)+'<br>');
+    }
+}
