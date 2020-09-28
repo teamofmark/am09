@@ -73,3 +73,45 @@ function answer5(){
         document.write((11-1)+'<br>');
     }
 }
+
+// *exp.5 * 10개가 찍힌 결과를 출력.
+function star10(){
+    var star = '';
+    for (var i = 0; i < 10; i++){
+        star += '*';
+    }
+    document.write('result = ' + star);
+}
+
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고'];
+    for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+
+}
+//*exp.5 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 for", "반복문 while", "함수", "클래스"];
+    for (var i = 0; i < data.length; i++) {
+        document.write(i + "번째 내용 =" + data[i] + '<br>');
+    }
+}
+function arrayForES6(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 for", "반복문 while", "함수", "클래스"];
+    for (let i = 0; i < data.length; i++){
+        const element  = data [i];
+        document.write(i + '번째 내용 =' + element + '<br>');
+    }
+}
+
+//*exp.6 역반복 배열
+
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고']; //?4개의 배열 선언후
+
+    for (var i = array.length - 1; i >=0; i--){ //?i 변수는 배열의 갯수 -1 (4-1 = 3) 로 선언, 그 변수가 0보다 크거나 같을때 까지 (3>=0 ----> 3,2,1,0) 실행 .
+        alert(array[i]); //?그래서 3,2,1,0 순으로 출력. 이것을 역반복
+    }
+    
+}
