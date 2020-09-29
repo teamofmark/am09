@@ -115,3 +115,70 @@ function reverseFavorFluit(){
     }
     
 }
+
+// *exp.7 continue문
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue; //? 위 조건이 참일 지라도 continue가 존재 하면, continue 이하 구문은 실행 되지 않는다.
+        document.write(i+'<br>'); //?vscode 에서는 불투명하게 시각화 해서 보여준다.
+    }
+    document.write('최종 i = ' + i + '<br>'); //? 최종 적으로 변경된 i 의 수치(11)만 출력된다.
+}
+
+// * exp.8 continue활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if (i % 2 == 1){
+            continue;
+        }
+        output += i;
+        alert(output);
+    }
+}
+
+// *exp.9 break문
+function forBreak(){
+    for (var i = 0; i <= 10; i++){
+        break; //? 
+        document.write(i+'<br>'); //?
+    }
+    document.write('최종 i = ' + i + '<br>'); //? 
+}
+// *exp.10 break 활용
+function runBreak(){
+    for (var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+
+// ! 다중 for
+
+// *exp.1 반절피라미드
+
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //?
+        for (var j = 0; j<i; j++){ //?
+            star += '*'; //?
+        }
+        star += '<br>';//?  
+    }
+    document.write(star);//?
+}
+
+// *exp.2 역반절 피라미드
+
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){ //?
+        for (var j = 0; j < i; j++){ //?
+            star += '*';
+        }
+        star += '<br>'; //?
+    }
+    document.write(star);
+}
