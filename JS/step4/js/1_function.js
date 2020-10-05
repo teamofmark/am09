@@ -93,5 +93,30 @@ function sumES6(){
 function showInfo(){
     console.log('0 = ' + arguments[0]);
     console.log('1 = ' + arguments[1]);
+    console.log('2 = ' + arguments[2]);
     alert(arguments[0] + '의 나이는' + arguments[1]);
+}
+/*
+    ?return (리턴)
+    함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 할 수 없다.
+    이때 매개변수를 활용하면 함수 내부로 데이터를 전달 할 수 있는데, 리턴값은 이와 반대 되는 값.
+    즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 값이라면, 리턴값은 함수 내부에서 처리한 결과값을
+    함수 외부로 전달하기 위해 사용 하는 출력값.
+
+
+    !ex.1 함수f(x)안에 넣는 값이 매개변수, 결과로 나오는 x*x 가 리턴값.
+        function f(x) { return x * x; }
+        alert(f(3));
+
+    !ex.2 alert에서 매개변수를 두개를 선언하면 추가된 매개변수를 무시한다.
+    //*(매개변수가 초과 됐을 시) 또한 원래 함수의 매개변수보다 적게 입력하면 undefined를 출력한다.
+        alert('기존매개변수', '추가매개변수');
+        prompt('기존매개변수');
+*/
+
+// *exp.5 두 수를 매개변수로 받고, 두 값을 더한 결과값을 리턴하는 함수를 만들어보자.
+
+function sumReturn1(num1, num2){
+    var result = num1 + num2;
+    return result;
 }
