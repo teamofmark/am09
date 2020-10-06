@@ -163,3 +163,31 @@ function printGugudan(){
         document.write('<br>');
     }
 }
+
+function calculator(op,numb1,numb2){
+
+    var result = '';
+
+    switch(op){
+        case '+':
+            result = numb1+numb2;
+            break;
+        case '-':
+            result = numb1-numb2;
+            break;
+        case '*':
+            result = numb1*numb2;
+            break;
+        case '/':
+            result = numb1/numb2;
+            break;
+        default:
+            result = '잘못된 연산자 입니다.';
+            break;
+    }
+
+    return result;
+    
+}
+// todo. if 문 code로 전환해오기
+
