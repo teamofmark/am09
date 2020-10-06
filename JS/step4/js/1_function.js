@@ -120,3 +120,46 @@ function sumReturn1(num1, num2){
     var result = num1 + num2;
     return result;
 }
+// var value=sumReturn(13,26); 
+// alert("두 수의 합은 = " + value); //! alert 함수에서 호출. alert으로 리턴됨.
+
+// *exp.6 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// ! 단 입력값이 0이면 즉시 실행을 멈추게 한다.
+
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt('숫자만입력'));
+        if(value == 0){
+            document.write('종료');
+            return;
+            /*
+             return 은 함수를 빠져나오지만, break는 루프를 빠져나오기 때문에
+             "총 x 번 실행함 구문이 출력"
+             continue는 조건이 참일시 상단무한반복. = prompt 계속출력.
+            */
+        }
+
+        sum += value;
+        document.write(count + '. ' + sum + '<br>');
+        count++;
+    }
+    document.write('총' + count + '번 실행함.');
+}
+
+// todo.1 구구단 출력을 함수화 (최소단수, 최대단수 입력받기)
+
+function printGugudan(){
+    var startNumb = parseInt(window.prompt('최소단수'));
+    var lastNumb = parseInt(window.prompt('최대단수'));
+
+    for (var i = startNumb; i <= lastNumb; i++){
+        document.write(i + '단 출력', '<br>');
+        for (var m = 1; m <= lastNumb; m++){
+            document.write(i + '*' + m + '=' + (i*m), '<br>');
+        }
+        document.write('<br>');
+    }
+}
