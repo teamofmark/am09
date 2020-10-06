@@ -191,3 +191,42 @@ function calculator(op,numb1,numb2){
 }
 // todo. if 문 code로 전환해오기
 
+// todo.2 계산기 함수 체계화.(구조분리)
+
+function calculatorDIV(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = add(numb1, numb2);
+            break;
+        case "-":
+            result = sub(numb1, numb2);
+            break;
+        case "*":
+            result = mul(numb1, numb2);
+            break;
+        case "/":
+            result = div(numb1, numb2);
+            break;
+        default:
+            result = '잘못된 연산자 입니다.';
+            break;
+    }
+    return result;
+}
+function add(numb1, numb2){
+    var addResult = numb1 + numb2;
+    return addResult;    
+}
+function sub(numb1, numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1, numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1, numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
+}
