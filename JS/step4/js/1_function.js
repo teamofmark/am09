@@ -297,9 +297,13 @@ function callFunctionTenTimes(otherFunction){
 }
 
 function createHello(){
-    function hello(user){
+    function hello(user){ //? user 매개변수 생성
         document.write(user + 'welcome!');
     }
-    return hello;
+    return hello; //? hello 함수  return(호출부)
 }
-var result = createHello();
+var result = createHello(); //? result 변수에 createHello함수를 담음.
+
+// ? result('Mark'); result = createHello 기 때문에 mark는 hello의 user 매개변수로 전달.
+// ! createHello() 함수 내부에 있는 hello()함수를 return 값으로 하면. 함수 외부에서 사용가능.
+// ! createHello() 함수 자체가 hello()함수를 return하는 함수기 때문에 외부에 있는 result 변수에서 매개변수삽입이 가능.
