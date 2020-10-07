@@ -275,5 +275,31 @@ function welcome(){
 }
 $(document).ready(function(){
     // ? 대상(event) / 자체(event)- 매개변수.
-    $("#runEx8").click();
+    $("#runEx8").click(welcome);
 });
+
+// *ex.9 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('hi. hello. 이거 안끝나. 끝내고싶으면 꺼야돼.');
+    },1000);
+}
+// todo.4 함수를 매개변수로 전달받아 반복호출.
+
+function justFunction(){
+    document.write('hello. JS');
+}
+
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
