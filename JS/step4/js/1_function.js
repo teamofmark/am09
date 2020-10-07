@@ -191,6 +191,24 @@ function calculator(op,numb1,numb2){
 }
 // todo. if 문 code로 전환해오기
 
+function calculatorIF(op, numb1, numb2){
+    var result = '';
+    var firstNumb = parseInt(numb1);
+    var secondNumb = parseInt(numb2);
+    if(op == '+'){
+        result = firstNumb + secondNumb;
+    }else if(op == '-'){
+        result = firstNumb - secondNumb;
+    }else if(op == '*'){
+        result = firstNumb * secondNumb;
+    }else if(op == '/'){
+        result = firstNumb / secondNumb;
+    }else{
+        result = '잘못된 연산자 입니다.';
+    }
+    return result;
+}
+
 // todo.2 계산기 함수 체계화.(구조분리)
 
 function calculatorDIV(op, numb1, numb2){
@@ -230,3 +248,32 @@ function div(numb1, numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// *ex.6 함수를 변수에 담기.
+
+function hello(name){
+    console.log(name + '환영합니다.');
+}
+var func = hello;
+
+// *ex.7 매개변수 값으로 함수를 사용하기.
+
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func();
+}
+
+// *ex.8 버튼 클릭 시 매개변수 값으로 넘긴 함수 호출.
+
+function welcome(){
+    alert('환영합니다. 반갑습니다.');
+}
+$(document).ready(function(){
+    // ? 대상(event) / 자체(event)- 매개변수.
+    $("#runEx8").click();
+});
