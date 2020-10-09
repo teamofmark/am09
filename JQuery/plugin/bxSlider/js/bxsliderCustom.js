@@ -27,6 +27,6 @@ $(document).ready(function(){
         // ! pager method
         pager: true,
         // pagerType: 'short'
-        pagerCustom: '.thumbPager'
+        pagerCustom: '.thumbPager' //pagerCustom
     });
 });
