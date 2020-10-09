@@ -18,7 +18,14 @@ $(document).ready(function(){
 
         ticker: false, //? ticker 모드 사용 (speed 조절필요)
         tickerHover: false, //? ticker 모드 사용시 마우스 오버로 멈추기.
+
+        video : true,
+
         // ! control method
-        controls: true
+        controls: true,
+
+        // ! pager method
+        pager: true,
+        pagerType: 'short'
     });
 });
