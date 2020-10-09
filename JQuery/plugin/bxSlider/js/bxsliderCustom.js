@@ -26,6 +26,7 @@ $(document).ready(function(){
 
         // ! pager method
         pager: true,
-        pagerType: 'short'
+        // pagerType: 'short'
+        pagerCustom: '.thumbPager'
     });
 });
