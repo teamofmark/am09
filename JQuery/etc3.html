@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>etc3 - tab과 custom input</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/etc3.js"></script>
+    <script src="https://kit.fontawesome.com/bba7cacd9f.js"></script>
+    <style>
+        /* exp.1 style */
+        .cp span{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 15px;
+        }
+        .cp .ico{
+            width: 15px;
+        }
+        .cp .label{
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        /* exp.2 style */
+        .tabMenu{
+            display: flex;
+            padding:0;
+        }
+        .tabMenu li{
+            width: 33.33%;
+            flex-flow: row nowrap;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            background-color: black;
+            color: white;
+            border:1px solid black;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        .tabMenu li.activated{
+            background-color: white;
+            color: black;
+        }
+        .tabPage{
+            display: none;
+            border:1px solid black;
+            padding: 20px;
+
+        }
+        .tabPage.activated{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- *exp.1 checkBox 만들어보기 -->
+    <div class="cp checkBox">
+        <span class="ico check"></span>
+        <span class="label">
+            click!
+        </span>
+    </div>
+
+    <!-- *exp.2 tabPage 만들어보기 -->
+    <ul class="tabMenu">
+        <li data-tabNumb="tab1" class="activated">tab1</li>
+        <li data-tabNumb="tab2">tab2</li>
+        <li data-tabNumb="tab3">tab3</li>
+    </ul>
+    <div id="tab1" class="tabPage activated">
+        tabPage1
+    </div>
+    <div id="tab2" class="tabPage">
+        tabPage2
+    </div>
+    <div id="tab3" class="tabPage">
+        tabPage3
+    </div>
+</body>
+</html>
