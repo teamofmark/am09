@@ -1,6 +1,7 @@
 $(document).ready(function(){
     moveCircle();
     detailMoveCircle();
+    keyControl();
 });
 
 function moveCircle(){
@@ -39,5 +40,16 @@ function detailMoveCircle(){
                 'top' : ypos
             });
         }
+    });
+}
+
+function keyControl(){
+    var circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+    
+    $(document).keydown(function(e){
+        console.log('입력한 키 코드 = ' + e.keyCode);
     });
 }
