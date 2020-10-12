@@ -48,8 +48,37 @@ function keyControl(){
     var range = 50;
     var currentXpos = 0;
     var currentYpos = 0;
-    
+    // ? w-top: 87, a-left : 65, s-bottom : 83, d-right : 68.
     $(document).keydown(function(e){
-        console.log('입력한 키 코드 = ' + e.keyCode);
+        // console.log('입력한 키 코드 = ' + e.keyCode);
+        
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+        circle.css("left", currentXpos);
+        circle.css("top", currentYpos);
     });
 }
