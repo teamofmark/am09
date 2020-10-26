@@ -71,6 +71,41 @@
                     주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에, 초기 데이터 삽입시 공백부분에
                     유의 해야 한다.
                 -->
+                <li>
+                    <select>
+                        <!--  multiple size="3" 실사용 어려움 -->
+                        <optgroup label="실업자">
+                            <option selected>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                    <!--
+                        select는 선택항목을 목록형의 단축메뉴 형식으로 만드는 입력 양식이다.
+                        항목 수만큼의 option 이 필요하고, 이안의 value로 값을 정해 전달한다.
+                        multiple 속성값을 이용해 다중 선택을 지원 할수 있고, size 속성값을 이용해 초기 노출 목록수를 제어할수 있다.
+                        optgroup으로 중간 그룹을 설정할 수 있다.
+                    -->
+                </li>
+                <li>
+                    <input type="image" src="https://via.placeholder.com/100x50?text=imgBtn" alt="">
+                    <input type="button" value="비밀번호확인">
+                    <button>비밀번호확인</button>
+                    <input type="file" name="" id="">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                </li>
+                <!--
+                    버튼으로 사용할수 있는 input에는 image, button, file, submit, reset 이 있는데 해당용도에 따라 적절하게 사용해야 한다.
+                    1. image 는 버튼을 웹사이트 디자인에 맞게 디자인된 버튼을 사용할 때 사용 한다.
+                    2. button 은 최종 확인 전송 및 페이지 양식 되돌리기, 파일 찾아보기 기능을 제외한 나머지 기능의 버튼 (우편번호, 검색, 추가, 삭제 등)에 사용한다.
+                    3. file은 파일 찾아보기 버튼에 사용한다.
+                    4. submit은 해당 폼 이 모두 완성 되었을때 완료 및 전송을 할때 사용한다.
+                    5. reset은 해당 폼의 모든 양식 내용을 초기화 시킬 때 사용한다.
+                -->
             </ul>
         </fieldset>
     </form>
