@@ -122,16 +122,27 @@
                 <input type="range" min="-2" max="2" step="1" value="0">
             <!--슬라이드바로 숫자를 기입하는 막대를 생성한다. <input type="range" 최저값, 최대값, 상승값, 초기값 />-->
                 <input type="date">
+            <!--연도,월,날짜 선택 ie10 이하 지원불가(수동입력)-->
 
                 <input type="month">
+            <!--연도,월 선택 ie10 이하 지원불가(수동입력)-->
 
                 <input type="week">
+            <!--연도,주 선택 ie10 이하 지원불가(수동입력)-->
 
                 <input type="time">
+            <!--시간 입력 ie10 이하 지원불가(수동입력)-->
 
                 <input type="datetime">
+            <!--대부분 브라우저 지원불가-->
 
                 <input type="datetime-local">
+            <!--연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
+                <input type="search" placeholder="검색어를 입력하세요." autocomplete="on">
+                
+                <label for="typeColor">색상선택 : </label>
+                <input type="color" name="typeColor" id="typeColor"/>
+                <!--컬러피커창 생성 ie10 이하 지원불가-->
         </fieldset>
     </form>
 </body>
