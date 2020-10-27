@@ -111,8 +111,28 @@
             <fieldset>
                 <legend>HTML5 Input</legend>
                 <label for="userName">이름 :</label>
-                <input type="text" id="userName" required>
-            </fieldset>
+                <input type="text" id="userName" required maxlength="8" placeholder="8자미만" autofocus value="userID" readonly>
+            <!--required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
+                <input type="email" placeholder="teamofmark@gmail.com">
+            <!--type을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @ 버튼이 생긴다. placeholder(ie10이하지원불가)-->
+                <input type="url" placeholder="https://url.com">
+            <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
+                <input type="number" min="10" max="100" step="10" value="0">
+            <!--상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
+                <input type="range" min="-2" max="2" step="1" value="0">
+            <!--슬라이드바로 숫자를 기입하는 막대를 생성한다. <input type="range" 최저값, 최대값, 상승값, 초기값 />-->
+                <input type="date">
+
+                <input type="month">
+
+                <input type="week">
+
+                <input type="time">
+
+                <input type="datetime">
+
+                <input type="datetime-local">
+        </fieldset>
     </form>
 </body>
 </html>
