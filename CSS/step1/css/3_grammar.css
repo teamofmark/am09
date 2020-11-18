@@ -1,0 +1,24 @@
+body{
+    margin: 0; padding: 0; font-size: 12px; color: #60f;
+}
+h1{
+    font-size: 14px; color: #f03;
+}
+img{
+    width: 150px; height:150px; border: 1px solid #3f3;
+}
+/* ? 각각의 대상을 지목하여 style을 설정. */
+
+ul,
+ol,
+dl{
+    list-style: none; color: #f00;
+}
+/* ? 동일한 규칙의 스타일을 여러 대상에 동시 설정. (grouping)*/
+
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
