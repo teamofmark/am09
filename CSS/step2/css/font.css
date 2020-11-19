@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;500;900&display=swap');
+
+h1,h2,h3{
+    font-family: 'Nanum Gothic';
+}
+h1{
+    font-weight: 800;
+}
+h2{
+    font-weight: 700;
+}
+h3{
+    font-weight: 400;
+}
+
+h4,h5,h6{
+    font-family: 'Noto Sans KR';
+}
+h4{
+    font-weight: 900;
+}
+h5{
+    font-weight: 500;
+}
+h6{
+    font-weight: 100;
+}
+p{
+    font-family: 'Noto Sans KR'; font-size: 14px;
+    font-weight: 500;
+}
+p.letter{
+    letter-spacing: -1px;
+}
+/*letter-spacing : 자간*/
+
+p.word{
+    word-spacing: 10px;
+}
+/*word-spacing : 단어간격(space bar 기준)*/
+p[class^='w_']{
+    border: 2px solid red;
+}
+p.w_normal{
+    width: 150px; white-space: normal;
+    line-height: 21px;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap;
+}
