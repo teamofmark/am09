@@ -22,3 +22,9 @@ ul li{
 ol li{
     font-size: 20px; text-decoration: underline;
 }
+/* ?하위 대상을 지목하여 스타일을 설정 할 수 있다.*/
+dl dt,
+dl dd{
+    font-size: 35px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* ?하위 대상에 동일한 규칙 스타일 적용의 예*/
