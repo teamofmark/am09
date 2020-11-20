@@ -31,9 +31,37 @@
         paragraph의 width가 150px 이지만, nowrap이 적용되어 paragraph의
         width와 상관없이 한줄로 출력된다.
     </p>
+
     <div class="v_alignTest">
         <span>정렬되야하는text</span>
         <img src="https://via.placeholder.com/150" alt="undefined">
-    </div> 
+    </div>
+
+    <p class="t_indent">
+        indent는 본래 문단 내 들여쓰기를 담당하지만, 웹접근성으로 인해
+        배경이미지 노출과 동시 text 정보를 남길 때 활용할 수 있다.
+        방식은 값을 -9999px(비둘기코드)로 입력하는 식으로 처리한다.
+    </p>
+    <button class="indentTest">
+        blabla 버튼
+    </button>
+    <a href="#" class="t_deco_N">
+        text-decoration: none, text-transform: none.
+    </a>
+    <a href="#" class="t_deco_U">
+        text-decoration: underline, text-transform: lowercase.
+    </a>
+    <a href="#" class="t_deco_O">
+        text-decoration: overline, text-transform: capitalize.
+    </a>
+    <a href="#" class="t_deco_T">
+        text-decoration: line-through, text-transform: uppercase.
+    </a>
+    <p class="DR_ltr">
+        ltr Test
+    </p>
+    <p class="DR_rtl">
+        rtl Test
+    </p>
 </body>
 </html>

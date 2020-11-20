@@ -52,7 +52,37 @@ p.w_nowrap{
 
 .v_alignTest img{
     width: 200px; height: 200px;
+    vertical-align: middle;
 }
 .v_alignTest span{
-    
+    vertical-align: 10%;
 }
+/*
+	? baseline: 문자의 밑선에 맞추어 정렬
+	? middle: 문자의 중앙을 기준으로 해서 정렬
+	? sub : 아래첨자
+	? super : 위 첨자
+	? text-top:문자의 윗선을 밑선으로 해서 정렬
+	? top: 위쪽에 정렬
+	? bottom : 아래쪽 정렬
+	? % : 퍼센트로 정렬 위치를 지정
+*/	
+p.t_indent{
+    text-indent: -9999px; font-size: 35px;
+}
+
+button.indentTest{
+    background: url('https://via.placeholder.com/150x50?text=blabla');
+    border: none;  width: 150px; line-height: 50px;
+    text-indent: -9999px;
+}
+a{
+    display: block; line-height: 30px;
+}
+a.t_deco_N{text-decoration:none; text-transform: none; color: #090;}
+a.t_deco_U{text-decoration: underline; text-transform: lowercase; color: #0cf;}
+a.t_deco_O{text-decoration: overline; text-transform: capitalize; color: #96c;}
+a.t_deco_T{text-decoration: line-through; text-transform: uppercase; color: #f63;}
+
+p.DR_ltr{direction: ltr;}
+p.DR_rtl{direction: rtl;}
