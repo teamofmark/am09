@@ -9,3 +9,12 @@ body{
 .wrap{
     background-image: url('../images/pt.gif');
 }
+.wrap p{
+    background-color: #0cf; padding: 20px; margin: 0 0 20px 0;
+}
+.wrap button{
+    background-image: url('../images/pt_ex.png');
+    background-repeat: repeat-x;
+    padding: 0 40px; line-height: 50px; color: white;
+    border: none;
+}
