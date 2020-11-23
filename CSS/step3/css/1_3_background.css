@@ -1,0 +1,35 @@
+html,
+body{
+    height: 100%;
+}
+body{
+    margin: 0; padding: 0;
+}
+div{
+    height: 100%;
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+	/*
+		background-image는 대상의 배경 설정, css3부터는 , 로 구분하여 2개 이상 설정가능
+	*/
+    background-size: 100% 250px;
+    background-repeat: no-repeat;
+	/*
+		background-repeat는 기본옵션은 repeat, 수직 반복 repeat-y, 수평 반복 repeat-x
+		반복안함은 no-repeat
+	*/
+    background-position: center;
+	/*
+		background-position: center;
+		background-position은 x축, y축 으로 구분하는데 하나만 적을경우 x축, y축 동일적용
+		left, center, right - xAxis
+		top, center, bottom - yAxis
+		%,px 등의 단위도 사용가능
+	*/
+    background-attachment: fixed;
+	/*
+		background-attachment는 기본옵션은 scroll이고, fixed로 고정 시킬 수 있다.
+	*/
+}
+p{
+    height: 2000px;
+}
