@@ -19,7 +19,7 @@ ul li strong{
     background-color: rgba(0,0,0,0.5); color: white;
 }
 ul li.captain{background-position: 0px 0px;}
-ul li.wolverine{background-position: 0px 0px;}
+ul li.wolverine{background-position: -160px 0px;}
 ul li.thor{background-position: 0px 0px;}
 ul li.ironman{background-position: 0px 0px;}
 ul li.spiderman{background-position: 0px 0px;}
