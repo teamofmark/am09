@@ -39,3 +39,11 @@ border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
 .outsetBox {
     border: 20px outset #930;
 }
+.radiusBox{
+    background-color: black; color: yellow;
+    border-radius: 10px;
+}
+.circleBox{
+    width: 50px; height: 50px; background-color: slateblue;
+    border-radius: 25px; text-indent: -9999px;
+}
