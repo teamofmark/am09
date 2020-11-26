@@ -1,0 +1,49 @@
+body{
+    margin: 0; padding: 0;
+}
+.firstDiv{
+    margin-top:10px; /* ! body 입장에서 padding 이기 때문에 잘못된 케이스*/
+    margin-right:10px;/* ! body 입장에서 padding 이기 때문에 잘못된 케이스*/
+    margin-bottom:10px;
+    margin-left:10px;/* ! body 입장에서 padding 이기 때문에 잘못된 케이스*/
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+}
+
+.secondDiv{
+    background-color: #ddd; margin: 20px 15px;
+    /* 
+        !firstDiv의 margin-bottom: 10px 상쇄.
+        ? secondDiv의 margin-top이 더 크기 때문. (같아도상관없음. 가산이되지않기때문에)
+    */
+}
+.secondDiv article{
+    background-color: #930; margin: 10px;
+}
+/* 
+    ! margin-bottom이 비 적용 된 것을 확인 할 수 있다.(경계선너머적용)
+    ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직 하다.
+*/
+
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 10px;
+    margin: 0 auto; text-align: center;
+}
+.centerDiv article{
+    margin: 0 10px;
+    /* ! margin과 부모의 padding 은 섞이지 않는다. 무조건 가산됨. */
+    background-color: #f33; color: white;
+}
+.paddingDiv{
+    background-color: #ff3; width: 60%;
+    margin: 0 auto; border: 3px solid #333;
+}
+.paddingDiv:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.paddingDiv article{
+    width: 33.33%; float: left; border: 1px solid black;
+    box-sizing: border-box;
+}
