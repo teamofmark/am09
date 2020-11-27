@@ -1,0 +1,7 @@
+body{
+    height: 2000px;
+}
+.position_A{
+    position: absolute; left: 300px; top: 300px;
+    background-color: #fc0; width: 150px; height: 150px;
+}
