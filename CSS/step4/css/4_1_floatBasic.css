@@ -1,0 +1,19 @@
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1 img{
+    margin: 0 25px 5px 0; float: left;
+}
+.wrap .exam_1 p{
+    font-size: 19px; line-height: 25px; margin: 0;
+}
+.wrap .exam_2{
+    background-color: red; margin-bottom: 5px;
+}
+.wrap .exam_2:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap .exam_2 div{
+    background-color: blue; width: 100px; float: left;
+    color: white;
+}
