@@ -1,0 +1,32 @@
+body{
+    margin: 0 auto; padding: 0; width: 960px;
+}
+header{
+    background-color: #6cc; position: relative;
+}
+header h1{
+    width: 250px; margin: 0 auto; font-size: 16px;
+    color: springgreen; padding: 10px 0;
+    background-color: #66c; text-align: center;
+}
+header div{
+    position: absolute; right: 0; top: 27px;
+}
+header nav{
+    background-color: #dac;
+}
+header nav ul{
+    padding: 10px 0; text-align: center; margin: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li:not(:first-child){
+    margin-left: 50px;
+}
+header nav ul li a{
+    text-decoration: none; color: slateblue;
+}
+header nav ul li a:hover{
+    color: darkred;
+}
