@@ -30,3 +30,31 @@ header nav ul li a{
 header nav ul li a:hover{
     color: darkred;
 }
+
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap .imgBox{
+    margin-bottom: 30px;
+}
+.wrap .imgBox img{
+    width: 100%;
+}
+.wrap article{
+    width: 30%; float: left; border: 1px solid #66c;
+    box-sizing: border-box;
+}
+.wrap article.marginBox{
+    margin-left: 5%;
+}
+.wrap article h2{
+    margin: 0; font-size: 16px; font-weight: normal;
+}
+.wrap article ul{
+    margin: 0; padding: 0; list-style: none;
+}
+
+footer{
+    background-color: #069; color: #fff; padding: 10px 0;
+    text-align: center;
+}
