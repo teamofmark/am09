@@ -48,3 +48,10 @@
 }
 
 /*같은 태그라도 attr에 따라 선택 할 수 있다.*/
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906;
+}
