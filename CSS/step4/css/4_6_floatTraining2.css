@@ -6,7 +6,7 @@ ul li{
     display: block; border: 1px solid black; box-sizing: border-box;
 }
 ul li figure img{
-    width: 100%; line-height: 0;
+    width: 100%; display: block;
 }
 ul li dl{
     text-align: center; background-color: yellow;
