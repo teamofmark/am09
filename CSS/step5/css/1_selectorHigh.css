@@ -145,3 +145,21 @@ input 상태에 따라 대상을 작동 시킬 수 있다.
 /* 
     * http://nthmaster.com
 */
+
+.shapeSelector > *:nth-of-type(2){
+    color: #30f;
+}
+/*
+    * first-of-type, last-of-type은 형제 관계중 첫 번째 혹은 마지막으로 
+    * 등장하는 지정된 태그를 선택마지막으로 등장하는 특정 태그를 선택한다.
+    * nth-child와 마찬가지로 수열을 사용 할 수 있다.
+    * 또한 전체선택자인 * 와 혼용하여 body > *:first-of-type{color:red} 이런식의 범위 지정도
+    * 가능하다.
+*/
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09F;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px; font-size: 14px;
+    text-decoration: underline;
+}
