@@ -106,3 +106,12 @@ input 상태에 따라 대상을 작동 시킬 수 있다.
 해둔다.(사라지는값)
 */
 
+.normalSelector ul{
+    overflow: hidden; list-style: none;
+}
+.normalSelector ul li{
+    margin: 0; padding: 15px; float: left;
+}
+.normalSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
