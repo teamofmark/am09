@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+}
+body > article:not(:last-of-type){
+    margin-bottom: 10px;
+}
+body > article:after{
+    content: ''; display: block; visibility: hidden; clear: both;    
+}
+
+article > *:first-child{
+    width: 40%; font-size: 200px; line-height: 140px;
+}
