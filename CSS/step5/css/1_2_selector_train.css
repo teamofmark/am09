@@ -10,4 +10,12 @@ body > article:after{
 
 article > *:first-child{
     width: 40%; font-size: 200px; line-height: 140px;
+    background-color: gray; color: white;
+}
+
+body article:nth-child(odd) > *:first-child{
+    float : right; margin: 0 0 10px 20px;
+}
+body article:nth-child(even) > *:first-child{
+    float: left; margin: 0 20px 10px 0;
 }
