@@ -32,3 +32,28 @@ body > div:first-of-type nav ul li a:hover,
 body > div:first-of-type nav ul li.currentStat a{
     background-color: #ea0e52; color: white;
 }
+
+body > div:first-of-type h1{
+    font-size: 14px; color: white; margin:0 0 25px 0;
+    text-transform: capitalize; text-align: center;
+}
+body > div:first-of-type fieldset{
+    border: none; padding: 0; margin: 0 auto; width: 90%;
+}
+body > div:first-of-type fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+body > div:first-of-type fieldset ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+body > div:first-of-type fieldset ul li{
+    margin-bottom: 25px;
+}
+body > div:first-of-type fieldset ul li label{
+    width: 15%; display: block; float: left; text-align: center;
+    background-color: #ea0e52; padding: 12px 0; font-size: 12px;
+    text-transform: uppercase; font-weight: bold; color: white;
+}
+body > div:first-of-type fieldset ul li input{
+    width: 80%; border: none; font-size: 12px; padding: 12px 2.5%;
+}
