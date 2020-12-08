@@ -1,0 +1,13 @@
+body{
+    width: 80%; margin: 0 auto;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 32px; font-weight: normal; color: #a0a0a0;
+    margin: 0; position: relative; width: 50%; padding: 15px 50% 15px 0;
+}
+h1 a{
+    width: 50%; font-size: 24px; color: midnightblue;
+    text-align: right; position: absolute; right: 0; bottom: 0;
+    display: block;
+}
