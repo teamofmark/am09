@@ -49,13 +49,18 @@ ul li:first-child{
     border-width: 3px 0 1px; border-style: solid none;
     border-color: darkred; padding: 10px 0;
 }
+ul li:nth-child(even){
+    background-color: #9a9a9a;
+}
 ul li:after{
     content: ''; display: block; visibility: hidden; clear: both;
 }
 ul li span{
     display: block; float: left; padding: 10px 2.5%; font-size: 14px;
 }
-
+ul li:first-child span{
+    font-size: 15px; font-weight: bold;
+}
 ul li span:not(:nth-of-type(2)){
     width: 15%;
 }
@@ -64,5 +69,6 @@ ul li span:nth-of-type(2){
 }
 
 ul li mark{
-    position: absolute; right: 0; top: 0;
+    position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
+    background-color: #900; color: white;
 }
