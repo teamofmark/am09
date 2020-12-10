@@ -35,3 +35,23 @@ body{
 .wrap header nav ul li:not(:first-child) a{
     border-left: 1px solid #e1e1e1;
 }
+
+.wrap ul.picList:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap ul.picList li{
+    width: 30%; float: left; margin-bottom: 5%;
+}
+.wrap ul.picList li:not(:nth-child(3n+1)){
+    margin-left: 5%;
+}
+.wrap ul.picList li a img{
+    width: 100%; border: none; opacity: 0.5;
+    transition-duration: 0.75s;
+}
+.wrap ul.picList li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
+}
