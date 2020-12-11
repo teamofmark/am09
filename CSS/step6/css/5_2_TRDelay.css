@@ -49,11 +49,11 @@ ul{
     display: block; float: left; width: 20%; height: 0; transition-duration: 1s;
 }
 
-.delay3 ul li:nth-child(1){transition-timing-function: cubic-bezier(1,1,0,0);}
-.delay3 ul li:nth-child(2){transition-timing-function: cubic-bezier(0,1.02,1,.02);}
-.delay3 ul li:nth-child(3){transition-timing-function: ;}
-.delay3 ul li:nth-child(4){transition-timing-function: ;}
-.delay3 ul li:nth-child(5){transition-timing-function: ;}
+.delay3 ul li:first-child{transition-timing-function:linear;}
+.delay3 ul li:nth-child(2){transition-timing-function:ease;}
+.delay3 ul li:nth-child(3){transition-timing-function:ease-in;}
+.delay3 ul li:nth-child(4){transition-timing-function:ease-in-out;}
+.delay3 ul li:last-child{transition-timing-function:cubic-bezier(0,1, 2,0);}
 .delay3 ul:hover li{
     height: 100px; background-color: #ff0;
 }
