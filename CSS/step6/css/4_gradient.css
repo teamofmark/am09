@@ -1,0 +1,69 @@
+.redG {
+    background: #9b1f1f;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b1f1f', endColorstr='#ea7e7e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+    /*
+        linear-gradient : 그라디언트의 형태 ex> radial-gradient 는 원형 그라디언트
+        deg : 그라디언트의 각도
+        #color ?% : 색상블록 으로 컬러와 위치
+    */
+}
+
+.blueG {
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=1);
+    /* IE6-9 */
+
+}
+
+.greenG {
+    background: #20a024;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #20a024 0%, #25c630 41%, #2bbf20 59%, #71c46b 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #20a024 0%, #25c630 41%, #2bbf20 59%, #71c46b 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #20a024 0%, #25c630 41%, #2bbf20 59%, #71c46b 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#20a024', endColorstr='#71c46b', GradientType=0);
+    /* IE6-9 */
+
+}
+
+.yellowG {
+    width: 500px;
+    height: 500px;
+    background: #fefcea;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #fefcea 0%, #f1da36 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #fefcea 0%, #f1da36 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #fefcea 0%, #f1da36 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefcea', endColorstr='#f1da36', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.redG h1,
+.blueG h1,
+.greenG h1 {
+    color: #fff;
+}
+
+/* http://www.colorzilla.com/gradient-editor 에서 제작 가능*/
