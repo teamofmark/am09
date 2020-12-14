@@ -34,10 +34,22 @@ aside:last-of-type ul{
 }
 aside:last-of-type ul li{
     padding: 10px 5%; display: block; text-align: right; transition-duration: 1s;
-    overflow: hidden;
+    overflow: hidden; font-size: 12px;
+}
+aside:last-of-type ul li:hover{
+    padding: 5%; cursor: pointer;
 }
 aside:last-of-type ul li a{
     color: #fff;
+}
+aside:last-of-type ul li a:before{
+    content: '+';
+}
+aside:last-of-type ul li:hover a{
+    color: #000;
+}
+aside:last-of-type ul li:hover a::before{
+    content: '>';
 }
 
 aside:last-of-type ul li:nth-child(1){background-color:#ff5f5f;}
@@ -47,4 +59,15 @@ aside:last-of-type ul li:nth-child(4){background-color:#30b052;}
 aside:last-of-type ul li:nth-child(5){background-color:#7c8aff;}
 aside:last-of-type ul li:nth-child(6){background-color:#3a5fb7;}
 aside:last-of-type ul li:nth-child(7){background-color:#6800ff;}
+
+aside:last-of-type ul li p{
+    width: 80%; float: left; height: 0; opacity: 0;
+    transition-duration: 1s, 1.5s;
+    transition-timing-function: ease-in-out;
+    transition-property: height, opacity;
+}
+aside:last-of-type ul li:hover p{
+    height: 220px; opacity: 1;
+}
+
 /* *right Aside Fin* */
