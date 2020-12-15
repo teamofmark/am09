@@ -1,0 +1,26 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px;
+}
+div span{
+    width: 200px; height: 200px; display: block;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    transform-style: preserve-3d;
+}
+
+div.rotater span:first-of-type{
+    background-color: red; animation-name: hori;
+}
+
+
+@keyframes hori{
+    from{
+        transform: rotateX(0deg);
+    }to{
+        transform: rotateX(360deg);
+    }
+}
