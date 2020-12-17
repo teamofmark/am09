@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{width:200px; margin:200px auto;}
+div{width:200px; position:relative;
+animation-name:rotate3D;
+animation-iteration-count:infinite;
+animation-duration:3s;
+animation-timing-function:ease;
+transform-style:preserve-3d;
+}
+@keyframes rotate3D{
+	from{
+		transform:rotateX(90deg) rotateY(60deg) rotateZ(0deg);
+		}
+		to{
+			transform:rotateX(450deg) rotateY(60deg) rotateZ(0deg);
+		}
+	}
+	
+	div span{width:200px; height:100px;
+		position:absolute;
+		left:0; top:0;
+		opacity:0.5;
+	}
+	
+	div span:first-of-type{background-color:red; transform-origin:left top;}
+	div span:nth-of-type(2){background-color:green; transform-origin:left top;
+	transform:rotateY(60deg);
+	}
+	div span:last-of-type{background-color:blue; transform-origin:right top; 
+	width:100px; transform:rotateY(-60deg);
+	}
+	
+/*
+	A만들기
+	1. 3장의 종이를 position:absolute; left:0; top:0; 을 통해 한장으로 모은다.
+	2. 2번 종이를 삼각형 만들때와 같이 좌측상단을 중심으로 60도만큼 각도를 준다.
+	3. 3번 종이를 우측상단을 중심으로 -60도 만큼 각도를 주고, width를 1/2한다.
+	(그렇게 되면 right 지점 자체가 200px에서 100px로 줄어들며 1번종이의 50%지점부터 -60도의 각을 갖게된다.)
+*/
