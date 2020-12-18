@@ -26,7 +26,7 @@ section .moveMent{
     }
 }
 section .moveMent .pic{
-    position: absolute; left: 0; top: 0;
+    position: absolute; left: 0; top: 0; margin-left: -107px;
     backface-visibility: hidden;
 }
 
@@ -43,4 +43,15 @@ section .moveMent .pic:nth-child(10){transform: rotateY(324deg) translateZ(-370p
 
 section .moveMent .pic .cell{
     width: 215px; height: 121px; margin-bottom: 20px;
+    transition-duration: 0.5s;
+    /* transition: transform 0.5s ease-in-out; */
+}
+section .moveMent .pic .cell:hover{
+    transform: scale(1.2) translateZ(0px);
+}
+section .moveMent .pic .cell img{
+    width: 100%; opacity: 0.5;
+}
+section .moveMent .pic .cell:hover img{
+    opacity: 1;
 }
