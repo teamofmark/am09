@@ -1,12 +1,36 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+@media screen and (max-width: 767px) and (orientation: landscape){
     html{
-        background-color: green; color: white; font-weight: bold;
+        background-color: orange; color: white; font-weight: bold;
     }
     h1{
-        font-size: 2rem; line-height: 3rem; text-align: right;
+        font-size: 1rem; text-align: center; line-height: 2rem;
     }
     p{
-        font-size: 1rem; line-height: 1.5rem;
+        font-size: 0.75rem; text-align: center; line-height: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    html{
+        background-color: red; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }
+    p{
+        font-size: 0.75rem; text-align: center; line-height: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+	html{
+        background-color:greenyellow; color:white; font-weight:bold;
+    }	
+    h1{
+        font-size:2rem; text-align:right; line-height:3rem;
+    }
+    p{
+        font-size:1rem; line-height:1.5rem;
     }
 } 
 
