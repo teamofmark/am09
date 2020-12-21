@@ -9,6 +9,8 @@
         font-size: 0.75rem; text-align: center; line-height: 1rem;
     }
 }
+/* mobile Device - 사용자 해상도가 768px 미만일 때 이 코드가 실행됨.*/
+
 
 @media screen and (max-width: 767px) and (orientation: portrait){
     html{
