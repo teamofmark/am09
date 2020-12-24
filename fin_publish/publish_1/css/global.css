@@ -176,4 +176,18 @@ a{
     footer > div div:nth-of-type(3) > ul li:nth-child(6) a{
         background-image: url('../images/ico_sns_06.png');
     }
+
+    footer > div div:last-of-type{
+        clear: left;
+    }
+    footer > div div:last-of-type a{
+        color: white; display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
 }
+/* ? desktop */
