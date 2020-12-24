@@ -1,16 +1,22 @@
 header > div nav ul li a,
 header > div > ul li p,
 footer > div *,
-#about figcaption p{
+#about figcaption p,
+section.videoArea h2{
     font-family: 'Roboto';
 }
 
 header > div > ul li h2,
-#about figcaption h2{
+#about figcaption h2,
+section.expArea > *:not(ul){
     font-family: 'Playfair Display';
 }
 a{
     text-decoration: none;
+}
+section[class *= Area] > hr{
+    width: 3%; min-width: 50px; border-top: 2px solid rgba(65,61,75, 0.3);
+    margin: 0 auto 45px;
 }
 .btn_more{
     font-family: 'Hammersmith One'; font-weight: 400;
@@ -19,6 +25,7 @@ a{
 
 @media screen and (min-width: 1280px){
     #about,
+    section.expArea,
     footer > div{
         max-width: 940px; margin: 0 auto;
         padding: 70px 0;
