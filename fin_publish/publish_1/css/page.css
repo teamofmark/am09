@@ -24,4 +24,20 @@
         max-width: 120px;
     }
     /* CI figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') no-repeat left top;
+        background-size: cover; padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; margin: 0 auto 35px;
+        width: 95px; padding: 23px 0px 32px 5px; border-radius: 50px;
+        border: 3px solid white; color: white; font-size: 45px;
+        text-align: center;
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white; text-align: center;
+        font-weight: 900;
+    }
+    /* videoArea Fin */
 }
