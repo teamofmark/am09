@@ -148,4 +148,32 @@ a{
         width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 43px;
         background: url('../images/btn_send.png') no-repeat center rgba(255,255,255,0.5);
     }
+    footer > div div:nth-of-type(3) > ul{
+        clear: left;
+    }
+    footer > div div:nth-of-type(3) > ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) > ul li a{
+        display: block; background-repeat: no-repeat; background-size: contain;
+        text-indent: -9999px;
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(1) a{
+        background-image: url('../images/ico_sns_01.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(2) a{
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(3) a{
+        background-image: url('../images/ico_sns_03.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(4) a{
+        background-image: url('../images/ico_sns_04.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(5) a{
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer > div div:nth-of-type(3) > ul li:nth-child(6) a{
+        background-image: url('../images/ico_sns_06.png');
+    }
 }
