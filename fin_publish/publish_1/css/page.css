@@ -143,7 +143,7 @@
     /* teamArea Fin */
 
     section.worksArea{
-        padding: 70px
+        padding: 70px 0;
     }
     section.worksArea h2{
         font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px;
