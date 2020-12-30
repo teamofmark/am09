@@ -34,6 +34,9 @@ section[class *= Area] > hr{
 .btn_more{
     font-family: 'Hammersmith One'; font-weight: 400;
 }
+header > div nav input[type='checkbox']{
+    display: none;
+}
 /* ? All Using */
 
 @media screen and (max-width: 767px){
@@ -41,8 +44,8 @@ section[class *= Area] > hr{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 728px; margin: 0 auto;
-        padding: 70px 0;
+        max-width: 600px; margin: 0 auto;
+        padding: 70px 3%;
     }
     .btn_more{
         text-align: center; color: #00e0d0;
@@ -55,11 +58,12 @@ section[class *= Area] > hr{
         background-size: cover;
     }
     header > div{
-        max-width: 728px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
+        padding: 0 3%;
         position: relative;
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -68,9 +72,17 @@ section[class *= Area] > hr{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0;
-        width: 100%; padding-left: 130px;
-        box-sizing: border-box; text-align: right;
+        width: 50%; margin-left: 15%; text-align: right; float: right;
+    }
+    header > div nav label.mui{
+        padding: 3px; border: 1px solid white; width: 22px; cursor: pointer;
+        display: block; margin: 5px 0 15px auto;
+    }
+    header > div nav label.mui span{
+        border-top: 3px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
     }
     header > div nav ul li{
         display: inline-block; 
