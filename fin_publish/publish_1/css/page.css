@@ -93,25 +93,21 @@
     }
     section.teamArea p{
         font-size: 14px; font-weight: 400; margin-bottom: 15px;
+        line-height: 21px;
     }
     section.teamArea > hr{
         border-color: rgba(255,255,255, 0.2);
     }
-    section.teamArea ul{
-        max-width: 728px; margin: 0 auto 70px;
-    }
-    section.teamArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
+
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        display: block;
     }
-    section.teamArea ul li:not(:first-child){
-        margin-left: 2%;
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') no-repeat center top;
-        background-size: contain; padding-top: 179px;
+        background-size: cover; padding-top: 179px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
