@@ -170,5 +170,22 @@ a{
     footer > div:first-child span a:nth-child(3){
         background-image: url('../images/sns_02.png');
     }
+
+    footer > div:nth-child(2){
+        padding: 60px 0;
+    }
+    footer > div:nth-child(2) p{
+        font-size: 14px; font-style: italic; max-width: 510px;
+        color: rgba(255,255,255,0.3); width: 50%;
+    }
+    footer > div:nth-child(2) span{
+        right: 0; top: 60px; width: 50%; text-align: right;
+    }
+    footer > div:nth-child(2) span a{
+        font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block;
+    }
+    footer > div:nth-child(2) span a:last-of-type{
+        margin-left: 2.56%;
+    }
 }
 /* ?desktop */
