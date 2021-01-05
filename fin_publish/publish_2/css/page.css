@@ -10,6 +10,35 @@
 /* ?tab */
 
 @media screen and (min-width: 1280px){
-
+    header+nav{
+        background-color: white;
+    }
+    header+nav .slideNav:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    header+nav .slideNav > *{
+        float: left;
+    }
+    header+nav .slideNav ul{
+        width: 80.34%;
+    }
+    header+nav .slideNav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header+nav .slideNav ul li:not(:last-child){
+        float: left;
+    }
+    header+nav .slideNav ul li:last-child{
+        float: right;
+    }
+    header+nav .slideNav ul li a{
+        display: block; font-size: 11px; color: #b9bed1;
+        line-height: 56px;
+    }
+    header+nav .slideNav ul li a:hover,
+    header+nav .slideNav ul li a.active{
+        color: #343e5c;
+    }
+    /* todo. type='search' 처리 */
 }
 /* ?desktop */
