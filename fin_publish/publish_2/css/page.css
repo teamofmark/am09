@@ -107,5 +107,13 @@
         font-size: 11px; line-height: 42px; font-weight: 700; color: white;
     }
     /* *slideArea Fin */
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 4px;
+        line-height: 56px; padding: 0 1.7%; box-sizing: border-box;
+        margin-bottom: 30px;
+    }
 }
 /* ?desktop */
