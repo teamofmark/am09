@@ -190,6 +190,18 @@
         border-top: 1px solid #dfe4ee;
     }
 
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+        padding-top: 27px;
+    }
+    .contentArea aside fieldset legend{
+        width: 100%; font-size: 11px; color: #343e5c; padding: 0 7.4% 15px;
+        border-bottom: 1px solid #f0f2f7; position: relative;
+        top: 28px; text-transform: uppercase;
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
     
     /* ? aside Fin */
 
