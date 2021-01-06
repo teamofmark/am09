@@ -119,8 +119,6 @@
         font-size: 11px; color: #a1a7bd; display: inline-block;
         vertical-align: middle;
     }
-    .contentArea > form fieldset select{
-        border: none; box-shadow: none; background-image
-    }
+
 }
 /* ?desktop */

@@ -14,6 +14,16 @@ input[type='checkbox']{
 a{
     text-decoration: none;
 }
+.selectBox{
+    display: inline-block; padding-right: 20px; box-sizing: border-box;
+    background: url('../images/bg_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image: none;
+    background-color: transparent; -moz-appearance: none;
+    -webkit-appearance: none; padding: 10px 0; font-size: 11px;
+    color: #343e5c;
+}
 /* ? All Use */
 
 @media screen and (max-width: 767px){
@@ -33,6 +43,7 @@ a{
     .contentArea{
         max-width: 1170px; margin: 0 auto;
     }
+    
 
     header{
         border-bottom: 1px solid #f0f2f7;
