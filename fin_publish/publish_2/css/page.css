@@ -245,5 +245,30 @@
     .contentArea section{
         width: 74.44%; margin-left: 2.56%; float: left;
     }
+    .contentArea section h3{
+        display: none;
+    }
+    .contentArea section ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    .contentArea section ul li{
+        float: left; display: block; width: 31%; background-color: white;
+        margin: 0 0 33px 3.5%; height: 380px; border-radius: 4px;
+    }
+    .contentArea section ul li:nth-child(5){
+        width: 65.5%;
+    }
+    .contentArea section ul li:nth-child(1),
+    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(6),
+    .contentArea section ul li:nth-child(9){
+        margin-left: 0;
+    }
+    .contentArea section ul li figure img{
+        width: 100%; border-radius: 4px;
+    }
+    .contentArea section ul li figure figcaption dl{
+        padding: 0 9%; text-align: center;
+    }
 }
 /* ?desktop */
