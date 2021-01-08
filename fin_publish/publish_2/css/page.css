@@ -186,7 +186,7 @@
 
     .contentArea aside fieldset{
         background-color: white; border-radius: 5px;
-        padding-top: 27px;
+        padding-top: 47px;
     }
     .contentArea aside fieldset legend{
         width: 100%; font-size: 11px; color: #343e5c; padding: 0 7.4% 15px;
@@ -198,15 +198,17 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer;
-        display: inline-block; box-sizing: border-box; padding-left: 20.37%; 
+        display: inline-block; box-sizing: border-box; padding-left: 24.37%;
+        margin-bottom: 20px; 
     }
     .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
-        width: 15%; max-width: 76px;
+        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 76px; */
+        display: none;
     }
-    .contentArea aside fieldset label,
-    .contentArea aside fieldset span{
-        line-height: 50px;
+    .contentArea aside fieldset label
+    /*.contentArea aside fieldset span*/{
+        line-height: 21px; 
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
@@ -218,9 +220,9 @@
     .contentArea aside fieldset label[for*='dlvr']{
         width: 49%; max-width: 135px;
     }
-    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+    /* .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
-    }
+    } */
     
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') no-repeat 10% center;
@@ -326,6 +328,9 @@
     }
     section.bestArea ul li:not(:first-child){
         border-left: 1px solid #f0f2f7; box-sizing: border-box;
+    }
+    section.bestArea ul li figure img{
+        width: 100%;
     }
     section.bestArea ul li figure figcaption dl{
         text-align: center;
@@ -711,6 +716,9 @@
     }
     section.bestArea ul li:not(:first-child){
         border-left: 1px solid #f0f2f7; box-sizing: border-box;
+    }
+    section.bestArea ul li figure img{
+        width: 100%;
     }
     section.bestArea ul li figure figcaption dl{
         text-align: center;
