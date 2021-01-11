@@ -372,11 +372,12 @@
         content: ''; display: block; visibility: hidden; clear: both;
     }
     section.tosayArea > div ul li{
-        display: block; width: 27.64%; float: left;
+        display: block; width: 80%;
+        /* float: left; */ margin: 0 auto 30px;
     }
-    section.tosayArea > div ul li:not(:first-child){
+    /* section.tosayArea > div ul li:not(:first-child){
         margin-left: 8.54%;
-    }
+    } */
     section.tosayArea > div ul li figure:after{
         content: ''; display: block; visibility: hidden; clear: both;
         margin-bottom: 25px;
