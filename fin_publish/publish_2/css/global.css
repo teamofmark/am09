@@ -148,13 +148,13 @@ a{
         position:absolute; display: block;
     }
     footer > div:first-child{
-        padding: 60px 15px; border-bottom: 1px solid rgba(255,255,255,0.05);
+        padding: 30px 5%; border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        max-width: 92px; width: 7.86%; position: absolute; left: 15px;
+        max-width: 92px; width: 40%; position: absolute; left: 5%;
     }
     footer > div:first-child ul{
-        text-align: center; padding: 0 10%;
+        text-align: center; padding: 45px 5% 0;
     }
     footer > div:first-child ul li{
         display: inline-block;
@@ -163,10 +163,10 @@ a{
         margin-left: 2.56%;
     }
     footer > div:first-child ul li a{
-        display:block; color: white; font-size: 12px; font-weight: 700;
+        display:block; color: white; font-size: 12px; font-weight: 700; line-height: 24px;
     }
     footer > div:first-child span{
-        right: 15px; top: 60px; width: 11.54%; display: block;
+        right: 5%; top: 33px; width: 35%; display: block;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -187,7 +187,7 @@ a{
     }
 
     footer > div:nth-child(2){
-        padding: 60px 15px;
+        padding: 30px 15px;
     }
     footer > div:nth-child(2) p{
         font-size: 14px; font-style: italic; max-width: 510px;
