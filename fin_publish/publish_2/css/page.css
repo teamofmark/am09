@@ -152,9 +152,10 @@
     /* ? sortBy Fin */
 
     .contentArea aside{
-        width: 23%; float: left;
+        /* width: 23%; float: left; */
+        display: none;
     }
-    .contentArea aside nav{
+    /* .contentArea aside nav{
         background-color: white; border-radius: 5px;
         margin-bottom: 30px;
     }
@@ -205,12 +206,12 @@
         margin-bottom: 20px; 
     }
     .contentArea aside fieldset span{
-        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
-        width: 15%; max-width: 76px; */
+       font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 76px;
         display: none;
     }
     .contentArea aside fieldset label
-    /*.contentArea aside fieldset span*/{
+    .contentArea aside fieldset span{
         line-height: 21px; 
     }
     .contentArea aside fieldset label[for*='ava'],
@@ -223,9 +224,9 @@
     .contentArea aside fieldset label[for*='dlvr']{
         width: 49%; max-width: 135px;
     }
-    /* .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
-    } */
+    }
     
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') no-repeat 10% center;
@@ -238,12 +239,12 @@
     }
     .contentArea aside fieldset input[type='checkbox']:checked + label{
         background-image: url('../images/on_check.png');
-    }
+    } */
     /* ? aside Fin */
 
-    .contentArea section{
-        width: 75%; margin-left: 2%; float: left;
-    }
+    /*.contentArea section{
+         width: 75%; margin-left: 2%; float: left; 
+    }*/
     .contentArea section h3{
         display: none;
     }
@@ -251,21 +252,22 @@
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .contentArea section ul li:not(:nth-child(5)){
-        float: left; display: block; width: 48%; background-color: white;
-        margin: 0 0 33px 4%; min-height: 360px; max-height: 510px; border-radius: 4px;
+        display: block; background-color: white;
+        margin: 0 0 33px 0; min-height: 360px; border-radius: 10px;
+        /* width: 48%; max-height: 510px; float: left; */
     }
     .contentArea section ul li:nth-child(5){
         clear: both; display: block; margin-bottom: 33px; background-color: white;
         border-radius: 10px;
         
     }
-    .contentArea section ul li:nth-child(1),
+    /* .contentArea section ul li:nth-child(1),
     .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(6),
     .contentArea section ul li:nth-child(8),
     .contentArea section ul li:nth-child(10){
         margin-left: 0;
-    }
+    } */
     .contentArea section ul li figure img{
         width: 100%; border-radius: 4px;
     }
@@ -286,14 +288,23 @@
         font-size: 14px; color: #343e5c;
     }
     .contentArea section ul li:nth-child(5) figure figcaption{
-        position: relative; padding: 15px 45% 15px 4.2%; box-sizing: border-box;
+        /* position: relative; */
+        padding: 15px 4.2%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption dl{
+        margin-bottom: 10px;
     }
     .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
-        position: absolute; left: 2%; top: -296px; background-color: black;
-        color: white; border-radius: 3px; font-size: 12px; padding: 6px 12px;
+        /* position: absolute; left: 2%; top: -296px; background-color: black;
+        color: white; border-radius: 3px; font-size: 12px; padding: 6px 12px; */
+        display: none;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span{
-        position: absolute; right: 4.2%; top: 20px; width: 40%;
+        /* position: absolute; right: 4.2%; top: 20px; width: 40%; */
+        display: block;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span:after{
+        content: ''; display: block; visibility: hidden; clear: both;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span a{
         display: block; width: 50%; float: left; text-align: center;
