@@ -111,13 +111,14 @@
         vertical-align: middle;
     }
     .contentArea > form fieldset label[for='sb_keywords']{
-        padding-left: 2.56%; margin-left: 1.7%;
+        padding-left: 2.56%;
+        /* margin-left: 1.7%; */
     }
     .contentArea > form fieldset input[type='search']{
-        width: 20%;
+        width: 63%; margin-left: 2%;
     }
     .contentArea > form fieldset span,
-    .contentArea > form fieldset label:nth-of-type(2)~label,
+    .contentArea > form fieldset label:not([for='sb_keywords']),
     .contentArea > form fieldset input:not(#sb_keywords){
         display: none;
     }
