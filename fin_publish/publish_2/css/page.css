@@ -6,17 +6,19 @@
     header+nav .slideNav:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
-    header+nav .slideNav > *{
+    /* header+nav .slideNav > *{
         float: left;
-    }
+    } */
     header+nav .slideNav ul{
-        width: 53%;
+        /* width: 53%; */
+        text-align: center;
     }
     header+nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
     header+nav .slideNav ul li{
-        float: left;
+        /* float: left; */
+        display: inline-block;
     }
     /* header+nav .slideNav ul li:last-child{
         float: right;
@@ -30,17 +32,16 @@
         color: #343e5c;
     }
     header+nav .slideNav input[type='search']{
-        margin-left: 20%; width: 27%; padding: 20px 2% 20px 4%;
-        box-sizing: border-box; border-width: 0 1px; border-style: none solid;
-        border-color: #f0f2f7; background: url('../images/bul_search.png') no-repeat 5% center;
+        display: none;
     }
     /* * slideNav Fin */
 
     section.slideArea{
-        background-color: #1c1e23; margin-bottom: 50px;
-        line-height: 0;
+        display: none;
+        /* background-color: #1c1e23; margin-bottom: 50px;
+        line-height: 0; */
     }
-    section.slideArea h2{
+    /* section.slideArea h2{
         display: none;
     }
     section.slideArea > div{
@@ -95,7 +96,7 @@
     section.slideArea > div ul li figure figcaption input[type='button']{
         background-color: #2754eb; border: none; width: 55%; border-radius: 21px;
         font-size: 11px; line-height: 42px; font-weight: 700; color: white;
-    }
+    } */
     /* *slideArea Fin */
     .contentArea{
         margin-bottom: 50px;
