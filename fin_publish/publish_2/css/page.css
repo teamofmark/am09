@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 767px){
     header+nav{
-        background-color: white;
+        background-color: white; margin-bottom: 30px;
     }
     header+nav .slideNav:after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -106,10 +106,6 @@
         line-height: 56px; padding: 0 1.7%; box-sizing: border-box;
         margin-bottom: 30px;
     }
-    .contentArea > form fieldset span.selectBox,
-    .contentArea > form fieldset label[for='ship_Select']{
-        display: none;
-    }
     .contentArea > form fieldset label{
         font-size: 11px; color: #a1a7bd; display: inline-block;
         vertical-align: middle;
@@ -117,13 +113,23 @@
     .contentArea > form fieldset label[for='sb_keywords']{
         padding-left: 2.56%; margin-left: 1.7%;
     }
-    .contentArea > form fieldset input:not([type='checkbox']){
+    .contentArea > form fieldset input[type='search']{
+        width: 20%;
+    }
+    .contentArea > form fieldset span,
+    .contentArea > form fieldset label:nth-of-type(2)~label,
+    .contentArea > form fieldset input:not(#sb_keywords){
+        display: none;
+    }
+    .contentArea > form fieldset input#sb_keywords{
         font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
         line-height: 30px; padding: 0 1%; box-sizing: border-box;
         border-radius: 16px;
     }
-    .contentArea > form fieldset input[type='search']{
-        width: 20%;
+    /* .contentArea > form fieldset input:not([type='checkbox']){
+        font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
+        line-height: 30px; padding: 0 1%; box-sizing: border-box;
+        border-radius: 16px;
     }
     .contentArea > form fieldset input[type='text']{
         width: 13%;
@@ -141,7 +147,7 @@
     }
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
         background: url('../images/bul_check.png') no-repeat left center;
-    }
+    } */
     /* ? sortBy Fin */
 
     .contentArea aside{
