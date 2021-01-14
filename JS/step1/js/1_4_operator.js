@@ -93,7 +93,49 @@ function compareOperator(){
 // *case.3 연산자 위치선정
 function numberPlusAfter(){
     var number = 10; //?  number 변수 선언 및 10으로 초기화
-    alert(number++); //? 
-    alert(number++); //? 
-    alert(number++); //? 
+    alert(number++); //? 10을 출력 후, 1을 증가. (current Number = 11)
+    alert(number++); //? 11을 출력 후, 1을 증가. (current Number = 12)
+    alert(number++); //? 12를 출력 후, 1을 증가. (end Number = 13)
+}
+function numberPlusBefore(){
+    var number = 10; //?  number 변수 선언 및 10으로 초기화
+    alert(++number); //? 1을 증가, 11을 출력 후 (current Number = 11)
+    alert(++number); //? 1을 증가, 12를 출력 후 (current Number = 12)
+    alert(++number); //? 1을 증가, 13을 출력 후 (end Number = 13)
+}
+
+// *case.4 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a < b;
+    console.log(result);
+} 
+
+// *case.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a == b;
+    console.log(result);
+}
+
+// *case.6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a != b;
+    console.log(result);
+}
+
+// todo.5 a변수에는 '여자', b변수에는 '웹디자이너' 라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장후 출력.
+
+function logicalOperator1(){
+
+}
+
+// todo.6 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.
+
+function logicalOperator2(){
+    
 }
