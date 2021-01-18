@@ -83,3 +83,32 @@ function oddOREven(){
         alert('숫자만 입력하세요.');
     }
 }
+
+// *case. 5 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+/*
+    ? 수 : 100 - 90
+    ? 우 : 89 - 80
+    ? 미 : 79 - 70
+    ? 양 : 69 - 60
+    ? 가 : 59 - 0
+*/
+function avgScore(){
+    var koreanScore = prompt('국어점수를 입력하세요.', '');
+    var englishScore = prompt('영어점수를 입력하세요.', '');
+    var mathScore = prompt('수학점수를 입력하세요.', '');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+
+    if(avg > 100){
+        alert('어떻게 평균 100이 넘냐. 이사기꾼아.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼!');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼!');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다. 괜찮구먼!');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다. 맞겠구먼!');
+    }else{
+        alert('평균' + avg + '점 \n' + '가 입니다. 망했구먼!');
+    }
+}
