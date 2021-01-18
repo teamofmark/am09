@@ -71,3 +71,15 @@ function numbJudgment(){
         alert('숫자만 입력하세요.');
     }
 }
+
+// *case. 4 홀,짝수  판별
+function oddOREven(){
+    var numb = prompt('숫자을 입력하세요','홀,수를 구분해주지');
+    if(numb%2 == 0){
+        alert('짝수입니다.');
+    }else if(numb%2 == 1){
+        alert('홀수입니다.');
+    }else{
+        alert('숫자만 입력하세요.');
+    }
+}
