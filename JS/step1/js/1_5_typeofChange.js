@@ -79,3 +79,27 @@ function bgColorRandom(){
         $("body").css("background-color", "#" + bgColor);
     },1000);
 }
+
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+
+/*
+    ? parse
+    * 1. parseInt(value); - 정수 형
+    * 2. parseFloat(value); - 실수 형
+    
+    ? Number
+    * Number(value); - 정수 형,실수 형
+*/
+function numbString(){
+    var test = '300';
+    var result = parseInt(test) + 10;
+    console.log('result = ' + result);
+}
+
+function todo4(){
+    var test = "100.50";
+    var test1 = "20";
+    var result = parseFloat(test) + 150 + parseInt(test1); 
+    console.log('result = ' + result);
+}
