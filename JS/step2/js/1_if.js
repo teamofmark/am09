@@ -112,3 +112,53 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가 입니다. 망했구먼!');
     }
 }
+
+// *case. 6 사용자 id를 입력받아 맞다면 승인 메시지 출력. 
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID=="Mark"){ //? server DB 내에 실제로 존재하는 ID인지를 판별하는 구문.
+        alert("접속을 승인합니다.");
+    }else if(userID != "Mark"){
+        alert("잘못된 ID입니다.");
+    }
+    /*
+        ?일괄처리시 else
+    */
+}
+
+// todo.2 사용자 id "mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력. 
+// * 승인 : Mark님으로 확인되었습니다., 거부 : ID 혹은 Password가 틀렸습니다.
+
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt('사용자의 비밀번호');
+
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" || userPW == "1234"){
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+
+function userInfoCheck1(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt('사용자의 비밀번호');
+    
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
+
+// todo.3 사용자 id "mark"와 password"1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+// * 승인 : Mark님으로 확인되었습니다., 거부 case.1 : id가 틀렸습니다. case.2 password가 틀렸습니다.
+
+function userInfoCheck2(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt('사용자의 비밀번호');
+    
+    if(userID=="Mark"&&userPW=="1234"){
+        alert('Mark님으로 확인되었습니다.');
+    }else if(userID != "Mark"){
+        alert('ID가 잘못되었습니다.');
+    }else{
+        alert('password가 잘못되었습니다.');
+    }
+}
