@@ -14,7 +14,7 @@ function pwCheck(){
         var value = window.prompt("패스워드를입력하세요."); //? 이하 실행구문
 
         if(value==1234){
-            alert('접속승인');
+            alert('접속승인'); 
             break;
         }else{
             alert('잘못 입력하였습니다.');
