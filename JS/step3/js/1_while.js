@@ -20,4 +20,9 @@ function pwCheck(){
             alert('잘못 입력하였습니다.');
         }
     }
-} 
+}
+
+// *exp.2 while Continue
+function whileContinue(){
+    
+}
