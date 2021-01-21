@@ -145,3 +145,37 @@ function runContinue(){
     }
     document.write(output);
 }
+// *case.8 break
+
+function forBreak(){
+    for(i = 1; i<=10; i++){
+        break; //? 해당루프 즉시 중단.
+        document.write(i + '<br>'); //? 실행불가.
+    }
+    document.write('최종 i ='+ i + '<br>'); //? 1출력
+}
+
+// *case.9 break 활용
+function runBreak(){
+    for (var i = 0; true; i++){ //? for 무한반복
+        alert(i + '번째 반복문'); //? 계속 돔.
+        if(!confirm('계속진행하시겠습니까?')){ //? ! = 논리부정연산자. ex> !true = false, !false = true.
+            break;
+        }
+    }
+}
+
+// ! 다중 for
+
+// *case.1 반절피라미드
+
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <=10; i++){ //?
+        for(var j = 0; j < i; j++){ //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star); //?
+}
