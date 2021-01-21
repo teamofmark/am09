@@ -86,8 +86,62 @@ function star10(){
 // * case.4 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력.
 function favorFluit(){
     var array = ['포도','사과','바나나','딸기','배','메론','귤']; //? 4개의 data array. 0,1,2,3
-
     for (var i = 0; i < array.length; i++){
         alert(array[i]);
     }
+}
+// todo.3 지금까지 배웠던 js를 배열을 활용해 출력해보자.
+function arrayfor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 for", "반복문 while", "함수", "클래스"];
+    // ? 반복 및 출력문 작성.
+    for (var i = 0; i < data.length; i++){
+        alert(data[i]);
+    }
+}
+// todo.4 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고']; //? 4개의 배열 선언후
+    // ? 역반복 및 출력문 작성.
+    for(var i = array.length-1; i>=0; i--){ //? i 변수는 배열의 갯수 -1 (4-1 = 3) 로 선언, 그 변수가 0보다 크거나 같을때 까지 (3>=0 ----> 3,2,1,0) 실행 .
+        document.write(array[i]); //? 그래서 3,2,1,0 순으로 출력. 이것을 역반복
+    }
+}
+
+// *case. 5 ES6 Example
+
+function favorFluitES6(){
+    var array = ['포도','사과','바나나','망고']; 
+    for (let i = 0; i < array.length; i++){
+        const element = array[i];
+        document.write(i + '번째 배열 = ' + element + '<br>');
+    }
+}
+
+// * case.6 continue
+function forContinue(){
+    for (var i = 0; i < 10; i++){ //? 과정 1 0 - 9 : 10번반복
+        continue; //? 과정 2 continue : 이하코드 실행불가. 반복수행.
+        document.write(i + '<br>'); //? 과정3 실행불가
+    }
+    document.write('최종 i =' + i + "<br>"); //? 결과 10.
+}
+// * case.7 continue 활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            /*
+                ? i가 홀수일 경우 반복 중지 다음반복수행, 현재 다음 반복은 없다.
+                ? (1 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                ? (2 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                ? (3 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                ? (4 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                ? ..
+                ? 이조건으로 i값이 10보다 작거나 같을때까지 수행하여 출력하라.
+            */
+            continue;
+        }
+        output += i; //? (2, 6, 12, 20, 30)
+    }
+    document.write(output);
 }
