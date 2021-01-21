@@ -192,3 +192,5 @@ function reverseHalfPyramid(){
     }    
     document.write(star);//?
 }
+
+// todo.5 pyramid 완성시키기 (* br *** br ***** br.....)
