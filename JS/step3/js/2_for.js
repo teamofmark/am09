@@ -171,11 +171,24 @@ function runBreak(){
 
 function halfPyramid(){
     var star = '';
-    for (var i = 1; i <=10; i++){ //?
+    for (var i = 1; i <=10; i++){ //? ifor = 1 - 10 까지.
+        for(var j = 0; j < i; j++){ //? jfor = j가 i보다 작을때만.
+            star += '*'; //? var star에 생성된 * 삽입.
+        }
+        star += '<br>'; //? ifor 만큼 <br>을 var star에 삽입.
+    }
+    document.write(star); //? 최종 var star 출력.
+}
+
+// *case.2 역반절피라미드
+
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){ //?
         for(var j = 0; j < i; j++){ //?
             star += '*'; //?
         }
-        star += '<br>'; //?
-    }
-    document.write(star); //?
+        star += '<br>';//?
+    }    
+    document.write(star);//?
 }
