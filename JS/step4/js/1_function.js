@@ -85,3 +85,89 @@ function infiniteSum(){
     }
     document.write('총' + count + '번 실행함.');
 }
+// todo.1 구구단 출력(1 - 9)을 함수로 만들기.
+function printGugudan(){
+    for(var i = 2; i <= 9; i++){
+        document.write( i + '단 출력' + '<br>');
+        for(var m = 1; m <= 9; m++){
+            document.write( i + '*' + m + '=' + (i*m), '<br>');
+        }
+        document.write('<br>');
+    }
+}
+// todo.2 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-" :
+            result = numb1 - numb2;
+            break;
+        case "*" :
+            result = numb1 * numb2;
+            break;
+        case "/" :
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+//todo 3. 위의 예제에 추가로 사칙연산 부분을 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+/* 
+    * 실행구문
+    todo. calculator("+", 20, 10);
+    todo. add(20, 10); +
+    todo. sub(20, 10); -
+    todo. mul(20, 10); *
+    todo. div(20, 10); /
+*/
+function calculator2(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" :
+            result = add(numb1,numb2);
+            break;
+        case "-" :
+            result = sub(numb1,numb2);
+            break;
+        case "*" :
+            result = mul(numb1,numb2);
+            break;
+        case "/" :
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1,numb2){
+    addResult = numb1 + numb2;
+    return addResult;
+    //! or only return numb1 + numb2;
+}
+//* document.write(add(20, 10) + "<br>");
+
+function sub(numb1,numb2){
+    subResult = numb1 - numb2;
+    return subResult;
+}
+//* document.write(sub(20, 10) + "<br>");
+
+function mul(numb1,numb2){
+    mulResult = numb1 * numb2;
+    return mulResult;
+}
+//* document.write(mul(20, 10) + "<br>");
+
+function div(numb1,numb2){
+    divResult = numb1 / numb2;
+    return divResult;
+}
+//* document.write(div(20, 10) + "<br>");
