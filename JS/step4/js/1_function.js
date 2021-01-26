@@ -222,3 +222,15 @@ function justFunction(){
     document.write('hello!');
 }
 // callFunctionTenTimes(justFunction);
+
+// *case. 11 return value 로 함수 사용.
+
+function createHello(){
+    function hello(user){ //?
+        document.write(user + 'welcome!'); //?
+    }
+    return hello; //?
+}
+var result = createHello(); //?
+
+// result('Mark'); //?
