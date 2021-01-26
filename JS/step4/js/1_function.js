@@ -210,6 +210,15 @@ function loopStart(){
 // todo. 인자(otherFunction)로 전달하여 10번 실행 하는 함수식을 짜라.
 
 function callFunctionTenTimes(otherFunction){
-    // ? loop
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
 }
-callFunctionTenTimes(/*익명함수*/);
+// callFunctionTenTimes(function(){
+//     document.write('hello!');
+// });
+
+function justFunction(){
+    document.write('hello!');
+}
+// callFunctionTenTimes(justFunction);
