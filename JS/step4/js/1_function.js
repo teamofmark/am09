@@ -197,3 +197,19 @@ function welcome(){
 $(document).ready(function(){
     $('#runEx8').click(welcome);
 });
+
+// *case. 10 1초마다 매개변수 값으로 넘기는 익명함수
+
+function loopStart(){
+    setInterval(function(){
+        document.write('hi, hello');
+    },1000);
+}
+
+// todo.4 document.write('hello!'); 라는 실행구문을 익명함수 
+// todo. 인자(otherFunction)로 전달하여 10번 실행 하는 함수식을 짜라.
+
+function callFunctionTenTimes(otherFunction){
+    // ? loop
+}
+callFunctionTenTimes(/*익명함수*/);
