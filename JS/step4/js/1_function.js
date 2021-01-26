@@ -171,3 +171,29 @@ function div(numb1,numb2){
     return divResult;
 }
 //* document.write(div(20, 10) + "<br>");
+
+// *case. 7 함수를 변수에 담기
+function hello(name){
+    console.log(name + 'welcome!');
+}
+var func = hello;
+
+// *case. 8 매개변수 값으로 함수사용.
+
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func();
+}
+// *case. 9 button click 시 매개변수 값으로 함수 호출.
+
+function welcome(){
+    alert('welcome!');
+}
+$(document).ready(function(){
+    $('#runEx8').click(welcome);
+});
