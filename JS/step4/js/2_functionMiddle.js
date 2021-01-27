@@ -89,7 +89,7 @@ function innerFunctionTest(){
 
 // *case.4 callBack 함수를 이용한 사칙연산계산기
 
-function calculatorCallBack(op, numb1, numb2, callBack){
+function calculatorCallBack(op, numb1, numb2, callBack){ //? callBack 이라는 매개변수 생성 = 선택한 로직처리함수
     var result = '';
 
     switch(op){
@@ -114,8 +114,7 @@ function calculatorCallBack(op, numb1, numb2, callBack){
             break;
         }
     }
-    return result;
-    
+
     function add(numb1, numb2){
         return numb1 + numb2; 
     }
@@ -128,5 +127,68 @@ function calculatorCallBack(op, numb1, numb2, callBack){
     function div(numb1, numb2){
         return numb1 / numb2;
     }
-    
+    // ? 로직 처리부
+    callBack(result); // //? 기존 계산결과로 리턴 되던 result를 callBack매개변수에 들어오는 처리함수를 호출하여 매개변수에 담음(ex. addPrint(value) = callBack(result)).
+    // ? 로직 출력부
 }
+function addPrint(value){ //? 외부에 있는 add~divPrint 로직처리함수에서  value를 찾아 사용할 수 있음.
+    document.write('두 수의 합은' + value);
+}
+function subPrint(value){
+    document.write('두 수의 차는' + value);
+}
+function mulPrint(value){
+    document.write('두 수의 곱은' + value);
+}
+function divPrint(value){
+    document.write('두 수의 나누기는' + value);
+}
+//! calculatorCallBack("op", numb1, numb2, addPrint); addPrint(처리함수)가 실행되면서 처리부분 실행.
+//? 결과적으로 로직을 구현하는 부분과 처리부분을 나누어 서로를 조립 및 연결 하여 사용할 수있다.
+
+// function sum(numb1,numb2){
+//     return numb1 + numb2;
+// }
+// var result = sum(10,20);
+// document.write('두 수의 합은' = result);
+
+// function sum1(numb1,numb2, callBack){
+//     var temp = numb1 + numb2;
+//     callBack(temp);
+// }
+// function result(value){
+//     document.write('두 수의 합은 =' + value);
+// }
+// sum1(10,20,result);
+
+// *case.5 동기 와 비동기
+// *동기 - 함수 호출 이후 끝날때까지 다음 함수 수행 불가.
+function sync(){
+    alert('Hi');
+    document.write('End Alert');
+}
+// *비동기 - 함수 호출 이후 끝나는 것과 상관없이 다음 함수 수행.
+function async(){
+    var count = 1;
+    setInterval(function(){
+        document.write('2. count = ' + count + '<br>');
+    },3000);
+    document.write('1. interval동작과 상관없이 수행.');
+}
+
+// *case.6 클로저함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count ++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
