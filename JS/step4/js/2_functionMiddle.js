@@ -191,4 +191,15 @@ function createCount(){
     }
     return addCount;
 }
-var counter = createCount();
+var counter = createCount(); //? createCount 함수 호출과 동시 지역변수 count 0이 초기화 및 생성. 이후 내부 addCount함수도 생성, 이후 리턴한 후 함수종료
+
+// console.log("1.count" + counter()); //? counter가 실행되면 addCount() 함수가 실행되어 count 0 -> 1.
+// console.log("2.count" + counter()); //? counter가 실행되면 addCount() 함수가 실행되어 count 1 -> 2.
+// console.log("3.count" + counter()); //? counter가 실행되면 addCount() 함수가 실행되어 count 2 -> 3.
+
+/*
+    ? 왜 그런것인가.
+    createCount 함수가 종료 되더라도 addCount 함수내부에서 count 라는 변수를 사용중인 상태에서 외부로 리턴 되기 때문에 
+    삭제되지 않고 남아있기 때문이다. 이런 현상을 클로저 현상이라고 한다.
+    또한 이런 내부함수를 클로저 함수라고 말한다.
+*/
