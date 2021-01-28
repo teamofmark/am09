@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo - function</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- <script src="js/3_functionTodo_Q.js"></script> -->
+    <script src="js/3_functionTodo_Q.js"></script>
+    <style>
+        *{margin:0; padding:0;}
+        ul{display: flex; flex-flow: row nowrap; border: 1px solid black;}
+
+        li{display: block; flex:auto; text-align: center; line-height: 40px; box-sizing: border-box; border-left: 1px solid black; cursor: pointer;}
+        li:first-child{border-left:none;}
+
+        li.select,
+        li:hover{background-color: black; color: white;}
+
+        [id *= Index]{
+            color: red; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- todo.1 -->
+    <button id="todo1Start">10번만 클릭가능</button>
+    
+    <!-- todo.2-->
+    <h2>첫 번째 탭메뉴</h2>	    
+    <ul class="tab-menu" id="tabMenu1">
+        <li class="menuitem1">google</li>
+        <li class="menuitem2">facebook</li>
+        <li class="menuitem3">pinterest</li>
+        <li class="menuitem4">twitter</li>
+        <li class="menuitem5">airbnb</li>
+        <li class="menuitem6">path</li>
+    </ul>
+
+    <h2>두 번째 탭메뉴</h2>
+    <ul class="tab-menu" id="tabMenu2">
+        <li class="menuitem1">google</li>
+        <li class="menuitem2">facebook</li>
+        <li class="menuitem3">pinterest</li>
+        <li class="menuitem4">twitter</li>
+        <li class="menuitem5">airbnb</li>
+        <li class="menuitem6">path</li>
+    </ul>
+
+    <!-- todo.3 -->
+    <div>
+        현재 선택된 탭메뉴1은 <span id="tabMenu1Index"></span> 입니다. <br>
+        현재 선택된 탭메뉴2는 <span id="tabMenu2Index"></span> 입니다.
+    </div>
+</body>
+</html>
