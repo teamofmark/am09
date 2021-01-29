@@ -3,7 +3,8 @@ $(document).ready(function(){
     moveCircle();
 
     // *exp.2 원움직이기(detail)
-    detailMoveCircle();
+    // detailMoveCircle();
+    detailMoveCircleExt();
 });
 function moveCircle(){
     var $circle = $('.circle');
@@ -36,6 +37,36 @@ function detailMoveCircle(){
             });
         }
     });
+}
+// *exp.2 function Grouping
+function detailMoveCircleExt(){
+    var $circle = null;
 
+    circleInit();
+    circleEvent();
+}
+function circleInit(){
+    $circle = $('.circleDetail');
+}
+function circleEvent(){
+    $('#btnDetailMove').click(function(){
+        var xpos = $('#xpos').val();
+        var ypos = $('#ypos').val();
+    
+        xpos = parseInt(xpos);
+        ypos = parseInt(ypos);
+        
+        circleMovCommand(xpos, ypos);
+    });
 
+}
+function circleMovCommand(xpos, ypos){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert('잘못된 입력값입니다.');
+    }else{
+        $($circle).css({
+            'left': xpos,
+            'top' : ypos
+        });
+    }
 }
