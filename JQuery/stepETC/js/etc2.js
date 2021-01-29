@@ -5,6 +5,9 @@ $(document).ready(function(){
     // *exp.2 원움직이기(detail)
     // detailMoveCircle();
     detailMoveCircleExt();
+
+    // *exp.3 방향키조작으로 움직이는 원
+    keyControl();
 });
 function moveCircle(){
     var $circle = $('.circle');
@@ -69,4 +72,16 @@ function circleMovCommand(xpos, ypos){
             'top' : ypos
         });
     }
+}
+
+// *exp.3 keyControl
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXPos = 0;
+    var currentYPos = 0;
+
+    $(document).keydown(function(e){
+        console.log('입력한 키코드' + e.keyCode);
+    });
 }
