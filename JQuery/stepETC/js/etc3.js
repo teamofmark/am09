@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    addRemove();
+    // addRemove();
+    toggle();
 });
 
 function addRemove(){
@@ -14,5 +15,11 @@ function addRemove(){
         }else{
             $checkTarget.removeClass("fas fa-check");
         }
+    });
+}
+function toggle(){
+    var $checkTarget = $(".ico.check");
+    $(".label").click(function(){
+        $checkTarget.toggleClass("fas fa-check");
     });
 }
