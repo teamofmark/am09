@@ -83,5 +83,34 @@ function keyControl(){
 
     $(document).keydown(function(e){
         console.log('입력한 키코드' + e.keyCode);
+        // ? 사용할 key. w(87),a(65),s(83),d(68);
+        switch(e.keyCode){
+            case 87:
+                currentYPos -= range;
+            break;
+            case 83:
+                currentYPos += range;
+            break;
+            case 65:
+                currentXPos -= range;
+            break;
+            case 68:
+                currentXPos += range;
+            break;
+        } 
+        if(currentXPos < 0){
+            currentXPos = 0;
+        }
+        if(currentXPos > 380){
+            currentXPos = 380;
+        }
+        if(currentYPos < 0){
+            currentYPos = 0;
+        }
+        if(currentYPos > 380){
+            currentYPos = 380;
+        }
+        $circle.css('left',currentXPos);
+        $circle.css('top',currentYPos);
     });
 }
