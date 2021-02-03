@@ -30,9 +30,11 @@ function initEvent(){
 function gameStart(){
     playState = true;
     // ? 1. playState 가 true일때 게임이 시작.
-
+    
     if(playState == true){
-        setInterval(moveCircle,500);
+        gameEnd();
+
+        timerID = setInterval(moveCircle,500);
     }
 }
 
@@ -44,5 +46,19 @@ function moveCircle(){
 }
 
 function scoreCount(){
-
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
+}
+function gameEnd(){
+    // ?10초후 종료 logic
+    // ? 특정시간 이후 한번만 실행하는 함수.
+    setTimeout(function(){
+        playState = false;
+        clearInterval(timerID);
+        count = 0;
+        $score.text(count);
+        alert('게임종료');
+    },10000);
 }
