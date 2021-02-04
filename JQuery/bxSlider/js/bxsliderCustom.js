@@ -9,12 +9,22 @@ $(document).ready(function(){
         adaptiveHeight: true,
         adaptiveHeightSpeed: 500,
         preventDefaultSwipeY: false,
+        
         pagerCustom: '.newPagerCustom',
+
         controls: true,
         prevSelector : '.btn_Prev',
         nextSelector : '.btn_Next',
-        // prevText: '뒤로',
-        // nextText: '앞으로'
+        prevText: '뒤로',
+        nextText: '앞으로',
+
+        auto : true,
+        autoControls: true,
+        autoControlsCombine: true,
+        autoControlsSelector: '.newAutoControl',
+        startText: '시작',
+        stopText: '중지',
+        // keyboardEnabled: true
         // pagerSelector: '.newPager'
         // pagerType: 'short',
         // pagerShortSeparator: '-'
