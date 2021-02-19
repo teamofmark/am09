@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Tag</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML4 Input</legend>
+            <ul>
+                <li>
+                    <input type="text" title="텍스트입력">
+                    <!-- 입력 tag type:text 는 text를 삽입할 때 사용. -->
+                </li>
+                <li>
+                    <input type="password" title="비밀번호입력">
+                    <!-- 입력 tag type:password는 비밀번호를 삽입할 때 사용. -->
+                </li>
+                <li>
+                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <label for="btn_radio1">항목1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">항목2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">항목3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">항목4</label>
+                </li>
+                <!--
+                    입력 태그 타입 radio는 라디오 버튼이며, name 을 같은 이름으로 여러 항목을 지정시 그룹화 된다. 또한 label을 이용
+                    하여 해당 항목과 버튼을 연결해줄 필요가 있다.
+                    value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.
+                    checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다.
+                    그리고 cheackbox와는 달리 하나의 항목만 선택 가능하다.
+                -->
+                <li>
+                    <input type="checkbox" id="btn_chk1">
+                    <label for="btn_chk1">check 1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check 2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check 3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check 4</label>
+                </li>
+                <!--
+                    1. 입력태그타입 checkbox는 다중 선택을 지원 하는 input이며, label을 이용하여 해당 항목과 연결
+                    해야 한다.
+                    2. value 값은 기존 input 과 동일
+                    3. checked 옵션 역시 radio input 과 동일
+                -->
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
