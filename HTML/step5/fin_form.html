@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page form</title>
+    <style>
+
+        table{
+            width: 100%;
+        }
+        table tr > *{
+            text-align: left;
+        }
+        input[type='range']{
+            width: 330px;
+        }
+        datalist{
+            width: 330px;
+            display: block !important;
+        }
+        #tickmarks option{
+            display: inline; margin-left: 10px; font-size: 12px;
+        }
+        #tickmarks option:first-of-type{
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <table>
+                <caption>사용자 정보</caption>
+                <tr>
+                    <th>
+                        <label for="userID">아이디</label>
+                    </th>
+                    <td>
+                        <input type="text" id="userID">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="userPW">비밀번호</label>
+                    </th>
+                    <td>
+                        <input type="password" id="userPW">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="checkPW">비밀번호확인</label>
+                    </th>
+                    <td>
+                        <input type="password" id="checkPW">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="userName">이름</label>
+                    </th>
+                    <td>
+                        <input type="text" id="userName">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="userMail">이메일</label>
+                    </th>
+                    <td>
+                        <input type="email" id="userMail">
+                        <span>@</span>
+                        <select id="userDomain">
+                            <option value="@naver.com">naver.com</option>
+                            <option value="@gmail.com">gmail.com</option>
+                            <option value="@daum.net">daum.net</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
