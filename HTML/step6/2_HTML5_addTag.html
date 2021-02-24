@@ -43,5 +43,53 @@
             만일 우편번호등 만 기재해야 한다면, p를 사용하면 됨
             -->
     </address>
+    
+    <!-- IE 지원불가 -->
+    <details>
+        <summary>Copyright 2021</summary>
+        <p>
+             - by Refsnes Data. All rights Reserved.
+        </p>
+        <p>
+            All content and graphics on this web size are the property of the company Refsnes Data.
+        </p>
+    </details>
+    <!--
+        어떠한 한 키워드(summary)의 요약 및 요소들을 넣어두고
+        event(클릭,오버)로  show / hide 기능이 작동되게 함.
+    -->
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <main>
+        <h1>Web Browsers</h1>
+        <p>
+            Google Chrome, FireFox and Internet Explorer are the most used browsers today.
+        </p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open-source web Browser developed by Google,
+                released in 2008.
+            </p>
+        </article>
+    </main>
+      <!--현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
+        문서내 mainpage에 해당하는 섹션부나 페이지를 감쌀때 사용 한다.
+        한개 문서에서 1번만 사용할 수 있다. 또한 구조상 최상위에 존재 해야 한다.-->
+    
+    <!-- IE, safari 지원불가 -->
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
 </body>
 </html>
