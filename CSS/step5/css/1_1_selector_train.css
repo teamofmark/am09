@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+article{
+    max-width: 1000px; margin: 0 auto;
+    /* overflow: hidden; */
+}
+article:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+article:not(:last-of-type){
+    margin-bottom: 30px;
+}
+article > *:first-child{
+    float: left; width: 150px; line-height: 110px;
+    font-size: 100px; background-color: gray; color: white;
+    text-align: right; margin: 0 20px 10px 0;
+}
+article > p{
+    font-size: 14px;
+}
+article > p > *:first-child{
+    color: #09f;
+}
+article > p > mark{
+    background-color: transparent;
+}
+article > p > *:first-child:not(mark){
+    text-decoration: underline;
+}

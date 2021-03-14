@@ -1,0 +1,27 @@
+ul{
+	list-style-image:url(../images/bul_li.gif);
+	list-style-position:outside; width:110px;
+}
+/*불릿을 직접 제작하여 리스트 불릿으로 활용 할 수 있고, 
+	list-style-position을 이용해 불릿을 문단 내로 넣을것인지 
+	(inside) 뺄 것인지 (outside) 설정 할 수 있다.*/
+
+li.none{list-style:none;}
+
+ul li.circle{list-style:circle;}
+ul li.disc{list-style:disc;}
+ul li.square{list-style:square;}
+
+ol li.decimal{list-style:decimal;}
+ol li.lower-alpha{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+}

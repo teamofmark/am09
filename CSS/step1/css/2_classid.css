@@ -1,0 +1,40 @@
+body{
+    margin: 0; padding: 0;
+}
+
+.classEx1{
+    color: red;
+}
+.btn{
+    padding: 10px 30px;
+    border-width: 1px;
+    font-size: 12px;
+}
+.btn.create{
+    background-color: white; color: black;
+    border-style: solid; border-color: black;
+}
+.btn.modify{
+    background-color: black; color: #ccc;
+    border-color: yellow; border-style: dashed;
+}
+.btn.delete{
+    background-color: rgb(90,0,0);
+    color: red; border-style: solid;
+    border-color: red;
+}
+.btn.confirm{
+    background-color: midnightblue; color: white;
+    border-style: solid; border-color: blue;
+}
+.btn.cancel{
+    color: gray; border-color: gray; border-style: solid;
+}
+#userName{
+    border: 1px solid #eaeaea;
+    line-height: 21px; color: green;
+    font-size: 12px; padding: 5px 15px;
+}
+/* 
+    [id*='user']
+*/

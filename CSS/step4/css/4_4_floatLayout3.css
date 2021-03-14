@@ -1,0 +1,60 @@
+body{
+    margin: 0 auto; padding: 0; width: 960px;
+}
+header{
+    background-color: #6cc; position: relative;
+}
+header h1{
+    width: 250px; margin: 0 auto; font-size: 16px;
+    color: springgreen; padding: 10px 0;
+    background-color: #66c; text-align: center;
+}
+header div{
+    position: absolute; right: 0; top: 27px;
+}
+header nav{
+    background-color: #dac;
+}
+header nav ul{
+    padding: 10px 0; text-align: center; margin: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li:not(:first-child){
+    margin-left: 50px;
+}
+header nav ul li a{
+    text-decoration: none; color: slateblue;
+}
+header nav ul li a:hover{
+    color: darkred;
+}
+
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap .imgBox{
+    margin-bottom: 30px;
+}
+.wrap .imgBox img{
+    width: 100%;
+}
+.wrap article{
+    width: 30%; float: left; border: 1px solid #66c;
+    box-sizing: border-box;
+}
+.wrap article.marginBox{
+    margin-left: 5%;
+}
+.wrap article h2{
+    margin: 0; font-size: 16px; font-weight: normal;
+}
+.wrap article ul{
+    margin: 0; padding: 0; list-style: none;
+}
+
+footer{
+    background-color: #069; color: #fff; padding: 10px 0;
+    text-align: center;
+}
