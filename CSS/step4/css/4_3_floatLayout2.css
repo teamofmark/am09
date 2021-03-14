@@ -1,0 +1,59 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto;
+}
+/* .wrap header{
+    background-color: #ff6a00;
+} */
+.wrap header:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap header h1,
+.wrap header nav{
+    float: left;
+}
+.wrap header h1{
+    font-size: 20px; color: white; text-align: center;
+    background-color: red; line-height: 55px;
+    width: 130px;
+}
+.wrap header nav{
+    background-color: blue; width: 830px;
+}
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    display: inline-block;
+    /* ? inline 속성 + block 속성 = inline = text-align의 영향을받음. */
+}
+.wrap header nav ul li a{
+    color: white; display: block; line-height: 55px;
+}
+section{
+    /* background-color: slateblue; */
+    margin-bottom: 300px;
+}
+section:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+section h2{
+    background-color: #0cf;
+}
+section article{
+    width: 33.33%; float: left;
+    /* background-color: white; */
+}
+section article h3{
+    color: white; background-color: black;
+}
+section article ul li{
+    display: block; font-size: 16px; line-height: 35px;
+}
+footer{
+    text-align: center; background-color: #4800ff;
+    color: white; line-height: 55px;
+}

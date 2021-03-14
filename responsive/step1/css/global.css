@@ -1,0 +1,62 @@
+@media screen and (max-width: 767px) and (orientation: landscape){
+    html{
+        background-color: orange; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }
+    p{
+        font-size: 0.75rem; text-align: center; line-height: 1rem;
+    }
+}
+/* mobile Device - 사용자 해상도가 768px 미만일 때 이 코드가 실행됨.*/
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    html{
+        background-color: red; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }
+    p{
+        font-size: 0.75rem; text-align: center; line-height: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+	html{
+        background-color:greenyellow; color:white; font-weight:bold;
+    }	
+    h1{
+        font-size:2rem; text-align:right; line-height:3rem;
+    }
+    p{
+        font-size:1rem; line-height:1.5rem;
+    }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    html{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem;
+    }
+} 
+/* Tablet Device - 사용자 해상도가 768px 이상 1025px 미만 일 때 이 코드가 실행됨.  태블릿 코드를 작성한다.*/
+
+@media screen and (min-width: 1025px){
+    html{
+        background-color: blue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/*Desktop Device - 사용자 해상도가 1025 이상일때 이 코드가 실행됨. pc 코드를 작성한다.*/
