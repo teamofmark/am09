@@ -1,0 +1,13 @@
+body{
+    margin: 0; padding: 0;
+}
+.classEx1{
+    color: red;
+}
+#userName{
+    background-color: yellow; font-size: 12px;
+    padding: 5px; line-height: 21px; margin-bottom: 50px;
+}
+.btn{
+    padding: 10px 30px; border-width: 1px; font-size: 12px;
+}
