@@ -15,3 +15,24 @@ h2{
 h3{
     font-family: 'Nanum Gothic'; font-weight: 400;
 }
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: -1px;
+}
+/*letter-spacing : 자간*/
+p.word{
+    word-spacing: 3px;
+}
+/*word-spacing : 단어간격(space bar 기준)*/
+p[class*='w_']{
+    border: 1px solid black;
+}
+p.w_normal{
+    width: 150px; line-height: 21px; white-space: normal;
+}
+p.w_nowrap{
+    width: 150px; line-height: 21px;
+    white-space: nowrap; text-overflow: ellipsis; overflow-x: hidden;
+}
