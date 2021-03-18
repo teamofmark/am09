@@ -1,0 +1,16 @@
+html, body{
+    height: 100%;
+}
+body{
+    background: url('../images/example.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+body > div{
+    background-color: white; margin-bottom: 15%; padding: 5%;
+}
+body > div h2{
+    font-size: 38px;
+    margin:0 0 20px 0;
+}
