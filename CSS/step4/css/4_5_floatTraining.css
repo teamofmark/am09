@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+ul{
+    margin: 0; padding: 0;
+}
+ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li{
+    display: block; width: 33.33%; float: left; border: 1px solid red;
+    box-sizing: border-box;
+}
+ul li figure{
+    margin: 0;
+}
+ul li figure img,
+ul li figure figcaption{
+    width: 49%; float: left; margin-bottom: 10px;
+}
+ul li figure img{
+    margin-right: 2%;
+}
+ul li figure figcaption{
+    border-bottom: 1px solid #555;
+}
+ul li figure figcaption dl dt{
+    font-size: 24px; margin-bottom: 35px;
+}
+ul li figure figcaption dl dd{
+    font-size: 14px; line-height: 24px;
+}
