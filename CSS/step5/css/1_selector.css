@@ -16,3 +16,32 @@
 .classSelector p.f_color{color:#9cf;}
 
 /*CLASS 선택자 사용법 + 다중 클래스 지정 */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: #9cf;
+}
+.attrSelector fieldset legend{
+    border: 1px solid #555; background-color: #9cf;
+}
+.attrSelector ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector ul li{
+    color: #444; font-size: 14px; line-height: 30px;
+}
+.attrSelector ul li label{
+    width: 110px; display: inline-block;
+}
+.attrSelector ul li input,
+.attrSelector ul li label{
+    vertical-align: middle;
+}
+.attrSelector ul li input[type='text']{
+    background-color: #966; border: 1px solid #c00; color: white;
+}
+.attrSelector ul li input[type='password']{
+    background-color: #fc0; border: 1px dotted #ff0; color: black;
+}
+.attrSelector ul li input[type='radio']{
+    background-color: black; border: yellow; width: 25px; height: 25px;
+}
