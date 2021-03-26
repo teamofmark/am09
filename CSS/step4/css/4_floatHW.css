@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+ul{
+    margin: 0; padding: 0; text-align: center;
+}
+ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li{
+    float: left; display: block; line-height: 55px;
+}
+ul.way1 li{
+    width: 100%; background-color: red;
+}
+ul.way2 li{
+    width: 50%; background-color: blue;
+}
+ul.way3 li{
+    width: 33.33%; background-color: green;
+}
+ul.way4 li{
+    width: 25%; background-color: yellow;
+}
+ul.way5 li{
+    width: 20%; background-color: pink;
+}
