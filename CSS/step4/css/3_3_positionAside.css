@@ -1,0 +1,22 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrap{
+    height: 100%;
+}
+.wrap aside{
+    height: 100%; width: 20%; background-color: #09f; position: fixed;
+}
+.wrap aside ul{
+    padding:0; margin: 0;
+}
+.wrap .contentBox{
+    background-color: #f60; padding: 0 0 0 20%;
+}
+.wrap .contentBox p{
+    height: 2000px; padding: 0; margin: 0; background-color: yellow;
+    font-size: 50px;
+}
