@@ -66,3 +66,63 @@
     width: 300px; height: 300px; border: 10px solid #00f;
 }
 /*문자열 선택자는 해당 문자열 유형으로 분리 적용 할 수 있다.(계륵)*/
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/*
+    동위 선택자에서 A+B는 A 바로뒤에 위치하는 B를 지목하고,
+    A~B는 A뒤에있는 B모두를 선택한다.
+*/
+.activeSelector h1:hover{
+    font-size: 35px; color: #0f0; cursor: pointer;
+}
+
+/* 
+todo. tag:link{color:#33F;} 평시 상태 
+todo. tag:visited{color:#C00;} 방문한 적이 있는 상태 
+todo. tag:hover{color:#3CF; text-decoration:underline;} 마우스 오버 상태 
+todo. tag:active{color:#F00;} 마우스일경우 버튼을 누르고 있는(활성화된) 상태 
+*/
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; height: 20px; overflow-y: hidden;
+    transition-duration: 0.75s;
+    -ms-transition-duration:0.75s;
+    -webkit-transition-duration:0.75s;
+    -moz-transition-duration:0.75s;
+    -o-transition-duration:0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='text']:disabled{
+    background-color: deeppink; color: black;
+}
+.normalSelector ul{
+    margin: 30px 0; padding: 0; list-style: none;
+}
+.normalSelector ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.normalSelector ul li{
+    width: 14.28%; box-sizing: border-box; margin: 0;
+    padding: 15px;  float: left; text-align: center;
+}
+.normalSelector ul li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.normalSelector ul li:nth-child(2n){
+    background-color:fuchsia;
+}
+.normalSelector ul li:first-child{
+    border-radius: 10px 0 0 10px;
+}
+.normalSelector ul li:last-child{
+    border-radius: 0 10px 10px 0;
+}
