@@ -45,3 +45,24 @@
 .attrSelector ul li input[type='radio']{
     background-color: black; border: yellow; width: 25px; height: 25px;
 }
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906;
+}
+/*
+    구조적으로 다른 동일 태그를 제외하고, 직계 자손 객체 태그에 동일한 스타일을
+    적용 할 수 있다.
+*/
+.stringAttrSelector img[src$=png]{
+    width: 100px; height: 100px; border: 3px solid #f00;
+}
+.stringAttrSelector img[src$=jpg]{
+    width: 200px; height: 200px; border: 5px solid #0f0;
+}
+.stringAttrSelector img[src$=gif]{
+    width: 300px; height: 300px; border: 10px solid #00f;
+}
+/*문자열 선택자는 해당 문자열 유형으로 분리 적용 할 수 있다.(계륵)*/
