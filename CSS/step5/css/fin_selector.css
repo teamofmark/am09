@@ -40,7 +40,7 @@ h2 strong:nth-of-type(2){
     text-transform: uppercase;
 }
 ul{
-    margin: 0; padding: 0; list-style: none;
+    margin: 0 0 30px 0; padding: 0; list-style: none;
 }
 ul li{
     position: relative;
@@ -71,4 +71,32 @@ ul li span:nth-child(2){
 ul li mark{
     position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
     background-color: #900; color: white;
+}
+body > div{
+    position: relative; width: 400px; margin: 0 auto;
+}
+body > div > a{
+    position: absolute; display: block;
+}
+body > div > a:first-of-type{
+    left: 0; top: 0;
+}
+body > div > a:last-of-type{
+    right: 0; top: 0;
+}
+body > div > ol{
+    display: block; padding: 0 25px; margin: 0; list-style: none;
+    text-align: center; line-height: 30px;
+}
+body > div > ol li{
+    display: inline-block;
+}
+body > div > ol li:not(:first-child){
+    margin-left: 10px;
+}
+body > div a{
+    text-decoration: none; font-size: 14px; padding: 5px; color: #00556b;
+}
+body > div a:hover{
+    color: red;
 }
