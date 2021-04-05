@@ -9,6 +9,7 @@ body{
     transition-duration: 1s, 5s;
     transition-property: background-color, width;
 }
+/*background는 1초동안 변형시키고, width는 5초동안 변형 시켜라*/
 .property:hover span:nth-child(1){background-color: #f00; width: 100px;}
 .property:hover span:nth-child(2){background-color: #0f0; width: 200px;}
 .property:hover span:nth-child(3){background-color: #00f; width: 300px;}
