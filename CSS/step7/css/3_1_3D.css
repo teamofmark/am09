@@ -17,7 +17,7 @@ div.rotater span:nth-of-type(2){
     background-color: green; animation-name: verti;
 }
 div.rotater span:nth-of-type(3){
-    background-color: blue; animation-name:;
+    background-color: blue; animation-name:depth;
 }
 div.rotater span:nth-of-type(4){
     background-color: yellow; animation-name:rotate3D;
@@ -37,7 +37,12 @@ div.rotater span:nth-of-type(4){
     }
 }
 @keyframes depth {
-    
+    from{
+        transform: rotateZ(0deg)
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
 }
 @keyframes rotate3D{
     from{
