@@ -10,15 +10,30 @@ div{
 }
 @keyframes rotate3D{
     from{
-        transform: rotate3d(0,0,0,0deg);
+        transform: rotateX(90deg) rotateY(45deg);
     }to{
-        transform: rotate3d(1,1,1,360deg);
+        transform: rotateX(450deg) rotateY(45deg);
     }
 }
 div span{
     width: 200px; height: 100px; position: absolute; left: 0; top: 0; opacity: 0.3;
 }
-div span:nth-of-type(1){background-color: red;}
-div span:nth-of-type(2){background-color: green;}
-div span:nth-of-type(3){background-color: blue;}
-div span:nth-of-type(4){background-color: yellow;}
+div span:nth-of-type(1){
+    background-color: red;
+    transform: translate3d(0,0,100px);
+}
+div span:nth-of-type(2){
+    background-color: green;
+    /* transform: rotateY(-90deg); transform-origin: right top; */
+    transform: rotateY(90deg) translate3d(0,0,100px);
+}
+div span:nth-of-type(3){
+    background-color: blue;
+    /* transform: rotateY(90deg); transform-origin: left top; */
+    transform: rotateY(180deg) translate3d(0,0,100px);
+}
+div span:nth-of-type(4){
+    background-color: yellow;
+    /* transform: translate3d(0,0,-200px); */
+    transform: rotateY(270deg) translate3d(0,0,100px);
+}
