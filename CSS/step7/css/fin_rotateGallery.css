@@ -1,0 +1,28 @@
+html, body{
+    height: 100%;
+}
+body{
+    margin: 0 auto; width: 1000px; background-color: black;
+}
+img{
+    border: none;
+}
+
+section{
+    position: relative; width: 100%; height: 100%;
+    perspective: 1500px;
+}
+/* 
+    ? section
+    ! perspective를 주고, .movement를 absolute로 띄우기 위함.
+*/
+
+section .moveMent{
+    position: absolute; left: 50%; top: 20%; transform-style: preserve-3d;
+    animation-name: rotater; animation-duration: 15s; animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* 
+    ?movement
+    ! 목마의 행, 열이 작동하는 박스. (통돌이)
+*/
