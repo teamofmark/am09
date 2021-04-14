@@ -26,3 +26,44 @@ section .moveMent{
     ?movement
     ! 목마의 행, 열이 작동하는 박스. (통돌이)
 */
+@keyframes rotater{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+section .moveMent .pic{
+    position: absolute; left: 0; top: 0; backface-visibility: hidden;
+    margin-left: -107px;
+}
+section .moveMent .pic:nth-of-type(1){transform: rotateY(0deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(2){transform: rotateY(36deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(3){transform: rotateY(72deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(4){transform: rotateY(108deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(5){transform: rotateY(144deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(6){transform: rotateY(180deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(7){transform: rotateY(216deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(8){transform: rotateY(252deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(9){transform: rotateY(288deg) translateZ(-370px);}
+section .moveMent .pic:nth-of-type(10){transform: rotateY(324deg) translateZ(-370px);}
+
+/*
+    총 10열이 움직여야 함으로 초기값을 0' 부터 36' 씩 증산하여 계산한다. translateZ로 깊이를 설정 하는데 perspective가 활성화 되어야 유관 식별이 가능하다.
+    (translateZ- 안으로 들어간 목마, translateZ+ 밖으로 나온 목마)
+*/
+section .moveMent .pic .cell{
+    width: 215px; height: 121px; margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+section .moveMent .pic .cell:hover{
+    transform: scale(1.2) translateZ(0px);
+}
+section .moveMent .pic .cell img{
+    width: 100%; opacity: 0.5;
+}
+section .moveMent .pic .cell:hover img{
+    opacity: 1;
+}
+
+/*cell에 오버가 되었을때, cell의 스케일을 1.2배 하고, 깊이는 0px로 하여 튀어나오게 만든다.*/
