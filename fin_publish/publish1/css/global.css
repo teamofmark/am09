@@ -1,12 +1,23 @@
 header > div nav ul li a{
     font-family: 'Roboto';
 }
+header > div > ul li h2{
+    font-family: 'Playfair Display';
+}
 a{
     text-decoration: none;
+}
+.btn_more{
+    text-align: center; color: #00e0d0; border: 1px solid #00e0d0;
+    display: block; font-size: 16px; font-family: 'Hammersmith One';
+    font-weight: 400;
 }
 /* All Using */
 
 @media screen and (min-width: 1280px){
+    .btn_more{
+        padding: 15px 1.5%;
+    }
     header{
         padding: 15px 0 70px;
         background: url('../images/bg_01.png') no-repeat left top;
@@ -50,4 +61,32 @@ a{
     header > div > ul li{
         padding-top: 165px; display: block;
     }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900;
+        text-align: center; padding-bottom: 22px; margin-bottom: 25px;
+        background: url('../images/bd_01.png') no-repeat center bottom;
+    }
+    header > div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; line-height: 24px;
+        max-width: 770px; margin: 0 auto; text-align: center;
+        margin-bottom: 50px;
+    }
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; text-indent: -9999px; width: 10px; height: 10px;
+        border-radius: 5px; border: 1px solid rgba(255,255,255,0.8);
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* ? header Fin */
 }
