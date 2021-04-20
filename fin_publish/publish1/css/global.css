@@ -2,11 +2,13 @@ header > div nav ul li a,
 header > div > ul li p,
 footer > div *,
 #about figcaption p,
-section.videoArea h2{
+section.videoArea h2,
+section.expArea ul li > *{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
-#about figcaption h2{
+#about figcaption h2,
+section.expArea > *:not(ul){
     font-family: 'Playfair Display';
 }
 a{
@@ -17,6 +19,10 @@ a{
     display: block; font-size: 16px; font-family: 'Hammersmith One';
     font-weight: 400;
 }
+section[class *= Area] > hr{
+    min-width: 50px; width: 3%; border-top: 2px solid rgba(65,61,75,0.3);
+    margin: 0 auto 45px;
+}
 /* All Using */
 
 @media screen and (min-width: 1280px){
@@ -24,6 +30,7 @@ a{
         padding: 15px 1.5%;
     }
     #about,
+    section.expArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
