@@ -58,6 +58,13 @@
         float: left; width: 33.33%; display: block;
         padding: 120px 3.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    section.expArea ul li:nth-child(n):nth-child(-n+3){
+        border-top: none;
+    }
+    section.expArea ul li:not(:nth-child(3n)){
+        border-right: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:nth-child(1){
         background-image: url('../images/ico_01.png');
@@ -85,5 +92,53 @@
     section.expArea ul li p{
         font-weight: 300; font-size: 14px; color: rgba(51,51,51,0.75);
         line-height: 22px;
+    }
+    /* *expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_03.png') no-repeat left top;
+        background-size: cover; text-align: center; color: white;
+        padding: 70px 0;
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    }
+    section.teamArea p{
+        font-size: 14px; font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255,255,255,0.2);
+    }
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.teamArea ul li{
+        float: left; width: 23.5%; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        padding-top: 230px;
+        background: url('https://via.placeholder.com/220x230') no-repeat center top;
+        background-size: contain;
+    }
+    section.teamArea ul li figure figcaption{
+        padding: 20px 0; border: 1px solid rgba(255,255,255,0.5);
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
+    }
+    section.teamArea ul + p{
+        margin-bottom: 25px; font-weight: 300;
+    }
+    section.teamArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
     }
 }
