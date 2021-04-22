@@ -7,7 +7,9 @@ section.expArea ul li > *,
 section.teamArea ul li figure figcaption dl,
 section.teamArea ul + p,
 section.worksArea h2 a,
-section.talkArea p > *{
+section.talkArea p > *,
+section.contactArea form fieldset input:not([type='submit']),
+section.contactArea form fieldset textarea{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
@@ -16,7 +18,9 @@ section.expArea > *:not(ul),
 section.teamArea h2,
 section.teamArea > p:not(:last-of-type),
 section.worksArea h2,
-section.talkArea p{
+section.talkArea p,
+section.contactArea form fieldset legend,
+section.contactArea div h3{
     font-family: 'Playfair Display';
 }
 a{
@@ -39,6 +43,7 @@ section[class *= Area] > hr{
     }
     #about,
     section.expArea,
+    section.contactArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
