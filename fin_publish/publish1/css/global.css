@@ -168,21 +168,22 @@ section[class *= Area] > hr{
     footer > div div:nth-of-type(3) input[type='email']{
         font-size: 14px; line-height: 43px; border: 1px solid rgba(255,255,255,0.5);
         color: rgba(255,255,255,0.5); background-color: transparent;
-        width: 70%; padding: 0 15px; display: block; box-sizing: border-box;
+        width: 35%; padding: 0 15px; display: block; box-sizing: border-box;
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: 25%; margin-left: 5%; text-indent: -9999px; border: none;
+        width: 10%; /*margin-left: 2%;*/ text-indent: -9999px; border: none;
         line-height: 43px;
         background: url('../images/btn_send.png') no-repeat center rgba(255,255,255,0.5);
     }
     footer > div div:nth-of-type(3) ul{
-        float: left;
+        float: left; width: 50%; margin-left: 5%;
+        text-align: center;
     }
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: 5px;
+        margin-left: 5.8%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; background-repeat: no-repeat; background-size: contain;
