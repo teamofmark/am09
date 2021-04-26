@@ -35,6 +35,9 @@ section[class *= Area] > hr{
     min-width: 50px; width: 3%; border-top: 2px solid rgba(65,61,75,0.3);
     margin: 0 auto 45px;
 }
+header > div nav input[type='checkbox'].mui{
+    display: none;
+}
 /* All Using */
 
 @media screen and (max-width: 767px){
@@ -53,11 +56,10 @@ section[class *= Area] > hr{
         background-size: cover;
     }
     header > div{
-        max-width: 600px; margin: 0 auto; position: relative;
-        padding: 0 3%;
+        max-width: 600px; margin: 0 auto; padding: 0 3%;
     }
     header > div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -66,15 +68,26 @@ section[class *= Area] > hr{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; width: 100%;
-        padding-left: 130px; box-sizing: border-box;
-        text-align: right;
+        width: 50%; margin-left: 15%; float: right; text-align: right;
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; cursor: pointer;
+        display: block; margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav ul{
+        height: 0; overflow-y: hidden; transition: height 1s ease-in-out;
+    }
+    header > div label.mui + input[type='checkbox']#mnav:checked + ul{
+        height: 350px;
     }
     header > div nav ul li{
-        display: inline-block;
-    }
-    header > div nav ul li:not(:first-child){
-        margin-left: 2.65%;
+        display: block;
     }
     header > div nav ul li a{
         font-size: 13px; color: white; font-weight: 900;
@@ -86,10 +99,10 @@ section[class *= Area] > hr{
     }
     /* ? header Nav Fin */
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900;
@@ -224,6 +237,9 @@ section[class *= Area] > hr{
 /* ? mobile */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 15px 1.5%;
     }
@@ -409,6 +425,9 @@ section[class *= Area] > hr{
 /* ? tablet */
 
 @media screen and (min-width: 1280px){
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 15px 1.5%;
     }
