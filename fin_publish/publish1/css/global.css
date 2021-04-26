@@ -47,6 +47,7 @@ header > div nav input[type='checkbox'].mui{
     #about,
     section.expArea,
     section.contactArea,
+    section.teamArea ul,
     footer > div{
         max-width: 600px; margin: 0 auto; padding: 70px 3%;
     }

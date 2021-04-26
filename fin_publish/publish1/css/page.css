@@ -47,20 +47,11 @@
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75);
         margin-bottom: 15px;
     }
-    section.expArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.expArea ul li{
-        float: left; width: 33.33%; display: block;
+        display: block;
         padding: 120px 2.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
-        border-top: 1px solid rgba(0,0,0,0.2);
-    }
-    section.expArea ul li:nth-child(n):nth-child(-n+3){
-        border-top: none;
-    }
-    section.expArea ul li:not(:nth-child(3n)){
-        border-right: 1px solid rgba(0,0,0,0.2);
+        border-bottom: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:nth-child(1){
         background-image: url('../images/ico_01.png');
@@ -98,7 +89,7 @@
     section.teamArea{
         background: url('../images/bg_03.png') no-repeat left top;
         background-size: cover; text-align: center; color: white;
-        padding: 70px 0;
+        padding: 70px 3%;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -109,17 +100,11 @@
     section.teamArea > hr{
         border-color: rgba(255,255,255,0.2);
     }
-    section.teamArea ul{
-        max-width: 728px; margin: 0 auto 70px;
-    }
-    section.teamArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.teamArea ul li{
-        float: left; width: 23.5%; display: block;
+        display: block;
     }
-    section.teamArea ul li:not(:first-child){
-        margin-left: 2%;
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
         padding-top: 179px;
@@ -148,20 +133,21 @@
     }
     section.worksArea h2{
         max-width: 728px; margin: 0 auto 70px; position: relative;
-        font-size: 22px; font-weight: 700; color: #413d4b;
+        font-size: 18px; font-weight: 700; color: #413d4b;
+        padding-left: 3%; box-sizing: border-box;
     }
     section.worksArea h2 a{
-        position: absolute; right: 0; top: 5px;
-        font-size: 14px; font-weight: 300; color: #413d4b;
+        position: absolute; right: 3%; top: 5px;
+        font-size: 12px; font-weight: 300; color: #413d4b;
     }
     section.worksArea ul{
         margin-bottom: 70px;
     }
-    section.worksArea ul:after{
-        content: ''; display: block; visibility: hidden; clear: both;
-    }
     section.worksArea ul li{
-        width: 16.66%; float: left; display: block; line-height: 0;
+       display: block; line-height: 0;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 25px;
     }
     section.worksArea ul li img{
         width: 100%;
