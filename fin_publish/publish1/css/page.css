@@ -165,7 +165,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 728px; margin: 0 auto 45px; padding-top: 70px;
+        max-width: 600px; margin: 0 auto 45px; padding: 70px 3% 0;
         background: url('../images/quote.png') no-repeat center top;
         color: white; font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -179,16 +179,16 @@
         font-size: 13px; font-weight: 300;
     }
     section.talkArea div{
-        max-width: 728px; margin: 0 auto; text-align: center;
+        max-width: 600px; margin: 0 auto; text-align: center;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
     }
     section.talkArea div > a{
-        font-size: 35px; color: rgba(255,255,255,0.5); 
+        font-size: 22px; color: rgba(255,255,255,0.5); 
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: 80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -209,7 +209,7 @@
         padding: 0;
     }
     section.talkArea div ul li:not(.active) a img{
-        width: 50%; transition: width 0.35s ease-in-out;
+        width: 70%; transition: width 0.35s ease-in-out;
     }
     section.talkArea div ul li:not(.active):hover a img,
     section.talkArea div ul li.active a img{
