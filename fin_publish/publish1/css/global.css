@@ -137,16 +137,11 @@ header > div nav input[type='checkbox'].mui{
         background: url('../images/bg_05.png') no-repeat left top;
         background-size: cover;
     }
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
+    }
     footer > div *:not(h2){
         font-weight: 300;
-    }
-    footer > div div:nth-of-type(1),
-    footer > div div:nth-of-type(2){
-        float: left; width: 47.5%;
-        margin: 0 0 70px 0; /*2%*/
-    }
-    footer > div div:nth-of-type(2){
-        margin-left: 5%;
     }
     footer > div div h2{
         margin-bottom: 20px;
@@ -173,31 +168,24 @@ header > div nav input[type='checkbox'].mui{
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
     }
-    footer > div div:nth-of-type(3){
-        clear: left;
-    }
     footer > div div:nth-of-type(3) input{
         float: left; margin-bottom: 25px;
     }
     footer > div div:nth-of-type(3) input[type='email']{
         font-size: 14px; line-height: 43px; border: 1px solid rgba(255,255,255,0.5);
         color: rgba(255,255,255,0.5); background-color: transparent;
-        width: 35%; padding: 0 15px; display: block; box-sizing: border-box;
+        width: 75%; padding: 0 15px; display: block; box-sizing: border-box;
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: 10%; /*margin-left: 2%;*/ text-indent: -9999px; border: none;
+        width: 25%; /*margin-left: 2%;*/ text-indent: -9999px; border: none;
         line-height: 43px;
         background: url('../images/btn_send.png') no-repeat center rgba(255,255,255,0.5);
-    }
-    footer > div div:nth-of-type(3) ul{
-        float: left; width: 50%; margin-left: 5%;
-        text-align: center;
     }
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: 5.8%;
+        margin-left: 2.5%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; background-repeat: no-repeat; background-size: contain;
@@ -228,10 +216,10 @@ header > div nav input[type='checkbox'].mui{
         color: white; display: inline-block;
     }
     footer > div div:last-of-type a:not(:first-of-type){
-        margin-left: 30px;
+        margin-left: 5.5%;
     }
     footer > div div:last-of-type p{
-        float: right;
+        text-align: center;
     }
 }
 /* ? mobile */
