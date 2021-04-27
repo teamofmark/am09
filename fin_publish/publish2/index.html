@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="mont">
             <label for="mui" class="material-icons">
                 menu
             </label>
@@ -46,25 +46,27 @@
     </header>
     <!-- * header Fin -->
     <nav>
-        <ul>
-            <li><a href="">Top Sales</a></li>
-            <li><a href="">Brand Focus</a></li>
-            <li><a href="">Hi-tech</a></li>
-            <li><a href="">Best Sellers</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Support</a></li>
-        </ul>
-        <input type="search" placeholder="i,m looking for..." title="search">
+        <div class="mont">
+            <ul>
+                <li><a href="">Top Sales</a></li>
+                <li><a href="">Brand Focus</a></li>
+                <li><a href="" class="active">Hi-tech</a></li>
+                <li><a href="">Best Sellers</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+            <input type="search" placeholder="i,m looking for..." title="search">
+        </div>
     </nav>
     <!-- *subNav fin -->
-    <section>
+    <section class="slideArea">
         <h2>sliderArea</h2>
         <div>
             <a href="">&lt;</a>
             <a href="">&gt;</a>
             <ol>
                 <li>
-                    <a href="">slide</a>
+                    <a href="" class="active">slide</a>
                 </li>
                 <li>
                     <a href="">slide</a>
@@ -82,10 +84,10 @@
                         <img src="images/ex_slider.png" alt="iPhone 6">
                         <figcaption>
                             <dl>
-                                <dt>iPhone 6 32Gb black</dt>
-                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                                <dt class="mont">iPhone 6 32Gb black</dt>
+                                <dd class="crim">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
                             </dl>
-                            <input type="button" value="BUY NOW">
+                            <input type="button" value="BUY NOW" class="mont">
                         </figcaption>
                     </figure>
                 </li>
@@ -94,25 +96,25 @@
     </section>
     <!-- slider Fin -->
     
-    <div>
+    <div class="contentArea mont">
         <form>
             <fieldset>
                 <label for="sb_Select">SORT BY :</label>
                 <span>
-                    <select id="sb_Select" title="sortBySelect">
+                    <select id="sb_Select" title="sortBySelect" class="mont">
                         <option>BEST MATCH</option>
                     </select>
                 </span>
                 <label for="sb_keywords">KEYWORDS</label>
-                <input type="search" id="sb_keywords">
+                <input type="search" id="sb_keywords" class="mont">
                 <label for="range_minprice">PRICE</label>
-                <input type="text" id="range_minprice" title="setting minPrice">
+                <input type="text" id="range_minprice" title="setting minPrice" class="mont">
                 <span>-</span>
-                <input type="text" id="range_maxprice" title="setting maxPrice">
+                <input type="text" id="range_maxprice" title="setting maxPrice" class="mont">
                 <input type="checkbox" id="freeShipCheck">
                 <label for="freeShipCheck">Free Shipping</label>
                 <span>
-                    <select id="ship_Select" title="shipSelect">
+                    <select id="ship_Select" title="shipSelect" class="mont">
                         <option>USA</option>
                         <option>United Arab Emirates</option>
                     </select>
