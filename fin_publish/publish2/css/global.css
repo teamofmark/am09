@@ -1,8 +1,21 @@
+body{
+    background-color: #e4e5e7;
+}
 .mont{
     font-family: 'Montserrat', sans-serif;
 }
 .crim{
     font-family: 'Crimson Text', serif;
+}
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.floatArea:after{
+    content: ''; display: block; visibility: hidden; clear: both;
 }
 /* All Using */
 
@@ -17,6 +30,19 @@
 /* ?tablet */
 
 @media screen and (min-width: 1280px){
-
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7;
+        background-color: white;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-icons{
+        width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block;
+    }
 }
 /* ?desktop */

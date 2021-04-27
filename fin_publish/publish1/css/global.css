@@ -38,18 +38,25 @@ section[class *= Area] > hr{
 header > div nav input[type='checkbox'].mui{
     display: none;
 }
+.btn_more{
+    padding: 15px 1.5%;
+}
+#about,
+section.expArea,
+section.contactArea,
+section.teamArea ul,
+footer > div{
+    margin: 0 auto; padding: 70px auto;
+}
 /* All Using */
 
 @media screen and (max-width: 767px){
-    .btn_more{
-        padding: 15px 1.5%;
-    }
     #about,
     section.expArea,
     section.contactArea,
     section.teamArea ul,
     footer > div{
-        max-width: 600px; margin: 0 auto; padding: 70px 3%;
+        max-width: 600px; padding-left:3%; padding-right: 3%;
     }
     header{
         padding: 15px 0 70px;
@@ -229,14 +236,11 @@ header > div nav input[type='checkbox'].mui{
     .mui{
         display: none;
     }
-    .btn_more{
-        padding: 15px 1.5%;
-    }
     #about,
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 728px; margin: 0 auto; padding: 70px 0;
+        max-width: 728px;
     }
     header{
         padding: 15px 0 70px;
@@ -417,14 +421,11 @@ header > div nav input[type='checkbox'].mui{
     .mui{
         display: none;
     }
-    .btn_more{
-        padding: 15px 1.5%;
-    }
     #about,
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 940px; margin: 0 auto; padding: 70px 0;
+        max-width: 940px;
     }
     header{
         padding: 15px 0 70px;
