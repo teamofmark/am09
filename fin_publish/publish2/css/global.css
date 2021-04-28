@@ -44,5 +44,11 @@ a{
         width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
         border-right: 1px solid #f0f2f7; display: block;
     }
+    header > div h1{
+        width: 10.7%; min-width: 125px;
+    }
+    header > div h1 a{
+        display: block; text-align: right; padding: 31px 0;
+    }
 }
 /* ?desktop */
