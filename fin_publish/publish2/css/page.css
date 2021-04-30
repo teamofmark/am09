@@ -167,6 +167,7 @@
     }
     .contentArea aside nav ul > li > a{
         font-size: 13px; color: #343e5c; padding: 15px 7.4%;
+        font-weight: 700;
     }
     .contentArea aside nav ul > li > a:after{
         content: url('../images/bg_arrow.png'); float: right;
@@ -180,9 +181,61 @@
     }
     .contentArea aside nav ul > li ol li a{
         font-size: 0; opacity: 0; padding: 0 7.4%; transition: all 0.3s ease-in-out;
+        color: #a1a7bd;
     }
-
-
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; opacity: 1; padding: 15px 7.4%;
+        border-top: 1px solid #dfe4ee;
+    }
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px; padding-top: 27px;
+    }
+    .contentArea aside fieldset legend{
+        width: 100%; font-size: 11px; color: #343e5c; padding: 0 7.4% 15px;
+        border-bottom: 1px solid #f0f2f7; box-sizing: border-box;
+        top: 28px; text-transform: uppercase; position: relative; font-weight: 700;
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; cursor: pointer;
+        display: inline-block; box-sizing: border-box; padding-left: 20.37%;
+    }
+    .contentArea aside fieldset span{
+        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 76px;
+    }
+    .contentArea aside fieldset label,
+    .contentArea aside fieldset span{
+        line-height: 50px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 83%; max-width: 215px;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width: 93%; max-width: 270px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; max-width: 135px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 2px solid #f0f2f7;
+    }
+    .contentArea aside fieldset input[type='radio'] + label{
+        background: url('../images/off_radio.png') no-repeat 10% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') no-repeat 10% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
+    /* ? aside Fin */
     
     .contentArea section{
         width: 74.44%; margin-left: 2.56%; float: left;
