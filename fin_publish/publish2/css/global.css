@@ -20,6 +20,7 @@ a{
 .selectBox{
     display: inline-block; padding-right: 20px; box-sizing: border-box;
     background: url('../images/bg_arrow.png') no-repeat right center;
+    max-width: 100px;
 }
 .selectBox select{
     border: none; box-shadow: none; background-image: none; background-color: transparent;
