@@ -180,14 +180,14 @@ a{
         background-image: url('../images/sns_google.png');
     }
     footer > div:nth-child(2){
-        padding: 60px 0;
+        padding: 60px 15px;
     } 
     footer > div:nth-child(2) p{
         font-size: 14px; font-style: italic; max-width: 510px; color: rgba(255,255,255,0.3);
         width: 50%;
     }
     footer > div:nth-child(2) span{
-        right: 0; top: 60px; width: 50%; text-align: right;
+        right: 15px; top: 60px; width: 50%; text-align: right;
     }
     footer > div:nth-child(2) span a{
         font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block;
