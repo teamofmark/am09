@@ -180,7 +180,7 @@
         border-top: 1px solid #dfe4ee;
     }
     .contentArea aside fieldset{
-        background-color: white; border-radius: 5px; padding-top: 27px;
+        background-color: white; border-radius: 5px; padding-top: 47px;
     }
     .contentArea aside fieldset legend{
         width: 100%; font-size: 11px; color: #343e5c; padding: 0 7.4% 15px;
@@ -192,15 +192,16 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer;
-        display: inline-block; box-sizing: border-box; padding-left: 20.37%;
+        display: inline-block; box-sizing: border-box; padding-left: 24.37%;
+        margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
-        width: 15%; max-width: 76px;
+        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 76px; */ display: none;
     }
     .contentArea aside fieldset label,
     .contentArea aside fieldset span{
-        line-height: 50px;
+        line-height: 20px;
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
@@ -230,22 +231,26 @@
     /* ? aside Fin */
     
     .contentArea section{
-        width: 74.44%; margin-left: 2.56%; float: left;
+        width: 75%; margin-left: 2%; float: left;
     }
     .contentArea section h3{
         display: none;
     }
     .contentArea section ul li{
-        float: left; display: block; width: 31%; background-color: white;
-        margin: 0 0 33px 3.5%; height: 380px; border-radius: 4px;
+        display: block; background-color: white;
+    }
+    .contentArea section ul li:not(:nth-child(5)){
+        float: left; width: 48%; 
+        margin: 0 0 33px 4%; min-height: 360px; max-height: 510px; border-radius: 4px;
     }
     .contentArea section ul li:nth-child(5){
-        width: 65.5%;
+        clear: both; border-radius: 10px; margin-bottom: 33px;
     }
     .contentArea section ul li:nth-child(1),
-    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(6),
-    .contentArea section ul li:nth-child(9){
+    .contentArea section ul li:nth-child(8),
+    .contentArea section ul li:nth-child(10){
         margin-left: 0;
     }
     .contentArea section ul li figure img{
@@ -289,7 +294,7 @@
         border-radius: 0 17px 17px 0; border-left: none;
     }
     .contentArea section ul li:last-child{
-        position: relative;
+        position: relative; overflow-y: hidden; background-color: transparent;
     }
     .contentArea section ul li:last-child figure figcaption dl{
         position: absolute; left: 0; top: 40px; width: 100%;
