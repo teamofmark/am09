@@ -51,8 +51,9 @@ a{
         float: left;
     }
     header > div label.material-icons{
-        width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
-        border-right: 1px solid #f0f2f7; display: block;
+        /* width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block; */
+        display: none;
     }
     header > div h1{
         width: 10.7%; min-width: 125px;
@@ -64,7 +65,7 @@ a{
         width: 100%; max-width: 92px;
     }
     header > div nav{
-        width: 54.7%;
+        width: 60%;
     }
     header > div nav ul{
         text-align: right;
@@ -73,23 +74,23 @@ a{
         display: inline-block;
     }
     header > div nav ul li:not(:first-child){
-        margin-left: 4.68%;
+        margin-left: 2%;
     }
     header > div nav ul li a{
         font-size: 14px; display: block; line-height: 90px; color: #343e5c;
         font-weight: 700;
     }
     header > div div{
-        width: 29.3%; font-size: 11px; color: #343e5c;
+        width: 23.7%; font-size: 11px; color: #343e5c;
         line-height: 90px; text-align: right;
     }
     header > div div *:not(input){
         display: inline-block;
     }
     header > div div strong{
-        padding-left: 25px; line-height: 17px;
-        background: url('../images/bul_cart.png') no-repeat left top;
-        text-transform: uppercase;
+        line-height: 17px; text-transform: uppercase;
+        /* padding-left: 25px; 
+        background: url('../images/bul_cart.png') no-repeat left top; */
     }
     header > div div span{
         width: 24px; line-height: 24px; background-color: #e3e8f0;
