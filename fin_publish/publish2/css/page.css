@@ -1,18 +1,20 @@
 @media screen and (max-width: 767px){
     header + nav{
-        background-color: white;
+        background-color: white; margin-bottom: 30px;
     }
-    header + nav .slideNav > *{
+    /* header + nav .slideNav > *{
         float: left;
-    }
+    } */
     header + nav .slideNav ul{
-        width: 53%; padding: 0 15px; box-sizing: border-box;
+         text-align: center;
+        /* width: 53%; padding: 0 15px; box-sizing: border-box;*/
     }
     header + nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
     header + nav .slideNav ul li{
-        float: left;
+        /* float: left; */
+        display: inline-block;
     }
     /* header + nav .slideNav ul li:last-child{
         float: right;
@@ -26,17 +28,19 @@
         color: #343e5c;
     }
     header + nav .slideNav input[type='search']{
-        margin-left: 20%; width: 27%; padding: 20px 2% 20px 4%;
+        display: none;
+        /* margin-left: 20%; width: 27%; padding: 20px 2% 20px 4%;
         box-sizing: border-box; border-width: 0 1px; border-style: none solid;
-        border-color: #f0f2f7; background: url('../images/bul_search.png') no-repeat 5% center;
+        border-color: #f0f2f7; background: url('../images/bul_search.png') no-repeat 5% center; */
     }
     /* ? slideNav Fin */
 
     section.slideArea{
-        background-color: #1c1e23; margin-bottom: 50px;
-        line-height: 0;
+        display: none;
+        /* background-color: #1c1e23; margin-bottom: 50px;
+        line-height: 0; */
     }
-    section.slideArea h2{
+    /* section.slideArea h2{
         display: none;
     }
     section.slideArea > div{
@@ -92,27 +96,36 @@
         background-color: #2754eb; border: none; width: 55%;
         line-height: 42px; border-radius: 21px; color: white;
         font-size: 11px; font-weight: 700;
-    }
+    } */
     /* ?slideArea Fin */
     .contentArea{
         margin-bottom: 50px;
     }
     .contentArea > form fieldset{
-        background-color: white; border-radius: 4px; line-height: 56px;
+        background-color: white; border-radius: 10px; line-height: 56px;
         padding: 0 1.7%; box-sizing: border-box; margin-bottom: 30px;
-    }
-    .contentArea > form fieldset span.sbSelect,
-    .contentArea > form fieldset label[for='ship_Select']{
-        display: none;
     }
     .contentArea > form fieldset label{
         font-size: 11px; color: #a1a7bd; display: inline-block;
         vertical-align: middle;
     }
     .contentArea > form fieldset label[for='sb_keywords']{
-        padding-left: 2.56%; margin-left: 1.7%;
+        padding-left: 2.56%;
+        /* margin-left: 1.7%; */
     }
-    .contentArea > form fieldset input:not([type='checkbox']){
+    .contentArea > form fieldset input[type='search']{
+       width: 63%; margin-left: 2%; 
+    }
+    .contentArea > form fieldset span,
+    .contentArea > form fieldset label:not([for='sb_keywords']),
+    .contentArea > form fieldset input:not(#sb_keywords){
+        display: none;
+    }
+    .contentArea > form fieldset input#sb_keywords{
+        font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
+        line-height: 30px; padding: 0 1%; box-sizing: border-box; border-radius: 16px;
+    }
+    /* .contentArea > form fieldset input:not([type='checkbox']){
         font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
         line-height: 30px; padding: 0 1%; box-sizing: border-box; border-radius: 16px;
     }
@@ -135,7 +148,7 @@
     }
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
         background: url('../images/bul_check.png') no-repeat left center;
-    }
+    } */
     /* ? sortBy Fin */
 
     .contentArea aside{
