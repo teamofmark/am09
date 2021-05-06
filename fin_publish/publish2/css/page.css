@@ -301,6 +301,9 @@
     .contentArea section ul li:last-child figure figcaption dl dd{
         color: rgba(28,23,35,0.5);
     }
+    .contentArea .paging{
+        display: none;
+    }
     /* ?contentList Fin */
 
     section.bestArea{
