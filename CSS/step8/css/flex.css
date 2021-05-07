@@ -48,3 +48,14 @@
 .flexContainer.alignItems .flexItem:nth-of-type(5){
     line-height: 50px;
 }
+
+.flexContainer.alignContent{
+    height: 400px; flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.flexContainer.alignContent .flexItem{
+    margin: 0; width: 100px;
+}
+
+/* !이하 item */
