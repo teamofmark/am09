@@ -1,0 +1,17 @@
+.flexContainer{
+    margin: 10px; padding: 15px; border-radius: 23px;
+    background-color: #a4a4a4; display: flex;
+}
+.test{
+    margin: 10px; padding: 15px; border-radius: 23px;
+    background-color: #a4a4a4; display: inline-flex;
+    width: 50%;
+}
+.flexItem,
+.test a{
+    margin: 10px; padding: 20px; color: white; text-align: center;
+    border-radius: 27px; background-color: black;
+}
+.flexContainer.direction{
+    flex-direction: column-reverse;
+}
