@@ -31,7 +31,7 @@
     참이면 실행하고 거짓이면 무시한다.
 
     ? 논리 연산자
-    * &&(곱) 그리고, ||(합, verticalBar) 이거나
+    * &&(곱) 그리고, ||(합, verticalBar) 이거나 
     
     ? 논리 부정연산자
     * !
@@ -76,4 +76,70 @@ function operatorEx(){
     list += '</ul>';
     // document.write(list);
     document.body.innerHTML = list;
+}
+
+// *case. 4 연산자가 뒤로 올 경우
+function numberPlusAfter(){
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //? 10을 출력후 더해서 (11) 다시 number로 -
+    alert(number++); //? 11을 출력후 더해서 (12) 다시 number로 -
+    alert(number++); //? 12를 출력후 더해서 (13) 다시 number로 -
+    console.log(number); //? 끝나는 number 가 13.
+}
+
+// *case. 5 연산자가 앞으로 올 경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 10에 1을 더해서 (11) 출력후 다시 number로 - 
+    alert(++number); //? 11에 1을 더해서 (12) 출력후 다시 number로 - 
+    alert(++number); //? 12에 1을 더해서 (13) 출력후 다시 number로 - 
+    console.log(number); //? 끝나는 number 가 13.
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10;
+    alert(number++); //? 출력: 10,현재: 11 10 출력후 더하기 (11). 다시 number로-
+    alert(--number); //? 출력: 10,현재: 10 11에서 1빼고 10 출력후. 다시 number로-
+    alert(++number); //? 출력: 11,현재: 11 10에서 1더하고 11 출력후. 다시 number로-
+    alert(number--); //? 출력: 11,현재: 10 11 출력후 1빼서 . 다시 number로-
+    console.log(number); //? 10
+}
+// *case. 6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a > b;
+    console.log('10 > 20 = ' + result);
+}
+
+// *case. 7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log('10 = 20 ?' + result);
+}
+
+// todo. 숫자 10이 담긴 변수a와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log('10 != 20 ?' + result);
+}
+
+// *case. 8 a변수에는 '여자', b변수에는 '웹디자이너'라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장 후 출력.
+function logicalOperator1(){
+    var a = '남자';
+    var b = '웹디자이너';
+    var result = (a=='여자')&&(b=='웹디자이너');
+    console.log('result = ' + result);
+}
+
+// *case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.
+function logicalOperator2(){
+    var a = '여자';
+    var b = '웹디자이너';
+    var result = (a=='남자') || (b == '웹퍼블리셔');
+    console.log('result = ' + result);
 }
