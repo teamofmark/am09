@@ -66,7 +66,17 @@
 var name = 'Mark';
 var age = '41';
 var pi = 3.14159265;
-
 function printPI(){
     console.log(pi);
 }
+
+// * case.2
+
+var cup = 'Coffee'; //? cup에 coffee를 담았다.
+cup = 'Green Tea'; //? cup에 coffee를 버리고 Green Tea를 담았다.
+cup = 'Water'; //? cup에 GreenTea를 버리고 Water를 담았다.
+
+// * case.3
+
+var value = 10;
+value += 20;
