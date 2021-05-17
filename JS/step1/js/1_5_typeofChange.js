@@ -76,3 +76,31 @@ function stringtoNumb(){
     var result = test1.toString();
     console.log(typeof(result) + '=' + result);
 }
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수 형,실수 형
+    
+    ? parse
+    * 1. parseInt(value); - 정수 형
+    * 2. parseFloat(value); - 실수 형
+
+    ? typeof
+    * typeof(value); 자료형 판별
+*/
+function numbString(){
+    var test = '300';
+    var result = parseInt(test) + 10;
+    console.log('result = ' + result);
+}
+function numbString2(){
+    var test = "100.50";
+    var result = parseFloat(test) + 20;
+    console.log('result = ' + result);
+}
+function numbStringTodo(){
+    var test = "100.50";
+    var result = Number(test) + 20;
+    console.log('result = ' + result);
+}
