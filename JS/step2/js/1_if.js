@@ -109,6 +109,18 @@ function userInfoCheck(){
     // ? condition? true : false;
 }
 
+// *case. 6 사용자 id "Mark"와 password "1234"의 정보가 틀린 경우 틀린 정보에 대한 오류 메시지 출력.
+function userInfoCheck2(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark"){
+        alert("ID가 존재하지 않습니다.");
+    }else{
+        alert("password가 틀렸습니다.");
+    }
+}
 // todo. 3 다음 세과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력해라.
 function avgScore(){
     var koreanScore = prompt('국어점수를 입력하시오');
