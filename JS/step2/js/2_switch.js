@@ -43,3 +43,30 @@ function lotto(){
             break;
     }
 }
+// *case. 2 switch 문을 이용한 간단한 계산기
+function calculator(){
+    var firstNumb = window.prompt("첫번째 숫자를 입력하세요.");
+    var operator = window.prompt("사칙연산자중 하나를 입력하세요.(+,-,*,/)");
+    var lastNumb = window.prompt("두번째 숫자를 입력하세요.");
+
+    firstNumb = parseInt(firstNumb); //? "1" = 1
+    lastNumb = parseInt(lastNumb); //? "2" = 2
+
+    switch(operator){
+        case "+":
+            alert(firstNumb + lastNumb);
+            break;
+        case "-":
+            alert(firstNumb - lastNumb);
+            break;
+        case "*":
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default:
+            alert('잘못된 값이 입력되었습니다.');
+            break;
+    }
+}
