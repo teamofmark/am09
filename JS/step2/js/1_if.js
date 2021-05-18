@@ -111,13 +111,26 @@ function userInfoCheck(){
 
 // todo. 3 다음 세과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력해라.
 function avgScore(){
-    var koreanScore = ;
-    var englishScore = ;
-    var mathScore = ;
+    var koreanScore = prompt('국어점수를 입력하시오');
+    var englishScore = prompt('영어점수를 입력하시오');
+    var mathScore = prompt('수학점수를 입력하시오');
     // ? 변수선언 - 점수 입력받기.
-    var avg = ;
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
     // ? 2차변수 처리 - 평균구하기 (prompt = string > number);
 
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력해라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 수입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 우입니다.');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 미입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 양입니다.');
+    }else{
+        alert('평균' + avg + '점 가입니다.');
+    }
     /*
         ? 100점 이상 0점 이하 일경우 경고 - 점수 똑바로 입력해라.
         ? 평균 90 이상 (위 예외처리) - 수
