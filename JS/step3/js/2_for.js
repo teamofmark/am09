@@ -30,3 +30,47 @@ function namePrint500(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+
+// *case. 3 문자열(*) 10번 출력.
+function star10(){
+    var star = '';
+    for (var i = 0; i < 10; i++){
+        star += '*';
+    }
+    document.write('result = ' + star);
+}
+// *case. 4
+function thinkJS(){
+    for (var i = 0; i < 10; i++){ //? 10보다 작을 때(0~9) 까지 만 반복 수행
+        document.write('현재 i =' + i, '<br>'); //? 0 ~ 9번까지 출력.
+    } //? i가 10이 되는 순간 break.
+    document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
+}
+
+//todo.2 1 - 10 까지 출력되는 반복문을 직접 짜보자.
+function answer1(){
+    for(var i=0; i<10; i++){ //? 
+        document.write((i+1)+"<br>");//? 
+    }
+}
+function answer2(){
+    for(var i=1; i<=10; i++){ //? 
+        document.write(i+"<br>"); //? 
+    }
+}
+function answer3(){
+    for(var i=100; i<110; i++){ //? 
+        document.write((i-99)+"<br>"); //?
+    }
+}
+function answer4(){
+    for(var i=1; i<=10; i+=2){ //? 
+        document.write(i+"<br>"); //? 
+        document.write((i+1)+"<br>"); //? 
+    }
+}
+function answer5(){
+    for(var i=10; i>=1; i--){ //? 
+        document.write((11-i)+"<br>"); //? 
+    }
+}
