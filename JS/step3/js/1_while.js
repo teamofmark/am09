@@ -23,3 +23,12 @@ function whileContinue(){
 }
 
 // *case. 3 while Break
+function whileBreak(){
+    var i = 1;
+    while(i <= 10){
+        break;
+        i++;
+        document.write(i+'<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
