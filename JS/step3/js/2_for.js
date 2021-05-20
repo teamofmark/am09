@@ -96,3 +96,40 @@ function arrayForES6(){
         document.write((i+1) + '번째 내용 = ' + element + '<br>');
     }
 }
+
+// *case. 7 역반복 배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고']; //? 4개의 배열 선언후
+    for(var i = array.length - 1; i >= 0; i--){ //? 변수는 배열의 갯수 - 1 (4 - 1 = 3)
+        alert(array[i]); //? 그래서 3,2,1,0순으로 출력. 이것을 역반복이라한다.
+    }
+}
+
+// *case. 8 continue문
+function forContinue(){
+    for (var i = 0; i <= 10; i++){ //?
+        continue; //?
+        document.write(i + '<br>'); //?
+    }
+    document.write('최종 i = ' + i + '<br>'); //?
+}
+// *exp. 7 continue 활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            /*
+                ? i가 홀수일 경우 이탈(continue).
+                ? (1 을 2로 나눈 나머지가 1과 일치할 경우 다음 수행) = 반복문으로..  
+                ? (2 를 2로 나눈 나머지가 1과 일치할 경우 다음 수행) = 이탈. output += i; 실행
+                ? (3 을 2로 나눈 나머지가 1과 일치할 경우 다음 수행) = 반복문으로..
+                ? (4 를 2로 나눈 나머지가 1과 일치할 경우 다음 수행) = 이탈. output += i; 실행
+                ..
+                ? 이조건으로 i 값이 10보다 작거나 같을 때 까지 수행.
+            */
+            continue;
+        }
+        output += i; //? ( 2, 6, 12, 20, 30)
+        alert(output); //? ? 출력.
+    }
+}
