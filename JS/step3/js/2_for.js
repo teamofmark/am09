@@ -164,3 +164,30 @@ function halfPyramid(){
     }
     document.write(star); //? 반절 피라미드 출력.
 }
+// todo.1 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }   
+}
+// todo.2 피라미드
+function pyramid(){
+
+}
+// !hint 1. star = odd(정반복), &nbsp;(역반복), <br>(반복)
+/*
+          *<br>
+         ***<br>
+        *****<br>
+       *******<br>
+      *********<br>
+     ***********<br>
+    *************<br>
+   ***************<br>
+  *****************<br>
+ *******************<br>
+ */
