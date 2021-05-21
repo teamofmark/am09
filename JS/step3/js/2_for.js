@@ -151,3 +151,16 @@ function runBreak(){
         }
     }
 }
+
+// ! 다중반복
+
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //? 1. ifor = 1 ~ 10까지 수행
+       for (var j = 0; j < i; j++){ //? 2. jfor = j가 i보다 작을때 까지 반복 수행. 
+            star += '*'; //? *(이탈),**(이탈),***(이탈),****(이탈)....
+       }
+       star += '<br>'; //? ifor만큼 <br>을 변수 star(이탈부분)에 넣음.
+    }
+    document.write(star); //? 반절 피라미드 출력.
+}
