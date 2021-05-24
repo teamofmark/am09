@@ -87,3 +87,33 @@ function infiniteSum(){
     }
     document.write('총' + count + '번 실행.');
 }
+// todo.1 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수만들기.
+
+/*
+    todo. 실행구문
+    todo. calculator('+', 20, 10);
+    todo. calculator('-', 20, 10);
+    todo. calculator('*', 20, 10);
+    todo. calculator('/', 20, 10);
+*/
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch (op) {
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = '잘못된 연산자 입니다.';
+            break;
+    }
+    return result;
+}
