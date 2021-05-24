@@ -58,3 +58,32 @@ function sumAllRun(){
     }
     alert(f(3));
 */
+// *case.3 두 수를 매개변수로 받고, 두 값을 더한 결과값을 return하는 함수를 만들어보자.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+/*
+alert(sumReturn1(13,26));
+document.write(sumReturn1(13,26));
+console.log(sumReturn1(13,26));
+*/
+// *case.4 무한반복을 하며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// ! 단 입력값이 0이면 즉시 실행을 멈추게 한다.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt('숫자만 입력'));
+        if(value == 0){
+            document.write('반복연산 종료');
+            return; //? return은 함수에서 밖으로, break는 반복에서 밖으로.
+        }
+
+        sum += value;
+        document.write(count + '번 실행.' + sum + '<br>');
+        count++;
+    }
+    document.write('총' + count + '번 실행.');
+}
