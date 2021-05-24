@@ -117,3 +117,58 @@ function calculator(op, numb1, numb2){
     }
     return result;
 }
+
+// *case. 5 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용할 수 있게 만들기.
+
+/*
+    * 실행구문
+    * calculator('+ or - or * or /', 20, 10);
+    * add('+', 20, 10);
+    * sub('-', 20, 10);
+    * mul('*', 20, 10);
+    * div('/', 20, 10);
+*/
+function calculator2(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = sub(numb1,numb2);
+            break;
+        case "*":
+            result = mul(numb1,numb2);
+            break;
+        case "/":
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = '잘못된 연산자 입니다.';
+            break;
+    }
+    return result;
+}
+function add(numb1, numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+}
+function sub(numb1, numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1, numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1, numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
+}
+// *case. 6 함수를 변수(? 매개변수)에 담기.
+function hello(name){
+    console.log(name + '환영합니다.');
+}
+
+var func = hello;
+func('Stark');
