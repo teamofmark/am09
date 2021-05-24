@@ -176,7 +176,17 @@ function reverseHalfPyramid(){
 }
 // todo.2 피라미드
 function pyramid(){
-
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //? 1. ifor = 1 - 10까지
+        for (var e = 10; e >= i; e--){ //? efor = 10 - 1까지
+            star += '&nbsp;'; //? 공백이 10개부터 1개까지
+        }   
+        for (var s = 0; s < 2*i-1; s++){ //? sfor = i 들어올때마다 홀수화 됨.(1,3,5,7...)
+            star += '*'; //? 홀수화 된  s의 수치만큼 반복해서 *이 들어감.
+        }
+        star += '<br>'; //? ifor 만큼 <br>을 변수 star 뒤에 넣음.
+    }
+    document.write(star);
 }
 // !hint 1. star = odd(정반복), &nbsp;(역반복), <br>(반복)
 /*
