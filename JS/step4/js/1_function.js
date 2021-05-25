@@ -171,4 +171,51 @@ function hello(name){
 }
 
 var func = hello;
-func('Stark');
+
+// *case. 7 매개변수 값으로 함수를 사용하기.
+
+function h1(){
+    console.log('hello.');
+}
+function h2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func();
+}
+
+// *case. 8 button click 시 매개변수 값으로 넘긴 함수 호출하기.
+function welcome(){
+    alert('환영합니다. 반갑습니다.');
+}
+$(document).ready(function(){
+    $('#runEx8').click(welcome);
+});
+
+// *case. 9 1초마다 매개변수 값으로 넘긴 익명함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('hi. hello!');
+    },1000);
+}
+// todo. 2 함수를 매개변수로 전달받아 반복 호출하기.
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('hello world', '<br>');
+}
+
+// *case. 10 return value로 함수를 사용하기.
+function createHello(){
+    function hello(user){ //? user 매개변수 생성
+        document.write(user + 'welcome!');
+    }
+    return hello; //? hello 함수를 return(createHello호출부)
+}
+
+var result = createHello(); //? result변수에 createHello 가 실행되면서 hello 함수를 담음.
+
+// result("Mark"); //? result = hello함수가 로드되어있는 상태에서 user매개변수로 전달가능.
