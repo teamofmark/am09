@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etc3 - tab , customInput</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/etc_3.js"></script>
+    <script src="https://kit.fontawesome.com/bba7cacd9f.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .tabMenu{
+            display: flex; padding: 0;
+        }
+        .tabMenu li{
+            width: 33.33%; flex-flow: row nowrap; padding: 0; list-style: none;
+            text-align: center; background-color: black; color: white;
+            border: 1px solid black; box-sizing: border-box; cursor: pointer;
+        }
+        .tabMenu li.activated{
+            background-color: white; color: black;
+        }
+        .tabPage{
+            border: 1px solid black; padding: 20px; display: none;
+        }
+        .tabPage.activated{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabMenu">
+        <li data-tabNumb='tab1' class="activated">tab1</li>
+        <li data-tabNumb='tab2'>tab2</li>
+        <li data-tabNumb='tab3'>tab3</li>
+        <li data-tabNumb='tab4'>tab4</li>
+        <li data-tabNumb='tab5'>tab5</li>
+        <li data-tabNumb='tab6'>tab6</li>
+    </ul>
+    <div id='tab1' class="tabPage activated">
+        tabPage1
+    </div>
+    <div id='tab2' class="tabPage">
+        tabPage2
+    </div>
+    <div id='tab3' class="tabPage">
+        tabPage3
+    </div>
+    <div id='tab4' class="tabPage">
+        tabPage4
+    </div>
+    <div id='tab5' class="tabPage">
+        tabPage5
+    </div>
+    <div id='tab6' class="tabPage">
+        tabPage6
+    </div>
+</body>
+</html>
