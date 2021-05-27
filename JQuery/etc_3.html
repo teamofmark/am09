@@ -10,6 +10,18 @@
     <script src="https://kit.fontawesome.com/bba7cacd9f.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
+        /* case.1 style */
+        .cp span{
+            display: inline-block; vertical-align: middle; line-height: 21px;
+        }
+        .cp .ico{
+            width: 15px;
+        }
+        .cp .label,
+        .material-icons{
+            cursor: pointer;
+        }
+
         .tabMenu{
             display: flex; padding: 0;
         }
@@ -30,6 +42,24 @@
     </style>
 </head>
 <body>
+    <!-- *case.1 fontawesome  -->
+    <div class="cp checkBox">
+        <span class="ico check"></span>
+        <span class="label">
+            checkbox Click!
+        </span>
+    </div>
+    <!-- *case.2 material-icon -->
+
+    <span class="material-icons menu">
+        menu
+    </span>
+
+    <!-- todo. material-icon-->
+    <span class="material-icons ?">
+        ?
+    </span>
+
     <ul class="tabMenu">
         <li data-tabNumb='tab1' class="activated">tab1</li>
         <li data-tabNumb='tab2'>tab2</li>
