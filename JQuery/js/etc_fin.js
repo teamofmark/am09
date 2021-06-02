@@ -65,3 +65,27 @@ function displayFishPositionInfo(){
     $info.html(info);
 }
 //? 물고기 현재위치 찍어주기.
+
+function checkGoalFish(){
+    var winnerList = [];
+
+    for (var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                //? goalLine을 넘은 물고기들을 winnerList 배열에 position 값저장.
+                index: (i), position:fishCurrentPosition
+                //? ex > 0 : 610, 1: 528, 2: 432
+            });
+        }
+    }
+    if(winnerList.length > 0){
+        winnerList.sort(function(a,b){
+            return b.position - a.position; //? 정렬 (순)
+        });
+        endGame();
+        alert('우승 !' + winnerList[0].index + '번 물고기!');
+        //? 결승선 기준 가장 멀리 이동된 물고기 우승 처리.
+    }
+
+}
