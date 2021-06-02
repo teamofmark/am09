@@ -33,3 +33,35 @@ function initEvent(){
     });
 }
 //? 이벤트처리 함수
+function startGame(){
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition(); //? 물고기 계속움직이기
+            displayFishPositionInfo(); //? 현재위치 찍어주기
+            checkGoalFish(); //?결승선 판별
+        }, 2000);
+    }
+}
+// ?게임시작 함수
+
+function updateFishPosition(){
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        var step = Math.ceil(Math.random()*30);
+        //?물고기 이동범위 (30중 random, 1부터 = ceil)
+        var newLeft = $fish.position().left + step;
+
+        $fish.css("left",newLeft);
+    }
+}
+//? 물고기 계속움직이기
+
+function displayFishPositionInfo(){
+    var info = "";
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + "번 물고기 : " + $fish.position().left + "px <br>";
+    }
+    $info.html(info);
+}
+//? 물고기 현재위치 찍어주기.
