@@ -14,10 +14,10 @@ function init(){
     $banner1 = $("#banner1");
     $banner2 = $("#banner2");
 }
-function swap(selector, speed){
+function swap(selector, speed){  //? 매개변수 전달받음.
     setInterval(function(){
         var imgName = "images/" + logos[currentIndex];
-        currentIndex = Math.floor(Math.random()*logos.length);
-        selector.attr("src", imgName);
-    }, speed);
+        currentIndex = Math.floor(Math.random()*logos.length); //? random 배열값 잡아오기.
+        selector.attr("src", imgName);//? 전달받은 대상 매개변수로 etc11과 동일한 로직수행.
+    }, speed);//? 전달받은 속도 매개변수로 속도설정.
 }
