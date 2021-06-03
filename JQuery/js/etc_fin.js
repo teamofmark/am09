@@ -39,7 +39,7 @@ function startGame(){
             updateFishPosition(); //? 물고기 계속움직이기
             displayFishPositionInfo(); //? 현재위치 찍어주기
             checkGoalFish(); //?결승선 판별
-        }, 2000);
+        }, 500);
     }
 }
 // ?게임시작 함수
@@ -87,5 +87,11 @@ function checkGoalFish(){
         alert('우승 !' + winnerList[0].index + '번 물고기!');
         //? 결승선 기준 가장 멀리 이동된 물고기 우승 처리.
     }
-
 }
+// ? 결승선 통과 물고기 검사 함수.
+
+function endGame(){
+    clearInterval(timerID); //? interval 초기화.
+    timerID = -1;
+}
+//? 게임종료 함수
