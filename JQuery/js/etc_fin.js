@@ -17,6 +17,7 @@ function init(){
 }
 
 function fishStartPosition(){
+    console.log('1. 물고기위치 셋팅');
     for(var i = 0; i < $fishList.length; i++){
         var $fish = $fishList.eq(i);
         $fish.css({
@@ -29,6 +30,7 @@ function fishStartPosition(){
 
 function initEvent(){
     $("#start").click(function(){
+        console.log('2. 물고기경기 시작');
         startGame();
     });
 }
@@ -52,6 +54,7 @@ function updateFishPosition(){
         var newLeft = $fish.position().left + step;
 
         $fish.css("left",newLeft);
+        console.log('3. 물고기이동중');
     }
 }
 //? 물고기 계속움직이기
