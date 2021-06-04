@@ -1,3 +1,33 @@
+.bx-wrapper{
+    margin-bottom: 15px;
+}
 .bx-wrapper ul.slider:after{
     content: ''; display: block; visibility: hidden; clear: both;
+}
+.newPager{
+    text-align: center; padding: 30px 0;
+    display: none; /*? pagerCustom 사용시*/
+}
+.newPager .bx-pager-item{
+    display: inline-block; margin-left: 2%;
+}
+.newPager .bx-pager-item a{
+    display: block; text-decoration: none; font-size: 16px; color: slateblue;
+}
+
+.customPager{
+    margin-bottom: 100px;
+}
+.customPager:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.customPager li{
+    float: left; width: 16.66%; display: block;
+}
+.customPager li a{
+    background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px;
+    cursor: pointer;
+}
+.customPager li a.active{
+    background-color: black;
 }

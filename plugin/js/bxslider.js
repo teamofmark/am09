@@ -23,11 +23,22 @@ $(document).ready(function(){
         video: true, //? default: false. video option 활성화. fitvids.js를 연결해두면 iframe,video등의 width,height 자동설정 가능.
         responsive: true, //? default: true. slider 자체 반응형 켜기.
         
+        // *pager - indicator
+        pager: true, //? default: true. pager 켜기 끄기.
+        pagerType: 'full', //? default: full.(circle). short: count로 변경
+        //? pagerShortSeparator: '.',  default: / -> . 식별자변경.
+        //? pagerSelector: '.newPager',  default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
+        pagerCustom: '.customPager',
+
         // *mobile - 비중요.
         touchEnabled: true, //? default: true. ? 터치스와이프 켜기 끄기.
         swipeThreshold: 50, //? default: 50. ? slide 터치스와이프시. 터치상태로 움직여야하는 px수.
-        
+        onoToOneTouch: true, //? default: true. hori,verti 일경우 터치상태를 slide가 따라다닌다.
+        preventDefaultSwipeX: true, //? default: true. screen자체 터치상태에서 x축 움직임을 중지 
+        preventDefaultSwipeY: false, //? default: false. screen자체 터치상태에서 Y축 움직임을 중지 
+
         // *비중요
+        wrapperClass: 'bx-wrapper', //? default: 'bx-wrapper' 종속된 css 를 해제하고 다른 부모 class로 변경한다.
         preloadImages: 'visible', //? default: visible. slider시작전에 한장(첫장)만 load, all. slider 시작전에 slide모든 image download.
         useCSS: true //? default: true. css animation(하드웨어가속)사용. 켜기(권장) 끄기.
         //? slideSelector : $(parent child) //? default: ''. slide로 작동될 요소를 직접선택 가능.
