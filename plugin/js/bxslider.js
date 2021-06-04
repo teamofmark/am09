@@ -14,12 +14,13 @@ $(document).ready(function(){
         infiniteLoop: false, //? default: true. slide간 전환 무한반복.
         ideControlOnEnd: true, //? default: false. 0번slide일 경우 prevBtn 삭제. 마지막(4번)slide일 경우 nextBtn 삭제.
         
+        // *adaptiveHeight
+        adaptiveHeight: true, //? default: false. slide내 img의 높이에 따라 frame자체가 유동적으로 변함.
+        adaptiveHeightSpeed: 750, //? default: 500. adaptiveHeight frame이 변하는 속도. 되도록 speed와 같은 수치.
+
         easing: 'ease-in-out', //? default: null. slide전환 가속도 설정. CSS timing-function option 사용가능.
         captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 이미지 위로 보여준다.
-
-        adaptiveHeight: true, //? default: false. slide내 img의 높이에 따라 frame자체가 유동적으로 변함.
-        adaptiveHeightSpeed: 750 //? default: 500. adaptiveHeight frame이 변하는 속도. 되도록 speed와 같은 수치.
-
+        video: true
         //? slideSelector : $(parent child) //? default: ''. slide로 작동될 요소를 직접선택 가능.
         
         //! carousel
