@@ -11,8 +11,8 @@ $(document).ready(function(){
         randomStart: false, //? default: false. slide 순서를 random으로 전환.
 
         //* infiniteLoop, hideControlOnEnd 충돌.
-        infiniteLoop: false, //? default: true. slide간 전환 무한반복.
-        ideControlOnEnd: true, //? default: false. 0번slide일 경우 prevBtn 삭제. 마지막(4번)slide일 경우 nextBtn 삭제.
+        infiniteLoop: true, //? default: true. slide간 전환 무한반복.
+        hideControlOnEnd: false, //? default: false. 0번slide일 경우 prevBtn 삭제. 마지막(4번)slide일 경우 nextBtn 삭제.
         
         // *adaptiveHeight
         adaptiveHeight: true, //? default: false. slide내 img의 높이에 따라 frame자체가 유동적으로 변함.
@@ -28,7 +28,14 @@ $(document).ready(function(){
         pagerType: 'full', //? default: full.(circle). short: count로 변경
         //? pagerShortSeparator: '.',  default: / -> . 식별자변경.
         //? pagerSelector: '.newPager',  default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
-        pagerCustom: '.customPager',
+        pagerCustom: '.customPager', //? default: null. pager 구조 직접 작성 및 data-slide-index="i"를 설정하면 원하는 style의 pager 구현가능.
+
+        // *controler
+        controls: true, //? default: true. control button 켜기 끄기.
+        nextSelector: '.btn_next', //? default: null. 공간 생성 및 class 부여 하면 controls 뼈대제공.
+        prevSelector: '.btn_prev',
+        nextText: '다음',
+        prevText: '이전',
 
         // *mobile - 비중요.
         touchEnabled: true, //? default: true. ? 터치스와이프 켜기 끄기.
