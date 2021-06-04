@@ -1,0 +1,3 @@
+.bx-wrapper ul.slider:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
