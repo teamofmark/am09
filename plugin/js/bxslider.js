@@ -37,6 +37,9 @@ $(document).ready(function(){
         nextText: '다음',
         prevText: '이전',
 
+        // *auto
+        
+
         // *mobile - 비중요.
         touchEnabled: true, //? default: true. ? 터치스와이프 켜기 끄기.
         swipeThreshold: 50, //? default: 50. ? slide 터치스와이프시. 터치상태로 움직여야하는 px수.
