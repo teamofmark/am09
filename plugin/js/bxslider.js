@@ -32,13 +32,22 @@ $(document).ready(function(){
 
         // *controler
         controls: true, //? default: true. control button 켜기 끄기.
-        nextSelector: '.btn_next', //? default: null. 공간 생성 및 class 부여 하면 controls 뼈대제공.
-        prevSelector: '.btn_prev',
-        nextText: '다음',
-        prevText: '이전',
+        //? nextSelector: '.btn_next', 공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공. 
+        //? prevSelector: '.btn_prev', 공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
+        //? nextText: '다음', default: 'Next'생성된 뼈대 안에 text 변경
+        //? prevText: '이전', default: 'Prev'생성된 뼈대 안에 text 변경
 
         // *auto
-        
+        auto: true, //? default: false. slide 자동전환 켜기. false로 설정시 autoControls에서 작동가능.
+        stopAutoOnClick: false, //? control button을 클릭 하였을 때 자동전환 중지
+        pause: 4000, //? default: 4000(m/s). 자동전환시 멈추는 시간.
+        autoStart: true, //? default: true. 화면 준비가 완료되면 바로 자동전환 시작.
+        autoDelay: 1500, //? default: 0(m/s). 자동시작 전 지연시간 설정
+        autoHover: false, //? default: false. onMouseOver상태일 때 자동전환 중지.
+        autoControls: true, //? default: false. 시각장애인들을 배려 하는것.
+        //? autoControlsSelector: '.autoControls',  default: null. 공간 생성 및 class 부여 하면 autoControl 뼈대제공.
+        //? startText: '시작',  default: 'Start' 생성된 뼈대 안에 text 변경
+        //? stopText: '중지',  default: 'Stop' 생성된 뼈대 안에 text 변경
 
         // *mobile - 비중요.
         touchEnabled: true, //? default: true. ? 터치스와이프 켜기 끄기.
@@ -48,6 +57,7 @@ $(document).ready(function(){
         preventDefaultSwipeY: false, //? default: false. screen자체 터치상태에서 Y축 움직임을 중지 
 
         // *비중요
+        // ? autoDirection: 'next', 자동전환 방향설정 'prev'는 일반적이지 않다.
         wrapperClass: 'bx-wrapper', //? default: 'bx-wrapper' 종속된 css 를 해제하고 다른 부모 class로 변경한다.
         preloadImages: 'visible', //? default: visible. slider시작전에 한장(첫장)만 load, all. slider 시작전에 slide모든 image download.
         useCSS: true //? default: true. css animation(하드웨어가속)사용. 켜기(권장) 끄기.
