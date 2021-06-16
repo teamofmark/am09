@@ -16,16 +16,13 @@
     <iframe src="https://www.youtube.com/embed/59anTUydEAY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <!-- <iframe src="http://nonhyun.bluehillclinic.com/" width="1600" height="800"></iframe> -->
     <embed src="https://www.youtube.com/embed/59anTUydEAY" width="560" height="320">
-    <video src="mp4/file_example_MP4_480_1_5MG.mp" poster="images/apology-sorry.jpg" width="480" height="270" controls autoplay loop muted>
-
+    <video poster="images/apology-sorry.jpg" width="480" height="270" controls autoplay loop muted preload="auto">
+        <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="mp4/file_example_AVI_480_750kB.avi" type="video/avi">
+        <source src="mp4/file_example_WEBM_480_900KB.webm" type="video/webm">
     </video>
-    <!-- 
-        ? controls 재생영역 제어버튼 활성화
-        ? autoplay 자동재생
-        ? loop 반복재생
-     -->
-    <audio src="">
-
+    <audio controls muted>
+        <source src="mp3/file_example_MP3_700KB.mp3">
     </audio>
 </body>
 </html>
