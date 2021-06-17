@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지정한 부분으로 보내는 namedAnchor</title>
+    <style>
+        html,
+        body,
+        div,
+        ol{
+            margin: 0; padding: 0; height: 100%;
+        }
+        ol{
+            position: fixed; right: 0; top: 0; text-align: right;
+        }
+        #page1{
+            background-color: lightsalmon;
+        }
+        #page2{
+            background-color: lightseagreen;
+        }
+        #page3{
+            background-color: lightgrey;
+        }
+        #page4{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li><a href="#page1">페이지 바로가기</a></li>
+        <li><a href="#page2">페이지 바로가기</a></li>
+        <li><a href="#page3">페이지 바로가기</a></li>
+        <li><a href="#page4">페이지 바로가기</a></li>
+        <li><a href="1_hyperlink.html#targetAnchor" target="_blank">목표지점 페이지 바로가기</a></li>        
+    </ol>
+    <div id="page1">페이지 1입니다.</div>
+    <div id="page2">페이지 2입니다.</div>
+    <div id="page3">페이지 3입니다.</div>
+    <div id="page4">페이지 4입니다.</div>
+</body>
+</html>
