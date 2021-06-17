@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyperLink</title>
+    <style>
+        html,
+        body,
+        #targetAnchor{
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>포털사이트 목록</h1>
@@ -23,8 +30,17 @@
             <a href="1_hyperlink.zip">file Download</a>
         </li>
         <li>
-            <a href="mailto:teamofmark@gmail.com">이메일 보내기</a>
+            <a href="mailto:teamofmark@gmail.com?subject=질문있습니다.">이메일 보내기</a>
+        </li>
+        <li>
+            <a href="tel:+821056658312">전화걸기</a>
+        </li>
+        <li>
+            <a href="#targetAnchor">목표지점 바로가기</a>
         </li>
     </ul>
+    <div id="targetAnchor">
+        목표지점
+    </div>
 </body>
 </html>
