@@ -37,15 +37,35 @@
                     <textarea cols="30" rows="10">하시고 싶은 말씀을 남겨주세요.</textarea>
                 </li>
                 <li>
-                    <select name="job">
+                    <select name="job" multiple size="3">
                         <option>직업선택</option>
-                        <option>무직</option>
-                        <option>학생</option>
-                        <option>전문직</option>
-                        <option>공무원</option>
+                        <optgroup label="구직자">
+                            <option selected>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
                     </select>
                 </li>
+                <li>
+                    <input type="button" value="작성">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                    <input type="file" value="찾아보기">
+                    <input type="image" src="https://via.placeholder.com/100x50?text=imgBtn" alt="imgButton">
+                </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="userName">이름 : </label>
+            <input type="text" id="userName" placeholder="8자미만" maxlength="8" required autofocus readonly>
+            <input type="email" title="사용자이메일" placeholder="example@example.com" required>
+            <input type="url" title="사용자웹사이트" placeholder="https://www.example.com" required>
+            <input type="number" min="10" max="100" value="10" step="10">
+            <input type="range" min="-5" max="5" value="0" step="1">
         </fieldset>
     </form>
 </body>
