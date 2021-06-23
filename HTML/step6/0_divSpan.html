@@ -6,32 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div,span Layout</title>
     <style>
-        .header,
-        .section{
+        header,
+        section{
             background-color: red;
         }
-        .header{
+        header{
             text-align: center;
         }
-        .header div span{
+        header div span{
             background-color: blue; color: white;
         }
-        .section div{
+        section > *{
             display: inline-block; height: 500px;
         }
-        .section .article{
+        section article{
             background-color: yellow; width: 80%;
         }
-        .section .aside{
+        section aside{
             background-color: green; width: 18%;
         }
-        .footer{
+        footer{
             text-align: center; background-color: orange;
         }
     </style>
 </head>
 <body>
-   <div class="header">
+   <header>
        <span>global Header</span>
        <div>
            <span>menu1</span>
@@ -40,17 +40,17 @@
            <span>menu4</span>
            <span>menu5</span>
        </div>
-   </div>
-   <div class="section">
-        <div class="article">
+    </header>
+   <section>
+        <article>
             <span>article Text</span>
-        </div>
-        <div class="aside">
+        </article>
+        <aside>
             <span>quick Side</span>
-        </div>
-   </div>
-   <div class="footer">
+        </aside>
+    </section>
+   <footer>
        <span>global footer</span>
-   </div>
+   </footer>
 </body>
 </html>
