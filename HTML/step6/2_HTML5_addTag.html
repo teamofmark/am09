@@ -86,29 +86,5 @@
             <td>31</td>
         </tr>
     </table>
-
-    <!--해당 객체의 간단한 대화상자를 생성해 낼 수있다. 
-        open 값을 제하면, 안보이고
-        넣으면 보인다. 크롬, 오페라만 지원-->
-    <div style="background-color:yellow; border:1px solid #cccccc; padding: 10px;" contextmenu="mymenu">
-        <p>Right-click inside this box to see the context menu!</p>
-        <menu type="context" id="mymenu">
-            <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
-            <menu label="Share on...">
-                <menuitem label="Twitter" icon="ico_twitter.png"
-                          onclick="window.open('//twitter.com/intent/tweet?text='+window.location.href);"></menuitem>
-                <menuitem label="Facebook" icon="ico_facebook.png"
-                          onclick="window.open('//facebook.com/sharer/sharer.php?u='+window.location.href);"></menuitem>
-            </menu>
-            <menuitem label="Email This Page"
-                      onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
-        </menu>
-    </div>
-    <!--? FF 8.0이상 지원 나머진 지원 불가
-            1.contextmenu는 browser상에서 우클릭
-            2. 호출메뉴의 이름은 ID
-            3. menu로 item을 grouping 하고 호출될 ID 부여
-            4. menuitem에 label로 항목 표기를 하고, 이벤트 및 출력데이터 선언    
-        -->
 </body>
 </html>
