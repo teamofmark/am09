@@ -28,3 +28,7 @@ p.classEx1{
     background: rgb(150,150,0); color: gold; border-style: dotted;
     border-color: goldenrod;
 }
+#userName{
+    border: 1px solid darkorange;
+    line-height: 21px; font-size: 12px; padding: 5px 15px; color: green;
+}
