@@ -20,3 +20,11 @@ p.letter{
 p.word{
     word-spacing: 10px;
 }
+p.w_normal{
+    width: 150px; line-height: 21px; border: 3px solid black;
+    white-space: normal;
+}
+p.w_nowrap{
+    width: 150px; line-height: 21px; border: 3px solid red;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
