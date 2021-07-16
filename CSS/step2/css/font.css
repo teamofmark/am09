@@ -9,5 +9,14 @@ h2{
     font-size: 15px; line-height: 21px; color: hsla(155, 80%, 50%, 0.6);
 }
 h3{
-    font-size: 13px; line-height: 19px;
+    font-size: 13px; line-height: 19px; color: #60f;
+}
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+p.word{
+    word-spacing: 10px;
 }
