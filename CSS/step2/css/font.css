@@ -42,3 +42,15 @@ p.t_indent{text-indent:20px; font-size:40px;}
 	font-size: 12px;
 	text-indent: -9999px;
 }
+a.t_deco_N{
+    text-decoration:none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration:underline; text-transform: lowercase; color: #0cf;
+}
+a.t_deco_O{
+    text-decoration:overline; text-transform: capitalize; color: #96c;
+}
+a.t_deco_T{
+    text-decoration:line-through; text-transform: uppercase; color: #f63;
+}
