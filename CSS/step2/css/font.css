@@ -28,3 +28,17 @@ p.w_nowrap{
     width: 150px; line-height: 21px; border: 3px solid red;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+
+.v_alignTest img{width:200px; height:200px; vertical-align:middle;}
+
+.v_alignTest span{vertical-align:10%;}
+
+p.t_indent{text-indent:20px; font-size:40px;}
+
+.test{
+	background:url("http://via.placeholder.com/150x50?text=blabla");
+	border: none;
+	width: 150px; line-height: 50px;
+	font-size: 12px;
+	text-indent: -9999px;
+}
