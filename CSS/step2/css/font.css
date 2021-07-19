@@ -42,6 +42,9 @@ p.t_indent{text-indent:20px; font-size:40px;}
 	font-size: 12px;
 	text-indent: -9999px;
 }
+a{
+    display: block;
+}
 a.t_deco_N{
     text-decoration:none; text-transform: none; color: #090;
 }
