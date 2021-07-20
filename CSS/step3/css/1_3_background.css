@@ -1,4 +1,10 @@
 body{
     margin: 0;
     background-image:url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    background-size: 100% 250px;
+    /* 
+        ?cover : 공간을 채우는 것 부터 우선시.
+        ?contain : img의 비율 부터 우선시.
+    */
+    background-repeat: no-repeat;
 }
