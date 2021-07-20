@@ -5,8 +5,9 @@ html,body{
     height: 100%;
 }
 body{
-    background-image: url('../images/example.jpg');
+    background: url('../images/example.jpg') no-repeat center / cover;
+    /* background-image: url('../images/example.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
 }
