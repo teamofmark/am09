@@ -29,3 +29,9 @@ div{
 .ridgeBox{
     border: 20px ridge #666;
 }
+.insetBox{
+    border: 20px inset #930;
+}
+.outsetBox{
+    border: 20px outset #930;
+}
