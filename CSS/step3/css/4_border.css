@@ -26,6 +26,6 @@ div{
 .grooveBox{
     border: 20px groove #666;
 }
-.ridgeBox{
+.ridgeBox{ 
     border: 20px ridge #666;
 }
