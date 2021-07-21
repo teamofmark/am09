@@ -6,7 +6,26 @@ div{
     /* S/H */
 }
 .multiBox{
+    /* border-width: 1px 5px 10px;
+    border-style: solid dotted dashed;
+    border-color: #1958b7 #f06 seagreen; */
+    
     border-width: 1px 5px 10px 20px;
     border-style: solid dotted dashed double;
-    border-color: #1958b7 #f06 seagreen #fc6;
+    border-color: #1958b7 #f06 seagreen #60f;
+
+    /* border-top : 1px solid #1958b7;
+    border-right: 5px dotted #f06;
+    border-bottom: 10px dashed seagreen;
+    border-left: 10px double #60f; */
+
+    /* border-width: 10px 5px;
+    border-style: solid dotted;
+    border-color: #1958b7 #f06; */
+}
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
 }
