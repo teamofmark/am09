@@ -1,3 +1,5 @@
+
+
 div{
     width: 300px; height: 150px; margin-bottom: 10px;
 }
@@ -34,4 +36,11 @@ div{
 }
 .outsetBox{
     border: 20px outset #930;
+}
+.radiusBox{
+    background-color: black; color: yellow; border-radius: 10px 5px 3px 0px;
+}
+.circleBox{
+    width: 500px; height: 500px; background-color: hotpink;
+    text-indent: -9999px; border-radius: 250px;
 }
