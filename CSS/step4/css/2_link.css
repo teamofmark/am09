@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 30px;
+}
+a:link{
+    color: #60f;
+    background-color: silver;
+    padding: 5px;
+    border: 2px solid darkviolet;
+    border-radius: 25px;
+}
+a:hover{
+    color: #0f6;
+    background-color: seagreen;
+    padding: 5px;
+    border: 2px solid forestgreen;
+    border-radius: 0px;
+}
+a:active{
+    color: hotpink;
+    background-color: darkred;
+}
+a:visited{
+    color: darkgray;
+    background-color: dimgray;
+}
+a:focus{
+    border:5px solid black;
+}
