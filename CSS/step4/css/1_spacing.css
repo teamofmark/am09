@@ -27,6 +27,7 @@ body{
     background-color: slategray;
     border: 5px solid #30f;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 .centerDiv article{
     background-color: #f33;
