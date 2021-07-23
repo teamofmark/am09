@@ -14,9 +14,10 @@ body{
     background-color: slateblue;
 }
 .position_F{
-    position: fixed;
+    position: fixed; /* position: static */
     width: 100%; padding: 20px 0; text-align: center; color: rosybrown;
     /* width: 80px; height: 80px; */
     top: 0; left: 0;
     background-color: seagreen;
+    
 }
