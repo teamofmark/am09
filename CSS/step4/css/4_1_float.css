@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1 img{
+    float: left; margin-right: 20px;
+}
+.wrap .exam_1 p{
+    margin: 0; font-size: 30px; line-height: 40px;
+}
