@@ -62,3 +62,9 @@
 .stringAttrSelector img[src$='gif']{
     width: 300px; height: 300px; border: 10px solid #00f;
 }
+.sameSelector h1~h2{
+    background-color: #333; color: white;
+}
+.sameSelector h1+h3{
+    font-size: 40px; color: #fcf;
+}
