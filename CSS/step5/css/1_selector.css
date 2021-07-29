@@ -39,3 +39,9 @@
 .attrSelector fieldset ul li input[type='password']{
     background-color: lightgreen; border: 3px solid lime; color: green;
 }
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px;
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 25px; height: 25px;
+}
