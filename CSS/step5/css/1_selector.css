@@ -45,3 +45,10 @@
 .attrSelector fieldset ul li input[type='checkbox']{
     width: 25px; height: 25px;
 }
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906;
+}
