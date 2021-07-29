@@ -12,3 +12,30 @@
 .classSelector p.f_weight{font-weight: bold;}
 .classSelector p.f_color{color: #9cf;}
 /* ?class Selector + 다중 class module */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: slateblue;
+}
+.attrSelector fieldset legend{
+    border: 1px solid slateblue; background-color: #555; color: white;
+    padding: 10px;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    color: white; font-size: 14px; line-height: 30px;
+}
+.attrSelector fieldset ul li label{
+    width: 100px;
+}
+.attrSelector fieldset ul li input{
+    vertical-align: middle;
+}
+
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid saddlebrown; color: maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime; color: green;
+}
