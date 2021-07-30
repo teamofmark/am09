@@ -68,3 +68,22 @@
 .sameSelector h1+h3{
     font-size: 40px; color: #fcf;
 }
+/* 
+    ? 동위 선택자에서 A+B는 A 바로뒤 B.
+    ? A~B는 A뒤에있는 B모두를 선택한다.
+*/
+.eventSelector a{
+    display: block;
+}
+.eventSelector a:link{
+    font-size: 13px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
+} /* ? a:visited => a:link. font-size변경불가 */
