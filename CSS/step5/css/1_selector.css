@@ -87,3 +87,11 @@
 .eventSelector a:visited{
     font-size: 40px; color: yellowgreen;
 } /* ? a:visited => a:link. font-size변경불가 */
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; height: 20px; overflow: hidden;
+    transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
