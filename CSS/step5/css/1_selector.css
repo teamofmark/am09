@@ -95,3 +95,9 @@
 .statusSelector input[type='checkbox']:checked + label{
     height: 0px;
 }
+.statusSelector input[type='text']:enabled{
+    background-color: lime;
+}
+.statusSelector input[type='password']:disabled{
+    background-color: deeppink;
+}
