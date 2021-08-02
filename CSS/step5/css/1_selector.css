@@ -123,7 +123,7 @@
 }
 /* https://css-tricks.com/useful-nth-child-recipies/ */
 
-/* .shapeSelector h1:first-of-type{
+.shapeSelector h1:first-of-type{
     color: #30f;
 }
 .shapeSelector h2:nth-of-type(2){
@@ -131,11 +131,11 @@
 }
 .shapeSelector h2:last-of-type{
     color: #0c6;
-} */
+}
 /* todo. second h1,h2,h3 를 child로 선택해보기. */
-.shapeSelector h1:nth-child(1){color: #30f;}
+/* .shapeSelector h1:nth-child(1){color: #30f;}
 .shapeSelector h2:nth-child(5){color: lime;}
-.shapeSelector h2:nth-child(7){color: #0c6;}
+.shapeSelector h2:nth-child(7){color: #0c6;} */
 /*
     * first-of-type, last-of-type은 형제 관계중 첫 번째 혹은 마지막으로 
     * 등장하는 지정된 태그를 선택마지막으로 등장하는 특정 태그를 선택한다.
