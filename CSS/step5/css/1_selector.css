@@ -143,3 +143,9 @@
     * 또한 전체선택자인 * 와 혼용하여 body > *:first-of-type{color:red} 이런식의 범위 지정도
     * 가능하다.
 */
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px; font-size: 14px; text-decoration: underline;
+}
