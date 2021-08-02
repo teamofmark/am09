@@ -166,3 +166,15 @@
 .reactionSelector > *::selection{
     background-color: #000; color: #ff0;
 }
+
+.notSelector input:not([type='password'],[type='submit'],[type='reset']){
+    background-color: red;
+}
+/* 
+    ?속성값일치선택자.
+    ? ~= : 띄어쓰기 기준. 해당 단어 포함.
+    ? ^= : 해당 단어로 시작하는 것만 선택.
+    ? *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
+    ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
+    ? $= : 해당 단어로 끝나는 대상 선택.
+*/
