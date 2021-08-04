@@ -53,9 +53,25 @@ ul li:not(:first-child){
     border-bottom: 1px solid black;
 }
 ul li:first-child{
-    border-width: 3px 0 1px; border-style: solid; border-color: darkred;
+    border-width: 3px 0 1px; border-style: solid; border-color: darkgreen;
     padding: 10px 0;
 }
 ul li:nth-child(even){
     background-color: #dadada;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left; padding: 10px 2.5%; font-size: 14px;
+}
+ul li span:not(:nth-child(2), mark){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 35%;
+}
+ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
+    background-color: rgba(0, 255, 0, 0.4);
 }
