@@ -75,3 +75,31 @@ ul li mark{
     position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
     background-color: rgba(0, 255, 0, 0.4);
 }
+div{
+    position: relative; max-width: 400px; margin: 0 auto;
+}
+div a{
+    text-decoration: none; font-size: 14px; padding: 5px; color: #00556b;
+}
+div a:hover{
+    color: limegreen;
+}
+div > a{
+    position: absolute; display: block; top: 0;
+}
+div > a:first-of-type{
+    left: 0;
+}
+div > a:last-of-type{
+    right: 0;
+}
+div > ol{
+    padding: 0 25px; margin: 0; list-style: none;
+    text-align: center; line-height: 30px;
+}
+div > ol li{
+    display: inline-block;
+}
+div > ol li:not(:first-child){
+    margin-left: 2%;
+}
