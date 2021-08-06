@@ -1,0 +1,26 @@
+*{margin: 0; padding: 0;}
+body{
+    position: relative;
+}
+.circle{
+    position: absolute; width: 200px; height: 200px; border-radius: 100px;
+    background: linear-gradient(#cb60b3 0%, #db36a4 100%); /* http://www.colorzilla.com/gradient-editor */
+    text-align: center;
+    animation-name: moveCircle;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.circle h1{
+    line-height: 200px;
+}
+
+@keyframes moveCircle{
+    0%{
+        left: 0;
+        transform: rotate(0deg);
+    }100%{
+        left: 500px;
+        transform: rotate(360deg);
+    }
+}
