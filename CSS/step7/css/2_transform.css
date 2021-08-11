@@ -1,0 +1,37 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black; margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block; transform-origin: left top;
+}
+    /* 
+        ? origin
+        * transform이 일어나는 객체의 기본 중심축은
+        * 자기 자신의 중심을 기준으로 삼는데,
+        * left, top, right, bottom, % 로 이동 시킬 수 있다.
+        ! 계산을 편하게 하려면 화면축과 동기화 (left, top)
+    */
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; color: #fff; transform: rotate(10deg) translateX(100px);
+}
+div:nth-of-type(3) span{
+    background-color: blue; color: #fff;
+    transform: rotate(10deg) translate(100px, 50px);
+}
+div:nth-of-type(4) span{
+    background-color: orange; transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg);
+}
+div:nth-of-type(5) span{
+    background-color: brown; transform: rotate(10deg) translate(100px, 50px) skew(10deg, 10deg) scale(1.2, 1.2);
+}
+/*
+    transform에 입력한 변환함수 들은 앞쪽부터 차례로 적용된다.(☆)
+    rotate(deg) : 특정 각도만큼 회전한다.
+    translate(X,Y) : 특정 크기만큼 해당 축 방향으로 이동.
+    skew(Xdeg,Ydeg) : 특정 각도만큼 해당 축 방향으로 기울임.
+    scale(X,Y) : 특정 배율만큼 해당 축 방향으로 확대 및 축소한다.
+    transform-origin:X축값, Y축값
+*/
