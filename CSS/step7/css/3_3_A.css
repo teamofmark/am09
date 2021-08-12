@@ -11,9 +11,9 @@ div{
 }
 @keyframes rotate3D{
     from{
-        transform: rotate3d(0,0,0,0deg);
+        transform: rotateX(90deg) rotateY(60deg);
     }to{
-        transform: rotate3d(1,1,1,360deg);
+        transform: rotateX(450deg) rotateY(60deg);
     }
 }
 div span{
