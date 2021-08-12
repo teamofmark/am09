@@ -22,3 +22,10 @@ div span{
 div span:nth-of-type(1){background-color: red;}
 div span:nth-of-type(2){background-color: green; transform-origin: left top; transform: rotateY(60deg);}
 div span:nth-of-type(3){background-color: blue; width: 100px; transform-origin: right top; transform: rotateY(-60deg);}
+/*
+	A만들기
+	1. 3장의 종이를 position:absolute; left:0; top:0; 을 통해 한장으로 모은다.
+	2. 2번 종이를 삼각형 만들때와 같이 좌측상단을 중심으로 60도만큼 각도를 준다.
+	3. 3번 종이를 우측상단을 중심으로 -60도 만큼 각도를 주고, width를 1/2한다.
+	(그렇게 되면 right 지점 자체가 200px에서 100px로 줄어들며 1번종이의 50%지점부터 -60도의 각을 갖게된다.)
+*/
