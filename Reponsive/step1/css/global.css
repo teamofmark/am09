@@ -1,4 +1,43 @@
 
+
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 36px; line-height: 46px; text-align: right;
+    }
+    p{
+        font-size: 18px; line-height: 24px;
+    }
+}
+/* mobile Device - 사용자 해상도가 768px 미만 일 때 */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: greenyellow; color: black; font-weight: bold;
+    }
+    h1{
+        font-size: 36px; line-height: 46px; text-align: center;
+    }
+    p{
+        font-size: 18px; line-height: 24px; text-align: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
+    body{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 36px; line-height: 46px; text-align: right;
+    }
+    p{
+        font-size: 18px; line-height: 24px;
+    }
+}
+/* tablet Device - 사용자 해상도가 768px 이상 1280 미만 일 때 */
+
 @media screen and (min-width: 1280px){
     body{
         background-color: blue; color: white; font-weight: bold;
