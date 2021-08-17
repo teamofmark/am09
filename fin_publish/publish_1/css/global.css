@@ -1,6 +1,9 @@
 header > div nav ul li a{
     font-family: 'Roboto';
 }
+header > div > ul li h2{
+    font-family: 'Playfair Display';
+}
 a{
     text-decoration: none;
 }
@@ -37,5 +40,20 @@ a{
         display: block; line-height: 50px; font-weight: 900;
         font-size: 13px; color: white;
     }
-
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? gnb Fin */
+    header > div > ul{
+        margin-bottom: 125px;
+    }
+    header > div > ul li{
+        padding-top: 160px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center;
+        padding-bottom: 22px; background: url('../images/bd_01.png') center bottom no-repeat;
+        margin-bottom: 30px;
+    }
 }
