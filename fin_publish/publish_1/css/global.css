@@ -1,4 +1,10 @@
-
+header > div nav ul li a{
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+/* All Use */
 
 @media screen and (min-width: 1280px){
     
@@ -24,4 +30,12 @@
     header > div nav ul li{
         display: inline-block;
     }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header > div nav ul li a{
+        display: block; line-height: 50px; font-weight: 900;
+        font-size: 13px; color: white;
+    }
+
 }
