@@ -1,5 +1,6 @@
 header > div nav ul li a,
-header > div > ul li p{
+header > div > ul li p,
+footer > div *{
     font-family: 'Roboto';
 }
 header > div > ul li h2{
@@ -17,6 +18,10 @@ a{
 
 @media screen and (min-width: 1280px){
     
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
@@ -84,4 +89,14 @@ a{
         background-color: #00e0d0; border-color: #00e0d0;
     }
     /* *header Fin */
+
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 32%; margin: 0 0 70px 2%; font-weight: 300;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
 }
