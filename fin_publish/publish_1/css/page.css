@@ -1,4 +1,26 @@
 
 @media screen and (min-width: 1280px){
-    
+    #about:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    #about img{
+        float: left; max-width: 235px; width: 25%;
+    }
+    #about figcaption{
+        width: 60%; float: left; margin-left: 15%;
+    }
+    #about figcaption > *:not(a){
+        margin-bottom: 30px;
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75);
+        line-height: 22px;
+    }
+    #about figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* ? CI About Figure Fin */
 }
