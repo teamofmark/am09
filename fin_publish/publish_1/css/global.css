@@ -1,7 +1,8 @@
 header > div nav ul li a,
 header > div > ul li p,
 footer > div *,
-#about figcaption p{
+#about figcaption p,
+section.videoArea h2{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
