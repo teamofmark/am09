@@ -47,8 +47,7 @@
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75); margin-bottom: 15px;
     }
     section.expArea hr{
-        width: 3%; min-width: 50px; border-top: 2px solid rgba(65,61,75,0.3);
-        margin: 0 auto 45px;
+        border-color: rgba(65,61,75,0.3);
     }
     section.expArea ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -80,4 +79,18 @@
         font-size: 14px;
     }
     /* ? expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_03.png') left top / cover no-repeat;
+        text-align: center; color: white; padding: 70px 0;
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    }
+    section.teamArea p{
+        font-size: 14px; font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea > hr{
+        border-color: rgba(255,255,255,0.2);
+    }
 }

@@ -8,7 +8,9 @@ section.expArea ul li > *{
 }
 header > div > ul li h2,
 #about figcaption h2,
-section.expArea > *:not(ul){
+section.expArea > *:not(ul),
+section.teamArea h2,
+section.teamArea > p:not(:last-of-type){
     font-family: 'Playfair Display';
 }
 a{
@@ -18,6 +20,11 @@ a{
     font-family: 'Hammersmith One'; text-align: center; color:#00e0d0;
     border: 1px solid #00e0d0; display: block; font-size: 16px;
     padding: 15px 1.87%;
+}
+section[class $= Area] > hr{
+    width: 3%; min-width: 50px;
+    border-width: 2px 0 0 0; border-style: solid;
+    margin: 0 auto 45px;
 }
 /* ? All Use */
 
