@@ -153,4 +153,27 @@
         max-width: 140px; margin: 0 auto;
     }
     /* worksArea Fin */
+
+    section.talkArea{
+        background: url('../images/bg_04.png') left top / cover no-repeat;
+        padding: 70px 0; text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 940px; margin: 0 auto 45px; padding-top: 70px;
+        background: url('../images/quote.png') center top no-repeat;
+        color: white; font-size: 16px; line-height: 26px; font-weight: 400;
+    }
+    section.talkArea p > *{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin: 50px 0 5px; font-size: 14px; font-weight: 900;
+        line-height: 14px;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300;
+    }
 }
