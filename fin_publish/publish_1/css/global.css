@@ -3,7 +3,9 @@ header > div > ul li p,
 footer > div *,
 #about figcaption p,
 section.videoArea h2,
-section.expArea ul li > *{
+section.expArea ul li > *,
+section.teamArea ul li figure figcaption dl,
+section.teamArea ul + p{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
