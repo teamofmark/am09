@@ -248,4 +248,20 @@
     }
     /* ? left Fin */
     
+    section.contactArea div{
+        width: 40%; margin-left: 10%;
+    }
+    section.contactArea ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.contactArea ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea ul li a img{
+        width: 100%; max-width: 162px;
+    }
 }
+/* ?deskTop Fin */
