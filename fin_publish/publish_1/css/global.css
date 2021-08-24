@@ -36,6 +36,9 @@ section[class $= Area] > hr{
     border-width: 2px 0 0 0; border-style: solid;
     margin: 0 auto 45px;
 }
+header > div nav input[type='checkbox']{
+    display: none;
+}
 /* ? All Use */
 
 @media screen and (max-width: 767px){
@@ -79,12 +82,18 @@ section[class $= Area] > hr{
     header > div nav label.mui span:not(:last-of-type){
         margin-bottom: 3px;
     }
+    header > div label.mui + input[type='checkbox']:checked + ul{
+        height: 350px;
+    }
+    header > div nav ul{
+        height: 0; overflow: hidden; transition: height 1s ease-in-out;   
+    }
     header > div nav ul li{
         display: block;/*inline-*/
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         display: block; line-height: 50px; font-weight: 900;
         font-size: 13px; color: white;
@@ -95,10 +104,10 @@ section[class $= Area] > hr{
     }
     /* ? gnb Fin */
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 160px; display: block;
+        padding-top: 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center;
