@@ -45,6 +45,7 @@ header > div nav input[type='checkbox']{
     #about,
     footer > div,
     section.expArea,
+    section.teamArea ul,
     section.contactArea{
         max-width: 600px; margin: 0 auto; padding: 70px 3%;
     }
