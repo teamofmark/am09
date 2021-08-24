@@ -69,6 +69,16 @@ section[class $= Area] > hr{
         box-sizing: border-box;
         */
     }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px;
+        display: block; margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
     header > div nav ul li{
         display: block;/*inline-*/
     }
@@ -225,6 +235,9 @@ section[class $= Area] > hr{
 /* ? mobile */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    .mui{
+        display: none;
+    }
     #about,
     footer > div,
     section.expArea,
@@ -407,6 +420,9 @@ section[class $= Area] > hr{
 /* ?tablet */
 
 @media screen and (min-width: 1280px){
+    .mui{
+        display: none;
+    }
     #about,
     footer > div,
     section.expArea,
