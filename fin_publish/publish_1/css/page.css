@@ -133,24 +133,31 @@
     /* *teamArea Fin */
 
     section.worksArea{
-        padding: 70px 0;
+        /* padding: 70px 0; */
+        padding-bottom: 70px;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 728px;
-        margin: 0 auto 70px; position: relative;
+        /* max-width: 728px; */
+        font-size: 18px; font-weight: 700; color: #413d4b;
+        margin: 0 auto; position: relative;
     }
     section.worksArea h2 a{
-        font-size: 14px; font-weight: 300; color: #413d4b; position: absolute;
-        right: 0; top: 8px;
+        font-size: 12px; font-weight: 300; color: #413d4b; position: absolute;
+        right: 3%; line-height: 21px;
+        /*top: 8px;*/
     }
     section.worksArea ul{
         margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     section.worksArea ul li{
-        width: 16.66%; float: left; display: block; line-height: 0;
+        /* width: 16.66%; float: left; */
+        display: block; line-height: 0;
+    }
+    section.worksArea ul li:not(:last-child){
+        margin-bottom: 25px;
     }
     section.worksArea ul li img{
         width: 100%;
@@ -168,7 +175,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 728px; margin: 0 auto 45px; padding-top: 70px;
+        max-width: 600px; margin: 0 auto 45px; padding: 70px 3% 0;
         background: url('../images/quote.png') center top no-repeat;
         color: white; font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -183,7 +190,7 @@
         font-size: 13px; font-weight: 300;
     }
     section.talkArea div{
-        max-width: 728px; margin: 0 auto;
+        max-width: 600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -192,7 +199,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: 80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -220,18 +227,18 @@
     }
     /* ? talkArea Fin */
 
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left; display: block;
-    }
+    } */
     section.contactArea form fieldset{
-        width: 50%;
+        /* width: 50%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset legend,
     section.contactArea div h3{
@@ -251,12 +258,13 @@
     }
     section.contactArea form fieldset .btn_more{
         background-color: transparent; cursor: pointer; min-width: 120px;
+        margin-left: auto;
     }
     /* ? left Fin */
     
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 10%;
-    }
+    } */
     section.contactArea ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
     }
