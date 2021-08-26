@@ -76,7 +76,7 @@ a{
         border: 2px solid #e3e8f0; min-width: 85px; box-sizing: border-box;
         border-radius: 18px;
     }
-    /* *header Fin */
+    /* ?header Fin */
 
     .paging{
         position: relative; background-color: white; border-radius: 4px;
@@ -92,5 +92,19 @@ a{
     .paging > a:last-of-type{
         right: 0; border-left: 1px solid #f0f2f7;
     }
+    .paging ol{
+        padding: 20px 17%; box-sizing: border-box; text-align: center;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; line-height: 50px; width: 50px; background-color: white;
+        border-radius: 25px; color: #3a405b; transition-duration: 0.5s;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5; color: #b9bed1;
+    }
+    /* ?pager Fin */
 }
 /* ?desktop */
