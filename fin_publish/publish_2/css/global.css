@@ -7,7 +7,13 @@ body{
 .crim{
     font-family: 'Crimson Text', serif;
 }
-
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
 @media screen and (min-width: 1280px){
     header > div{
         max-width: 1170px; margin: 0 auto;
@@ -37,6 +43,9 @@ body{
     header > div nav{
         width: 54.7%;
     }
+    header > div nav ul{
+        text-align: right;
+    }
     header > div nav ul li{
         display: inline-block;
     }
@@ -45,6 +54,29 @@ body{
     }
     header > div nav ul li a{
         font-size: 14px; display: block; color: #343e5c; font-weight: 700;
+        line-height: 90px;
     }
+    header > div div{
+        width: 29.3%; font-size: 11px; color: #343e5c; line-height: 90px;
+        text-align: right;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; background: url('../images/bul_cart.png') left center no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
+        text-align: center; font-weight: 700; margin-left: 2%;
+    }
+    header > div div input[type='button']{
+        margin-left: 8%; padding: 10px 15px; font-size: 11px; background-color: white;
+        border: 2px solid #e3e8f0; min-width: 85px; box-sizing: border-box;
+        border-radius: 18px;
+    }
+    /* *header Fin */
+
+    
 }
 /* ?desktop */
