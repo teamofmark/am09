@@ -1,6 +1,13 @@
 body{
     background-color: #e4e5e7;
 }
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+.crim{
+    font-family: 'Crimson Text', serif;
+}
+
 @media screen and (min-width: 1280px){
     header > div{
         max-width: 1170px; margin: 0 auto;
@@ -17,6 +24,27 @@ body{
     header > div label.material-icons{
         width: 5.3%; max-width: 60px; line-height: 90px;
         border-right: 1px solid #f0f2f7; display: block;
+    }
+    header > div h1{
+        width: 10.7%; min-width: 125px;
+    }
+    header > div h1 a{
+        display: block; text-align: right; padding: 31px 0;
+    }
+    header > div h1 a img{
+        max-width: 92px; width: 100%;
+    }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 4.68%;
+    }
+    header > div nav ul li a{
+        font-size: 14px; display: block; color: #343e5c; font-weight: 700;
     }
 }
 /* ?desktop */
