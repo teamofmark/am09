@@ -15,7 +15,8 @@ a{
     text-decoration: none;
 }
 @media screen and (min-width: 1280px){
-    header > div{
+    header > div,
+    .contentArea{
         max-width: 1170px; margin: 0 auto;
     }
     header{
@@ -77,6 +78,19 @@ a{
     }
     /* *header Fin */
 
-    
+    .paging{
+        position: relative; background-color: white; border-radius: 4px;
+        clear: both;
+    }
+    .paging > a{
+        position: absolute; width: 16%; line-height: 90px; text-align: center;
+        font-size: 18px; font-weight: 700; color: #3a405b; top: 0;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
 }
 /* ?desktop */
