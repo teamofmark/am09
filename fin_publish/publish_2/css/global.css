@@ -16,7 +16,8 @@ a{
 }
 @media screen and (min-width: 1280px){
     header > div,
-    .contentArea{
+    .contentArea,
+    footer > div{
         max-width: 1170px; margin: 0 auto;
     }
     header{
@@ -106,5 +107,20 @@ a{
         box-shadow: 0 5px 20px #dfe0e5; color: #b9bed1;
     }
     /* ?pager Fin */
+    footer{
+        background-color: #222328;
+    }
+    footer > div{
+        position: relative;
+    }
+    footer > div span{
+        position: absolute; display: block;
+    }
+    footer > div:first-child{
+        padding: 60px 0; border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    footer > div:first-child h2{
+        max-width: 92px; width: 7.86%; position: absolute; left: 0;
+    }
 }
 /* ?desktop */
