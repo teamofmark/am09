@@ -122,5 +122,26 @@ a{
     footer > div:first-child h2{
         max-width: 92px; width: 7.86%; position: absolute; left: 0;
     }
+
+    footer > div:first-child span{
+        right: 0; width: 8.54%;
+    }
+    footer > div:first-child span a:not(:first-of-type){
+        margin-left: 2.4%;
+    }
+    footer > div:first-child span a{
+        display: inline-block; width: 24px; height: 18px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+    }
+
+    footer > div:first-child span a:nth-child(1){
+        background-image: url('../images/sns_01.png');
+    }
+    footer > div:first-child span a:nth-child(2){
+        background-image: url('../images/sns_02.png');
+    }
+    footer > div:first-child span a:nth-child(3){
+        background-image: url('../images/sns_03.png');
+    }
 }
 /* ?desktop */
