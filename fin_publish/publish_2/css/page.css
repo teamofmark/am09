@@ -34,5 +34,62 @@
         background: url('../images/bul_search.png') 12% center no-repeat;
     }
     /* ?slideNav Fin */
+
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+        
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px; margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; padding: 9px 0 14px; color: white;
+        font-size: 18px; border-radius: 21px; border: 1px solid rgba(255,255,255,0.2);
+        text-align: center; position: absolute; top: 45.8%; z-index: 10;
+    }
+    section.slideArea > div > a.btn_conL{
+        left: 11.78%;
+    }
+    section.slideArea > div > a.btn_conR{
+        right: 11.78%;
+    }
+    section.slideArea > div ol{
+        position: absolute; left: 50%; bottom: 10%; z-index: 1;
+    }
+    section.slideArea > div ol li{
+        display: inline-block;
+    }
+    section.slideArea > div ol li a{
+        display: block; width: 8px; height: 8px; border-radius: 6px;
+        border: 2px solid rgba(255,255,255,0.5); text-indent: -9999px;
+    }
+    section.slideArea > div ol li a:hover,
+    section.slideArea > div ol li a.active{
+        background-color: white;
+    }
+    section.slideArea > div ul li figure{
+        position: relative;
+    }
+    section.slideArea > div ul li figure img{
+        width: 100%;
+    }
+    section.slideArea > div ul li figure figcaption{
+        position: absolute; color: white; width: 40%; max-width: 460px;
+        left: 15.21%; top: 21%;
+    }
+    section.slideArea > div ul li figure figcaption dl dt{
+        font-size: 42px; font-weight: 900; line-height: 50px; margin-bottom: 25px;
+    } 
+    section.slideArea > div ul li figure figcaption dl dd{
+        font-size: 16px; line-height: 24px; margin-bottom: 60px;
+    }
+    section.slideArea > div ul li figure figcaption input[type='button']{
+        background-color: #2754eb; border: none; width: 35.86%; line-height: 42px;
+        border-radius: 21px; font-size: 11px; font-weight: 700; color: white;
+    }
+    /* ?slideArea Fin */
 }
 /* ?desktop */
