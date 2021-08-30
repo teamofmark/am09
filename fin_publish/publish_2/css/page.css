@@ -99,5 +99,25 @@
         background-color: white; border-radius: 4px; line-height: 56px; padding: 0 1.7%;
         box-sizing: border-box; margin-bottom: 30px;
     }
+    .contentArea > form fieldset span.sbSelect{
+        margin-left: 4.27%;
+    }
+    .contentArea > form fieldset label{
+        font-size: 11px; color: #a1a7bd; display: inline-block; vertical-align: middle;
+    }
+    .contentArea > form fieldset label[for='sb_keywords'],
+    .contentArea > form fieldset label[for='ship_Select']{
+        padding-left: 2.56%; margin-left: 1.7%; border-left: 2px solid rgba(0,0,0,0.05);
+    }
+    .contentArea > form fieldset input:not(input[type='checkbox']){
+        font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
+        line-height: 30px; padding: 0 1%; box-sizing: border-box; border-radius: 15px;
+    }
+    .contentArea > form fieldset input[type='search']{
+        width: 14%;
+    }
+    .contentArea > form fieldset input[type='text']{
+        width: 7%;
+    }
 }
 /* ?desktop */
