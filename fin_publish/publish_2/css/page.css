@@ -135,6 +135,26 @@
     }
     /* ? sortBy Fin */
 
+    .contentArea aside{
+        width: 23%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 4px; margin-bottom: 30px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c; padding: 15px 7.4%;
+    }
     
+    
+    .contentArea section{
+        margin-left: 2.56%; width: 74.44%; float: left;
+    }
 }
 /* ?desktop */
