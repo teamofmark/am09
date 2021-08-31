@@ -182,7 +182,7 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer; display: inline-block;
-        padding-left: 20.37%;
+        padding-left: 20.37%; box-sizing: border-box;
     }
     .contentArea aside fieldset span{
         font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
@@ -201,6 +201,21 @@
     }
     .contentArea aside fieldset label[for *='dlvr']{
         width: 49%; max-width: 135px;
+    }
+    .contentArea aside fieldset label[for *='dlvr']:last-of-type{
+        border-left: 2px solid #f0f2f7;
+    }
+    .contentArea aside fieldset input[type='radio'] + label{
+        background: url('../images/off_radio.png') 10% center no-repeat;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') 10% center no-repeat;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        
     }
     
 
