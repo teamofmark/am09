@@ -209,13 +209,13 @@
         background: url('../images/off_radio.png') 10% center no-repeat;
     }
     .contentArea aside fieldset input[type='radio']:checked + label{
-
+        background-image: url('../images/on_radio.png');
     }
     .contentArea aside fieldset input[type='checkbox'] + label{
         background: url('../images/off_check.png') 10% center no-repeat;
     }
     .contentArea aside fieldset input[type='checkbox']:checked + label{
-        
+        background-image: url('../images/on_check.png');
     }
     
 
