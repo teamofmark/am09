@@ -227,7 +227,7 @@
     
 
     .contentArea section{
-        margin-left: 2.56%; width: 74.44%; float: left;
+        margin-left: 2%;/*2.56%*/ width: 75%;/*74.44%*/ float: left;
     }
     .contentArea section h3{
         display: none;
