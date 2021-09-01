@@ -331,5 +331,12 @@
         color: #a1a8bd; margin-right: 20px;
     }
     /* ?bestArea Fin */
+
+    section.tosayArea{
+        background-color: white;
+    }
+    section.tosayArea > div{
+        padding: 75px 0 85px;
+    }
 }
 /* ?desktop */
