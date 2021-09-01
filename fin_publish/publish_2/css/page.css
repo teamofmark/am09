@@ -176,7 +176,7 @@
     }
     .contentArea aside fieldset{
         background-color: white; border-radius: 4px;
-        padding-top: 27px;
+        padding-top: 47px;/*27px*/
     }
     .contentArea aside fieldset legend{
         width: 100%; font-size: 11px; color: #343e5c; padding: 0 7.4% 15px;
@@ -188,15 +188,16 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer; display: inline-block;
-        padding-left: 20.37%; box-sizing: border-box;
+        padding-left: 24.37%;/*20.37%*/ box-sizing: border-box; margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
-        width: 15%; max-width: 76px;
+        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
+        width: 15%; max-width: 76px; */
+        display: none;
     }
-    .contentArea aside fieldset label,
-    .contentArea aside fieldset span{
-        line-height: 50px;
+    .contentArea aside fieldset label
+    /* .contentArea aside fieldset span*/{ 
+        line-height: 21px;/*50px*/
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
@@ -208,9 +209,9 @@
     .contentArea aside fieldset label[for *='dlvr']{
         width: 49%; max-width: 135px;
     }
-    .contentArea aside fieldset label[for *='dlvr']:last-of-type{
+    /* .contentArea aside fieldset label[for *='dlvr']:last-of-type{
         border-left: 2px solid #f0f2f7;
-    }
+    } */
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') 10% center no-repeat;
     }
