@@ -30,7 +30,7 @@ a{
     header+nav .slideNav,
     section.bestArea,
     section.tosayArea > div{
-        max-width: 1000px; margin: 0 auto;
+        max-width: 760px; margin: 0 auto;
     }
     header{
         background-color: white; border-bottom: 1px solid #f0f2f7;
@@ -42,12 +42,20 @@ a{
         content: ''; display: block; visibility: hidden; clear: both;
     }
     header > div label.material-icons{
-        /* width: 5.3%; max-width: 60px; line-height: 90px;
-        border-right: 1px solid #f0f2f7; */
-        display: none;
+        width: 15%; max-width: 60px; line-height: 90px; display: block;
+        text-align: center;
+        /* border-right: 1px solid #f0f2f7; */
+        /* display: none; */
+    }
+    header > div input[type='checkbox']#mui + nav{
+        height: 0; overflow-y: hidden; transition: height 0.75s ease-in-out;
+    }
+    header > div input[type='checkbox']#mui:checked + nav{
+        height: 200px;
     }
     header > div h1{
-        width: 10.7%; min-width: 125px;
+        width: 60%;
+        /* min-width: 125px; */
     }
     header > div h1 a{
         display: block; text-align: center;/*right*/ padding: 31px 0;
@@ -56,20 +64,21 @@ a{
         max-width: 92px; width: 100%;
     }
     header > div nav{
-        width: 60%; /*54.7%*/
+        width: 60%; /*54.7%*/ position: absolute; padding-left: 5%; z-index: 100;
+        background-color: white; top: 90px;
     }
-    header > div nav ul{
+    /* header > div nav ul{
         text-align: right;
-    }
+    } */
     header > div nav ul li{
-        display: inline-block;
+        display: block /*inline-block*/;
     }
-    header > div nav ul li:not(:first-child){
-        margin-left: 2%; /*4.68%*/
-    }
+    /*header > div nav ul li:not(:first-child){
+        margin-left: 2%; 4.68%
+    }*/
     header > div nav ul li a{
         font-size: 14px; display: block; color: #343e5c; font-weight: 700;
-        line-height: 90px;
+        line-height: 40px;
     }
     header > div div{
         width: 23.7%;/*29.3%*/ font-size: 11px; color: #343e5c; line-height: 90px;
