@@ -363,11 +363,15 @@
         max-width: 960px; margin: 0 auto;
     } */
     section.tosayArea > div ul li{
-        display: block; width: 27.64%; float: left;
+        display: block; width: 80%;/*27.64%  float: left;*/
+        margin: 0 auto;
     }
-    section.tosayArea > div ul li:not(:first-child){
+    section.tosayArea > div ul li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    /* section.tosayArea > div ul li:not(:first-child){
         margin-left: 8.54%;
-    }
+    } */
     section.tosayArea > div ul li figure{
         margin-bottom: 25px;
     }
