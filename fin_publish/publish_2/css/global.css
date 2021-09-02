@@ -92,13 +92,14 @@ a{
         display: none;
     }
     header > div div span{
-        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
-        text-align: center; font-weight: 700; margin-left: 2%;
+        /* width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
+        text-align: center; font-weight: 700; margin-left: 2%; */
+        display: none;
     }
     header > div div input[type='button']{
-        margin-left: 2%;/*8%*/ padding: 10px 15px; font-size: 11px; background-color: white;
-        border: 2px solid #e3e8f0; min-width: 85px; box-sizing: border-box;
-        border-radius: 18px;
+        padding: 10px 0; font-size: 11px; background-color: white;
+        border: 2px solid #e3e8f0; width: 100%; box-sizing: border-box;
+        border-radius: 18px; /*margin-left: 2%; 8%  min-width: 85px;*/ 
     }
     /* ?header Fin */
 
@@ -140,14 +141,14 @@ a{
         position: absolute; display: block;
     }
     footer > div:first-child{
-        padding: 60px 15px /*0*/; border-bottom: 1px solid rgba(255,255,255,0.05);
+        padding: 30px 5%/*15px 0*/; border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        max-width: 92px; width: 7.86%; position: absolute; left: 15px/*0*/;
+        max-width: 92px; width: 40%/*7.86%*/; position: absolute; left: 5%/* 15px 0*/;
     }
 
     footer > div:first-child span{
-        right: 15px/*0*/; top: 60px; width: 11.54%/*8.54%*/;
+        right: 5%/*15px 0*/; top: 33px; width: 35%/*11.54% 8.54%*/;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -157,7 +158,7 @@ a{
         background-position: center; background-repeat: no-repeat;
     }
     footer > div:first-child ul{
-        text-align: center; padding: 0 10%;
+        text-align: center; padding: 45px 5% 0;
     }
     footer > div:first-child ul li{
         display: inline-block;
@@ -178,14 +179,15 @@ a{
         background-image: url('../images/sns_03.png');
     }
     footer > div:nth-child(2){
-        padding: 60px 15px /*0*/;
+        padding: 30px 5%/*60px 15px*/; text-align: center;
     }
     footer > div:nth-child(2) p{
-        font-size: 14px; font-style: italic; max-width: 510px; color: rgba(255,255,255,0.3);
-        width: 50%;
+        font-size: 14px; font-style: italic; color: rgba(255,255,255,0.3);
+        /* width: 50%; max-width: 510px; */ margin-bottom: 15px;
     }
     footer > div:nth-child(2) span{
-        right: 15px; top: 60px; width: 50%; text-align: right;
+        /* right: 15px; top: 60px; width: 50%; text-align: right; */
+        /* display: block; */ position: static;
     }
     footer > div:nth-child(2) span a{
         font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block;
