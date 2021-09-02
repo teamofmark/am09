@@ -81,15 +81,15 @@ a{
         line-height: 40px;
     }
     header > div div{
-        width: 23.7%;/*29.3%*/ font-size: 11px; color: #343e5c; line-height: 90px;
+        width: 25%;/*23.7%*/ font-size: 11px; color: #343e5c; line-height: 90px;
         text-align: right;
     }
-    header > div div *:not(input){
+    /* header > div div *:not(input){
         display: inline-block;
-    }
+    } */
     header > div div strong{
-        /* padding-left: 25px; background: url('../images/bul_cart.png') left center no-repeat; */
-        line-height: 18px;
+        /* line-height: 18px; padding-left: 25px; background: url('../images/bul_cart.png') left center no-repeat; */
+        display: none;
     }
     header > div div span{
         width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
