@@ -93,9 +93,9 @@
     /* ? sortBy Fin */
 
     .contentArea aside{
-        width: 23%; float: left;
+        /* width: 23%; float: left; */ display: none;
     }
-    .contentArea aside nav{
+    /* .contentArea aside nav{
         background-color: white; border-radius: 4px; margin-bottom: 30px;
     }
     .contentArea aside nav ul li,
@@ -127,7 +127,7 @@
     }
     .contentArea aside fieldset{
         background-color: white; border-radius: 4px;
-        padding-top: 47px;/*27px*/
+        padding-top: 47px;
     }
     .contentArea aside fieldset legend{
         width: 100%; font-size: 11px; color: #343e5c; padding: 0 7.4% 15px;
@@ -139,16 +139,15 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; cursor: pointer; display: inline-block;
-        padding-left: 24.37%;/*20.37%*/ box-sizing: border-box; margin-bottom: 20px;
+        padding-left: 24.37%; box-sizing: border-box; margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center;
-        width: 15%; max-width: 76px; */
+        
         display: none;
     }
     .contentArea aside fieldset label
-    /* .contentArea aside fieldset span*/{ 
-        line-height: 21px;/*50px*/
+    { 
+        line-height: 21px;
     }
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
@@ -160,9 +159,6 @@
     .contentArea aside fieldset label[for *='dlvr']{
         width: 49%; max-width: 135px;
     }
-    /* .contentArea aside fieldset label[for *='dlvr']:last-of-type{
-        border-left: 2px solid #f0f2f7;
-    } */
     .contentArea aside fieldset input[type='radio'] + label{
         background: url('../images/off_radio.png') 10% center no-repeat;
     }
@@ -174,12 +170,12 @@
     }
     .contentArea aside fieldset input[type='checkbox']:checked + label{
         background-image: url('../images/on_check.png');
-    }
+    } */
     
 
-    .contentArea section{
-        margin-left: 2%;/*2.56%*/ width: 75%;/*74.44%*/ float: left;
-    }
+    /* .contentArea section{
+        margin-left: 2%; width: 75%; float: left;
+    } */
     .contentArea section h3{
         display: none;
     }
@@ -187,21 +183,21 @@
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .contentArea section ul li:not(:nth-child(5)){
-        float: left; width: 48% /*31%*/; display: block; margin: 0 0 30px 4% /*3.5%*/;
+        /* float: left; width: 48%; */ display: block; margin: 0 0 30px 0 /* 4% */;
         background-color: white; border-radius: 10px /*4px*/;
-        min-height: 360px; max-height: 510px; /*height: 380px*/
+        min-height: 360px;  /* max-height: 510px; height: 380px*/
     }
     .contentArea section ul li:nth-child(5){
-        /* width: 65.5%; */ clear: both; margin-bottom: 30px; background-color: white;
+        /* width: 65.5%; clear: both; */  margin-bottom: 30px; background-color: white;
         border-radius: 10px; display: block;
     }
-    .contentArea section ul li:nth-child(1),
+    /* .contentArea section ul li:nth-child(1),
     .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(6),
     .contentArea section ul li:nth-child(8),
     .contentArea section ul li:nth-child(10){
         margin-left: 0;
-    }
+    } */
     .contentArea section ul li figure img{
         width: 100%; border-radius: 4px;
     }
@@ -222,14 +218,22 @@
         font-size: 14px; color: #343e5c; font-weight: 700;
     }
     .contentArea section ul li:nth-child(5) figure figcaption{
-        position: relative; padding: 15px 45% 15px 4.2%; box-sizing: border-box;
+        /*position: relative;*/ padding: 15px 4.2%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption dl{
+        margin-bottom: 10px;
     }
     .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
-        position: absolute; left: 2.2%; top: -295px; background-color: black;
-        color: white; border-radius: 3px; font-size: 12px; padding: 6px 10px;
+        /* position: absolute; left: 2.2%; top: -295px; background-color: black;
+        color: white; border-radius: 3px; font-size: 12px; padding: 6px 10px; */
+        display: none;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span{
-        position: absolute; right: 4.2%; width: 40%; top: 15px;
+        /* position: absolute; right: 4.2%; width: 40%; top: 15px; */
+        display: block;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span:after{
+        content: ''; display: block; visibility: hidden; clear: both;
     }
     .contentArea section ul li:nth-child(5) figure figcaption span a{
         display: block; width: 50%; float: left; text-align: center;
