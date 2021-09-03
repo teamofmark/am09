@@ -1,0 +1,55 @@
+.flexContainer{
+    margin: 10px; padding: 15px; border-radius: 23px; background-color: #a4a4a4;
+    display: flex;
+}
+    /* 
+        기본
+        display: flex;
+        justify-content: space-around; ( flexItem 주변 동일 간격 유지 정렬 )
+        ! 1. 부모 요소는 flex 혹은 inline-flex 로 지정되어야 한다.
+        ? flex = 부모요소가 block 인 경우, inline-flex = 부모요소가 inline일 경우
+        * 그러면 자동으로 이하 자식요소는 모두 flexItem이 된다.
+    */
+.flexItem{
+    margin: 10px; padding: 20px; color: white; text-align: center; border-radius: 27px;
+    background-color: black;
+}
+
+.flexContainer.direction{
+    flex-direction: column-reverse;
+    /* 
+    flex-direction : 
+    flex-direction 속성은 flexContainer의 주축(main axis) 방향을 설정한다.
+
+    row (ltr), row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
+    */
+}
+
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse;
+}
+.flexContainer.wrap .flexItem,
+.flexContainer.flow .flexItem{
+    width: 500px;
+}
+/* 
+    flex-wrap : 
+    flex-wrap 속성은 flexContainer의 width보다 flexItem들의 width의 합계가 더 큰 경우, 한줄로 표현할 것인지, 여러줄로 표현할 것인지를 지정한다. 
+
+    nowrap(개행불허. 1행 모두배치. default. flexItem width 자동축소)
+    wrap(width 초과시 개행)
+    wrap-reverse(개행하되 역배치)
+*/
+.flexContainer.flow{
+    flex-flow: row-reverse wrap;
+    /* 
+        flex-flow : 
+        direction 과 wrap 을 줄여 쓸 수(shorthand)있다.
+
+        <flex-direction> | <flex-wrap>;
+        
+    */
+}
+.flexContainer.justifyContent{
+    justify-content: space-around;
+}
