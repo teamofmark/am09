@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 767px){
     header+nav{
-        background-color: white;
+        background-color: white; margin-bottom: 30px;
     }
     /* header+nav .slideNav:after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -50,8 +50,9 @@
         background-color: white; border-radius: 10px;/*4px*/ line-height: 56px; padding: 0 1.7%;
         box-sizing: border-box; margin-bottom: 30px;
     }
-    .contentArea > form fieldset span.selectBox,
-    .contentArea > form fieldset label[for='ship_Select']{
+    .contentArea > form fieldset span,
+    .contentArea > form fieldset label:not([for='sb_keywords']),
+    .contentArea > form fieldset input:not(#sb_keywords){
         display: none;
     }
     /* .contentArea > form fieldset span.sbSelect{
@@ -65,15 +66,15 @@
         padding-left: 2.56%; margin-left: 1.7%;
         /* border-left: 2px solid rgba(0,0,0,0.05); */
     }
-    .contentArea > form fieldset input:not(input[type='checkbox']){
+    .contentArea > form fieldset input#sb_keywords/*:not(input[type='checkbox'])*/{
         font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0;
         line-height: 30px; padding: 0 1%; box-sizing: border-box; border-radius: 15px;
     }
-    .contentArea > form fieldset input[type='search']{
-        width: 20%;/*14%*/
+    /* .contentArea > form fieldset input[type='search']{
+        width: 20%;
     }
     .contentArea > form fieldset input[type='text']{
-        width: 13%;/*7%*/
+        width: 13%;
     }
     .contentArea > form fieldset input[type='search'],
     .contentArea > form fieldset input[id='range_minprice']{
@@ -84,11 +85,11 @@
         margin-left: 2.56%;
     }
     .contentArea > form fieldset label[for='freeShipCheck']{
-        padding-left: 4.56%;/*2.56%*/ color: #343e5c; transition: background 0.5s ease-out;
+        padding-left: 4.56%; color: #343e5c; transition: background 0.5s ease-out;
     }
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
         background: url('../images/bul_check.png') left center no-repeat;
-    }
+    } */
     /* ? sortBy Fin */
 
     .contentArea aside{
