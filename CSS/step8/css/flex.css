@@ -77,3 +77,35 @@
     ? around : 모든 flexItem은 기준없이 동일 간격(x,y)으로 정렬.
     ? evenly : 여유공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 모두 동일간격.
 */
+
+.flexContainer.alignItems{
+    align-items: baseline; background-color: orange;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-start;
+}
+/* 
+    ? align-items : 
+    * flexItem을 line-height기준으로 flexContainer의 수직 방향으로 정렬한다.
+    * align-items 속성은 모든 flexItem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 높이)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center  (flexContainer의 주축 중앙에 정렬.)
+    * baseline (안의 컨텐츠 End 기준으로 정렬.)
+*/
+
+.flexContainer.justifyItems{
+    background-color: yellow; display: grid; width: 300px;
+    justify-items: stretch;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
