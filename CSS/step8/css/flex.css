@@ -109,3 +109,16 @@
 .flexContainer.justifyItems:hover{
     justify-items: flex-start;
 }
+.flexContainer.orderItem .flexItem.order1{
+    order: 0;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: -1;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/
