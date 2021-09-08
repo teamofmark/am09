@@ -53,3 +53,27 @@
 .flexContainer.justifyContent{
     justify-content: space-evenly; 
 }
+
+.flexContainer.alignContent{
+    height: 400px; flex-wrap: wrap; justify-content: space-between;
+    align-content: space-between;
+}
+.flexContainer.alignContent .flexItem{
+    margin: 0;
+}
+/* 
+    ? -content :
+    * justify - mainAxis를 기준으로 flexItem을 '수평' 정렬.
+    * align - mainAxis를 기준으로 flexItem을 '수직' 정렬.
+
+    ! align 전용 - stretch : 높이에 꽉차게 늘리기.
+
+    ? flex-start : 각 기준좌표 부터 (x: 0, y: 0) 정렬.
+    ? flex-end : 각 기준 맨 끝 부터 정렬.
+    ? center : 각 기준 중앙 정렬.
+    ? space-
+    ? between : justify - 처음은 좌측기준, 마지막은 우측 기준, 나머지는 동일간격.
+    ?           align - 첫 행은 상단기준, 마지막은 하단 기준, 나머지는 동일간격.
+    ? around : 모든 flexItem은 기준없이 동일 간격(x,y)으로 정렬.
+    ? evenly : 여유공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 모두 동일간격.
+*/
