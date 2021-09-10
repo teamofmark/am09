@@ -96,6 +96,7 @@ function numberPlusBefore(){
     alert(++number); //? 12에 1을 더해서(13) 출력후, 다시 number로 -
     console.log(number);
 }
+// todo.
 function numberPlusTodo(){
     var number = 10; // ? 변수 선언 및 초기화
     alert(number++); //? 출력 : 몇, 현재 : 몇 추가설명 가능?
@@ -103,4 +104,22 @@ function numberPlusTodo(){
     alert(++number); //? 출력 : 몇, 현재 : 몇 추가설명 가능?
     alert(number--); //? 출력 : 몇, 현재 : 몇 추가설명 가능? 
     console.log(number); // ?최종 몇
+}
+
+// *case. 5 숫자 10이 담긴 변수 a 와 숫자 20 이 담긴 변수 b 의 크기를 비교하고 결과출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a > b;
+    console.log("10 > 20 = " + result);
+}
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log("10 = 20 -_-?" + result);
+}
+// todo.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+
 }
