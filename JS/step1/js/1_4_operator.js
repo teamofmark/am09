@@ -143,5 +143,8 @@ function logicalOperator1(){
     todo. 둘중 하나라도 맞는지 result 변수에 저장 후 출력.
 */
 function logicalOperator2(){
-    
+    var a = '여자';
+    var b = '웹디자이너';
+    var result = (a=='남자')||(b=='웹퍼블리셔');
+    console.log('result = ' + result);
 }
