@@ -33,3 +33,29 @@ function forcedString2(){
     var a = '2' + true; //? 문자 2와 만났으니 true. 문자열 + 문자열 = 문자열 
     console.log(a);
 }
+// *case.5 test1에 들어있는 숫자를 문자로 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환.
+    
+    ? .toString()
+    * Number.toString(16); - (16진수) 문자형으로 변환.
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형
+*/
+function stringNumb(){
+    var test1 = 15;
+    var result = String(test1);
+    console.log(typeof(result) + '=' + result);
+}
+function stringtoNumb(){
+    var test1 = 15;
+    var result = test1.toString(); //?Number 객체에서 제공하는 toString. 8,16진수 변형기능.(ex5-1)
+    console.log(typeof(result) + '=' + result);
+}
+// *ex. 5-1
+function bgColorRed(){
+    var bgColor = 0xF00;
+    $("body").css("background-color", "#" + bgColor.toString(16));
+}
