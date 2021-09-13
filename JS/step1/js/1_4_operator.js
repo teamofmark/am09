@@ -96,14 +96,14 @@ function numberPlusBefore(){
     alert(++number); //? 12에 1을 더해서(13) 출력후, 다시 number로 -
     console.log(number);
 }
-// todo.
+// todo. 증감연산자복합.
 function numberPlusTodo(){
-    var number = 10; // ? 변수 선언 및 초기화
-    alert(number++); //? 출력 : 몇, 현재 : 몇 추가설명 가능?
-    alert(--number); //? 출력 : 몇, 현재 : 몇 추가설명 가능?
-    alert(++number); //? 출력 : 몇, 현재 : 몇 추가설명 가능?
-    alert(number--); //? 출력 : 몇, 현재 : 몇 추가설명 가능? 
-    console.log(number); // ?최종 몇
+    var number = 10; //? 변수 선언 및 초기화
+    alert(number++); //?출력 : 10 현재 : 11  10출력후 더하기(11). 다시 number로.
+    alert(--number); //?출력 : 10 현재 : 10  11에서 1빼고 10 출력후. 다시 number로
+    alert(++number); //?출력 : 11 현재 : 11  10에서 1더하고 11 출력후. 다시 number로
+    alert(number--); //?출력 : 11 현재 : 10  11출력후 1빼서 다시 number로. 출력: 11, 최종 10.
+    console.log(number); //? 최종확인
 }
 
 // *case. 5 숫자 10이 담긴 변수 a 와 숫자 20 이 담긴 변수 b 의 크기를 비교하고 결과출력.
@@ -121,5 +121,8 @@ function compareOperator2(){
 }
 // todo.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
 function compareOperator3(){
-
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ? "+result);
 }
