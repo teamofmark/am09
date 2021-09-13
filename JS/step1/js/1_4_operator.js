@@ -148,3 +148,12 @@ function logicalOperator2(){
     var result = (a=='남자')||(b=='웹퍼블리셔');
     console.log('result = ' + result);
 }
+// todo. 다음 코드를 작성 후 결과를 예상한 다음 출력하라.
+function compareOperator4(){
+    console.log(30 > 20 > 10); //? false.
+}
+
+// todo. 해결하기.
+function compareOperator4R(){
+    console.log(30 > 20 && 20 > 10); //?true 반환받기.
+}
