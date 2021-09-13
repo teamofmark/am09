@@ -59,3 +59,17 @@ function bgColorRed(){
     var bgColor = 0xF00;
     $("body").css("background-color", "#" + bgColor.toString(16));
 }
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? parse
+    * 1. parseInt(value); - 정수 형
+    * 2. parseFloat(value); - 실수 형
+    
+    ? Number
+    * Number(value); - 정수 형,실수 형
+*/
+function numbString(){
+    var test = '300.1952';
+    var result = parseInt(test) + 10;
+    console.log('result = ' + result);
+}
