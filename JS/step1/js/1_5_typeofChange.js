@@ -73,3 +73,26 @@ function numbString(){
     var result = parseInt(test) + 10;
     console.log('result = ' + result);
 }
+// todo.1 문자열 변환
+function todo1(){
+    var test = 100;
+    var result = test ; //?문자형태로 test를 변환.
+    console.log(typeof(result) + "=" + result);
+}
+
+// todo. 1-1 암시적형변환 (JS가 자동으로 형변환 하는것을 이용)
+
+// todo. 1-2 String 사용.
+
+// todo. 1-3 toString 사용.
+
+// todo.2 숫자형 변환. 연산이 가능하게 만들기.
+function todo2(){
+    var test = "100.50";
+    var result = test + 150 + 20;
+    console.log(typeof(result) + '=' + result);
+}
+
+// todo.2-1 Number 사용.
+
+// todo.2-2 parse 사용.
