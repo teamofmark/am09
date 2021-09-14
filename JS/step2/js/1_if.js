@@ -38,3 +38,16 @@ function lastDay(){
         alert('말일입니다.');
     }
 }
+// *case.3 아침? 점심? 저녁?
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 11){ //? 11시보다 현시각이 작을경우 아침.
+        alert('아침먹을시간');
+    }else if(hour < 16){//? 그게 아니고 16시보다 현시각이 작을경우 점심.
+        alert('점심먹을시간');
+    }else{ //? 그것도 아닐경우 저녁.
+        alert('저녁먹을시간');
+    }
+}
