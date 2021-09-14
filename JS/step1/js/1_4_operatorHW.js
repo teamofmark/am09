@@ -1,5 +1,10 @@
 // todo.1 자신의 이름을 한 글자씩 나누어 변수에 담은 후, 다시 하나의 변수에 담아 출력.
+function myName(){
+    var first = 'Stark';
+    var last = 'Mark';
 
+    console.log(first+last);
+}
 
 
 
@@ -7,8 +12,8 @@
 
 function numberOperator(){
     var number = 10;
-    //? - 10
-    //? - 12
-    //? - 12
-    //? - 10
+    alert(number++);//? - 10
+    alert(++number);//? - 12
+    alert(number--);//? - 12
+    alert(--number);//? - 10
 }
