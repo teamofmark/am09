@@ -39,3 +39,34 @@ function lotto(){
             break;
     }
 }
+// todo.1 switch 문을 이용한 계산기
+//? 첫번째 숫자와 연산자, 그리고 두번째 숫자를 입력받아 계산해주는 계산기.
+function calculator(){
+    // ? 첫번째숫자, 연산자, 두번째숫자 입력받아야함.
+    var firstNumb = window.prompt("첫번째 숫자를 입력");
+    var operator = window.prompt("사칙연산자중 하나를 입력");
+    var lastNumb = window.prompt("두번째 숫자를 입력");
+
+    // ? 뭔가있어야될걸...?
+    firstNumb = parseInt(firstNumb);
+    lastNumb = parseInt(lastNumb);
+
+    // ? switch 조건처리부
+    switch(operator){
+        case "+":
+            alert(firstNumb + lastNumb);
+            break;
+        case "-":
+            alert(firstNumb - lastNumb);
+            break;
+        case "*":
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default:
+            alert("잘못된 값이 입력되었습니다.");
+            break;
+    }
+}
