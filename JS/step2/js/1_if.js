@@ -130,9 +130,13 @@ function userInfoCheck2(){
     var userID = window.prompt('사용자의 ID를 입력하세요.');
     var userPW = window.prompt('사용자의 PASSWORD를 입력하세요.');
     // ? 성공한경우 .
+    if(userID == "Mark" && userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark"){//? id가 틀린경우. (ID가존재하지않습니다.);
+        alert("ID가 존재하지 않습니다.");
+    }else{
+        alert("PASSWORD가 틀렸습니다.");
+    }//? password가 틀린경우.(PASSWORD가 틀렸습니다.);
 
-    //? id가 틀린경우. (ID가존재하지않습니다.);
-
-    //? password가 틀린경우.(PASSWORD가 틀렸습니다.);
 
 }
