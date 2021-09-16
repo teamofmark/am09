@@ -80,5 +80,15 @@ function favorFluit(){
 // todo. 지금까지 배웠던 JS ITEM들의 배열을 출력해보자.
 function arrayFor(){
     var data = ['변수','연산자','자료형','조건문 if','조건문 switch','반복문 while','반복문for'];
-    
+    for (var i = 0; i < data.length; i++){
+        document.write((i+1) + '번째 내용 = ' + data[i] + '<br>');
+    }
+}
+// todo. 역반복. 출력이 거꾸로.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기','멜론','샤인머스켓'];
+    // console.log(array.length);
+    for(var i = 0; i < array.length; i++){
+        document.write(array[i]);
+    }
 }
