@@ -46,3 +46,26 @@ function thinkJS(){
     } //? i가 10이 되는 순간 break.
     document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
 }
+
+// *ex. 1 - 10 까지 출력되는 반복문?
+function answer1(){
+    for(var i = 1; i <= 10; i++){
+        document.write(i + '<br>');
+    }
+}
+function answer2(){
+    for(var i = 0; i < 10; i++){
+        document.write((i+1) + '<br>');
+    }
+}
+function answer3(){
+    for(var i = 100; i < 110; i++){
+        document.write((i - 99) + '<br>');
+    }
+}
+function answer4(){
+    for(var i = 1; i <= 10; i+=2){
+        document.write(i+'<br>');//? 1, 3, 5, 7, 9
+        document.write((i+1)+'<br>'); //? 2, 4, 6, 8, 10
+    }
+}
