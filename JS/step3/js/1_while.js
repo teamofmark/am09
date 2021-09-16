@@ -21,11 +21,21 @@ function pwCheck(){
 }
 // *case.2 while Break
 function whileBreak(){
-    var i = 1;
+    var i = 0;
     while(i <= 10){
         i++;
         document.write(i + '<br>');
+        break;
     }
     document.write('최종 i = ' + i + '<br>');
-
 } 
+// *case.3 while Continue
+function whileContinue(){
+    var i = 0;
+    while(i<=10){
+        i++;
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
