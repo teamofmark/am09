@@ -69,3 +69,16 @@ function answer4(){
         document.write((i+1)+'<br>'); //? 2, 4, 6, 8, 10
     }
 }
+// *case.4 자신이 좋아하는 과일 4개를 배열(?)로 배치하고, alert으로 출력하기.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기','멜론','샤인머스켓'];
+    // console.log(array.length);
+    for(var i = 0; i < array.length; i++){
+        document.write(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS ITEM들의 배열을 출력해보자.
+function arrayFor(){
+    var data = ['변수','연산자','자료형','조건문 if','조건문 switch','반복문 while','반복문for'];
+    
+}
