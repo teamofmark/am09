@@ -111,3 +111,46 @@ function runContinue(){
         document.write(output + '<br>');
     }
 }
+// *case.7 break문
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i =' + i + '<br>');
+}
+// *case.8 break 활용
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(confirm('중단하시겠습니까?')){ //? ! ? 말을 system에서도, user도 말이 되게 꾸며야된다.
+            break;
+        }
+    }
+}
+
+// !다중 for
+
+// * case.1 반절피라미드 (Half-Tree)
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){ // ? 1. ifor = 10 ~ 1 까지 역반복 수행
+        for(var j = 0; j < i; j++){ //? 1-1 jfor = j가 i보다 작거나 같을 때 까지 반복수행.
+            star += '*';//? 변수 star에 반복 생성된 만큼의 '*'을 넣음.
+        }
+        star += '<br>';//? 1-2 ifor만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star);// ? 2. 출력.
+}
+//*todo.2 피라미드 (공백 : &nbsp;)
