@@ -85,10 +85,29 @@ function arrayFor(){
     }
 }
 // todo. 역반복. 출력이 거꾸로.
-function favorFluit(){
+function reversefavorFluit(){
     var array = ['포도','사과','바나나','망고','딸기','멜론','샤인머스켓'];
     // console.log(array.length);
-    for(var i = 0; i < array.length; i++){
+    for(var i = array.length - 1; i >= 0; i--){
         document.write(array[i]);
+    }
+}
+// *case.5 for > continue
+function forContinue(){
+    for(var i = 1; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i =' + i + '<br>');
+}
+// *case.6 continue 활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i; //? 2, 6, 12, 20, 30
+        document.write(output + '<br>');
     }
 }
