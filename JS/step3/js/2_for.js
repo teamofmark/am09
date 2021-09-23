@@ -154,3 +154,17 @@ function reverseHalfPyramid(){
     document.write(star);// ? 2. 출력.
 }
 //*todo.2 피라미드 (공백 : &nbsp;)
+
+function pyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';
+        }
+        for(var s = 0; s < 2*i-1; s++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
