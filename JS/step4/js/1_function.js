@@ -60,3 +60,65 @@ function sumReturn1(num1,num2){
     var result = num1 + num2;
     return result; //? 지를 불러주는 위치에 return. = 호출부리턴.
 }
+
+// *case.5 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수.
+// ! 단 입력값이 0이면 즉시 실행을 멈춘다.
+
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt('숫자만 입력하라.'));
+        if(value == 0){
+            document.write('종료');
+            return; // break;
+        }
+
+        sum += value;
+        document.write(count + '. ' + sum + '<br>');
+        count++;
+    }
+    document.write('총' + count + '번 실행함.');
+}
+
+// todo. 1 구구단출력 함수로 만들기.
+
+function printGugudan(limitDan){
+    for (var i = 2; i <= limitDan; i++){
+        document.write(i + '단 출력', '<br>');
+        for(var m = 1; m <= limitDan; m++){
+            document.write(i + '*' + m + '=' + (i*m), '<br>');
+        }
+        document.write('<br>');
+    }
+}
+// todo.2 다음실행구문으로 전달받은 매개변수로  계산하여 결과를 출력하는 함수.
+// ! calculator("+", 20, 10); = 30
+// ! calculator("-", 20, 10); = 10
+// ! calculator("*", 20, 10); = 200
+// ! calculator("/", 20, 10); = 2
+// ! calculator("%", 20, 10); = 잘못된 연산자입니다.
+function calculator(op,numb1,numb2){
+    // ! 선언 > 처리 > 출력.
+    var result = '';
+    switch (op) {
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = '잘못된 연산자 입니다.';
+            break;
+    }
+    return result;
+}
+// todo.3 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 변형하기.
