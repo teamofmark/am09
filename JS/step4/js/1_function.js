@@ -104,16 +104,16 @@ function calculator(op,numb1,numb2){
     var result = '';
     switch (op) {
         case "+":
-            result = add(numb1,numb2);
+            result = add(numb1,numb2); //? console.log(add(20,10));
             break;
         case "-":
-            result = numb1 - numb2;
+            result = sub(numb1,numb2);
             break;
         case "*":
-            result = numb1 * numb2;
+            result = mul(numb1,numb2);
             break;
         case "/":
-            result = numb1 / numb2;
+            result = div(numb1,numb2);
             break;
         default:
             result = '잘못된 연산자 입니다.';
@@ -122,3 +122,7 @@ function calculator(op,numb1,numb2){
     return result;
 }
 // todo.3 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용 할 수 있게 변형하기.
+
+function add(numb1, numb2){
+    return numb1 + numb2;
+}
