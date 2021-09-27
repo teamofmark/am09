@@ -162,3 +162,35 @@ function welcome(){
 $(document).ready(function(){
     $("#runEx8").click(welcome);
 });
+
+// *case. 9 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('hi, hello');
+    });
+}
+
+// ?응용
+
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('hello World', '<br>');
+}
+/*
+    ? 익명함수로
+callFunctionTenTimes(function(){
+    document.write('hello world', '<br>');
+});
+*/
+// *case. 10 return 값으로 함수를 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
