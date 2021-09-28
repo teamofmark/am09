@@ -142,3 +142,22 @@ function mulPrint(value){
 function divPrint(value){
     document.write("두 수의 나누기는" + value);
 }
+//! return 대신에 callBack? : 아니야... 구현부와 처리부가 나눠지지 않은 단순 값 리턴은 return 이 더효율적.
+/* 
+? 기존단순리턴
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write('두 수 합' + result);*/
+/*
+? callBack으로 변환.
+function sum(numb1, numb2, callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function result(value){
+    document.write('두 수 합' + value);
+}
+*/
+
