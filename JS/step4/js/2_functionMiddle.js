@@ -93,3 +93,46 @@ function innerFunctionTest(){
     }
     outerFunc();
 }
+
+function calculatorCallBack(op, numb1, numb2, callBack){
+    var result = '';
+
+    switch(op){
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = sub(numb1,numb2);
+            break;
+        case "*":
+            result = mul(numb1,numb2);
+            break;
+        case "/":
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 입력값입니다.";
+            break;
+    }
+
+    function add(numb1, numb2){
+        return numb1 + numb2;
+    }
+    function sub(numb1, numb2){
+        return numb1 - numb2;
+    }
+    function mul(numb1, numb2){
+        return numb1 * numb2;
+    }
+    function div(numb1, numb2){
+        return numb1 / numb2;
+    }
+    // ! 로직구현부
+    callBack(result);
+}
+function addPrint(value){
+    document.write('두 수의 합은' + value);
+}
+?
+?
+?
