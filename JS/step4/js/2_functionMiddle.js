@@ -133,6 +133,12 @@ function calculatorCallBack(op, numb1, numb2, callBack){
 function addPrint(value){
     document.write('두 수의 합은' + value);
 }
-?
-?
-?
+function subPrint(value){
+    document.write("두 수의 차는" + value);
+}
+function mulPrint(value){
+    document.write("두 수의 곱은" + value);
+}
+function divPrint(value){
+    document.write("두 수의 나누기는" + value);
+}
