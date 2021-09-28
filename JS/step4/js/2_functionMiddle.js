@@ -161,3 +161,60 @@ function result(value){
 }
 */
 
+// *case.3 클로저
+// ?함수내부에 만든 지역변수가 사라지지않고 계속해서 값을 유지하고 있는 상태.
+
+// *일반함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+
+// *클로저
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
+//? createCount 함수 호출과 동시 지역변수 count 0이 초기화및 생성.
+//? addCount 함수도 생성 , 리턴 후 함수종료.
+//! counter(); 실행되면 addCount(); 함수가 실행되어 count(createCount에서 초기화및 생성된변수) 0 > 1 ....? 물려있잖아.
+//! 누구한테? addCount. addCount? 외부에서.
+/*
+    ?왜 그런것인가
+    *createCount함수가 종료되더라도 addCount 함수내부에서 count라는 변수를 *사용중인상태! 에서 외부로 return되기 때문에
+    *삭제되지않고 남아있기 때문이다. > 클로저현상(closureEffect). 그리고 이를 일으키는 내부함수를 클로저함수.
+*/
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start(); //? 1. start함수 실행
+        document.write("count start");
+    });
+});
+function start(){
+    var count = 0; //? 2. count 초기화 및 생성.
+    setInterval(function(){
+        count ++; //? 3. start함수 내부 setInterval core함수가 사용중.
+        document.write(count); //? 4. 계속 증가되는 count가 1초 간격으로 출력. start함수가 종료되어도 삭제불가. 이또한 closureEffect.
+    },1000);
+}
+/*
+    ? 뭐가좋은데..
+    ! 연관있는 변수와 기능을 하나의 함수로 묶어 독립적으로 (여러개 혹은 여러번) 실행 시킬수 있다.
+    ! 함수내부에서 data가 만들어지기 때문에 함수 외부에서 수정 할 수 없는 보호된 data를 생성가능.
+*/
+// *익명함수 클로저
+function outerFunction(name){
+    var output = 'hello' + name + '..!';
+    return function(){
+        return output;
+    };
+}
+var first = outerFunction('JS');
+var second = outerFunction('JQ');
+var third = outerFunction('CSS');
