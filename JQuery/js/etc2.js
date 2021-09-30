@@ -2,6 +2,7 @@ $(document).ready(function(){
     moveCircle();
     // detailMoveCircle();
     detailMoveCircleExt();
+    keyControl();
 });
 
 function moveCircle(){
@@ -63,4 +64,32 @@ function circleMovCommand(xpos, ypos){
             'top' : ypos
         });
     }
+}
+
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 10;
+    var currentXpos = 0;
+    var currentYpos = 0;
+    $(document).keydown(function(e){
+        console.log("입력한 키 코드" + e.keyCode);
+        // ? w(top) : 87, d(right) : 68, s(bottom) : 83, a(left) : 65
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+            break;
+            case 68:
+                currentXpos += range;
+            break;
+            case 83:
+                currentYpos += range;
+            break;
+            case 65:
+                currentXpos -= range;
+            break;
+        }
+
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
+    });
 }
