@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - 2depthTab(함수로 구조분리)</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/etc7.js"></script>
+    <style>
+        ul{margin: 0; padding: 0;}
+        ul{display: flex; flex-flow: row nowrap; border: 1px solid black;}
+        ul:first-of-type{border-bottom: none;}
+        ul li{
+            display: block; flex:auto; text-align: center; line-height: 40px;
+            box-sizing: border-box;
+        }
+        ul li:not(:first-child){
+            border-left: 1px solid black;
+        }
+        li.activated, li:hover{
+            background-color: black; color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul id="tabMenuDepth1">
+        <li>m.tab1</li>
+        <li>m.tab2</li>
+        <li>m.tab3</li>
+        <li>m.tab4</li>
+        <li>m.tab5</li>
+        <li>m.tab6</li>
+    </ul>
+    <ul id="tabMenuDepth2">
+        <li>s.tab1</li>
+        <li>s.tab2</li>
+        <li>s.tab3</li>
+        <li>s.tab4</li>
+        <li>s.tab5</li>
+        <li>s.tab6</li>
+    </ul>
+</body>
+</html>
