@@ -21,6 +21,9 @@ function imgAlignCustom(count){
         }
     });
     $(".resetImg").click(function(){
-        // todo. 원상태로 돌리기
+        img.css({
+            "left": 0,
+            "top" : 0
+        });
     });
 }
