@@ -43,10 +43,10 @@ function scoreCount(){
 }
 function gameEnd(){
     setTimeout(function(){ //? playState가 true로 바뀐이후 10초후 자동종료.
-        //?scoreCount가 바라볼 전역변수 playState 초기화.
-        //?setInterval 초기화
-        //? 게임종료 경고창출력
-        //? count reset
-        //? $score에 기록된 count reset
+        playState = false; //?scoreCount가 바라볼 전역변수 playState 초기화.
+        clearInterval(timerID); //?setInterval 초기화
+        alert("게임종료"); //? 게임종료 경고창출력
+        count = 0; //? count reset
+        $score.text(count); //? $score에 기록된 count reset
     }, 10000);
 }
