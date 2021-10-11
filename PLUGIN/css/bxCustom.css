@@ -1,8 +1,0 @@
-.bx-wrapper .bx-caption{
-    background-color: rgba(255,0,0,0.75);
-    bottom: 10px;
-}
-.bx-pager .bx-pager-item a{
-    display: block; text-indent: -9999px; width: 10px; height: 10px; border-radius: 5px;
-    background-color: greenyellow; border:2px solid forestgreen;
-}
