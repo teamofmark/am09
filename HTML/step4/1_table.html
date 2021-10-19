@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <table>
+        <caption>month / savings Table</caption>
+        <colgroup>
+            <col style="width: 300px; background-color: red;">
+            <col style="width: 150px; background-color: yellow;">
+        </colgroup>
+        <!-- ! 필수아님. 안써도돼. colgroup은 열을 묶어 제어하기.-->
+        <thead>
+            <tr>
+               <th>Month</th>
+               <th>Savings</th> 
+            </tr>
+        </thead>
+        <!-- 
+            ? thead : table의 상단부. 분류를 표기 시 사용.
+            ! 선택적 요소. 상단분류 미사용시 제외.
+        -->
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+        <!-- 
+            ? tfoot : table의 하단부. 총합, 통계등 표기시 사용.
+            ! 선택적요소 result 특성의 data(총합,통계..) 미사용시 제외.
+         -->
+        <tbody>
+            <tr>
+                <td>Jan</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Feb</td>
+                <td>$80</td>
+            </tr>       
+        </tbody>
+        <!-- 
+            ? tbody : table의 중단부(본체). 필수사용.
+            ! 존재확인불가. > 미사용시 browser가 자동으로 삽입.
+         -->
+    </table>
+</body>
+</html>
