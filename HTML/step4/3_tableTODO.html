@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo. table(span)</title>
+    <style>
+        table{
+            width: 100%; height: 300px;
+        }
+        table tr td{
+            font-size: 40px; border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>-______________-</caption>
+        <tr>
+            <td colspan="5" style="background-color: red;">
+                1 - 1
+                1 - 2
+                1 - 3
+                1 - 4
+                1 - 5
+            </td>
+            <td rowspan="3" style="background-color: green;">
+                1 - 6
+                2 - 6
+                3 - 6
+            </td>
+            <td>1 - 7</td>
+            <td>1 - 8</td>
+            <td>1 - 9</td>
+            <td rowspan="2" style="background-color: paleturquoise;">
+                1 - 10
+                2 - 10
+            </td>
+        </tr>
+        <tr>
+            <td>2 - 1</td>
+            <td>2 - 2</td>
+            <td>2 - 3</td>
+            <td>2 - 4</td>
+            <td>2 - 5</td>
+            <td>2 - 7</td>
+            <td>2 - 8</td>
+            <td>2 - 9</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: palegoldenrod;">
+                3 - 1
+                3 - 2
+            </td>
+            <td>3 - 3</td>
+            <td>3 - 4</td>
+            <td>3 - 5</td>
+            <td colspan="4" style="background-color:palevioletred;">
+                3 - 7
+                3 - 8
+                3 - 9
+                3 - 10
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
