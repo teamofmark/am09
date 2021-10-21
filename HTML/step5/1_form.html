@@ -76,7 +76,7 @@
                     <button>비밀번호확인</button>
                     <input type="submit" value="확인">
                     <input type="reset" value="취소">
-                    <!-- file -->
+                    <input type="file">
                 </li>
                 <!--
                     버튼으로 사용할수 있는 input에는 image, button, file, submit, reset 이 있는데 해당용도에 따라 적절하게 사용해야 한다.
@@ -86,6 +86,40 @@
                     4. submit은 해당 폼 이 모두 완성 되었을때 완료 및 전송을 할때 사용한다.
                     5. reset은 해당 폼의 모든 양식 내용을 초기화 시킬 때 사용한다.
                 -->
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <ul>
+                <li>
+                    <label for="userName">이름 : </label>
+                    <input type="text" id="userName" placeholder="8자미만" required maxlength="8" autofocus readonly>
+                    <!--
+                        * required : 필수입력 필드
+                        * maxlength : 최대자수 제한
+                        * autofocus : 자동초점
+                        * readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등. server Input 가능 대신 편집불가.)
+                        * disabled : 비활성화.(server input 불가)
+                    -->
+                </li>
+                <li>
+                    <label for="userEmail">이메일주소 : </label>
+                    <input type="email" id="userEmail" placeholder="사용중이신 이메일을 입력하세요">
+                    <!-- ? type:email. 화상키패드 기준. 키패드에 @, domain등을 입력하기 쉽게 배치변환 -->
+                </li>
+                <li>
+                    <label for="userSNS">SNS : </label>
+                    <input type="url" id="userSNS">
+                    <!-- ? type:url. 화상키패드 기준. . , domain, https://... 입력하기 쉽게 배치변환 -->
+                </li>
+                <li>
+                    <label for="count">수량</label>
+                    <input type="number" id="count" value="1" min="1" max="99">
+                    <!--상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
+                </li>
+                <li>
+                    
+                </li>
             </ul>
         </fieldset>
     </form>
