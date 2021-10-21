@@ -115,10 +115,37 @@
                 <li>
                     <label for="count">수량</label>
                     <input type="number" id="count" value="1" min="1" max="99">
-                    <!--상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
+                    <!-- ? 상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
                 </li>
                 <li>
-                    
+                    <label for="typeRange">범위내선택</label>
+                    <input type="range" id="typeRange" min="90" max="110" step="5" value="100">
+                    <!-- ? slideBar 형태의 범위내 값을 선택하는 input -->
+                </li>
+                <li>
+                    <label for="dateSelect">일자선택</label>
+                    <input type="date" id="dateSelect">
+                    <!-- ! 달력호출 -->
+                    <input type="datetime-local">
+                    <!-- ! 연,월,일,시(yyyy-mm-dd:hms) 선택가능 -->
+                    <input type="month">
+                    <!-- ? 연,월 선택 -->
+                    <input type="week">
+                    <!-- ? 연,주력 선택 -->
+                    <input type="time">
+                    <!-- ? 시간 선택 -->
+                    <input type="datetime">
+                    <!-- 비사용 -->
+                </li>
+                <li>
+                    <label for="typeSearch">검색</label>
+                    <input type="search" id="typeSearch" placeholder="검색어를 입력하세요." autocomplete>
+                    <!-- ? 검색어를 입력하는 field. x(cancel)보유, autocomplete: 자동완성기능 지원-->
+                    <!-- ! safari 에서 style 비적용 -->
+                </li>
+                <li>
+                    <label for="typeColor">색상선택</label>
+                    <input type="color" id="typeColor">
                 </li>
             </ul>
         </fieldset>
