@@ -25,7 +25,7 @@
         <h2>section에는 머릿글(h)을 넣어줘야 한다.</h2>
         <p>
             복합적인 content group(text,img,mov... / 명확히 내용이 별도로 구분 되는 경우)
-            이 들어가는 section.
+            이 들어가는 section.(header, footer 포함가능)
         </p>
         <article>
             <h3>
@@ -33,9 +33,21 @@
             </h3>
             <p>
                 article 자체로 이해 될 수 있고, 독립적으로 취급 될 수 있는 문서 content만
-                사용하는 article.
+                사용하는 article. (ex. 신문기사, blog 게시글, community 게시문서....)
             </p>
+            <time datetime="2021-10-22T10:04:00+09:00">
+                2021년 10월 22일 10시 04분 00초
+            </time>
         </article>
     </section>
+    <aside>
+        전체적으로 사용하는 global(선택적)중 좌, 우측에 있는 menu, bannerBar, quickMenu..
+        등의 content가 들어가는 aside.(header, footer 포함가능)
+    </aside>
+    <footer>
+        저작권정보, 회사주소, 증명/신고내용, 개인정보취급방침(link), 이용약관(link),
+        결제가 가능한 사이트일 경우 반품/환불/교환등의 정책.(link) 등이 들어가는
+        하단 global 요소
+    </footer>
 </body>
 </html>
