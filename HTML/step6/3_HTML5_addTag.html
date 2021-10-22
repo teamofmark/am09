@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>HTML5에서 새로 추가 된 Tag</title>
+    <style>
+        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li figure{position:relative;}
+        body > ul li figure img{width:100%;}
+        body > ul li figure:hover figcaption{display:block;}
+        body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
+        body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
+        body > ul li figure figcaption dl dt{font-size:24px;}
+        body > ul li figure figcaption dl dd{margin:0;}
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="-.png" alt="" />
+        <figcaption>아직 정의되지 않은 이미지</figcaption>
+        <!--figure는 이미지와 설명글을 담을수 있는 태그이고, figcaption은 이미지의 설명글을 담는 역할을 한다. 부가조건으로 유동적인 컨텐츠에 사용.-->
+    </figure>
+    <ul>
+        <li>
+            <figure>
+                <img src="http://placehold.it/250x250" alt="example" />
+                <figcaption>
+                    <dl>
+                        <dt>example Name</dt>
+                        <dd>example descript</dd>
+                        <dd>example price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    
+        
+    <time datetime="2021-08-20T09:00:00Z">20121년 8월 20일 오전 9시</time>
+    <!--
+        ? 날짜, 시간 기록을 하는 time 마크업은
+        ? 1. datetime은 브라우저에서 인식하는 날짜 부분이다. yyyy-mm-dd 형식을 따른다.
+        ? 날짜만 ? 2016-06-12, 시간만? 09:00:00, Z는 그리니치 시간대를 나타내는 Zulu의 약자 
+        ? 2. pubdate(문서작성날짜)는 삭제-
+        ? 3. 브라우저에 표시될 내용
+        -->
+
+
+
+    <progress value="22" max="100"></progress>
+    <!-- ? progress는 나타내고픈 진행 상황을 실시간으로 나타낼때 사용 값을 value로 설정하고 최대값을 max로 설정한다. (ie는 10이상 지원)-->
+
+    <meter value="80" max="100" min="10" high="90" low="20"></meter> 10%
+    <!--
+        ? 진행중을 progress가 담당 한다면, meter는 현재 사용량이나 소모된량 등의 정지된 산출값에 적합하다.
+        ? value는 현재값, min 은 최소값, max는 최대값, low는 낮다의 기준범위, high는 높다의 기준범위, optimum은 적당하다의 기준범위
+        -->
+
+    <ruby>
+        漢 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+    
+    <address>
+        by <a href="http://zzangsaem.blogspot.kr/" target="_blank">zzangsaem.blogspot.kr</a>
+        mailto:<a href="mailto:teamofmark@gmail.com">address</a>
+        <!--
+            address tag 안에는 제작자 및 회사의 연락처 정보(메일,실제주소,전화번호)와 피드백을 보낼 수 있는 정보 등을 담아낼수 있다.
+            만일 우편번호등 만 기재해야 한다면, p를 사용하면 됨
+            -p.s- 마이크로포맷으로 작성되는 vcard 형식은 http://microformats.org/code/hcard/creator 에서 만들어서 사용하면 된다.
+        vcard란 전자명함을 뜻하며, 안드로이드 와 ios 에서 범용적으로 사용되는 연락처 방식이기도 하다.
+            -->
+    </address>
+
+
+    <!--IE 지원 불가-->
+    <details>
+        <summary>Copyright 1999-2014.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details>
+    <!--
+        어떠한 한 키워드(summary)의 요약 및 요소들을 넣어두고
+        event(클릭,오버)로  show / hide 기능이 작동되게 함.
+        -->
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+    
+    <form action="demo_keygen.asp" method="get">
+        Username: <input type="text" name="security">
+        Encryption: <keygen name="security">
+        <input type="submit">
+    </form>
+    <!--개발쪽 보안에 주된 사항이다. 보안키를 생성해내고, 
+        공개 키를 제출하는데, 개인 키는 로컬에 저장되게 하고, 
+        공개키를 서버로 전송시킨다.-->
+
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open-source web browser developed by Google,
+                released in 2008.
+            </p>
+        </article>
+    </main>
+    <!--현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
+        문서내 mainpage에 해당하는 섹션부나 페이지를 감쌀때 사용 한다.
+        한개 문서에서 1번만 사용할 수 있다. 또한 구조상 최상위에 존재 해야 한다.-->
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output id="x" name="x" for="a b"></output>
+    </form>
+    <!--form에 지정된 스크립트 연산을 지정 input(id)들로 수행하여, 
+        결과값을 산출해내는 식이다.
+        range는 값을 마우스를 이용해 입력할 수 있고, number는 직접입력 
+        및 up,down버튼을 이용해 입력할수있다.-->
+
+<!--
+    <p>
+        This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery
+        <wbr>longwordthatwillbreakatspecific<wbr>
+        placeswhenthebrowserwindowisresized.
+    </p>
+    wbr로 감싸져있는 문장을 사이즈가 줄어들시 한줄로 떨어지게 처리 해준다. 지원종료
+-->
+
+    <!--이하 IE7,8,9, safari 지원 불가-->
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!--select와 유사함. 입력요소에 대한사전 정의 목록을 넣어두는데 활용.
+        동시에 사용자가 입력필드에 해당 옵션일부를 작성하면 일치되는 결과값 출력.
+        (자동완성기능)-->
+
+
+    <!--대부분 브라우저 지원불가-->
+
+    <table>
+        <tr>
+            <th>January <dialog open>This is an open dialog window</dialog></th>
+            <th>February</th>
+            <th>March</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+    <!--해당 객체의 간단한 대화상자를 생성해 낼 수있다. 
+        open 값을 제하면, 안보이고
+        넣으면 보인다. 크롬, 오페라만 지원-->
+
+</body>
+</html>
