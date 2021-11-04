@@ -1,0 +1,12 @@
+body{
+    margin: 0; font-size: 12px;
+}
+h1{
+    font-size: 14px;
+}
+ul, ol, dl{
+    color: slateblue;
+}
+ul li{
+    font-size: 25px;
+}
