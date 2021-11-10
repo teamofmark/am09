@@ -56,3 +56,32 @@ p.w_nowrap{
 
     * 높은대상을 선 기준으로 정렬 이후 낮은대상을 %,px 등의 상세조정으로 맞출수 있다.
 */
+p.t_indent{
+    text-indent: 40px; font-size: 20px;
+}
+button.test{
+    background: url('https://via.placeholder.com/200x50?text=blabla button');
+    width: 200px; line-height: 50px; text-indent: -9999px;
+}
+a{
+    display: block;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #0cf;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #96c;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase;
+}
+
+p.DR_ltr{
+    direction: ltr;
+}
+p.DR_rtl{
+    direction: rtl;
+}
