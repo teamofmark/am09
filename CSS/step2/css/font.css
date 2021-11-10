@@ -32,3 +32,27 @@ p.word{
     word-spacing: 10px;
     /* word-spacing: 단간 */
 }
+p[class^=w_]{
+    border: 1px solid black;
+}
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 21px;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap; text-overflow: ellipsis;
+    overflow: hidden;
+}
+.v_alignTest img{
+    width: 200px; vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: 100%;
+}
+/* 
+    !중요
+    * middle : 높은대상 기준으로 중앙 정렬
+    * top, bottom : 높은대상 기준의 위, 아래 정렬
+    // baseline, text-top : 비중요. 
+
+    * 높은대상을 선 기준으로 정렬 이후 낮은대상을 %,px 등의 상세조정으로 맞출수 있다.
+*/
