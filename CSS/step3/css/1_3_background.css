@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; /* ? x : center, y: center*/
+    /*
+        *%,px 등의 기본 단위들도 사용 가능
+        ? contain : 종 / 횡 중에 먼저 한계선에 닿는 부분을 우선.
+        ? cover : 무조건 꽉 채움.
+    */
+    background-attachment: fixed;
+}
+p{
+    height: 2000px;
+}
