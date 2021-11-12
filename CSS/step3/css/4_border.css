@@ -1,0 +1,28 @@
+div{
+    width: 300px; height: 150px; margin: 0 auto 10px;
+}
+.singleBox{
+    border: 3px solid #30f;
+    /* ? border: [width] [style] [color]  = border shorthand*/
+}
+.multiBox{
+    
+    border-width: 1px 3px 10px 20px;
+    /* ? top right bottom left */
+    border-style: solid dotted dashed double;  
+    /*? solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/
+    border-color: #1958b7 #f06 #6f6 #fc6;
+    /* ? 속성별분리 : 각 선들을 따로 다룰수 있다. */
+
+    /* border-top: 1px solid #1958b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #6f6;
+    border-left: 20px double #fc6; */
+    /* ?방향별분리 : 각 선들을 따로 다룰수 있다. */
+    /*
+    border 개별 설정
+    border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
+    또는 border: 5px 10px; 방식으로 상하, 좌우로 묶어 표현 할 수 있다.
+    또는 border: 5px 8px 10px; 방식으로 상하 별도, 좌우 묶기 로 표현가능    
+    */
+}
