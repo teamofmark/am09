@@ -24,6 +24,8 @@ ol li.lower-roman{
 ol li.upper-roman{
     list-style: upper-roman;
 }
+/* * 여기까지 비중요 */
+
 ol li.none{
     list-style: none; /* ! 기본 bullet 삭제하는 법 */
 }
