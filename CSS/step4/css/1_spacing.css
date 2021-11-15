@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    /*
+    !margin-top: 10px; 
+    !margin-right: 10px; 
+    margin-bottom: 10px;
+    !margin-left: 10px;  */
+    margin: 10px;
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+}
+.secondDiv{
+    background-color: #ddd;
+    margin: 20px 15px;
+    padding: 0 10px 10px;
+}
+/* 
+    ! firstDiv의 margin-bottom: 10px 상쇄.
+    ? secondDiv의 margin과 만나는 부분에서 가산없이 병합.
+*/
+.secondDiv article{
+    background: #930;
+    margin-top: 10px;
+}
+/* 
+    !margin-bottom이 비적용됨. (부모경계선 너머적용)
+    ? 그래서 부모가 자손에게 padding을 사용함이 바람직함.
+*/
