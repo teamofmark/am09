@@ -1,0 +1,28 @@
+body, figure{
+    margin: 0;
+}
+ul{
+    margin: 0; padding: 0; 
+    /* list-style: none; */
+}
+ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+ul li{
+    width: 33.33%; border: 1px solid salmon; box-sizing: border-box;
+    float: left; display: block;
+}
+ul li figure img,
+ul li figure figcaption{
+    float: left; margin-bottom: 10px; width: 48%;
+}
+ul li figure img{
+    margin-right: 4%;
+}
+ul li figure figcaption{
+    border-bottom: 1px solid slategrey;
+}
+ul li figure figcaption dl dt{
+    font-size: 24px; margin-bottom: 35px;
+}
