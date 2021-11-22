@@ -20,3 +20,15 @@
     border: 1px solid slateblue; background-color:#555; color: white;
     padding: 10px;
 }
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    font-size: 14px; color: white; line-height: 30px;
+}
+.attrSelector fieldset ul li label{
+    width: 100px; display: inline-block;
+}
+.attrSelector fieldset ul li input{
+    padding: 5px; vertical-align: middle;
+}
