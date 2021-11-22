@@ -9,7 +9,7 @@ header h1{
     line-height: 40px; margin: 0 auto;
 }
 header div{
-    position: absolute; right: 0;
+    position: absolute; right: 0; top: 28px;
 }
 header nav{
     background-color: #3cf;
@@ -28,4 +28,29 @@ header nav ul li a{
 }
 header nav ul li a:hover{
     color: white;
+}
+
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap img{
+    margin-bottom: 30px; display: block;
+}
+.wrap article{
+    width: 310px; border: 1px solid #999; float: left; box-sizing: border-box;
+}
+.wrap article:not(:first-of-type){
+    margin-left: 15px;
+}
+.wrap article h3{
+    margin: 0 0 20px 0;
+}
+.wrap article ul{
+    margin: 0; padding: 0;
+}
+.wrap article ul li{
+    display: block;
+}
+footer{
+    background-color: #069; color: white; line-height: 40px; text-align: center;
 }
