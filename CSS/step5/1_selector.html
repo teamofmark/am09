@@ -19,12 +19,41 @@
         <p id="paragraph2">paragraph 2번 id를 지목하여 css를 삽입</p>
         <p id="paragraph3">paragraph 3번 id를 지목하여 css를 삽입</p>
     </div>
+
     <div class="classSelector">
         <p class="f_size">f_size class로 font size만 변경</p>
         <p class="f_size f_weight">f_size class로 font size, f_weight class로 굵기 변경</p>
         <p class="f_size f_weight f_color">
             f_size class로 font size, f_weight class로 굵기 변경, f_color class로 색상변경
         </p>
+    </div>
+
+    <div class="attrSelector">
+        <form>
+            <fieldset>
+                <legend>attribute Selector</legend>
+                <ul>
+                    <li>
+                        <label for="nameField">이름 : </label>
+                        <input type="text" id="nameField">
+                    </li>
+                    <li>
+                        <label for="pwField">비밀번호 : </label>
+                        <input type="password" id="pwField">
+                    </li>
+                    <li>
+                        <label for="pwCheck">비밀번호 확인 : </label>
+                        <input type="password" id="pwCheck">
+                    </li>
+                    <li>
+                        <label for="radioEx">radioCheck : </label>
+                        <input type="radio" id="radioEx">
+                        <label for="checkEx">checkCheck : </label>
+                        <input type="checkbox" id="checkEx">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>

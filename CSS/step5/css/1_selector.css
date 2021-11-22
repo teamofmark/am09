@@ -12,3 +12,11 @@
 .classSelector p.f_weight{font-weight: bold;}
 .classSelector p.f_color{color: #9cf;}
 /* ? class Selector */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: slateblue;
+}
+.attrSelector fieldset legend{
+    border: 1px solid slateblue; background-color:#555; color: white;
+    padding: 10px;
+}
