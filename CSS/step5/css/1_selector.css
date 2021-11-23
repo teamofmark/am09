@@ -93,3 +93,19 @@
 .sameAttrSelector input[class*='btn']{
     background-color: red; color: white;
 }
+
+.eventSelector a{
+    display: block;
+}
+.eventSelector a:link{font-size: 13px; color: red;}
+.eventSelector a:hover{font-size: 20px; color: green;}
+.eventSelector a:active{font-size: 30px; color: blue;}
+.eventSelector a:visited{font-size: 40px; color: yellowgreen;}
+/* ?a:visited -> a:link font-size때문에 변경불가 */
+
+.statusSelector input[type='checkbox'] + label{
+    overflow: hidden; display: inline-block; height: 20px;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
