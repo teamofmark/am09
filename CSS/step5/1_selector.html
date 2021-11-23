@@ -55,5 +55,49 @@
             </fieldset>
         </form>
     </div>
+
+    <div class="directSelector">
+        <h1>이 부분은 directSelector의 직계 h1.</h1>
+        <div class="indirect">
+            <h1>
+                이 부분은 directSelector의 직계 indirect안의 h1. <br>
+                부모의 구조가 다름 = 밖에 위치한 h1과 같은 style 적용불가.
+            </h1>
+        </div>
+        <span>
+            이 부분은 directSelector의 직계 span.
+            <span>
+                이 부분은 directSelector의 직계 span 안의 span. <br>
+                부모의 구조가 같음 = 밖에 위치한 span과 같은 style 적용.
+            </span>
+        </span>
+    </div>
+
+    <div class="sameSelector">
+        <h1>header - 1</h1>
+        <h2>header - 2</h2>
+        <h3>header - 3</h3>
+        <h3>header - 3</h3>
+        <h2>header - 2</h2>
+        <h1>header - 1</h1>
+        <h2>header - 2</h2>
+    </div>
+
+    <div class="stringAttrSelector">
+        <img src="https://via.placeholder.com/150.png" alt="undefined">
+        <img src="https://via.placeholder.com/150.jpg" alt="undefined">
+        <img src="https://via.placeholder.com/150.gif" alt="undefined">
+    </div>
+
+    <div class="sameAttrSelector">
+        <input type="button" value="button">
+        <input type="submit" value="submit">
+        <input type="button" value="button" class="btn_red">
+        <input type="reset" value="reset">
+        <h1 title="제목">h1</h1>
+        <h2 title="남자화장실">화장실</h2>
+        <h1 title="다른제목">h1</h1>
+        <h2 title="여자화장실">화장실</h2>
+    </div>
 </body>
 </html>

@@ -35,3 +35,39 @@
 .attrSelector fieldset ul li input[type='text']{
     background-color: salmon; border: 3px solid lightyellow; color:maroon;
 }
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 15px; height: 15px;
+    /* background-color: black; border: 5px solid yellow; */
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 15px; height: 15px;
+    /* background-color: gray; border: 5px solid yellowgreen; */
+}
+/* 
+    ? attribute Selector -> input에만 있는것이 아니라 attr이 존재하는 모든 tag 가능.
+    * ex> img = src, alt / a = href / label = for .....
+    * img[src='---'] a[href='====']...
+*/
+
+.directSelector > h1{
+    font-size: 20px; color: slateblue;
+}
+.directSelector > span{
+    font-size: 14px; color: magenta;
+}
+/* 
+    ? 직계자손 tag에 style을 적용. 동일한 tag로 중첩될 경우 (span span..) 비정상 적용(내부파고듬).
+*/
+
+.sameSelector h1+h2{
+    font-size: 40px; color: lightpink;
+}
+.sameSelector h1~h2{
+    background-color: #333;
+}
+/* 
+    ? 동위선택자 : a + b  = a바로 뒤 b, a ~ b = a뒤에 있는 b 모두.(외부,자손 불가)
+*/
