@@ -71,3 +71,25 @@
 /* 
     ? 동위선택자 : a + b  = a바로 뒤 b, a ~ b = a뒤에 있는 b 모두.(외부,자손 불가)
 */
+
+/* 
+    ?속성일치선택
+    ? *= : 해당단어가 들어가는(위치상관없이) 
+    ? $= : 해당 단어로 끝나는.
+    ? ^= : 해당단어로 시작.
+    ? ~= : 띄어쓰기 기준. 해당 단어 포함.
+    ? |= : 해당 단어로 시작하거나 -로 구분되는.
+*/
+.stringAttrSelector img[src$=png]{
+    width: 100px; height: 100px; border: 3px solid red;
+}
+.stringAttrSelector img[src$=jpg]{
+    width: 200px; height: 200px; border: 5px solid green;
+}
+.stringAttrSelector img[src$=gif]{
+    width: 300px; height: 300px; border: 10px solid blue;
+}
+
+.sameAttrSelector input[class*='btn']{
+    background-color: red; color: white;
+}
