@@ -141,3 +141,35 @@
 .normalSelector ul li:last-child{
     border-radius: 0 26px 26px 0;
 }
+
+.shapeSelector h1:nth-of-type(2){color: #30f;}
+.shapeSelector h2:nth-of-type(2){color: #0c6;}
+.shapeSelector h3:nth-of-type(2){color: #f06;}
+
+
+/* .shapeSelector h1:nth-child(6){color: #30f;}
+.shapeSelector h2:nth-child(5){color: #0c6;}
+.shapeSelector h3:nth-child(4){color: #f06;} */
+
+/* todo. secondHeader's nth-child로 선택해보기. */
+
+
+.childTable table{
+	width:100%;
+	border-width:3px 1px 2px 1px;
+	border-style:solid;
+	border-color:#3CF;
+}
+.childTable table caption{color:#666; font-size:12px; line-height:40px;}
+.childTable table tr th,.childTable table tr td{
+	width:14.28%;
+	border-right:1px solid #3cf;
+	border-bottom:1px solid #3cf;
+	padding:10px 0;
+}
+.childTable table tr th{background-color:#6CF; }
+.childTable table tr td{text-align:center;}
+/* 
+    * http://nthmaster.com
+    * https://css-tricks.com/useful-nth-child-recipies/
+*/
