@@ -216,3 +216,11 @@ data- 라는 것은 사용자 지정 속성으로 웹 표준에서 인정 해주
 ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 기본으로 공급하는
 모바일에서의 리스트 출력 작동법 및 스타일 이 된다.
 */
+
+.reactionSelector > *::selection{
+    background-color: #000; color: #ff0;
+}
+
+.notSelector input:not([type='password'],[type='submit']){
+    background-color: red;
+}
