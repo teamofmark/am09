@@ -1,0 +1,31 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%; margin: 0; background-color: black; font-family: Arial, Helvetica, sans-serif;
+}
+body > div:first-of-type{
+    width: 50%; height: 50%; position: absolute; top: 25%; left: 25%;
+    background-color: #262626;
+}
+body > div:first-of-type nav{
+    margin-bottom: 25px;
+}
+body > div:first-of-type nav ul{
+    margin: 0; padding: 0; list-style: none;
+}
+body > div:first-of-type nav ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+body > div:first-of-type nav ul li{
+    float: left; width: 25%; background-color: #3b3b3b;
+}
+body > div:first-of-type nav ul li a{
+    display: block; text-decoration: none; text-align: center;
+    /* padding: 12px 0;*/ line-height: 36px; font-size: 12px; color: #ea0e52;
+    text-transform: capitalize;
+}
+body > div:first-of-type nav ul li a:hover,
+body > div:first-of-type nav ul li.currentStat a{
+    background-color: #ea0e52; color: white;
+}
