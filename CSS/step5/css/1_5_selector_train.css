@@ -1,0 +1,44 @@
+fieldset{
+    max-width: 460px; margin: 0 auto; border-color: darkblue;
+    border-radius: 10px;
+    /* fieldset = 기본 border */
+}
+fieldset legend{
+    background-color: darkblue; color: white; border-radius: 5px;
+    padding: 0 10px; line-height: 34px;
+}
+fieldset ul{
+    list-style: none; margin: 0; padding: 0;
+}
+fieldset ul li{
+    margin-bottom: 15px;
+}
+fieldset ul li:last-child{
+    text-align: right;
+}
+fieldset ul li label:first-child{
+    width: 100px; display: inline-block;
+}
+fieldset ul li > *:not(label){
+    vertical-align: middle; padding: 5px 10px; background-color: #fff;
+}
+fieldset ul li > *:not(label):hover,
+fieldset ul li > *:not(label):focus{
+    background-color: #949494;
+}
+fieldset ul li input[type='checkbox'] + label{ 
+    padding: 10px; background-color: #fff;
+}
+fieldset ul li input[type='checkbox']:checked + label{
+    padding: 5px; background-color: slateblue; color: white; font-size: 12px;
+}
+fieldset > input{
+    display: block; width: 45%; float: left;
+    border: none; line-height: 34px; color: white;
+}
+fieldset > input[type='submit']{
+    background-color: navy;
+}
+fieldset > input[type='reset']{
+    background-color: darkred; margin-left: 10%;
+}
