@@ -1,0 +1,33 @@
+body > div{
+    max-width: 960px; margin:0 auto;
+}
+    div fieldset{
+        border:1px solid #05f;
+        margin:0 0 25px 0; padding:15px 20px 25px 20px;
+    }
+    div fieldset label{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    div fieldset textarea{
+        display: block; width: 99%; border:1px solid #50f;
+        padding:10px 1%; box-sizing: border-box;
+        margin:25px auto 0; height: 150px; overflow-y: scroll;
+        resize: none; transition-duration:0.75s;
+    }
+    /* 
+        ? 부모 margin , padding 과 textarea width의 관계
+        * 1. 부모(fieldset)와 자식(textarea)의 기본 css 확인.
+        * 2. textarea의 스크롤바 및 width % 로 인한 간섭수정.
+        * 3. 이후 부모의 간섭요소 (margin, padding, border..)
+        *    등을 제거하여 부모 자식간 간섭을 없애준다.
+        ! resize : none; 임의로 textarea의 크기조절을 못하게
+    */
+    
+    div fieldset input[type='checkbox']:checked + textarea{
+        height: 0px;
+        padding:0 1%;
+    }
+    /* 
+        ! 변형에 필요한 요소만 적을 것.
+    */
