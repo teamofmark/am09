@@ -1,0 +1,64 @@
+body{
+    width: 70%; margin: 0 auto;
+}
+ul{
+    padding: 0; margin: 0; list-style: none;
+}
+ul li{
+    cursor: pointer;
+}
+ul li:first-child{
+    border-bottom: 1px solid deeppink; background-color: #505050;
+}
+ul li:last-child{
+    border-bottom: 1px solid deeppink;
+}
+ul li:nth-child(odd):not(:first-child){
+    background-color: #e9e9e9;
+}
+ul li:nth-child(even){
+    background-color: #fafafa;
+}
+ul li:nth-child(2n+3):hover{
+    background-color: dodgerblue;
+}
+ul li:nth-child(even):hover{
+    background-color: slateblue;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left; font-size: 14px; text-transform: capitalize;
+    padding: 15px 2%; box-sizing: border-box; color: #999;
+}
+ul li span:nth-child(odd){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 40%;
+}
+ul li span:nth-child(4){
+    width: 30%;
+}
+ul li:not(:first-child):hover span{
+    color: black;
+}
+ul li:first-child span:nth-child(2){
+    color: violet;
+}
+ul li:not(:first-child) span:nth-child(2){
+    color: deeppink;
+}
+body > div{
+    position: relative; width: 50%; margin: 0 auto 15px; padding: 0 3%;
+}
+body > div > a{
+    position: absolute; line-height: 23px; top: 0;
+}
+body > div > a:first-of-type{
+    left: 0;
+}
+body > div > a:last-of-type{
+    right: 0;
+}
