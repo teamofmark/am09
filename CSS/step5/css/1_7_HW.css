@@ -47,3 +47,57 @@ ul{
 ul li{
     position: relative;
 }
+ul li:first-child{
+    border-width: 3px 0 1px; border-style: solid none; border-color: brown;
+    padding: 10px 0;
+}
+ul li:not(:first-child){
+    border-bottom: 1px solid black;
+}
+ul li:nth-child(even){
+    background-color: lightgray;
+}
+ul li:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+ul li span{
+    display: block; float: left; padding: 10px 2.5%; font-size: 14px;
+}
+
+ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 35%;
+}
+ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px; font-size: 12px; 
+    background-color: deeppink;
+}
+body > div{
+    max-width: 400px; margin: 0 auto; position: relative; line-height: 30px;
+}
+body > div a{
+    text-decoration: none;
+}
+body > div > a{
+    position: absolute; display: block; top: 0;
+}
+body > div > a:first-of-type{
+    left: 0;
+}
+body > div > a:last-of-type{
+    right: 0;
+}
+body > div > ol{
+    padding: 0 25px; margin: 0; text-align: center;
+}
+body > div > ol li{
+    display: inline-block;
+}
+body > div > ol li a{
+    font-size: 14px; padding: 5px; color: #00556b;
+}
+body > div > ol li a:hover{
+    color: red;
+}
