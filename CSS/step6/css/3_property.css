@@ -34,3 +34,36 @@ div{
 .visibilityProperty table{
     visibility: collapse; border-spacing: 0;
 }
+.opacityProperty ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float: left; width: 33%; background-color: black;
+    position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure{
+    margin: 0;
+}
+.opacityProperty ul li figure img{
+    width: 100%; opacity: 0.3; transition-duration: 0.75s;
+}
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li:hover figure figcaption{
+    opacity: 0;
+}
+.opacityProperty ul li figure figcaption{
+    position: absolute; width: 50%; height: 50%; left: 25%; top: 25%;
+    background-color: rgba(255,255,255,0.5); text-align: center; opacity: 1;
+    transition: opacity 0.75s ease-in-out;
+}
+.opacityProperty ul li figure figcaption dl dt{
+    font-size: 18px; font-weight: bold; margin-bottom: 30px;
+}
+.opacityProperty ul li figure figcaption dl dd{
+    font-size: 14px; color: #444; margin: 0;
+}
