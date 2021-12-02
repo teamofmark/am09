@@ -67,3 +67,18 @@ div{
 .opacityProperty ul li figure figcaption dl dd{
     font-size: 14px; color: #444; margin: 0;
 }
+
+.shadowProperty h1{
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    /* * xAxis, yAxis, blur (spread) shadowColor */
+}
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid #f00;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 2px rgba(0,0,0,0.7);
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 2px rgba(0,0,0,0.7);
+}
+/* https://css3generator.com/ <- 더쉽게만들기 */
