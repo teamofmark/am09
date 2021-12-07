@@ -10,6 +10,8 @@ body{
 .wrap ul{
     margin: 0; padding: 0; list-style: none;
 }
+/* * global Set */
+
 .wrap header{
     position: relative; padding: 20px 40% 0 0; margin-bottom: 90px;
 }
@@ -30,4 +32,26 @@ body{
 }
 .wrap header nav ul li a{
     color: #f0f0f0; font-size: 12px; text-align: center;
+}
+.wrap header nav ul li:not(:first-child) a{
+    border-left: 1px solid #e1e1e1;
+}
+.wrap > ul:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap > ul li{
+    width: 30%; float: left; margin-bottom: 5%;
+}
+.wrap > ul li:not(:nth-child(3n+1)){
+    margin-left: 5%;
+    /* * or margin-right 3n */
+}
+.wrap > ul li a img{
+    width: 100%; opacity: 0.5;
+}
+.wrap > ul li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
 }
