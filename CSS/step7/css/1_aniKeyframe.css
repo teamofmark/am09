@@ -26,11 +26,17 @@ body{
 }
 
 @keyframes moveCircle{
-    0%{
+    from{
         left: 0;
-    }50%{
+        transform: rotate(0deg);
+    }to{
         left: 500px;
-    }100%{
-        left: 500px;
+        transform: rotate(360deg);
     }
 }
+/* 
+    ?keyframes
+    * 0 ~ 100% 사이 소수점 포함 입력 가능.(xx.xx)
+    * keyframe start = from(0%), end = to(100%)
+    * transform - 변형함수들로 이루어진 속성. rotate : 회전 deg : 각도
+*/
