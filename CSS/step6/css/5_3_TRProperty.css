@@ -6,7 +6,9 @@ body{
 }
 .property span{
     display: block; width: 10px; height: 50px; background-color: #0cf; margin: 5px;
-    transition-duration: 5s;   
+    transition-property: background-color, width;
+    transition-duration: 1s, 5s;
+    /* transition:  property name | duration | timing function | delay */
 }
 .property:hover span:nth-child(1){background-color: red; width: 100px;}
 .property:hover span:nth-child(2){background-color: orange; width: 300px;}
