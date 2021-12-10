@@ -1,0 +1,38 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black; margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block;
+    transform-origin: left top;
+}
+/* 
+    ? origin
+    * transform이 일어나는 객체의 기본 중심축은 자기 자신의 중점을 기준으로 삼는다.
+    * 변경하고 싶을시 transform-origin으로 변경할 수 있으며
+    * left, top, right, bottom, %로 변경 할 수있다.
+*/
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; color: white; transform: translateX(100px) rotate(10deg);
+}
+div:nth-of-type(3) span{
+    background-color: blue; color: white; transform: rotate(10deg) translateX(100px) translateY(50px);
+}
+div:nth-of-type(4) span{
+    background-color: brown; color: white; transform: rotate(10deg) translate(100px,50px) skewX(10deg);
+}
+div:nth-of-type(5) span{
+    background-color: orange; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg);
+}
+div:nth-of-type(6) span{
+    background-color: pink; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg) scale(1.2);
+}
+/* 
+    ! transform에 입력한 변환관련 함수들은 입력순으로 적용된다.
+    * rotate(deg) : 회전
+    * translate(X,Y) : 이동
+    * skew(Xdeg,Ydeg) : 기울기
+    * scale(X,Y) : 지정된 비율만큼 증가 및 감소 ( 1 기준)
+*/
