@@ -24,7 +24,13 @@ body{
 .circle h1{
     line-height: 200px;
 }
-
+.circle:hover{
+    animation-play-state: paused;
+}
+/* 
+    ?playState
+    * paused는 중지, running은 재생
+*/
 @keyframes moveCircle{
     from{
         left: 0;
