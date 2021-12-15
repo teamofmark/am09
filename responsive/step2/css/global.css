@@ -1,0 +1,15 @@
+
+
+@media screen and (min-width:1280px){
+    body{
+        background-color: blue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+        /** relative + em = rem. HTML defaultFontSize :  */
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/* *Desktop Device - 사용자 해상도가 1280이상일 때 실행 되는 code */
