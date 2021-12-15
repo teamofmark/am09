@@ -1,4 +1,19 @@
 
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
+    /* todo */
+}
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: portrait){
+    body{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; text-align: right; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem;
+    }
+}
+/* *Tablet Device 사용자 해상도가 768 이상 1280미만 일 때 실행 되는 code */
 
 @media screen and (min-width:1280px){
     body{
