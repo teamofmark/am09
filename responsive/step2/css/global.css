@@ -1,6 +1,40 @@
+/* todo. landscape */
+
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        background-color: orange; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }p{
+        font-size: 0.75rem; text-align: right; line-height: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: red; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 1rem; text-align: center; line-height: 2rem;
+    }p{
+        font-size: 0.75rem;
+    }
+}
+
+/* * mobile Device - 사용자 해상도가 768 미만일 때*/
 
 @media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
-    /* todo */
+	body{
+        background-color:greenyellow; color:white; font-weight:bold;
+    }	
+    h1{
+        font-size:2rem; text-align:right; line-height:3rem;
+    }
+    p{
+        font-size:1rem; line-height:1.5rem;
+    }
 }
 @media screen and (min-width:768px) and (max-width: 1279px) and (orientation: portrait){
     body{
