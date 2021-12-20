@@ -180,4 +180,13 @@ header > div > ul li h2{
     footer > div div:last-of-type{
         clear: left;
     }
+    footer > div div:last-of-type a{
+        color: white; display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
 }
