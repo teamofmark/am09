@@ -4,10 +4,12 @@ a{
 }
 header > div nav ul li a,
 header > div > ul li p,
-footer > div *{
+footer > div *,
+#about figcaption p{
     font-family: 'Roboto';
 }
-header > div > ul li h2{
+header > div > ul li h2,
+#about figcaption h2{
     font-family: 'Playfair Display';
 }
 .btn_more{
@@ -23,6 +25,7 @@ header > div > ul li h2{
         padding: 13px 1.6%;
     }
 
+    #about,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
