@@ -113,4 +113,13 @@
     section.teamArea > hr{
         border-color: rgba(255,255,255,0.2);
     }
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; visibility: hidden; clear: both;
+    }
+    section.teamArea ul li{
+        width: 23.5%; float: left; display: block;
+    }
 }
