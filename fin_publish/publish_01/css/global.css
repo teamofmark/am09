@@ -7,12 +7,16 @@ header > div > ul li p,
 footer > div *,
 #about figcaption p,
 section.videoArea h2,
-section.expArea ul{
+section.expArea ul,
+section.teamArea ul,
+section.teamArea ul + p{
     font-family: 'Roboto';
 }
 header > div > ul li h2,
 #about figcaption h2,
-section.expArea > *:not(ul){
+section.expArea > *:not(ul),
+section.teamArea h2,
+section.teamArea > p:not(:last-of-type){
     font-family: 'Playfair Display';
 }
 .btn_more{
@@ -20,7 +24,7 @@ section.expArea > *:not(ul){
     font-size: 16px; border: 1px solid #00e0d0; color: #00e0d0;
 }
 section[class *= Area] > hr{
-    width: 3%; min-width: 50px; border-top: 2px solid rgba(65,61,75,0.3);
+    width: 3%; min-width: 50px; border-width: 2px 0 0 0; border-style: solid;
     margin: 0 auto 45px;
 }
 /* *All USE */
