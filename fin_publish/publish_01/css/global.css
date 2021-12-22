@@ -11,7 +11,8 @@ section.expArea ul,
 section.teamArea ul,
 section.teamArea ul + p,
 section.worksArea h2 a,
-section.talkArea p > *{
+section.talkArea p > *,
+section.contactArea form fieldset > *:not([type='submit'], legend){
     font-family: 'Roboto';
 }
 header > div > ul li h2,
@@ -20,7 +21,9 @@ section.expArea > *:not(ul),
 section.teamArea h2,
 section.teamArea > p:not(:last-of-type),
 section.worksArea h2,
-section.talkArea p{
+section.talkArea p,
+section.contactArea form fieldset legend,
+section.contactArea div h3{
     font-family: 'Playfair Display';
 }
 .btn_more{
@@ -42,6 +45,7 @@ section[class *= Area] > hr{
 
     #about,
     section.expArea,
+    section.contactArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
