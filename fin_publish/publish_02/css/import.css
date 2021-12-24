@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Montserrat:400,500,700,900');
+/*? material font CDN*/
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*? material icon CDN*/
+
+@import url('reset.css');
+@import url('global.css');
+@import url('page.css');
