@@ -45,6 +45,7 @@ section[class *= Area] > hr{
     #about,
     section.expArea,
     section.contactArea,
+    section.teamArea ul,
     footer > div{
         max-width: 600px; margin: 0 auto; padding: 70px 3%;
         /* max-width: 940px; */
