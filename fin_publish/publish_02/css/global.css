@@ -1,3 +1,22 @@
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat', sans-serif;
+}
+.crim{
+    font-family: 'Crimson Text', serif;
+}
+
+/* 
+    ?body.module
+    ? body.spring{
+        background-color: pink;
+    }
+*/
+
+/* *A/U */
+
 @media screen and (max-width: 767px){}
 /* * mob */
 
