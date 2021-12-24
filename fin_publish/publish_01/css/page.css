@@ -193,9 +193,9 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 728px /*770px*/; margin: 0 auto 45px; color: white;
+        max-width: 600px/*728px 770px*/; margin: 0 auto 45px; color: white;
         background: url('../images/quote.png') no-repeat center top;
-        padding-top: 70px; font-size: 16px; line-height: 26px; font-weight: 400;
+        padding/*-top*/: 70px 3% 0; font-size: 16px; line-height: 26px; font-weight: 400;
     }
     section.talkArea p > *{
         display: block;
@@ -207,7 +207,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: 600px/*940px*/; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -216,7 +216,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: 80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -244,22 +244,22 @@
     }
     /* ?talksArea fin */
 
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    } 
+    }  */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left; display: block;
-    }
+    } */
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         margin-bottom: 35px; font-size: 22px; font-weight: 700; color: #413d4b;
     }
     section.contactArea form fieldset{
-        width: 50%;
+        /* width: 50%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset > *:not([type='submit'], legend){
         border: 1px solid rgba(0,0,0,0.1); line-height: 45px; padding: 0 20px;
@@ -276,9 +276,9 @@
         background-color: transparent; cursor: pointer; min-width: 120px;
     }
     
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 10%;
-    }
+    } */
     
     section.contactArea div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
@@ -496,7 +496,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: 728px/*940px*/; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
