@@ -28,6 +28,7 @@
     }
     header + nav .slideNav ul li a{
         display: block; font-size: 11px; color: #b9bed1; line-height: 56px; font-weight: 500;
+        text-transform: uppercase;
     }
     header + nav .slideNav ul li a:hover,
     header + nav .slideNav ul li a.active{
@@ -39,5 +40,41 @@
         background: url('../images/bul_search.png') no-repeat 12% center;
     }
     /* ? slideNav Fin */
+
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px; line-height: 0;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px; margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; padding: 9px 0 14px; color: white; border-radius: 21px;
+        font-size: 18px; font-weight: 700; text-align: center; line-height: 19px;
+        border: 1px solid rgba(255,255,255,0.2); position: absolute; z-index: 10; top: 45.8%;
+    }
+    section.slideArea > div > a.btn_conL{
+        left: 4.27%;
+    }
+    section.slideArea > div > a.btn_conR{
+        right: 4.27%;
+    }
+    section.slideArea > div ol{
+        position: absolute; z-index: 1; left: 50%; bottom: 10%;
+    }
+    section.slideArea > div ol li{
+        display: inline-block;
+    }
+    section.slideArea > div ol li a{
+        display: block; width: 8px; height: 8px; border-radius: 6px; border: 2px solid rgba(255,255,255,0.5);
+        text-indent: -9999px;
+    }
+    section.slideArea > div ol li a:hover,
+    section.slideArea > div ol li a.active{
+        background-color: white;
+    }
+    /* todo. figure img / figcaption 처리하기. */
 }
 /* * desk */
