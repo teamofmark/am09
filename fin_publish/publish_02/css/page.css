@@ -75,6 +75,75 @@
     section.slideArea > div ol li a.active{
         background-color: white;
     }
+    
     /* todo. figure img / figcaption 처리하기. */
+    
+    section.slideArea > div ul li figure img{
+        width: 100%;
+    }
+    section.slideArea > div ul li figure figcaption{
+        position: absolute; color: white; width: 40%; left: 15.21%; top: 21%;
+        max-width: 460px;
+    }
+    section.slideArea > div ul li figure figcaption dl dt{
+        font-size: 42px; font-weight: 900; line-height: 50px; margin-bottom: 25px;
+    }
+    section.slideArea > div ul li figure figcaption dl dd{
+        font-size: 16px; line-height: 22px; margin-bottom: 65px;
+    }
+    section.slideArea > div ul li figure figcaption input[type='button']{
+        background-color: #2754eb; border: none; width: 35.86%; font-size: 11px; line-height: 42px;
+        border-radius: 21px; font-weight: 500; color: white;
+    }
+    /* ? slideArea Fin */
+
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 4px; line-height: 56px; padding: 0 1.7%; box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    .contentArea > form fieldset span.sbSelect{
+        margin-left: 4.27%;
+    }
+    .contentArea > form fieldset label{
+        font-size: 11px; color: #a1a7bd; display: inline-block; vertical-align: middle;
+    }
+    .contentArea > form fieldset label[for='sb_keywords'],
+    .contentArea > form fieldset label[for='ship_Select']{
+        padding-left: 2.56%; margin-left: 1.7%; border-left: 1px solid rgba(0,0,0,0.05);
+    }
+    .contentArea > form fieldset input:not([type='checkbox']){
+        font-size: 13px; background-color: #f0f2f7; border: 1px solid #e3e8f0; line-height: 30px;
+        padding: 0 1%; box-sizing: border-box; border-radius: 16px; font-weight: 500;
+    }
+    .contentArea > form fieldset input[type='search']{
+        width: 14%; 
+    }
+    .contentArea > form fieldset input[type='text']{
+        width: 7%;
+    }
+    .contentArea > form fieldset input[type='text']::placeholder{
+        color: #343e5c;
+    }
+    .contentArea > form fieldset input[type='search'],
+    .contentArea > form fieldset input[id='range_minprice']{
+        margin-left: 1.02%;
+    }
+    .contentArea > form fieldset label[for='range_minprice'],
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        margin-left: 2.56%;
+    }
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; color: #343e5c; transition: background 0.5s ease-out;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
+    .contentArea > form fieldset .shipSelect select{
+        text-align: right;
+    }
+    /* ? sortBy Fin */
 }
 /* * desk */
