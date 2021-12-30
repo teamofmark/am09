@@ -183,12 +183,15 @@
     /* ? aside nav fin */
     .contentArea aside fieldset{
         background-color: white; border-radius: 5px;
-        padding: 52px 0 25px;
+        padding: 31px 0 0; 
+    }
+    .contentArea aside fieldset *:not(legend){
+        font-weight: 500;
     }
     .contentArea aside fieldset legend{
-        width: 100%; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 0 7.4% 20px;
+        width: 100%; font-size: 11px; text-transform: uppercase; padding: 0 7.4% 20px;
         border-bottom: 1px solid #f0f2f7; position: relative; top: 32px; box-sizing: border-box;
-        color: #343e5c;
+        color: #343e5c; font-weight: 700;
     }
     /* height: 32px;  /half : 16px */
     .contentArea aside fieldset legend a{
@@ -202,10 +205,24 @@
         font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center; width: 15%;
         max-width: 76px;
     }
-    .contentArea aside fieldset label:not(:last-of-type),
-    .contentArea aside fieldset span:not(:last-of-type){
-        margin-bottom: 25px;
+    .contentArea aside fieldset label,
+    .contentArea aside fieldset span{
+        line-height: 50px;
     }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 83%; max-width: 215px;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width: 93%; max-width: 270px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; max-width: 135px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7;
+    }
+
 
 
 
