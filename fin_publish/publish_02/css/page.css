@@ -12,17 +12,17 @@
         float: left;
     }
     header + nav .slideNav ul{
-        width: 80.34%;
+        width: /*80.34%*/ 62%; padding: 0 15px; box-sizing: border-box;
     }
     header + nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
-    header + nav .slideNav ul li:not(:last-child){
+    header + nav .slideNav ul li/*:not(:last-child)*/{
         float: left;
     }
-    header + nav .slideNav ul li:last-child{
+    /* header + nav .slideNav ul li:last-child{
         float: right;
-    }
+    } */
     header + nav .slideNav ul li a{
         display: block; font-size: 11px; color: #b9bed1; line-height: 56px; font-weight: 500;
         text-transform: uppercase;
@@ -32,7 +32,7 @@
         color: #343e5c;
     }
     header + nav .slideNav input[type='search']{
-        width: 17.1%; margin-left: 2.56%; padding: 20px 2% 20px 4%;
+        width: /*17.1*/27%; margin-left: /*2.56*/11%; padding: 20px 2% 20px /*4%*/6%;
         box-sizing: border-box; border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
         background: url('../images/bul_search.png') no-repeat 12% center;
     }
@@ -45,7 +45,7 @@
         display: none;
     }
     section.slideArea > div{
-        position: relative; max-width: 1400px; margin: 0 auto;
+        position: relative; max-width: /*1400px*/ 1000px; margin: 0 auto;
     }
     section.slideArea > div > a{
         display: block; width: 42px; padding: 9px 0 14px; color: white; border-radius: 21px;
@@ -73,23 +73,21 @@
         background-color: white;
     }
     
-    /* todo. figure img / figcaption 처리하기. */
-    
     section.slideArea > div ul li figure img{
         width: 100%;
     }
     section.slideArea > div ul li figure figcaption{
-        position: absolute; color: white; width: 40%; left: 15.21%; top: 21%;
+        position: absolute; color: white; width: 40%; left: 15.21%; top: /*21%*/ 15%;
         max-width: 460px;
     }
     section.slideArea > div ul li figure figcaption dl dt{
-        font-size: 42px; font-weight: 900; line-height: 50px; margin-bottom: 25px;
+        font-size: /*42px*/ 30px; font-weight: 900; line-height: /*50px*/36px; margin-bottom: /*25px*/ 15px;
     }
     section.slideArea > div ul li figure figcaption dl dd{
-        font-size: 16px; line-height: 22px; margin-bottom: 65px;
+        font-size: /*16px*/ 13px; line-height: /*22px*/19px; margin-bottom: /*65px*/ 10px;
     }
     section.slideArea > div ul li figure figcaption input[type='button']{
-        background-color: #2754eb; border: none; width: 35.86%; font-size: 11px; line-height: 42px;
+        background-color: #2754eb; border: none; width: /*35.86%*/ 55%; font-size: 11px; line-height: 42px;
         border-radius: 21px; font-weight: 500; color: white;
     }
     /* ? slideArea Fin */
@@ -98,17 +96,18 @@
         margin-bottom: 50px;
     }
     .contentArea > form fieldset{
-        background-color: white; border-radius: 4px; line-height: 56px; padding: 0 1.7%; box-sizing: border-box;
-        margin-bottom: 30px;
+        background-color: white; border-radius: /*4px*/ 10px; line-height: 56px; padding: 0 1.7%;
+        box-sizing: border-box; margin-bottom: 30px;
     }
-    .contentArea > form fieldset span.sbSelect{
-        margin-left: 4.27%;
+    .contentArea > form fieldset span.selectBox/*sbSelect*/,
+    .contentArea > form fieldset label[for='ship_Select']{
+        /* margin-left: 4.27%; */ display: none;
     }
     .contentArea > form fieldset label{
         font-size: 11px; color: #a1a7bd; display: inline-block; vertical-align: middle;
     }
-    .contentArea > form fieldset label[for='sb_keywords'],
-    .contentArea > form fieldset label[for='ship_Select']{
+    .contentArea > form fieldset label[for='sb_keywords']
+    /*,.contentArea > form fieldset label[for='ship_Select']*/{
         padding-left: 2.56%; margin-left: 1.7%; border-left: 1px solid rgba(0,0,0,0.05);
     }
     .contentArea > form fieldset input:not([type='checkbox']){
@@ -116,10 +115,10 @@
         padding: 0 1%; box-sizing: border-box; border-radius: 16px; font-weight: 500;
     }
     .contentArea > form fieldset input[type='search']{
-        width: 14%; 
+        width: /*14%*/ 20%; 
     }
     .contentArea > form fieldset input[type='text']{
-        width: 7%;
+        width: /*7%*/ 13%;
     }
     .contentArea > form fieldset input[type='text']::placeholder{
         color: #343e5c;
@@ -133,14 +132,14 @@
         margin-left: 2.56%;
     }
     .contentArea > form fieldset label[for='freeShipCheck']{
-        padding-left: 2.56%; color: #343e5c; transition: background 0.5s ease-out;
+        padding-left: /*2.56%*/ 4.56%; color: #343e5c; transition: background 0.5s ease-out;
     }
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
         background: url('../images/bul_check.png') no-repeat left center;
     }
-    .contentArea > form fieldset .shipSelect select{
+    /* .contentArea > form fieldset .shipSelect select{
         text-align: right;
-    }
+    } */
     /* ? sortBy Fin */
 
     .contentArea aside{
@@ -188,24 +187,26 @@
     .contentArea aside fieldset legend{
         width: 100%; font-size: 11px; text-transform: uppercase; padding: 0 7.4% 20px;
         border-bottom: 1px solid #f0f2f7; position: relative; top: 32px; box-sizing: border-box;
-        color: #343e5c; font-weight: 700;
+        color: #343e5c; font-weight: 700; margin-bottom: 20px;
     }
     /* height: 32px;  /half : 16px */
     .contentArea aside fieldset legend a{
         color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
     }
     .contentArea aside fieldset label{
-        font-size: 13px; color: #343e5c; cursor: pointer; display: inline-block; box-sizing: border-box;
-        padding-left: 20.37%;
+        font-size: 13px; color: #343e5c; display: inline-block; box-sizing: border-box;
+        padding-left: /*20.37%*/ 24.37%; /*cursor: pointer;*/
+        line-height: 21px; margin-bottom: 20px;
     }
     .contentArea aside fieldset span{
-        font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center; width: 15%;
-        max-width: 76px;
+        /* font-size: 11px; color: #bdbfd3; display: inline-block; text-align: center; width: 15%;
+        max-width: 76px; */
+        display: none;
     }
-    .contentArea aside fieldset label,
+    /* .contentArea aside fieldset label,
     .contentArea aside fieldset span{
         line-height: 50px;
-    }
+    } */
     .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
         width: 83%; max-width: 215px;
@@ -242,7 +243,7 @@
 
 
     .contentArea section{
-        width: 74.44%; margin-left: 2.56%; float: left;
+        width: /*74.44%*/ 75%; margin-left: /*2.56%*/ 2%; float: left;
     }
     .contentArea section h3{
         display: none;
@@ -251,16 +252,20 @@
         content: ''; display: block; visibility: hidden; clear: both;
     }
     .contentArea section ul li{
-        float: left; display: block; width: 31%; background-color: white; margin: 0 0 33px 3.5%;
-        height: 380px; border-radius: 4px;
+        display: block; background-color: white;  border-radius: 10px;
+    }
+    .contentArea section ul li:not(:nth-child(5)){
+        float: left;  width: /*31%*/ 48%; margin: 0 0 33px /*3.5%*/ 4%;
+        /*height: 380px;*/ min-height: 360px; max-height: 510px;
     }
     .contentArea section ul li:nth-child(5){
-        width: 65.5%;
+        /* width: 65.5%; */ clear: both; margin-bottom: 33px;
     }
     .contentArea section ul li:nth-child(1),
-    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(3),
     .contentArea section ul li:nth-child(6),
-    .contentArea section ul li:nth-child(9){
+    .contentArea section ul li:nth-child(8),
+    .contentArea section ul li:nth-child(10){
         margin-left: 0;
     }
     .contentArea section ul li figure img{
@@ -303,7 +308,7 @@
         border-radius: 0 17px 17px 0; border-left: none;
     }
     .contentArea section ul li:last-child{
-        position: relative;
+        position: relative; overflow-y: hidden; background-color: transparent;
     }
     .contentArea section ul li:last-child figure figcaption dl{
         position: absolute; left: 0px; top: 40px; width: 100%; padding: 0 4.2%; box-sizing: border-box;
