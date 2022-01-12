@@ -374,15 +374,16 @@
         font-size: 16px; color: #b9bed1; text-align: center;
         margin-bottom: 50px; font-style: italic;
     }
-    section.tosayArea > div ul:after{
+    /* section.tosayArea > div ul:after{
         content: ''; display: block; visibility: hidden; clear: both;
-    }
+    } */
     section.tosayArea > div ul li{
-        display: block; width: 27.64%; float: left;
+        display: block; width: 80%; margin: 0 auto 30px;
+        /* width: 27.64%; float: left; */
     }
-    section.tosayArea > div ul li:not(:first-child){
+    /* section.tosayArea > div ul li:not(:first-child){
         margin-left: 8.54%;
-    }
+    } */
     section.tosayArea > div ul li figure{
         margin-bottom: 25px;
     }
