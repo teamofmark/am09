@@ -145,23 +145,23 @@ input[type='checkbox']{
         background-color: #222328;
     }
     footer > div{
-        position: relative; padding: 60px 0;
+        position: relative; padding: /*60px*/30px 5%;
     }
-    footer > div span{
-        position: absolute; display: block; top: 60px;
-    }
+    /* footer > div span{
+        position: absolute; display: block; top: 30px;
+    } */
     footer > div:first-child{
         border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        position: absolute; width: /*7.86%*/ 12%; max-width: 92px;
-        left: /*0*/15px;
+        position: absolute; width: /*7.86% 12%*/ 40%; max-width: 92px;
+        left: /*0 15px*/ 5%;
     }
     footer > div:first-child h2 img{
         width: 100%;
     }
     footer > div:first-child ul{
-        text-align: center; padding: 0 15%;
+        text-align: center; padding: /*0 15%*/ 45px 5% 0;
     }
     footer > div:first-child ul li{
         display: inline-block;
@@ -171,10 +171,12 @@ input[type='checkbox']{
     }
     footer > div:first-child ul li a{
         display: block; color: white; font-size: 12px; font-weight: 500;
+        line-height: 24px;
     }
     
     footer > div:first-child span{
-        right: /*0*/ 15px; width: 12% /*11.54%*/;
+        right: /*0  15px*/ 5%; width: /*11.54% 12%*/ 35%;
+        position: absolute; display: block; top: 30px;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -192,15 +194,19 @@ input[type='checkbox']{
     footer > div:first-child span a:nth-child(3){
         background-image: url('../images/sns_03.png');
     }
-    footer > div:nth-child(2) > *{
+    /* footer > div:nth-child(2) > *{
         width: 50%;
+    } */
+    footer > div:nth-child(2){
+        text-align: center;
     }
     footer > div:nth-child(2) p{
         font-size: 14px; font-style: italic; max-width: 510px;
-        color: rgba(255,255,255,0.3); padding-left: 15px; line-height: 21px;
+        color: rgba(255,255,255,0.3); line-height: 21px; margin-bottom: 15px;
+        /* padding-left: 15px; */
     }
     footer > div:nth-child(2) span{
-        right: /*0*/ 15px; text-align: right;
+        /*right: 0 15px; text-align: right;*/ display: block;
     }
     footer > div:nth-child(2) span a{
         font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block;
