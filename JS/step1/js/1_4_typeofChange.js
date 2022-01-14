@@ -113,7 +113,7 @@ function todo4(){
 }
 
 // todo. 2-2 Number 형변환
-function todo4(){
+function todo5(){
     var test = "100.51";
     var result =  test + 150 + "20"; // todo. 형변환
     console.log(); // todo. typeof로 자료형 검수 및 출력.
