@@ -33,3 +33,33 @@ function testTypeof(){
     var favorNumber = 1;
     console.log('favorNumber' + '의 자료형은' + typeof(favorNumber));
 }
+
+// *case.2 자신의 영어이름을 engName 변수에 담아 자료형을 check.
+function textTypeof(){
+    var engName = "Mark";
+    console.log(typeof(engName) + '=' + engName);
+}
+
+// *case.3 현재 자신이 춥다, 아니다를 cold 변수에 담아 자료형을 check.
+function booleanCheck(){
+    var cold = false;
+    console.log(typeof(cold) + ' = ' + cold);
+}
+// *case.3-1 loginStatus check
+function loginStatusCheck(){
+// ? 선행logic - 1. 사용자가 ID / PW 로 접근 -> 2. D/B ID 존재유무 / ID 존재 시 PW match /
+// ?            -> 3. loginStatus 변수 값 변경
+    var loginStatus = true;
+// ? false - mypage , logout 을 비활성화 / true - mypage, logout을 활성화.
+    console.log(typeof(loginStatus) + ' = ' + loginStatus);
+}
+// *case.4 undefined
+function printUndefined(){
+    var test;
+    console.log(typeof(test) + ' = ' + test);
+}
+// *case.5 obj 변수에 객체를 담기 위해 null로 초기화
+function printOBJ(){
+    var obj = null;
+    console.log(typeof(obj) + ' = ' + obj);
+}
