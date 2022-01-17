@@ -152,5 +152,5 @@ function compareOperator4(){
 
 // todo. 문제점 해결.
 function compareOperator4R(){
-   console.log(); //? 해결하는 logic 작성. 
+   console.log(30 > 20 && 20 > 10); //? 해결하는 logic 작성. 
 }
