@@ -85,3 +85,48 @@ function compareOperator(){
     a += 20;
     console.log('a = ' + a);
 }
+// *case.4 연산자가 뒤로 올 경우
+function numbPlusAfter(){
+    var number = 10; //? 변수 선언 및 초기화.
+    alert(number++); //? (10) 을 출력 후 더해서 다시 number로 - 
+    alert(number++); //? (11) 을 출력 후 더해서 다시 number로 -
+    alert(number++); //? (12) 을 출력 후 더해서 다시 number로 - 최종 13.
+}
+// *case.5 연산자가 앞으로 올 경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 10에 1을 더해서(11) 출력 후, 다시 number로 -
+    alert(++number); //? 11에 1을 더해서(12) 출력 후, 다시 number로 -
+    alert(++number); //? 12에 1을 더해서(13) 출력 후, 다시 number로 -
+}
+// todo. 증감연산자 복합.
+function numberPlusTodo(){
+    var number = 10;
+    alert(number++); //? 출력 : 10 / 출력 후 : 11 / 설명 - 10 출력 후 증산(11). 다시 number로. 
+    alert(--number); //? 출력 : 10 / 출력 후 : 10 / 설명 - 11에서 감산(10). 다시 number로. 
+    alert(++number); //? 출력 : 11 / 출력 후 : 11 / 설명 - 10에서 증산(11). 다시 number로. 
+    alert(number--); //? 출력 : 11 / 출력 후 : 10 / 설명 - 11 출력 후 감산(10). 다시 number로. 
+    console.log(number) //? 최종 : 10.
+}
+
+// *case.6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a > b;
+    console.log("10 > 20 = " + result);
+}
+// *case.7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log("10 = 20 ? " + result);
+}
+// *todo. 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ? " + result);
+}
