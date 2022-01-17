@@ -130,3 +130,18 @@ function compareOperator3(){
     var result = a!=b;
     console.log("10 != 20 ? " + result);
 }
+
+// *case.8 a변수에는 '여자', b변수에는 '웹디자이너'라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 출력.
+function logicalOperator1(){
+    var a = '여자'; //* 남자
+    var b = '웹디자이너'; //* 웹퍼블리셔 check.
+    var result = (a=="여자")&&(b=="웹디자이너");
+    console.log('result = ' + result);
+}
+// *case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔'라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 출력.
+function logicalOperator2(){
+    var a = '여자'; //* 남자
+    var b = '웹퍼블리셔'; //* 웹디자이너
+    var result = (a == '남자') || (b == '웹퍼블리셔');
+    console.log('result = ' + result);
+}
