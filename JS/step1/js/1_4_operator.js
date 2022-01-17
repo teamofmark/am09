@@ -66,13 +66,22 @@ function operatorEx(){
     document.body.innerHTML = list;
 }
 // todo.1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장 후  출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
 
 // todo.2 'hi'가 담긴 변수 a 와 'WEB'이 담긴 변수 b를 합쳐 'hiWEB'을 출력.
-
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a + b);
+}
 // todo.3 다음 코드를 간소화
 
 function compareOperator(){
     var a = 10;
-    a = a + 20;
+    // a = a + 20;
+    a += 20;
     console.log('a = ' + a);
 }
