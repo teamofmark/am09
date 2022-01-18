@@ -77,3 +77,19 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가 입니다. 맞겠구만!');
     }
 }
+// *case.5 사용자 id를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = prompt('사용자의 아이디를 입력하시오.');
+    if(userID=='Mark'){
+        alert('접속을 승인합니다!');
+    }else{
+        alert('잘못된 ID입니다.');
+    }
+}
+// todo. 사용자 id "Mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    
+    // ?변수선언부 2개
+
+    // ? 조건판별(승인 / 거부)
+}
