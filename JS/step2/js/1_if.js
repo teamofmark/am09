@@ -91,5 +91,8 @@ function userInfoCheck(){
     
     // ?변수선언부 2개
 
-    // ? 조건판별(승인 / 거부)
+    // ? 조건판별(승인 / 거부 : ID 혹은 password가 틀렸습니다.)
 }
+
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+// ? id가 틀린경우 = ID가 존재하지 않습니다. pw가 틀린경우 password가 틀렸습니다. 
