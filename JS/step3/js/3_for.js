@@ -25,7 +25,7 @@ function namePrint500(){
     }
 }
 
-// *case. 1 - 10 까지 출력되는 반복문을 jsEngine처럼 생각하고 적기.
+// *case. 2 1 - 10 까지 출력되는 반복문을 jsEngine처럼 생각하고 적기.
 function answer1(){
     for (var i = 0; i < 10; i ++){ //? 10보다 작을 때 (0 ~ 9)까지만 반복수행
         document.write((i + 1) + "<br>"); //? 1 ~ 10 번 까지 출력.
@@ -50,5 +50,28 @@ function answer4(){
 function answer5(){
     for (var i = 10; i >= 1; i--){ //? 1보다 크거나 같을 때 (10 ~ 1) 까지만 반복 수행. i는 1씩 감소.
         document.write((11 - i) + '<br>'); //? 1 ~ 10번 까지 출력.
+    }
+}
+
+// *case.3 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력.
+function favorFluit(){
+    var array = ['메론','포도','딸기','파인애플','귤','복숭아','용과'];
+    for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+    console.log(array.length);
+}
+// todo. 지금까지 배웠던 JS 단원을 배열을 활용해 출력.
+function arrayFor(){
+    var data = ['변수','연산자','형변환','조건문 if','조건문 switch', '반복문 while', '반복문 for'];
+    for (var i = 0; i < data.length; i++){
+        document.write((i + 1) + '번째 내용 = ' + data[i] + '<br>');
+    }
+}
+function arrayForES6(){
+    var data = ['변수','연산자','형변환','조건문 if','조건문 switch', '반복문 while', '반복문 for'];
+    for (let i = 0; i < data.length; i++){
+        const element = data[i];
+        document.write(i + '번째 내용 = ' + element + '<br>');
     }
 }
