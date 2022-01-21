@@ -75,3 +75,79 @@ function arrayForES6(){
         document.write(i + '번째 내용 = ' + element + '<br>');
     }
 }
+
+// *case.4 역반복 배열
+function reverseFavorFluit(){
+    var array = ['메론','포도','딸기','파인애플','귤','복숭아','용과'];
+    for (var i = array.length - 1; i >= 0; i--){
+        document.write(array[i]);
+    }
+}
+
+// *case.5 continue
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue; //? 위 조건이 참일 지라도 continue가 존재하면, continue이하 구문은 실행불가.
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case.6 continue 활용해보기
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        alert(output);
+    }
+}
+// *case.7 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break; //? 위 조건이 참일 지라도 break가 존재 하면, 속한 루프(꼭 루프만은 아님) 에서 강제로 빠져나오게 된다.
+        document.write(i + '<br>'); 
+    }
+    document.write('최종 i = ' + i + '<br>'); //? 1
+}
+// *case.8 break활용
+function runBreak(){
+    for (var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+
+
+// ! 다중 for
+
+// *case.9 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //? 1.
+        for(var j = 0; j < i; j++){ //? 2.
+            star += '*'; //? 3.
+        }
+        star += '<br>'; //? 4.
+    }
+    document.write(star); //? 5.
+}
+
+// * case.10 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){ //? 1.
+        for (var j = 0; j < i; j++){ //? 2.
+            star += '*'; //? 3.
+        }
+        star += '<br>'; //? 4.
+    }
+    document.write(star); //? 5.
+}
+//  todo. pyramid 만들기
+function pyramid(){
+    
+}
