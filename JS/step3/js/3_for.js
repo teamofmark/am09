@@ -149,7 +149,17 @@ function reverseHalfPyramid(){
 }
 //  todo. pyramid 만들기
 function pyramid(){
-
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';
+        }
+        for (var s = 0; s < 2*i-1; s++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
 }
 /*
             ('10''9''8''7''6''5''4''3''2''1') 10 > 0
