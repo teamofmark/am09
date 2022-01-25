@@ -90,6 +90,13 @@ function infiniteSum(){
 // todo.1 구구단 출력을 함수로 만들기.
 function printGugudan(){
     // * x단 출력 식으로 9단까지 출력되게 만들기.
+    for (let i = 2; i <= 9; i++){
+        document.write(i + '단 출력', '<br>');
+        for(var m = 1; m <= 9; m++){
+            document.write(i + 'x' + m + ' = ' + (i*m), '<br>');
+        }
+        document.write('<br>');
+    }
 
 }
 
@@ -108,4 +115,35 @@ function printGugudan(){
     * 결과 = 200
     * 결과 = 2
     * 결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" : 
+            result  = numb1 + numb2;
+            break;
+        case "-" : 
+            result  = numb1 - numb2;
+            break;
+        case "*" : 
+            result  = numb1 * numb2;
+            break;
+        case "/" : 
+            result  = numb1 / numb2;
+            break;
+        default : 
+            result  = "잘못된 연산자 이거나 입력값 입니다.";
+            break;
+    }
+    return result;
+}
+
+// todo.3 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용하게 만들기.
+/*
+    * 실행구문
+    * calculator("+",20,10); = 결과 30
+    * add(20,10); = 결과 30.
+    * sub(20,10); = 결과 10.
+    * mul(20,10); = 결과 200.
+    * div(20,10); = 결과 2.
 */
