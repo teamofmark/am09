@@ -141,9 +141,46 @@ function calculator(op, numb1, numb2){
 // todo.3 위의 예제에 추가로 사칙연산부를 함수로 변환하여 보다 편하게 사용하게 만들기.
 /*
     * 실행구문
-    * calculator("+",20,10); = 결과 30
+    * calculator2("+",20,10); = 결과 30
     * add(20,10); = 결과 30.
     * sub(20,10); = 결과 10.
     * mul(20,10); = 결과 200.
     * div(20,10); = 결과 2.
 */
+function calculator2(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+" : 
+            result  = add(numb1, numb2);
+            break;
+        case "-" : 
+            result  = sub(numb1, numb2);
+            break;
+        case "*" : 
+            result  = mul(numb1, numb2);
+            break;
+        case "/" : 
+            result  = div(numb1, numb2);
+            break;
+        default : 
+            result  = "잘못된 연산자 이거나 입력값 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1,numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+}
+function sub(numb1,numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1,numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1,numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
+}
