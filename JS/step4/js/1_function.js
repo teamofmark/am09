@@ -184,3 +184,53 @@ function div(numb1,numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// *case. 7 함수를 변수에 담기.
+function hello(name){
+    console.log(name + ' welcome!');
+}
+var func = hello;
+
+// *case. 8 매개변수 값으로 함수 사용.
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func();
+}
+
+// *case.9 button click 시 매개변수 값으로 넘긴 함수 호출해보기
+function welcome(){
+    alert('환영합니다. 반갑습니다.');
+}
+$(document).ready(function(){
+    $("#runEx9").click(welcome);   
+});
+
+// *case.10 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('hi, hello');
+    },1000);
+}
+
+// *case. 11 함수를 매개변수로 전달받아 반복호출.
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('hello, world!','<br>');
+}
+// *case. 12 return value로 함수 사용.
+function createHello(){
+    function hello(user){
+        document.write(user + ' welcome!');
+    }
+    return hello;
+}
+var result = createHello();
