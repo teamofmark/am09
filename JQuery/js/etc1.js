@@ -8,6 +8,9 @@ $(document).ready(function(){
 
     // *case.3
     $("#btnAddBorder").click(addBorder);
+
+    // todo
+    $("#btnTextChange").click(textChange);
 });
 
 // *case.2 
@@ -18,4 +21,13 @@ function sayHello(){
 // *case.3
 function addBorder(){
     $("#panel").css("border","5px solid black");
+}
+
+// todo.
+function textChange(){
+    $("#panel2").css({
+        "font-size" : "25px",
+        "color" : "green",
+        "font-weight" : "bold"
+    });
 }
