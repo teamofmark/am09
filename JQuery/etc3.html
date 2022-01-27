@@ -12,9 +12,35 @@
         .menu{
             cursor: pointer;
         }
+        .tabMenu{
+            display: flex; padding: 0; flex-flow: row nowrap;
+        }
+        .tabMenu li{
+            flex-basis: 33.33%; list-style: none; text-align: center;
+            background-color: black; color: white; border: 1px solid black;
+            cursor: pointer;
+        }
+        .tabMenu li.activated{
+            background-color: white; color: black;
+        }
+        .tabPage{
+            display: none; border: 1px solid black; padding: 20px;
+        }
+        .tabPage.activated{
+            display: block;
+        }
     </style>
 </head>
 <body>
     <span class="material-icons menu">menu</span>
+    
+    <ul class="tabMenu">
+        <li data-tabNumb="tab1" class="activated">tab1</li>
+        <li data-tabNumb="tab2">tab2</li>
+        <li data-tabNumb="tab3">tab3</li>
+    </ul>
+    <div id="tab1" class="tabPage activated">tabPage1</div>
+    <div id="tab2" class="tabPage">tabPage2</div>
+    <div id="tab3" class="tabPage">tabPage3</div>
 </body>
 </html>

@@ -1,5 +1,6 @@
 $(document).ready(function(){
     toggleMenu();
+    tabUI();
 });
 
 function toggleMenu(){
@@ -14,5 +15,17 @@ function toggleMenu(){
         }else{
             $menuTarget.text("menu");
         }
+    });
+}
+
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        var activeTab = $(this).attr("data-tabNumb");
+        // console.log(activeTab);
+        $(".tabMenu li").removeClass("activated");
+        $(this).addClass("activated");
+
+        $(".tabPage").removeClass("activated");
+        $("#"+activeTab).addClass("activated");
     });
 }
