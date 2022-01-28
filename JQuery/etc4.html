@@ -11,7 +11,10 @@
         .imgContainer{
             position: relative; height: 150px;
         }
-        .imgContainer img{
+        .imgContainerMix{
+            position: relative; height: 600px;
+        }
+        [class ^= imgContainer] img{
             transition: all 0.5s ease-in-out; position: absolute; left: 0; top: 0;
         }
     </style>
@@ -31,5 +34,20 @@
     </div>
     <button class="alignHori">정렬!</button>
     <button class="reset">원위치!</button>
+
+    <!-- todo. 정렬 버튼을 눌러 이미지 가로 + 세로 배치하기 -->
+    <div class="imgContainerMix">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+        <img src="https://via.placeholder.com/200" alt="example">
+    </div>
+    <button class="alignMix">정렬!</button>
+    <button class="resetMix">원위치!</button>
 </body>
 </html>
