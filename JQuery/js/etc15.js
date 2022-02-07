@@ -68,7 +68,7 @@ function updateFishPosition(){
     // console.log("1. 물고기 움직인다.");
     for (var i = 0; i < $fishList.length; i++) {
         var $fish = $fishList.eq(i); // ? 현재 물고기
-        var step = Math.ceil(Math.random()*10); //? 물고기 이동 범위(30중 random, 올림한 정수값)
+        var step = Math.ceil(Math.random()*10); //? 물고기 이동 범위(10중 random, 올림한 정수값)
         var newLeft = $fish.position().left + step;
 
         $fish.css("left", newLeft);
@@ -95,7 +95,6 @@ function checkGoalFish(){
 
     for (var i = 0; i < $fishList.length; i++) {
         var fishCurrentPosition  = $fishList.eq(i).position().left;
-
         if(fishCurrentPosition >= goalLine){
             winnerList.push({ //? goalLine을 넘은 물고기들을 winnerList 배열에 position 값저장.
                 index: (i), position:fishCurrentPosition
