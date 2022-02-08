@@ -26,6 +26,6 @@ $(document).ready(function(){
         pager: true, //? default: true. pager 켜기 끄기.
         //? pagerType: 'full',  default: full.(circle). short: count로 변경
         //? pagerSelector: '.newPager',  default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
-        pagerSelector: '.newPager' //? default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
+        pagerCustom: '.customPager'
     });
 });
