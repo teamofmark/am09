@@ -1,3 +1,4 @@
+
 /* ? caption Custom */
 .bx-wrapper .bx-caption {
     position: absolute;
@@ -61,4 +62,8 @@
 }
 .customPager li a.active{
     background-color: black;
+}
+/* ?controler */
+.newControler{
+    margin-bottom: 50px;
 }
