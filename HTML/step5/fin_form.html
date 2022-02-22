@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form tag</title>
+    <style>
+        .wrap{
+            max-width: 500px;
+            margin:0 auto;
+        }
+        table{
+            width: 100%;
+        }
+        table th{
+            text-align: left;
+        }
+        table td{
+            text-align: left;
+        }
+        input[type="range"]{
+            width: 330px;
+        }
+        datalist{
+            width: 330px;
+            display: block !important;
+        }
+        #tickmarks option{
+            display: inline;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        #tickmarks option:first-of-type{
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="">
+            <fieldset>
+                <legend>필수입력사항</legend>
+                <table>
+                    <caption>사용자정보</caption>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <label for="userID">아이디</label>
+                            </th>
+                            <td>
+                                <input type="text" id="userID">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userPW">비밀번호</label>
+                            </th>
+                            <td>
+                                <input type="password" id="userPW">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="checkPW">비밀번호확인</label>
+                            </th>
+                            <td>
+                                <input type="password" id="checkPW">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userName">이름</label>
+                            </th>
+                            <td>
+                                <input type="text" id="userName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userMail">이메일</label>
+                            </th>
+                            <td>
+                                <input type="email" id="userMail">
+                                <span>@</span>
+                                <select id="userMail">
+                                    <option value="@naver.com">naver</option>
+                                    <option value="@gmail.com">gmail</option>
+                                    <option value="@nate.com">nate</option>
+                                    <option value="@daum.net">daum</option>
+                                    <option value="@hotmail.com">msn</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </fieldset>
+            <fieldset>
+                <legend>선택입력사항</legend>
+                <!-- <strong style="text-align: center; display: block; font-weight: normal;">
+                    부가정보
+                </strong> -->
+                <table>
+                    <caption>부가정보</caption>
+                    <tbody>
+                        <tr>
+                            <th>
+                                <label for="userAddress">주소</label>
+                            </th>
+                            <td>
+                                <input type="search" id="userAddress">
+                                <input type="button" value="주소찾기">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userCell">연락처</label>
+                            </th>
+                            <td>
+                                <input type="text" id="userCell">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <span>성별</span>
+                            </th>
+                            <td>
+                                <input type="radio" name="userGender" id="man">
+                                <label for="man">남자</label>
+                                <input type="radio" name="userGender" id="woman">
+                                <label for="woman">여자</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                취미
+                            </th>
+                            <td>
+                                <input type="checkbox" id="hobby1">
+                                <label for="hobby1">독서</label>
+                                
+                                <input type="checkbox" id="hobby2">
+                                <label for="hobby2">게임</label>
+        
+                                <input type="checkbox" id="hobby3">
+                                <label for="hobby3">영화</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userBirth">생년월일시</label>
+                            </th>
+                            <td>
+                                <input type="datetime-local" id="userBirth">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="favorColor">좋아하는 색상</label>
+                            </th>
+                            <td>
+                                <input type="color" id="favorColor">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                키(cm)
+                            </th>
+                            <td>
+                                <input type="range" list="tickmarks" min="5" max="10" step="0.1">
+                                <datalist id="tickmarks">
+                                    <option value="120" label="120">
+                                    <option value="130" label="130">
+                                    <option value="140" label="140">
+                                    <option value="150" label="150">
+                                    <option value="160" label="160">
+                                    <option value="170" label="170">
+                                    <option value="180" label="180">
+                                    <option value="190" label="190">
+                                    <option value="200" label="200">
+                                    <option value="210" label="210">
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userSNS">SNS</label>
+                            </th>
+                            <td>
+                                <input type="url" id="userSNS">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="userComment">가입인사</label>
+                            </th>
+                            <td>
+                                <textarea id="userComment" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <div>
+                <input type="submit" value="확인">
+                <input type="reset" value="취소">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
