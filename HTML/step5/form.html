@@ -38,15 +38,19 @@
                     <label for="btn_chk4">check 4</label>
                 </li>
                 <li>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea cols="30" rows="10"></textarea>
                 </li>
                 <li>
                     <select>
-                        <option value="">직업선택</option>
-                        <option value="">무직</option>
-                        <option value="">학생</option>
-                        <option value="">전문직</option>
-                        <option value="">공무원</option>
+                        <option>직업선택</option>
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
                     </select>
                 </li>
             </ul>
