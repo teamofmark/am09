@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5에서 새로 추가 된 Tag</title>
+</head>
+<body>
+    <figure>
+        <img src="https://via.placeholder.com/150" alt="" />
+        <figcaption>아직 정의되지 않은 이미지</figcaption>
+    </figure>
+    <ul>
+        <li>
+            <figure>
+                <img src="https://via.placeholder.com/250" alt="example" />
+                <figcaption>
+                    <dl>
+                        <dt>example Name</dt>
+                        <dd>example descript</dd>
+                        <dd>example price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <time datetime="2022-02-23T09:31:00Z">2022년 02월 23일</time>
+
+    <progress value="22" max="100"></progress>
+
+    <meter value="30" max="100" min="10" high="80" low="40"></meter>
+
+    <address>
+        by <a href="https://www.instagram.com/watertube" target="_blank">인스타바로가기</a>
+        mailTo: <a href="mailto:teamofmark@gmail.com">E-Mail address</a>
+    </address>
+
+    <!-- 이하 browser 별 특성탐 (crossBrowsing필요) -->
+
+    <ruby>
+        漢 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+
+    <!-- 이하 IE 지원불가 -->
+    <details>
+        <summary>Copyright 1999-2014.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details>
+    <!-- ? 어떠한 한 키워드(summary)의 요약 및 요소들을 넣어두고 event(클릭,오버)로  show / hide 기능이 작동되게 함.-->
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <!--? bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open-source web browser developed by Google,
+                released in 2008.
+            </p>
+        </article>
+    </main>
+    <!--현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
+        문서내 mainpage에 해당하는 섹션부나 페이지를 감쌀때 사용 한다.
+        한개 문서에서 1번만 사용할 수 있다. 또한 구조상 최상위에 존재 해야 한다.-->
+        
+    <form action="demo_keygen.asp" method="get">
+        Username: <input type="text" name="security">
+        Encryption: <keygen name="security">
+        <input type="submit">
+    </form>
+    <!--개발쪽 보안에 주된 사항이다. 보안키를 생성해내고, 
+        공개 키를 제출하는데, 개인 키는 로컬에 저장되게 하고, 
+        공개키를 서버로 전송시킨다.-->
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =<output id="x" name="x" for="a b"></output>
+    </form>
+    <!--form에 지정된 스크립트 연산을 지정 input(id)들로 수행하여, 
+        결과값을 산출해내는 식이다.
+        range는 값을 마우스를 이용해 입력할 수 있고, number는 직접입력 
+        및 up,down버튼을 이용해 입력할수있다.-->
+
+    <!--이하 IE7,8,9, safari 지원 불가-->
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!--select와 유사함. 입력요소에 대한사전 정의 목록을 넣어두는데 활용.
+        동시에 사용자가 입력필드에 해당 옵션일부를 작성하면 일치되는 결과값 출력.
+        (자동완성기능)-->
+    <!--대부분 브라우저 지원불가-->
+
+    <table>
+        <tr>
+            <th>January <dialog open>This is an open dialog window</dialog></th>
+            <th>February</th>
+            <th>March</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+    <!--해당 객체의 간단한 대화상자를 생성해 낼 수있다. 
+        open 값을 제하면, 안보이고
+        넣으면 보인다. 크롬, 오페라만 지원-->
+</body>
+</html>
