@@ -1,0 +1,21 @@
+body{
+    margin: 0; font-size: 12px; color: #60f;
+}
+h1{
+    font-size: 14px; color: #f03;
+}
+img{
+    width: 150px; height: 150px; border: 1px solid #3f3;
+}
+ul, ol{
+    list-style: none; color: #f00;
+}
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;    
+}
+dl dt,dl dd{
+    font-size: 35px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
