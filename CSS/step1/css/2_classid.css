@@ -7,7 +7,7 @@
     font-size: 12px;
 }
 .btn.create{
-    background-color: white; color: black;
+    background-color: gray; color: white;
     border-style: solid; border-color: black;
 }
 .btn.modify{
