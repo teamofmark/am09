@@ -27,3 +27,7 @@
 .btn.cancel{
     color: gray; border-color: gray; border-style: solid;
 }
+#userName{
+    border: 1px solid #eaeaea; line-height: 21px; color: green;
+    font-size: 12px; padding: 5px 15px;
+}
