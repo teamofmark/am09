@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body{
+    font-family: 'Nanum Gothic';
+}
+h1{
+    font-size: 20px; color: #06f; line-height: 25px;
+}
+h2{
+    font-size: 15px; line-height: 21px; color: #966;
+}
+h3{
+    font-size: 13px; line-height: 19px; color: #F90;
+}
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: -1px; /*자간 - 글자사이 간격*/
+}
+p.word{
+    word-spacing: 10px; /*단간 - 단어사이 간격*/
+}
+p[class^='w_']{
+    width: 150px; border: 1px solid black;
+}
+p.w_normal{
+    white-space: normal;
+}
+p.w_nowrap{
+    white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
+}
+.v_alignTest img{vertical-align: top;}
+.v_alignTest span{vertical-align: ;}
