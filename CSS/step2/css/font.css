@@ -30,5 +30,19 @@ p.w_normal{
 p.w_nowrap{
     white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
 }
-.v_alignTest img{vertical-align: top;}
-.v_alignTest span{vertical-align: ;}
+.v_alignTest img{vertical-align: middle;}
+.v_alignTest span{vertical-align: 100%;}
+
+
+p.t_indent{
+    text-indent: 50px; font-size: 20px;
+}
+.indentTest{
+    background: url('https://via.placeholder.com/150x50?text=blablaButton');
+    width: 150px; line-height: 50px; text-indent: -9999px;
+    /* 
+        ? css 수칙
+        * 최대 9999 까지. (현재 browser 기준으로 10000이 넘어가도 적용 될 수 있으나 권장되는 바는 아님.)
+        * 실수형반환 (.xxx) 시 소수점 2자리까지 지원.(현재 browser 기준으로 소수점 4자리까지 가능하나 권장되는바 아님.) 
+    */
+}
