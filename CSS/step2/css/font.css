@@ -46,3 +46,10 @@ p.t_indent{
         * 실수형반환 (.xxx) 시 소수점 2자리까지 지원.(현재 browser 기준으로 소수점 4자리까지 가능하나 권장되는바 아님.) 
     */
 }
+a{
+    display: block; line-height: 30px;
+}
+a.t_deco_N{text-decoration: none; text-transform: none; color: #090;}
+a.t_deco_U{text-decoration: underline; text-transform: lowercase; color: #0cf;}
+a.t_deco_O{text-decoration: overline; text-transform: capitalize; color: #96c;}
+a.t_deco_T{text-decoration: line-through; text-transform: uppercase; color: #f63;}
