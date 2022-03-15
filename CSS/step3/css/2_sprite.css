@@ -26,20 +26,20 @@ ul li.wolverine{
     background-position: -160px 0px;
 }
 ul li.thor{
-    background-position: 0px 0px;
+    background-position: -320px 0px;
 }
 ul li.ironman{
-    background-position: 0px 0px;
+    background-position: -480px 0px;
 }
 ul li.spiderman{
-    background-position: 0px 0px;
+    background-position: 0px -140px;
 }
 ul li.superman{
-    background-position: 0px 0px;
+    background-position: -160px -140px;
 }
 ul li.rangerRed{
-    background-position: 0px 0px;
+    background-position: -320px -140px;
 }
 ul li.rangerBlue{
-    background-position: 0px 0px;
+    background-position: -480px -140px;
 }
