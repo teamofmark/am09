@@ -1,0 +1,35 @@
+ul li.circle{
+    list-style: circle;
+}
+ul li.disc{
+    list-style: disc;
+}
+ul li.square{
+    list-style: square;
+}
+
+ol li.decimal{
+    list-style: decimal;
+}
+ol{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+
+ol li.none{
+    list-style: none;
+}
+
+ul.custom{
+    list-style-image: url('../images/bul_li.gif');
+    list-style-position: outside;
+}
