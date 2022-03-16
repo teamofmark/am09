@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    /* margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; */
+    margin: 10px; /*shortHand*/
+    background-color: #555;
+    /* ! body 입장에서 padding 이 맞는 개념이기는 하나 body에 padding을 적용하면 전체 영역 content를 처리하지 못하기에 일반적으로 적용 하지 아니함 */
+}
+
+.firstDiv article{
+    background-color: #039; color: white;
+}
+
+.secondDiv{
+    background-color: #ddd; margin: 20px 15px; 
+    /* 
+        ! margin은 같은 방향에서 만나면 서로 상쇄된다.(firstDiv : margin-bottom 10px과 secondDiv margin-top 20px).  
+    */
+}
+.secondDiv article{
+    background-color: #930; margin: 10px;
+    /* 
+        ! margin-bottom이 비 적용 된 것을 확인 할 수 있다.(경계선너머적용)
+        ? 그렇기 때문에 부모요소가 자손요소에게 padding 10px을 사용함이 바람직 하다.
+    */
+}
+
+.centerDiv{
+    width: 300px; border: 1px solid #33f;
+    padding: 10px; margin: 0 auto; text-align: center;
+    /* 
+        ! 대상 너비 설정 후 margin-left: auto 시 우측끝으로 이동.
+        ! margin: 0 auto 시 가운데로 이동 = 전체 너비(부모) - 대상 너비(자신) / 2 를 통해 좌,우 공통마진 부여.
+    */
+}
+.centerDiv article{
+    margin: 0 10px; background-color: #f33; color: white;
+    /* ! margin과 부모의 padding은 섞이지 않는다. 무조건 가산. */
+}
+.paddingDiv{
+    width: 100px; padding: 10px 20px; border: 3px solid #333; background-color: #ff3;
+    box-sizing: border-box;
+    /* 
+        ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 width에 가산되지 않는다.  
+        ? defaultValue : content-box;
+    */
+}
+.paddingDiv article{
+    background-color: #039; color: white;
+}
