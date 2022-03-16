@@ -1,0 +1,40 @@
+/* 
+position:  대상들의 위치를 임의로 지정 할 수 있다.
+-grade.lvl(z-index) -
+lvl.0 - 일반구조상태
+lvl.1 - 0위로올라옴
+lvl.2 - 1위로올라옴
+lvl.3 - 2위로올라옴
+lvl.4 - 3위로올라옴
+
+relative - 상대적
+일반구조 상태와 같다가
+좌표가 입력되는 순간
+lvl.1로 올라감.
+scroll의 영향을 받음.
+
+absolute - 절대적
+일반구조상태가 아님. lvl.1
+좌표가 입력되는 순간
+가장 인접한 relative 부모를 찾는다.
+있을시 - 그 부모를 기준으로 이동
+없을시 - body를 기준으로 이동
+scroll의 영향을 받음.
+
+fixed - 고정
+일반구조상태가 아님. lvl.1
+좌표가 입력되는 순간
+무조건 body를 기준으로 이동.
+scroll의 영향을 받지 않음.
+*/
+
+#wrap{
+    width: 300px; height: 200px; background-color: #999; margin: 0 auto; position: relative;
+    overflow-y: scroll;
+}
+#wrap div{
+    width: 150px; height: 150px; position: absolute; 
+}
+#wrap .redBox{background-color: red; left: 10px; top: 10px; z-index: 100;}
+#wrap .greenBox{background-color: green; left: 50px; top: 50px; z-index: 10;}
+#wrap .blueBox{background-color: blue; left: 90px; top: 90px; z-index: 1;}
