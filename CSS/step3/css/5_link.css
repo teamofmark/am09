@@ -1,0 +1,16 @@
+a{
+    text-decoration: none; font-size: 30px; word-spacing: 15px; display: inline-block;
+}
+a:link{
+    color: #33f;
+}/* 평시 상태 */
+a:visited{
+    color: #c00;
+    /* background-color: black; */
+}/* 방문한 적이 있는 상태 */
+a:hover{
+    color: #3f3; background-color: forestgreen;
+}/* 마우스 오버 상태 */
+a:active{
+    color: #ff3; background-color: goldenrod;
+}/* 마우스일경우 버튼을 누르고 있는(활성화된) 상태 - click일 경우 찰나만..*/
