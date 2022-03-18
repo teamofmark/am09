@@ -1,0 +1,30 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto; background-color: #ffc;
+}
+header{
+    background-color: #cff;
+}
+header nav{
+    background-color: #9f9;
+}
+.wrap{
+    margin-bottom: 20px; background-color:palevioletred;
+}
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+.wrap aside, .wrap section{
+    height: 800px; float: left;
+}
+.wrap aside{
+    background-color: #f96; width: 200px;
+}
+.wrap section{
+    background-color: #66f; width: 700px; margin-left: 60px;
+}
+footer{
+    background-color: #f9f;
+}
