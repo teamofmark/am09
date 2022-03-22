@@ -1,0 +1,15 @@
+.tagSelector h1{color: #0c0; font-size: 20px;}
+.tagSelector p{color: #0cf; font-size: 15px;}
+.tagSelector span{color: #94b; font-size: 13px;}
+/* Tag Selector */
+
+.idSelector p#paragraph1{font-size: 16px; text-decoration: underline;}
+.idSelector p#paragraph2{color: #09f; text-decoration: line-through;}
+.idSelector p#paragraph3{font-weight: bold; text-decoration: overline;}
+/* ID Selector */
+
+.classSelector p.f_Size{font-size: 20px;}
+.classSelector p.f_weight{font-weight: bold;}
+.classSelector p.f_color{color: #9cf;}
+/* class Selector (다중클래스 지정을 통한 모듈링) */
+
