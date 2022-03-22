@@ -31,3 +31,22 @@
 section{
     margin-bottom: 300px;
 }
+
+section h2{
+    background-color: #0cf;
+}
+section article{
+    float: left; width: 33.33%;
+}
+section article h3{
+    color: white; background-color: black;
+}
+section article ul{
+    list-style: none;
+}
+section article ul li{
+    font-size: 14px; line-height: 35px;
+}
+footer{
+    text-align: center; background-color: #4800ff; color:white; line-height: 55px;
+}
