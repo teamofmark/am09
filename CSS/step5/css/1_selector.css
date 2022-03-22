@@ -43,7 +43,7 @@
 .attrSelector fieldset ul li input[type='checkbox']{
     width: 25px; height: 25px;
 }
-/* ? attrSelector */
+/* ? 속성별선택자 */
 
 .directSelector > h1{
     font-size: 28px; color: #66f;
@@ -51,3 +51,23 @@
 .directSelector > span{
     font-size: 40px; color: #fcf;
 }
+/* ? 직계선택자 */
+
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: deeppink;
+}
+/* ? 동위선택자 */
+
+.stringAttrSelector img[src$='png']{
+    width: 100px; height: 100px; border: 3px solid red;
+}
+.stringAttrSelector img[src$='jpg']{
+    width: 200px; height: 200px; border: 5px solid lime;
+}
+.stringAttrSelector img[src$='gif']{
+    width: 300px; height: 300px; border: 10px solid deepskyblue;
+}
+/* ? 문자열(속성)일치 선택자 */
