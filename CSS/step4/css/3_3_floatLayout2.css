@@ -7,6 +7,7 @@
 .wrap header{
     background-color: #ff6a00;
 }
+/* test가 끝난 code는 삭제처리 (주석도마찬가지 = project 종료시 모두 삭제) */
 .wrap header::after{
     content: ''; display: block; visibility: hidden; clear: both;
 }
@@ -16,4 +17,17 @@
 }
 .wrap header nav{
     background-color: blue; width: 830px; float: left;
+}
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    display: inline-block;
+}
+.wrap header nav ul li a{
+    color: white; display: block; line-height: 55px;
+}
+
+section{
+    margin-bottom: 300px;
 }
