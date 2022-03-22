@@ -1,0 +1,19 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto;
+}
+.wrap header{
+    background-color: #ff6a00;
+}
+.wrap header::after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap header h1{
+    font-size: 20px; line-height: 55px; float: left; background-color: red; color: white; text-align: center;
+    width: 130px;
+}
+.wrap header nav{
+    background-color: blue; width: 830px; float: left;
+}
