@@ -44,3 +44,10 @@
     width: 25px; height: 25px;
 }
 /* ? attrSelector */
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 40px; color: #fcf;
+}
