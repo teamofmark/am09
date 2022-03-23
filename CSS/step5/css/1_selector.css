@@ -141,3 +141,13 @@
     color: #090; line-height: 30px; font-size: 14px;
     text-decoration: underline;
 }
+
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content : counter(rint) ".";
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; font-weight: bold; color: deeppink;
+}
