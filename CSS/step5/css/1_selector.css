@@ -71,3 +71,19 @@
     width: 300px; height: 300px; border: 10px solid deepskyblue;
 }
 /* ? 문자열(속성)일치 선택자 */
+
+.sameAttrSelector input[value~="button"]{
+    background-color: red; color: white;
+}
+.sameAttrSelector input[value*="button"]{
+    font-size: 20px;
+}
+.sameAttrSelector h1[title*="제목"]{
+    color: red;
+}
+.sameAttrSelector h2[title^="남자"]{
+    color: blue;
+}
+.sameAttrSelector h2[title$="여자"]{
+    color: pink;
+}
