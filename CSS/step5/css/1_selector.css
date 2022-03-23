@@ -87,3 +87,50 @@
 .sameAttrSelector h2[title$="여자"]{
     color: pink;
 }
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; height: 20px; overflow: hidden; transition-duration: 0.75s;
+    /* -ms-transtion-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s; */
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+.statusSelector input[type='text']:focus{
+    border: 10px solid red;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='password']:disabled{
+    background-color: deeppink; color: red;
+}
+
+.normalSelector ul{
+    list-style: none; overflow: hidden; padding: 0;
+}
+.normalSelector ul li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px; float: left; text-align: center;
+}
+
+.normalSelector ul :first-child{
+    border-radius: 10px 0 0 10px;
+}
+.normalSelector ul :nth-child(2n){
+    background-color: #444; color: white;
+}
+.normalSelector ul :nth-child(2n+1){
+    background-color: #09f;
+}
+.normalSelector ul :last-child{
+    border-radius: 0 10px 10px 0;
+}
+
+.shapeSelector h1:nth-of-type(1){color: #30f;}
+.shapeSelector h2:nth-of-type(2){color: #0c6;}
+.shapeSelector h3:nth-of-type(2){color: #f06;}
+.shapeSelectorEX figure:nth-of-type(2) p:nth-of-type(2n+1){
+    color: red;
+}
