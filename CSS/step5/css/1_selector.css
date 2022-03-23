@@ -134,3 +134,10 @@
 .shapeSelectorEX figure:nth-of-type(2) p:nth-of-type(2n+1){
     color: red;
 }
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; line-height: 30px; font-size: 14px;
+    text-decoration: underline;
+}
