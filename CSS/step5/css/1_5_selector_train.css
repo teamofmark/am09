@@ -14,3 +14,28 @@ fieldset ul li{
 fieldset ul li:last-child{
     text-align: right;
 }
+fieldset ul li label:first-child{
+    min-width: 100px; display: inline-block;
+}
+fieldset ul li > *:not(label){
+    vertical-align: middle; padding: 5px 10px; background-color: #fff;
+}
+fieldset ul li > *:not(label):hover,
+fieldset ul li > *:not(label):focus{
+    background-color: #949494;
+}
+fieldset ul li input[type='checkbox'] + label{
+    padding: 10px; background-color: #fff;
+}
+fieldset ul li input[type='checkbox']:checked + label{
+    padding: 5px; background-color: slateblue; color: white; font-size: 12px; border-radius: 5px;
+}
+fieldset > input{
+    display: block; width: 45%; float: left; border: none; line-height: 34px; color: white;
+}
+fieldset > input[type='submit']{
+    background-color: navy;
+}
+fieldset > input[type='reset']{
+    margin-left: 10%; background-color: darkred;
+}
