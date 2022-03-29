@@ -55,6 +55,8 @@ ul li span{
     display: block; float: left; padding: 10px 2.5%; font-size: 14px;
     word-break: break-all;
 }
+    /* default : normal(띄어쓰기 기준으로) keep-all(줄바꿈안함) break-all (부모경계닿으면줄바꿈) */
+
 ul li span:not(:nth-child(2)){
     width: 15%;
 }
