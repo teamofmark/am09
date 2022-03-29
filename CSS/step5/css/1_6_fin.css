@@ -2,8 +2,25 @@ body{
     width: 80%; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
-    margin: 0; font-size: 30px; font-weight: normal; color: gray; padding: 15px 0; position: relative;
+    margin: 0; font-size: 30px; font-weight: normal; color: gray; padding: 15px 50% 15px 0; position: relative;
 }
 h1 a{
-    position: absolute; right: 0; 
+    position: absolute; right: 0; bottom: 0; font-size: 24px; width: 50%; text-align: right;
+    color: forestgreen;
+}
+fieldset{
+    padding: 10px 40% 10px 0; position: relative; border-width: 2px 0 1px; border-style: solid none;
+    border-color: darkgreen;
+}
+fieldset input[type='search']{
+    width: 20%; border: 1px solid forestgreen; background-color: palegreen; min-width: 115px;
+    line-height: 24px;
+}
+fieldset input[type='button']{
+    width: 10%; min-width: 60px; background-color: darkolivegreen; color: white;
+    border: 2px solid limegreen; line-height: 24px;
+}
+fieldset select{
+    position: absolute; right: 0; width: 25%; min-width: 120px; background-color: lightseagreen;
+    padding: 4px 0; border-color: lightskyblue;
 }
