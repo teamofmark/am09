@@ -55,8 +55,9 @@ div{
     opacity: 0;
 }
 .opacityProperty ul li figure figcaption{
-    position: absolute; width: 50%; height: 50%; left: 22.5%; top: 22.5%; background-color: rgba(255,255,255,0.5);
-    text-align: center; padding: 5%;
+    position: absolute; left: 32.5%; top: 34.5%;
+    width: 25%; height: 15%; min-width: 110px; min-height: 100px;
+    background-color: rgba(255,255,255,0.5); text-align: center; padding: 5%;
 }
 .opacityProperty ul li figure figcaption dl dt{
     font-size: 13px; font-weight: bold; margin-bottom: 10px;
