@@ -1,0 +1,28 @@
+/* 
+    * transition-duration - (변환지속) => 값이 바뀌어야하는데 시간을 설정해두면 값이 바뀌는 것이 눈에보인다. 
+    ! 증,감부가 가능해야 -> 숫자. (ex > left: 0 -> 100px. or display: none -> block;)
+*/
+body{
+    margin: 0;
+}
+.durationEX1{
+    width: 100px; height: 100px; background-color: #ffa; transition-duration: 2s;
+    border-width: 1px; border-style: solid; border-color: #000;
+}
+.durationEX1:hover{
+    width: 200px; height: 200px; border-color: #daa520; border-width: 5px;
+}
+.durationEX1:active{
+    background-color: #f00;
+}
+.durationEX2{
+    width: 200px; height: 200px; font-size: 16px; background-color: #ff6a00; padding: 30px;
+    transition-duration: 2s;
+}
+/* todo. 지문이 시키는대로 */
+.durationEX2:hover{
+    padding: 10px; font-size: 12px;
+}
+.durationEX2:active{
+    padding: 30px; font-size: 16px;
+}
