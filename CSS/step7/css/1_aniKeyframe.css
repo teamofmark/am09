@@ -33,3 +33,10 @@ body{
     * 4. iteration-count 로 반복 횟수 설정.(infinite = 무한)
     * 5. direction으로 재생방향설정(iteration-count 필요.)
 */
+
+.circle:hover{
+    animation-play-state: paused;
+}
+/* 
+    ? play-state : paused 중지, running 재생.
+*/
