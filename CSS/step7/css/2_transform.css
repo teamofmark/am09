@@ -17,3 +17,14 @@ div:nth-of-type(3) span{
     background-color: blue; color: #fff;
     transform: rotate(10deg) translate(100px,50px);
 }
+div:nth-of-type(4) span{
+    background-color: brown; color: white;
+    transform: rotate(10deg) translate(100px,50px) skewX(10deg);
+}
+div:nth-of-type(5) span{
+    background-color: orange;
+    transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg);
+}
+div:nth-of-type(6) span{
+    background-color: pink; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg) scale(1.2);
+}
