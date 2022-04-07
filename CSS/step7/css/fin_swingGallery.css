@@ -1,0 +1,41 @@
+html,body{
+    height: 100%;
+}
+body{
+    width: 1100px; margin: 0 auto; background-color: #000;
+}
+section{
+    position: relative; perspective: 1500px; height: 100%;
+}
+section .moveMent{
+    position: absolute; left: 0; top: 20%;
+}
+section .moveMent .pic{
+    position: absolute; top: 0; transform-style: preserve-3d;
+    animation: rotater 3s ease-in-out infinite;
+}
+section .moveMent .pic:hover{
+    animation-play-state: paused;
+}
+section .moveMent .pic:nth-child(1){left: 0px; transform:translateZ(-370px);}
+section .moveMent .pic:nth-child(2){left: 220px; transform:translateZ(-370px);}
+section .moveMent .pic:nth-child(3){left: 440px; transform:translateZ(-370px);}
+section .moveMent .pic:nth-child(4){left: 660px; transform:translateZ(-370px);}
+section .moveMent .pic:nth-child(5){left: 880px; transform:translateZ(-370px);}
+
+@keyframes rotater{
+    from{
+        transform: rotateX(0deg);
+    }50%{
+        transform: rotateX(25deg);
+    }to{
+        transform: rotateX(0deg);
+    }
+}
+section .moveMent .pic .cell{
+    width: 215px; height: 121px; margin-bottom: 5px; transition-duration: 0.5s; opacity: 0.5;
+    transform: rotateZ(10deg);
+}
+section .moveMent .pic .cell:hover{
+    opacity: 1; transform: scale(1.3) translateZ(0px);
+}
