@@ -1,1 +1,5 @@
 @import url('reset.css');
+@import url('global.css');
+/* ? header, footer, aside, popup, panel...등의 global Component. */
+@import url('page.css');
+/* ? 그 외 나머지 page와 관련된(개별적인 설정부) css. */

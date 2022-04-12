@@ -1,0 +1,15 @@
+
+
+@media screen and (min-width:1280px){
+    body{
+        background-color: blue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+
+/* ? desktopDevice - 1280이상 일때. mediaQuery */
