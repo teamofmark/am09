@@ -1,25 +1,25 @@
 @media screen and (max-width: 767px){
-    body{
-
+	body{
+        background-color:red; color:white; font-weight:bold;
     }
     h1{
-
+        font-size:1rem; text-align:center; line-height:2rem;
     }
     p{
-        
+        font-size:0.75rem; text-align:center; line-height:1rem;
     }
 }
 /* ? Mobile Device - 768미만 */
 
 @media screen and (min-width: 768px) and (max-width:1279px){
-    body{
-
-    }
+	body{
+        background-color:green; color:white; font-weight:bold;
+    }	
     h1{
-
+        font-size:2rem; text-align:right; line-height:3rem;
     }
     p{
-
+        font-size:1rem; line-height:1.5rem;
     }
 }
 /* ? Tablet Device - 768 ~ 1280미만 */
