@@ -1,4 +1,28 @@
+@media screen and (max-width: 767px){
+    body{
 
+    }
+    h1{
+
+    }
+    p{
+        
+    }
+}
+/* ? Mobile Device - 768미만 */
+
+@media screen and (min-width: 768px) and (max-width:1279px){
+    body{
+
+    }
+    h1{
+
+    }
+    p{
+
+    }
+}
+/* ? Tablet Device - 768 ~ 1280미만 */
 
 @media screen and (min-width:1280px){
     body{
