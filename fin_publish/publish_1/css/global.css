@@ -6,7 +6,8 @@ section.videoArea h2,
 section.expArea ul,
 section.teamArea ul,
 section.teamArea ul+p,
-section.worksArea h2 a{
+section.worksArea h2 a,
+section.talkArea p > *{
     font-family: 'Roboto';
 }
 
@@ -15,7 +16,8 @@ header > div > ul li h2,
 section.expArea > *:not(ul),
 section.teamArea h2,
 section.teamArea > p:not(:last-of-type),
-section.worksArea h2{
+section.worksArea h2,
+section.talkArea p{
     font-family: 'Playfair Display';
 }
 
