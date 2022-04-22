@@ -41,7 +41,7 @@ a{
     section.expArea,
     section.contactArea,
     footer > div{
-        max-width: 728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/ 600px; margin: 0 auto; padding: 70px /*0*/ 3%;
     }
 
     .btn_more{
@@ -52,10 +52,11 @@ a{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header > div{
-        max-width: 728px; margin: 0 auto; position: relative;
+        max-width: 600px; margin: 0 auto; padding: 0 3%;
+        /* max-width: 728px;  position: relative; */
     }
     header > div h1{
-        max-width: 128px; 
+        max-width: 128px; width: 35%; float: left;
     }
     header > div h1 a{
         display: block;
@@ -64,15 +65,33 @@ a{
         width: 100%;
     }
     header > div nav{
-        position: absolute; right: 0; top: 0; padding-left: 130px; box-sizing: border-box; width: 100%;
-        text-align: right;
+        /* position: absolute; right: 0; top: 0; padding-left: 130px; box-sizing: border-box; */
+        width: /*100%*/ 50%; margin-left: 15%; text-align: right; float: right;
+    }
+    header > div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block; margin: 5px 0 0 auto;
+    }
+    header > div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header > div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header > div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header > div nav ul{
+        height: 0; overflow: hidden; transition: height 1s ease-in-out;
+    }
+    header > div nav input[type='checkbox']:checked + ul{
+        height: 350px;
     }
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         line-height: 50px; font-size: 13px; color: white; font-weight: 900; display: block;
     }
@@ -83,10 +102,10 @@ a{
     /* ?header GNB Fin */
 
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/ 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
@@ -217,6 +236,9 @@ a{
         max-width: 728px; margin: 0 auto; padding: 70px 0;
     }
 
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0; box-sizing: border-box;
     }
@@ -390,6 +412,9 @@ a{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
 
+    .mui{
+        display: none;
+    }
     .btn_more{
         padding: 13px 0; box-sizing: border-box;
     }
