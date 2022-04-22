@@ -233,22 +233,22 @@
     }
     /* ? talkArea Fin */
 
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left;
-    }
+    } */
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
     }
     section.contactArea form fieldset{
-        width: 50%;
+        /* width: 50%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset > *:not([type='submit'],legend){
         border: 1px solid rgba(0,0,0,0.1); line-height: 43px; padding: 0 20px; display: block;
@@ -266,9 +266,9 @@
 
 
     
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 10%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; clear: both;
     }
