@@ -76,5 +76,33 @@ a{
         letter-spacing: 1px;
     }
     /* ? header Fin */
+
+    .paging{
+        position: relative; clear: both; background-color: white; border-radius: 5px;
+    }
+    .paging > a{
+        position: absolute; top: 0; text-align: center; width: 16.66%; line-height: 90px;
+        font-size: 18px; font-weight: 600; color: #3a405b;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding: 20px 17%; box-sizing: border-box; text-align: center;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; width: 50px; line-height: 50px; border-radius: 25px;
+        font-size: 14px; color: #3a405b; font-weight: 600; background-color: white;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5;
+    }
+    /* ? pager Fin */
 }
 /* ?desktop */
