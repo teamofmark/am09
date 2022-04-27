@@ -39,5 +39,26 @@
         color: #a1a7bd;
     }
     /* ?slide Nav Fin */
+
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        position: relative; max-width: 1400px; margin: 0 auto;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; padding: 10px 0 14px; font-size: 18px; color: white; font-weight: 600;
+        border: 1px solid rgba(255,255,255,0.2); text-align: center; border-radius: 22px;
+        position: absolute; top: 46%; 
+    }
+    section.slideArea > div > a.btn_conL{
+        left: %;
+    }
+    section.slideArea > div > a.btn_conR{
+        right: %;
+    }
 }
 /* ?desktop */
