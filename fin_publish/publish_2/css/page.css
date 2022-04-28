@@ -106,9 +106,11 @@
         background-color: white; border-radius: 5px; line-height: 56px; padding: 0 1.7%;
         box-sizing: border-box; margin-bottom: 30px;
     }
+    .contentArea > form fieldset label{
+        display: inline-block; vertical-align: middle; font-weight: 600;
+    }
     .contentArea > form fieldset label:not([for='freeShipCheck']){
-        font-size: 11px; color: #a1a7bd; font-weight: 600; text-transform: uppercase;
-        display: inline-block; vertical-align: middle;
+        font-size: 11px; color: #a1a7bd; text-transform: uppercase;
     }
     .contentArea > form fieldset span.sbSelect{
         margin-left: 3.41%;
@@ -130,6 +132,65 @@
     }
     .contentArea > form fieldset input[type='text']{
         width: 6.5%;
+    }
+    .contentArea > form fieldset input[type='search'],
+    .contentArea > form fieldset input[id='range_minprice']{
+        margin-left: 0.85%;
+    }
+    .contentArea > form fieldset label[for='range_minprice'],
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        margin-left: 2.56%;
+    }
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; font-size: 13px; color: #343e5c; transition: background 0.5s ease-out;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
+    .contentArea > form fieldset .shipSelect select{
+        text-align: right;
+    }
+    /* ?sortBar Fin */
+
+    .contentArea aside{
+        width: 23.07%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 5px; margin-bottom: 30px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c; font-weight: 600; padding: 15px 7%;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right; transform: rotate(-90deg);
+        transition: transform 0.5s ease-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; font-weight: 600; color: #a1a7bd; opacity: 0; padding: 0px 7%;
+        transition: all 0.3s ease-in-out;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; padding: 15px 7%; border-bottom: 1px solid #dfe4ee; opacity: 1;   
+    }
+    /* ? side Menu Fin */
+
+    
+
+    .contentArea section{
+        width: 74.35%; float: left; margin-left: 2.58%;
     }
     
 }
