@@ -186,8 +186,29 @@
         font-size: 11px; padding: 15px 7%; border-bottom: 1px solid #dfe4ee; opacity: 1;   
     }
     /* ? side Menu Fin */
-
     
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px; padding-top: 70px;
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 20px; box-sizing: border-box;
+        border-bottom: 1px solid blue; width: 100%; position: relative; top: 32px;
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block; padding-left:;
+    }
+    .contentArea aside fieldset span{
+        width: 19%; display: inline-block;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 81%;
+    }
+
+
 
     .contentArea section{
         width: 74.35%; float: left; margin-left: 2.58%;
