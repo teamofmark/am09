@@ -188,11 +188,20 @@
     /* ? side Menu Fin */
     
     .contentArea aside fieldset{
-        background-color: white; border-radius: 5px; padding: 55px 0 20px;
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 55px 0 20px;
         /* 
             ? fieldset 이 legend를 포함할 경우 상단 기본 30px. 
             * psd 내 70에서 30을 제하면 되어야 하지만, 상단에 legend 영역으로 잡힌 padding이 있기 때문에
             * 그의 절반인 15를 제한다.
+        */
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 35px;
+        /* 
+            ? 마지막 fieldset의 dlvr 들은 경계선을 가지고 있어야 하고 그 경계선이 legend border-bottom과 맞물려야 하니까
         */
     }
     .contentArea aside fieldset legend{
@@ -222,10 +231,16 @@
         width: 100%;
     }
     .contentArea aside fieldset label[for*='dlvr']{
-        width: 49%; margin-bottom: 0;
+        width: 49%; margin-bottom: 0; line-height: 50px;
     }
-    .contentArea aside fieldset input[type='radio'] + label{
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7; 
+    }
+    .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
         background: url('../images/off_radio.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='radio'] + label[for*='dlvr']{
+        background: url('../images/off_radio.png') no-repeat 15.15% center;
     }
     .contentArea aside fieldset input[type='radio']:checked + label{
         background-image: url('../images/on_radio.png');
