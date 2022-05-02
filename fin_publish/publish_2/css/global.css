@@ -23,6 +23,166 @@ a{
     -webkit-appearance: none; -moz-appearance: none;
     padding: 10px 0; font-size: 11px; color: #343e5c;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header > div,
+    footer > div,
+    header + nav .slideNav,
+    .contentArea,
+    section.bestArea,
+    section.tosayArea > div{
+        max-width: /*1170px*/ 1000px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div label.material-icons{
+        width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block;
+    }
+    header > div h1{
+        width: 10.7%; min-width: 125px;
+    }
+    header > div h1 a{
+        display: block; text-align: right; padding: 31px 0;
+    }
+    header > div h1 a img{
+        width: 100%; max-width: 92px;
+    }
+    header > div nav{
+        width: 55%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 600; color: #343e5c; line-height: 90px;
+    }
+    
+    header > div div{
+        width: 29%; font-size: 11px; color: #343e5c; text-align: right; line-height: 90px;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 17px; background: url('../images/bul_cart.png') left top / contain no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px; text-align: center;
+        margin-left: 2%; font-weight: 600;
+    }
+    header > div div input[type='button']{
+        font-size: 11px; font-weight: 600; padding: 8px 10px; border: 2px solid #e3e8f0;
+        border-radius: 18px; background-color: white; margin-left: 8%; min-width: 85px;
+        letter-spacing: 1px;
+    }
+    /* ? header Fin */
+
+    .paging{
+        position: relative; clear: both; background-color: white; border-radius: 5px;
+    }
+    .paging > a{
+        position: absolute; top: 0; text-align: center; width: 16.66%; line-height: 90px;
+        font-size: 18px; font-weight: 600; color: #3a405b;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding: 20px 17%; box-sizing: border-box; text-align: center;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; width: 50px; line-height: 50px; border-radius: 25px;
+        font-size: 14px; color: #3a405b; font-weight: 600; background-color: white;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 20px #dfe0e5;
+    }
+    /* ? pager Fin */
+
+    /* todo. footer */
+    footer{
+        background-color: #222328;
+    }
+    footer > div{
+        position: relative; padding: 60px 0;
+    }
+    footer > div span{
+        position: absolute; display: block;
+    }
+    footer > div:first-child{
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    footer > div:first-child h2{
+        position: absolute; left: 0; top: 60px; width: 7.69%; max-width: 92px;
+    }
+    footer > div:first-child ul{
+        padding: 0 10%; text-align: center;
+    }
+    footer > div:first-child ul li{
+        display: inline-block;
+    }
+    footer > div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer > div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 600;
+    }
+    
+    footer > div:first-child span{
+        right: 0; top: 60px; width: 8.94%;
+    }
+    footer > div:first-child span a:not(:first-of-type){
+        margin-left: 2.4%;
+    }
+    footer > div:first-child span a{
+        display: inline-block; width: 24px; height: 18px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat;
+    }
+    footer > div:first-child span a:nth-child(1){
+        background-image: url('../images/sns_01.png');
+    }
+    footer > div:first-child span a:nth-child(2){
+        background-image: url('../images/sns_02.png');
+    }
+    footer > div:first-child span a:nth-child(3){
+        background-image: url('../images/sns_03.png');
+    }
+    footer > div:nth-child(2) p{
+        width: 50%; font-size: 14px; font-style: italic; max-width: 510px; color: rgba(255,255,255,0.3);
+    }
+    footer > div:nth-child(2) span{
+        right: 0; top: 60px; width: 50%; text-align: right;
+    }
+    footer > div:nth-child(2) span a{
+        font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block; font-weight: 600;
+    }
+    footer > div:nth-child(2) span a:last-of-type{
+        margin-left: 2.56%;
+    }
+    /* ?footer Fin */
+}
+/* ?tablet */
+
 @media screen and (min-width: 1280px){
     header > div,
     footer > div,
