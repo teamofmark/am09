@@ -382,14 +382,18 @@
         font-size: 16px; color: #b9bed1; text-align: center; font-weight: 400; font-style: italic;
         margin-bottom: 50px;
     }
-    section.tosayArea > div ul:after{
+    /* section.tosayArea > div ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.tosayArea > div ul li{
-        float: left; display: block; width: 27.64%;
+        display: block; width: /*27.64%*/ 80%; margin: 0 auto;
+        /* float: left; */
     }
-    section.tosayArea > div ul li:not(:first-child){
+    /* section.tosayArea > div ul li:not(:first-child){
         margin-left: 8.54%;
+    } */
+    section.tosayArea > div ul li:not(:last-child){
+        margin-bottom: 30px;
     }
     section.tosayArea > div ul li figure{
         margin-bottom: 20px;
