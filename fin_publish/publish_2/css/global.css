@@ -126,7 +126,7 @@ a{
         background-color: #222328;
     }
     footer > div{
-        position: relative; padding: 60px 0;
+        position: relative; padding: 60px /*0*/ 15px;
     }
     footer > div span{
         position: absolute; display: block;
@@ -135,7 +135,10 @@ a{
         border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        position: absolute; left: 0; top: 60px; width: 7.69%; max-width: 92px;
+        position: absolute; left: /*0*/15px; top: 60px; width: 7.69%; /*max-width*/min-width: 92px;
+    }
+    footer > div:first-child h2 img{
+        width: 100%; min-width: 92px;
     }
     footer > div:first-child ul{
         padding: 0 10%; text-align: center;
@@ -151,7 +154,7 @@ a{
     }
     
     footer > div:first-child span{
-        right: 0; top: 60px; width: 8.94%;
+        right: /*0*/15px; top: 60px; width: /*8.94%*/ 11.94%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -173,7 +176,7 @@ a{
         width: 50%; font-size: 14px; font-style: italic; max-width: 510px; color: rgba(255,255,255,0.3);
     }
     footer > div:nth-child(2) span{
-        right: 0; top: 60px; width: 50%; text-align: right;
+        right: /*0*/15px; top: 60px; width: /*50%*/40%; text-align: right;
     }
     footer > div:nth-child(2) span a{
         font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block; font-weight: 600;
@@ -295,6 +298,9 @@ a{
     }
     footer > div:first-child h2{
         position: absolute; left: 0; top: 60px; width: 7.69%; max-width: 92px;
+    }
+    footer > div:first-child h2 img{
+        width: 100%; min-width: 92px;
     }
     footer > div:first-child ul{
         padding: 0 10%; text-align: center;
