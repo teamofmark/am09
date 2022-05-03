@@ -43,42 +43,44 @@ a{
         content: ''; display: block; clear: both;
     }
     header > div label.material-icons{
-        width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
-        border-right: 1px solid #f0f2f7; display: block;
+        /* width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; */
+        display: /*block*/ none;
     }
     header > div h1{
         width: 10.7%; min-width: 125px;
     }
     header > div h1 a{
-        display: block; text-align: right; padding: 31px 0;
+        display: block; text-align: /*right*/center; padding: 31px 0;
     }
     header > div h1 a img{
         width: 100%; max-width: 92px;
     }
     header > div nav{
-        width: 55%;
+        width: /*55%*/ 60%;
     }
     header > div nav ul{
-        text-align: right;
+        text-align: /*right*/center;
     }
     header > div nav ul li{
         display: inline-block;
     }
     header > div nav ul li:not(:first-child){
-        margin-left: 2.56%;
+        margin-left: /*2.56%*/2%;
     }
     header > div nav ul li a{
         display: block; font-size: 14px; font-weight: 600; color: #343e5c; line-height: 90px;
     }
     
     header > div div{
-        width: 29%; font-size: 11px; color: #343e5c; text-align: right; line-height: 90px;
+        width: /*29%*/ 23%; font-size: 11px; color: #343e5c; text-align: /*right*/ center; line-height: 90px;
     }
     header > div div *:not(input){
         display: inline-block;
     }
     header > div div strong{
-        padding-left: 25px; line-height: 17px; background: url('../images/bul_cart.png') left top / contain no-repeat;
+        /* padding-left: 25px; background: url('../images/bul_cart.png') left top / contain no-repeat; */
+        line-height: 17px;
     }
     header > div div span{
         width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px; text-align: center;
