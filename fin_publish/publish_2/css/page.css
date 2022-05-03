@@ -10,20 +10,21 @@
         float: left;
     }
     header + nav .slideNav ul{
-        width: 80%;
+        width: /*80%*/62%; padding: 0 0 0 15px; box-sizing: border-box;
     }
     header + nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
-    header + nav .slideNav ul li:not(:last-child){
+    header + nav .slideNav ul li/*:not(:last-child)*/{
         float: left;
     }
-    header + nav .slideNav ul li:last-child{
+    /* header + nav .slideNav ul li:last-child{
         float: right;
-    }
+    } */
     header + nav .slideNav ul li a{
         display: block; font-size: 11px; color: #b9bed1; line-height: 56px; font-weight: 600;
-        text-transform: uppercase; letter-spacing: 1px;
+        text-transform: uppercase;
+        /* letter-spacing: 1px; */
     }
     header + nav .slideNav ul li a:hover,
     header + nav .slideNav ul li a.active{
@@ -31,9 +32,9 @@
     }
 
     header + nav .slideNav input[type='search']{
-        width: 17%; margin-left: 3%; padding: 20px 2% 20px 4%; box-sizing: border-box;
+        width: /*27%*/ 25%; margin-left: /*3%*/13%; padding: 20px 2% 20px 4%; box-sizing: border-box;
         border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
-        background: url('../images/bul_search.png') no-repeat 12% center; font-weight: 600;
+        background: url('../images/bul_search.png') no-repeat /*12%*/6% center; font-weight: 600;
     }
     header + nav .slideNav input[type='search']::placeholder{
         color: #a1a7bd;
