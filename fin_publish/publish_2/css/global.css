@@ -166,13 +166,13 @@ a{
     }
     
     footer > div:first-child span{
-        right: /*0*/5%; top: /*60px*/ 30px; width: /*11.94%*/ 60%; text-align: right;
+        right: /*0*/5%; top: /*60px*/ 30px; width: /*11.94%*/ 31%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
     }
     footer > div:first-child span a{
-        display: inline-block; width: 24px; height: 18px; text-indent: 9999px;
+        display: inline-block; width: 24px; height: 18px; text-indent: -9999px;
         background-position: center; background-repeat: no-repeat;
     }
     footer > div:first-child span a:nth-child(1){
