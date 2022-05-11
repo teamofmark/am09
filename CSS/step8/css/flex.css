@@ -122,5 +122,18 @@
     * stretch (cross Start에서 End까지 꽉찬 높이)
     * flex-start (cross Start 기준으로 정렬)
     * flex-end (cross End 기준으로 정렬)
-    * center (flexContainer의 주축 중앙 정렬)
+    * center (flexContainer의 주축 중앙 정렬) 
+*/
+.flexContainer.orderItem .flexItem.order1{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 0;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: -1;
+}
+/* 
+    ? order:
+    * flexContainer의 flexItem을 0(default)을 기본으로 적은 수 일수록(음수가능) 먼저 배치.
 */
