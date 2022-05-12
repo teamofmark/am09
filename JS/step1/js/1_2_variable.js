@@ -58,3 +58,28 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// ? 변수 만들기 var 변수이름;(선언) / var 변수이름 = 값;(선언 및 초기화)
+
+// *case.1 ,로 구분
+var name = "mark", age = "99";
+
+// *case.2 동시선언, 동시초기화
+var radius, pi; //? 한번에 선언
+radius = 10, pi = 3.14159265; //? 한번에 초기화
+
+// *case.3 변수의 특성
+var cup = 'Coffee'; //? 빈컵을 생성하고 커피를 담았다.
+//? var cup = 'GreenTea';  빈컵을 또 생성하고 녹차를 담았다.
+cup = 'GreenTea'; //? 기존 컵에 coffee를 버리고 녹차를 담았다.
+cup = 'Water'; //? 기존 컵에 녹차를 버리고 물을 담았다.
+
+// *case.4 연산자 사용시
+var value = 10; //? value 변수를 선언하고 10을 담았다.(초기화)
+// value = value + 20;
+value += 20;
+
+// todo. 자신의 이름을 특정 변수에 담고 경고창(콘솔)에 출력해보기
+var myName = 'Mark';
+// console.log(myName);
+// alert(myName);
