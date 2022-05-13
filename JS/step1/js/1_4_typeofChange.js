@@ -34,3 +34,38 @@ function forcedString2(){
     var result = '1300' + true;
     console.log(typeof(result) + '=' + result);
 }
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    *String(value); -> 문자형변환.
+    
+    ? .toString()
+    *Number.toString() -> 문자형(진수)변환.
+
+    ? .toFixed()
+    *Number.toFixed() -> (소수점자리수(반올림))실수문자형 변환.
+*/
+
+function stringNumb(){
+    var test1 = 15;
+    var result = String(test1);
+    console.log(typeof(result) + '=' + result);
+}
+function stringtoNumb(){
+    var test1 = 15;
+    var result = test1.toString();
+    console.log(typeof(result) + '=' + result);
+}
+
+// *case.5-1 background-color RandomSwap
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff;
+        bgColor = parseInt(bgColor);
+        bgColor = bgColor.toString(16);
+
+        $("body").css("background-color","#"+bgColor);
+    },1000);
+}
+
+// *
