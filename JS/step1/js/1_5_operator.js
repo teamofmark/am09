@@ -102,3 +102,43 @@ function numberPlusTodo(){
     alert(number--); // todo. 출력숫자 : 11 -> 출력후 (10)
     console.log(number); // todo. 최종숫자 : 10.
 }
+
+// * case.6 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a>b;
+    console.log("10 > 20 = " + result);
+}
+
+// * case.7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력. 
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log("10 = 20 ? " + result);
+}
+
+// todo.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ? "+result);
+}
+
+//  *case.8 a변수에는 '여자', b변수에는 '웹디자이너' 라는 값이 저장되어 있다. 담겨있는 두 값이 모두 맞는지 result 변수에 저장후 출력.
+function logicalOperator1(){
+    var a = "여자"; //남자
+    var b = "웹디자이너"; //웹퍼블리셔
+    var result=(a=="여자")&&(b=="웹디자이너");
+    console.log("result = " + result);
+}
+
+// * case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.
+function logicalOperator2(){
+    var a = "여자";//남자
+    var b = "웹퍼블리셔";//웹디자이너
+    var result=(a=="남자")||(b=="웹퍼블리셔");
+    console.log("result="+result);
+}
