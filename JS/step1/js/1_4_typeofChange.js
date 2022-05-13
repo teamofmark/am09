@@ -18,3 +18,19 @@ function agePlus(){
     var result = parseInt(age) + 20; //? Number(age) - 전역함수 Number는 정,실수 무관변환.
     console.log(result);
 }
+// *case.2 강제 숫자 -> 문자형 변환.
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 10;
+    console.log(typeof(result) + '=' + result);
+}
+// *case.3 강제 불리언 -> 숫자형 변환.
+function forcedNumber(){
+    var result = 13000 + true; //? true = 1, false = 0.
+    console.log(typeof(result) + '=' + result);
+}
+// *case.4 강제 불리언 -> 문자형 변환.
+function forcedString2(){
+    var result = '1300' + true;
+    console.log(typeof(result) + '=' + result);
+}
