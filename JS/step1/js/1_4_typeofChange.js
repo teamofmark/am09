@@ -68,4 +68,44 @@ function bgColorRandom(){
     },1000);
 }
 
-// *
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); -> 정수,실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); -> 정수형변환.
+    * 2. parseFloat(value); -> 실수형변환.
+*/
+function numbString(){
+    var test = '300.254';
+    var result = parseFloat(test) + 10;
+    console.log(typeof(result) + ' = ' + result);
+}
+
+// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형해보기.(typeof 검수필요.)
+
+// todo. 1-1 암시적형변환 이용해서 해결
+function todo1(){
+
+}
+// todo. 1-2 전역함수 String 이용해서 해결
+function todo2(){
+
+}
+// todo. 1-3 toString 이용해서 해결.
+
+// todo.2 변수 test에 들어있는 문자 "100.51"을 숫자 형으로 변환하여 연산이 가능하게 만들기.
+
+// todo. 2-1 parse 이용 하기.
+function todo4(){
+    var test = "100.51";
+    var result = test + 150 + "20";
+
+}
+// todo. 2-2 Number 이용 하기.
+function todo5(){
+    var test = "100.51";
+    var result = test + 150 + "20";
+
+}
