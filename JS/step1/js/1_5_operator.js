@@ -137,8 +137,12 @@ function logicalOperator1(){
 
 // * case.9 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.
 function logicalOperator2(){
-    var a = "여자";//남자
-    var b = "웹퍼블리셔";//웹디자이너
+    var a = "남자";//남자
+    var b = "웹디자이너";//웹디자이너
     var result=(a=="남자")||(b=="웹퍼블리셔");
     console.log("result="+result);
+}
+// todo.6 다음 코드를 작성 후 결과를 예상하고 일어난 문제점을 수정하기.
+function compareOperator4(){
+    console.log(30 > 20 && 20 > 10); //todo. 결과 : ? / 문제점이 생길것. / 문제점을 해결하는 코드를 작성.
 }
