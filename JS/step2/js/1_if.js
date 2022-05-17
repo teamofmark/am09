@@ -86,3 +86,34 @@ function oddOrEven(){
 }
 
 // *case.5 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가 의 등급으로 출력하기.
+function avgScore(){
+    var koreanScore = window.prompt('국어점수를 입력하시오.');
+    var englishScore = window.prompt('영어점수를 입력하시오.');
+    var mathScore = window.prompt('수학점수를 입력하시오.');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    // console.log(typeof(avg) + '=' + avg);
+
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다.'); 
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다.');
+    }else{
+        alert('평균' + avg + '점 \n' + '가 입니다.');
+    }
+}
+
+// *case.6 사용자의 id(Mark)를 입력받아 맞다면 승인 메시지 출력. 
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID=="Mark"){
+        alert("접속을 승인합니다.");
+    }else if(userID!="Mark"){
+        alert("잘못된 ID입니다.");
+    }
+}
