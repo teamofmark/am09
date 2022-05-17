@@ -43,10 +43,32 @@ function lotto(){
 // todo.1 switch문을 이용한 간단한 계산기
 // ? 두 개의 숫자를 사칙연산(나머지제외) 하는 계산기
 function calculator(){
+    var firstNumb = window.prompt("첫번째 숫자를 입력하세요.");
+    var op = window.prompt("사칙연산자(+,-,*,/)중 하나를 입력하세요.");
+    var lastNumb = window.prompt("두번째 숫자를 입력하세요.");
     // todo.1 입력부 - 숫자1, 연산자, 숫자2 를 입력받아야함.
 
+    firstNumb = parseInt(firstNumb);
+    lastNumb = parseInt(lastNumb);
     // todo.2 prompt는 기본 문자열이니 형변환 필요.
 
+    switch(op){
+        case "+":
+            alert("입력하신 결과는 " + (firstNumb + lastNumb) + "입니다.");
+            break;
+        case "-":
+            alert(firstNumb - lastNumb);
+            break;
+        case "*":
+            alert(firstNumb * lastNumb);
+            break;
+        case "/":
+            alert(firstNumb / lastNumb);
+            break;
+        default:
+            alert("잘못된 연산자 입니다.");
+            break;
+    }
     // todo.3 switch를 짜면되는데 switch(?) ?에 무엇을 넣어 case를 정리 할 것인가?
 
     // todo.4 case = 사칙연산이라고 했으니까 더하기,빼기,곱하기,나누기,그외 연산불가(잘못된 값이 입력되었습니다.). 
