@@ -117,3 +117,31 @@ function userIDCheck(){
         alert("잘못된 ID입니다.");
     }
 }
+
+// todo. 사용자 id "mark"와 password "1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    // todo.1 아이디, 비밀번호를 입력받아야 함.
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }
+    // todo.2 아이디와 비밀번호 모두가 같을 때 승인.
+    else if(userID != "Mark"){
+        alert("ID가 존재하지 않습니다.");
+    }
+    // todo.3 아이디가 틀리면 "ID가 존재하지 않습니다." 출력
+    else{
+        alert("password가 틀렸습니다.");
+    }
+    // todo.4 비밀번호가 틀리면 "비밀번호가 틀렸습니다." 출력
+}
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    if(userID=="Mark" && userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" || userPW != "1234"){
+        alert("ID 혹은 password가 틀렸습니다.");
+    }
+}
