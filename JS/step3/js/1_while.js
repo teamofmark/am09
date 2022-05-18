@@ -68,5 +68,17 @@ function gugudan(){
 }
 // todo. end가 입력될 때 까지 숫자를 계속해서 입력받아 합을 출력하고, prompt에는 몇번 수행했는가 'x번째 입력' 표시.
 function sumNumb(){
+    var i = 1;
+    var result = 0;
+    while(true){
+        var numb = window.prompt(i + '번째 입력');
+        if(numb=='end'){
+            alert('입력이 종료되었습니다.');
+            break;
+        }
 
+        result += parseInt(numb);
+        document.write('현재까지의 총합 : ' + result + '<br>');
+        i++;
+    }
 }
