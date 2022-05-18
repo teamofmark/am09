@@ -27,3 +27,31 @@ function namePrint500(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+
+// * case.3 jsEngine처럼 생각하기.
+function answer1(){
+    for(var i = 0; i<10; i++){ // todo.
+        document.write((i+1) + '<br>'); // todo. 
+    }
+}
+function answer2(){
+    for(var i = 1; i<=10; i++){ //todo.
+        document.write(i + '<br>'); //todo.
+    }
+}
+function answer3(){
+    for(var i = 100; i < 110; i++){ //todo.
+        document.write(i+'<br>'); //todo.
+    }
+}
+function answer4(){
+    for(var i = 1; i <= 10; i+=2){ //todo.
+        document.write( i + '<br>'); //todo.
+        document.write( (i+1) + '<br>'); //todo.
+    }
+}
+function answer5(){
+    for(var i = 10; i >= 1; i--){ // todo.
+        document.write((11-i) + '<br>'); // todo.
+    }
+}
