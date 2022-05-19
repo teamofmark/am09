@@ -121,3 +121,33 @@ function runBreak(){
         }
     }
 }
+
+// ! 다중 for
+
+// *case.1 반절피라미드
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //? i for = 10번수행.(대기어)
+        for (var j = 0; j < i; j++){ //? j for = j가 i보다 작을때 까지 수행.(소기어)
+            star += '*'; //? 변수 star에 * 삽입.
+        }
+        star += '<br>'; //? <br>을 star에 추가.
+    }
+    document.write(star); //? 반절피라미드 출력.
+}
+// *case.2 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--){ //? 1. i for = 10번수행. (i for 감소)
+        for (var j = 0; j < i; j++){ //? 2. j for = j가 i보다 작을때 까지 반복수행 10,9,8,7,6,5,4..
+            star += '*'; //? star에 '*' 삽입.
+        }
+        star += '<br>'; //? star에 <br> 추가.
+    }
+    document.write(star);
+}
+
+// todo. 완성형 피라미드 (공백문자 : &nbsp;)
+function pyramid(){
+    // todo. 바깥 쪽 for -> <br>, 내부 for 1번 -> 공백, 내부 for 2번 -> *
+}
