@@ -38,3 +38,21 @@ function sumParam(num1, num2, num3){
     * 단, arguments는 array와 비슷해보이지만 length를 구하는 방식을 제외하고는 array와는 다르다.
     * 필요에 따라 array로 추가 변환하여 사용 할 수 있다.
 */
+
+function sumAll(){
+    var willReturn = 0;
+    for(var i = 0; i < arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(typeof(arguments) + ' : ' + arguments.length + ' / ' + willReturn);
+}
+
+function sumAllEX(){
+    var willReturn = 0;
+    for (var i in arguments){ //? for in. -> i = 0; i < arguments.length; i++
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+
+// ? 결론 : arguments = 약속되지 않은 임의 매개변수들.
