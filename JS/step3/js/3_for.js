@@ -149,5 +149,16 @@ function reverseHalfPyramid(){
 
 // todo. 완성형 피라미드 (공백문자 : &nbsp;)
 function pyramid(){
+    var star = '';
     // todo. 바깥 쪽 for -> <br>, 내부 for 1번 -> 공백, 내부 for 2번 -> *
+    for(var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';
+        }
+        for(var s = 0; s < 2*i-1; s++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
 }
