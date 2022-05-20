@@ -56,3 +56,41 @@ function sumAllEX(){
 }
 
 // ? 결론 : arguments = 약속되지 않은 임의 매개변수들.
+
+// * "자신의 이름"의 나이는 "자신의 나이"세 입니다. 를 arguments를 이용해 만들어보기.
+// ! data의 입력순서를 arguments 내에서 조작 할 수 없다.
+function showInfo(){
+    alert(arguments[0] + "의 나이는" + arguments[1] + "세 입니다.");
+}
+
+/*
+    ? return
+    * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
+    * 매개변수(param,arguments)를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대되는 개념.
+    * 즉, 매개변수 값이 외부에서 내부로 들어오는 입력 부라면, return value는 함수내부에서 처리한 결과를 외부로 전달하는 출력부.
+*/
+
+// *case.1 return?
+function f(x){
+    return x*x; //? 호출부로 리턴. 무엇을? x*x 한 결과를.
+}
+// ?호출부 console.log(f(3));
+
+// *case.2 두 수를 매개변수로 받고 두 값을 더한 결과값을 리턴.
+function sumReturn1(num1, num2){
+    var result = num1 + num2;
+    return result;
+}
+// document.write(sumReturn1(10,20));
+
+// todo.1 구구단 출력을 함수로 만들기.
+function printGugudan(){
+    for (var i = 2; i <= 9; i++){
+        document.write(i + '단 출력', "<br>");
+        // ? 연산루프 (for)
+        for(var m = 1; m <=9; m++){
+            document.write(i + "x" + m + "=" + (i*m), "<br>");
+        }
+        document.write("<br>");
+    }
+}
