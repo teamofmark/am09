@@ -177,3 +177,52 @@ function mul(numb1, numb2){
 function div(numb1, numb2){
     return numb1 / numb2;
 }
+
+// *case. 3 함수를 변수에 담는다.
+
+function hello(name){
+    console.log(name + " welcome!");
+}
+
+var func = hello;
+
+// *case. 4 매개변수에 함수를 넣어보기.
+
+function hi1(){
+    console.log("Hi,");
+}
+function hi2(){
+    console.log("안녕.");
+}
+function execute(func){
+    func();
+}
+// *case. 5 익명함수 속 매개변수로 전달된 함수.
+function welcome(){
+    alert("환영. 반갑");
+}
+$(document).ready(function(){
+    $("#runEx8").click(welcome);
+});
+
+// *case. 6 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi. hello!");
+    }, 1000); //? libFunc / 고정인자 2개. (실행할 대상, 시간차).
+}
+// todo.4 함수를 매개변수로 전달받아 반복 호출하기.
+
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+
+// callFunctionTenTimes(function(){
+//     document.write('hello');
+// });
+
+function justFunction(){
+    document.write('hello');
+}
