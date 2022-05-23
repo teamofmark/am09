@@ -141,3 +141,30 @@ todo. document.write(sub(20, 10) + "<br>");
 todo. document.write(mul(20, 10) + "<br>");
 todo. document.write(div(20, 10) + "<br>");
 */
+
+function calculator2(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+": 
+            result = add(numb1,numb2);
+            break;
+        case "-": 
+            result = numb1 - numb2;
+            break;
+        case "*": 
+            result = numb1 * numb2;
+            break;
+        case "/": 
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+
+function add(numb1,numb2){
+    var addResult = numb1 + numb2;
+    return addResult;
+}
