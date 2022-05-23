@@ -149,13 +149,13 @@ function calculator2(op, numb1, numb2){
             result = add(numb1,numb2);
             break;
         case "-": 
-            result = numb1 - numb2;
+            result = sub(numb1,numb2);
             break;
         case "*": 
-            result = numb1 * numb2;
+            result = mul(numb1,numb2);
             break;
         case "/": 
-            result = numb1 / numb2;
+            result = div(numb1,numb2);
             break;
         default:
             result = "잘못된 연산자 입니다.";
@@ -167,4 +167,13 @@ function calculator2(op, numb1, numb2){
 function add(numb1,numb2){
     var addResult = numb1 + numb2;
     return addResult;
+}
+function sub(numb1, numb2){
+    return numb1 - numb2;
+}
+function mul(numb1, numb2){
+    return numb1 * numb2;
+}
+function div(numb1, numb2){
+    return numb1 / numb2;
 }
