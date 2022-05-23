@@ -130,8 +130,14 @@ function calculator(op, numb1, numb2){
     }
     return result;
 }
-document.write("1 결과 =" + calculator("+", 20, 10));
-document.write("2 결과 =" + calculator("-", 20, 10));
-document.write("3 결과 =" + calculator("*", 20, 10));
-document.write("4 결과 =" + calculator("/", 20, 10));
-document.write("5 결과 =" + calculator("%", 20, 10));
+
+// todo.3 위의 예제를 응용하여 사칙연산부를 함수로 변환, 보다 편하게 사용 할 수 있게 만들기.
+/* 
+//* 실행구문
+todo. document.write(calculator2("+", 20, 10) + "<br>");
+! calculator 라는 계산기 함수에서도 구동되고, 개별적인 add(+),sub(-),mul(*),div(/) 함수로도 계산이 되어야함.
+todo. document.write(add(20, 10) + "<br>");
+todo. document.write(sub(20, 10) + "<br>");
+todo. document.write(mul(20, 10) + "<br>");
+todo. document.write(div(20, 10) + "<br>");
+*/
