@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery - 대상움직여보기</title>
+    <style>
+        .circleWrap{
+            width: 430px; height: 430px; border: 1px solid black; margin: 0 auto; position: relative;
+        }
+        .circleWrap [class*="circle"]{
+            width: 50px; height: 50px; border-radius: 25px; background: linear-gradient(-45deg, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+            position: absolute; left: 0; top: 0; transition: all 0.35s linear;
+        }
+        .circleWrap #btnMoveCircle,
+        .circleWrap fieldset{
+            position: absolute; bottom: 0; right: 0;
+        }
+        .circleWrap fieldset > *{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- *case.1 x축으로 움직이기. -->
+    <div class="circleWrap">
+        <div class="circle"></div>
+        <button id="btnMoveCircle">움직이기</button>
+    </div>
+
+    <!-- *case.2 x,y축으로 값을 입력받아 움직이기. -->
+    <div class="circleWrap">
+        <div class="circleDetail"></div>
+        <fieldset>
+            <label for="xpos">x 좌표입력</label>
+            <input type="text" id="xpos"><br>
+            <label for="ypos">y 좌표입력</label>
+            <input type="text" id="ypos"><br>
+            <button id="btnDetailMove">실행!</button>
+        </fieldset>
+    </div>
+
+    <!-- *case.3 방향키를 조작하여 움직이기. -->
+    <div class="circleWrap">
+        <div class="circleKey"></div>
+    </div>
+</body>
+</html>
