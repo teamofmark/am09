@@ -226,3 +226,12 @@ function callFunctionTenTimes(otherFunction){
 function justFunction(){
     document.write('hello');
 }
+
+// *case.7 returnValue로 함수를 사용하기.
+function createHello(){
+    function hello(user){ //? user 매개변수를 지닌 hello 함수 생성
+        document.write(user + 'welcome!'); //? 실행구문
+    }
+    return hello; //? createHello가 호출되는 위치로 hello함수 자체를 return 시킴.
+}
+var result = createHello(); //? createHello 호출부(hello함수가 return 됨).
