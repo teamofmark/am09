@@ -10,6 +10,7 @@ $(document).ready(function(){
     $("#btnAddBorder").click(addBorder);
 
     // todo.
+    $("#btnTextChange").click(textChange);
 });
 
 // *case.2
@@ -22,3 +23,10 @@ function addBorder(){
 }
 
 // todo.
+function textChange(){
+    $("#panel2").css({
+        "font-size" : "25px",
+        "color" : "green",
+        "font-weight" : "bold"
+    });
+}
