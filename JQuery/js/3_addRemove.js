@@ -1,5 +1,6 @@
 $(document).ready(function(){
     toggleCheck();
+    toggleTodo();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -12,6 +13,21 @@ function toggleCheck(){
             $checkTarget.text("check_box"); //? text를 가져오거나 매개변수로 값을 넣어 바꾸기.
         }else{
             $checkTarget.text("check_box_outline_blank");
+        }
+    });
+}
+function toggleTodo(){
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var toggleStatus = false;
+
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $toggleTarget.text("visibility");
+            $("#userPW").attr("type","text");
+        }else{
+            $toggleTarget.text("visibility_off");
+            $("#userPW").attr("type","password");
         }
     });
 }
