@@ -7,6 +7,9 @@ $(document).ready(function(){
 
     // *case.2-1
     detailMoveCircleExt();
+
+    // *case.3 
+    keyControl();
 });
 
 // *case.1
@@ -71,4 +74,38 @@ function circleMovCommand(xpos, ypos){
             "top" : ypos
         });
     }
+}
+
+// *case.3 
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){ //? e - 이벤트가 일어난 대상.
+        console.log("입력한 키 코드" + e.keyCode);
+        // * w: 87(위 = y축에서 -), d: 68(오른쪽 = x축에서 +), s: 83(아래 = y축에서 +), a: 65(왼쪽 = x축에서 -)
+
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+        // todo. 사각형안에 원을 가두기.
+
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos); 
+    });//? key가 눌리는 것을 감지. - keypad 마다 keyCode(숫자). 
+
+
 }
