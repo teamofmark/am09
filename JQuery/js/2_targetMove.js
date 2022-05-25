@@ -102,6 +102,18 @@ function keyControl(){
                 break;
         }
         // todo. 사각형안에 원을 가두기.
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
 
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos); 
