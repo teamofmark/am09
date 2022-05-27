@@ -11,6 +11,24 @@ $(document).ready(function(){
     $(".9way").click(function(){gallery(9,111,111)});
     $(".10way").click(function(){gallery(10,100,100)});
 });
-function gallery(?,?,?){
+function gallery(count,imgWidth,imgHeight){
+    var $images = $("#imgContainer img");
+    var $imgLength = $images.length;
+    var xpos = 0;
+    var ypos = 0;
+
+    for(i = 0; i < $imgLength; i++){
+        var $image = $images.eq(i);
+
+        xpos = (i%count)*imgWidth;
+        ypos = parseInt(i / count)*imgHeight;
+
+        $image.css({
+            'left' : xpos,
+            'top' : ypos,
+            'width' : imgWidth,
+            'height' : imgHeight
+        });
+    }
 
 }
