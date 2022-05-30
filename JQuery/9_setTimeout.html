@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery - timer / setTimeout</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/9_setTimeout.js"></script>
+    <style>
+        .info{
+            font-size: 14px;
+        }
+        .panel{
+            width: 600px; height: 400px; position: relative; border: 2px solid black;
+        }
+        .panel #circle{
+            position: absolute; left: 100px; top: 100px; width: 100px; height: 100px; border-radius: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <p id="score"></p>
+        <div class="panel">
+            <span id="circle"></span>
+        </div>
+    </div>
+</body>
+</html>
