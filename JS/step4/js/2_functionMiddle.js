@@ -87,3 +87,90 @@ function innerFunctionTest(){
  function addPrint(value){
      document.write('두 수의 합은' + value);
  }
+ function subPrint(value){
+     document.write('두 수의 차는' + value);
+ }
+ function mulPrint(value){
+     document.write('두 수의 곱은' + value);
+ }
+ function divPrint(value){
+     document.write('두 수의 나누기는' + value);
+ }
+ // ? callBack 함수.
+
+//  *case. 3 동기와 비동기
+
+// *동기 - 함수 호출 이후 끝날 때 까지 다음 구문 수행 안됨.
+
+function sync(){
+    alert('hi');
+    document.write('End Alert');
+    console.log('end Alert & write');
+}
+// *비동기 - 함수 호출 이후 끝나는 여부와 상관없이 다음 구문 수행.
+function async(){
+    var count = 1;
+    setInterval(function(){
+        document.write('2. count = ' + count + '<br>');
+    },3000);
+    document.write('1. 동작과 상관없이 바로 실행');
+}
+
+// *case.4 closure
+// ? 일반적인 함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// ? closure 함수
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
+// ? createCount 함수 호출과 동시에 지역변수 count = 0을 선언 및 초기화
+// ? 이후 내부 함수 addCount를 생성. 그것 자체를 return(createCount를 실행한 곳)한 후 함수 종료.
+// ? 그 결과 counter();가 실행되면 addCount(); 함수가 실행되는 것과 같은 결과.
+/*
+    ? 왜안죽는데
+    * createCount 함수가 종료 되더라도 내부함수인 addCount안에서 createCount의 지역변수인 count를 사용중인 상태유지.
+    * 이 상태에서 "외부"로 return 되기 때문에 해당 지역변수는 삭제되지 않고 남아있음(closureEffect)
+    ! addCount가 실행 될 때마다 해당 지역변수는 계속 값을 갱신 할 수있음.
+*/
+// *case.5-1 사용중인 함수를 리턴해야만 클로저는 아니다.
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start(); //? 1. start함수 실행.
+        document.write('count Start');
+    });
+});
+function start(){
+    var count = 0; //? 2. count 변수 초기화 및 생성.
+    setInterval(function(){
+        count ++; //? 3. start 함수 내부 setInterval core 함수가 count변수 사용중
+        document.write(count); //? 4. 계속 증가되는(사용중인) count가 1초간격으로 출력.
+    }, 1000);
+}//? 5. start함수가 종료되어도 삭제되지 않고 계속 유지되면서 값이 이어져간다.(closure).
+
+// *case. 5-2 익명함수 이용한 클로저
+function outerFunction(name){
+    var output = 'hello' + name + '..!'; //? 1. outerFunction 함수 실행시 output 변수 초기화 및 생성.
+    return function(){  //? 2. 익명함수를 outerFunction이 실행된 위치로 return.
+        return output; //? 3. 익명함수로 지역변수 output을 return (closure).
+    }
+}
+
+var first = outerFunction('Java Script');
+var second = outerFunction('JQuery');
+
+/*
+    ! closure를 사용하면 좋은것?
+    * 연관성 있는 변수와 기능을 하나의 함수로 묶어 놓고 독립적으로 여러개(번)을 실행 시킬 수 있다.
+    ? 함수 내부에 data가 만들어지기 때문에 함수 외부에서 수정할 수 없는 data를 생성하는것도 가능하다.
+    ? (privateData)
+*/
