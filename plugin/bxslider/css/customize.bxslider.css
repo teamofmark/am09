@@ -1,0 +1,19 @@
+.bx-wrapper .bx-caption{
+    background-color: rgba(255,0,0,0.5); font-weight: bold;
+}
+
+/* *newPager */
+.newPager{
+    text-align: center; padding: 30px 0;
+}
+.newPager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager-item a{
+    display: block; text-decoration: none;
+    font-size: 14px; border-radius: 5px;
+    background-color: #c4c4c4; padding: 5px;
+}
