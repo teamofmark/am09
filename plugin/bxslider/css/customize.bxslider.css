@@ -17,3 +17,20 @@
     font-size: 14px; border-radius: 5px;
     background-color: #c4c4c4; padding: 5px;
 }
+
+/* * customPager */
+.customPager{
+    margin: 10px 0;
+}
+.customPager:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.customPager li{
+    float: left; width: 20%; display: block;
+}
+.customPager li a{
+    background-color: #eaeaea; display: block; text-indent: -9999px; height: 5px; cursor: pointer;
+}
+.customPager li a.active{
+    background-color: black;
+}
