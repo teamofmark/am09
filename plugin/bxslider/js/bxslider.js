@@ -28,6 +28,17 @@ $(document).ready(function(){
         pagerType: 'full', //? default: full(circle).  short: count로 변경.
         //? pagerShortSeparator: '~'  default: / -> 변경 처리.
         //? pagerSelector: '.newPager' 빈 공간 생성 및 지정하면 pager의 기본 뼈대 제공.
-        pagerCustom: '.customPager' //? default: null. pager 구조를 직접 작성 및 data-slide-index attr을 이용하여 구현.
+        pagerCustom: '.customPager', //? default: null. pager 구조를 직접 작성 및 data-slide-index attr을 이용하여 구현.
+    
+        // *controler
+        controls: true, //? default: true. control button 켜기/끄기.
+        nextSelector: '.btn_next', //? 대상 지정 하면 다음버튼 뼈대 제공.
+        prevSelector: '.btn_prev',//? 대상 지정하면 이전버튼 뼈대 제공.
+        nextText: '>', //? controls 뼈대안 text 변경
+        prevText: '<', //? controls 뼈대안 text 변경
+
+        // *auto
+        auto: true //?
+
     });
 });
