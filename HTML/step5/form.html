@@ -65,26 +65,36 @@
             <legend>HTML5 Input</legend>
             <label for="userNick">닉네임 : </label>
             <input type="text" id="userNick" placeholder="8자미만" maxlength="8" required autofocus>
+            <!--required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점, readonly : 읽기전용(ex> 회원정보수정 등 에서 수정 금지필드 등) -->
             <input type="email" placeholder="example@example.com" readonly>
+            <!--type을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @ 버튼이 생긴다. placeholder(ie10이하지원불가)-->
             <input type="url" placeholder="https://www.naver.com" disabled><br>
-            <!-- disabled / enabled -->
+            <!-- disabled : 비활성화 / enabled : 활성화 -->
             <input type="number" min="1" max="99" step="1" value="1">
+            <!--상,하버튼으로 숫자를 기입하는 스핀박스를 생성한다. <input type="number" 최저값, 최대값, 상승값, 초기값 />-->
             <input type="range" min="-2" max="2" step="1" value="0"> <br>
-
+            <!--슬라이드바로 숫자를 기입하는 막대를 생성한다. <input type="range" 최저값, 최대값, 상승값, 초기값 />-->
             <input type="date">
+            <!--연도,월,날짜 선택 ie10 이하 지원불가(수동입력)-->
             <!-- * yyyy,mm,dd -->
             <input type="month">
+            <!--연도,월 선택 ie10 이하 지원불가(수동입력)-->
             <!-- * yyyy,mm -->
             <input type="time">
+            <!--시간 입력 ie10 이하 지원불가(수동입력)-->
             <!-- * hh,mm,ss -->
             <input type="datetime-local">
+            <!--연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
             <!-- * yyyy,mm,dd,hh,mm,ss -->
             <input type="week"> <br>
+            <!--연도,주 선택 ie10 이하 지원불가(수동입력)-->
             <!-- * ww -->
             <!-- * <input type="datetime"> : 대부분 브라우저 지원불가. -->
             <input type="search" placeholder="검색어를 입력하세요" autocomplete> <br>
+            <!--type을 search로 설정하면 x 버튼이 우측에 생기며 자동완성기능(autocomplete)은 publisher영역아님. style 이 safari에서 적용안됨.-->
             <label for="typeColor">색상선택 : </label>
             <input type="color" id="typeColor">
+            <!--컬러피커창 생성. color code를 rgba / hsla / hex 방식으로 저장. ie10 이하 지원불가-->
         </fieldset>
     </form>
 </body>
