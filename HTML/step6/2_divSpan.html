@@ -14,13 +14,17 @@
             background-color: blue; display: inline-block; width: 19%; color: white;
         }
         .section{
-            background-color: red;
+            background-color: red; margin-bottom: 20px;
+        }
+        .section .article,
+        .section .aside{
+            display: inline-block; height: 500px;
         }
         .section .article{
-            width: 80%; background-color: yellow; display: inline-block; height: 500px;
+            width: 80%; background-color: yellow; 
         }
         .section .aside{
-            width: 18%; background-color: green; display: inline-block; height: 500px;
+            width: 18%; background-color: green;
         }
         .footer{
             background-color: orange;
@@ -28,31 +32,33 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <span>globalHeader</span>
-        <ul>
-            <li>menu1</li>
-            <li>menu2</li>
-            <li>menu3</li>
-            <li>menu4</li>
-            <li>menu5</li>
-        </ul>
+    <header>
+        <h2>globalHeader</h2>
+        <nav>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </nav>
         <!-- <span>menu1</span>
         <span>menu2</span>
         <span>menu3</span>
         <span>menu4</span>
         <span>menu5</span> -->
-    </div>
-    <div class="section">
-        <div class="article">
+    </header>
+    <section>
+        <article>
             <span>text</span>
-        </div>
-        <div class="aside">
+        </article>
+        <aside>
             <span>quick Menu</span>
-        </div>
-    </div>
-    <div class="footer">
+        </aside>
+    </section>
+    <footer>
         <span>global footer</span>
-    </div>
+    </footer>
 </body>
 </html>
