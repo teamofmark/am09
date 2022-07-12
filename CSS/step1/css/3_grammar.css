@@ -1,23 +1,23 @@
-ul li,
-ol li{
+ul.defaultStyle li,
+ol.defaultStyle li{
     background-color: lightblue;
 }
-ul li{
+ul.defaultStyle li{
     color: #60f; font-size: 13px;
 }
-ol li{
+ol.defaultStyle li{
     color: #f06; font-size: 24px;
 }
-dl dt{
+dl.defaultStyle dt{
     font-size: 35px; color: orange;
 }
-dl dd{
+dl.defaultStyle dd{
     font-size: 20px; color: brown;
 }
-section ul li{
+/* section ul li{
     background-color: transparent; color: black;
 }
 section ul li figure figcaption dl dt,
 section ul li figure figcaption dl dd{
     color: black; font-size: 16px;
-}
+} */
