@@ -16,7 +16,7 @@
     color: gray;
 }
 .btn.delete{
-    background-color: rgb(90, 0, 0); color: red; border-style: solid;
+    background-color: rgb(90, 0, 0); color: white; border-style: solid;
     border-color: red;
 }
 .btn.confirm{
