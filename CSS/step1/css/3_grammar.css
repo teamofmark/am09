@@ -1,0 +1,23 @@
+ul li,
+ol li{
+    background-color: lightblue;
+}
+ul li{
+    color: #60f; font-size: 13px;
+}
+ol li{
+    color: #f06; font-size: 24px;
+}
+dl dt{
+    font-size: 35px; color: orange;
+}
+dl dd{
+    font-size: 20px; color: brown;
+}
+section ul li{
+    background-color: transparent; color: black;
+}
+section ul li figure figcaption dl dt,
+section ul li figure figcaption dl dd{
+    color: black; font-size: 16px;
+}
