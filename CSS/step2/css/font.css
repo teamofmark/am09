@@ -22,3 +22,24 @@ p.letter{
 p.word{
     word-spacing: 10px;
 }
+p.w_normal{
+    width: 150px; line-height: 21px; white-space: normal;
+    border: 1px solid magenta;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    border: 1px solid magenta; 
+}
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+/* 
+    ? vertical-align(수직정렬)
+    * 1. display: inline, inline-block인 애들끼리만. (ex> div(block) -> inline-block..)
+    * 2. 높은 애를 기준으로 preset(ex> top, middle, bottom).
+    * 3. 낮은 애를 기준으로 상대적 수치 (%)를 이용하여 세부조정.
+    ! 작은애의 높이를 기준으로 100%를 잡고, 위(+),아래(-).
+*/
