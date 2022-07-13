@@ -43,3 +43,11 @@ p.w_nowrap{
     * 3. 낮은 애를 기준으로 상대적 수치 (%)를 이용하여 세부조정.
     ! 작은애의 높이를 기준으로 100%를 잡고, 위(+),아래(-).
 */
+p.t_indent{
+    text-indent: 50px; font-size: 30px;
+}
+
+.test{
+    background: url('https://via.placeholder.com/150x50?text=blablaButton');
+    border: none; width: 150px; line-height: 50px; text-indent: -9999px;
+}
