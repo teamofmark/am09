@@ -1,0 +1,14 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png');
+
+    background-size: contain;
+    /* 
+		* %,px 등의 단위도 사용가능
+		? cover : cover 는 무조건 꽉채움.
+		? contain : contain은 종횡비 로 꽉채움.(너비나 높이 중 먼저 한계선에 닿는 부분 우선)
+    */
+}
