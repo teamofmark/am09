@@ -51,8 +51,21 @@ p.t_indent{
     background: url('https://via.placeholder.com/150x50?text=blablaButton');
     border: none; width: 150px; line-height: 50px; text-indent: -9999px;
 }
-
+a{
+    display: block;
+}
 a.t_deco_N{text-decoration: none; text-transform: none; color: #090;}
-a.t_deco_U{text-decoration: ; text-transform: ; color: #0cf;}
-a.t_deco_O{text-decoration: ; text-transform: ; color: #96c;}
-a.t_deco_T{text-decoration: ; text-transform: ; color: #f6c;}
+a.t_deco_U{text-decoration: underline; text-transform: lowercase; color: #0cf;}
+a.t_deco_O{text-decoration: overline; text-transform: capitalize; color: #96c;}
+a.t_deco_T{text-decoration: line-through; text-transform: uppercase; color: #f6c;}
+
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: right;
+    /* text-align: center : 중앙정렬 */
+    /* ! text-align은 inline,inline-block 요소만을 정렬할 수 있다. */
+}
