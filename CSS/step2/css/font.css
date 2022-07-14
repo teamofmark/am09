@@ -51,3 +51,8 @@ p.t_indent{
     background: url('https://via.placeholder.com/150x50?text=blablaButton');
     border: none; width: 150px; line-height: 50px; text-indent: -9999px;
 }
+
+a.t_deco_N{text-decoration: none; text-transform: none; color: #090;}
+a.t_deco_U{text-decoration: ; text-transform: ; color: #0cf;}
+a.t_deco_O{text-decoration: ; text-transform: ; color: #96c;}
+a.t_deco_T{text-decoration: ; text-transform: ; color: #f6c;}
