@@ -3,12 +3,18 @@ html,body{
 }
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
 
-    background-size: contain;
+    background-size: 50%, 100%;
     /* 
 		* %,px 등의 단위도 사용가능
 		? cover : cover 는 무조건 꽉채움.
 		? contain : contain은 종횡비 로 꽉채움.(너비나 높이 중 먼저 한계선에 닿는 부분 우선)
     */
+    background-repeat: no-repeat;
+    background-position: center, center top;
+    background-attachment: fixed, scroll;
+}
+p{
+  height: 2000px;
 }
