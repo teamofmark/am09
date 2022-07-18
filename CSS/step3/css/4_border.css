@@ -1,0 +1,14 @@
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+
+.singleBox{
+    border: 3px solid #60f;
+}
+
+.multiBox{
+    border-width: 1px 3px;
+    border-style: solid dotted;
+    border-color: #1958b7 #f06;
+    /* ? 속성적용시 방향이 남게되고, 방향적용시 속성이 남게된다. */
+}
