@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    background-color: #555;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.secondDiv{
+    background-color: #ddd;
+    margin: 20px 15px;
+}
+/* 
+    ! firstDiv의 margin-bottom: 10px 상쇄.
+    ? secondDiv의 margin과 만나는 부분에서 가산없이 병합.
+    * x축은? -left로 주로 활용.
+*/
