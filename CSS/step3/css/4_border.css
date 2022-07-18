@@ -34,3 +34,12 @@ div{
 .outsetBox:hover{
     border-style: inset;
 }
+.radiusBox{
+    background-color: black; color: yellow;
+    border-radius: 20px 0;
+}
+.circleBox{
+    width: 500px; height: 500px; background-color: midnightblue;
+    border-radius: 250px; line-height: 500px; color: white;
+    text-align: center; text-indent: -9999px;
+}
