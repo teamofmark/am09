@@ -18,3 +18,23 @@ body{
     ? secondDiv의 margin과 만나는 부분에서 가산없이 병합.
     * x축은? -left로 주로 활용.
 */
+.secondDiv article{
+    background-color: #930; margin: 10px;
+}
+
+.centerDiv{
+    width: 300px; border: 1px solid #33f;
+    padding: 10px; margin: 0 auto; text-align: center;
+    /* 
+        ? 0(상,하) auto(좌,우)는 좌측과 우측에
+        ? browser가 자신의 width - 대상의 width /2 를 통해 공통 margin을 부여
+        * 그렇기 때문에 가운데 배치 가능.
+    */
+}
+.centerDiv article{
+    margin: 0 10px; background-color: #f33; color: white;
+}
+
+.paddingDiv{
+
+}
