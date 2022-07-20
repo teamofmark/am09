@@ -13,6 +13,7 @@ header nav{
 .wrap{
     margin-bottom: 20px;
 }
+/* ? 만약 부모 공간에 overflow 옵션이 들어가는 경우 :afterCancel 생략가능 */
 .wrap:after{
     content: ''; display: block; clear: both;
 }
