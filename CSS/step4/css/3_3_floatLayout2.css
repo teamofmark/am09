@@ -23,6 +23,20 @@
 .wrap header nav{
     background-color: blue; width: 800px;
 }
+
+.wrap header nav ul{
+    text-align: center;
+    /* width: 500px; margin: 0 auto; */
+}
+/* .wrap header nav ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header nav ul li{
+    float: left; display: block;
+}
+.wrap header nav ul li a{
+    color: white;
+} */
 .wrap header nav ul{
     text-align: center;
 }
