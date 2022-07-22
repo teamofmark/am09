@@ -1,0 +1,60 @@
+html,body,.wrap{
+    height: 100%;
+}
+*{
+    margin: 0; padding: 0;
+}
+.wrap aside{
+    height: 100%; width: 250px; background-color:turquoise; padding: 30px 15px;
+    box-sizing: border-box; position: fixed; left: 0; top: 0;
+}
+.wrap aside h1{
+    text-align: center; margin-bottom: 50px;
+}
+.wrap aside h1 a{
+    display: block;
+}
+.wrap aside ul{
+    list-style: none; text-align: center;
+}
+.wrap aside ul li{
+     margin-bottom: 15px;
+}
+.wrap aside ul li a{
+    display: block; font-size: 20px; line-height: 26px; color: green;
+    text-decoration: none;
+}
+.wrap aside ul li a:hover{
+    text-decoration: underline; color: darkmagenta;
+}
+.wrap aside footer{
+    position: absolute; bottom: 30px; left: 0; background-color: midnightblue; color: white;
+    font-size: 12px; width: 100%; text-align: center;
+}
+.wrap article{
+    padding-left: 265px; background-color: palegoldenrod;
+}
+.wrap article h2,
+.wrap article blockquote,
+.wrap article q{
+    margin-bottom: 100px;
+}
+.wrap article h2{
+    font-size: 40px; color: forestgreen; font-weight: bold;
+}
+.wrap article blockquote{
+    border: 5px solid yellowgreen; padding: 30px; box-sizing: border-box;
+    font-size: 26px;
+}
+.wrap article q{
+    display: block; font-size: 21px;
+}
+.wrap article div{
+    margin-bottom: 50px;
+}
+.wrap article div h3{
+    color: rebeccapurple; font-size: 30px; margin-bottom: 50px;
+}
+.wrap article div p{
+    font-size: 21px; line-height: 40px; color: darkolivegreen;
+}
