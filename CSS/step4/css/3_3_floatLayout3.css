@@ -35,3 +35,27 @@ header nav ul li:not(:first-child){
 header nav ul li a{
     text-decoration: none; color: black; display: block;
 }
+header nav ul li a:hover{
+    color: white;
+}
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+.wrap img{
+    width: 100%; margin-bottom: 30px;
+}
+.wrap div{
+    width: 310px; border: 1px solid #999; box-sizing: border-box; float: left;
+}
+.wrap div:not(:first-of-type){
+    margin-left: 15px;
+}
+.wrap div h3{
+    margin: 0 0 20px;
+}
+.wrap div ul{
+    margin: 0; padding: 0; list-style: none;
+}
+footer{
+    background-color: #069; color: #fff; line-height: 40px; text-align: center;
+}
