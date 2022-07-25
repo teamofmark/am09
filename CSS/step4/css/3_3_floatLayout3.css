@@ -1,0 +1,37 @@
+body{
+    margin: 0 auto; width: 960px;
+}
+header{
+    background-color: skyblue; position: relative;
+}
+header h1{
+    background-color: #66f; width: 250px; font-size: 16px; text-align: center; color: white;
+    line-height: 40px; margin: 0 auto;
+}
+header div{
+    position: absolute; top: 25px; right: 0;
+}
+header div form input{
+    vertical-align: middle; font-size: 14px;
+}
+header div form input[type='search']{
+    border: 2px solid mediumblue; padding: 5px 10px;
+}
+header div form input[type='submit']{
+    background-color: transparent; padding: 3px 10px;
+}
+header nav{
+    background-color: #3cf;
+}
+header nav ul{
+    text-align: center; margin: 0; padding: 0; line-height: 40px;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li:not(:first-child){
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration: none; color: black; display: block;
+}
