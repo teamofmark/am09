@@ -82,3 +82,33 @@
 .stringAttrSelector img[src$='gif']{
     width: 300px; border: 10px solid blue;
 }
+.stringAttrSelector h1[title *= "탈의실"]{
+    font-size: 15px;
+}
+.stringAttrSelector h1[title *= "제목"]{
+    background-color: black; color: yellow;
+}
+.stringAttrSelector h1[title ^= "남자"]{
+    color: blue;
+}
+.stringAttrSelector h1[title $= "여자"]{
+    color: violet;
+}
+.eventSelector a{
+    display: block; line-height: 50px;
+}
+.eventSelector a:link{
+    font-size: 13px; color: red; text-decoration: none;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue; text-decoration: overline;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green; text-decoration: underline;
+}
+.eventSelector a:visited{
+    font-size: 13px; color: gray; text-decoration: line-through;
+}
+.eventSelector a:focus{
+    font-size: 40px; color: magenta;
+}
