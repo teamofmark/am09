@@ -37,11 +37,14 @@
 }
 .attrSelector fieldset ul li input[type="radio"],
 .attrSelector fieldset ul li input[type="checkbox"]{
-    width: 25px; height: 25px;
+    width: 25px; height: 25px; 
 }
 .attrSelector fieldset ul li input[type='text']{
     /* todo. */
+    background-color: salmon; border: 3px solid sandybrown; color: maroon;
 }
 .attrSelector fieldset ul li input[type='password']{
     /* todo. */
+    background-color: lightgreen; border: 3px solid lime; color: darkgreen;
 }
+/* ? attrSelector */
