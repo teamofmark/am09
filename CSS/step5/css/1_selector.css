@@ -107,8 +107,9 @@
     font-size: 30px; color: green; text-decoration: underline;
 }
 .eventSelector a:visited{
-    font-size: 13px; color: gray; text-decoration: line-through;
+    font-size: 13px; color: gray; 
 }
 .eventSelector a:focus{
     font-size: 40px; color: magenta;
+    /* outline: transparent; */
 }
