@@ -47,4 +47,20 @@
     /* todo. */
     background-color: lightgreen; border: 3px solid lime; color: darkgreen;
 }
-/* ? attrSelector */
+/* ? 속성별선택자 */
+
+.directSelector > h1{
+    font-size: 22px; color: slateblue;
+}
+.directSelector > span{
+    font-size: 22px; color: magenta; line-height: 40px;
+}
+/* ? 직계선택자 */
+
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/* ? 동위선택자 */
