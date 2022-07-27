@@ -113,3 +113,27 @@
     font-size: 40px; color: magenta;
     /* outline: transparent; */
 }
+
+.statusSelector input[type='checkbox']+label{
+    overflow: hidden; display: inline-block; height: 20px;
+    transition-duration: 0.75s;
+    -ms-transition-duration: 0.75s;
+    -webkit-transition-duration: 0.75s;
+    -moz-transition-duration: 0.75s;
+    -o-transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0;
+}
+.statusSelector input[type='text']::placeholder{
+    color: limegreen;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='text']:hover{
+    background-color: deeppink; color: black;
+}
+.statusSelector input[type='text']:disabled{
+    background-color: #eaeaea; color: #9c9c9c;
+}
