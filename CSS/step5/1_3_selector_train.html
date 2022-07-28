@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector Example - login</title>
+    <link rel="stylesheet" href="css/1_3_selector_train.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">login</a></li>
+                <li><a href="#">join</a></li>
+                <li><a href="#">lost</a></li>
+                <li><a href="#">help</a></li>
+            </ul>
+        </nav>
+        <h1>member's login</h1>
+        <form>
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="userID">id</label>
+                        <input type="text" id="userID" maxlength="8" required>
+                    </li>
+                    <li>
+                        <label for="userPW">pw</label>
+                        <input type="password" id="userPW" maxlength="16">
+                    </li>
+                </ul>
+            </fieldset>
+            <input type="submit" value="login">
+        </form>
+    </div>
+</body>
+</html>
