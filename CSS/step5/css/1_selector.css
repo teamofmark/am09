@@ -179,3 +179,15 @@
 .backandfrontSelector p::after{
     content: "-" attr(data-page) "page"; font-weight: bold; color: deeppink;
 }
+
+.reactionSelector > *{
+    color: #fff;
+}
+.reactionSelector > *::selection{
+    background-color: #000;
+    color: #ff0;
+}
+
+.notSelector input:not([type='submit'],[type='password']){
+    background-color: red;
+}
