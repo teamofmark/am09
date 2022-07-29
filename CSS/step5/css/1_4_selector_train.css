@@ -1,0 +1,19 @@
+div:first-of-type{
+    max-width: 960px; margin: 0 auto;
+}
+div:first-of-type fieldset{
+    border: 1px solid #05f; margin: 0; padding: 15px 20px 25px;
+}
+div:first-of-type fieldset:not(:last-of-type){
+    margin-bottom: 25px;
+}
+div:first-of-type fieldset label{
+    display: inline-block; vertical-align: middle;
+}
+div:first-of-type fieldset textarea{
+    display: block; width: 100%; border: 1px solid #50f; box-sizing: border-box; padding: 10px 1%;
+    height: 150px; resize: none; transition-duration: 0.75s;
+}
+div:first-of-type fieldset input[type='checkbox']:checked + textarea{
+    height: 0; padding: 0 1%;
+}
