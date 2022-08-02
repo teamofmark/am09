@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+.durationEX1{
+    width: 100px; height: 100px; background-color: #ff0; transition-duration: 2s;
+}
+.durationEX1:hover{
+    width: 200px; height: 200px;
+}
+.durationEX1:active{
+    background-color: #f00;
+}
+
+.durationEX2{
+    width: 200px; height: 200px; font-size: 16px; background-color: #ff6a00; padding: 30px;
+    transition-duration: 2s;
+}
+.durationEX2:hover{
+    padding: 10px; font-size: 12px;
+}
+.durationEX2:active{
+    padding: 30px; font-size: 16px;
+}
