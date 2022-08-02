@@ -41,3 +41,40 @@ body, ul, dl, dt, dd{
 .visibilityProperty input[type='checkbox']:checked~table caption{
     display: table-caption;
 }
+
+.opacityProperty ul:after{
+    content: ''; display: block; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float: left; width: 33%; background-color: black; position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure{
+    margin: 0;
+}
+.opacityProperty ul li figure img{
+    width: 100%; opacity: 0.3;
+}
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li figure figcaption{
+    position: absolute; width: 25%; height: 15%; padding: 5%; left: 32.5%; top: 37.5%;
+    /* min-width: 110px; min-height: 100px; */ font-size: 1vw; text-align: center;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+
