@@ -38,22 +38,26 @@ ul{
 .delay2 ul li:nth-child(5){transition-delay: 2s; background-color: #990;}
 .delay2 ul li:nth-child(6){transition-delay: 2.5s; background-color: #c60;}
 
-.delay3 ul{height:300px; background-color:#000;}
+.delay3 ul{height:300px; background-color:#000; margin-bottom: 200px;}
 .delay3 ul:after{content:''; display:block; clear:both; visibility:hidden;}
 .delay3 ul li{display:block; float:left; width:20%; height:0;
 transition-duration:3s;}
 
+.delay3 ul:hover li{
+    height: 300px; background-color: #ff0;
+}
+
 .delay3 ul li:nth-child(1){
-    transition-timing-function: ;
+    transition-timing-function: linear;
 }
 .delay3 ul li:nth-child(2){
-    transition-timing-function: ;
+    transition-timing-function: ease-in;
 }
 .delay3 ul li:nth-child(3){
-    transition-timing-function: ;
+    transition-timing-function: ease-in-out;
 }
 .delay3 ul li:nth-child(4){
-    transition-timing-function: ;
+    transition-timing-function: ease-out;
 }
 .delay3 ul li:last-child{
     transition-timing-function: cubic-bezier(0,.98,1,.01);
