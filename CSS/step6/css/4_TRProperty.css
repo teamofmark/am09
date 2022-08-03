@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+.property{
+    width: 610px; margin: 0 auto; border: 3px solid #3a00b6;
+}
+.property span{
+    display: block; width: 10px; height: 50px; background-color: #0cf;
+    margin: 5px; transition-property: background-color, width;
+    transition-duration: 5s, 1s;
+    /* * transition: all 5s ease-in-out 1s; */
+    /* ? transition: [property] [duration] [timingfunction] [delay]*/
+}
+.property:hover span:nth-child(1){
+    background-color: red; width: 100px;
+}
+.property:hover span:nth-child(2){
+    background-color: orange; width: 200px;
+}
+.property:hover span:nth-child(3){
+    background-color: green; width: 300px;
+}
+.property:hover span:nth-child(4){
+    background-color: yellow; width: 400px;
+}
+.property:hover span:nth-child(5){
+    background-color: pink; width: 500px;
+}
