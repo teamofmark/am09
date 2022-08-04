@@ -25,6 +25,25 @@ body{
         left: 500px; transform: rotate(360deg);
     }
 }
+/* 
+    ? animation
+    * 1. 대상요소에 animation-name으로 keyframe set(moveCircle). (css = 소수점 두자리 까지.)
+    * 2. duration으로 재생시간 설정.
+    * 3. timing-function 으로 가속도 설정.
+    * 4. iteration-count 로 반복 횟수 설정.(infinite = 무한)
+    * 5. direction으로 재생방향설정(iteration-count 필요.)
+*/
+
 .circle:hover{
     animation-play-state: paused;
 }
+/* 
+    ? play-state : paused 중지, running 재생.
+*/
+/* 
+    ?keyframes
+    * 0 ~ 100% 사이 소수점 포함 입력 가능
+    * keyframe start = from, end = to, 나머지는 %
+    ! ex> 0 - 50% - 100% (위 예제)
+    *  rotate는 회전속성, deg는 각도를 뜻한다.
+*/
