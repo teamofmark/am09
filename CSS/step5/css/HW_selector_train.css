@@ -1,0 +1,13 @@
+body{
+    margin: 0 auto; width: 70%;
+}
+ul{
+    padding: 0; list-style: none;
+}
+ul li:first-child,
+ul li:last-child{
+    border-bottom: 1px solid deeppink;
+}
+ul li:first-child{
+     background-color: #666;
+}
