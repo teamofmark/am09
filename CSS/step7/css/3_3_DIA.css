@@ -21,3 +21,9 @@ div span:nth-of-type(2){background-color: green; transform: rotateY(90deg) trans
 div span:nth-of-type(3){background-color: blue; transform: rotateY(180deg) translateZ(100px);}
 div span:nth-of-type(4){background-color: yellow; transform: rotateY(270deg) translateZ(100px);}
 /* todo.2 사각형 위아래 지붕,바닥 덮기*/
+div span:nth-of-type(5){
+    background-color: magenta; height: 200px; transform: rotateX(90deg) translateZ(100px);
+}
+div span:nth-of-type(6){
+    background-color: cyan; height: 200px; transform: rotateX(270deg);
+}
