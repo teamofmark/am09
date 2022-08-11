@@ -1,6 +1,9 @@
 body{
-    width: 200px; margin: 200px auto;
-
+    width: 200px; margin: 200px auto; perspective: 300px;
+/* 
+    ?perspective
+    ! 대상 면적 x2가 적당. 너무 높은 값 자제. (2000px정도 limit) 대상3D원근처리
+*/
 }
 div{
     width: 200px; height: 200px; position: relative; transform-style: preserve-3d;
@@ -18,7 +21,12 @@ div{
 
 div span{
     width: 200px; height: 200px; position: absolute; left: 0; top: 0; opacity: 0.5;
-
+    backface-visibility: visible;
+    /* 
+    ?backface-visibility(이면가시성)
+    *visible : default. 이면을 보이겠다.
+    *hidden : 이면을 보이지 않겠다.
+     */
 }
 div span:nth-of-type(1){background-color: red; transform: rotateY(0deg) translateZ(100px);}
 div span:nth-of-type(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
