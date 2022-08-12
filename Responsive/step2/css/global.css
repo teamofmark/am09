@@ -1,0 +1,14 @@
+
+
+@media screen and (min-width: 1280px){
+    body{
+        background-color: blue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
+    }
+}
+/*Desktop Device - 사용자 해상도가 1025 이상일때 이 코드가 실행됨. pc 코드를 작성한다.*/
