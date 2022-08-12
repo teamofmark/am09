@@ -1,5 +1,18 @@
 
 
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    body{
+        background-color: green; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: right;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem;
+    }
+}
+/* ? Tablet Device - 사용자 해상도가 768px 이상 1025px 미만 일 때 이 코드가 실행됨.  태블릿 코드를 작성한다.*/
+
 @media screen and (min-width: 1280px){
     body{
         background-color: blue; color: white; font-weight: bold;
@@ -11,4 +24,4 @@
         font-size: 1rem; text-align: right; line-height: 1.5rem;
     }
 }
-/*Desktop Device - 사용자 해상도가 1025 이상일때 이 코드가 실행됨. pc 코드를 작성한다.*/
+/* ? Desktop Device - 사용자 해상도가 1025 이상일때 이 코드가 실행됨. pc 코드를 작성한다.*/
