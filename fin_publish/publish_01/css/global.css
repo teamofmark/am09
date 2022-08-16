@@ -1,0 +1,42 @@
+
+header > div nav ul li a{
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+}
+/* ?All Use */
+
+@media screen and (min-width:1280px){
+    header{
+        padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
+    }
+    header > div{
+        max-width: 940px; margin: 0 auto; position: relative;
+    }
+    header > div h1{
+        max-width: 128px;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div nav{
+        position: absolute; right: 0; top: 0; width: 100%; padding-left: 130px; box-sizing: border-box;
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header > div nav ul li a{
+        color: white; font-size: 13px; font-weight: 900; display: block; line-height: 50px;
+    }
+}
+/* ?desktop */
+/* ?global - 공용사용요소들 정리.(header,footer,popup,aside.....) */
