@@ -1,6 +1,41 @@
 
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        background-color: orange; color: black; font-weight: bold;
+    }
+    h1{
+        font-size: 1.5rem; line-height: 2rem; text-align: center;
+    }
+    p{
+        font-size: 0.75rem; line-height: 1.5rem; text-align: center;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: red; color: white; font-weight: normal;
+    }
+    h1{
+        font-size: 1.5rem; line-height: 2rem; text-align: left;
+    }
+    p{
+        font-size: 0.75rem; line-height: 1.5rem; text-align: left;
+    }
+}
+/* ? mobile Device - 사용자 해상도가 768px 미만 일 때 이 코드가 실행됨.  모바일(스마트폰) 코드를 작성한다.*/
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: greenyellow; color: green; font-weight: bold;
+    }
+    h1{
+        font-size: 3rem; line-height: 4rem; text-align: center;
+    }
+    p{
+        font-size: 2rem; line-height: 2rem; text-align: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
     body{
         background-color: green; color: white; font-weight: bold;
     }
