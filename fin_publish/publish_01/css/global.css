@@ -73,7 +73,23 @@ a{
     header > div > ul li a.btn_more{
         max-width: 120px; margin: 0 auto;
     }
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; width: 8px; height: 8px; border: 1px solid rgba(255,255,255,0.6);
+        text-indent: -9999px; border-radius: 5px;
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* ?header Fin */
 
+    
 }
 /* ?desktop */
 /* ?global - 공용사용요소들 정리.(header,footer,popup,aside.....) */
