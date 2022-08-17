@@ -1,10 +1,18 @@
 
-header > div nav ul li a{
+header > div nav ul li a,
+header > div > ul li p{
     font-family: 'Roboto';
+}
+header > div > ul li h2{
+    font-family: 'Playfair Display';
 }
 
 a{
     text-decoration: none;
+}
+.btn_more{
+    font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
+    font-size: 16px; border: 1px solid #00e0d0; color: #00e0d0;
 }
 /* ?All Use */
 
@@ -37,6 +45,27 @@ a{
     header > div nav ul li a{
         color: white; font-size: 13px; font-weight: 900; display: block; line-height: 50px;
     }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? header GNB Fin */
+
+    header > div > ul{
+        margin-bottom: 125px;
+    }
+    header > div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header > div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; line-height: 24px; text-align: center;
+        max-width: 775px; margin: 0 auto 50px;
+    }
+
 }
 /* ?desktop */
 /* ?global - 공용사용요소들 정리.(header,footer,popup,aside.....) */
