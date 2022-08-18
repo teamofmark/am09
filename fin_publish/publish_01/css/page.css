@@ -27,5 +27,10 @@
         max-width: 120px;
     }
     /* ? CI Figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') left top / cover no-repeat;
+        padding: 200px 0;
+    }
 }
 /* ?desktop */
