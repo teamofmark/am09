@@ -125,8 +125,30 @@ a{
         font-style: normal;
     }
     footer > div div:nth-of-type(2) address span{
-        display: block; padding-left: 30px;
+        display: block; padding-left: 30px; background-repeat: no-repeat; background-position: left 5px;
     }
+    footer > div div:nth-of-type(2) address span:nth-of-type(1){
+        background-image: url('../images/bul_map.png');
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(2){
+        background-image: url('../images/bul_phone.png');
+    }
+    footer > div div:nth-of-type(3) input{
+        float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; font-size: 14px; border: 1px solid rgba(255,255,255,0.5); color: rgba(255,255,255,0.75);
+        line-height: 43px; padding: 0 15px; display: block; box-sizing: border-box;
+        background-color: transparent;
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 43px;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+    }
+    footer > div div:nth-of-type(3) ul{
+        clear: left;
+    }
+    /* todo. SNS ICON 배치하기 */
 }
 /* ?desktop */
 /* ?global - 공용사용요소들 정리.(header,footer,popup,aside.....) */
