@@ -165,6 +165,19 @@ a{
     footer > div div:nth-of-type(3) ul li:nth-child(4) a{background-image: url('../images/ico_sns_04.png');}
     footer > div div:nth-of-type(3) ul li:nth-child(5) a{background-image: url('../images/ico_sns_05.png');}
     footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_sns_06.png');}
+
+    footer > div div:last-of-type{
+        clear: left; font-weight: 400;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
 }
 /* ?desktop */
 /* ?global - 공용사용요소들 정리.(header,footer,popup,aside.....) */
