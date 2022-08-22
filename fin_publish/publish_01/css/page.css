@@ -156,5 +156,44 @@
         max-width: 140px; margin: 0 auto;
     }
     /* ? worksArea Fin */
+
+    section.talkArea{
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0;
+        text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        padding-top: 70px; color: white; background: url('../images/quote.png') no-repeat center top;
+        font-size: 16px; font-weight: 400; max-width: 770px; margin: 0 auto 45px; line-height: 26px;
+    }
+    section.talkArea p > *{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin: 40px 0 10px; font-size: 14px; font-weight: 900; line-height: 14px;
+    }
+    section.talkArea p small{
+        font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7); line-height: 13px;
+    }
+    section.talkArea div{
+        max-width: 940px; margin: 0 auto;
+    }
+    section.talkArea div > *{
+        display: inline-block; vertical-align: middle;
+    }
+    section.talkArea div > a{
+        font-size: 20px; color: rgba(255,255,255,0.5);
+    }
+    section.talkArea div ul{
+        max-width: 310px; width: 33%;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
 }
 /* ?desktop */
