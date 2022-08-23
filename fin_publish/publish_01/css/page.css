@@ -7,10 +7,10 @@
         content: ''; display: block; clear: both;
     }
     #about img{
-        float: left; width: 25%; max-width: 235px;
+        float: left; width: /*25%*/ 32%; max-width: 235px;
     }
     #about figcaption{
-        float: left; margin-left: 15%; width: 60%;
+        float: left; margin-left: /*15%*/ 8%; width: 60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 30px;
