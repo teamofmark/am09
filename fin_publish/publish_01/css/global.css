@@ -367,6 +367,9 @@ section[class $= 'Area'] > hr{
     footer > div div:nth-of-type(2) address span:nth-of-type(2){
         background-image: url('../images/bul_phone.png');
     }
+    footer > div div:nth-of-type(3){
+        clear: left;
+    }
     footer > div div:nth-of-type(3) input{
         float: left; margin-bottom: 25px;
     }
