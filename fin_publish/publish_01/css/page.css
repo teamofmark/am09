@@ -176,8 +176,8 @@
         display: none;
     }
     section.talkArea p{
-        padding-top: 70px; color: white; background: url('../images/quote.png') no-repeat center top;
-        font-size: 16px; font-weight: 400; max-width: /*770px*/ 728px; margin: 0 auto 45px; line-height: 26px;
+        padding: 70px 3% 0; color: white; background: url('../images/quote.png') no-repeat center top;
+        font-size: 16px; font-weight: 400; max-width: /*728px*/ 600px; margin: 0 auto 45px; line-height: 26px;
     }
     section.talkArea p > *{
         display: block;
@@ -189,7 +189,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7); line-height: 13px;
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*728px*/ 600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -198,7 +198,7 @@
         font-size: 20px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/ 80%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
@@ -457,7 +457,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7); line-height: 13px;
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
