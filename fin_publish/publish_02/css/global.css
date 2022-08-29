@@ -17,7 +17,8 @@ a{
 /* ?all Use */
 @media screen and (min-width: 1280px){
     header > div,
-    footer > div{
+    footer > div,
+    header + nav .slideNav{
         max-width: 1170px; margin: 0 auto;
     }
     header{
@@ -166,5 +167,6 @@ a{
     footer > div:nth-child(2) span a:last-of-type{
         margin-left: 2.56%;
     }
+    /* ?footer Fin */
 }
 /* ?desktop */
