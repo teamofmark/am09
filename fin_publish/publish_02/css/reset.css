@@ -19,7 +19,9 @@ time, mark, audio, video {
     vertical-align:baseline;
     background:transparent;
 }
-
+ul{
+    line-height: normal;
+}
 body {
     line-height:1;
 }
