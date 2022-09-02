@@ -154,3 +154,17 @@
 */
 
 /* ! justify-Items, -self 는 display: grid 가 활성화 된 상태에서 확인 가능 -> 거의 사용 안함 */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: -1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 0;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/
