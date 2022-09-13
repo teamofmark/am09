@@ -58,3 +58,28 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// * 만들기 - 
+
+//? var userName; 변수 선언.
+//? userName = 'Mark'; 초기화.
+//? var userName = 'Mark';  변수 선언 및 초기화
+
+// * 동시 선언.
+
+var userName;
+var userAge;
+
+// * 동시 초기화.
+userName = 'Mark';
+userAge = '40';
+
+// * 변수의 특성
+var cup = 'Coffee'; //? cup을 만들고 coffee를 담았다. / cup을 만들고 coffee를 담았다.
+cup = 'Green Tea'; //? cup에 coffee를 버리고 Green Tea를 담았다. / cup을 만들고 GreenTea를 담았다.
+cup = 'Water'; //? cup에 Green Tea를 버리고 Water를 담았다. / cup을 만들고 Water를 담았다.
+
+
+// * 연산자 사용시
+var value = 10; //? value를 만들고 10을 담았다.
+value += 20;
