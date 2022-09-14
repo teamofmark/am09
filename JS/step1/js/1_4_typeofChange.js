@@ -81,17 +81,17 @@ function numbString(){
 
 function todo1(){
     var test = 100;
-    var result = test; //todo. 암시적 형변환으로 해보기
+    var result = test + ""; //todo. 암시적 형변환으로 해보기
     console.log(typeof(result) + ' = ' + result); // todo. 정상적으로 문자형태로 변환되었는지 check
 }
 function todo2(){
     var test = 100;
-    var result = test; // todo. 전역함수 사용하여 해보기
+    var result = String(test); // todo. 전역함수 사용하여 해보기
     console.log(typeof(result) + ' = ' + result); // todo. 정상적으로 문자형태로 변환되었는지 check
 }
 function todo3(){
     var test = 100;
-    var result = test; // todo. 꼬리함수 사용하여 해보기
+    var result = test.toString(); // todo. 꼬리함수 사용하여 해보기
     console.log(typeof(result) + ' = ' + result); // todo. 정상적으로 문자형태로 변환되었는지 check
 }
 
@@ -99,11 +99,11 @@ function todo3(){
 
 function todo4(){
     var test = "100.51";
-    var result = test + 150 + "20" // todo. 형변환(parse) 하여 연산 가능하게 만들기
+    var result = parseFloat(test) + 150 + parseInt("20"); // todo. 형변환(parse) 하여 연산 가능하게 만들기
     console.log(typeof(result) + ' = ' + result);
 }
 function todo5(){
     var test = "100.51";
-    var result = test + 150 + "20" // todo. 형변환(Number) 하여 연산 가능하게 만들기
+    var result = Number(test) + 150 + Number("20"); // todo. 형변환(Number) 하여 연산 가능하게 만들기
     console.log(typeof(result) + ' = ' + result);
 }
