@@ -94,3 +94,16 @@ function todo3(){
     var result = test; // todo. 꼬리함수 사용하여 해보기
     console.log(typeof(result) + ' = ' + result); // todo. 정상적으로 문자형태로 변환되었는지 check
 }
+
+// todo. 문자형을 숫자형으로 변환하여 연산이 가능하게 만들기
+
+function todo4(){
+    var test = "100.51";
+    var result = test + 150 + "20" // todo. 형변환(parse) 하여 연산 가능하게 만들기
+    console.log(typeof(result) + ' = ' + result);
+}
+function todo5(){
+    var test = "100.51";
+    var result = test + 150 + "20" // todo. 형변환(Number) 하여 연산 가능하게 만들기
+    console.log(typeof(result) + ' = ' + result);
+}
