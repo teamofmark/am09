@@ -15,3 +15,15 @@
 	alert('종료');
     
 */
+// *case.1 현재시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours(); //? 0 ~ 24시 로전달
+    // ? 변수 선언부
+    if(hour < 12){
+        alert('오전입니다.');
+    }
+    if(hour >= 12){
+        alert('오후입니다.');
+    }
+}
