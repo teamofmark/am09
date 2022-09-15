@@ -43,3 +43,49 @@
     ? 접근 연산자
     * .
 */
+// * case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장 후 출력.
+
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+
+// *case.2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장 후 출력.
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    var result = a*b/10;
+    console.log(result);
+}
+// *case.3 ul,li 구조의 tag를 html page에 삽입 후 출력.
+function operatorEX(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS..!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// todo.1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
+function numbOP3(){
+
+}
+// todo.2 'hi'가 담긴 변수 a와 'WEB'이 담긴 변수 b를 합쳐 'hiWEB'을 출력.
+function stringOP(){
+
+}
+// todo.3 다음 코드를 복합대입연산자를 이용하여 간소화.
+function compareOperator(){
+    var a = 10;
+    a = a + 20;
+    console.log('a = ' + a);
+}
+
+// todo.4 ++는 1씩 증가라는 뜻이다. 다음과 같은 경우 값을 미리 예상한 후 실행하여 확인하기.
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); //! 답 먼저 적고 확인하기 -
+    alert(number++); //! 답 먼저 적고 확인하기 -
+    alert(number++); //! 답 먼저 적고 확인하기 -
+}
