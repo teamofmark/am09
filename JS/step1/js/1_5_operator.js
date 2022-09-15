@@ -109,3 +109,32 @@ function numberPlusTodo(){
     alert(number--); //? 출력 : / 현재변수 : - 서술. 
     console.log(number); //? 출력 : / 현재변수 : - 서술. / 최종 number - ?. 
 }
+
+// *case.4 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+// ! 비교연산 -> boolean.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a>b;
+    console.log("10 > 20 = " + result);
+}
+// *case.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ?" + result);
+}
+// *case.6 a변수에는 '여자', b변수에는 '웹디자이너' 라는 값이 저장되어있다. 담겨있는 두 값이 모두 맞는지  result변수에 저장 후 출력.
+function logicalOperator1(){
+    var a = '여자';
+    var b = '웹디자이너';
+    var result = (a=="여자")&&(b=="웹디자이너");
+    console.log("result = " + result);
+}
+function logicalOperator2(){
+    var a = '남자';
+    var b = '웹개발자';
+    var result = (a=="남자")||(b=="웹퍼블리셔");
+    console.log("result = " + result);
+}
