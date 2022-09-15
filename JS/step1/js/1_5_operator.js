@@ -138,3 +138,9 @@ function logicalOperator2(){
     var result = (a=="남자")||(b=="웹퍼블리셔");
     console.log("result = " + result);
 }
+
+// todo. 다음 코드 작성후 결과를 예상한 다음 출력. 발생된 문제점을 해결하기.
+function compareOperator3(){
+    console.log(30 > 20 && 20 > 10); // ? 결과 : false
+    // * 30 > 20 = true -> true > 10 / comp: err. js : 1 > 10 = false. 
+}
