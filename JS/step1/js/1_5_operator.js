@@ -69,23 +69,43 @@ function operatorEX(){
 }
 // todo.1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
 function numbOP3(){
-
+    var result = 5%2;
+    console.log(result);
 }
 // todo.2 'hi'가 담긴 변수 a와 'WEB'이 담긴 변수 b를 합쳐 'hiWEB'을 출력.
 function stringOP(){
-
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a+b);
 }
 // todo.3 다음 코드를 복합대입연산자를 이용하여 간소화.
 function compareOperator(){
     var a = 10;
-    a = a + 20;
+    a += 20;
     console.log('a = ' + a);
 }
 
 // todo.4 ++는 1씩 증가라는 뜻이다. 다음과 같은 경우 값을 미리 예상한 후 실행하여 확인하기.
 function numberPlusAfter(){
     var number = 10;
-    alert(number++); //! 답 먼저 적고 확인하기 -
-    alert(number++); //! 답 먼저 적고 확인하기 -
-    alert(number++); //! 답 먼저 적고 확인하기 -
+    alert(number++); //! 답 먼저 적고 확인하기 - 10
+    alert(number++); //! 답 먼저 적고 확인하기 - 11
+    alert(number++); //! 답 먼저 적고 확인하기 - 12 / 최종 number - 13.
+}
+
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 10에 1을 더해서 11출력후, 다시 number로-
+    alert(++number); //? 11에 1을 더해서 12출력후, 다시 number로-
+    alert(++number); //? 12에 1을 더해서 13출력후, 다시 number로- / 최종 number - 13.
+}
+
+// todo. HW
+function numberPlusTodo(){
+    var number = 10;
+    alert(number++); //? 출력 : / 현재변수 : - 서술. 
+    alert(--number); //? 출력 : / 현재변수 : - 서술. 
+    alert(++number); //? 출력 : / 현재변수 : - 서술. 
+    alert(number--); //? 출력 : / 현재변수 : - 서술. 
+    console.log(number); //? 출력 : / 현재변수 : - 서술. / 최종 number - ?. 
 }
