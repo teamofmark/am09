@@ -54,3 +54,50 @@ function mealTime(){
     }
     // ? 2. 아침 조건, 점심 조건, 저녁조건 으로 나눠 alert 작성. 
 }
+
+// *case.3 양,음수 판별
+function numbJudgment(){
+    var numb = window.prompt('숫자를 입력하세요','양,음수 상관없음');
+    console.log(typeof(numb) + ' = ' + numb);
+    if(numb > 0){
+        alert('양수!');
+    }else if(numb < 0){
+        alert('음수!');
+    }else{
+        alert('0 이거나 잘못된 입력값입니다.');
+    }
+}
+
+// todo. 홀수, 짝수를 판별
+function oddOrEven(){
+    var numb = window.prompt('숫자를 입력하세요.','홀,짝을 구분해드립니다.');
+    if(numb%2 == 0){
+        alert('짝수');
+    }else if(numb%2 == 1){
+        alert('홀수');
+    }else{
+        alert('올바른 값을 입력하세요');
+    }
+    // ? 홀수와 짝수를 판별 (예외처리 - '올바른 값을 입력하세요').
+}
+// * case.4 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    var koreanScore = window.prompt('국어점수를 입력하시오.','');
+    var englishScore = window.prompt('영어점수를 입력하시오.','');
+    var mathScore = window.prompt('수학점수를 입력하시오.','');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미 입니다. 괜찮구먼');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양 입니다. 망했구먼');
+    }else{
+        alert('평균' + avg + '점 \n' + '가 입니다. 맞겠구먼');
+    }
+}
