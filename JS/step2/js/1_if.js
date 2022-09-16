@@ -27,3 +27,30 @@ function amORpm(){
         alert('오후입니다.');
     }
 }
+// *case.2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    // ? 변수선언부
+    if(day<30){
+        alert("아직 말일이 아닙니다.");
+    }else{ //? 위 조건외 나머지. / else if - 위 조건이 아니고 이 조건이라면
+        alert("말일입니다.");
+    }
+}
+
+// todo. 현재시각이 내가 조식 / 중식 / 석식중 어떤것을 먹어야할 시간인지 알려주는 조건문 짜기.
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+    // ? 1. 시간가져오기
+
+    if(hour < 11){
+        alert('아침먹을시간');
+    }else if(hour < 15){
+        alert('점심먹을시간');
+    }else{
+        alert('저녁먹을시간');
+    }
+    // ? 2. 아침 조건, 점심 조건, 저녁조건 으로 나눠 alert 작성. 
+}
