@@ -104,7 +104,11 @@ function avgScore(){
 // todo. 사용자 id(Mark)를 입력받아 맞다면 승인 메시지 출력.
 function userIDCheck(){
     var userID = window.prompt("사용자의 아이디");
-    if(){} //? 승인 되는 조건 - '접속승인' 과 예외 조건 - '잘못된 ID입니다.' 을 처리하시오.
+    if(userID=="Mark"){
+        alert('접속을 승인합니다.');
+    }else{
+        alert('잘못된 ID입니다.');
+    } //? 승인 되는 조건 - '접속승인' 과 예외 조건 - '잘못된 ID입니다.' 을 처리하시오.
 }
 
 // todo. 사용자 id(Mark)와 pasword(1234)를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
@@ -112,4 +116,9 @@ function userInfoCheck(){
     var userID = window.prompt('사용자의 아이디');
     var userPW = window.prompt('사용자의 패스워드');
     //? 승인 되는 조건 - '접속승인' 과 예외 조건 - 'ID 혹은 Password가 틀렸습니다.' 을 처리하시오.
+    if(userID == "Mark" && userPW == "1234"){
+        alert("접속승인");
+    }else{ //? else if(userID != "Mark" || userPW != "1234")
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
 }
