@@ -41,3 +41,33 @@ function whileBreak(){
     }
     document.write("최종 i = "+ i + "<br>"); //? 최종결과만 출력.
 }
+// todo. 구구단 숫자를 입력받아 출력하는 while문.
+// ? 1. 숫자를 입력받을 prompt 출력.
+// ? 2. 숫자를 입력받으면 해당 구구단을 출력하면 된다.
+// ! 9단 이내로만 입력받아야하고, 9단이 넘어갈 시 '9단 이하로 입력하세요.' alert 출력.
+function gugudan(){
+    var guguNumb = window.prompt('구구단 숫자를 입력 (1~9)');
+    var i = 1;
+
+    // ? 변수 -> 구구단 숫자를 입력받을 변수, 1~9까지 증가 해야하는 변수.
+    
+    // ? ? x 1~9 = (실제연산 ex> 2*1).
+
+    if(guguNumb <= 9){
+        while(i<=9){
+            document.write(guguNumb + 'x' + i + '=' + guguNumb*i + "<br>");
+            i++;
+        }
+    }else{
+        alert('9단 이하로 입력하세요.');
+    }
+
+    // ? 1. 거짓의 조건을 if? 참의 조건을 if?
+    
+}
+// todo. end가 입력될 때 까지 숫자를 계속해서 입력받아 입력값 합을 출력하고,
+// todo. prompt에는 몇번 수행 했는가에 대한 "x 번째 입력" 이 표시되야함.
+
+function sumNumb(){
+
+}
