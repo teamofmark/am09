@@ -89,3 +89,17 @@ function sumNumb(){
     }
 
 }
+
+function dowhileEx(){
+     //변수 선언
+     var value = 0;
+     //반복문
+     do {
+         alert(value + '번째 반복문');
+         value++;
+     } while (value < 5)
+     /*
+         do while 반복문은 조건이 참이든 거짓이든 한번은 무조건 실행 하는 반복문이다.
+         value가 5보다 작을때까지 총 ( 0,1,2,3,4 ) 5번의 얼럿을 띄운다.
+     */
+}
