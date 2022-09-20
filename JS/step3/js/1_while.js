@@ -69,5 +69,23 @@ function gugudan(){
 // todo. prompt에는 몇번 수행 했는가에 대한 "x 번째 입력" 이 표시되야함.
 
 function sumNumb(){
+    var i = 1; //? count Var
+    var result = 0; //? 합 결과를 담을 변수.
+    // ?선언부
+
+    while(true){
+        var numb = window.prompt(i + '번째 입력'); //? i가 증가될때마다 자동으로 변경되는 부분.
+
+        if(numb == "end"){ //? end라는 값과 일치하면
+            alert('입력이 종료되었습니다.');
+            break; //? loop중단 및 종료 경고창 출력.
+        }
+
+        result += parseInt(numb); //? 결과변수에 형변환 후 더해서 저장.
+        // ?처리부
+
+        document.write("현재까지의 총합 : " + result + '<br>'); //? 출력부 - 저장된 result 값을 출력.
+        i++; //? 잔여처리부 - 수행할 때마다 카운트 증가
+    }
 
 }
