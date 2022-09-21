@@ -60,3 +60,51 @@ function answer5(){
         document.write((11-i)+"<br>");  //? (11-)10~1 -> 1~10 출력.
     }
 }
+// *case.3 간단한 배열식으로 알아보는 배열.(자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력.)
+function favorFluit(){
+    var array = ["무화과","샤인머스캣","오렌지","메론","딸기"];
+    console.log(array.length);
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS단원 을 배열을 활용해 출력해보자.
+// * 변수,연산자,형변환,조건문if,조건문switch,반복문while,반복문for
+// * 출력구문 = 1번째 내용 = 변수 줄바꿈 ~ 7번째 내용 = 반복문for
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    for (var i = 0; i < data.length; i++){
+        document.write((i + 1) + "번째 내용 = " + data[i] + '<br>');
+    }
+}
+
+// *case. 4 역반복
+function reverseFavorFluit(){
+    var array = ["무화과","샤인머스캣","오렌지","메론","딸기"];
+    for(var i = array.length-1; i >= 0; i--){
+        document.write(array[i]);
+    }
+}
+
+// *case. 5 for continue
+function forContinue(){
+    for (var i = 0; i < 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i =' + i + '<br>');
+}
+// *case. 6 continue활용
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){//?
+        if(i % 2 == 1){//?
+            continue;
+            /*
+
+            */
+        }
+        output += i; //?
+        document.write(output+'<br>'); //?
+    }
+}
