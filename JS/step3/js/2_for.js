@@ -20,3 +20,43 @@ function namePrint10(){
         document.write(i+'.' + userName + '<br>');
     }
 }
+// *case.2 이름을 1,000번 출력.
+function namePrint1000(){
+    var userName = "Mark";
+    for (var i = 1; i <= 1000; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+function thinkJS(){
+    for (var i = 0; i < 10; i++){ //? 0 ~ 9 = 총 10회 반복.
+        document.write("i = " + i, "<br>"); //? html문서에 "i=0~9 줄바꿈포함" 출력
+    }
+    document.write("종료 i = " + i); //? ? 이미 변경된 10이 출력.
+}
+// todo. 1 ~ 10까지 출력되는 반복문들이다. js Engine처럼 생각하고 주석달기
+function answer1(){
+    for(var i=0; i<10; i++){ //? 
+        document.write((i+1)+"<br>"); //?
+    }
+}
+function answer2(){
+    for(var i=1; i<=10; i++){ 
+        document.write(i+"<br>"); 
+    }
+}
+function answer3(){
+    for(var i=100; i<110; i++){
+        document.write((i-99)+"<br>");
+    }
+}
+function answer4(){
+    for(var i=1; i<=10; i+=2){ 
+        document.write(i+"<br>");
+        document.write((i+1)+"<br>");
+    }
+}
+function answer5(){
+    for(var i=10; i>=1; i--){
+        document.write((11-i)+"<br>"); 
+    }
+}
