@@ -143,5 +143,16 @@ function halfPyramid(){
 }
 // todo.1 역반절 피라미드
 function reverserHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. H/W 완성체피라미드
+function pyramid(){
     
 }
