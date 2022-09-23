@@ -87,7 +87,7 @@ function infiniteSum(){
     document.write("총 " + count + "번 실행함.");
 }
 // todo. 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
-
+/*
     //* 실행구문
     document.write("1 결과 =" + calculator("+", 20, 10));
     document.write("2 결과 =" + calculator("-", 20, 10));
