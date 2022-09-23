@@ -37,3 +37,24 @@ function sumAll(){
     }
     console.log(willReturn);
 }
+function sumAllEX(){
+    var willReturn = 0;
+    for (var i in arguments){ //? A(var i=0;) in B (arguments.length) / IE 9이상.
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
+}
+// *case.4 "자신의 이름"의 나이는 "자신의 나이" 세입니다. 를 arguments를 이용해 만들기.
+function showInfo(){
+    console.log("0 = " + arguments[0]);
+    console.log("1 = " + arguments[1]);
+    console.log("2 = " + arguments[2]);
+    document.write(arguments[0] + "의 나이는" + arguments[1] + "세입니다." + "저의 성별은" + arguments[2] +"입니다.");
+}
+/*
+    ?return (리턴)
+    * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
+    * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대 되는 값.
+    * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를
+    * 함수 외부로 전달하기 위해 사용하는 출력 부.
+*/
