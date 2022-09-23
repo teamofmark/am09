@@ -58,3 +58,31 @@ function showInfo(){
     * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를
     * 함수 외부로 전달하기 위해 사용하는 출력 부.
 */
+// *case. 5 간단한 문법으로 원리 알아보기
+function f(x){ return x * x; }
+
+// *case. 6 두 수를 매개변수로 받고, 두 값을 더한 결과값을  return 하는 함수.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+// *case. 7 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// ! 단, 입력값이 0이라면 즉시 실행 중지.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+
+    while(true){
+        var value = parseInt(window.prompt("숫자만 입력해라."));
+        if(value == 0){
+            document.write("종료");
+            return;
+            // ? return 은 함수를 빠져나오지만(구문출력불가), break는 loop를 빠져나오기 때문에 '총 x 번 실행함' 구문 출력가능.
+        }
+        // ? infiniteLoop Logic
+        sum += value;
+        document.write(count + '.' + sum + '<br>');
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}
