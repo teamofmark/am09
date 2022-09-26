@@ -102,10 +102,28 @@ function infiniteSum(){
     결과 = 잘못된 연산자 입니다.
 */
 
-function calculator(){
-    // ? 결과를 담을 변수
+function calculator(op, numb1, numb2){
+    var result = '';// ? 결과를 담을 변수
     
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
     // ? 분기및처리 - switch(key?){case ? : 결과를담을변수 = ?;} x 4 그외 나머지처리.
 
+    return result;
     // ? 처리된 변수 (결과를 담을 변수) 내보내야지.(?)
 }
