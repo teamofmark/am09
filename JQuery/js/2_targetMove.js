@@ -43,6 +43,6 @@ function circleEvent(){
 
     circleMoveCommand(xpos,ypos);
 }
-function circleMovCommand(xpos,ypos){
-    
+function circleMoveCommand(xpos,ypos){
+
 }
