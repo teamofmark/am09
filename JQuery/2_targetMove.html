@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - 대상움직여보기</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/2_targetMove.js"></script>
+    <style>
+        /* exp.1~2 원움직이기 */
+        .circleWrap{
+            width: 430px;
+            height: 430px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+        }
+        .circleWrap [class*=circle]{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: black;
+            position:absolute;
+            left:0; top:0;
+            transition: all 0.35s linear;
+        }
+        .circleWrap #btnMoveCircle,
+        .circleWrap fieldset{
+            position: absolute;
+            bottom:0;
+            left: 43%;
+        }
+        .circleWrap fieldset > *{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
