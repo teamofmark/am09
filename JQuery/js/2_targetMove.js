@@ -1,12 +1,11 @@
 $(document).ready(function(){
     // *case.1 x축으로 움직이기
     $("#btnMoveCircle").click(moveCircle);
-
     // todo. x,y축으로 움직이기
     // $("#btnDetailMove").click(detailMoveCircle);
     // $("#btnDetailMove").click(circleEvent);
     detailMoveCircleExt();
-
+    keyControl();
 });
 
 function moveCircle(){
@@ -81,4 +80,15 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         })
     }
+}
+
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var cuurentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 키 코드" + e.keyCode);
+    });
 }
