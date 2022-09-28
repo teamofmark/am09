@@ -39,10 +39,20 @@ function detailMoveCircle(){
 }
 
 function circleEvent(){
-
-
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
     circleMoveCommand(xpos,ypos);
 }
 function circleMoveCommand(xpos,ypos){
-
+    var $circle = $(".circleDetail");
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
+    }
 }
