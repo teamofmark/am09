@@ -105,7 +105,18 @@ function keyControl(){
                 currentXpos -= range;
                 break;
         }
-
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
         // todo. 원이 박스를 벗어나지 못하게 가두기
 
         $circle.css("left", currentXpos);
