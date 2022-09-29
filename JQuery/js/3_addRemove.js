@@ -2,7 +2,7 @@ $(document).ready(function(){
     toggleCheck();
     // todo. toggleRadio 만들어보기
     toggleTodo();
-    tabUI();
+    tabUI(".tabMenu li","data-tabNumb");
 });
 function toggleCheck(){
     var $checkLabel = $(".label.checkLabel");// ? 시키는놈. -> button, input, click, keydown....
@@ -36,12 +36,12 @@ function toggleTodo(){
         }
     });
 }
-function tabUI(){
-    $(".tabMenu li").click(function(){
-        var activeTab = $(this).attr("data-tabNumb");
+function tabUI(btn,target){
+    $(btn).click(function(){
+        var activeTab = $(this).attr(target);
         console.log(activeTab);
         
-        $(".tabMenu li").removeClass("activated");
+        $(btn).removeClass("activated");
         $(this).addClass("activated");
 
         $(".tabPage").removeClass("activated");
