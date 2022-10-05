@@ -35,7 +35,7 @@ function startGame(){
     if(timerID == -1){
         timerID = setInterval(function(){
             updateFishPosition(); // ? 물고기움직임함수
-            // ? displayFishPositionInfo();  물고기현위치출력함수
+            displayFishPositionInfo();  // ? 물고기현위치출력함수
             // ? checkGoalFish();  물고기결승선감지함수
         },200);
     }
@@ -51,3 +51,13 @@ function updateFishPosition(){
     }
 }
 
+function displayFishPositionInfo(){
+    console.log("3. 출력한다. 이동거리");
+    var info = "";
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + "번 물고기 : " + $fish.position().left + "px 만큼 이동 <br>";
+    }
+
+    $info.html(info);
+}
