@@ -1,0 +1,6 @@
+.bx-wrapper .bx-caption{
+    background: rgba(255,0,0,0.5);
+}
+.bx-wrapper .bx-caption span{
+    color: lightpink; padding: 20px;
+}
