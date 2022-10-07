@@ -97,5 +97,4 @@ $(document).ready(function(){
         // ? reloadSlider : slider를 다시 불러오기. jquery mediaQuery. (ex> 장치변환시 slider 다시부르기.)
         // ? destroySlider : slider 없애기. (slider 구조도 사라짐.) 
     });
-    });
 });
