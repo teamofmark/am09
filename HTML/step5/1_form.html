@@ -12,10 +12,22 @@
             <legend>HTML4 Input</legend>
             <ul>
                 <li>
-                    <input type="text" id="">
+                    <label for="userName">사용자 이름 : </label>
+                    <input type="text" id="userName">
                 </li>
                 <li>
-                    <input type="password" id="">
+                    <input type="password" title="사용자의 비밀번호">
+                </li>
+                <li>
+                    <!-- ? (input:radio#btn_radio$+label{item$})*4 -->
+                    <input type="radio" name="" id="btn_radio1">
+                    <label for="">item1</label>
+                    <input type="radio" name="" id="btn_radio2">
+                    <label for="">item2</label>
+                    <input type="radio" name="" id="btn_radio3">
+                    <label for="">item3</label>
+                    <input type="radio" name="" id="btn_radio4">
+                    <label for="">item4</label>
                 </li>
             </ul>
         </fieldset>
