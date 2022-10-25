@@ -64,8 +64,28 @@
                     <!-- ? 전송기능도 수행 가능한 html5 button <button>비밀번호확인</button> -->
                     <input type="submit" value="확인">
                     <input type="reset" value="취소">
+                    <input type="file">
                 </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <label for="otherName">이름 :</label>
+            <input type="text" id="otherName" placeholder="8자미만으로 입력해주세요." required maxlength="7" autofocus readonly>
+            <input type="email" placeholder="teamofmark@gmail.com">
+            <input type="url" placeholder="https://file-examples.com">
+            <input type="tel">
+            <input type="number" min="1" max="10" step="1" value="1">
+            <input type="range" min="-2" max="2" step="1" value="0">
+            <input type="date">
+            <input type="month">
+            <input type="week">
+            <input type="time">
+            <input type="datetime-local">
+            <!-- <input type="datetime" name="" id="">  / 대부분 브라우저 지원불가-->
+            <input type="search" placeholder="검색어를 입력하세요." autocomplete>
+            <label for="typeColor">색상선택 : </label>
+            <input type="color" id="typeColor">
         </fieldset>
     </form>
 </body>
