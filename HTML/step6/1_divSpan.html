@@ -46,6 +46,29 @@
     </style>
 </head>
 <body>
-    
+    <div class="header">
+        <span>global header</span>
+        <!-- ? ul.nav > li{menu$}*5 -->
+        <ul class="nav">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+    </div>
+    <!-- ? .section>(.article>span{text})+(.aside>span{quickMenu}) -->
+    <div class="section">
+        <div class="article">
+            <span>text</span>
+        </div>
+        <div class="aside">
+            <span>quickMenu</span>
+        </div>
+    </div>
+    <!-- ? .footer>span{global footer} -->
+    <div class="footer">
+        <span>global footer</span>
+    </div>
 </body>
 </html>
