@@ -9,7 +9,7 @@
 }
 
 .btn.create{
-    background-color: white; color: black;
+    background-color: coral; color: black;
     border-style: solid; border-color: black;
 }
 .btn.modify{
@@ -30,4 +30,12 @@
     background-color: gray; color: lightgray;
     border-color: lightgray;
     border-style: dotted;
+}
+
+#userName{
+    border: 1px solid coral;
+    line-height: 21px;
+    font-size: 12px;
+    padding: 0 15px;
+    color: crimson;
 }
