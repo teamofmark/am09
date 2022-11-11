@@ -1,0 +1,21 @@
+html,body,.wrap{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/* ? background-image는 pattern(반복)이 기본 */
+.wrap p{
+    background-color: seagreen; padding: 20px;
+    margin: 0 0 20px;
+}
+.wrap button{
+    line-height: 75px; padding: 0 40px; color: white;
+    border: none; background-image: url('../images/pt_ex.png');
+    background-repeat: r;
+}
