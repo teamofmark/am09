@@ -65,12 +65,12 @@ a.t_deco_T{
 
 
 p.DR_ltr{
-    /* direction: ltr; */
-    text-align: left;
+    direction: ltr;
+    /* text-align: left; */
 }
 p.DR_rtl{
-	/* direction:rtl; */
-    text-align: right;
+	direction:rtl;
+    /* text-align: right; */
     /* center : 중앙 */
 }
 /* ! text-align은 inline 관련 속성을 정렬할 수 있다. */
