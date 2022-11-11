@@ -45,3 +45,32 @@ button.test{
     background: url('https://via.placeholder.com/150x50?text=blabla button') center / 150px no-repeat;
     width: 150px; line-height: 50px; text-indent: -9999px;
 }
+
+a{
+    display: block; margin: 10px;
+}
+
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: seagreen;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: slateblue;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color:salmon;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: steelblue;
+}
+
+
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+	/* direction:rtl; */
+    text-align: right;
+    /* center : 중앙 */
+}
+/* ! text-align은 inline 관련 속성을 정렬할 수 있다. */
