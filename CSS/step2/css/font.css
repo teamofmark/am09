@@ -38,3 +38,10 @@ p.w_nowrap{
 .v_alignTest span{
     vertical-align: -100%;
 }
+p.t_indent{
+    text-indent: 100px; font-size: 40px;
+}
+button.test{
+    background: url('https://via.placeholder.com/150x50?text=blabla button') center / 150px no-repeat;
+    width: 150px; line-height: 50px; text-indent: -9999px;
+}
