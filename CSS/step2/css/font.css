@@ -32,3 +32,9 @@ p.w_nowrap{
     text-overflow: ellipsis;
     overflow: hidden;
 }
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
