@@ -1,0 +1,14 @@
+html,
+body{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    height: 100%;
+    background-color: salmon;
+}
+.wrap p{
+    background-color: seagreen; padding: 15px;
+}
