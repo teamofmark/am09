@@ -1,0 +1,24 @@
+a{
+    text-decoration: none; font-size: 30px; word-spacing: 15px;
+    display: inline-block;
+    /* ? inline(content크기만큼만) + block(content크기와 상관없이 width: 100% 점유) */
+}
+a:link{
+    color: olive;
+}
+/* 평시상태 */
+
+a:visited{
+    color: darkred;
+}
+/* 방문한 적이 있는 */
+
+a:hover{
+    color: slateblue; text-decoration: underline;
+}
+/* 마우스커서를 올려놨을 때 */
+
+a:active{
+    color: magenta; font-size: 50px;
+}
+/* 활성화(click) 상태 */
