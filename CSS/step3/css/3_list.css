@@ -8,7 +8,9 @@ ul li.disc{
 ul li.square{
     list-style: square;
 }
-
+ol{
+    list-style: lower-roman;
+}
 ol li.decimal{
     list-style: decimal;
 }
