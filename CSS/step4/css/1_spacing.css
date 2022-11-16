@@ -3,3 +3,32 @@
 
     ? padding : 구조상 부모가 자손을 자신의 경계에 닿지 못하도록 넣는(pad) 여백.
 */
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin: 10px;
+    /* margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+}
+.secondDiv{
+    background-color: #ddd; margin: 20px 15px; /*? T/B : 20px, R/L : 15px*/
+}
+.secondDiv article{
+    background-color: #930; margin: 10px;
+}
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 10px; margin: 0 auto;
+    text-align: center;
+    /* 
+        ? margin: 0 auto?
+        * (공간 width - margin대상의 width) / 2
+    
+    */
+}
