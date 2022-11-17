@@ -1,17 +1,17 @@
 #wrap{
     margin: 0 auto; width: 300px; height: 200px; background-color: #999;
-
+    position: relative; overflow-y: scroll;
 }
 #wrap div{
     width: 150px; height: 150px;
-    position: absolute; left: 0;
+    position: absolute;
 }
 #wrap .redBox{
-    background-color: #f00; color: #fff;
+    background-color: #f00; color: #fff; left: 10px; top: 10px; z-index: 100;
 }
 #wrap .greenBox{
-    background-color: #0c0;
+    background-color: #0c0; left: 50px; top: 50px; z-index: 10;
 }
 #wrap .blueBox{
-    background-color: #39f;
+    background-color: #39f; left: 90px; top: 90px; z-index: 1;
 }
