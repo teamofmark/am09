@@ -1,0 +1,18 @@
+html,
+body,
+.wrap{
+    height: 100%;
+}
+*{
+    margin: 0; padding: 0;
+}
+.wrap aside{
+    width: 250px; height: 100%; background-color: palegreen; padding: 30px 15px;
+    box-sizing: border-box; position: fixed;
+}
+
+
+
+.wrap article{
+    padding-left: 265px; background-color: peachpuff;
+}
