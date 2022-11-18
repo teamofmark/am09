@@ -32,9 +32,40 @@ body,
     display: block; font-size: 20px; line-height: 26px; color:olive;
     text-decoration: none;
 }
+.wrap aside nav ul li a:hover{
+    text-decoration: underline; color: darkmagenta;
+}
+.wrap aside footer{
+    background-color: midnightblue; color: white; font-size: 12px; position: absolute;
+    bottom: 30px;
+}
 
 
 
 .wrap article{
     padding-left: 265px; background-color: peachpuff;
+}
+.wrap article h2,
+.wrap article blockquote,
+.wrap article q{
+    margin-bottom: 100px;
+}
+.wrap article h2{
+    font-size: 40px; color: forestgreen; font-weight: bold;
+}
+.wrap article blockquote{
+    border: 5px solid darkgreen; padding: 30px; box-sizing: border-box;
+    font-size: 26px;
+}
+.wrap article q{
+    font-size: 21px; display: block;
+}
+.wrap article div{
+    margin-bottom: 50px;
+}
+.wrap article div h3{
+    color: purple; font-size: 30px; margin-bottom: 50px;
+}
+.wrap article div p{
+    font-size: 21px; line-height: 40px;
 }
