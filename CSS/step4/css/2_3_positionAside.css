@@ -10,6 +10,28 @@ body,
     width: 250px; height: 100%; background-color: palegreen; padding: 30px 15px;
     box-sizing: border-box; position: fixed;
 }
+.wrap aside h1{
+    text-align: center; margin-bottom: 50px;
+}
+.wrap aside h1 a{
+    display: block;
+}
+.wrap aside h1 a img{
+    width: 100%;
+}
+.wrap aside nav ul{
+    list-style: none;
+}
+.wrap aside nav ul li{
+    text-align: center;
+}
+.wrap aside nav ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+.wrap aside nav ul li a{
+    display: block; font-size: 20px; line-height: 26px; color:olive;
+    text-decoration: none;
+}
 
 
 
