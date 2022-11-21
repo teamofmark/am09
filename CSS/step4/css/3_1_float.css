@@ -16,3 +16,7 @@
     background-color: springgreen;
     float: left;
 }
+.wrap .exam_3{
+    clear: both;
+    background-color: orange;
+}
