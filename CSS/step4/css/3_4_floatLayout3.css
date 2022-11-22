@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto; width: 960px;
+}
+header{
+    background-color: skyblue; position: relative;
+}
+header h1{
+    font-size: 16px; color: #fff; background-color: seagreen; width: 250px;
+    /* margin: 0 auto; */ text-align: center; margin: 0 auto; line-height: 40px;
+}
+header div{
+    position: absolute; right: 0; top: 24px;
+    /* line-height: 40px; <- input 계열 역시 내려받지 못한다.*/ 
+}
+header div input{
+    display: block; float: left; width: 20%; padding: 6px 0; box-sizing: border-box;
+    font-size: 14px; border: 1px solid darkslategray;
+}
+header div input#searchBar{
+    width: 80%; padding: 7px 0; background-color: lightpink;
+}
+header nav{
+    background-color: gray;
+}
+header nav ul{
+    margin: 0; padding: 0; text-align: center; line-height: 40px;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li.marginLeft{
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration: none; color: #000; display: block;
+}
+header nav ul li a:hover{
+    color: #fff;
+}
