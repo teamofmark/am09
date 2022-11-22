@@ -37,3 +37,25 @@ header nav ul li a{
 header nav ul li a:hover{
     color: #fff;
 }
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+.wrap img{
+    margin-bottom: 30px; width: 100%; display: block;
+}
+.wrap div{
+    width: 310px; border: 1px solid #999; box-sizing: border-box; float: left;
+}
+.wrap div.latest2,
+.wrap div.latest3{
+    margin-left: 15px;
+}
+.wrap div h3{
+    margin: 0 0 20px;
+}
+.wrap div ul{
+    margin: 0; padding: 0; list-style: none;
+}
+footer{
+    background-color: sandybrown; line-height: 40px; text-align: center;
+}
