@@ -55,3 +55,9 @@
     /* background-color: black; border: 5px solid yellowgreen; 적용불가*/
 }
 /* ? input 계열들중 동작과 관련된 (select..) 것들은 customize가 어렵다.*/
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; line-height: 40px; display: block;
+}
