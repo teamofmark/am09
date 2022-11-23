@@ -85,6 +85,19 @@
     * ~= : 띄어쓰기 기준. 해당 단어 포함.
 */
 /* todo. */
-.stringAttrSelector h1[title ? ""]{
-    /* * css 입력 */
+.stringAttrSelector h1[title |= "탈의실"]{
+    color: red;
 }
+.eventSelector a:link{
+    font-size: 13px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
+}
+/* ? a:visited => a:link. font-size변경불가 */
