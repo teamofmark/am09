@@ -37,6 +37,10 @@
     padding: 5px; vertical-align: middle;
 }
 .attrSelector fieldset ul li input[type='text']{
+    /* 
+    ? attr 호출시 반드시 tag를 넣어야만 하는건 아니다.
+    * 표준식 기준 - *[src*='place']{} 대상을 표기해주는게 좋다.
+    */
     background-color: salmon; border:3px solid lightyellow; color:maroon;
 }
 .attrSelector fieldset ul li input[type='password']{
@@ -50,3 +54,4 @@
     width: 25px; height: 25px;
     /* background-color: black; border: 5px solid yellowgreen; 적용불가*/
 }
+/* ? input 계열들중 동작과 관련된 (select..) 것들은 customize가 어렵다.*/
