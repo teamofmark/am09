@@ -118,3 +118,12 @@
 .statusSelector input[type='checkbox']:checked + label{
     height: 0;
 }
+
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='password']:disabled{
+    background-color: deeppink; color: black;
+    /* ! disabled != readonly */
+    /* ? seleted (selectTag) */
+}
