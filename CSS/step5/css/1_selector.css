@@ -100,4 +100,9 @@
 .eventSelector a:visited{
     font-size: 40px; color: yellowgreen;
 }
+.eventSelector input:focus{
+    color: red;
+    border: 3px solid red;
+    outline: 0;
+}
 /* ? a:visited => a:link. font-size변경불가 */
