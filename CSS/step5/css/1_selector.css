@@ -106,3 +106,15 @@
     outline: 0;
 }
 /* ? a:visited => a:link. font-size변경불가 */
+
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; height: 20px; overflow-y: hidden;
+    transition-duration: 0.75s;
+    -ms-transition-duration:0.75s; /* ? IE */
+    -webkit-transition-duration:0.75s;/* ? Chrome */
+    -moz-transition-duration:0.75s; /* ? FireFox */
+    -o-transition-duration:0.75s; /*? Opera*/
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0;
+}
