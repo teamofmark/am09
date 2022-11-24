@@ -197,3 +197,7 @@ IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
 .backandfrontSelector p::after{
     content: "-" attr(data-page) "page"; font-weight: bold; color: deeppink;
 }
+
+.reactionSelector > *::selection{
+    background-color: black; color: yellow;
+}
