@@ -188,3 +188,12 @@ IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
 .textSelector p::first-line{
     font-size: 24px; line-height: 30px; color: #090; text-decoration: underline;
 }
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) ".";
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; font-weight: bold; color: deeppink;
+}
