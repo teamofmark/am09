@@ -142,9 +142,43 @@
 .normalSelector ul li:last-child{
     border-radius: 0 10px 10px 0;
 }
-.normalSelector ul li:nth-child(odd){
+.normalSelector ul li:nth-child(2n+1){
     background-color: #444; color:  white;
 }
-.normalSelector ul li:nth-child(even){
+.normalSelector ul li:nth-child(2n){
     background-color: #09f;
+}
+
+
+.normalSelector table{
+	width:100%;
+	border-width:3px 1px 2px 1px;
+	border-style:solid;
+	border-color:#3CF;
+}
+.normalSelector table caption{color:#666; font-size:12px; line-height:40px;}
+.normalSelector table tr th,.normalSelector table tr td{
+	width:14.28%;
+	border-right:1px solid #3cf;
+	border-bottom:1px solid #3cf;
+	padding:10px 0;
+}
+.normalSelector table tr th{background-color:#6CF; }
+.normalSelector table tr td{text-align:center;}
+/*
+normal selector의 브라우저별 지원 현황
+IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
+
+    * http://nthmaster.com
+    * https://css-tricks.com/useful-nth-child-recipies/
+*/
+
+.shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+.shapeSelector h2:nth-of-type(2){
+    color: #0c6;
+}
+.shapeSelector h3:nth-of-type(2){
+    color: #f06;
 }
