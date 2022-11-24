@@ -181,3 +181,10 @@ IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
 .shapeSelector h3:nth-of-type(2){
     color: #f06;
 }
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: #03f;
+}
+.textSelector p::first-line{
+    font-size: 24px; line-height: 30px; color: #090; text-decoration: underline;
+}
