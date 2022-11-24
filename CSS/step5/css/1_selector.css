@@ -201,3 +201,7 @@ IE : 9.0 ~ , FireFox : 3.5~ , safari: 3.1~, opera : 9.5 ~, chrome : 2.0 ~
 .reactionSelector > *::selection{
     background-color: black; color: yellow;
 }
+
+.notSelector input:not([type='password'], [type='text']){
+    background-color: red;
+}
