@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>selector example - PRAF</title>
+    <link rel="stylesheet" href="css/1_5_selector_train.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>공용자원신청서</legend>
+            <ul>
+                <li>
+                    <label for="applyPart">신청자부서</label>
+                    <input type="text" id="applyPart">
+                </li>
+                <li>
+                    <label for="applyName">신청자이름</label>
+                    <input type="text" id="applyName">
+                </li>
+                <li>
+                    <label for="selectRe">공용자원선택</label>
+                    <select id="selectRe">
+                        <option value="SI">SI</option>
+                        <option value="SM">SM</option>
+                        <option value="PM">PM</option>
+                        <option value="PL">PL</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="useDate">사용시작일</label>
+                    <input type="date" id="useDate">
+                </li>
+                <li>
+                    <label for="useEndDate">사용종료일</label>
+                    <input type="date" id="useEndDate">
+                </li>
+                <li>
+                    <input type="checkbox" id="replyMe">
+                    <label for="replyMe">이 신청의 응답을 나에게 보냅니다.</label>
+                </li>
+            </ul>
+            <input type="submit" value="신청">
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>
+</body>
+</html>
