@@ -37,3 +37,58 @@ h2 strong:not(:nth-of-type(2)){
 h2 strong:nth-of-type(2){
     text-transform: uppercase;
 }
+ul{
+    padding: 0; list-style: none; margin: 0 0 30px;
+}
+ul li:first-child{
+    border-width: 3px 0 1px; border-style: solid none; padding: 10px 0;
+    border-color: darkgreen;
+}
+ul li:not(:first-child){
+    position: relative; border-bottom: 1px solid mediumorchid;
+}
+ul li:nth-child(2n){
+    background-color: #cacaca;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li span{
+    display: block; padding: 10px 2.5%; font-size: 14px; float: left;
+    word-break: break-all;
+}
+/* default : normal(띄어쓰기 기준으로) keep-all(줄바꿈안함) break-all (부모경계닿으면줄바꿈) */
+ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 35%;
+}
+ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
+    background-color: rgba(127,255,0,0.5);
+}
+div{
+    max-width: 400px; margin: 0 auto; position: relative;
+}
+div a{
+    text-decoration: none; font-size: 14px; padding: 5px; display: block;
+}
+div > a{
+    position: absolute; top: 0;
+}
+div > a:first-of-type{
+    left: 0;
+}
+div > a:last-of-type{
+    right: 0;
+}
+div ol{
+    padding: 0 25px; margin: 0; text-align: center;
+}
+div ol li{
+    display: inline-block;
+}
+div ol li a:hover{
+    color: red;
+}
