@@ -9,3 +9,19 @@ h1 a{
     position: absolute; right: 0; bottom: 0; font-size: 24px; width: 50%;
     text-align: right; color: forestgreen;
 }
+fieldset{
+    padding: 10px 40% 10px 0; position: relative; border-width: 2px 0 1px;
+    border-style: solid none; border-color: olive;
+}
+fieldset input[type='search']{
+    width: 20%; border: 1px solid forestgreen; background-color: palegreen;
+    line-height: 24px; min-width: 110px;
+}
+fieldset input[type='button']{
+    width: 10%; min-width: 60px; background-color: darkolivegreen; color: white;
+    border: 2px solid lime; line-height: 24px;
+}
+fieldset select{
+    position: absolute; right: 0; width: 25%; min-width: 150px; background-color: lightseagreen;
+    border-color: lightskyblue; padding: 5px 0;
+}
