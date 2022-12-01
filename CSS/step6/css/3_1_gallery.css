@@ -10,6 +10,9 @@ body{
 .wrap ul{
     margin: 0; padding: 0; list-style: none;
 }
+.wrap ul:after{
+    content: ''; display: block; clear: both;
+}
 .wrap header{
     position: relative; padding: 20px 40% 0 0; margin-bottom: 90px;
 }
@@ -22,9 +25,6 @@ body{
 .wrap header nav ul{
     border-width: 1px 0; border-style: solid; border-color: #555;
 }
-.wrap header nav ul:after{
-    content: ''; display: block; clear: both;
-}
 .wrap header nav ul li{
     width: 20%; float: left; padding: 10px 0; min-width: 50px;
 }
@@ -35,3 +35,22 @@ body{
     border-left: 1px solid #e1e1e1;
 }
 /* header Fin */
+.wrap > ul li{
+    width: 30%; float: left; margin-bottom: 5%;
+    /* ! margin,padding... Yaxis에 해당하는 수치에 되도록이면 px. */
+}
+.wrap > ul li:not(:nth-child(3n+1)){
+    margin-left: 5%;
+}
+.wrap > ul li a{
+    display: block;
+}
+.wrap > ul li a img{
+    width: 100%; display: block; opacity: 0.5; transition-duration: 0.5s;
+}
+.wrap > ul li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
+}
