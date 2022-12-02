@@ -31,3 +31,12 @@ body{
 .durationEX3:hover .moveSpan{
     /* margin-left: 97%; */ left: 97%;
 }
+.durationEX4{
+    width: 50%; height: 300px; border-width: 3px; border-style: solid;
+    border-color: #f00 #ff6a00 #ffd800 #4cff00;
+    transition-duration: 2s;
+}
+.durationEX4:hover{
+    margin: 0 25%; border-color: #00ff90 #0094ff #0026ff #b200ff;
+    color: #0094ff;
+}
