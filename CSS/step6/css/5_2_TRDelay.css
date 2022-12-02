@@ -31,17 +31,46 @@ ul{
     transition-delay: 0s; background-color: #3a00b6;
 }
 .delay2 ul li:nth-child(2){
-    transition-delay: 0s; background-color: #00b63a;
+    transition-delay: 0.5s; background-color: #00b63a;
 }
 .delay2 ul li:nth-child(3){
-    transition-delay: 0s; background-color: #b63a00;
+    transition-delay: 1s; background-color: #b63a00;
 }
 .delay2 ul li:nth-child(4){
-    transition-delay: 0s; background-color: #c60;
+    transition-delay: 1.5s; background-color: #c60;
 }
 .delay2 ul li:nth-child(5){
-    transition-delay: 0s; background-color: #06c;
+    transition-delay: 2s; background-color: #06c;
 }
 .delay2 ul li:nth-child(6){
-    transition-delay: 0s; background-color: #60c;
+    transition-delay: 2.5s; background-color: #60c;
 }
+
+.delay3 ul{
+    height: 300px; background-color: #000;
+}
+.delay3 ul:after{
+    content: ''; display: block; clear: both;
+}
+.delay3 ul li{
+    display: block; float: left; width: 20%; height: 0; transition-duration: 0.75s;
+}
+.delay3 ul:hover li{
+    height: 300px; background-color: #ff0;
+}
+.delay3 ul li:first-child{
+    transition-timing-function: linear;
+}
+.delay3 ul li:nth-child(2){
+    transition-timing-function: ease-in-out; /* ? default : ease*/
+}
+.delay3 ul li:nth-child(3){
+    transition-timing-function: ease-in;
+}
+.delay3 ul li:nth-child(4){
+    transition-timing-function: ease-out;
+}
+.delay3 ul li:nth-child(5){
+    transition-timing-function: cubic-bezier();
+}
+/* ? http://cubic-bezier.com */
