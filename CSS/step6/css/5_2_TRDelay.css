@@ -71,6 +71,6 @@ ul{
     transition-timing-function: ease-out;
 }
 .delay3 ul li:nth-child(5){
-    transition-timing-function: cubic-bezier();
+    transition-timing-function: cubic-bezier(0,.98,1,-0.01);
 }
 /* ? http://cubic-bezier.com */
