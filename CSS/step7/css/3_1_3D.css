@@ -11,7 +11,6 @@ div span{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
 }
 .rotater span:first-of-type{
     background-color: red; animation-name: hori;
@@ -23,7 +22,7 @@ div span{
     background-color: blue; animation-name: depth;
 }
 .rotater span:last-of-type{
-    background-color: yellow; animation-name: ;
+    background-color: yellow; animation-name: rotate3D;
 }
 @keyframes hori{
     from{
@@ -44,5 +43,12 @@ div span{
         transform: rotateZ(0deg);
     }to{
         transform: rotateZ(360deg);
+    }
+}
+@keyframes rotate3D{
+    from{
+        transform: rotate3d(0,0,0,0deg);
+    }to{
+        transform: rotate3d(1,1,1,360deg);
     }
 }
