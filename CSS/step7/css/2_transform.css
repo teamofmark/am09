@@ -1,0 +1,16 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black; margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block;
+    transform-origin: left top;
+}
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; color: #fff; transform: translateX(100px) rotate(10deg);
+}
+div:nth-of-type(3) span{
+    background-color: blue; color: #fff; transform: rotate(10deg) translate(100px, 50px);
+}
