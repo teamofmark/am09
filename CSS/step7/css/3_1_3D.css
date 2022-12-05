@@ -1,0 +1,48 @@
+body{
+    width: 200px;
+    margin: 200px auto;
+}
+div{
+    width: 200px;
+}
+div span{
+    width: 200px; height: 200px;
+    display: block;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+.rotater span:first-of-type{
+    background-color: red; animation-name: hori;
+}
+.rotater span:nth-of-type(2){
+    background-color: green; animation-name: verti;
+}
+.rotater span:nth-of-type(3){
+    background-color: blue; animation-name: depth;
+}
+.rotater span:last-of-type{
+    background-color: yellow; animation-name: ;
+}
+@keyframes hori{
+    from{
+        transform: rotateX(0deg);
+    }to{
+        transform: rotateX(360deg);
+    }
+}
+@keyframes verti{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes depth{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
