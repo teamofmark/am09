@@ -1,0 +1,28 @@
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    /* todo. 바꿔보기 */
+    body{
+        background-color: palevioletred; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: righnt; line-height: 1.5rem;
+    }
+}
+/* ? Tablet Device - 사용자의 해상도가 768px 이상 1280미만일 때 실행 */
+
+@media screen and (min-width: 1280px){
+    body{
+        background-color: lightblue; color: white; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem;
+    }
+    p{
+        font-size: 1rem; text-align: righnt; line-height: 1.5rem;
+    }
+    /* ? rem : browser default fontSize - 16px. -> 1rem = 16px. */
+}
+/* ? DesktopDevice - 사용자의 해상도가 1280이상일 때 실행.*/
