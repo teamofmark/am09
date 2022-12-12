@@ -2,13 +2,13 @@
 @media screen and (min-width: 768px) and (max-width: 1279px){
     /* todo. 바꿔보기 */
     body{
-        background-color: palevioletred; color: white; font-weight: bold;
+        background-color: palevioletred; color: darkred; font-weight: bold;
     }
     h1{
-        font-size: 2rem; line-height: 3rem;
+        font-size: 2rem; line-height: 3rem; text-align: right;
     }
     p{
-        font-size: 1rem; text-align: righnt; line-height: 1.5rem;
+        font-size: 1rem; line-height: 1.5rem;
     }
 }
 /* ? Tablet Device - 사용자의 해상도가 768px 이상 1280미만일 때 실행 */
@@ -21,7 +21,7 @@
         font-size: 2rem; line-height: 3rem;
     }
     p{
-        font-size: 1rem; text-align: righnt; line-height: 1.5rem;
+        font-size: 1rem; text-align: right; line-height: 1.5rem;
     }
     /* ? rem : browser default fontSize - 16px. -> 1rem = 16px. */
 }
