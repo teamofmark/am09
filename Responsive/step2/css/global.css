@@ -1,5 +1,45 @@
+@media screen and (max-width: 767px) and (orientation: landscape){
+    /* todo. 바꿔보기 */
+    body{
+        background-color: mediumpurple; color: midnightblue;
+        text-align: left;
+    }
+    h1{
+        font-size: 1rem; line-height: 1.5rem;  font-weight: bold;
+    }
+    p{
+        font-size: 0.75rem; line-height: 1rem;
+    }
+}
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (max-width: 767px) and (orientation: portrait){
+    /* todo. 바꿔보기 */
+    body{
+        background-color: khaki; color: darkolivegreen;
+        text-align: center;
+    }
+    h1{
+        font-size: 1rem; line-height: 1.5rem;  font-weight: bold;
+    }
+    p{
+        font-size: 0.75rem; line-height: 1rem;
+    }
+}
+/* ? mobile Device - 사용자의 해상도가 768 미만일 때 실행. */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: greenyellow; color: green; font-weight: bold;
+    }
+    h1{
+        font-size: 2rem; line-height: 3rem; text-align: left;
+    }
+    p{
+        font-size: 1rem; line-height: 1.5rem; text-align: right;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
     /* todo. 바꿔보기 */
     body{
         background-color: palevioletred; color: darkred; font-weight: bold;
