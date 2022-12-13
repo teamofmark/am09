@@ -1,4 +1,10 @@
-
+header > div nav ul li a{
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+/* ? All Using */
 
 @media screen and (min-width: 1280px) {
     header{
@@ -16,5 +22,24 @@
     header > div h1 a img{
         width: 100%;
     }
+    header > div nav{
+        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%;
+        box-sizing: border-box; text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header > div nav ul li a{
+        display: block; line-height: 50px; font-size: 13px; color: white;
+        font-weight: 900;
+    }
+    header > div nav ul li a:hover,
+    header > div nav ul li a.active{
+        color: #00e0d0;
+    }
+    /* ? header GNB fin */
 }
 /* ? desktop */
