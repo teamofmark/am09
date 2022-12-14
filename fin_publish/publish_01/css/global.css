@@ -133,5 +133,25 @@ a{
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
     }
+    footer > div div:nth-of-type(3) input{
+        float: left; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; font-size: 14px; border: 1px solid rgba(255,255,255,0.5);
+        color: white; line-height: 43px; padding: 0 15px;
+        display: block; box-sizing: border-box; background-color: transparent;
+    }
+    footer > div div:nth-of-type(3) input[type='email']::placeholder{
+        color: rgba(255,255,255,0.75);
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%; display: block; text-indent: -9999px; border: none;
+        line-height: 43px;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+    }
+    footer > div div:nth-of-type(3) ul{
+        clear: left;
+    }
+    /* todo. SNS ICON 배치하기 - 15min */
 }
 /* ? desktop */
