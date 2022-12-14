@@ -153,5 +153,45 @@ a{
         clear: left;
     }
     /* todo. SNS ICON 배치하기 - 15min */
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 5px;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        text-indent: -9999px; display: block; background-repeat: no-repeat;
+        background-size: contain;
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{
+        background-image: url('../images/ico_sns_01.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{
+        background-image: url('../images/ico_sns_03.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{
+        background-image: url('../images/ico_sns_04.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{
+        background-image: url('../images/ico_sns_06.png');
+    }
+    footer > div div:last-of-type{
+        clear: left; font-weight: 400;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
 }
 /* ? desktop */
