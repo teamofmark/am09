@@ -23,7 +23,7 @@ a{
     display: block; border: 1px solid #00e0d0; color: #00e0d0;
 }
 section[class $= 'Area'] > hr{
-    width: 5%; min-width: 50px; border-width: 2px 0 0; border-style: solid;
+    min-width: 50px; border-width: 2px 0 0; border-style: solid;
     margin: 0 auto 45px;
 }
 /* ? All Using */
