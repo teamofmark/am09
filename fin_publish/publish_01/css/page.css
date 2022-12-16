@@ -81,5 +81,9 @@
         font-weight: 300; font-size: 14px; line-height: 22px; color: rgba(51,51,51,0.75);
     }
     /* ?expArea Fin */
+    section.teamArea{
+        background: url('../images/bg_03.png') left top / cover no-repeat;
+        text-align: center; color: white; padding: 70px 0;
+    }
 }
 /* ? desktop */
