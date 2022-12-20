@@ -83,10 +83,10 @@ input[type='checkbox']#mnav{
         height: 350px;
     }
     header > div nav ul{
-        height: 0;
+        height: 0; transition: height 1s ease-in-out; overflow-y: hidden;
     }
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
     header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
