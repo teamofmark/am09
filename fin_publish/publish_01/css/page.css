@@ -103,20 +103,24 @@
     section.teamArea hr{
         width: 2.6%; border-color: rgba(255,255,255,0.2);
     }
-    section.teamArea ul{
-        max-width: /*940px*/ 728px; margin: 0 auto 70px;
+    /* section.teamArea ul{
+        max-width: 728px; margin: 0 auto 70px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        /* width: 23.5%; float: left; */
+        display: block;
     }
-    section.teamArea ul li:not(:first-child){
+    /* section.teamArea ul li:not(:first-child){
         margin-left: 2%;
+    } */
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
+        background: url('https://via.placeholder.com/220x230') center / contain no-repeat;
         padding-top: /*230px*/ 180px;
     }
     section.teamArea ul li figure figcaption{
