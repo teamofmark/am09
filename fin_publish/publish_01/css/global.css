@@ -88,23 +88,24 @@ input[type='checkbox']#mnav{
     header > div nav ul li{
         display: /*inline-*/block;
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         display: block; line-height: 50px; font-size: 13px; color: white;
         font-weight: 900;
     }
-    header > div nav ul li a:hover,
+    /* header > div nav ul li a:hover, */
     header > div nav ul li a.active{
         color: #00e0d0;
     }
     /* ? header GNB fin */
+
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/ 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center;
