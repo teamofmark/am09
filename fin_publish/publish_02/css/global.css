@@ -7,9 +7,30 @@ body{
 .crim{
     font-family: 'Crimson Pro', serif;
 }
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.selectBox{
+    display: inline-block; box-sizing: border-box;
+    background: url('../images/bg_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image: none; background-color: transparent;
+    -webkit-appearance: none; -moz-appearance: none; font-family: inherit;
+    font-weight: 600; padding: 10px 20px 10px 0; font-size: 11px; color: #343e5c;
+}
 /* ? A/U */
 
 @media screen and (min-width: 1280px) {
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
 }
 /* ? desktop */
