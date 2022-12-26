@@ -29,5 +29,16 @@
     header + nav .slideNav ul li a.active{
         color: #343e5c;
     }
+
+    header + nav .slideNav input[type='search']{
+        width: 17%; margin-left: 3%; padding: 20px 2% 20px 4%; box-sizing: border-box;
+        font-family: inherit; font-weight: 600; background: url('../images/bul_search.png') no-repeat 12% center;
+        border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
+    }
+    header + nav .slideNav input[type='search']::placeholder{
+        color: #a1a7bd;
+    }
+    /* ? slide Nav Fin */
+    
 }
 /* ? desktop */
