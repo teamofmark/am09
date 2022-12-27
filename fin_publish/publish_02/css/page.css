@@ -193,8 +193,21 @@
         opacity: 1;
     }
     /* ? side Menu Fin */
-    
-    .contentArea aside 
+
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 10px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        margin-bottom: 10px; padding: 35px 0 20px;
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 35px;
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; position: relative;
+        top: 33px; border-bottom: 1px solid #f0f2f7; width: 100%; padding: 0 7% 15px;
+        box-sizing: border-box; text-transform: uppercase;
+    }
 
     .contentArea section{
         width: 74.35%; margin-left: 2.58%; float: left;
