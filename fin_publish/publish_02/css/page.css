@@ -316,6 +316,12 @@
         border: 2px solid #f0f2f7; box-sizing: border-box; font-size: 11px;
         color: #3a405b; font-weight: 600; text-transform: uppercase;
     }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:first-of-type{
+        border-radius: 17px 0 0 17px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
+        border-radius: 0 17px 17px 0; border-left: none;
+    }
 
 }
 /* ? desktop */
