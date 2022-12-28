@@ -372,5 +372,20 @@
         color: #a1a8bd; margin-right: 20px;
     }
     /* ?bestArea Fin */
+
+    section.tosayArea{
+        background-color: white;
+    }
+    section.tosayArea > div{
+        max-width: 970px; margin: 0 auto; padding: 70px 0 85px;
+    }
+    section.tosayArea > div h2{
+        font-size: 32px; color: #222328; text-align: center; font-weight: 900; margin-bottom: 15px;
+    }
+    section.tosayArea > div > p{
+        font-size: 16px; color: #b9bed1; text-align: center; font-weight: 400; font-style: italic;
+        margin-bottom: 50px;
+    }
+
 }
 /* ? desktop */
