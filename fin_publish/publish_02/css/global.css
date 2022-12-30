@@ -31,10 +31,13 @@ a{
     .contentArea,
     section.bestArea,
     footer > div{
-        max-width: /*1170px*/1000px; margin: 0 auto;
+        max-width: /*1000px*/ 760px; margin: 0 auto;
     }
     header{
         border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div{
+        position: relative;
     }
     header > div:after{
         content: ''; display: block; clear: both;
@@ -43,9 +46,9 @@ a{
         float: left;
     }
     header > div label.material-icons{
-        /* width: 5.3%; max-width: 60px; line-height: 90px; box-sizing: border-box; */
-        /* border-right: 1px solid #f0f2f7; */
-        display: /*block*/ none;
+        position: absolute; top: 0; left: 0; width: 15%; max-width: 60px; line-height: 90px;
+        text-align: center;
+        display: /*none*/ block;
     }
     header > div h1{
         min-width: 125px; width: 10.7%;
@@ -57,20 +60,27 @@ a{
         width: 100%; max-width: 92px;
     }
     header > div nav{
-        width: /*55%*/ 60%;
+        width: /*55%*/ 60%; position: absolute; top: 90px; z-index: 100; padding-left: 5%;
+        background-color: white;
     }
-    header > div nav ul{
-        text-align: /*right*/center;
+    header > div input[type='checkbox']#mui+nav{
+        height: 0; overflow-y: hidden; transition: height 0.75s ease-in-out;
     }
+    header > div input[type='checkbox']#mui:checked+nav{
+        height: 200px;
+    }
+    /* header > div nav ul{
+        text-align: center;
+    } */
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header > div nav ul li:not(:first-child){
-        margin-left: /*2.56%*/2%;
-    }
+    /* header > div nav ul li:not(:first-child){
+        margin-left: 2%;
+    } */
     header > div nav ul li a{
         display: block; font-size: 14px; font-weight: 600; color: #343e5c;
-        line-height: 90px;
+        line-height: /*90px*/40px;
     }
     header > div div{
         width: /*29%*/ 23%; font-size: 11px; color: #343e5c; text-align: right; line-height: 90px;
