@@ -20,4 +20,10 @@
 
 .flexContainer.direction{
     flex-direction: column-reverse;
+    /* 
+    flex-direction : 
+    flex-direction 속성은 flexContainer의 주축(main axis) 방향을 설정한다.
+
+    row (ltr), row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
+    */
 }
