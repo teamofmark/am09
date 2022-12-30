@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 767px) {
     header + nav{
-        background-color: white;
+        background-color: white; margin-bottom: 30px;
     }
     header + nav .slideNav:after{
         content: ''; display: block; clear: both;
