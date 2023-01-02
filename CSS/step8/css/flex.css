@@ -41,3 +41,12 @@
 .flexContainer.wrap .flexItem{
     width: 500px;
 }
+.flexContainer.flow{
+    flex-flow: column nowrap;
+    /* 
+        flex-flow : 
+        direction 과 wrap 을 줄여 쓸 수(shorthand)있다.
+
+        <flex-direction> | <flex-wrap>;
+    */
+}
