@@ -151,3 +151,17 @@
     * flex-start - 내부 공간 기준으로 자신의 위치를 좌측으로 맞추기
     * flex-end - 내부 공간 기준으로 자신의 위치를 우측으로 맞추기
 */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 2;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 3;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/
