@@ -58,3 +58,33 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// ? 만들기 - var 변수이름 = 값;
+
+// * case.1 변수생성
+
+var name = "mark"; //? 선언 및 초기화
+
+// * case.2 변수선언 / 동시선언
+
+var age, radius, pi;
+
+// * case.3 변수초기화 / 동시초기화
+
+age = 41, radius = 10, pi = 3.14159265;
+
+// * case.4 변수의특성
+
+var cup = 'Coffee';
+cup = 'Water';
+cup = 'Green Tea';
+function checkCup(){
+    console.log(cup);
+}
+
+// *case. 5 변수에서의 연산자 특성
+var value = 10;
+value = value + 20; //? 반드시 이전과 다음의 관계로 대입마무리를 하여야 한다.
+function valueOP(){
+    console.log(value);
+}
