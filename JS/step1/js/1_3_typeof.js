@@ -28,3 +28,9 @@
 
     ! 이외 함수(function), 객체(object) 등이 존재.
 */
+
+// *case. 1 자신이 가장 좋아하는 숫자를 favorNumber 변수에 담아 자료형 check.
+function testTypeof(){
+    var favorNumber = 1;
+    console.log(typeof(favorNumber));
+}
