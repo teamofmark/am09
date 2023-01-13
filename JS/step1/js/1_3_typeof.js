@@ -34,3 +34,34 @@ function testTypeof(){
     var favorNumber = 1;
     console.log(typeof(favorNumber));
 }
+
+// *case. 2 자신의 영어이름을 engName 변수에 담아 자료형 check.
+
+function textTypeof(){
+    var engName = 'Mark';
+    console.log(typeof(engName) + ' = ' + engName);
+}
+
+// todo. 현재 자신이 춥다(true),안춥다(false)를 cold 변수에 담아 자료형 check.
+function check1(){
+    var cold = false;
+    console.log(typeof(cold) + ' = ' + cold);
+}
+
+// todo. 현재 고객의 로그인 상태가 아니다를 loginStatus변수에 담아 자료형 check.
+function check2(){
+    var loginStatus = false;
+    console.log(typeof(loginStatus) + '=' + loginStatus);
+}
+
+// todo. test 변수를 "선언"만 하고 초기화 하지 않은 상태에서 자료형 check.
+function check3(){
+    var test;
+    console.log(typeof(test) + ' = '  + test);
+}
+
+// todo. obj 변수에 tag를 담을 예정이니 null로 초기화 해서 자료형 check.
+function check4(){
+    var obj = null;
+    console.log(typeof(obj) + ' = ' + obj);
+}
