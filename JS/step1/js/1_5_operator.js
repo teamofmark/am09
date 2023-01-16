@@ -43,3 +43,53 @@
     ? 접근 연산자
     * .
 */
+
+// *case. 1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장후 출력.
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+
+// *case. 2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장후 출력.
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    var result = a*b/10;
+    console.log(result);
+}
+// *case. 3 숫자 5를 2로 나눈 나머지.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+// *case. 4 'hi' 문자열 a 와 'WEB' 문자열 b 를 더하기.
+function stringOP(){
+    var a = 'hi';
+    var b = 'WEB';
+    console.log(a + b);
+}
+// *case. 5 ul,li 구조의 tag를 html page에 삽입후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// todo. 다음코드를 복합대입연산자를 이용하여 간소화.
+function compareOperator(){
+    var a = 10;
+    a = a + 20; // todo.
+    console.log('a = ' + a);
+}
+
+// todo. 나올 결과를 주석으로 예측하고 확인해보기
+// ! 반드시 예측을 먼저 하고 확인 할 것.
+function numberPlusAfter(){
+    var number = 10; 
+    alert(number++); //todo. 결과예측 : 
+    alert(number++); //todo. 결과예측 : 
+    alert(number++); //todo. 결과예측 : 
+}
