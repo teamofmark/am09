@@ -161,5 +161,5 @@ function compareOperatorTodo(){
 
 // todo. 위 결과가 잘못되었다면 수정을 해보자.
 function compareOperatorTodoR(){
-    console.log(); //todo. 해결하기.
+    console.log(30 > 20 && 20 > 10); //todo. 해결하기.
 }
