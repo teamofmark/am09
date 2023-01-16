@@ -142,7 +142,24 @@ function compareOperator3(){
 
 function logicalOperator1(){
     var a = '여자';
-    var b = '웹퍼블리셔';
+    var b = '웹디자이너';
     var result = (a=="여자")&&(b=="웹디자이너");
     console.log("두값이 모두 일치 합니까? = " + result);
+}
+
+// *case. 11 a변수 '남자', b변수 '웹퍼블리셔' 라는 값이 저장되어있다. 두 값중 하나가 맞는지 비교.
+function logicalOperator2(){
+    var a = "남자";
+    var b = "웹퍼블리셔";
+    var result = (a=="남자")||(b=="웹퍼블리셔");
+    console.log("두 값중 하나라도 일치 합니까? = " + result);
+}
+// todo. 다음 코드의 결과를 예상 해보자.
+function compareOperatorTodo(){
+    console.log(30 > 20 > 10);
+}
+
+// todo. 위 결과가 잘못되었다면 수정을 해보자.
+function compareOperatorTodoR(){
+    console.log(); //todo. 해결하기.
 }
