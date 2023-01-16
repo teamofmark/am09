@@ -81,7 +81,7 @@ function operatorEx(){
 // todo. 다음코드를 복합대입연산자를 이용하여 간소화.
 function compareOperator(){
     var a = 10;
-    a = a + 20; // todo.
+    a += 20; // todo.
     console.log('a = ' + a);
 }
 
@@ -89,7 +89,30 @@ function compareOperator(){
 // ! 반드시 예측을 먼저 하고 확인 할 것.
 function numberPlusAfter(){
     var number = 10; 
-    alert(number++); //todo. 결과예측 : 
-    alert(number++); //todo. 결과예측 : 
-    alert(number++); //todo. 결과예측 : 
+    alert(number++); //todo. 결과예측 : 11 -> 10 
+    alert(number++); //todo. 결과예측 : 12 -> 11
+    alert(number++); //todo. 결과예측 : 13 -> 12
+    console.log(number);
+}
+// *case.6 연산자가 앞으로 올 경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 결과예측 : 10에 1을 더해서 11출력.
+    alert(++number); //? 결과예측 : 11에 1을 더해서 12출력.
+    alert(++number); //? 결과예측 : 12에 1을 더해서 13출력.
+    console.log(number);
+}
+// todo. 증감연산자 복합
+function numberPlusTodo(){
+    var number = 10;
+    number++; //? 결과 예측 :
+    --number; //? 결과 예측 :
+    ++number; //? 결과 예측 :
+    number--; //? 결과 예측 :
+    number++; //? 결과 예측 :
+    ++number; //? 결과 예측 :
+    --number; //? 결과 예측 :
+    number++; //? 결과 예측 :
+    ++number; //? 결과 예측 :
+    console.log(number); //? 최종 확인 : 
 }
