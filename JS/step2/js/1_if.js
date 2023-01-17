@@ -86,6 +86,7 @@ function avgScore(){
     var koreanScore = window.prompt('국어점수를 입력하시오.');
     var englishScore = window.prompt('영어점수를 입력하시오.');
     var mathScore = window.prompt('수학점수를 입력하시오.');
+    // todo. if x 3 (korean,english,math 세개의 각 과목점수 100점이상 입력불가.)
     var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
 
     if(avg > 100 || avg < 0){
