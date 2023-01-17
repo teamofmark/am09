@@ -15,9 +15,18 @@
 	alert('종료');
     
 */
+// *case. 1 현재 시간이 오후인가 오전인가
 
-if(273 < 100){
-    //표현식 "273 < 100" 이 참일때 실행 = 거짓이기때문에 당연히 실행안함.
-     alert('273<100=>true');
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 12){
+        alert("오전입니다.");
+    }
+    if(hour >= 12){
+        alert("오후입니다.");
+    }
 }
-alert('종료');
+
+// *case. 2 
