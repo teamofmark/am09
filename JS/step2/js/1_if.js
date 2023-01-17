@@ -29,4 +29,76 @@ function amORpm(){
     }
 }
 
-// *case. 2 
+// *case. 2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+
+    if(day<30){
+        alert("아직 말일이 아닙니다.");
+    }else{
+        alert("말일입니다.");
+    }
+}
+
+// *case. 3 현재 어떤 식사를 할 시간인가?
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 11){
+        alert("아침먹어라");
+    }else if(hour < 15){
+        alert("점심먹어");
+    }else{
+        alert("저녁도먹어");
+    }
+}
+// *case. 4 양,음수 판별
+function numbJudgment(){
+    var numb = window.prompt('숫자를 입력하세요','양수음수상관없음');
+    console.log(typeof(numb) + ' = ' + numb);
+
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('입력된 값이 0이거나 잘못된 값입니다.');
+    }
+}
+
+// todo. 홀,짝수 판별
+function oddOrEven(){
+    var numb = window.prompt('숫자를입력하세요','홀,짝 구분 합니다.');
+    // todo. 짝수 = 짝수입니다. 홀수 = 홀수입니다. 외 나머지 = 올바른값을 입력하세요.
+    if(numb%2 == 0){
+        alert('짝수입니다.');
+    }else if(numb%2 == 1){
+        alert('홀수입니다.');
+    }else{
+        alert('올바른 값을 입력하세요.');
+    }
+}
+
+// *case. 5 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    var koreanScore = window.prompt('국어점수를 입력하시오.');
+    var englishScore = window.prompt('영어점수를 입력하시오.');
+    var mathScore = window.prompt('수학점수를 입력하시오.');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우입니다.');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n' + '미입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n' + '양입니다.');
+    }else{
+        alert('평균' + avg + '점 \n' + '가입니다.');
+    }
+}
