@@ -41,3 +41,5 @@ function whileBreak(){
     }
     document.write("최종 i = " + i + "<br>");
 }
+
+// todo. end가 입력될 때까지 숫자를 입력받고 합을 출력. prompt에는 몇번 수행중인지 count 표시.
