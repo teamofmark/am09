@@ -5,6 +5,7 @@
 function btnMouseEx(){
     var clickBtn = window.prompt("누르실 마우스 버튼을 입력하세요 (왼쪽,오른쪽,가운데)");
 
+    // todo. if x 1 else x 1.
     if(clickBtn=="오른쪽"){
         document.write("오른쪽!");
     }else if(clickBtn=="왼쪽"){
