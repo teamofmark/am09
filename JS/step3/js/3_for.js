@@ -13,3 +13,12 @@
     3. 참일경우 문장 실행 > 4. 종결식 실행 > 5. 2단계
 
 */
+
+// *case.1 이름을 10번 출력해보자.
+
+function namePrint10(){
+    var userName = "Mark";
+    for (var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
