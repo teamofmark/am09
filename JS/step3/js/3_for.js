@@ -61,3 +61,14 @@ function answer4(){
         document.write((11-i) + "<br>");
     }
 }
+
+// *case.4 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 순차출력.
+function favorFluit(){
+    var array = ['포도','사과','바나나','망고'];
+    // ? array(배열) - data들이 저장되는 방. -> ex> ['data'(0),'data1'(1),'data2'(2)];
+    // ! data는 입력및 저장되는 순서대로 0부터 증가되게 되어있다. = ++,--.
+    // * var name = '', number = 0, variable, [];
+    for(var i = 0; i < 4; i++){
+        alert(array[i]);
+    }
+}
