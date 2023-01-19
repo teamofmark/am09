@@ -75,5 +75,23 @@ function favorFluit(){
 // todo. 지금까지 배웠던 js단원명을 배열로 활용해 출력해보자.
 function arrayFor(){
     var data = ["변수","연산자","형변환","조건문if","조건문switch","반복문while","반복문for"];
-    
+ 
+    for(var i = 0; i < data.length; i++){
+        document.write((i+1) + '번째 내용 = ' + data[i] + '<br>');
+    }
+}
+function arrayForES6(){
+    var data = ["변수","연산자","형변환","조건문if","조건문switch","반복문while","반복문for"];
+    for (let i = 0; i < data.length; i++){
+        const element = data[i];
+        document.write(i + '번째 내용 = ' + element + '<br>');
+    }
+}
+
+// *case. 5 역반복배열
+function reverseFavorFluit(){
+    var array = ['포도','사과','바나나','망고','딸기'];
+    for(var i = array.length - 1; i >= 0; i--){
+        document.write(array[i]);
+    }
 }
