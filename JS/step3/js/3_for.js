@@ -22,3 +22,19 @@ function namePrint10(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+
+// *case.2 이름을 1000번 출력.
+
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case.3 1,000번 출력중 홀수만 나오게 하기.
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i + ' . ' + userName + '<br>');
+    }
+}
