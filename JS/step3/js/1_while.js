@@ -43,3 +43,17 @@ function whileBreak(){
 }
 
 // todo. end가 입력될 때까지 숫자를 입력받고 합을 출력. prompt에는 몇번 수행중인지 count 표시.
+function sumNumb(){
+    var i = 1; //? count Var
+    var result = 0; //? result Var
+    while(true){ //? 무한루프
+        var numb = window.prompt(i + '번째입력'); //? 무한루프를돌며 입력받기 
+        if(numb == "end"){ //? end라는 값과 일치하면
+            alert("입력이 종료되었습니다.");
+            break; //? 반복중단 및 종료 alert 출력.
+        }
+        result += parseInt(numb); //? 결과변수에 형변환후 더해서 저장
+        document.write("현재까지의 총합 : " + result + '<br>'); //? 저장된 결과변수 출력.
+        i++; //? 위과정이 수행될때마다 카운트증가.
+    }
+}
