@@ -38,3 +38,26 @@ function namePrint500(){
         document.write(i + ' . ' + userName + '<br>');
     }
 }
+
+// todo. 1 - 10까지 출력되는 반복문을 생각나는대로 짜보자.
+function answer1(){
+    for(var i=1; i<=10; i+=2){
+        document.write(i + '<br>');
+        document.write((i+1) + '<br>');
+    }
+}
+function answer2(){
+    for(var i=100; i<110; i++){
+        document.write((i-99)+"<br>");
+    }
+}
+function answer3(){
+    for(var i=0; i<10; i++){
+        document.write((i+1)+"<br>");
+    }
+}
+function answer4(){
+    for(var i = 10; i>=1; i--){
+        document.write((11-i) + "<br>");
+    }
+}
