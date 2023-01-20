@@ -95,3 +95,41 @@ function reverseFavorFluit(){
         document.write(array[i]);
     }
 }
+
+// *case. 6 continue
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case. 6-1 continue 활용의 예
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i <= 10; i++){
+        if(i % 2 == 1){
+            continue;
+        }
+        output += i;
+        document.write(i + '번째 짝수의 합'+ output + '<br>');
+    }
+}
+// *case. 7 break문
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+// *case. 7-1 break의 활용
+function runBreak(){
+    for(var i = 0; true; i++){
+        document.write((i+1) + '번째 반복문');
+        if(!confirm('계속할래?')){
+            // ? write로 반복문을 출력 이후, confirm에서 오는 확인(true)를 누르면 !와 만나 false로 변환.
+            break;
+        }
+    }
+}
