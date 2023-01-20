@@ -133,3 +133,33 @@ function runBreak(){
         }
     }
 }
+
+// ! 다중for - 많이 사용하지않음.
+
+// *case. 1 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){ //? 1.
+        for(var j = 0; j < i; j++){ //? 2.
+            star += '*'; //? 
+        }
+        star += '<br>'; //?
+    }
+    document.write(star); //?
+}
+// todo. 역반절피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+
+// todo. 완성형피라미드 만들어오기
+function pyramid(){
+    
+}
