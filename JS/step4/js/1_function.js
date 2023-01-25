@@ -108,5 +108,26 @@ function infiniteSum(){
     결과 = 10
     결과 = 200
     결과 = 2
-    결과 = 잘못된 연산자 입니다.
+    결과 = 잘못된 입력값이 있습니다.
 */
+function calculator(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 입력값이 있습니다.";
+            break;
+    }
+    return result;
+}
