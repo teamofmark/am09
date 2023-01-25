@@ -43,4 +43,29 @@ function sumAllEx(){
     return willReturn; //? 호출부로 내보내기
 }
 
-alert(sumAllEx(1,2,3,4,5,6,7,8,9,10));
+// alert(sumAllEx(1,2,3,4,5,6,7,8,9,10));
+
+// *case. 4 "자신의 이름"의 나이는 "자신의 나이"세 입니다. 를 arguments를 이용해 만들어보기.
+// ! data의 입력순서를 arguments내에서 조작 할 수 없다.
+function showInfo(){
+    console.log("이름 = " + arguments[0]);
+    console.log("나이 = " + arguments[1]);
+    alert(arguments[0] + "의 나이는" + arguments[1] + "세 입니다.");
+}
+/*
+    ?return (리턴)
+    * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
+    * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대 되는 값.
+    * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를
+    * 함수 외부로 전달하기 위해 사용하는 출력 부.
+
+
+    !ex.1 함수f(x)안에 넣는 값이 매개변수, 결과로 나오는 x*x 가 리턴값.
+        function f(x) { return x * x; }
+        alert(f(3));
+
+    !ex.2 alert에서 매개변수를 두개를 선언하면 추가된 매개변수를 무시한다.
+    //*(매개변수가 초과 됐을 시) 또한 원래 함수의 매개변수보다 적게 입력하면 undefined를 출력한다.
+        alert('기존매개변수', '추가매개변수');
+        prompt('기존매개변수');
+*/
