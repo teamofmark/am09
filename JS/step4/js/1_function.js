@@ -21,3 +21,12 @@ function sumParam(num1,num2){
 }
 // *case. 3 매개변수의 자리가 없어도 있는것처럼..
 // ? arguments(가변인자함수 - 배열은 아니지만 배열처럼 사용되는 매개변수들)
+/*
+    * arguments 객체(object)는 모든 함수 안에서 사용하는 지역변수.
+    * arguments를 이용해서 함수내 인수들을 참조 할 수 있고 이 객체의 함수에 전달된 각 인수항목을 포함한다.
+    * 단, arguments는 array와 비슷해보이지만 length를 구하는 방식을 제외하고는 array와는 다르다.
+    * 필요에 따라 array로 추가 변환하여 사용 할 수 있다.
+*/
+function sumAll(){
+    
+}
