@@ -140,3 +140,4 @@ document.write(sub(20, 10) + "<br>");
 document.write(mul(20, 10) + "<br>");
 document.write(div(20, 10) + "<br>");
 */
+// ! 위 예제에서 직접연산식이 아닌 각 연산함수인 add(+),sub(-),mul(*),div(/)를 이용하여 해결.
