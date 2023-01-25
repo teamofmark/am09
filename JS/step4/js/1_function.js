@@ -69,3 +69,28 @@ function showInfo(){
         alert('기존매개변수', '추가매개변수');
         prompt('기존매개변수');
 */
+// *case.5 두 수를 매개변수로 받고, 두 값을 더한 결과값을 return하는 함수로 만들어보자.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result; //? 호출부 리턴.
+}
+// var value = sumReturn1(13,26);
+// alert(value);
+
+// *case.6 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// !단, 입력값이 0이면 즉시 실행을 멈춰야 한다.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(window.prompt("숫자만 입력해라."));
+        if(value == 0){
+            document.write("종료");
+            return;//break;
+        }
+        sum += value;
+        document.write(count + ". " + sum + "<br>");
+        count++;
+    }
+    document.write("총" + count + "번 실행함.");
+}
