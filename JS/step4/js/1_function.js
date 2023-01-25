@@ -35,3 +35,12 @@ function sumAll(){
     }
     console.log(willReturn);
 }
+function sumAllEx(){
+    var willReturn = 0;
+    for(var i in arguments){ //? for in looop는 IE9이상에서만 가능. vue.js등의 framework에서 주로 사용.
+        willReturn += arguments[i];
+    }
+    return willReturn; //? 호출부로 내보내기
+}
+
+alert(sumAllEx(1,2,3,4,5,6,7,8,9,10));
