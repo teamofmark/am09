@@ -141,3 +141,27 @@ document.write(mul(20, 10) + "<br>");
 document.write(div(20, 10) + "<br>");
 */
 // ! 위 예제에서 직접연산식이 아닌 각 연산함수인 add(+),sub(-),mul(*),div(/)를 이용하여 해결.
+function calculator2(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = add(??);
+            break;
+        case "-":
+            result = ;
+            break;
+        case "*":
+            result = ;
+            break;
+        case "/":
+            result = ;
+            break;
+        default:
+            result = "잘못된 입력값이 있습니다.";
+            break;
+    }
+    return result;
+}
+function add(??){
+    // 더하기를 완성하고 값을 어떻게 calculator2에 전달할것인가?
+}
