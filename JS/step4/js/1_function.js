@@ -145,16 +145,16 @@ function calculator2(op,numb1,numb2){
     var result = '';
     switch(op){
         case "+":
-            result = add(??);
+            result = add(numb1,numb2);
             break;
         case "-":
-            result = ;
+            result = sub(numb1,numb2);
             break;
         case "*":
-            result = ;
+            result = mul(numb1,numb2);
             break;
         case "/":
-            result = ;
+            result = div(numb1,numb2);
             break;
         default:
             result = "잘못된 입력값이 있습니다.";
@@ -162,6 +162,20 @@ function calculator2(op,numb1,numb2){
     }
     return result;
 }
-function add(??){
+function add(numb1,numb2){
     // 더하기를 완성하고 값을 어떻게 calculator2에 전달할것인가?
+    var addResult = numb1 + numb2;
+    return addResult;
+}
+function sub(numb1,numb2){
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1,numb2){
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1,numb2){
+    var divResult = numb1 / numb2;
+    return divResult;
 }
