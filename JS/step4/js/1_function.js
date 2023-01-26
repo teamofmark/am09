@@ -179,3 +179,20 @@ function div(numb1,numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// *case. 7 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello; //? func라는 변수안에 hello라는 함수"자체"를 담았다.
+
+// *case. 8 매개변수 값으로 함수 사용하기.
+function hi1(){
+    console.log("Hello.");
+}
+function hi2(){
+    console.log("안녕하세요.");
+}
+function execute(func){
+    func();
+}
