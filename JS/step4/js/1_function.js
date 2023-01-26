@@ -196,3 +196,36 @@ function hi2(){
 function execute(func){
     func();
 }
+
+// *case. 9 button click시 매개변수값으로 넘긴 함수 실행하기.
+
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+$(document).ready(function(){
+    $("#runEx9").click(welcome);
+});
+// *case. 10 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi.hello.");
+    },1000);
+}
+// todo. 함수(justFunction)를 매개변수로 전달받아(callFunctionTenTimes) 10회반복호출하기.
+function justFunction(){
+    document.write('hello JS world.','<br>');
+}
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+// *case.11 returnValue로 함수를 사용하기.
+function createHello(){
+    function hello(user){ //? user 매개변수 생성하는 hello 함수 생성 (createHello실행시)
+        document.write(user + 'welcome!');
+    }
+    return hello; //? createHello가 실행된 위치로 생성된 hello 함수 return.
+}
+var result = createHello(); //? createHello 실행위치 기 때문에 hello 함수가 들어옴.
+// * result = hello 함수. -> 고로 매개변수를 입력받을수있다.
