@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
-    $("#btnDetailMove").click(detailMoveCircle);
+    // $("#btnDetailMove").click(detailMoveCircle);
+    detailMoveCircleExt();
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -18,13 +19,38 @@ function detailMoveCircle(){
     var $circle = $(".circleDetail");
     var xpos = $("#xpos").val(); //? .val() -> 현재담긴"값"을불러오기 / .val("blabla") -> 현재담긴값을 "blabla"로 바꿔라.
     var ypos = $("#ypos").val();
-    // todo. 형변환 -> 조건처리 -> 움직임.
+    
     xpos = parseInt(xpos);
     ypos = parseInt(ypos);
 
     if(xpos <= 380 && ypos <= 380 && xpos >= 0 && ypos >= 0){
         $circle.css({
             "left": xpos,
+            "top" : ypos
+        });
+    }else{
+        alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+    }
+}
+function detailMoveCircleExt(){
+    var $circle = null;
+    circleInit();
+    $("#btnDetailMove").click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+    circleMovCommand(xpos,ypos);
+}
+function circleMovCommand(xpos,ypos){
+    if(xpos <= 380 && ypos <= 380 && xpos >= 0 && ypos >= 0){
+        $circle.css({
+            "left" : xpos,
             "top" : ypos
         });
     }else{
