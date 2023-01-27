@@ -2,6 +2,7 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
     // $("#btnDetailMove").click(detailMoveCircle);
     detailMoveCircleExt();
+    keyControl();
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -56,4 +57,22 @@ function circleMovCommand(xpos,ypos){
     }else{
         alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
     }
+}
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 키 코드" + e.keyCode);
+        // ? w(top) : 87, d(right) : 68, s(bottom) : 83, a(left) : 65.
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+            break;
+        }
+
+        $circle.css("top",currentYpos);
+    });
 }
