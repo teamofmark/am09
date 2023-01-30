@@ -8,8 +8,46 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/3_addRemove.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .cp span{
+            display: inline-block; vertical-align: middle; line-height: 15px;
+            cursor: default;
+        }
+        /* todo. */
+        .cp.password{
+            position: relative; font-size: 10px; font-weight: bold;
+            max-width: 200px;
+        }
+        .cp.password label{
+            position: absolute; left: 1%; top: 0;
+            line-height: 34px;
+        }
+        .cp.password input:focus+label{
+            line-height: 10px; top: -10px;
+        }
+        .cp.password input{
+            padding: 7px 0 7px 20px; width: 100%; box-sizing: border-box;
+        }
+        .cp.password span{
+            position: absolute; right: 10px; top: 10px; z-index: 10; display: block;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- *case. 1 checkBox 만들어보기 -->
+    <!-- ? .cp.checkBox>span.material-icons.checkIco{check_box_outline_blank}+span.label.checkLabel{click!} -->
+    <div class="cp checkBox">
+        <span class="material-icons checkIco">check_box_outline_blank</span>
+        <span class="label checkLabel">click!</span>
+    </div>
+
+    <!-- todo. passwordComponent 만들어보기 -->
+    <div class="cp password">
+        <form>
+            <input type="password" id="userPW">
+            <label for="userPW" class="pwLabel">PW</label>
+            <span class="material-icons toggleVisible">visibility_off</span>
+        </form>
+    </div>
 </body>
 </html>
