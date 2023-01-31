@@ -73,11 +73,20 @@
             padding: 0 2%; box-sizing: border-box; margin: 0;
         }
         .accComponent li h3:after{
-            content: '▼'; display: block; float: right;
+            content: '▼'; display: block; float: right; font-size: 14px;
         }
         .accComponent li h3+p{
             font-size: 14px; line-height: 20px; margin: 0; padding: 25px 2%;
-            background-color: lightgray;
+            background-color: lightgray; display: none;
+        }
+        .accComponent li h3.active{
+            background-color: palegreen; color:forestgreen;
+        }
+        .accComponent li h3.active:after{
+            content: '▲';
+        }
+        .accComponent li h3.active+p{
+            display: block;
         }
     </style>
 </head>
