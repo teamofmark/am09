@@ -26,8 +26,12 @@ function moveCircle(){
     $circle.css("left",xpos);
     // todo. 원이 frame 내에 갇히려면?
     
+    if(xpos < 0 || xpos > railWidth){
+        runStep *= -1;
+    }
 }
 
 function moveStop(){
-
+    clearInterval(timerID); //? setInterval 전용카운터.
+    timerID = 0; //? timerID 초기화
 }
