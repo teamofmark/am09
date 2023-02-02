@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery - setInterval</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/10_setInterval.js"></script>
+    <style>
+        .panel {
+            width: 600px;
+            height: 400px;
+            position: relative;
+            border: 2px solid #000;
+        }
+        .panel #circle{
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: black;
+        }
+        .panel hr{
+            position: absolute;
+            left: 50px;
+            top: 190px;
+            width: 500px;
+            height: 5px;
+            background-color: #3f0;
+        }
+        .panel nav{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <div id="circle"></div>
+        <hr id="rail">
+        <nav>
+            <button id="btn_start">시작</button>
+            <button id="btn_stop">중지</button>
+        </nav>
+    </div>
+</body>
+</html>
