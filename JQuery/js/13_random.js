@@ -16,7 +16,7 @@ function init(){
 function swap(selector, speed){
     setInterval(function(){
         currentIndex = Math.floor(Math.random()*logos.length);
-
+        console.log(currentIndex);
         // * random()* x -> floor 로감싸면 x를 절대 넘어가지 못하는 random
         // * random()* x -> ceil 로감싸면 x가 나올수도 있는 random
 
