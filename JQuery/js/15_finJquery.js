@@ -49,3 +49,13 @@ function updateFishPosition(){
     }
     console.log("3. 물고기 움직이는 중");
 }
+
+function displayFishPositionInfo(){
+    var info = "";
+    for (var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + "번 물고기 : " + $fish.position().left + "px <br>";
+    }
+    $info.html(info);
+    console.log("4. 물고기 움직임 출력중");
+}
