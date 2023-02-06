@@ -59,3 +59,30 @@ function displayFishPositionInfo(){
     $info.html(info);
     console.log("4. 물고기 움직임 출력중");
 }
+
+function checkGoalFish(){
+    var winnerList = [];
+    for(var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                index: (i), position:fishCurrentPosition
+            });
+        }
+        // ? goalLine을 넘은 물고기를 기준으로 winnerList 배열에 position이라는 식별자로 저장.
+    }
+    if(winnerList.length > 0){ //? 배열에 값이 발생 되었을 때
+        winnerList.sort(function(a,b){
+            return b.position-a.position; //? position 값 기준 내림차순
+        });
+        endGame();
+        alert("우승 ! " + winnerList[0].index + '번 물고기!');
+    }
+    console.log("5. 우승 물고기 선별 완료");
+}
+
+function endGame(){
+    clearInterval(timerID);
+    timerID = -1;
+    console.log("6. 게임 종료");
+}
