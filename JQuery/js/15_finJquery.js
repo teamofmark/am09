@@ -7,6 +7,7 @@ var $fishWidth = 0;
 $(document).ready(function(){
     init();
     fishStartPosition();
+    initEvent();
 });
 
 function init(){
@@ -25,4 +26,26 @@ function fishStartPosition(){
         });
     }
     console.log("2. 초기배치 완료");
+}
+function initEvent(){
+    $("#start").click(startGame);
+}
+function startGame(){
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition();
+            displayFishPositionInfo();
+            checkGoalFish();
+        }, 200);
+    }
+}
+
+function updateFishPosition(){
+    for (var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        var step = Math.ceil(Math.random()*10);
+        var newLeft = $fish.position().left + step;
+        $fish.css("left", newLeft);
+    }
+    console.log("3. 물고기 움직이는 중");
 }
