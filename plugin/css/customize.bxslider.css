@@ -1,0 +1,43 @@
+/* ! 복수의 slider일 경우 이를 분기 할 수 있는 방법. */
+/* .bx-wrapper .bx-pager{
+    color: red; font-weight: normal;
+} */
+/* ? 기존 pager(short) customize */
+
+.newPager .bx-pager.bx-default-pager{
+    text-align: center;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link{
+    text-decoration: none; padding: 17px 20px; display: block; background-color: #eaeaea;
+    border-radius: 40px; font-size: 14px; color: black;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active{
+    font-weight: bold; color: white; background-color: black;
+}
+/* ? pagerSelector customize */
+
+.customPager{
+    text-align: center;
+}
+.customPager li{
+    display: inline-block; width: 20%;
+}
+.customPager li:not(:first-child){
+    margin-left: 2%;
+}
+.customPager li a{
+    opacity: 0.5; display: block; transition: all 0.35s ease-in;
+}
+.customPager li a.active{
+    padding: 5px; border: 3px solid black; opacity: 1;
+}
+.customPager li a img{
+    width: 100%; display: block;
+}
+/* ? pagerCustom customize */

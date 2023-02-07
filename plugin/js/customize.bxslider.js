@@ -11,6 +11,17 @@ $(document).ready(function(){
     
         // *infiniteLoop, hideControlOnEnd 충돌.
         infiniteLoop: true, //? default : true. slide간 전환 무한반복.
-        hideControlOnEnd: false //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
+        hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
+    
+        // *adaptiveHeight
+        adaptiveHeight: false, //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
+        adaptiveHeightSpeed: 500, //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed 동기화
+    
+        // *pager - indicator
+        pager: true, //? default: true. pager 켜기/끄기
+        pagerType: 'full', //? default: full.(circle). short: count로 변경
+        //? pagerShortSeparator: '/'  default: / -> . 식별자변경.
+        //? pagerSelector: '.newPager' default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
+        pagerCustom: '.customPager' //? default: null. pager 구조 직접 작성 및 data-slide-index="i"를 설정하면 원하는 style의 pager 구현가능.
     });
 });
