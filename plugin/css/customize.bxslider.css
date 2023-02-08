@@ -59,4 +59,12 @@
 .bx-wrapper .bx-prev{
     left: 0px; background: url('../images/controls_left.png') center / 24px no-repeat;
 }
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus{
+    background-position: center; background-image: url('../images/controls_left_hover.png');
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus{
+    background-position: center; background-image: url('../images/controls_right_hover.png');
+}
 /* ? controls customize - 1 */
