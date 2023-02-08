@@ -76,11 +76,16 @@
     width: 50%; float: left;
 }
 .newAutoControls .bx-controls-auto .bx-controls-auto-item a{
-    display: block; text-indent: -9999px; background-color: #eaeaea;
+    display: block; text-indent: -9999px; padding: 10px 0; border-width: 3px;
+    border-style: solid; border-color: transparent;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item a.active{
+    border-color: rgba(0,0,0,0.7);
 }
 .newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-start{
-
+    background: url('../images/auto_play.png') center / 24px no-repeat #8aa7ff;
 }
 .newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-stop{
-
+    background: url('../images/auto_stop.png') center / 24px no-repeat #ff8a8a;
 }
+/* ? autoConrols customize */
