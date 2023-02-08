@@ -31,7 +31,7 @@
 /* ? pagerSelector customize */
 
 .customPager{
-    text-align: center;
+    text-align: center; margin-bottom: 20px;
 }
 .customPager li{
     display: inline-block; width: 20%;
@@ -68,3 +68,19 @@
     background-position: center; background-image: url('../images/controls_right_hover.png');
 }
 /* ? controls customize - 1 */
+
+.newAutoControls .bx-controls-auto:after{
+    content: ''; display: block; clear: both;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item{
+    width: 50%; float: left;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item a{
+    display: block; text-indent: -9999px; background-color: #eaeaea;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-start{
+
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-stop{
+
+}

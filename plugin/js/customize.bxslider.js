@@ -39,6 +39,9 @@ $(document).ready(function(){
         autoDelay: 1500, //? default: 0(m/s). 자동시작 전 지연시간 설정. (autoStart가 true일 경우 사용. systemDelay고려)
         autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
         stopAutoOnClick: true, //? controler Button을 클릭 하였을 때 자동전환 중지.
-        autoControlsCombine: true  //? default : false. play/pause toggle.
+        autoControlsCombine: false,  //? default : false. play/pause toggle.
+        autoControlsSelector: '.newAutoControls'
+        // ? startText: '시작', 생성된 뼈대 안에 text 변경
+        // ? stopText: '중지'
     });
 });
