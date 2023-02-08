@@ -2,6 +2,11 @@
 /* .bx-wrapper .bx-pager{
     color: red; font-weight: normal;
 } */
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: #fff;
+}
 /* ? 기존 pager(short) customize */
 
 .newPager .bx-pager.bx-default-pager{
@@ -41,3 +46,13 @@
     width: 100%; display: block;
 }
 /* ? pagerCustom customize */
+
+.bx-wrapper .bx-controls-direction a{
+    height: 100%; top: 0; background-color: white; margin-top: 0;
+}
+.bx-wrapper .bx-next{
+    right: 0px; background: url('../images/controls_right.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-prev{
+    left: 0px; background: url('../images/controls_left.png') center / 24px no-repeat;
+}
