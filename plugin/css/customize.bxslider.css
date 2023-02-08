@@ -2,12 +2,15 @@
 /* .bx-wrapper .bx-pager{
     color: red; font-weight: normal;
 } */
+/* ? 기존 pager(short) customize */
+
 .bx-wrapper{
     box-shadow: none;
     border: none;
     background: #fff;
 }
-/* ? 기존 pager(short) customize */
+/* ? bxSlider frame 초기화 */
+
 
 .newPager .bx-pager.bx-default-pager{
     text-align: center;
