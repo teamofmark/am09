@@ -62,5 +62,38 @@
     <!--개발쪽 보안에 주된 사항이다. 보안키를 생성해내고, 
         공개 키를 제출하는데, 개인 키는 로컬에 저장되게 하고, 
         공개키를 서버로 전송시킨다.-->
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, FireFox, and Internet Explorer are the most used browsers today.</p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is Free. open-source web Browser developed by Google.
+                released in 2008.
+            </p>
+        </article>
+    </main>
+    
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">100
+        +
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+
+    <!-- ! IE지원불가. safari지원불가 -->
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Safari">SF</option>
+        <option value="O">O</option>
+    </datalist>
+    
+    <!-- ! chrome, opera -->
+    <dialog open>This is an open dialog Window</dialog>
 </body>
 </html>
