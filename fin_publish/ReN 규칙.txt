@@ -1,0 +1,11 @@
+배경(background) - bg_01~05
+로고(로고 - 역할별(logo_header,logo_footer)) - logo
+선(line or border) - border
+회사심볼(CI or BI) - ci
+아이콘(위치+ico ex> exp_ico) ico_01~06
+명목상표기(별로중요치않은것들) - quote
+가짜데이터(dummyData- sample, example, ex...) - ex_01
+배너(banner) - ban_01~10
+text앞쪽ico (bullet) - bul_map, bul_phone
+버튼(button) - btn_역할 -> btn_submit
+snsIco - ico_sns_01~06 (or 역할별표기)
