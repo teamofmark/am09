@@ -1,3 +1,11 @@
+logo_header, footer
+bul_cart, bul_search,bul_check
+bg_arrow,
+sample_slider,
+sample_product01~15
+on_radio,check / off_radio,check
+-----------------------------------------------------------------
+on / off , active / deactive, enabled / disabled.
 배경(background) - bg_01~05
 로고(로고 - 역할별(logo_header,logo_footer)) - logo
 선(line or border) - border
