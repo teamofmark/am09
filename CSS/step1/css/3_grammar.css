@@ -1,0 +1,17 @@
+/* tag, id, class-사용법을 이해 */
+
+ul:first-of-type{
+    border: 3px solid #3f3;
+}
+ul:first-of-type, ol:first-of-type{
+    color: #60f;
+}
+ul:first-of-type li, ol:first-of-type li{
+    border-bottom: 3px solid darkgreen;
+}
+ol+dl dt{
+    color: orange;
+}
+ol+dl dd{
+    color: brown;
+}
