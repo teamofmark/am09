@@ -8,7 +8,7 @@
     (한글,영어)
     - 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
 */
-h1,h2,h3{
+body{
     font-family: 'Nanum Gothic', sans-serif;
 }
 h1{
@@ -19,4 +19,14 @@ h2{
 }
 h3{
     font-weight: 400; font-size: 12px; color: rgba(0,150,150,0.8);
+}
+
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+p.word{
+    word-spacing: 10px;
 }
