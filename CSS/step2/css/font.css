@@ -30,3 +30,13 @@ p.letter{
 p.word{
     word-spacing: 10px;
 }
+
+p[class^='w_']{
+    width: 150px; border: 1px solid black; line-height: 21px;
+}
+p.w_normal{
+    white-space: normal;
+}
+p.w_nowrap{
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
