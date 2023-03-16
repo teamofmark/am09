@@ -40,3 +40,17 @@ p.w_normal{
 p.w_nowrap{
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
+.v_alignTest img{
+    width: 200px; vertical-align:middle;
+}
+.v_alignTest span{
+    vertical-align: 100%;
+}
+/* 
+    ? vertical-align (수직정렬)
+    * 1. display: inline, inline-block인 애들끼리만.
+    * 2. 높은 애를 기준으로 preset(ex > top, middle, bottom....)
+    * 3. 작은 애가 높은 애를 기준으로 움직임.
+    * 4. 작은 애에게 상대적 수치 (%)를 이용하여 나머지 부분을 더 움직일 수 있다.
+    ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
+*/
