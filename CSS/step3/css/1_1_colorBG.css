@@ -1,0 +1,14 @@
+html, body{
+    height: 100%;
+}
+body, .wrap p{
+    margin: 0;
+}
+.wrap{
+    background-color: darkcyan; height: 100%;
+    padding: 50px;
+}
+.wrap p{
+    background-color: darkolivegreen; color: #fff;
+    line-height: 50px;
+}
