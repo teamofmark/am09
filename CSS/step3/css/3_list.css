@@ -22,3 +22,13 @@ ol li.lower-roman{
 ol li.upper-roman{
     list-style: upper-roman;
 }
+ol li.none{
+    list-style: none;
+    /* ! default bullet 제거하는법 */
+}
+ul.custom{
+    list-style-image: url('../images/bul_li.gif');
+    list-style-position: outside; /** inside toggle*/
+    /* todo. background 방식으로 적용해보기 */
+    padding-left: 10px;
+}
