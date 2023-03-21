@@ -1,0 +1,32 @@
+html,body{
+    height: 100%;
+}
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+}
+.multiBox{
+    /* ? css 분리규칙 - 속성별 / 방향별 */
+    /* 
+      todo.  border-width: 3px 10px 6px 25px;
+      todo.  border-style: solid dotted dashed double;
+      todo.  border-color: #60f #f06 #fc6 #0f6;
+    */
+    border-top: 3px solid #60f;
+    border-right: 10px dotted #f06;
+    border-bottom: 6px dashed #fc6;
+    border-left: 25px double #0f6;
+}
+.searchField{
+    display: block; width: 100%; border-width: 0 0 1px; padding-left: 64px;
+    line-height: 50px; font-size: 18px; outline: none;
+    background-image: url('../images/search_FILL0_wght100_GRAD-25_opsz40.svg'), url('../images/close_FILL0_wght100_GRAD-25_opsz40.svg');
+    background-position: 20px center, right 5% center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    /* 20px center / 24px no-repeat */
+    
+    /* todo. 두개의 이미지를 각각 좌, 우에 배치.*/
+}
