@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin: 30px;
+    /* margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; */
+    background-color: #555;
+}
+.firstDiv{
+    background-color: #039; color: white;
+}
+.secondDiv{
+    background-color: #ddd; margin: 20px 15px; padding: 10px;
+    /* 
+        ! firstDiv의 margin-bottom 30px 과 상쇄.
+    */
+}
+.secondDiv article{
+    background-color: #930; margin-top: 10px;
+    /* 
+        ! margin을 적용했더니 부모 경계선 너머로 bottom이 적용된다.
+        ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직하다.
+    */
+}
+.centerDiv{
+    width: 300px; margin: 0 auto; border: 1px solid #33f; padding: 10px;
+    text-align: center;
+}
+.centerDiv article{
+    background-color: #f33; margin: 0 10px;
+}
+.paddingDiv{
+    width: 100px; background-color: #ff3; border: 3px solid #333;
+    padding: 20px; box-sizing: border-box;
+}
+.paddingDiv article{
+    background-color: #039; color: white;
+}
