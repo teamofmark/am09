@@ -105,3 +105,22 @@
 .eventSelector a:visited{
     font-size: 40px; color: yellowgreen;
 }
+.statusSelector input[type='checkbox']+label{
+    display: inline-block; line-height: 20px; transition-duration: 0.75s;
+    background-color: lightgrey; overflow-y: hidden;
+}
+.statusSelector input[type='checkbox']:checked+label{
+    line-height: 0px;
+}
+.statusSelector input[type='text']:focus{
+    border: 10px solid red;
+}
+.statusSelector input[type='text']:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input[type='password']:disabled{
+    background-color: deeppink; color: black;
+}
+.statusSelector input[type='password']:disabled::placeholder{
+    color: black;
+}
