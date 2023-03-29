@@ -90,3 +90,18 @@
     ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
     ? ~= : 띄어쓰기 기준. 해당 단어 포함.
 */
+.eventSelector a{
+    display: block; margin-bottom: 30px;
+}
+.eventSelector a:link{
+    font-size: 15px; color: red;
+}
+.eventSelector a:hover{
+    font-size: 20px; color: blue;
+}
+.eventSelector a:active{
+    font-size: 30px; color: green;
+}
+.eventSelector a:visited{
+    font-size: 40px; color: yellowgreen;
+}
