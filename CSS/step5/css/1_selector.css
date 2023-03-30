@@ -169,3 +169,15 @@
     color: #090; line-height: 30px; font-size: 18px;
     text-decoration: underline;
 }
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) ".";
+    font-size: 30px; font-weight: bold;
+    color: orangered;
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page";
+    color: deeppink; font-weight: bold;
+}
