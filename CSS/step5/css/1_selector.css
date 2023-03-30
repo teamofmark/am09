@@ -146,3 +146,18 @@
 .virtualSelector ul :nth-child(2n){
     background-color: #09f;
 }
+
+.shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+.shapeSelector h2:nth-of-type(2){
+    color: #0c6;
+}
+.shapeSelector h3:nth-of-type(2){
+    color: #f06;
+}
+/* todo. child로 변환 */
+
+/* .shapeSelector :nth-child(6){color: #30f;}
+.shapeSelector :nth-child(5){color: #0c6;}
+.shapeSelector :nth-child(4){color: #f06;} */
