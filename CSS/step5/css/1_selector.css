@@ -181,3 +181,9 @@
     content: "-" attr(data-page) "page";
     color: deeppink; font-weight: bold;
 }
+.reactionSelector > *{
+    color: #fff;
+}
+.reactionSelector > *::selection{
+    background-color: black; color: yellow;
+}
