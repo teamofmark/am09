@@ -187,3 +187,7 @@
 .reactionSelector > *::selection{
     background-color: black; color: yellow;
 }
+
+.notSelector input:not([type='password'],[type='submit']){
+    background-color: red;
+}
