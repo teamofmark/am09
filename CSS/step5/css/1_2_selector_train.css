@@ -1,0 +1,29 @@
+body,
+article p{
+    margin: 0;
+}
+article{
+    clear: both;
+}
+article:not(:last-of-type){
+    margin-bottom: 30px;
+}
+article > :first-child{
+    font-size: 200px; line-height: 140px; width: 40%; background-color: gray;
+    color: white;
+}
+article:nth-of-type(2n+1) > :first-child{
+    float: right; margin: 0 0 10px 20px; text-align: right;
+}
+article:nth-of-type(2n) > :first-child{
+    float: left; margin: 0 20px 10px 0;
+}
+article p > *{
+    color: #09f;
+}
+article p > *:not(mark){
+    text-decoration: underline;
+}
+article p > mark{
+    background-color: transparent;
+}
