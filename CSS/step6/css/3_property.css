@@ -26,3 +26,52 @@ div{
     * inline = inline이 되면 width등의 크기나 간격 등의 값을 가질수 없고 옆으로는 나열 되지만, 간격을 벌릴수 없는 객체가 된다.
     * none = 대상이 보이지 않는다. (렌더 자체가 안된다.)
 */
+.visibilityProperty span{
+    background-color: #ff6a00; display: block; border: 1px solid black;
+}
+.visibilityProperty span:first-child{
+    visibility: visible;
+}
+.visibilityProperty span:nth-child(2){
+    visibility: hidden; height: 500px;
+}
+.visibilityProperty input[type='checkbox']:checked ~ table{
+    visibility: visible; background-color: lightgoldenrodyellow;
+    border: 3px dashed black; width: 50%; margin: 0 auto;
+}
+.visibilityProperty table{
+  visibility: collapse; border-spacing: 0;
+}
+/*
+    ? visibility의 속성은 총 3가지
+    * visibility : visible  = 보여주다.
+    * visibility : hidden = 감추다.(영역보존)
+    * visibility : collapse = 테이블만 감추다.
+*/
+.opacityProperty ul:after{
+    content: ''; display: block; clear: both;
+}
+.opacityProperty ul li{
+    display: block; float: left; width: 33%; background-color: black; position: relative;
+}
+.opacityProperty ul li:not(:first-child){
+    margin-left: 0.5%;
+}
+.opacityProperty ul li figure{
+    margin: 0;
+}
+.opacityProperty ul li figure img{
+    width: 100%; opacity: 0.3; display: block; transition-duration: 0.5s;
+}
+.opacityProperty ul li:hover figure img{
+    opacity: 1;
+}
+.opacityProperty ul li figure figcaption{
+    position: absolute; width: 25%; height: 15%; left: 37.5%; top: 42.5%;
+    min-width: 10vw; min-height: 10vw; font-size: 0.5vw; font-weight: bold;
+    background-color: rgba(255,255,255,0.5); text-align: center; opacity: 1;
+    transition-duration: 0.5s;
+}
+.opacityProperty ul li:hover figure figcaption{
+    opacity: 0;
+}
