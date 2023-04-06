@@ -1,11 +1,16 @@
+[class$='G']{
+    padding: 50px 5%; box-sizing: border-box; font-size: 24px; font-weight: bold; color: white;
+    text-shadow: 3px 2px 3px rgba(0,0,0,0.5);
+}
 .redG{
     background: linear-gradient(135deg, #9b1f1f 0%, #d13327 40%, #c92520 60%, #ea7e7e 100%);
     /* background: -moz-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
     background: -webkit-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b1f1f', endColorstr='#ea7e7e' GradientType=1);  */
-    padding: 50px 5%; box-sizing: border-box; font-size: 24px; font-weight: bold; color: white;
-    text-shadow: 3px 2px 3px rgba(0,0,0,0.5);
 }
 .greenG{
-    
+    background: linear-gradient(to bottom, #20a024 0%, #25c630 40%, #2bbf20 60%, #71c46b 100%);
+}
+.blueG{
+    background: linear-gradient(to right, #1e5799 0%, #2989d8 40%, #207cc1 60%, #7db9e8 100%);
 }
