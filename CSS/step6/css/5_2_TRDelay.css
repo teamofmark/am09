@@ -35,3 +35,17 @@ ul{
 .delay2 ul li:nth-child(4){transition-delay: 1.5s; background-color: #3ab600;}
 .delay2 ul li:nth-child(5){transition-delay: 2s; background-color: #b63a00;}
 .delay2 ul li:nth-child(6){transition-delay: 2.5s; background-color: #b6003a;}
+
+.delay3 ul{height: 300px; background-color: #000;}
+.delay3 ul:after{content: ''; display: block; clear: both;}
+.delay3 ul li{
+    display: block; float: left; width: 20%; height: 0; transition-duration: 0.75s;
+}
+.delay3 ul:hover li{
+    height: 300px; background-color: #ff0;
+}
+.delay3 ul li:nth-child(1){transition-timing-function: linear;}
+.delay3 ul li:nth-child(2){transition-timing-function: ease;}
+.delay3 ul li:nth-child(3){transition-timing-function: ease-in;}
+.delay3 ul li:nth-child(4){transition-timing-function: ease-in-out;}
+.delay3 ul li:nth-child(5){transition-timing-function: cubic-bezier(1,-0.01,0,1);}
