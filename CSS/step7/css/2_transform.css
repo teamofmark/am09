@@ -1,0 +1,20 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black; margin: 0 auto;
+}
+div span{
+    width: 200px; height: 200px; display: block;
+    transform-origin: left top;
+    /* 
+        ? origin
+        * transform이 일어나는 객체의 기본 중심축은
+        * 자기 자신의 중심을 기준으로 삼는데,
+        * left, top, right, bottom, % 로 이동 시킬 수 있다.
+        ! 계산을 편하게 하려면 화면축과 동기화 (left, top)
+    */
+}
+div:nth-of-type(1) span{background-color: red; transform: rotate(10deg);}
+div:nth-of-type(2) span{background-color: green; transform: translateX(100px) rotate(10deg);}
+div:nth-of-type(3) span{background-color: blue; transform: translate(100px, 50px) rotate(10deg);}
+div:nth-of-type(4) span{background-color: cyan; transform: rotate(10deg) translate(100px, 50px) skewX(10deg);}
+div:nth-of-type(5) span{background-color: magenta; transform: rotate(10deg) translate(100px, 50px) skew(10deg,10deg);}
+div:nth-of-type(6) span{background-color: yellow; transform: rotate(10deg) translate(100px, 50px) skew(10deg,10deg) scale(1.5);}
