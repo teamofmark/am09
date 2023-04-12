@@ -4,14 +4,23 @@ body{
 .circle{
     position: absolute; width: 200px; height: 200px; border-radius: 100px;
     background: linear-gradient(to bottom, #7db9f8 0%, #115699 100%);
-    animation-name: moveCircle; animation-duration: 4s;
+    animation-name: moveCircle; animation-duration: 2s; animation-iteration-count: infinite;
+    animation-direction: alternate; animation-timing-function: cubic-bezier(.11,.54,.35,.87);
 }
 @keyframes moveCircle{
-    0%{
+    /* 0%{
         left: 0;
     }50%{
         left: 800px;
     }100%{
         left: 0;
+    } */
+    from{
+        left: 0; transform: rotate(0deg);
+    }to{
+        left: 800px; transform: rotate(360deg);
     }
+}
+.circle:hover{
+    animation-play-state: paused;
 }
