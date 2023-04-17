@@ -39,7 +39,7 @@ section .moveMent{
 /* ? movement(통돌이)를 360도 y축을 기준으로 회전. */
 section .moveMent .pic{
     position: absolute; left: 0; top: 0; backface-visibility: hidden;
-     margin-left: -107px;
+    margin-left: -107px;
 }
 section .moveMent .pic:nth-child(1){transform: rotateY(0deg) translateZ(-370px);}
 section .moveMent .pic:nth-child(2){transform: rotateY(36deg) translateZ(-370px);}
