@@ -1,0 +1,20 @@
+@media screen and (max-width:767px){
+	body{background-color:orange; color:white; font-weight:bold;}
+    h1{font-size:1rem; text-align:center; line-height:2rem;}
+    p{font-size:0.75rem; text-align:center; line-height:1rem;}
+}
+/* mobile Device - 사용자 해상도가 768px 미만일 때 이 코드가 실행됨.*/
+
+@media screen and (min-width:768px) and (max-width: 1279px){
+    body{background-color:greenyellow; color:white; font-weight:bold;}	
+    h1{font-size:2rem; text-align:right; line-height:3rem;}
+    p{font-size:1rem; line-height:1.5rem;}
+}
+/* Tablet Device - 사용자의 해상도가 768px 이상 1280미만일 때 실행  태블릿 코드를 작성한다.*/
+
+@media screen and (min-width:1280px){
+	body{background-color:blue; color:white; font-weight:bold;}
+    h1{font-size:2rem;line-height:3rem;}
+    p{font-size:1rem; text-align:right; line-height:1.5rem;}	
+}
+/*Desktop Device - 사용자의 해상도가 1280이상일 때 실행. pc 코드를 작성한다.*/
