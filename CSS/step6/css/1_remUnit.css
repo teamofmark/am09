@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{font-size:16px;}
+
+body,h1,h2,p{margin:0; padding:0;}
+
+.remLayout{width:75rem; margin:0 auto; background-color:#f9f9f9;}
+.remLayout header{padding:2rem; background-color:#ff6767; margin-bottom:0.625rem;}
+.remLayout header h1{font-size:2rem; margin-bottom:0.625rem;}
+.remLayout header p{font-size:0.75rem; line-height:1rem;}
+
+.remLayout article{padding:2rem; margin-bottom:0.625rem; background-color:#5ab8ff;}
+.remLayout article h2{font-size:1.5rem; margin-bottom:0.625rem;}
+.remLayout article p{font-size:0.75rem; line-height:1rem;}
+
+.remLayout footer{padding:2rem; background-color:#7eff81; text-align:center;}
+.remLayout footer a{font-size:0.75rem; text-decoration:none; color:#000;}
+
+/*
+ rem 단위는 브라우저의 기본 font-size영향을 받는다. ( html font-size )
+ 사용자가 브라우저 내에서 기본폰트를 설정하는 것에 따라 전체 레이아웃 및 폰트
+ 사이즈가 변경 되도록 할 수 있다.
+ ex> 75% 는 100%의 75가 되지만, 75rem이 되면 기본 브라우저 font-size인 16px에
+ x75를 하여 1200이라는 width가 설정 된다.
+ 
+ padding 이나 font-size margin-bottom 역시 브라우저 폰트 크기를 기준으로 하여
+ 값이 넣어진다.
+ ex> padding이 2rem이라면 16*2가 되어 32px의 패딩이 들어간다.
+ --------단위 환산 사이트--------
+ http://pxtoem.com 이나 http://offroadcode.com/rem-calculator/ 에서 값을 변환 하면
+ 쉽게 알 수 있다.
+*/
