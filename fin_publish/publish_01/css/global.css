@@ -8,9 +8,18 @@ header > div > ul li h2{
 a{
     text-decoration: none;
 }
+.btn_more{
+    font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
+    font-size: 16px; color: #00e0d0; border: 1px solid #00e0d0;
+}
 /* ? A/U */
 
 @media screen and (min-width: 1280px){
+
+    .btn_more{
+        padding: 13px 0.6%; box-sizing: border-box;
+    }
+
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover;
     }
@@ -59,6 +68,9 @@ a{
     header > div > ul li p{
         font-size: 14px; color: white; font-weight: 300; line-height: 24px;
         text-align: center; max-width: 775px; margin: 0 auto 50px;
+    }
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
     }
 }
 /* ?desktop */
