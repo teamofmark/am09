@@ -1,5 +1,6 @@
 header > div nav ul li a,
-header > div > ul li p{
+header > div > ul li p,
+footer > div *:not(img){
     font-family: 'Roboto';
 }
 header > div > ul li h2{
@@ -15,6 +16,10 @@ a{
 /* ? A/U */
 
 @media screen and (min-width: 1280px){
+
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
 
     .btn_more{
         padding: 13px 0.6%; box-sizing: border-box;
@@ -88,6 +93,53 @@ a{
     }
     /* * header Fin */
 
-    
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 32%; margin: 0 0 70px 2%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    footer > div div h2{
+        margin-bottom: 20px;
+        /* line-height: 50px; */
+    }
+    footer > div div:first-of-type h2{
+        line-height: 0;
+    }
+    footer > div div:not(:first-of-type) h2{
+        line-height: 50px; color: white; font-size: 15px; font-weight: 900;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px; color: white;
+    }
+    footer > div div:not(:nth-of-type(3)) a{
+        color: inherit;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        font-weight: 300;
+    }
+
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px;
+        background-repeat: no-repeat;
+        background-position: left 5px;
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(1){
+        background-image: url('../images/bul_map.png');
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(2){
+        background-image: url('../images/bul_phone.png');
+    }
+
+    footer > div div:nth-of-type(4){
+        font-weight: 400;
+    }
 }
 /* ?desktop */
