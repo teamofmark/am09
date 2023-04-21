@@ -1,12 +1,14 @@
 header > div nav ul li a,
 header > div > ul li p,
-footer > div *:not(img),
 #about figcaption p,
-section.videoArea h2{
+section.videoArea h2,
+section.expArea ul,
+footer > div *:not(img){
     font-family: 'Roboto';
 }
 header > div > ul li h2,
-#about figcaption h2{
+#about figcaption h2,
+section.expArea > *:not(ul){
     font-family: 'Playfair Display';
 }
 a{
@@ -16,10 +18,14 @@ a{
     font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
     font-size: 16px; color: #00e0d0; border: 1px solid #00e0d0;
 }
+[class $='Area'] > hr{
+    width: 3%; min-width: 50px; border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
+}
 /* ? A/U */
 
 @media screen and (min-width: 1280px){
     #about,
+    section.expArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
