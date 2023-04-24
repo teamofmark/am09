@@ -51,7 +51,12 @@ a{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover;
     }
     header > div{
-        max-width: 940px; margin: 0 auto; position: relative;
+        /* 
+            ? 1. 좌,우 3%(평균 - 768에서 측면 24px 제외. (양측 3%)) - 요즘방식 -> wpf
+            ? 2. max-guide 자체를 줄이는 방식 (728max < - margin: 0 auto.) - 옛날방식 -> O : 단점: 큰 해상도 대응이 안됨.
+        */
+        max-width: 728px; margin: 0 auto; position: relative;
+         /* max-width: 940px; */
     }
     header > div h1{
         max-width: 128px;
