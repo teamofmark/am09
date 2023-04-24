@@ -245,11 +245,31 @@
         font-weight: 300; display: block; width: 100%; box-sizing: border-box;
         margin-bottom: 20px;
     }
-
-
+    section.contactArea form fieldset > *:not([type='submit'],legend)::placeholder{
+        color: rgba(65,61,75,0.5);
+    }
+    section.contactArea form fieldset textarea{
+        resize: none; height: 200px;
+    }
+    section.contactArea form fieldset .btn_more{
+        background-color: transparent; cursor: pointer; min-width: 120px;
+    }
 
     section.contactArea div{
         margin-left: 10%; width: 40%;
     }
-
+    section.contactArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.contactArea div ul li a img{
+        width: 100%; max-width: 162px;
+    }
+    /* ?contactArea Fin */
 }
+/* ? desktop Fin */
