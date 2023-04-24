@@ -222,5 +222,34 @@
         width: 100%;
     }
     /* ? talkArea Fin */
-    
+
+    section.contactArea:after{
+        content: ''; display: block; clear:both;
+    }
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset,
+    section.contactArea div{
+        float: left;
+    }
+    section.contactArea form fieldset legend,
+    section.contactArea div h3{
+        font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
+    }
+    section.contactArea form fieldset{
+        width: 50%;
+    }
+    section.contactArea form fieldset > *:not([type='submit'],legend){
+        border: 1px solid rgba(0,0,0,0.1); padding: 14px 20px; font-size: 14px;
+        font-weight: 300; display: block; width: 100%; box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+
+
+    section.contactArea div{
+        margin-left: 10%; width: 40%;
+    }
+
 }
