@@ -59,20 +59,21 @@
     section.expArea > hr{
         border-color: rgba(65,61,75,0.3);
     }
-    section.expArea ul:after{
+    /* section.expArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.expArea ul li{
-        width: 33.33%; float: left; display:block; padding: 120px 3.5% 40px;
+        /* width: 33.33%; float: left; */
+        display:block; padding: 120px /*3.5%*/3% 40px;
         box-sizing: border-box; background-position: center 30px;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat; border-bottom: 1px solid rgba(0,0,0,0.08);
     }
-    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+    /* section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.08);
     }
     section.expArea ul li:not(:nth-child(3n+1)){
         border-left: 1px solid rgba(0,0,0,0.08);
-    }
+    } */
     section.expArea ul li:nth-child(1){background-image: url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image: url('../images/ico_02.png');}
     section.expArea ul li:nth-child(3){background-image: url('../images/ico_03.png');}
@@ -90,7 +91,7 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center;
-        color: white; padding: 70px 0;
+        color: white; padding: 70px /*0*/3%;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -104,21 +105,28 @@
     section.teamArea > hr{
         border-color: rgba(255,255,255,0.2);
     }
-    section.teamArea ul{
-        max-width: /*940px*/ 728px; margin: 0 auto 65px;
+    /* section.teamArea ul{
+        max-width: 728px; margin: 0 auto 65px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
+    } */
+    section.teamArea ul{
+        margin-bottom: 70px;
     }
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        display: block; max-width: 220px; margin: 0 auto;
+        /* width: 23.5%; float: left;  */
     }
-    section.teamArea ul li:not(:first-child){
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    /* section.teamArea ul li:not(:first-child){
         margin-left: 2%;
-    }
+    } */
     section.teamArea ul li figure{
-        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
-        padding-top: /*230px*/180px; /*11.97vw -> 230 / 1vw = 19.2px -> 230 / 19.2 -> vw.*/
+        background: url('https://via.placeholder.com/220x230') center top / /*contain*/cover no-repeat;
+        padding-top: 180px; 
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
