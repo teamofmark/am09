@@ -105,10 +105,10 @@ a{
     /* ?GNB Fin */
 
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center;
@@ -141,21 +141,18 @@ a{
     footer{
         background: url('../images/bg_05.png') left top / cover no-repeat;
     }
-    /* footer > div div:not(:last-of-type){
-        float: left; width: 32%; margin: 0 0 70px 2%;
-    } */
-    footer > div div:nth-of-type(1),
+    /* footer > div div:nth-of-type(1),
     footer > div div:nth-of-type(2){
         float: left; width: 47.5%; margin: 0 0 70px;
     }
-    /* footer > div div:first-of-type{
-        margin-left: 0;
-    } */
     footer > div div:nth-of-type(2){
         margin-left: 5%;
-    }
+    } */
     footer > div div h2{
         margin-bottom: 20px;
+    }
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
     }
     footer > div div:first-of-type h2{
         line-height: 0;
@@ -189,14 +186,17 @@ a{
         background-image: url('../images/bul_phone.png');
     }
     
-    footer > div div:nth-of-type(3){
+    /* footer > div div:nth-of-type(3){
         clear: left;
+    } */
+    footer > div div:nth-of-type(3):after{
+        content: ''; display: block; clear: both;
     }
     footer > div div:nth-of-type(3) input{
         float: left; margin-bottom: 25px;
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: /*70%*/ 35%; display: block; border: 1px solid rgba(255,255,255,0.5);
+        width: /*35%*/75%; display: block; border: 1px solid rgba(255,255,255,0.5);
         background-color: transparent; line-height: 42px; padding: 0 15px;
         font-size: 14px; color: white; box-sizing: border-box;
     }
@@ -204,17 +204,17 @@ a{
         color: rgba(255,255,255,0.75);
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: /*25%*/ 10%; margin-left: /*5%*/2%; display: block; text-indent: -9999px; border: none; line-height: 42px;
+        width: /*10%*/25%; /*margin-left: 2%;*/ display: block; text-indent: -9999px; border: none; line-height: 42px;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
     }
-    footer > div div:nth-of-type(3) ul{
-        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
-    }
+    /* footer > div div:nth-of-type(3) ul{
+        float: left; width: 45%; margin-left: 8%;
+    } */
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: /*5px*/5%;
+        margin-left: /*5%*/2.5%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px; 
@@ -232,20 +232,26 @@ a{
         font-weight: 400;
     }
     footer > div div:nth-of-type(4){
-        font-weight: 400; clear: left;
+        font-weight: 400; /*clear: left;*/ text-align: center;
     }
     footer > div div:nth-of-type(4) a{
         display: inline-block;
     }
     footer > div div:nth-of-type(4) a:not(:first-of-type){
-        margin-left: 30px;
+        margin-left: /*30px*/5.5%;
     }
-    footer > div div:nth-of-type(4) p{
+    /* footer > div div:nth-of-type(4) p{
         float: right;
-    }
+    } */
     /* ? footer Fin */
 }
 /* ?mobile */
+
+@media screen and (min-width: 768px){
+    .mui{
+        display: none;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     #about,
@@ -386,6 +392,9 @@ a{
     
     footer > div div:nth-of-type(3){
         clear: left;
+    }
+    footer > div div:nth-of-type(3):after{
+        content: ''; display: block; clear: both;
     }
     footer > div div:nth-of-type(3) input{
         float: left; margin-bottom: 25px;
