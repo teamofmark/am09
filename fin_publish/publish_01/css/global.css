@@ -38,6 +38,7 @@ a{
     #about,
     section.expArea,
     section.contactArea,
+    section.worksArea h2,
     footer > div{
         max-width: /*728px*/ 600px; margin: 0 auto; padding: 70px /*0*/ 3%;
     }

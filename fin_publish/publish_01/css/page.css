@@ -149,22 +149,22 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px;
-        margin: 0 auto 70px; position: relative;
+        font-size: /*22px*/18px; font-weight: 700; color: #413d4b; position: relative;
+        /* max-width: 728px; margin: 0 auto 70px; */
     }
     section.worksArea h2 a{
-       font-size: 14px; position: absolute; right: 0; top: 8px; font-weight: 300;
-       color: #413d4b;
+       font-size: 12px; position: absolute; right: /*0*/3%; /*top: 8px;*/
+       font-weight: 300; color: #413d4b; line-height: 18px;
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
     }
     section.worksArea ul li{
         width: 16.66%; float: left;
-    }
+    } */
     section.worksArea ul li a{
         display: block;
     }
