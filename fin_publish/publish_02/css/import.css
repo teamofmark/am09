@@ -3,6 +3,6 @@
 /* ? webfont CDN */
 
 @import url('reset.css');
-@import url('.css');
-@import url('.css');
+@import url('global.css');
+@import url('page.css');
 /* ? REQ files include. / M/Q - desktop만. */
