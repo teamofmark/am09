@@ -1,13 +1,56 @@
-
+body{
+    background-color: #e4e5e7;
+}
 .mont{
     font-family: 'Montserrat', sans-serif;
 }
 .crim{
     font-family: 'Crimson Pro', serif;
 }
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.selectBox{
+    display: inline-block; box-sizing: border-box;
+    background: url('../images/bg_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image: none; background-color: transparent;
+    -webkit-appearance: none; -moz-appearance: none; font-family: inherit;
+    /* * reset ADD */
+    font-weight: 600; padding: 10px 20px 10px 0; font-size: 11px; color: #343e5c;
+}
 /* ? A / U */
 
 @media screen and (min-width:1280px){
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div label.material-icons{
+        width: 5.12%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block;
+    }
+    header > div h1{
+        width: 10.68%; min-width: 125px;
+    }
+    header > div h1 a{
+        display: block; text-align: right; padding: 31px 0;
+    }
+    header > div h1 a img{
+        width: 100%; max-width: 92px;
+    }
 }
 /* ?desktop */
