@@ -44,7 +44,7 @@ a{
         border-right: 1px solid #f0f2f7; display: block;
     }
     header > div h1{
-        width: 10.68%; min-width: 125px;
+        width: 10.68%; max-width: 125px;
     }
     header > div h1 a{
         display: block; text-align: right; padding: 31px 0;
@@ -52,5 +52,71 @@ a{
     header > div h1 a img{
         width: 100%; max-width: 92px;
     }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 600; color: #343e5c;
+        line-height: 90px; 
+    }
+    header > div div{
+        width: 29.5%; font-size: 11px; color: #343e5c; text-align: right;
+        line-height: 90px;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 17px; font-weight: 600;
+        background:url('../images/bul_cart.png') left top / contain no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
+        text-align: center; margin-left: 2%; font-weight: 400;
+    }
+    header > div div input[type='button']{
+        font-size: 11px; font-weight: 600; padding: 8px 15px; border: 2px solid #e3e8f0;
+        border-radius: 16px; background-color: white; font-family: inherit;
+        margin-left: 8%;
+    }
+    /* ? header Fin */
+
+    .paging{
+        position: relative; clear: both; background-color: white; border-radius: 5px;
+    }
+    .paging > a{
+        position: absolute; top: 0; text-align: center; width: 17%; line-height: 90px;
+        font-size: 18px; font-weight: 600; color: #3a405b;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        padding: 20px 17%; box-sizing: border-box; text-align: center;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; width: 50px; line-height: 50px; border-radius: 25px;
+        font-size: 14px; color: #3a405b; font-weight: 600; background-color: white;
+        transition: box-shadow 0.3s ease-out;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 8px rgba(168,172,185,0.62); color: #b9bed1;
+    }
+    /* ? pager Fin */
 }
 /* ?desktop */
