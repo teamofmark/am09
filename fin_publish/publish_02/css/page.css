@@ -194,6 +194,50 @@
     }
     /* ? sideMenu Fin */
 
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 10px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        margin-bottom: 10px; padding: 50px 0 20px;
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 30px;
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px;
+        box-sizing: border-box; border-bottom: 1px solid #f0f2f7; width: 100%;
+        position: relative; top: 30px;
+        /* background-color: rgba(0,200,0,0.1); */
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
+        padding-left: 20.37%; box-sizing: border-box; line-height: 30px;
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 80%;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width: 100%;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; margin-bottom: 0; line-height: 50px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7;
+    }
+    .contentArea aside fieldset span{
+        display: inline-block; width: 18%; text-align: center; font-size: 11px;
+        font-weight: 400; line-height: 30px; color: #b8bfd3;
+    }
+
     .contentArea section{
         width: 74.35%; margin-left: 2.58%; float: left;
     }
