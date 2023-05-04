@@ -132,16 +132,16 @@ a{
         background-color: #222328;
     }
     footer > div{
-        position: relative; padding: 60px 0;
+        position: relative; padding: 60px /*0*/ 3%; box-sizing: border-box;
     }
     footer > div span{
-        position: absolute; display: block; right: 0; top: 60px;
+        position: absolute; display: block; right: /*0*/3%; top: 60px;
     }
     footer > div:first-child{
         border-bottom: 1px solid rgba(255,255,255,0.05);
     }
     footer > div:first-child h2{
-        position: absolute; left: 0; top: 60px; max-width: 92px; width: 7.86%;
+        position: absolute; left: /*0*/3%; top: 60px; max-width: 92px; width: 7.86%;
     }
     footer > div:first-child h2 img{
         width: 100%; min-width: 78px;
@@ -159,7 +159,7 @@ a{
         display: block; color: white; font-size: 12px; font-weight: 600;
     }
     footer > div:first-child span{
-        width: 8.97%;
+        width: /*8.97%*/12%;
     }
     footer > div:first-child span a:not(:first-of-type){
         margin-left: 2.4%;
@@ -182,7 +182,7 @@ a{
         color: rgba(255,255,255,0.3); line-height: 22px;
     }
     footer > div:nth-child(2) span{
-        width: 50%; text-align: right;
+        width: /*50%*/40%; text-align: right; 
     }
     footer > div:nth-child(2) span a{
         font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block;

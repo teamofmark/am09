@@ -10,17 +10,17 @@
         float: left;
     }
     header + nav .slideNav ul{
-        width: 80%;
+        width: /*80%*/62%; padding: 0 0 0 3%; box-sizing: border-box;
     }
     header + nav .slideNav ul li:not(:first-child){
         margin-left: 2.56%;
     }
-    header + nav .slideNav ul li:not(:last-child){
+    header + nav .slideNav ul li/*:not(:last-child)*/{
         float: left;
     }
-    header + nav .slideNav ul li:last-child{
+    /* header + nav .slideNav ul li:last-child{
         float: right;
-    }
+    } */
     header + nav .slideNav ul li a{
         display: block; font-size: 11px; color: #b9bed1; line-height: 56px;
         font-weight: 600; text-transform: uppercase;
@@ -30,9 +30,9 @@
         color: #343e5c;
     }
     header + nav .slideNav input[type='search']{
-        width: 17%; margin-left: 3%; padding: 18px 2% 18px 4%; box-sizing: border-box;
+        width: /*17%*/25%; margin-left: /*3%*/13%; padding: 18px 2% 18px 4%; box-sizing: border-box;
         border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
-        background: url('../images/bul_search.png') no-repeat 10% center;
+        background: url('../images/bul_search.png') no-repeat /*10%*/5% center;
         font-family: inherit; font-size: 14px; font-weight: 600; letter-spacing: -1px;
     }
     header + nav .slideNav input[type='search']::placeholder{
@@ -47,7 +47,7 @@
         display: none;
     }
     section.slideArea > div{
-        position: relative; max-width: 1400px; margin: 0 auto;
+        position: relative; /*max-width: 1400px;*/ max-width: 1000px; margin: 0 auto;
     }
     section.slideArea > div > a{
         display: block; width: 42px; padding: 10px 0 14px; font-size: 18px; color: white;
@@ -55,10 +55,10 @@
         position: absolute; top: 45.2%; z-index: 10;
     }
     section.slideArea > div > a.btn_conL{
-        left: 11.78%;
+        left: /*11.78%*/ 3%;
     }
     section.slideArea > div > a.btn_conR{
-        right: 11.78%;
+        right: /*11.78%*/ 3%;
     }
     section.slideArea > div ol{
         position: absolute; left: 47.85%; bottom: 6%; z-index: 1;
@@ -85,20 +85,20 @@
         width: 100%; display: block;
     }
     section.slideArea > div ul li figure figcaption{
-        position: absolute; left: 15%; top: 20%; width: 32.85%; max-width: 460px;
+        position: absolute; left: 15%; top: /*20%*/15%; width: /*32.85%*/40%; max-width: 460px;
         color: white;
     }
     section.slideArea > div ul li figure figcaption dl{
-        margin-bottom: 60px;
+        margin-bottom: /*60px*/10px;
     }
     section.slideArea > div ul li figure figcaption dl dt{
-        font-size: 42px; font-weight: 900; line-height: 50px; margin-bottom: 25px;
+        font-size: /*42px*/30px; font-weight: 900; line-height: /*50px*/35px; margin-bottom: 25px;
     }
     section.slideArea > div ul li figure figcaption dl dd{
-        font-size: 16px; line-height: 24px;
+        font-size: /*16px*/ 13px; line-height: /*24px*/16px;
     }
     section.slideArea > div ul li figure figcaption input[type='button']{
-        width: 35.86%; background-color: #2754eb; font-size: 11px; font-weight: 600;
+        width: /*35.86%*/55%; background-color: #2754eb; font-size: 11px; font-weight: 600;
         line-height: 42px; border-radius: 21px; color: white; border: none;
     }
     /* ?slideArea Fin */
@@ -116,11 +116,15 @@
     .contentArea > form fieldset label:not([for='freeShipCheck']){
         font-size: 11px; color: #a1a7bd; text-transform: uppercase;
     }
-    .contentArea > form fieldset span.sbSelect{
+    /* .contentArea > form fieldset span.sbSelect{
         margin-left: 3.41%;
+    } */
+    .contentArea > form fieldset label[for='ship_Select'],
+    .contentArea > form fieldset span.selectBox{
+        display: none;
     }
-    .contentArea > form fieldset label[for='sb_keywords'],
-    .contentArea > form fieldset label[for='ship_Select']{
+    .contentArea > form fieldset label[for='sb_keywords']
+    /*,.contentArea > form fieldset label[for='ship_Select']*/{
         margin-left: 1.28%; padding-left: 2.56%; border-left: 1px solid rgba(0,0,0,0.05);
     }
     .contentArea > form fieldset input:not([type='checkbox']){
@@ -132,10 +136,10 @@
         color: #b9bfd3;
     }
     .contentArea > form fieldset input[type='search']{
-        width: 14%;
+        width: /*14%*/20%;
     }
     .contentArea > form fieldset input[type='text']{
-        width: 6.5%;
+        width: /*6.5%*/13%;
     }
     .contentArea > form fieldset input[type='search'],
     .contentArea > form fieldset input[id='range_minprice']{
@@ -146,7 +150,7 @@
         margin-left: 2.56%;
     }
     .contentArea > form fieldset label[for='freeShipCheck']{
-        padding-left: 2.56%; font-size: 13px; color: #343e5c;
+        padding-left: /*2.56%*/5%; font-size: 13px; color: #343e5c;
         transition: background 0.5s ease-out;
     }
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
@@ -213,28 +217,30 @@
     }
     .contentArea aside fieldset label{
         font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
-        padding-left: 20.37%; box-sizing: border-box; line-height: 30px;
+        box-sizing: border-box; line-height: 19px;
+        padding-left: /*20.37%*/ 24%;
     }
-    .contentArea aside fieldset label:not(:last-of-type),
-    .contentArea aside fieldset span:not(:last-of-type){
+    .contentArea aside fieldset label:not(:last-of-type)
+    /*,.contentArea aside fieldset span:not(:last-of-type)*/{
         margin-bottom: 20px;
     }
-    .contentArea aside fieldset label[for*='ava'],
+    /* .contentArea aside fieldset label[for*='ava'],
     .contentArea aside fieldset label[for*='brand']{
         width: 80%;
-    }
-    .contentArea aside fieldset label[for*='Condition']{
+    } */
+    .contentArea aside fieldset label:not([for*='dlvr'])/*[for*='Condition']*/{
         width: 100%;
     }
     .contentArea aside fieldset label[for*='dlvr']{
-        width: 49%; margin-bottom: 0; line-height: 50px;
+        width: /*49%*/48%; margin-bottom: 0; line-height: 50px;
     }
     .contentArea aside fieldset label[for*='dlvr']:last-of-type{
         border-left: 1px solid #f0f2f7;
     }
     .contentArea aside fieldset span{
-        display: inline-block; width: 18%; text-align: center; font-size: 11px;
-        font-weight: 400; line-height: 30px; color: #b8bfd3;
+        /* display: inline-block; width: 18%; text-align: center; font-size: 11px;
+        font-weight: 400; line-height: 30px; color: #b8bfd3; */
+        display: none;
     }
     .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
         background: url('../images/off_radio.png') no-repeat 9.3% center;
