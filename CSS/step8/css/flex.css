@@ -80,3 +80,16 @@
 .flexContainer.alignContent .flexItem{
     margin: 0;
 }
+
+.flexContainer.justifyItems{
+    display: grid;
+    background-color: yellow; width: 300px;
+    justify-items: flex-start;
+    padding: 0;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-end;
+}
+.flexContainer.justifyItems .flexItem{
+    margin: 0;
+}
