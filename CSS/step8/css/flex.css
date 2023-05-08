@@ -20,7 +20,8 @@
 .flexContainer.wrap{
     flex-wrap: wrap-reverse;
 }
-.flexContainer.wrap .flexItem{
+.flexContainer.wrap .flexItem,
+.flexContainer.flow .flexItem{
     width: 500px;
 }
 /* 
@@ -31,3 +32,11 @@
     wrap(width 초과시 개행)
     wrap-reverse(개행하되 역배치)
 */
+.flexContainer.flow{
+    flex-flow: row-reverse wrap-reverse;
+    /*
+        ? flex-flow:
+        * direction / wrap을 shorthand.
+        todo. <flex-direction> | <flex-wrap>
+    */
+}
