@@ -1,0 +1,33 @@
+.flexContainer{
+    margin: 10px; padding: 15px; border-radius: 25px; background-color: #a4a4a4;
+    display: flex;
+}
+.flexItem{
+    margin: 10px; padding: 20px; color: white; text-align: center; border-radius: 25px;
+    background-color: black;
+    /* width: 20%; */
+}
+
+.flexContainer.direction{
+    flex-direction: column-reverse;
+    /* 
+    flex-direction : 
+    flex-direction 속성은 flexContainer의 주축(main axis) 방향을 설정한다.
+
+    row (ltr), row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
+    */
+}
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse;
+}
+.flexContainer.wrap .flexItem{
+    width: 500px;
+}
+/* 
+    flex-wrap : 
+    * flex-wrap속성은 flexContainer의 width보다 flexItem들의 width 합계가 큰 경우 한 줄로 나오게 할 것인지, 여러줄로 나오게 할 것인지 결정.
+
+    nowrap(개행불허. 1행 모두배치. default. flexItem width 자동축소)
+    wrap(width 초과시 개행)
+    wrap-reverse(개행하되 역배치)
+*/
