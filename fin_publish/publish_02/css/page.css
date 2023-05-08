@@ -269,16 +269,23 @@
         content: ''; display: block; clear: both;
     }
     .contentArea section ul li{
-        float: left; display: block; width: 31%; background-color: white; 
-        border-radius: 10px; margin: 0 0 30px 3.5%; min-height: 380px;
+        float: left; display: block; width: /*31%*/48%; background-color: white; 
+        border-radius: 10px; margin: 0 0 30px /*3.5%*/4%; min-height: 380px;
     }
     .contentArea section ul li:nth-child(5){
-        width: 65.5%;
+        width: /*65.5%*/100%; clear: both;
     }
-    .contentArea section ul li:nth-child(1),
+    /* .contentArea section ul li:nth-child(1),
     .contentArea section ul li:nth-child(4),
     .contentArea section ul li:nth-child(6),
-    .contentArea section ul li:nth-child(9){
+    .contentArea section ul li:nth-child(9) */
+    .contentArea section ul li:nth-child(1),
+    .contentArea section ul li:nth-child(3),
+    .contentArea section ul li:nth-child(5),
+    .contentArea section ul li:nth-child(6),
+    .contentArea section ul li:nth-child(8),
+    .contentArea section ul li:nth-child(10)
+    {
         margin-left: 0;
     }
     .contentArea section ul li figure img{
@@ -387,14 +394,18 @@
         font-size: 16px; color: #b9bed1; text-align: center; font-weight: 400;
         font-style: italic; margin-bottom: 50px;
     }
-    section.tosayArea > div ul:after{
+    /* section.tosayArea > div ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.tosayArea > div ul li{
-        float: left; display: block; width: 27.33%;
+        display: block; width: /*27.33%*/ 80%; margin: 0 auto;
+        /* float: left; */
     }
-    section.tosayArea > div ul li:not(:first-child){
+    /* section.tosayArea > div ul li:not(:first-child){
         margin-left: 9%;
+    } */
+    section.tosayArea > div ul li:not(:last-child){
+        margin-bottom: 30px;
     }
     section.tosayArea > div ul li figure{
         margin-bottom: 20px;
