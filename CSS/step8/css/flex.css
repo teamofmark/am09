@@ -93,3 +93,36 @@
 .flexContainer.justifyItems .flexItem{
     margin: 0;
 }
+.flexContainer.alignItems{
+    align-items: baseline; background-color: orange;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-end;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: flex-start;
+}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 60px;
+}
+/* 
+    ?align-self
+    * stretch - 요소들중 가장 높은 것을 기준으로 자신의 높이를 맞추기
+    * flex-start - 요소들중 가장 높은 것의 윗선을 기준으로 자신을 맞추기
+    * flex-end - 요소들중 가장 높은 것의 밑선을 기준으로 자신을 맞추기
+*/
+.flexContainer.justifySelf{
+    width: 220px; display: grid;
+}
+.flexContainer.justifySelf .flexItem:first-of-type{
+    justify-self: stretch;
+}
+.flexContainer.justifySelf:hover .flexItem:first-of-type{
+    justify-self: flex-end;
+}
