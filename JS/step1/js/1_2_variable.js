@@ -58,3 +58,28 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// *만드는 법 ? 변수.
+// * case.1 기본생성
+var userName = "mark", userAge = 43;
+//? stringData = '' ? "" -> "''" (o) '""'(x) (데이터유형이 문자형이다.)
+//? var userAge = 43;  numberData (데이터유형이 숫자형이다.)
+// ? ex> function runAlert(){시킬거} 
+
+// *case.2 변수의 특성 (주의사항)
+var pi,radius; // ? 선언
+pi = 0; //? pi는 0으로 초기화.
+radius = 0; //? radius는 0으로 초기화.
+
+//? var pi = 3.14159265;  선언 및 초기화 (decl(aration) and init(ialization))
+//? var radius = 10;  선언 및 초기화 (decl and init)
+
+// *case.3 2번 주의사항의 응용
+var cup; //? 컵을 놓았다.
+cup = 'Coffee'; //? 컵에 커피를 담았다.
+cup = undefined; //? 컵에 커피를 비웠다.
+cup = 'GreenTea'; //? 컵에 녹차를 담았다.
+cup = 'Water'; //? 컵에 녹차가 넘쳐서 다 없어질 정도로 물을 부었다.
+
+// *case.4 변수에 연산자를 사용하였을 때.
+var numbVal = 10; //? numbVal이라는 변수를 선언하고 10으로 초기화 하였다.
+numbVal += 20; //? 복합대입연산자.
