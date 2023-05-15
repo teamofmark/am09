@@ -15,7 +15,55 @@
 function agePlus(){
     var age = window.prompt('나이를 입력해봐.');
     console.log(typeof(age));
-    var result = Number(age) + 20;
+    var result = Number(age) + 20; //? Number(age) - 전역함수(객체) Number는 정, 실수 무관 숫자형으로 변환.
     console.log(typeof(result));
     alert(result);
+}
+// *case.2 강제 숫자 - 문자형 변환.
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 10;
+    console.log(result);
+}
+// *case.3 강제 불린 - 숫자형 변환.
+function forcedString(){
+    var result = 2 + true;
+    console.log(result);
+}
+// *case.4 강제 불린 - 문자형 변환.
+function forcedString2(){
+    var a = '2' + true;
+    console.log(a);
+}
+
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환
+
+    ? .toString()
+    * Number.toString(); - 문자형(진수)변환
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
+*/
+function stringNumb(){
+    var test1 = 15;
+    var result = String(test1);
+    console.log('result에 담긴 값' + result + '는' + typeof(result) + '입니다.');
+}
+function stringtoNumb(){
+    var test1 = 15;
+    var result = test1.toString();
+    console.log('result에 담긴 값' + result + '는' + typeof(result) + '입니다.');
+}
+// ! example
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff;
+        bgColor = parseInt(bgColor);
+        bgColor = bgColor.toString(16);
+        console.log(bgColor);
+        $("body").css("background-color", "#" + bgColor);
+    },1000);
 }
