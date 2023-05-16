@@ -67,3 +67,32 @@ function bgColorRandom(){
         $("body").css("background-color", "#" + bgColor);
     },1000);
 }
+// * case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수, 실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환
+    * 2. parseFloat(value); - 실수형변환
+*/
+function numbString(){
+    var test = '300.1565';
+    var result = parseInt(test) + 10;
+    console.log('result = ' + result);
+}
+// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형. result 출력(typeof 검수하기.)
+
+// todo. 1-1 암시적형변환 이용하기
+function todo1(){
+    var test = 100;
+}
+// todo. 1-2 String 형변환
+function todo2(){
+    var test = 100;
+}
+
+// todo. 1-3 toString 형변환
+function todo3(){
+    var test = 100;
+}
