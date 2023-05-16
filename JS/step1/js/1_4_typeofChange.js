@@ -91,8 +91,18 @@ function todo1(){
 function todo2(){
     var test = 100;
 }
-
 // todo. 1-3 toString 형변환
 function todo3(){
     var test = 100;
+}
+// todo. 2 문자 형을 숫자 형으로 변환하여 연산가능하게 만들기.
+
+// todo. 2-1 parse 형변환
+function todo4(){
+    var test = '100.51';
+}
+
+// todo. 2-2 Number 형변환
+function todo5(){
+    var test = '100.51';
 }
