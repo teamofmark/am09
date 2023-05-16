@@ -56,3 +56,58 @@ function numbOP2(){
     // var result =;
     console.log(a*b/10);
 }
+// *case.3 ul, li 구조의 tag를 html page 에 삽입 해보기.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS..!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// *case.4 증감연산자가 뒤로 올 경우
+function numberPlusAfter(){
+    var number = 10;
+    console.log(number++); //? 예상 : . 
+    console.log(number++); //? 예상 : .
+    console.log(number++); //? 예상 : .
+}
+function numberPlusBefore(){
+    var number = 10;
+    console.log(++number); //? 예상 : .
+    console.log(++number); //? 예상 : .
+    console.log(++number); //? 예상 : .
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10; //? 변수 선언 및 초기화
+    console.log(number++); // ? 출력 : 10 / 현재 : 11 
+    console.log(--number); // ? 출력 : 10 / 현재 : 10
+    console.log(++number); // ? 출력 : 11 / 현재 : 11
+    console.log(number--); // ? 출력 : 11 / 현재 : 10
+    console.log(number++); // ? 출력 : 10 / 현재 : 11
+    console.log(++number); // ? 출력 : 12 / 현재 : 12
+    console.log(--number); // ? 출력 : 11 / 현재 : 11
+    console.log(number++); // ? 출력 : 11 / 현재 : 12
+    console.log(++number); // ? 출력 : 13 / 현재 : 13.
+    console.log(number); //? 13.
+}
+// * case. 6 숫자 10이 담긴 변수 a 와 숫자 20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a>b;
+    console.log("10 > 20 = " + result);
+}
+// todo.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
+
+
+// todo.6 다음 코드를 작성 후 결과를 예상한 다음 출력하라.
+function compareOperator4(){
+    console.log(30 > 20 > 10);
+}
+
+// todo.6-1 5번예제를 정상적인 결과가 출력되도록 수정.
+function compareOperator4R(){
+
+}
