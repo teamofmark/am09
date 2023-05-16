@@ -43,3 +43,16 @@
     ? 접근 연산자
     * .
 */
+// * case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장후 출력.
+function numbOP1(){
+    var a = 10;
+    var result = a + 20 + 30;
+    console.log(result);
+}
+// * case.2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수 저장/출력.
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    // var result =;
+    console.log(a*b/10);
+}
