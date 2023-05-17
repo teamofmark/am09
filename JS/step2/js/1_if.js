@@ -15,3 +15,42 @@
 	alert('종료');
     
 */
+// *case. 1 현재시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours();
+    // ? 변수 - 선언부
+    // console.log(hour);
+
+    if(hour < 12){
+        alert('오전입니다.');
+    }
+    if(hour >= 12){
+        alert('오후입니다.');
+    }
+    // ? 조건문 - 처리부
+}
+// *case. 2 말일이냐? 아니냐?
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+
+    if(day<30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다. 2월은 나도몰라');
+    }
+}
+// todo. 아침 먹을시간? 점심 먹을시간? 저녁 먹을시간?
+function mealTime(){
+    var date = new Date();
+    var hour = ?;
+
+    if(){//? 아침먹을시간 - 11시 보다 작으면 아침
+
+    }else if(){//? 점심먹을시간 - 그것이 아니고 15시보다 현시각이 작으면 점심.
+
+    }else{ //? 그것도 아니라면 저녁.
+
+    }
+}
