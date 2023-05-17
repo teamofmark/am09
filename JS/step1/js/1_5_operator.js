@@ -100,14 +100,19 @@ function compareOperator1(){
     console.log("10 > 20 = " + result);
 }
 // todo.5 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 다른지 비교하여 결과를 출력.
-
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("10 != 20 ? " + result);
+}
 
 // todo.6 다음 코드를 작성 후 결과를 예상한 다음 출력하라.
 function compareOperator4(){
-    console.log(30 > 20 > 10);
+    console.log(30 > 20 > 10); //? true
 }
 
 // todo.6-1 5번예제를 정상적인 결과가 출력되도록 수정.
 function compareOperator4R(){
-
+    console.log(30 > 20 && 20 > 10);
 }
