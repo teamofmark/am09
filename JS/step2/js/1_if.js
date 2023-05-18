@@ -81,11 +81,48 @@ function numbJudgment(){
 }
 // todo. 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
 function avgScore(){
+    var koreanScore = prompt('점수를 입력하시오.', '');
+    var englishScore = prompt('점수를 입력하시오.', '');
+    var mathScore = prompt('점수를 입력하시오.', '');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
     
-    alert('점수똑바로 입력하라.'); //? 직접구하기
-    alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼'); //? 90~100
-    alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼'); //? 80~89
-    alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼'); //? 70~79
-    alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼'); //? 60~69
-    alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼'); //? ~59
+    if(avg > 100 || avg < 0){
+        alert('점수똑바로 입력하라.'); //? 직접구하기
+    }else if(avg >= 90){
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼'); //? 90~100
+    }else if(avg >= 80){
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼'); //? 80~89
+    }else if(avg >= 70){
+        alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼'); //? 70~79
+    }else if(avg >= 60){
+        alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼'); //? 60~69
+    }else{
+        alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼'); //? ~59
+    }
+}
+
+// *case. 4 사용자 id를 입력받아 맞다면 승인메시지 출력. - 권한 / 허가. - ID Match.
+function userIDCheck(){
+    var userID = window.prompt('사용자의 아이디');
+    if(userID == "Mark"){
+        alert('접속승인!');
+    }else if(userID != "Mark"){
+        alert('잘못된 ID 입니다.');
+    }
+}
+// *case. 5 사용자 id "Mark"와  password"1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+
+}
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    (userID=="Mark"&&userPW=="1234")? alert('Mark님으로 확인되었습니다.') : alert('ID 혹은 password가 틀렸습니다.');
 }
