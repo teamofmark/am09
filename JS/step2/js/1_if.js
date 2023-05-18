@@ -126,9 +126,20 @@ function userInfoCheck(){
     var userPW = window.prompt("사용자의 비밀번호");
     (userID=="Mark"&&userPW=="1234")? alert('Mark님으로 확인되었습니다.') : alert('ID 혹은 password가 틀렸습니다.');
 }
-// todo. 1 사용자 id "mark"의 정보가 틀릴 경우 "ID가 존재하지않습니다."
-// todo. 2 사용자의 password "1234" 가 틀릴 경우 "password가 틀렸습니다."
-// todo. 3 id & password가 모두 맞다면 "Mark님으로 확인되었습니다."
+// ! 1 사용자 id "mark"의 정보가 틀릴 경우 "ID가 존재하지않습니다."
+// ! 2 사용자의 password "1234" 가 틀릴 경우 "password가 틀렸습니다."
+// ! 3 id & password가 모두 맞다면 "Mark님으로 확인되었습니다."
+// todo. ? 만약 둘다 틀리면?
 function userInfoCheck2(){
-    
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    if(userID == "Mark" && userPW == "1234"){
+        console.log('Mark님으로 확인되었습니다.');
+    }else if(userID != 'Mark' && userPW != '1234'){
+        console.log('둘 다 틀렸는데?');
+    }else if(userID != 'Mark'){
+        console.log('ID가 존재하지 않습니다.');
+    }else if(userPW != '1234'){
+        console.log('password가 틀렸습니다.');
+    }
 }
