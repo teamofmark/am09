@@ -11,5 +11,25 @@
     *루프
     1. 초기식실행 > 2. 조건식 비교, 조건이 거짓일 경우 반복문 종료 > 
     3. 참일경우 이하 구문 실행 > 4. 증감부 실행 > 5. 2단계
-
 */
+// !단일 for
+// *case. 1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 1; i <= 10; i++){
+        document.write(i+'.'+userName+'<br>');
+    }
+}
+var arr = ['first','second','third']; // ? Array arr[0]
+
+// *case. 2 이름을 1,000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for (var i = 1; i <= 1000; i++){
+        document.write(i+'.'+userName+'<br>');
+    }
+}
+// TODO. 1,000번 출력 중 홀수번째만 나오게 해보자. 
+function namePrint500(){
+    
+}
