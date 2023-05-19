@@ -23,14 +23,25 @@ function calculator(){
     var firstNumb = prompt("첫번째 숫자를 입력하세요.");
     var operator = prompt("사칙연산자 중 하나를 입력하세요.(+,-,*,/)");
     var lastNumb = prompt("두번째 숫자를 입력하세요.");
+    //형변환
+    firstNumb = Number(firstNumb);
+    lastNumb = Number(lastNumb);
 
-    switch(?){
-        case ? :
-            alert(?);
+    switch(operator){
+        case "+":
+            alert(firstNumb+lastNumb);
             break;
-
+        case "-":
+            alert(firstNumb-lastNumb);
+            break;
+        case "*":
+            alert(firstNumb*lastNumb);
+            break;
+        case "/":
+            alert(firstNumb/lastNumb);
+            break;
         default:
-            alert('잘못된값이입력되었습니다.');
+            alert("잘못된 값이 입력되었습니다.");
             break;
     }
 }
