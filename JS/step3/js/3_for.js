@@ -31,5 +31,41 @@ function namePrint1000(){
 }
 // TODO. 1,000번 출력 중 홀수번째만 나오게 해보자. 
 function namePrint500(){
-    
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case. 3 JS Engine처럼 생각해보기
+function thinkJS(){
+    for(var i = 0; i < 10; i++){ //? i가 10보다 작을 때 (0~9)까지만 반복 수행.
+        document.write('i =' + i, "<br>"); //? 0 ~ 9번 까지 출력.
+    }//? i가 10이 되는 순간 break.
+    document.write('종료 i = ' + i); //? 이미 변경된 10이 출력.
+}
+// todo. 1 - 10 까지 출력되는 반복문을 다른 형식으로 5개 작성해보기.
+function answer1(){
+    for(var = ?; ; ){
+
+    }
+}
+function answer2(){
+    for(var = ?; ; ){
+
+    }
+}
+function answer3(){
+    for(var = ?; ; ){
+
+    }
+}
+function answer4(){
+    for(var = ?; ; ){
+
+    }
+}
+function answer5(){
+    for(var = ?; ; ){
+
+    }
 }
