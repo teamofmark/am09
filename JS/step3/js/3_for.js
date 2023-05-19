@@ -84,3 +84,18 @@ function favorFruit(){
         alert(array[i]);
    }
 }
+
+// todo. 지금까지 배웠던 JS 단원들을 배열에 넣어 출력.
+function arrFor(){
+    var data = ['변수','연산자','형변환','조건문if','조건문switch','반복문for'];
+}
+
+//todo. 구구단 숫자를 입력받아 출력하는 for문.
+function gugudan(){
+
+}
+
+// todo. 배열의 총 합을 구하기. var data = [10,20,30,40,50];
+function arraySum(){
+    
+}
