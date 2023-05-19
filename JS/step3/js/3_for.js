@@ -45,27 +45,42 @@ function thinkJS(){
 }
 // todo. 1 - 10 까지 출력되는 반복문을 다른 형식으로 5개 작성해보기.
 function answer1(){
-    for(var = ?; ; ){
-
+    for(var i=0; i<10; i++){
+        document.write((i+1)+'<br>');
     }
 }
 function answer2(){
-    for(var = ?; ; ){
-
+    for(var i=1; i<=10; i++){
+        document.write(i+'<br>');
     }
 }
 function answer3(){
-    for(var = ?; ; ){
-
+    for(var i=100; i<110; i++){
+        document.write((i-99)+"<br>");
     }
 }
 function answer4(){
-    for(var = ?; ; ){
-
+    for(var i=1; i<=10; i+=2){
+        document.write(i+'<br>');
+        document.write((i+1)+'<br>');
     }
 }
 function answer5(){
-    for(var = ?; ; ){
-
+    for(var i=10; i>=1; i--){
+        document.write((11-i)+'<br>');
     }
+}
+// *case. 4 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력하라.
+function favorFruit(){
+    var array = ['딸기','포도','오렌지','수박','메론'];
+    /*
+    alert(array[0]);
+    alert(array[1]);
+    alert(array[2]);
+    alert(array[3]);
+    */
+   console.log(array.length);
+   for (var i = 0; i < array.length; i++){
+        alert(array[i]);
+   }
 }
