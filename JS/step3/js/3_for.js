@@ -193,7 +193,7 @@ function breakEx(){
 // todo. 반복수행중단 구현해보기.
 function runBreak(){
     for(var i = 0; true; i++){
-        // ? 물어보는 팝업 -> confirm('계속할래?');
+        // ? 물어보는 팝업 -> confirm('계속할래?'); -> 누르는 버튼에따라 boolean 반환.
         // * 초기실행 0번째 반복문 message Alert
         // * 확인을 누르면 -> 계속할래? message. 확인(true) / 취소(false)
         // * 확인을 누르면 -> n번째 반복문
