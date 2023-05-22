@@ -198,5 +198,9 @@ function runBreak(){
         // * 확인을 누르면 -> 계속할래? message. 확인(true) / 취소(false)
         // * 확인을 누르면 -> n번째 반복문
         // * 취소를 누르면 -> 중단.
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            break;
+        }
     }
 }
