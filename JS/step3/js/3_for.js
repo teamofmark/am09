@@ -88,14 +88,50 @@ function favorFruit(){
 // todo. 지금까지 배웠던 JS 단원들을 배열에 넣어 출력.
 function arrFor(){
     var data = ['변수','연산자','형변환','조건문if','조건문switch','반복문for'];
+    var swapNumb = '';
+    for (var i = 0; i < data.length; i++){
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            default:
+                i = 'x';
+                break;
+        }
+        document.write(swapNumb + '번째 내용 = ' + data[i] + '<br>');
+    }
 }
 
 //todo. 구구단 숫자를 입력받아 출력하는 for문.
 function gugudan(){
-
+    var guguNumb = prompt('구구단 숫자를 입력');
+    for(var i = 1; i <= 9; i++){
+        document.write(guguNumb + 'x' + i + '=' + guguNumb*i + '<br>');
+    }
 }
 
 // todo. 배열의 총 합을 구하기. var data = [10,20,30,40,50];
 function arraySum(){
-    
+    var data = [10,20,30,40,50];
+    var result = 0;
+    for (var i = 0; i < data.length; i++){
+        result += data[i];
+    }
+    document.write('해당 배열의 총합은 = ' + result);
 }
