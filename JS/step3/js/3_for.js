@@ -143,3 +143,60 @@ function reverseFavorFruit(){
         document.write(array[i]);
     }
 }
+// *case. 6 continue (break하고 형제..)
+function forContinue(){
+    for (var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+function continueEx(){
+    var text = '';
+    for (var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text = text + i;
+    }
+    console.log(text);
+}
+// todo. 10까지 짝수의 합을 순차적으로 출력하는 반복문.
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i<=10; i++){
+        if(i%2==1){
+            continue;
+        }
+        output += i;
+        console.log(output);
+    }
+}
+// *case. 7 break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write('최종 i = ' + i + '<br>');
+}
+function breakEx(){
+    var i = 0;
+    while(i < 6){
+        if(i == 3){
+            break;
+        }
+        i += 1;
+    }
+    console.log(i);
+}
+// todo. 반복수행중단 구현해보기.
+function runBreak(){
+    for(var i = 0; true; i++){
+        // ? 물어보는 팝업 -> confirm('계속할래?');
+        // * 초기실행 0번째 반복문 message Alert
+        // * 확인을 누르면 -> 계속할래? message. 확인(true) / 취소(false)
+        // * 확인을 누르면 -> n번째 반복문
+        // * 취소를 누르면 -> 중단.
+    }
+}
