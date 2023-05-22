@@ -135,3 +135,11 @@ function arraySum(){
     }
     document.write('해당 배열의 총합은 = ' + result);
 }
+// *case. 5 역반복배열
+
+function reverseFavorFruit(){
+    var array = ['딸기','포도','오렌지','수박','메론'];
+    for(var i = array.length - 1; i >= 0; i--){
+        document.write(array[i]);
+    }
+}
