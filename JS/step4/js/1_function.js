@@ -67,4 +67,17 @@ function showInfo(){
     alert(arguments[0] + '의 나이는' + arguments[1] + '세.' + 'MBTI 는' + arguments[2] +'입니다.');
 }
 /*
+    ? return
+    * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
+    * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대 되는 값.
+    * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를
+    * 함수 외부로 전달하기 위해 사용하는 출력 부.
+
  */
+// *case. 5 return 기본 문법
+function f(x){
+    return x * x; //! 호 출 부 리 턴.
+}
+// console.log(f(3));
+// document.write(f(5));
+// alert(f(2));
