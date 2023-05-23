@@ -27,3 +27,44 @@
     }
 // *case. 2 매개변수(parameter)가 있는 함수 만들기.
 // ? parameter = 매개변수 = 인자 -> 함수내 정해진 변수의 value를 변경하여, 기존의 함수가 실행된 이후 접근이 불가한 부분을 해결하기위함.
+function sumParam(numb1,numb2){
+    var result = numb1 + numb2;
+    alert('두 수의 합은 = ' + result);
+}
+
+// *case. 3 매개변수의 자리가 없어도 있는 것처럼...arguments
+// ? arguments = 가변인자함수. (변하는 것이 가능한 매개변수) - 배열인듯 배열아닌 배열같은...
+/*
+    ? arguments
+    * arguments 객체(object)는 모든 함수 안에서 사용하는 지역변수.
+    * arguments를 이용해서 함수내 인수들을 참조 할 수 있고 이 객체의 함수에 전달된 각 인수항목을 포함한다.
+    * 단, arguments는 array와 비슷해보이지만 length를 구하는 방식을 제외하고는 array와는 다르다.
+    * 필요에 따라 array로 추가 변환하여 사용 할 수 있다.
+*/
+
+    // * step. 1
+function sumAll(){
+    console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for(var i = 0; i<arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
+}
+function sumAllEx(){
+    console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for (var i in arguments){ //? ECMA script
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// *case. 4 "자신의 이름"의 나이는 "자신의 나이"세. MBTI "XXXX" 입니다. 를 arguments를 이용해 만들어보기.
+function showInfo(){
+    console.log("0 = " + arguments[0]);
+    console.log("1 = " + arguments[1]);
+    console.log("2 = " + arguments[2]);
+    alert(arguments[0] + '의 나이는' + arguments[1] + '세.' + 'MBTI 는' + arguments[2] +'입니다.');
+}
+/*
+ */
