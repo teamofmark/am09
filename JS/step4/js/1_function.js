@@ -141,3 +141,44 @@ function calculator(op,numb1,numb2){
     }
     return result;
 }
+// todo. 위의 예제에 추가로 사칙연산부를 함수로 분리하여 보다 편하게 사용 할 수있게 하기.
+/* 
+//*
+* 실행구문
+* document.write(calculator2("+", 20, 10) + "<br>");
+* document.write(add(20, 10) + "<br>");
+* document.write(sub(20, 10) + "<br>");
+* document.write(mul(20, 10) + "<br>");
+* document.write(div(20, 10) + "<br>");
+
+? 결과 
+? 1 결과 = 30
+? 2 결과 = 10
+? 3 결과 = 200
+? 4 결과 = 2
+? 5 결과 = 잘못된 연산자 입니다.
+*/
+function calculator2(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = /*numb1 + numb2;*/
+            break;
+    }
+}
+function add(){
+    var addResult = numb1 + numb2;
+
+}
+function sub(){
+    var subResult = numb1 - numb2;
+    
+}
+function mul(){
+    var mulResult = numb1 * numb2;
+    
+}
+function div(){
+    var divResult = numb1 / numb2;
+    
+}
