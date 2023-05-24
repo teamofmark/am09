@@ -162,13 +162,14 @@ function calculator2(op,numb1,numb2){
     var result = '';
     switch(op){
         case "+":
-            result = /*numb1 + numb2;*/
+            result = add(numb1,numb2);
             break;
     }
+    return result;
 }
-function add(){
+function add(numb1,numb2){
     var addResult = numb1 + numb2;
-
+    return addResult;
 }
 function sub(){
     var subResult = numb1 - numb2;
