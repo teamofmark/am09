@@ -81,3 +81,50 @@ function f(x){
 // console.log(f(3));
 // document.write(f(5));
 // alert(f(2));
+// *case. 6 두 수를 매개변수로 받고, 두 값을 더한 결과를 return 하는 함수.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+// var val = sumReturn1(10,20);
+
+// todo. 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수.
+// ! 단, 입력값이 0이면 즉시 실행을 멈추게 한다.
+function infiniteSum(){
+    var count = 1;
+    var sum = 0;
+    while(true){
+        var value = parseInt(window.prompt('숫자만 입력해라.'));
+        if(value == 0){
+            document.write("종료");
+            return;
+        }
+        sum += value;
+        document.write(count + ". " + sum + "<br>");
+        count++;
+    }
+    document.write('총' + count + '번 실행함.');
+}
+// todo. 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수.
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10));
+    document.write("2 결과 =" + calculator("-", 20, 10));
+    document.write("3 결과 =" + calculator("*", 20, 10));
+    document.write("4 결과 =" + calculator("/", 20, 10));
+    document.write("5 결과 =" + calculator("%", 20, 10));
+    //* 결과 
+    1 결과 = 30
+    2 결과 = 10
+    3 결과 = 200
+    4 결과 = 2
+    5 결과 = 잘못된 연산자 입니다.
+*/
+function calculator(op,numb1,numb2){
+    var result = '';
+    switch(){
+        case :
+
+            break;
+    }
+}
