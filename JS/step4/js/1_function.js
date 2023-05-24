@@ -122,9 +122,22 @@ function infiniteSum(){
 */
 function calculator(op,numb1,numb2){
     var result = '';
-    switch(){
-        case :
-
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된연산자.";
             break;
     }
+    return result;
 }
