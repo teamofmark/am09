@@ -229,7 +229,7 @@ function hi1(){
     console.log('Hello.');
 }
 function hi2(){
-    console.log('안녕?');
+    alert('안녕?');
 }
 function hi3(){
     console.log('おはよう');
@@ -237,3 +237,28 @@ function hi3(){
 function hi4(){
     console.log('Guten Tag!');
 }
+function execute(func){
+    func();
+}
+// *case. 9 button click 시 매개변수 값으로 넘긴 함수 호출.
+$(document).ready(function(){ //? jquery 정규 호출
+    $("#runEx9").click(hi2);
+});
+// $(function(){
+
+// });
+// *case. 10 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi, hello");
+    }); 
+}
+// *case. 11 return Value로 함수 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
+// result("Mark");
