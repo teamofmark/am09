@@ -186,7 +186,25 @@ function div(){
 // ? 실행구문 - calculatorCallBack("+",20,10,addPrint);
 // ! 결과 - 두 수의 합은30
 function calculatorCallBack(op, numb1, numb2, callBack){
-
+    var result = "";
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된연산자.";
+            break;
+    }
+    callBack(result);
 }
 function addPrint(value){
     document.write('두 수의 합은' + value);
@@ -199,4 +217,23 @@ function mulPrint(value){
 }
 function divPrint(value){
     document.write('두 수의 나누기는' + value);
+}
+// *case. 7 함수를 변수에 담기.
+function hello(name){
+    console.log(name + '환영합니다.');
+}
+var func = hello;
+
+// *case. 8 중계함수
+function hi1(){
+    console.log('Hello.');
+}
+function hi2(){
+    console.log('안녕?');
+}
+function hi3(){
+    console.log('おはよう');
+}
+function hi4(){
+    console.log('Guten Tag!');
 }
