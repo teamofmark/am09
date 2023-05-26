@@ -3,6 +3,8 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
     // *case. 2
     $("#btnDetailMove").click(detailMoveCircle);
+    // *case. 3
+    keyControl();
 });
 // *case. 1
 function moveCircle(){
@@ -34,4 +36,30 @@ function detailMoveCircle(){
     }
     // todo. || -> false condition .
 
+}
+// *case. 3
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+    $(document).keydown(function(e){
+        // console.log("입력한 키" + e.keyCode);
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+        $circle.css("top",currentYpos);
+        $circle.css("left",currentXpos);
+    });
 }
