@@ -1,6 +1,8 @@
 $(document).ready(function(){
     // *case. 1
     toggleCheck();
+    // todo.
+    toggleTodo();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -16,4 +18,9 @@ function toggleCheck(){
             $checkTarget.text("check_box_outline_blank");
         }
     });
+}
+
+function toggleTodo(){
+    // ? target.attr("type"); -> 대상의 type 값을 가져와라 / target.attr("type","변경사항") -> 대상의 type값을 "변경사항"으로 바꿔라.
+    // * img.attr("src") = https://.. , img.attr("src","via.placeholder") = src에 via.placeholder를넣어라.
 }
