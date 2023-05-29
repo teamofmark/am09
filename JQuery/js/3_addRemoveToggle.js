@@ -23,4 +23,18 @@ function toggleCheck(){
 function toggleTodo(){
     // ? target.attr("type"); -> 대상의 type 값을 가져와라 / target.attr("type","변경사항") -> 대상의 type값을 "변경사항"으로 바꿔라.
     // * img.attr("src") = https://.. , img.attr("src","via.placeholder") = src에 via.placeholder를넣어라.
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var $toggleInput = $("#userPW");
+    var toggleStatus = false;
+
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $toggleTarget.text("visibility");
+            $toggleInput.attr("type","text");
+        }else{
+            $toggleTarget.text("visibility_off");
+            $toggleInput.attr("type","password");
+        }
+    });
 }
