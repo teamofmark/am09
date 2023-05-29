@@ -5,6 +5,8 @@ $(document).ready(function(){
     toggleTodo();
     // *case. 2
     tabUI();
+    // *case. 3
+    accControl(".accComponent li > *:first-of-type");
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -21,7 +23,6 @@ function toggleCheck(){
         }
     });
 }
-
 function toggleTodo(){
     // ? target.attr("type"); -> 대상의 type 값을 가져와라 / target.attr("type","변경사항") -> 대상의 type값을 "변경사항"으로 바꿔라.
     // * img.attr("src") = https://.. , img.attr("src","via.placeholder") = src에 via.placeholder를넣어라.
@@ -50,5 +51,10 @@ function tabUI(){
 
         $(".tabPage").removeClass("activated");
         $(activeTab).addClass("activated");
+    });
+}
+function accControl(target){
+    $(target).click(function(){
+        $(this).toggleClass("active");
     });
 }
