@@ -7,6 +7,7 @@ var $resetBtn = null;
 $(function(){
     init();
     scoreCount(count, $score, $circle, playState);
+    $resetBtn.click(restart);
 });
 function init(){ //? 선언함수
     $score = $("#score");
@@ -26,3 +27,9 @@ function scoreCount(count, $score, $circle, playState){
     }, 5000);
 }
 // todo. 재시작버튼 구현해보기.
+function restart(){
+    playState = true;
+    count = 0;
+    $score.text(count + "점");
+    scoreCount(count, $score, $circle, playState);
+}
