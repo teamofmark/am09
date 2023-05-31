@@ -24,7 +24,9 @@ function moveCircle(){
     xpos += runStep;
     $circle.css("left",xpos);
     // todo. 가두기.
-    
+    if(xpos > railWidth || xpos < 0){
+        runStep *= -1;
+    }
 }
 
 function moveStop(){
