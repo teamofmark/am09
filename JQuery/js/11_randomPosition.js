@@ -29,13 +29,13 @@ function gameStart(){
 }
 function moveCircle(){
     $circle.css({
-        left: , 
-        top: 
+        left: Math.floor(Math.random()*($panel.width() - $circle.width())), //todo. x축 random 구하기
+        top:  Math.floor(Math.random()*($panel.height() - $circle.height()))//todo. y축 random 구하기
     });
 }
 /*
     var value = parseInt(Math.random()*50)+50;
-    
+
         ! random method : 매개변수 = x, 리턴값 = 0 - 1 사이 소수값.
     ? 1. random 메서드는 0 - 1 범위에서 0 과 1을 포함하지 않는 소수를 랜덤하게 리턴한다. (0.111111111~0.999999999)
     ? 2. parseInt는 안의 수를 소수에서 정수로 변환한다.
