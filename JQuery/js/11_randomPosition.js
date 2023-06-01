@@ -44,8 +44,17 @@ function moveCircle(){
 
 */
 function scoreCount(){
-
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
 }
 function endGame(){
-
+    setTimeout(function(){
+        playState = false;
+        clearInterval(timerID);
+        alert("게임종료. 너의 점수는" + count + "점 이다.");
+        count = 0;
+        $score.text(count);
+    },10000);
 }
