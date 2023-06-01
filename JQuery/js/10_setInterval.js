@@ -17,7 +17,10 @@ function initEvent(){
 }
 function moveStart(){
     // * clearInterval
-    setInterval(moveCircle,1); // ? 움직임함수 - 한번시작되면 중지 불가.
+    if(timerID == 0){ //? timerID == 0 / 시작을 안한상태. timerID != 0 / 시작을 한 상태.
+        timerID = setInterval(moveCircle,1); // ? 움직임함수 - 한번시작되면 중지 불가.
+    }
+    
 }
 function moveCircle(){
     var xpos = $circle.position().left; //? 현재 position css의 left 좌표.
@@ -30,5 +33,6 @@ function moveCircle(){
 }
 
 function moveStop(){
-
+    clearInterval(timerID); //? setInterval clear.
+    timerID = 0; //? 초기화
 }
