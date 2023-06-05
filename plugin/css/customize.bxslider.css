@@ -45,3 +45,22 @@
     font-weight: bold; color: white; background-color: black;
 }
 /* ? pagerSelector customize */
+
+.customPager{
+    text-align: center; margin-bottom: 20px;
+}
+.customPager li{
+    display: inline-block; width: 20%;
+}
+.customPager li:not(:first-child){
+    margin-left: 2%;
+}
+.customPager li a{
+    opacity: 0.5; display: block; transition: all 0.35s ease-in;
+}
+.customPager li a.active{
+    padding: 5px; border: 3px solid black; opacity: 1;
+}
+.customPager li a img{
+    width: 100%; display: block;
+}
