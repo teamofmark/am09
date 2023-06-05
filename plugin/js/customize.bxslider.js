@@ -42,7 +42,7 @@ $(function(){
         autoControls: true, //? default: false. 시각장애인들을 배려 하는것.
         autoControlsCombine: false, //? default : false. play/pause toggle.
         autoControlsSelector: '.newAutoControls',
-        startText: '시작',
-        stopText: '중지'
+        // ? startText: '시작', 생성된 뼈대 안에 text 변경
+        // ? stopText: '중지'
     });
 });
