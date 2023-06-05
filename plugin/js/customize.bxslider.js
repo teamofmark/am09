@@ -32,6 +32,9 @@ $(function(){
 
         // *controler
         controls: true, //? default: true. control button 켜기 끄기.
-        
+        nextSelector: '.btn_next',
+        prevSelector: '.btn_prev',
+        nextText: '다음',
+        prevText: '이전'
     });
 });
