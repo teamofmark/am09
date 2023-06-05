@@ -1,3 +1,16 @@
+.bx-wrapper {
+    /* -moz-box-shadow: 0 0 5px #ccc; */
+    /* -webkit-box-shadow: 0 0 5px #ccc; */
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0;
+    *zoom: 1;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
 .bx-wrapper .bx-caption{
     position: absolute;
     bottom: 0;
