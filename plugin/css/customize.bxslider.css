@@ -26,3 +26,22 @@
     font-size: 18px;
     padding: 10px;
 }
+
+
+.newPager .bx-pager.bx-default-pager{
+    text-align: center;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link{
+    text-decoration: none; padding: 17px 20px; display: block; background-color: #eaeaea;
+    border-radius: 40px; font-size: 14px; color: black;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active{
+    font-weight: bold; color: white; background-color: black;
+}
+/* ? pagerSelector customize */
