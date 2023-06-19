@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyperLink - a</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        #targetAnchor{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>hyperLink List</h1>
+    <p>
+        hyperLink를 이용하여 원하는 URL 및 URL내 위치로 이동 하는 법,
+        file Download / eMail Link등을 배워보자.
+    </p>
+    <ul>
+        <li><a href="https://www.naver.com" target="_self">NAVER 바로가기.</a></li>
+        <li><a href="https://www.daum.net" target="_blank">DAUM 바로가기.</a></li>
+        <li><a href="../step2.zip">file download 바로가기.</a></li>
+        <li><a href="mailto:teamofmark@gmail.com?subject=질문있습니다.">email 보내는 바로가기.</a></li>
+        <li><a href="tel:+821056658312">전화 거는 바로가기.</a></li>
+        <li><a href="#targetAnchor">목표지점 바로가기.</a></li>
+    </ul>
+    <div id="targetAnchor">
+        바로가기 목표지점.
+    </div>
+</body>
+</html>
