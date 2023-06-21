@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Tag</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>HTML4 Input</legend>
+            <ul>
+                <li>
+                    <label for="userID">사용자 ID : </label>
+                    <input type="text" id="userID" placeholder="사용자 ID" title="사용자 ID를 입력하세요.">
+                </li>
+                <li>
+                    <label for="userPW">사용자 PW : </label>
+                    <input type="password" id="userPW">
+                </li>
+                <li>
+                    <!-- todo. (input:radio#btn_radio$+label{항목$})*4 -->
+                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <label for="btn_radio1">항목1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">항목2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">항목3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">항목4</label>
+                </li>
+                <li>
+                    <!-- todo. (input:checkbox#btn_chk$+label{check$})*4 -->
+                    <input type="checkbox" id="btn_chk1">
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+
+        </fieldset>
+    </form>
+</body>
+</html>
