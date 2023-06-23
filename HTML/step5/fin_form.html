@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form tag</title>
+    <style>
+        .wrap{
+            max-width: 500px;
+            margin:0 auto;
+        }
+        table{
+            width: 100%;
+        }
+        table th{
+            text-align: left;
+        }
+        table td{
+            text-align: left;
+        }
+        input[type="range"]{
+            width: 330px;
+        }
+        datalist{
+            width: 330px;
+            display: block !important;
+        }
+        #tickmarks option{
+            display: inline;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+        #tickmarks option:first-of-type{
+            margin-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <table>
+            <tbody>
+                <tr>
+                    <th>
+                        키(cm)
+                    </th>
+                    <td>
+                        <input type="range" list="tickmarks" min="5" max="10" step="0.1">
+                        <datalist id="tickmarks">
+                            <option value="120" label="120">
+                            <option value="130" label="130">
+                            <option value="140" label="140">
+                            <option value="150" label="150">
+                            <option value="160" label="160">
+                            <option value="170" label="170">
+                            <option value="180" label="180">
+                            <option value="190" label="190">
+                            <option value="200" label="200">
+                            <option value="210" label="210">
+                        </datalist>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
