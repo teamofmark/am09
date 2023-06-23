@@ -76,21 +76,42 @@
     <form>
         <fieldset>
             <legend>HTMl5 Input</legend>
+            
             <label for="userName">이름 : </label>
             <input type="text" id="userName" placeholder="8자미만" required> <br>
+            
             <label for="userPassword">비밀번호 : </label>
             <input type="password" id="userPassword" autofocus> <br>
+            
             <label for="userID">ID : </label>
             <input type="email" id="userID" placeholder="이메일을 입력하세요." value="teamofmark@gmail.com" readonly> <br>
+            
             <label for="urlAddr">웹사이트 주소 : </label>
             <input type="url" id="urlAddr" placeholder="https:// 를 포함한 주소를 넣으세요." required> <br>
+            
             <label for="telNumber">전화번호 : </label>
             <input type="tel" id="telNumber" placeholder="한줄기입, - 생략" required> <br>
             <!-- ! 값을 받을때 - 없이 받는걸 원칙 -->
+            
             <label for="pdCount">수량 : </label>
             <input type="number" id="pdCount" min="1" max="100" step="1" value="1"> <br>
+            
             <label for="countRange">입력 범위 : </label>
-            <input type="range" id="countRange" min="-2" max="2" step="1" value="0">
+            <input type="range" id="countRange" min="-2" max="2" step="1" value="0"> <br>
+            
+            <label for="dateInput">날짜와 관련된 : </label>
+            <input type="date" id="dateInput">
+            <input type="month" id="monthInput">
+            <input type="week">
+            <input type="time">
+            <input type="datetime">
+            <input type="datetime-local"> <br>
+
+            <label for="searchField">검색 : </label>
+            <input type="search" id="searchField" autocomplete> <br>
+
+            <label for="typeColor">색상선택 : </label>
+            <input type="color" id="typeColor">
         </fieldset>
         <input type="submit" value="전송">
         <input type="reset" value="취소">
