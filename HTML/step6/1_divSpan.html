@@ -6,49 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div Layout</title>
     <style>
-        .header {
+        header {
             background-color: red;
             margin-bottom: 20px;
             text-align: center;
         }
 
-            .header .nav li {
+            header nav li {
                 display: inline-block;
                 width: 19%;
                 background-color: blue;
                 color: white;
             }
 
-        .section {
+        section {
             background-color: red;
             margin-bottom: 20px;
         }
 
-            .section > * {
+            section > * {
                 height: 500px;
                 display: inline-block;
             }
 
-            .section .article {
+            section article {
                 background-color: yellow;
                 width: 80%;
             }
 
-            .section .aside {
+            section aside {
                 background-color: green;
                 width: 18%;
             }
 
-        .footer {
+        footer {
             text-align: center;
             background-color: orange;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header>
         <span>globalHeader</span>
-        <div class="nav">
+        <nav>
             <ul>
                 <li>menu 1</li>
                 <li>menu 2</li>
@@ -56,16 +56,15 @@
                 <li>menu 4</li>
                 <li>menu 5</li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </header>
     <!-- ? div : divide - 분할하다. 나누다. -->
-    <div class="section">
-       <!-- todo. (.article>span{text})+(.aside>span{quick Menu}) -->
-       <div class="article"><span>text</span></div>
-       <div class="aside"><span>quick Menu</span></div>
-    </div>
-    <div class="footer">
+    <section>
+       <article><span>text</span></article>
+       <aside><span>quick Menu</span></aside>
+    </section>
+    <footer>
         <span>global footer</span>
-    </div>
+    </footer>
 </body>
 </html>
