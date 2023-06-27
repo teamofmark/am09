@@ -78,5 +78,26 @@
         !현재 IE12 버전은 지원하는것으로 보이나, 이전의 IE는 지원불가
         !mainSector. page당 한번. 최상위구조(body > )에만 쓸수있다.
     -->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">
+        100 +
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!-- 
+        ? output : -> 출력담당 연산태그
+     -->
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <dialog open>This is an open dialog window</dialog>
+    <!-- ? open attr에 따른 popup 구동 -->
 </body>
 </html>
