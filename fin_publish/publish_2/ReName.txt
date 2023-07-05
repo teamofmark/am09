@@ -1,0 +1,21 @@
+로고 : logo_header,footer
+
+불릿 : bul_용도
+-bul_cart
+-bul_search
+-bul_check
+
+샘플 : ex,sample,example...
+sample_slider
+sample_product_01 ~ 15.png
+sample_face
+
+배경 : bg
+bg_arrow
+
+켜고끄고 : on / off, act / deact
+on_radio / off_radio
+on_check / off_check
+
+사회관계망서비스 :  sns_number
+sns_01(tw) / sns_02(fb) / sns_03(google)
