@@ -1,0 +1,25 @@
+body{
+    font-size: 12px;
+}
+h1{
+    font-size: 12px; color: #f03;
+}
+img{
+    font-size: 0; width: 150px; border: 3px solid #3f3;
+    /* height: 150px; */
+}
+ul, ol, dl{
+    color: #60f;
+}
+ul li{
+   font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
+dl dt{
+    color: orange;
+}
+dl dd{
+    color: brown;
+}
