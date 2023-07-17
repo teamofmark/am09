@@ -30,9 +30,17 @@
     border-style: double;
     border-width: 5px;
     border-color: blueviolet;
+    font-size: 18px;
 }
 .btn.cancel{
     color: darkgrey;
     border-color: slategrey;
     background-color: grey;
+}
+#userName{
+    border: 1px solid #eaeaea;
+    line-height: 21px;
+    font-size: 12px;
+    padding: 5px 15px;
+    color: green;
 }
