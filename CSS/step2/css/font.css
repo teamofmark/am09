@@ -76,3 +76,17 @@ p.w_nowrap{
     * 4. 작은 애에게 상대적 수치 (%)를 이용하여 나머지 부분을 더 움직일 수 있다.
     ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
 */
+p.t_indent{
+    text-indent: 200px; font-size: 20px;
+}
+.test{
+    background: url('https://via.placeholder.com/150x50?text=blahblah') center / cover no-repeat;
+    width: 150px; height: 50px; text-indent: -9999px;
+}
+a{
+    display: block;
+}
+a.t_deco_N{text-decoration: none; text-transform: none; color: #090;}
+a.t_deco_U{text-decoration: underline; text-transform: lowercase; color: #0cf;}
+a.t_deco_{text-decoration: ; text-transform: ; color: #;}
+a.t_deco_{text-decoration: ; text-transform: ; color: #;}
