@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+body{
+    font-family: 'Nanum Gothic';
+    /*
+        웹폰트로드하는방법
+        1. 영어권이냐 ? 영어권이아니냐
+
+        - 영어권 : alternate(대체).
+        - 비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경. (해당폰트에 영문이없을시)
+        (한글,영어)
+        - 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
+
+    */
+}
+h1{
+    font-size: 20px; line-height: 25px; color: #06f;
+/*
+    font가 들어가는 부분은 무조건 line-height를 설정해야 하는데, 그 이유인 즉슨
+    block 속성이 아닌 태그들에게 line-height를 지정하지 않게 되면 폰트의 영역이(컨텐츠의 영역이)
+    무시되는 경우가 있으며, block 속성이라 하여도, text가 길 경우 줄바꿈이 이루어
+    졌을때 윗줄과 아랫줄의 줄간이 없어 글자들이 붙거나 겹치는 현상이 있기때문이다.
+*/
+/* 
+    * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
+    * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
+    * hsla(hue,saturate,lightness,alpha(투명도));
+*/
+}
+h2{
+    font-size: 15px; line-height: 21px; color: #966;
+}
+h3{
+    font-size: 13px; line-height: 19px; color: #f90;
+}
+p{
+    font-size: 14px;
+}
+/* ? font-size -> min: 6.777777777px. / 한글 : min: 12px(11px비권장) 영문 : min: 10px(font마다상이) */
+p.letter{
+    letter-spacing: -1px;
+}
+p.word{
+    word-spacing: 10px;
+}
+p.w_normal{
+    width: 150px; border: 1px solid black; line-height: 22px;
+    white-space: normal;
+}
+p.w_nowrap{
+    width: 150px; border: 1px solid black; line-height: 22px;
+    white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
+}
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+	/*
+    ! inline, inline-block 끼리만 가능
+	baseline: 문자의 밑선에 맞추어 정렬(default)
+	top: 위쪽에 정렬
+	middle: 문자의 중앙을 기준으로 해서 정렬
+	bottom : 아래쪽 정렬
+	//sub : 아래첨자
+	//super : 위 첨자
+	// text-top:문자의 윗선을 밑선으로 해서 정렬
+	% : 퍼센트로 정렬 위치를 지정 (
+		후처리 = 높이가 낮은 대상. 그 대상의 높이기준
+		또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
+		)
+*/	
