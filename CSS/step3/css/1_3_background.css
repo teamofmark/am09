@@ -1,0 +1,13 @@
+body{
+    height: 2000px;
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+p{
+    margin:0; padding: 200px; background-color: rgba(255,0,0,0.1);
+    color: white;
+}
