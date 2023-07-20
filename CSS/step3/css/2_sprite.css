@@ -2,20 +2,16 @@
     margin: 0; padding: 0;
 }
 h1{
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; margin-bottom: 20px;
 }
 ul{
-    width: 640px;
-    margin: 0 auto;
+    width: 640px; margin: 0 auto;
 }
 ul:after{
-    content: ''; display: block;
-    clear: both;
+    content: ''; display: block; clear: both;
 }
 ul li{
-    float: left; display: block;
-    width: 160px; height: 140px;
+    float: left; display: block; width: 160px; height: 140px;
     background-image: url('../images/sprite.png'); background-repeat: no-repeat;
 }
 ul li strong{
