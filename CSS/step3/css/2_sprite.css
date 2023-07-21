@@ -17,3 +17,33 @@ ul li{
 ul li strong{
     background-color: rgba(0,0,0,0.5); color: white;
 }
+/* ? 출력대상의 너비 : 160px 높이 : 140px */
+ul li.captain{
+    background-position: 0px 0px;
+}
+ul li.wolverine{
+    background-position: -160px 0px;
+    /* * 대상의 너비가 160px이니까 좌측으로(-) 160px 만큼 이동하면 울버린이 나옴. */
+}
+ul li.thor{
+    background-position: -320px 0px;
+    /* *이후 160의 배수관계 */
+}
+ul li.ironman{
+    background-position: -480px 0px;
+}
+/* todo 실습 */
+ul li.spiderman{
+    background-position: 0px -140px;
+    /* ? yAxis 움직임같은경우 대상 높이만큼 내려와야(-높이) 2번째 줄이 보인다.*/
+}
+ul li.superman{
+    background-position: -160px -140px;
+    /* ? 이후 xAxis 동일 */
+}
+ul li.rangerRed{
+    background-position: -320px -140px;
+}
+ul li.rangerBlue{
+    background-position: -480px -140px;
+}
