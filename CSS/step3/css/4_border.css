@@ -7,9 +7,16 @@ div{
     border: 3px solid #60f;
 }
 .multiBox{
-    border-width: 1px 3px 10px 25px;
+    /* ?속성별분리 */
+    /* border-width: 1px 3px 10px 25px;
     border-style: solid dotted dashed double;
-    border-color: #1958b7 #f06 #66f #fc6;
+    border-color: #1958b7 #f06 #66f #fc6; */
+    
+    /* ?방향별분리 */
+    border-top:;
+    border-right:;
+    border-bottom:;
+    border-left:;
 }
 /*solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/
 /*
