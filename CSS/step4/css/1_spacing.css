@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin: 10px;
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039;
+    color: white;
+}
+.secondDiv{
+    background-color: #ddd; margin: 30px 15px;
+    /* 
+        ! margin은 left / bottom만을 활용하는 것을 추천.
+        ? margin은 동일한 방향에서 만나게 될 경우 서로 상쇄.
+    */
+}
