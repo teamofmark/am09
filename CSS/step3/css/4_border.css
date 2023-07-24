@@ -13,10 +13,10 @@ div{
     border-color: #1958b7 #f06 #66f #fc6; */
     
     /* ?방향별분리 */
-    border-top:;
-    border-right:;
-    border-bottom:;
-    border-left:;
+    border-top: 1px solid #1985b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #66f;
+    border-left: 25px double #fc6;
 }
 /*solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/
 /*
@@ -25,3 +25,6 @@ border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
 또는 border: 5px 10px; 방식으로 상하, 좌우로 묶어 표현 할 수 있다.
     또는 border: 5px 8px 10px; 방식으로 상하 별도, 좌우 묶기 로 표현가능            
 */
+.searchField{
+    display: block; width: 100%;
+}
