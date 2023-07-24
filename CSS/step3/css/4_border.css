@@ -26,5 +26,9 @@ border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
     또는 border: 5px 8px 10px; 방식으로 상하 별도, 좌우 묶기 로 표현가능            
 */
 .searchField{
-    display: block; width: 100%;
+    display: block; width: 100%; border-width: 0 0 1px; line-height: 50px;
+    padding-left: 64px; outline: none; font-size: 18px;
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'), url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat; background-size: 24px;
+    background-position: 20px center, right 40px center;
 }
