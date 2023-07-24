@@ -1,4 +1,6 @@
-
+html,body{
+    height: 100%;
+}
 /* todo 계단 */
 div{
     width: 300px; height: 150px; margin-bottom: 10px;
@@ -51,6 +53,7 @@ border-top , border-right, border-bottom, border-left 로 설정 할 수 있다.
     background-color: black; color: yellow; border-radius: 10px;
 }
 .circleBox{
-    width: 500px; height: 500px; background-color: midnightblue;
+    width: 50%; height: 50%; background-color: midnightblue;
+    border-radius: 50%; text-indent: -9999px;
     /* todo 원만들기, 글자없애기 + 원 %만들기 */
 }
