@@ -15,4 +15,13 @@ body{
         ! margin은 left / bottom만을 활용하는 것을 추천.
         ? margin은 동일한 방향에서 만나게 될 경우 서로 상쇄.
     */
+    /* padding: 0 10px 10px; */
+}
+.secondDiv article{
+    background-color: #930;
+    margin: 10px;
+    /* 
+    ! margin-bottom이 비 적용 된 것을 확인 할 수 있다.(경계선너머적용)
+    ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직 하다.
+*/
 }
