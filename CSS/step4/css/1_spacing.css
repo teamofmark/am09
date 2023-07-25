@@ -42,3 +42,10 @@ body{
     margin: 0 10px; background-color: #f33; color: white;
     /* ! margin과 부모의 padding 은 섞이지 않는다. 무조건 가산됨. */
 }
+.paddingDiv{
+    padding: 10px 20px; border: 3px solid #333; background-color: #ff3;
+    width: 100px; box-sizing: border-box;
+}
+.paddingDiv article{
+    background-color: #039; color: white;
+}
