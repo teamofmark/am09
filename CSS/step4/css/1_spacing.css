@@ -25,3 +25,20 @@ body{
     ? 그렇기 때문에 부모요소가 자손요소에게 padding을 사용함이 바람직 하다.
 */
 }
+.centerDiv{
+    width: 30%;
+    padding: 10px;
+    border:1px solid #33f;
+    /* 
+        ! padding은 본래 대상의 크기에 가산된다. border도 마찬가지.
+        * ex> width: 300 + border: 2 + padding: 20 = 322px.
+    */
+    margin: 0 auto;
+    /* 
+        ! (부모공간 width - 자신의 width) / 2 -> 좌,우에 공통으로 margin. 
+    */
+}
+.centerDiv article{
+    margin: 0 10px; background-color: #f33; color: white;
+    /* ! margin과 부모의 padding 은 섞이지 않는다. 무조건 가산됨. */
+}
