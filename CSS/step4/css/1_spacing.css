@@ -45,6 +45,9 @@ body{
 .paddingDiv{
     padding: 10px 20px; border: 3px solid #333; background-color: #ff3;
     width: 100px; box-sizing: border-box;
+    /* 
+        ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 width에 가산되지 않는다.  
+    */
 }
 .paddingDiv article{
     background-color: #039; color: white;
