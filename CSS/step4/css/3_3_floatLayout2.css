@@ -42,3 +42,25 @@
 .wrap header nav ul li a{
     color: white;
 } */
+.wrap section{
+    margin-bottom: 300px;
+}
+.wrap section:after{
+    content: ''; display: block; clear: both;
+}
+.wrap section h2{
+    background-color: skyblue;
+}
+.wrap section article{
+    float: left; width: 33.33%;
+}
+.wrap section article h3{
+    background-color: black; color: white;
+}
+.wrap section article ul li{
+    display: block; line-height: 35px;
+}
+.wrap footer{
+    text-align: center; background-color: #4800ff;
+    color: white; line-height: 55px;
+}
