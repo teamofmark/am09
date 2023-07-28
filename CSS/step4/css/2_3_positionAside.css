@@ -39,5 +39,6 @@ body,
     text-decoration: underline; color: darkorchid;
 }
 .wrap aside footer{
-    position: absolute; bottom: 0; background-color: midnightblue; color: white;
+    position: absolute; bottom: 30px; background-color: midnightblue; color: white;
+    font-size: 12px;
 }
