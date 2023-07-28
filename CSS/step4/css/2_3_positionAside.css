@@ -42,3 +42,29 @@ body,
     position: absolute; bottom: 30px; background-color: midnightblue; color: white;
     font-size: 12px;
 }
+.wrap article{
+    padding-left: 265px; background-color: palegoldenrod;
+}
+.wrap article > *:not(div){
+    margin-bottom: 100px;
+}
+
+.wrap article h2{
+    font-size: 40px; color: forestgreen; font-weight: bold;
+}
+.wrap article blockquote{
+    border: 5px solid olive; padding: 30px; box-sizing: border-box;
+    font-size: 26px;
+}
+.wrap article q{
+    display: block; font-size: 21px;
+}
+.wrap article div:not(:last-child){
+    margin-bottom: 50px;
+}
+.wrap article div h3{
+    color: purple; font-size: 30px; margin-bottom: 50px;
+}
+.wrap article div p{
+    font-size: 21px; line-height: 40px; color: darkolivegreen;
+}
