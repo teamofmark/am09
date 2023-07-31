@@ -62,3 +62,14 @@
 .sameSelector h1+h2{
     font-size: 40px; color: #fcf;
 }
+.stringAttrSelector img[src$='png']{
+    width: 100px; border: 3px solid #f00;
+}
+/* 
+    ?속성값일치선택자.
+    ? *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
+    ? ^= : 해당 단어로 시작하는 것만 선택.
+    ? $= : 해당 단어로 끝나는 대상 선택.
+    ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
+    ? ~= : 띄어쓰기 기준. 해당 단어 포함.
+*/
