@@ -48,3 +48,17 @@
     width: 25px; height: 25px;
     /* background-color: greenyellow; border: 5px solid green; */
 }
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906;
+}
+
+.sameSelector h1~h2{
+    background-color: #333;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
