@@ -103,3 +103,10 @@
 .eventSelector a:focus{
     border: 3px solid deeppink;
 }
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; overflow-y: hidden; height: 20px;
+    transition-duration: 0.5s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
