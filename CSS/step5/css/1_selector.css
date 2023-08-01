@@ -110,3 +110,16 @@
 .statusSelector input[type='checkbox']:checked + label{
     height: 0px;
 }
+.statusSelector input:not([type='checkbox']){
+    display: block; margin-bottom: 30px;
+}
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:enabled::placeholder{
+    color: yellow;
+}
+.statusSelector input:disabled::placeholder{
+    background-color: lightgray; color: steelblue;
+}
+/* ! select option : selected  */
