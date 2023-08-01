@@ -85,3 +85,21 @@
     ? |= : 해당 단어로 시작하거나 -으로 구분되는 대상 선택.
     ? ~= : 띄어쓰기 기준. 해당 단어 포함.
 */
+.eventSelector a{
+    display: block; font-size: 24px; margin-bottom: 30px; line-height: 30px;
+}
+.eventSelector a:link{
+    color: red; background-color: black; text-decoration: none;
+}
+.eventSelector a:hover{
+    color: black; background-color: red; text-decoration: underline;
+}
+.eventSelector a:active{
+    color: red; background-color: white; text-decoration: line-through;
+}
+.eventSelector a:visited{
+    color: gray; background-color: white;
+}
+.eventSelector a:focus{
+    border: 3px solid deeppink;
+}
