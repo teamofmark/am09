@@ -143,3 +143,13 @@
 .virtualSelector ul :nth-child(2n+1){
     background-color: #09f;
 }
+/* ? -of-type : 자신들끼리의 순서 */
+
+/* .shapeSelector h1:nth-of-type(2){color:#30f;}
+.shapeSelector h2:first-of-type{color:#0c6;}
+.shapeSelector h3:last-of-type{color:#f06;} */
+
+/* todo. child를 사용하여 같은 결과 나오게 하기. */
+.shapeSelector :last-child{color:#30f;}
+.shapeSelector :nth-child(2){color:#0c6;}
+.shapeSelector :nth-child(4){color:#f06;}
