@@ -1,0 +1,147 @@
+﻿/*
+    lessCSS
+
+    //변수 선언
+    @ColumnWidth: 6.5%;
+    @GutterWidth: 2%;
+	@paddingWidth: 1%;
+
+    // 믹스인
+    .span(@column){
+        width:(@ColumnWidth * @column) + (@GutterWidth * (@column - 1));
+    }
+
+    // 스타일사용
+    .row{overflow:hidden; width:100%;}
+    [class*=span]{
+        float:left;
+        padding: 10px @paddingWidth;
+    }
+
+    .span_1{.span(1);}
+    .span_2{.span(2);}
+    .span_3{.span(3);}
+    .span_4{.span(4);}
+*/
+
+
+/* All Device  - 모든 해상도를 위한 공통 코드를 작성한다. 모든 해상도에서 이 코드가 실행됨.*/
+
+@media screen and (max-width:767px){
+	.row article{
+        width:100%; padding:30px; box-sizing:border-box;
+  }
+  .row article:hover{
+    padding:50px;
+  }
+}
+
+/* mobile Device - 사용자 해상도가 768px 이하일 때 이 코드가 실행됨.*/
+
+@media screen and (min-width:768px) and (max-width: 959px){
+.row {
+  overflow: hidden;
+  width: 100%;
+}
+[class*=span] {
+  float: left;
+  padding:10px 1%;
+  box-sizing:border-box;
+}
+[class*=span]:first-child {
+  padding:10px 0;
+}
+.span_1,.span_2,.span_3 {
+  width: 25%;
+}
+.span_4 {
+  width: 50%;
+}
+
+.container .row.line1 article.span_4{width:50%; height:286px;}
+.container .row.line1 article.span_2:nth-child(6),
+.container .row.line1 article.span_2:nth-child(7),
+.container .row.line1 article.span_2:nth-child(8),
+.container .row.line1 article.span_2:last-child{width:50%;}
+.container .row.line1 article:not(.span_4){height:143px;}
+/*line1 Fin*/
+
+.container .row.line2 article.span_2:nth-child(4),
+.container .row.line2 article.span_2:last-child{width:50%;}
+.container .row.line2 article{height:143px;}
+/*line2 Fin*/
+
+.container .row.line3 article.span_3:last-child{width:100%;}
+.container .row.line3 article{height:200px;}
+/*line3 Fin*/
+
+.container .row.line4 article.span_2:nth-child(5){width:70%;}
+.container .row.line4 article.span_2:last-child{width:30%;}
+.container .row.line4 article{height:195px;}
+/*line4 Fin*/
+
+
+}
+/* Tablet Device - 사용자 해상도가 768px 이상 959px 이하 일 때 이 코드가 실행됨. 테블릿 코드를 작성한다.*/
+
+@media screen and (min-width:960px){
+.row {
+  overflow: hidden;
+  width: 100%;
+}
+[class*=span] {
+  float: left;
+  padding:10px 1%;
+}
+[class*=span]:first-child {
+  padding:10px 0;
+}
+
+.span_1 {
+  width: 6.5%;
+}
+.span_2 {
+  width: 15%;
+}
+.span_3 {
+  width: 23.5%;
+}
+.span_4 {
+  width: 32%;
+}
+.span_5 {
+  width: 40.5%;
+}
+.span_6 {
+  width: 49%;
+}
+.span_7 {
+  width: 57.5%;
+}
+.span_8 {
+  width: 66%;
+}
+.span_9 {
+  width: 74.5%;
+}
+.span_10 {
+  width: 83%;
+}
+.span_11 {
+  width: 91.5%;
+}
+.span_12 {
+  width: 100%;
+}
+/*grid Fin*/
+.container .row.line1 article.span_4{height:266px;}
+.container .row.line1 article:not(.span_4){height:123px;}
+/*line1 Fin*/
+.container .row.line2 article{height:123px;}
+.container .row.line3 article{height:180px;}
+.container .row.line4 article{height:175px;}
+/*line2~4 Fin*/
+
+}
+/*Desktop Device - 사용자 해상도가 960 이상일때 이 코드가 실행됨. pc 코드를 작성한다.*/
+
