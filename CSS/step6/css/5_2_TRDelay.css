@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+ul{
+    padding: 0; margin: 0; list-style: none;
+}
+.delay1{
+    width: 610px; border: 3px solid #3a00b6;
+}
+.delay1 span{
+    display: block; width: 10px; height: 50px; background-color: #0cf; margin: 5px;
+    transition-duration: 5s;
+}
+.delay1:hover span{
+    width: 600px;
+}
+.delay1 span:nth-child(1){transition-delay: 0s;}
+.delay1 span:nth-child(2){transition-delay: 1s;}
+.delay1 span:nth-child(3){transition-delay: 2s;}
+.delay1 span:nth-child(4){transition-delay: 3s;}
+.delay1 span:nth-child(5){transition-delay: 4s;}
