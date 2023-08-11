@@ -7,6 +7,7 @@ body{
     /* animation */
     animation-name: moveCircle; animation-duration: 2s;
     animation-iteration-count: infinite; animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.18,.47,.48,.84);
 } 
 @keyframes moveCircle {
     /* 0%{
@@ -24,4 +25,8 @@ body{
     100%{
         left: 800px;
     }
+}
+.circle:hover{
+    animation-play-state: paused;
+    /* ? paused : 중지, running : 재생 */
 }
