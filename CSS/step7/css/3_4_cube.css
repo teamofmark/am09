@@ -1,6 +1,9 @@
 body{
-    width: 200px; margin: 200px auto; 
-    /* ! perspective */
+    width: 200px; margin: 200px auto; perspective: 300px;
+    /* 
+        ?perspective
+        ! 대상면적 을 기준으로 5배수관계 차등 적용.(2000px정도가 limit) - 원근처리.
+    */
 }
 div{
     width: 200px; height: 200px; position: relative;
@@ -19,7 +22,9 @@ div{
 }
 div span{
     width: 200px; height: 200px; position: absolute; left: 0; top: 0; opacity: 0.5;
+    backface-visibility: visible;
     /* !이면가시성(backfaceVisibility) */
+    /* ? visible : default. 이면을 보이다 , hidden : 이면을 감추다. */
 }
 div span:nth-child(1){background-color: red; transform: translateZ(100px);}
 div span:nth-child(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
