@@ -1,0 +1,29 @@
+body{
+    width: 200px; margin: 200px auto; 
+    /* ! perspective */
+}
+div{
+    width: 200px; height: 200px; position: relative;
+    animation-name: playBox;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    transform-style: preserve-3d;
+}
+@keyframes playBox {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+div span{
+    width: 200px; height: 200px; position: absolute; left: 0; top: 0; opacity: 0.5;
+    /* !이면가시성(backfaceVisibility) */
+}
+div span:nth-child(1){background-color: red; transform: translateZ(100px);}
+div span:nth-child(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-child(3){background-color: blue; transform: rotateY(180deg) translateZ(100px);}
+div span:nth-child(4){background-color: cyan; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-child(5){background-color: magenta; transform: rotateX(90deg) translateZ(100px);}
+div span:nth-child(6){background-color: yellow; transform: rotateX(270deg) translateZ(100px);}
