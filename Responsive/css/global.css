@@ -1,0 +1,14 @@
+
+
+@media screen and (min-width:1280px){
+    body{
+        background-color: blue; color: white;
+    }
+    h1{
+        font-size: 36px; line-height: 52px;
+    }
+    p{
+        font-size: 16px; text-align: right; line-height: 21px;
+    }
+}
+/* ? desktop Device - 사용자의 해상도가 1280 이상 일 때 */
