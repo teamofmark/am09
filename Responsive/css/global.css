@@ -1,13 +1,24 @@
-
+@media screen and (max-width: 767px) and (orientation:landscape){
+    body{
+        background-color: lightgrey; color: darkslategrey;
+    }
+    h1{
+        font-size: 8vh; line-height: 10vh;
+    }
+    p{
+        font-size: 6vh; line-height: 8vh;
+    }
+}
+/* ? mobile Device - 가로 767이하 전체 */
 @media screen and (max-width: 767px) and (orientation:portrait){
     body{
         background-color: lightgoldenrodyellow; color: darkgoldenrod; font-weight: bold;
     }
     h1{
-        font-size: 16px; line-height: 22px;
+        font-size: 8vw; line-height: 10vw;
     }
     p{
-        font-size: 12px; line-height: 16px;
+        font-size: 6vw; line-height: 8vw;
     }
 }
 /* ? mobile Device - 세로 767이하 전체 */
