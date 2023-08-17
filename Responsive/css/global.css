@@ -1,6 +1,18 @@
 
 
-@media screen and (min-width:768px) and (max-width: 1279px){
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation:landscape){
+    body{
+        background-color: red; color: lightcoral; font-weight: bold;
+    }
+    h1{
+        font-size: 42px; line-height: 60px;
+    }
+    p{
+        font-size: 24px; line-height: 30px;
+    }
+}
+/* ? tablet Device landscape- 가로 */
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation:portrait){
     body{
         background-color: green; color: palegreen; font-weight: bold;
     }
@@ -11,7 +23,7 @@
         font-size: 16px; line-height: 21px;
     }
 }
-/* ? tablet Device -  사용자의 해상도가 768이상 , 1280미만*/
+/* ? tablet Device portrait- 세로 사용자의 해상도가 768이상 , 1280미만*/
 
 @media screen and (min-width:1280px){
     body{
