@@ -1,4 +1,15 @@
 
+@media screen and (max-width: 767px) and (orientation:portrait){
+    body{
+        background-color: lightgoldenrodyellow; color: darkgoldenrod; font-weight: bold;
+    }
+    h1{
+        font-size: 16px; line-height: 22px;
+    }
+    p{
+        font-size: 12px; line-height: 16px;
+    }
+}
 
 @media screen and (min-width:768px) and (max-width: 1279px) and (orientation:landscape){
     body{
