@@ -10,7 +10,7 @@
         font-size: 12px; line-height: 16px;
     }
 }
-
+/* ? mobile Device - 세로 767이하 전체 */
 @media screen and (min-width:768px) and (max-width: 1279px) and (orientation:landscape){
     body{
         background-color: red; color: lightcoral; font-weight: bold;
