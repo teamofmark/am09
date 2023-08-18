@@ -16,6 +16,9 @@ a{
 /* ? All Use */
 
 @media screen and (min-width: 1280px){
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
     .btn_more{
         padding: 11px 0.6%; box-sizing: border-box;
     }
@@ -88,4 +91,16 @@ a{
     }
     /* *header Fin */
 
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 32%; margin: 0 0 70px 2%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    footer > div div h2{
+        margin-bottom: 20px;
+    }
 }
