@@ -1,12 +1,24 @@
 
-header > div nav ul li a{
+header > div nav ul li a,
+header > div > ul li p{
     font-family: 'Roboto';
+}
+header > div > ul li h2{
+    font-family: 'Playfair Display';
 }
 a{
     text-decoration: none;
 }
+.btn_more{
+    font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
+    font-size: 16px; color: #00e0d0; border: 1px solid #00e0d0;
+}
+/* ? All Use */
 
 @media screen and (min-width: 1280px){
+    .btn_more{
+        padding: 11px 0.6%; box-sizing: border-box;
+    }
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
@@ -36,4 +48,44 @@ a{
         display: block; font-size: 13px; color: white; font-weight: 900;
         line-height: 50px;
     }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ?header GNB Fin */
+    
+    header > div > ul{
+        margin-bottom: 125px;
+    } 
+    header > div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header > div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center;
+        letter-spacing: 1px; padding-bottom: 22px; margin-bottom: 30px;
+        background: url('../images/border.png') no-repeat center bottom;
+    }
+    header > div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; line-height: 24px;
+        text-align: center; max-width: 775px; margin: 0 auto 50px;
+    }
+    header > div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header > div > ol{
+        text-align: center;
+    }
+    header > div > ol li{
+        display: inline-block;
+    }
+    header > div > ol li a{
+        display: block; width: 8px; height: 8px; border: 1px solid rgba(255,255,255,0.8);
+        border-radius: 5px; text-indent: -9999px;
+    }
+    header > div > ol li a.active,
+    header > div > ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* *header Fin */
+
 }
