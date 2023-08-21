@@ -1,6 +1,7 @@
 
 header > div nav ul li a,
-header > div > ul li p{
+header > div > ul li p,
+footer > div *{
     font-family: 'Roboto';
 }
 header > div > ul li h2{
@@ -102,5 +103,78 @@ a{
     }
     footer > div div h2{
         margin-bottom: 20px;
+    }
+    footer > div div:first-of-type h2{
+        line-height: 0;
+    }
+    footer > div div:not(:first-of-type) h2{
+        line-height: 50px; color: white; font-size: 15px; font-weight: 900;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px; color: white;
+    }
+    footer > div div:not(:nth-of-type(3)) a{
+        color: white;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        font-weight: 300;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px; background-repeat: no-repeat;
+        background-position: left 5px;
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(1){
+        background-image: url('../images/bul_map.png');
+    }
+    footer > div div:nth-of-type(2) address span:nth-of-type(2){
+        background-image: url('../images/bul_phone.png');
+    }
+    footer > div div:nth-of-type(3) input{
+        float: left; display: block; margin-bottom: 25px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; font-size: 14px; font-weight: 300; border: 1px solid rgba(255,255,255,0.5);
+        line-height: 43px; padding: 0 15px; box-sizing: border-box; background-color: transparent;
+        color: white;
+    }
+    footer > div div:nth-of-type(3) input[type='email']::placeholder{
+        color: rgba(255,255,255,0.75);
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 43px;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+    }
+    footer > div div:nth-of-type(3) ul{
+        clear: both;
+    }
+    /* todo. SNS ICON 배치하기. */
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        text-indent: -9999px; display: block; background-repeat: no-repeat;
+        background-size: 35px;
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{
+        background-image: url('../images/ico_sns_01.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{
+        background-image: url('../images/ico_sns_03.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{
+        background-image: url('../images/ico_sns_04.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{
+        background-image: url('../images/ico_sns_06.png');
     }
 }
