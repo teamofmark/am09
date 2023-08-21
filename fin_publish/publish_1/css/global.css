@@ -155,6 +155,9 @@ a{
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 5px;
+    }
     footer > div div:nth-of-type(3) ul li a{
         text-indent: -9999px; display: block; background-repeat: no-repeat;
         background-size: 35px;
