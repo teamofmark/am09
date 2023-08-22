@@ -40,5 +40,18 @@
         font-size: 16px; color: white; text-align: center; font-weight: 900;
     }
     /* ? videoArea Fin */
+    section.expArea{
+        text-align: center;
+    }
+    section.expArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 10px;
+    }
+    section.expArea > p{
+        font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75); margin-bottom: 15px;
+    }
+    section.expArea > hr{
+        border-color: rgba(65,61,75,0.3);
+    }
+    /* todo. ul > li 완성시키기. */
 }
 /* ?desktop */
