@@ -26,5 +26,19 @@
         max-width: 120px;
     }
     /* ? CI Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') left top / cover no-repeat;
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; width: 100px; padding: 23px 0 27px 5px;  border: 3px solid white;
+        border-radius: 50px; box-sizing: border-box;
+        font-size: 45px; color: white; text-align: center; margin: 0 auto 30px;
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white; text-align: center; font-weight: 900;
+    }
+    /* ? videoArea Fin */
 }
 /* ?desktop */
