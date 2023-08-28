@@ -8,6 +8,17 @@ body{
     font-family: 'Crimson Pro';
 }
 @media screen and (min-width: 1280px) {
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: #fff;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
 }
 /* ? desktop */
