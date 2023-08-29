@@ -125,5 +125,36 @@ a{
     footer > div:first-child h2 img{
         width: 100%; min-width: 78px;
     }
+    footer > div:first-child ul{
+        padding: 0 10%; text-align: center;
+    }
+    footer > div:first-child ul li{
+        display: inline-block;
+    }
+    footer > div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer > div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 600;
+    }
+    footer > div:first-child span{
+        width: 8.94%;
+    }
+    footer > div:first-child span a:not(:first-of-type){
+        margin-left: 2.4%;
+    }
+    footer > div:first-child span a{
+        display: inline-block; text-indent: -9999px; width: 24px; height: 18px;
+        background-position: center; background-repeat: no-repeat;
+    }
+    footer > div:first-child span a:nth-child(1){
+        background-image: url('../images/sns_01.png');
+    }
+    footer > div:first-child span a:nth-child(2){
+        background-image: url('../images/sns_02.png');
+    }
+    footer > div:first-child span a:nth-child(3){
+        background-image: url('../images/sns_03.png');
+    }
 }
 /* ? desktop */
