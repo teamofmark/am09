@@ -48,3 +48,19 @@
         todo flex-flow: <flex-direction> | <flex-wrap>;
     */
 }
+.flexContainer.justifyContent{
+    flex-direction: column; height: 1000px;
+    justify-content: flex-end;
+    /* 
+        justify-content : 
+        flex container의 main axis를 기준으로 flexItem을 수평 정렬한다.
+        
+        flex-start (flexItem을 좌측 기준정렬)
+        flex-end (flexItem을 우측 기준정렬)
+        center (flexItem을 가운데 기준정렬)
+        space-between (flexItem 중 처음은 좌측기준, 마지막은 우측기준, 나머지는 동일간격으로 정렬)
+        space-around (모든 flexItem은 기준없이 동일간격으로 정렬)
+        space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.)
+
+    */
+}
