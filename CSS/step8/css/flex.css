@@ -151,3 +151,13 @@
     * flex-start - 요소들중 가장 높은 것의 윗선을 기준으로 자신을 맞추기
     * flex-end - 요소들중 가장 높은 것의 밑선을 기준으로 자신을 맞추기
 */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 2;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 3;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 1;
+}
