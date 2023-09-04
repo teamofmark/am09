@@ -184,5 +184,15 @@
     todo. flexItem:first-child{flex-grow:2;} -> 0(basis) + (300/4)*2 = 150.
     todo. flexItem:first-child~*{flex-grow:1;} -> 0(basis) + (300/4)*1 = 75.
     ? why 3(x) 4? = first 2 +  ~* 1 + 1.
+    
+     ? flex-shrink(수축비):
+    ! 기준되는 부모(절대)가 줄어들 때 item의 수축비를 정한다. default: 1.
+    ! 음수 비허용. 양수 입력 시 '총 수축 내부수축지수(shrink합산)의 너비 중 입력된 비율 만큼 수축될 수 있다.
+    ! 단, min-width가 설정되면 해당 수치를 넘지 않는다. (basis -> max로 변환 가동)
+    * example. item이 3개이고 item들에게 shrink가 1이 부여된다면 각각 1/3의 수축비를 갖게된다.
+    ?ex. 2 > 만약 수축중인 부모 너비가 300px인 item 4개(각너비 150px)에  shrink를 부여하면?
+    todo. 초과되는 수치인 150 에 대한. shrink총합인 4를 나눈 37.5가 곧 shrink: 1이된다.
+    todo. flexItem:first-child{flex-shrink: 2;} -> 150(대상너비) - (150/4)*2 = 75;
+    todo. flexItem:first-child~*{flex-shrink: 1;} -> 150(대상너비) - (150/4)*1 = 112.5;
 
 */
