@@ -49,8 +49,7 @@
     */
 }
 .flexContainer.justifyContent{
-    flex-direction: column; height: 1000px;
-    justify-content: flex-end;
+    flex-direction: row; justify-content: flex-end;
     /* 
         justify-content : 
         flex container의 main axis를 기준으로 flexItem을 수평 정렬한다.
@@ -64,3 +63,64 @@
 
     */
 }
+.flexContainer.alignContent{
+    height: 400px; flex-wrap: wrap; padding: 0;
+    justify-content: space-between; align-content: center;
+}
+.flexContainer.alignContent .flexItem{
+    margin: 0; width: 200px;
+}
+/* 
+    ! align(yAxis)
+    align-content: (창조절필요)
+    flex container의 cross axis를 기준으로 flexItem을 수직 정렬한다.
+    
+    stretch (flexItem 행 간격을 균등하게. cross Start에서 End까지 꽉찬 높이.)
+    flex-start (flexItem 행 간격 없이 (stack))
+    flex-end (flexContainer의 cross end 기준으로 행 간격 없이)
+    center (flexContainer의 cross axis 중앙 기준으로 행 간격 없이)
+    space-between (첫 행은 flexContainer cross start 기준, 마지막 행은 flexContainer cross end 기준, 나머지 행 균등하게)
+    space-around (flexContainer 공간안에 모든 행 균등하게)
+    space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
+*/
+.flexContainer.justifyItems{
+    background-color: yellow; width: 300px;
+    display: grid;
+    justify-items: stretch;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
+/* 
+    ? justify-items:
+    * flexItem을 parent Width기준으로 flexContainer의 수평 방향으로 정렬한다.
+    * justify-items 속성은 모든 flexitem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 너비)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center (flexContainer의 주축 중앙에 정렬.)
+*/
+.flexContainer.alignItems{
+    background-color: orange; align-items: baseline;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-end;
+}
+/* 
+    ? align-items : 
+    * flexItem을 line-height(contentHeight)기준으로 flexContainer의 수직 방향으로 정렬한다.
+    * align-items 속성은 모든 flexItem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 높이)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center  (flexContainer의 주축 중앙에 정렬.)
+    * baseline (안의 컨텐츠 End 기준으로 정렬.)
+*/
