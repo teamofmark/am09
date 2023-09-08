@@ -40,3 +40,23 @@ function textTypeof(){
     var engName = "Mark";
     console.log(typeof(engName));
 }
+// *case. 3 현재 자신이 춥다(true), 아니다(false)를 cold 변수에 담아 자료형으로 출력.
+function check1(){
+    var cold = false;
+    console.log('cold 변수에 현재 담긴 값인' + cold + '의 자료유형은' + typeof(cold) + '입니다.');
+}
+// *case. 4 현재 로그인 상태를 loginStatus 변수에 담아 자료형을 check.
+function check2(stat){
+    var loginStatus = stat;
+    console.log("현재 접속 상태는 " + loginStatus + '입니다. 해당 변수의 자료유형은' + typeof(loginStatus) + '입니다.');
+}
+// *case. 5 test 변수를 선언하고 초기화 하지 않은 상태의 자료형을 check.
+function check3(){
+    var test;
+    console.log("초기화 하지 않은 변수의 자료유형은 " + typeof(test) + "입니다.");
+}
+// *case. 6 obj 변수에 배열 을 담아 자료형을 check 하고 이후 null의 자료형을 점검 해보자.
+function check4(){
+    var obj = null;
+    console.log("obj에 담긴 값의 자료유형은 " + typeof(obj) + "입니다.");
+}
