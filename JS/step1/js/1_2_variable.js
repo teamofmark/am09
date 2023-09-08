@@ -58,3 +58,25 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// * case. 1 변수 생성하는 법.
+var userName = "mark";
+var userAge = "43";
+
+// * case. 2 변수의 특성
+var cup = "Green Tea"; //? 최초의 컵에 녹차를 담았다.
+cup = "Coffee"; //? 그 컵에 녹차를 버리고 커피를 담았다.
+cup = "Water"; //? 그 컵에 커피를 버리고 물을 담았다.
+
+// * case. 3 두개의 값을 더 할 경우
+console.log(userName + cup);
+
+// *case. 4 일반 연산자 와 숫자 사용시
+var numbValue = 10;
+numbValue = numbValue + 20;
+
+// *case. 5 자신의 나이를 변수에 담고 출력하되 20년 뒤 나이를 연산해보자.
+var cliAge = 43;
+console.log("나의 나이는 현재" + cliAge + "세 이고,");
+cliAge = cliAge + 20;
+console.log(" 20년 뒤에는" + cliAge + "세 입니다.");
