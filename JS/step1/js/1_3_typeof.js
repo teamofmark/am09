@@ -28,3 +28,15 @@
 
     ! 이외 함수(function), 객체(object) 등이 존재.
 */
+
+// *case. 1 자신이 가장 좋아하는 숫자를 favorNumber라는 변수에 담아 자료형을 check.
+function testTypeof(){
+    var favorNumber = 1;
+    console.log(typeof(favorNumber));
+}
+
+// *case. 2 자신의 영어 이름을 engName 변수에 담아 자료형을 check.
+function textTypeof(){
+    var engName = "Mark";
+    console.log(typeof(engName));
+}
