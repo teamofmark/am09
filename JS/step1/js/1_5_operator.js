@@ -9,6 +9,7 @@
     * += 기존 변수의 값에 값을 더함 , -= 기존 변수의 값에 값을 뺌
     * *= 기존 변수의 값에 값을 곱함 , /= 기존 변수의 값에 값을 나눔
     * %= 기존 변수의 값에 나머지를 구함. 	
+    * var a = 20;
     * ex> a = a + 10; > a += 10;
 
     ? 증감 연산자
@@ -43,3 +44,60 @@
     ? 접근 연산자
     * .
 */
+// *case. 1 10이 저장된 변수 a, 숫자 20, 그리고 30을 더해서 result 변수에 저장 후 출력.
+function numbOP1(){
+    var a = 10;
+    var result = a+20+30;
+    console.log('합산 : ' + result);
+}
+// *case. 2 50이 저장된 변수a, 20이 저장된 변수 b를 곱한 값을 10으로 나누어 result 변수에 저장후 출력.
+
+function numbOP2(){
+    var a = 50;
+    var b = 20;
+    var result = a*b/10;
+    console.log('복합연산 : ' + result);
+}
+// *case. 3 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 출력.
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
+// *case. 4 ul, li 구조의 tag를 html page에 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '<li>';
+    list += 'blah';
+    list += '</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// todo. 다음 문제에 결과를 예상하고 적어둔 뒤, 실행하여 확인해보기.
+function numberPlusAfter(){
+    var number= 10;
+    alert(number++); //? 결과 예상 : 현-10,실-11
+    alert(number++); //? 결과 예상 : 현-11,실-12
+    alert(number++); //? 결과 예상 : 현-12,실-13
+}
+// *case.5 연산자가 앞으로 올 경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //?
+    alert(++number); //?
+    alert(++number); //?
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10; 
+    console.log(number++); //?  
+    console.log(--number); //? 
+    console.log(++number); //?  
+    console.log(number--); //?  
+    console.log(number++); //?  
+    console.log(++number); //?  
+    console.log(--number); //?  
+    console.log(number++); //?  
+    console.log(++number); //?  
+    console.log(number); //? 최종 : 
+}
