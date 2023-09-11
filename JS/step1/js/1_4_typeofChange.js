@@ -53,3 +53,37 @@ function stringNumb(){
     var result = String(test1); //? 전역함수
     console.log('변환후' + typeof(result) + ' = ' + result);
 }
+function stringtoNumb(){
+    var test1 = 15;
+    console.log('변환전' + typeof(test1) + ' = ' + test1);
+    var result = test1.toString();
+    console.log('변환후' + typeof(result) + ' = ' + result);
+}
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff;
+        bgColor = parseInt(bgColor);
+        bgColor = bgColor.toString(16);
+        console.log(bgColor);
+
+        $("body").css("background-color", "#" + bgColor);
+    },500);
+}
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수,실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환.
+    * 2. parseFloat(value); - 실수형변환.
+*/
+function numbString(){
+    var test = '300.15625';
+    console.log('변환전 : ' + typeof(test) + '=' + test);
+    var result = parseInt(test) + 10;
+    console.log('변환후 : ' + typeof(test) + '=' + test);
+    // ? string = parseInt가 형변환 해주는 것은 맞으나 변환된 상태를 test에 저장하지 못했기때문.
+    console.log('변환된값연산 : ' + typeof(result) + '=' + result);
+}
