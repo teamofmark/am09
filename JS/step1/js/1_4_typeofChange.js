@@ -18,3 +18,38 @@ function agePlus(){
     var result = parseInt(age) + 20;
     console.log(result);
 }
+
+// *case. 2 강제 숫자 -> 문자형변환.
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 10;
+    console.log(result);
+}
+
+// *case.3 강제 불리언 -> 숫자형변환.
+function forcedNumber(){
+    var result = 2 + true; //? true = 1 , false = 0.
+    console.log(result);
+}
+// *case.4 강제 불리언 -> 문자형변환.
+function forcedString2(){
+    var result = '2' + true;
+    console.log(result);
+}
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환
+
+    ? .toString()
+    * number.toString(); - 문자형(진수)변환
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
+*/
+function stringNumb(){
+    var test1 = 15;
+    console.log('변환전' + typeof(test1) + ' = ' + test1);
+    var result = String(test1); //? 전역함수
+    console.log('변환후' + typeof(result) + ' = ' + result);
+}
