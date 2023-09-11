@@ -82,8 +82,34 @@ function bgColorRandom(){
 function numbString(){
     var test = '300.15625';
     console.log('변환전 : ' + typeof(test) + '=' + test);
-    var result = parseInt(test) + 10;
+    var result = Number(test) + 10;
     console.log('변환후 : ' + typeof(test) + '=' + test);
     // ? string = parseInt가 형변환 해주는 것은 맞으나 변환된 상태를 test에 저장하지 못했기때문.
     console.log('변환된값연산 : ' + typeof(result) + '=' + result);
+}
+// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형. result로 출력(typeof 검수필요).
+// todo. 1-1 암시적을 이용한 형변환 
+function todo1(){
+    var test = 100;
+}
+// todo. 1-2 String을 이용한 형변환
+function todo2(){
+    var test = 100;
+}
+// todo. 1-3 toString을 이용한 형변환
+function todo3(){
+    var test = 100;
+}
+
+// todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기.
+
+// todo. 2-1 parse 형변환
+function todo4(){
+    var test = "100,51";
+    var result = test + 150 + '20';
+}
+// todo. 2-2 Number 형변환
+function todo5(){
+    var test = "100,51";
+    var result = test + 150 + '20';
 }
