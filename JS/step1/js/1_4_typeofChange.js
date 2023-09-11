@@ -105,11 +105,11 @@ function todo3(){
 
 // todo. 2-1 parse 형변환
 function todo4(){
-    var test = "100,51";
+    var test = "100.51";
     var result = test + 150 + '20';
 }
 // todo. 2-2 Number 형변환
 function todo5(){
-    var test = "100,51";
+    var test = "100.51";
     var result = test + 150 + '20';
 }
