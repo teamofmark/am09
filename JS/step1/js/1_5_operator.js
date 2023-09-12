@@ -134,5 +134,5 @@ function logicalOperator2(){
 }
 // todo. 다음 코드의 오류를 해결하라.(결과예상한 다음 출력할 것)
 function compareOperator3(){
-    console.log(30 > 20 > 10); //? 결과 : 
+    console.log(30 > 20 && 20 > 10); //? 결과 : 
 }
