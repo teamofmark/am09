@@ -15,3 +15,56 @@
 	alert('종료');
     
 */
+// *case. 1 현재시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours();
+    // ?선언부
+    console.log("시간왔냐?" + hour + "자료형은?" + typeof(hour));
+
+    if(hour < 12){
+        alert("오전이다.");
+    }
+    // ! 서로 연관 없는 조건문.
+    if(hour >= 12){
+        alert("오후다.");
+    }
+}
+// *case. 2 말일이냐 아니냐
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    // ?선언부
+    console.log("시간왔냐?" + day + "자료형은?" + typeof(day));
+
+    if(day<30){ //? 처리부
+        alert('아직 말일이 아닙니다.');
+        // ?출력부
+    }else{ //? 2차 처리부
+        alert('말일입니다.'); //? 2차 출력부
+    }
+}
+// *case. 3 아침?점심?저녁?
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+
+    if(hour < 11){ //? 아침
+        alert('아침먹을시간');
+    }else if(hour < 15){ //? 점심
+        alert('점심먹을시간');
+    }else{ //? 저녁
+        alert('저녁먹을시간');
+    }
+}
+// todo. 입력받은 수의 홀수 짝수 판별
+function oddOrEven(){
+    var numb = window.prompt('숫자를 입력하세요.','홀,짝을 구분합니다.');
+    if(){ //? 짝수일 때
+        alert('짝수!');
+    }else if(){ //? 홀수일 때
+        alert('홀수!');
+    }else{ //? 예외처리
+        alert('올바른 값을 입력하세요.');
+    }
+}
