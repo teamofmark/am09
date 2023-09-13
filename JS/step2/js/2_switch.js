@@ -51,19 +51,19 @@ function calculator(){
 
     switch(operator){
         case "+":
-            alert(firstNumb + lastNumb);
+            console.log(firstNumb + lastNumb);
             break;
         case "-":
-            alert(firstNumb - lastNumb);
+            console.log(firstNumb - lastNumb);
             break;
         case "*":
-            alert(firstNumb * lastNumb);
+            console.log(firstNumb * lastNumb);
             break;
         case "/":
-            alert(firstNumb/lastNumb);
+            console.log(firstNumb/lastNumb);
             break;
         default:
-            alert("잘못된 값이 입력되었습니다.");
+            console.log("잘못된 값이 입력되었습니다.");
             break;
     }
     // ?처리부
