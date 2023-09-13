@@ -90,3 +90,19 @@ function avgScore(){
         alert('평균' + avg + '점\n' + '가입니다.');
     }
 }
+
+// *case. 5 사용자 id를 입력받아 맞다면("Mark") 승인 메시지 출력.
+// ! DB_USERID < 불러올수 없음.
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID == "Mark"){
+        alert("접속을 승인합니다.");
+    }else{
+        alert("잘못된 ID 입니다.");
+    }
+}
+// todo. 사용자 id "mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 "접속을승인" 출력.
+// ! 둘중 하나라도 틀리면 "ID 혹은 Password"가 틀렸습니다. 출력.
+function userInfoCheck(){
+    
+}
