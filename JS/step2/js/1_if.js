@@ -104,5 +104,32 @@ function userIDCheck(){
 // todo. 사용자 id "mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 "접속을승인" 출력.
 // ! 둘중 하나라도 틀리면 "ID 혹은 Password"가 틀렸습니다. 출력.
 function userInfoCheck(){
-    
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("접속을 승인합니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+function userInfoCheck1(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+
+    (userID=="Mark"&&userPW=="1234")? alert("접속을 승인합니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴경우 틀린정보에 대한 오류 메시지출력.
+function userInfoCheck2(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 패스워드");
+
+    if(userID == "Mark" && userPW == "1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" && userPW != "1234"){
+        console.log("모든 정보가 맞지 않습니다.");
+    }else if(userID != "Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }else if(userPW != "1234"){
+        console.log("Password가 틀렸습니다.");
+    }
 }
