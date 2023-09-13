@@ -60,11 +60,33 @@ function mealTime(){
 // todo. 입력받은 수의 홀수 짝수 판별
 function oddOrEven(){
     var numb = window.prompt('숫자를 입력하세요.','홀,짝을 구분합니다.');
-    if(){ //? 짝수일 때
+    if(numb%2 == 0){ //? 짝수일 때 - 짝수의 최소수를 나눈 나머지가 0일때.
         alert('짝수!');
-    }else if(){ //? 홀수일 때
+    }else if(numb%2 == 1){ //? 홀수일 때 - 짝수의 최소수를 나눈 나머지가 1일때.
         alert('홀수!');
     }else{ //? 예외처리
         alert('올바른 값을 입력하세요.');
+    }
+}
+// *case. 4 다음 세과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+// ! ~ 90 수 / ~ 80 우 / ~ 70 미 / ~ 60 양 / 59~ 가
+function avgScore(){
+    var koreanScore = prompt('국어점수를 입력하시오.');
+    var englishScore = prompt('영어점수를 입력하시오.');
+    var mathScore = prompt('수학점수를 입력하시오.');
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore)) / 3;
+    
+    if(avg > 100 || avg < 0){
+        alert('점수똑바로 입력하라');
+    }else if(avg >= 90){
+        alert('평균' + avg + '점\n' + '수입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg + '점\n' + '우입니다.');
+    }else if(avg >= 70){
+        alert('평균' + avg + '점\n' + '미입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg + '점\n' + '양입니다.');
+    }else{
+        alert('평균' + avg + '점\n' + '가입니다.');
     }
 }
