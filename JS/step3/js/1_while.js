@@ -66,5 +66,19 @@ function gugudan(){
 //todo. end가 입력될 때 까지 숫자를 계속해서 입력받아 입력값 합을 출력하고, prompt에는 몇번 수행 했는가에 대한 "x 번째 입력" 이 표시되야함. 
 
 function sumNumb(){
-    
+    var i = 1; //? count Var
+    var result = 0; //? result Var
+    while(true){
+        var numb = window.prompt(i+'번째 입력'); //? 무한으로 i출력 및 숫자 입력
+        if(numb=="end"){ //? end 조건문
+            alert('입력이 종료되었습니다.'); //? 종료 출력
+            break; //? 종료
+        }
+        // else if(numb==""){
+        //     console.log("공백");
+        // }
+        result += parseInt(numb); //? 결과변수에 모든 값 형변환후 더해서 저장.
+        document.write('현재까지의 총합 : ' + result + '<br>');
+        i++; //? 수행할때마다 count 증가.
+    }
 }
