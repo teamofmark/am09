@@ -82,5 +82,42 @@ function favorFruit(){
 // !단 1,2,3,4,5 가아닌 "첫"번째, "두"번째, "세"번째.. 로 출력.
 function arrayFor(){
     var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
-
+    var swapNumb = '';
+    for(var i = 0; i < data.length; i++){
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            case 6:
+                swapNumb = '일곱';
+                break;
+            default:
+                i = 'x';
+                break;
+        }
+        document.write(swapNumb + '번째 내용 = ' + data[i] + '<br>');
+    }
+}
+function arrayFor2(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    var swapNumb = ["첫","두","세","네","다섯","여섯","일곱"];
+    for(var i = 0; i < data.length; i++){
+        document.write(swapNumb[i] + '번째 내용 = ' + data[i] + '<br>');
+    }
 }
