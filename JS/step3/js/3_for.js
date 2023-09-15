@@ -121,3 +121,44 @@ function arrayFor2(){
         document.write(swapNumb[i] + '번째 내용 = ' + data[i] + '<br>');
     }
 }
+
+// *case. 7 역반복
+function reverseFavorFruit(){
+    var array = ['메론','수박','딸기','귤','키위'];
+    for(var i = array.length - 1; i>=0; i--){
+        document.write(array[i]);
+    }
+}
+
+// *case. 8 continue
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 ==1){
+            continue;
+        }
+        output += i; //?(2,6,12,20,30);
+        console.log(output);
+    }
+}
+// *case. 9 break
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){ // todo 선택하는것과 반대인 상황을 원상태로 돌리기
+            break;
+        }
+    }
+}
+
+// *case. 10 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){ //?
+        for(var j = 0; j < i; j++){ //?
+            star += '*'; //?
+        }
+        star += '<br>'; //?
+    }
+    document.write(star); //?
+}
