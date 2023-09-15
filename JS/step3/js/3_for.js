@@ -31,3 +31,40 @@ function namePrint500(){
         document.write(i + '.' + userName + '<br>');
     }
 }
+// *case. 3 1 - 10까지 출력되는 반복문을 여러case 잡아보자.
+function answer1(){
+    for(var i = 0; i<10; i++){
+        document.write((i+1) + "<br>");
+    }
+}
+function answer2(){
+    for(var i = 1; i<=10; i++){
+        document.write(i + '<br>');
+    }
+}
+function answer3(){
+    for(var i = 100; i<110; i++){
+        document.write((i-99) + '<br>');
+    }
+}
+function answer4(){
+    for(var i = 1; i <= 10; i+=2){
+        document.write(i+"<br>");
+        document.write((i+1)+"<br>");
+    }
+}
+function answer5(){
+    for(var i = 10; i>=1; i--){
+        document.write((11-i)+'<br>');
+    }
+}
+// *case. 5 * 10개가 찍힌 결과를 출력하자.
+
+function star10(){
+    var star = "";
+    for(var i = 0; i < 10; i++){
+        star += "*";
+    }
+    document.write("result = " + star);
+}
+// *case. 6
