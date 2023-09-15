@@ -67,4 +67,20 @@ function star10(){
     }
     document.write("result = " + star);
 }
-// *case. 6
+// *case. 6 자신이 좋아하는 과일 4개를 배열로 배치하고 출력하기.
+function favorFruit(){
+    var array = ['메론','수박','딸기','귤','키위'];
+    //? array(배열) - data들이 저장되는 방. ex> var array = ['data'(0),'data1'(1),'data2'(2)]
+    // * ex> array[0] -> data, array[1] -> data1
+    // ! data는 입력 및 저장되는 순서대로 0부터 index를 증가시키며 부여받게되어있다.
+    // * var array = []; -> 빈배열
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS 단원을 배열을 활용해 출력해보자.
+// !단 1,2,3,4,5 가아닌 "첫"번째, "두"번째, "세"번째.. 로 출력.
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+
+}
