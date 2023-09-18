@@ -154,11 +154,11 @@ function runBreak(){
 // *case. 10 반절 피라미드
 function halfPyramid(){
     var star = '';
-    for (var i = 1; i <= 10; i++){ //?
-        for(var j = 0; j < i; j++){ //?
-            star += '*'; //?
+    for (var i = 1; i <= 10; i++){ //? 1. ifor = 1 ~ 10까지 수행
+        for(var j = 0; j < i; j++){ //? 2. jfor = j가 i보다 작을때 까지 반복 수행 *,**,***...
+            star += '*'; //? 변수 star에 생성된 *을 넣음.
         }
-        star += '<br>'; //?
+        star += '<br>'; //? ifor만큼 <br>을 변수 star에 넣음.
     }
-    document.write(star); //?
+    document.write(star); //? ifor가 죽는 시점에 star에 담긴 정보들을 출력.
 }
