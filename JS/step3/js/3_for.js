@@ -174,3 +174,7 @@ function reverseHalfPyramid(){
     }
     document.write(star);  //? ifor가 죽는 시점에 star에 담긴 정보들을 출력.
 }
+// todo. pyramid 완성형
+function pyramid(){
+    
+}
