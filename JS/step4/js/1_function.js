@@ -38,3 +38,11 @@ function sumParam(num1,num2){
     * 단, arguments는 array와 비슷해보이지만 length를 구하는 방식을 제외하고는 array와는 다르다.
     * 필요에 따라 array로 추가 변환하여 사용 할 수 있다.
 */
+function sumAll(){
+    // console.log(typeof(arguments) + ':' + arguments.length + ':' + arguments[2]);
+    var willReturn = 0;
+    for (var i = 0; i < arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
+}
