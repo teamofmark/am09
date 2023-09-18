@@ -162,3 +162,15 @@ function halfPyramid(){
     }
     document.write(star); //? ifor가 죽는 시점에 star에 담긴 정보들을 출력.
 }
+
+// *case. 11 역반절피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i>=1; i--){ //? 1. ifor = 10 ~ 1까지 수행.
+        for(var j = 0; j < i; j++){ //? 2. jfor = j가 i보다 작을때 까지 반복수행 10,9,8,7,6,5...
+            star += '*';  //? 변수 star에 생성된 *을 넣음.
+        }
+        star += '<br>'; //? ifor만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star);  //? ifor가 죽는 시점에 star에 담긴 정보들을 출력.
+}
