@@ -198,3 +198,22 @@ function welcome(){
 $(document).ready(function(){
     $("#runEx9").click(welcome);
 });
+
+// *case. 10 함수를 매개변수로 전달받아서 반복 호출하기.
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write("hello, world!","<br>");
+}
+// *case. 11 return Value로 함수를 날려보기.
+function createHello(){
+    function helloTest(user){ //? user매개변수 생성하는 hello 함수 생성.
+        document.write(user + ' welcome!');
+    }
+    return helloTest; //? createHello가 실행되는 곳으로 생성된 hello 함수 자체를 보낸다.
+}
+var result = createHello(); //? createHello가 실행되는 곳 = hello 함수가 담긴다.
+// ! 곧, result == hello 함수.
