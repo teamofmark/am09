@@ -173,3 +173,28 @@ function div(numb1,numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// * case. 7 함수를 변수에 담기.
+function hello(name){
+    console.log(name + '환영합니다.');
+}
+var func = hello; //? func라는 변수에 hello라는 함수를 통채로 담았다.
+// ? func("Stark"); 변수를 실행하면 곧 함수를 실행하는것과 같다.(매개변수전달가능)
+
+// *case. 8 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log("hello");
+}
+function hi2(){
+    console.log("안녕하세요.");
+}
+function execute(func){
+    func(); //? 넘겨받은 변수(함수)를 사용.-();
+}
+// *case. 9 button Click시 매개변수 값으로 넘긴 함수 호출하기.
+function welcome(){
+    alert('환영합니다. 반갑습니다.');
+}
+$(document).ready(function(){
+    $("#runEx9").click(welcome);
+});
