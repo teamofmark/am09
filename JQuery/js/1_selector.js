@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#btnHello").click(sayHello);
     $("[id^='btnAdd']").click(addBorder);
     // $("#btnAddBorder2").click(addBorder);
+    $("#btnTextChange").click(textChange);
 });
 
 function colorChange(){
@@ -14,4 +15,14 @@ function sayHello(){
 }
 function addBorder(){
     $("#panel").css("border","5px solid black");
+}
+function textChange(){
+    // $("#panel2").css("font-size","25px");
+    // $("#panel2").css("color","green");
+    // $("#panel2").css("font-weight","bold");
+    $("#panel2").css({
+        "font-size" : "25px",
+        "color" : "green",
+        "font-weight" : "bold"
+    });
 }
