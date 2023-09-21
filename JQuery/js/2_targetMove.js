@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
-    $("#btnDetailMove").click(detailMoveCircle);
+    // $("#btnDetailMove").click(detailMoveCircle);
+    detailMoveCircleExt();
 });
 // *case. 1 원 움직이기 (xAxis)
 function moveCircle(){
@@ -29,7 +30,37 @@ function detailMoveCircle(){
 
     // todo. 조건식을 완성시켜 x,y축 둘다 0미만 or 380초과를 막고 정상 이동될수있게 처리.
     // ! 초과될시 "잘못된 수치입니다. 0 ~ 380 이내로만 입력하세요." 경고창.
-    if(){
-
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert("잘못된 수치입니다. 0 ~ 380이내로 입력하세요.");
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
+    }
+}
+function detailMoveCircleExt(){
+    var $circle = null;
+    circleInit();
+    $("#btnDetailMove").click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+    circleMovCommand(xpos,ypos);
+}
+function circleMovCommand(xpos,ypos){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert("잘못된 수치입니다. 0 ~ 380이내로 입력하세요.");
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
     }
 }
