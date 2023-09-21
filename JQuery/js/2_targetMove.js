@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
-    // $("#btnDetailMove").click(detailMoveCircle);
-    detailMoveCircleExt();
+    $("#btnDetailMove").click(detailMoveCircle);
+    // detailMoveCircleExt();
+    keyControl();
 });
 // *case. 1 원 움직이기 (xAxis)
 function moveCircle(){
@@ -63,4 +64,35 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+// *case. 3 원 움직이기(keyControl)
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    // ? 키를 입력받는 방식?...
+    $(document).keydown(function(e){
+        console.log('입력한 키 코드' + e.keyCode);
+        // ! w: 87, d: 68, s: 83, a: 65
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+        }
+        // todo. 범위내 가둬보기
+        
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
+    });
 }
