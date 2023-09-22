@@ -1,5 +1,6 @@
 $(document).ready(function(){
     toggleCheck();
+    toggleTodo();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -16,4 +17,9 @@ function toggleCheck(){
             $checkTarget.text("check_box_outline_blank");
         }
     });
+}
+function toggleTodo(){
+    // ! .attr("attr이름") -> 대상의 attr을 불러와 / .attr("attr이름","attr속성") -> attr값을 바꿔
+    // todo 1. 눈알모양을 키고 끄기.
+    // todo 2. 눈알모양을 누를때마다 킨상태 = type='text', 끈 상태 = type='password' 
 }
