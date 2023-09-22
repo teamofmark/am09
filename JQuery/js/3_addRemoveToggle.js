@@ -2,6 +2,7 @@ $(document).ready(function(){
     toggleCheck();
     toggleTodo();
     tabUI();
+    accControl();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -47,5 +48,17 @@ function tabUI(){
         $(this).addClass("activated");
         $(".tabPage").removeClass("activated");
         $(activeTab).addClass("activated");
+    });
+}
+function accControl(){
+    // var toggleStatus = false;
+    $(".accComponent li h3").click(function(){
+        $(this).toggleClass("active");
+        // toggleStatus = !toggleStatus;
+        // if(toggleStatus == true){
+        //     $(this).next().slideDown();
+        // }else{
+        //     $(this).next().slideUp();
+        // }
     });
 }
