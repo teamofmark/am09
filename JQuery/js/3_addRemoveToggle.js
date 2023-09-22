@@ -21,5 +21,20 @@ function toggleCheck(){
 function toggleTodo(){
     // ! .attr("attr이름") -> 대상의 attr을 불러와 / .attr("attr이름","attr속성") -> attr값을 바꿔
     // todo 1. 눈알모양을 키고 끄기.
-    // todo 2. 눈알모양을 누를때마다 킨상태 = type='text', 끈 상태 = type='password' 
+    // todo 2. 눈알모양을 누를때마다 킨상태 = type='text', 끈 상태 = type='password'
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var $toggleInput = $("#userPW");
+    var toggleStatus = false;
+
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        // console.log(toggleStatus);
+        if(toggleStatus == true){
+            $toggleTarget.text("visibility");
+            $toggleInput.attr("type","text");            
+        }else{
+            $toggleTarget.text("visibility_off");     
+            $toggleInput.attr("type","password");            
+        }
+    });
 }
