@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery - multiTab(한개로다수사용하기)</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/7_multiTab.js"></script>
+    <style>
+        ul{
+            margin: 0; padding: 0; list-style: none;
+            display: flex; flex-flow: row nowrap; border: 1px solid black;
+        }
+        ul:first-of-type{
+            border-bottom: none;
+        }
+        ul li{
+            flex: auto; text-align: center; line-height: 40px;
+            transition: all 0.35s ease-out;
+        }
+        ul li.activated,
+        ul li:hover{
+            background-color: black; color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- todo #tabMenuDepth$*2>li*6{.tab$} -->
+    <ul id="tabMenuDepth0">
+        <li>M.tab1</li>
+        <li>M.tab2</li>
+        <li>M.tab3</li>
+        <li>M.tab4</li>
+        <li>M.tab5</li>
+        <li>M.tab6</li>
+    </ul>
+    <ul id="tabMenuDepth1">
+        <li>S.tab1</li>
+        <li>S.tab2</li>
+        <li>S.tab3</li>
+        <li>S.tab4</li>
+        <li>S.tab5</li>
+        <li>S.tab6</li>
+    </ul>
+</body>
+</html>
