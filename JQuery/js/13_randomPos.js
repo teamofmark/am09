@@ -35,7 +35,10 @@ function moveCircle(){
     });
 }
 function scoreCount(){
-
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
 }
 function gameEnd(){
 
