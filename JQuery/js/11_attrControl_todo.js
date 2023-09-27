@@ -19,6 +19,10 @@ function swap(selector, speed, targetIndex){
         var imgName = "images/" + logos[targetIndex];
         targetIndex++;
         selector.attr("src",imgName);
+
+        if(targetIndex >= logos.length){
+            targetIndex = 0;
+        }
     },speed);
 }
 // ? errCode's :  https://moz.com/learn/seo/http-status-codes
