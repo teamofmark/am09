@@ -1,5 +1,6 @@
 var currentIndex = 0; //? 배열 선택 변수 초기화
 var logos = ["logo_01.jpg","logo_02.jpg","logo_03.jpg","logo_04.jpg","logo_05.jpg","logo_06.jpg","logo_07.jpg","logo_08.jpg"]; //? 이미지 파일 배열
+// ! array -> array[index] ex> logos[0] = logo_01.jpg, logos[1] = logo_02.jpg...
 var $banner = null; //? jquery banner 대상 변수 초기화
 
 $(document).ready(function(){
