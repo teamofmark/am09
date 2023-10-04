@@ -46,7 +46,7 @@ function startGame(){
 function updateFishPosition(){
     for (var i = 0; i < $fishList.length; i++){
         var $fish = $fishList.eq(i);
-        var step = Math.ceil(Math.random()*100);
+        var step = Math.ceil(Math.random()*10);
         var newLeft = $fish.position().left + step;
 
         $fish.css("left", newLeft);
