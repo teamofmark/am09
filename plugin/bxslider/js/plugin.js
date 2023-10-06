@@ -27,7 +27,10 @@ $(function(){
         pagerCustom: '.customPager', //? default: null. pager 구조 직접 작성 및 data-slide-index="i"를 설정하면 원하는 style의 pager 구현가능.
 
         // *controler
-        controls: true //? default: true. control button 켜기 끄기.
-
+        controls: true, //? default: true. control button 켜기 끄기.
+        nextSelector: '.btn_next', //? 공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공. 
+        prevSelector: '.btn_prev' //? 공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
+        //? nextText: '다음',  controler 뼈대 안에 text 변경
+        //? prevText: '이전'  controler 뼈대 안에 text 변경
     });
 });
