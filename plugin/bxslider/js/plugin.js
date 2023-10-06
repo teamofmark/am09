@@ -37,6 +37,8 @@ $(function(){
         auto: true, //? default: false. slide 자동전환 켜기. false로 설정시 autoControls에서 작동가능.
         autoControls: true,  //? default: false. 시각장애인들을 배려 하는것.
         autoControlsCombine: false, //? default : false. play/pause toggle.
-        autoControlsSelector: '.newAutoControls'
+        autoControlsSelector: '.newAutoControls', //? auto button 뼈대 제공
+        startText: '시작', //? 생성된 뼈대 안에 text 변경
+        stopText: '중지' //? 생성된 뼈대 안에 text 변경
     });
 });
