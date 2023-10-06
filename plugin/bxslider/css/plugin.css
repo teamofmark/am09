@@ -1,0 +1,25 @@
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    position: relative;
+    margin-bottom: 60px;
+    padding: 0;
+    *zoom: 1;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
+/* ? wrapper reset */
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    background: #666;
+    background: rgba(250, 80, 80, 0.75);
+    width: 100%;
+}
+/* ? caption customize */
