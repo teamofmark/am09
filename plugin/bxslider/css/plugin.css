@@ -70,3 +70,23 @@
     width: 100%; display: block;
 }
 /* ? pagerCustom customize */
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute; top: 0; height: 100%; margin-top: 0; outline: 0;
+    width: 32px; background-color: rgba(255,255,255,0.5); text-indent: -9999px; z-index: 9999;
+}
+.bx-wrapper .bx-prev {
+    left: 0px; background: url('../images/controls_left.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-next {
+    right: 0px; background: url('../images/controls_right.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus{
+    background-position: center; background-image: url('../images/controls_left_hover.png');
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus{
+    background-position: center; background-image: url('../images/controls_right_hover.png');
+}
+/* ? controls - customize */
