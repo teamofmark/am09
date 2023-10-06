@@ -11,6 +11,9 @@ $(function(){
 
         // *infiniteLoop, hideControlOnEnd 충돌.
         infiniteLoop: true, //? default : true. slide간 전환 무한반복.
-        hideControlOnEnd: false //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
+        hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
+    
+        // *adaptiveHeight
+        adaptiveHeight: true //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
     });
 });
