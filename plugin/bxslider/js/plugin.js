@@ -14,6 +14,9 @@ $(function(){
         hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
     
         // *adaptiveHeight
-        adaptiveHeight: true //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
+        adaptiveHeight: true, //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
+        adaptiveHeightSpeed: 100,  //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed 동기화
+    
+        video: true //? default: false. video 활성화.(slide에 video가 있을 시만) fitvids.js를 연결해두면 iframe,video등의 width,height 자동설정 가능. 
     });
 });
