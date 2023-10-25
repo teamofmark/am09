@@ -17,6 +17,34 @@
     </style>
 </head>
 <body>
-    
+    <figure>
+        <img src="https://via.placeholder.com/250?text=undefined" alt="미정의된이미지">
+        <figcaption>이미지가 들어갈 자리입니다.</figcaption>
+    </figure>
+    <!-- todo ul>li>figure>img+figcaption>dl>dt{example}+dd*2{example} -->
+    <ul>
+        <li>
+            <figure>
+                <img src="https://via.placeholder.com/250" alt="example">
+                <figcaption>
+                    <dl>
+                        <dt>example Name</dt>
+                        <dd>example Descript</dd>
+                        <dd>example Price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+    <time datetime="2023-10-25T10:41">2023년 10월 25일 오전 10시 41분</time>
+    <!--
+        ? 날짜, 시간 기록을 하는 time 마크업은
+        ? 1. datetime은 브라우저에서 인식하는 날짜 부분이다. yyyy-mm-dd 형식을 따른다.
+        ? 날짜만 ? 2016-06-12, 시간만? 09:00:00, Z는 그리니치 시간대를 나타내는 Zulu의 약자 
+        ? 2. pubdate(문서작성날짜)는 삭제-
+        ? 3. 브라우저에 표시될 내용
+    -->
+    <progress value="22" max="100"></progress>
+    <meter value="80" max="100" min="10" high="90" low="20"></meter>80%
 </body>
 </html>
