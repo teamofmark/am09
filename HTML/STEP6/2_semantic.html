@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic Tag</title>
+</head>
+<body>
+    <header>
+        <p>
+            모든 page에서 공통으로 사용하는 상단영역. (global)
+            page 상단 logo (h1), navigation(nav), sideBox(div)등이 들어간다.
+            통상적으론 변경이 절대 일어나서는 안되는 영역이다.
+        </p>
+        <h1>logo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">menu</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <input type="button" value="search">
+            <a href="#">login</a>
+            <a href="#">cart</a>
+        </div>
+    </header>
+    <section>
+        <h2>section 에는 머릿글(h)을 넣어줘야 한다.</h2>
+        <p>
+            복합적인 content group(명확히 내용이 별도로 구분 되는 경우)
+            이 들어가는 section
+        </p>
+        <article>
+            <h3>
+                article 자체로 이해가 될 수 있고, 독립적으로 취급될 수 있는 문서 content만
+                사용하는 article. 머릿글(h)을 넣어줘야 한다.
+            </h3>
+            <p>
+                예를 들어 신문기사 나 블로그등의 포스트 등, 그렇기 때문에 time Tag를 보통 같이 사용하게 된다.
+            </p>
+            <time datetime="2020-12-23T12:17:00+09:00">
+                2020년 12월 23일 12시 17분 00초
+            </time>
+            <!--time안에 기입하는 날짜와 시간은 사람에게 전달하는 목적을 띄고, datetime이라는 속성은 각 디바이스들이 받아들이는 값이다.
+            T를 기준으로 날짜와 시간을 구분하여 입력한다. 끝에 +로 타임존정보(협정세계시) 를 표기한다. -->
+            <cite>저작권관련 표기 명칭(제목, 인용한대상명등)</cite>
+        </article>
+    </section>
+    <aside>
+        전체적으로 사용하는 global(선택적)중 좌, 우측에 있는
+        menu, bannerBar, quickMenu 등의 content가 들어가는 aside
+    </aside>
+    <footer>
+        저작권정보, 회사주소, 증명/신고내용, 개인정보취급방침(link), 이용약관(link),
+        결제가 가능한 사이트일 경우 반품/환불/교환등의 정책.(link) 등이 들어가는
+        하단 global 요소
+    </footer>
+</body>
+</html>
