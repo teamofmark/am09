@@ -3,6 +3,8 @@ p.classEx1{
 }
 .btn{
     padding: 10px 30px; border-width: 1px; font-size: 12px;
+    text-decoration: none; display: inline-block;
+    text-align: center;
 }
 .btn.create{
     background-color: lightgreen; color: forestgreen;
