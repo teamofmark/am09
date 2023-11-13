@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+
+body{
+    font-family: 'Noto Sans KR';
+}
+/* font-family -> 글꼴 */
+/* ? font가 2개 설정? */
+/*
+웹폰트로드하는방법
+1. 영어권이냐 ? 영어권이아니냐
+
+- 영어권 : alternate(대체).
+- 비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경. (해당폰트에 영문이없을시)
+(한글,영어)
+- 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
+*/
+h1{
+    font-size: 20px; line-height: 26px; color: #06f;
+}
+h2{
+    font-size: 15px; line-height: 21px; color: #f60;
+}
+h3{
+    font-size: 13px; line-height: 19px; color: rgba(102, 0, 255,0.5);
+}
+/* 
+    * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
+    * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
+    * hsla(hue,saturate,lightness,alpha(투명도));
+ */
+
+ p{
+    font-size: 14px; line-height: 20px; font-weight: 700;
+ }
+ p.letter{
+    letter-spacing: 1px;
+    /*letter-spacing : 자간*/
+
+ }
+ p.word{
+    word-spacing: 10px;
+    /*word-spacing : 단어간격(space bar 기준)*/
+ }
