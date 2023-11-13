@@ -1,0 +1,32 @@
+body{
+    margin: 0; font-size: 12px;
+}
+h1{
+    color: #f03; font-size: 12px;
+}
+img{
+    width: 150px; border: 3px solid #3f3;
+}
+ul,ol,dl{
+    color: #60f;
+}
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline; color: red;
+}
+dl dt,
+dl dd{
+    font-size: 35px;
+}
+
+section ul li figure img{
+    width: 50px;
+}
+section ul li figure figcaption dl dt{
+    color: skyblue;
+}
+section ul li figure figcaption dl dd{
+    font-size: 50px;
+}
