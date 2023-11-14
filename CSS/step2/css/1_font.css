@@ -41,3 +41,16 @@ h3{
     word-spacing: 10px;
     /*word-spacing : 단어간격(space bar 기준)*/
  }
+ p[class^='w_']{
+    border: 3px solid black;
+ }
+ p.w_normal{
+    width: 150px; white-space: normal; line-height: 21px;
+ }
+ p.w_nowrap{
+    width: 150px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    /* 
+        ? no+wrap : 감싸지않은
+        ? wrap : 감싼..
+    */
+ }
