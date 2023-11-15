@@ -1,0 +1,15 @@
+html,body{
+    height: 100%;
+}
+body, .wrap p{
+    margin: 0;
+}
+.wrap{
+    background-color: skyblue; height: 100%;
+}
+.topLine input{
+    background-color: transparent;
+}
+.wrap p{
+    background-color: rgba(0,0,255,0.5);
+}
