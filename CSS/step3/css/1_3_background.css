@@ -23,4 +23,11 @@ body{
 		top, center, bottom - yAxis
 		%,px 등의 단위도 사용가능
 	*/
+    background-attachment: fixed;
+	/*
+		background-attachment는 기본옵션은 scroll이고, fixed로 고정 시킬 수 있다.
+	*/
+}
+p{
+    height: 2000px;
 }
