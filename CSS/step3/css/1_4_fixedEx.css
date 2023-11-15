@@ -1,0 +1,13 @@
+*{
+    margin: 0; padding: 0;
+}
+html,body{
+    background: url('../images/example.jpg') center / cover no-repeat fixed;
+    /* ? background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color]*/
+}
+body > div{
+    background-color: white; margin-bottom: 15%; padding: 5%;
+}
+body > div h2{
+    font-size: 38px; margin-bottom: 20px;
+}
