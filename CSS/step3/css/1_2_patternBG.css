@@ -1,0 +1,17 @@
+html, body, .wrap{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif'); background-repeat: repeat;
+}
+.wrap p{
+    margin: 0 0 20px;
+}
+.wrap button{
+    line-height: 75px; padding: 0 40px; color: white; border: none;
+    background-image: url('../images/pt_ex.png'); background-repeat: repeat-x;
+    /* background: linear-gradient(135deg, #9b1f1f 0%, #ea7e7e 100%); */
+}
