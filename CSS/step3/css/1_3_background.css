@@ -4,6 +4,23 @@ html,body{
 body{
     margin: 0;
     background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
-    background-size: 100%;
+    /* background-image: url('../images/pt.gif'); */
+    background-size: contain;
+	/*
+		background-size는 100% 250px 처럼 공백으로 구분하면 width와 height를 설정
+		100% 250px, 200% 250px 처럼 , 로 구분하면 1번이미지, 2번이미지 로 나눠서 설정
+		100%, 200% 처럼 구분하면 두이미지 모두 height는 설정 안하고 width만 설정
+
+		%,px 등의 단위도 사용가능
+		cover : cover 는 무조건 꽉채움.
+		contain : contain은 종횡비(횡종비) 로 꽉채움.(너비나 높이 중 먼저 한계선에 닿는 부분 우선)
+	*/
     background-repeat: no-repeat;
+    background-position: left center;
+	/*
+		background-position은 x축, y축 으로 구분하는데 하나만 적을경우 x축, y축 동일적용
+		left, center, right - xAxis
+		top, center, bottom - yAxis
+		%,px 등의 단위도 사용가능
+	*/
 }
