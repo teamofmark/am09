@@ -1,3 +1,4 @@
+
 div{
     width: 300px; height: 150px; margin-bottom: 10px;
 }
@@ -25,4 +26,27 @@ div{
     background-position: 30px center, right 40px center;
     background-size: 25px;
     border-width: 0px 0px 1px; outline: none;
+}
+.grooveBox{
+    border: 20px groove #666;
+    /* border-left: 20px groove #666;
+    border-top: 20px groove #666;
+    border-radius: 20px; */
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #666;
+}
+.outsetBox{
+    border: 20px outset #666;
+}
+.radiusBox{
+    background-color: black; color: yellow; border-radius: 10px 20px 30px 50px;
+}
+.circleBox{
+    background-color: mediumorchid; color: darkblue; text-align: center;
+    /* line-height: 50vw; border-radius: 25vw; font-size: 2vw; width: 50vw; height: 50vw; */
+    width: 500px; height: 500px; border-radius: 250px; line-height: 500px; font-size: 30px;
 }
