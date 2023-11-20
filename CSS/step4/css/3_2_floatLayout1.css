@@ -1,0 +1,32 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto; background-color: #ffc;
+}
+header{
+    background-color: #cff;
+}
+header nav{
+    background-color: #9f9;
+}
+div{
+    margin-bottom: 20px;
+    /* background-color: red; */
+}
+div:after{
+    content: ''; display: block; clear: both;
+}
+div aside,
+div section{
+    height: 800px; float: left;
+}
+div aside{
+    width: 200px; background-color: #f96;
+}
+div section{
+    width: 760px; background-color: #66f;
+}
+footer{
+    background-color: #f9f;
+}
