@@ -1,0 +1,25 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1 img{
+    float: left; margin-right: 30px;
+}
+.wrap .exam_1 p{
+    font-size: 24px; line-height: 40px;
+}
+.wrap .exam_2{
+    background-color: midnightblue; clear: both; margin-bottom:50px;
+}
+.wrap .exam_2:after{
+   content: ''; display: block; clear: both;
+   visibility: hidden;
+}
+.wrap .exam_2 div{
+    width: 300px; height: 300px; background-color: slateblue; float: left;
+}
+.wrap .exam_3{
+    clear: left; background-color: orange;
+}
