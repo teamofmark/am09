@@ -1,0 +1,4 @@
+*{margin: 0; padding: 0;}
+ul li{width: 16.66%; border: 1px solid black; display: block; float: left; box-sizing: border-box;}
+ul li figure img{width: 100%; display: block;}
+ul li figure figcaption dl{text-align: center; background-color:yellow;}
