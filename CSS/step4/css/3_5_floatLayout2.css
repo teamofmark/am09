@@ -31,3 +31,24 @@
 .wrap header nav ul li a{
     color: white; line-height: 55px;
 }
+section{
+    margin-bottom: 300px;
+}
+section:after{
+    content: ''; display: block; clear: both;
+}
+section h2{
+    background-color: #0cf;
+}
+section article{
+    float: left; width: 33.33%;
+}
+section article h3{
+    background-color: black; color: white;
+}
+section article ul li{
+    display: block; font-size: 14px; line-height: 20px;
+}
+footer{
+    background-color: #4800ff; color: white; line-height: 55px;
+}
