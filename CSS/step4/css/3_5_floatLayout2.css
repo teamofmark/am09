@@ -17,3 +17,17 @@
 .wrap header nav{
     width: 830px; float: left; background-color: blue;
 }
+.wrap header nav ul{
+    list-style: none; text-align: center;
+    /* width: 280px; margin: 0 auto;  background-color: yellow;  */
+}
+/* .wrap header nav ul:after{
+    content: ''; display: block; clear: both;
+} */
+.wrap header nav ul li{
+    display: inline-block;
+    /* float: left; width: 56px; */
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px;
+}
