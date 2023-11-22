@@ -1,19 +1,19 @@
 #wrap{
     margin: 0 auto; width: 300px; height: 200px; background-color: #999;
-    /* position: relative; */
+    position: relative; overflow-y: scroll;
 }
 #wrap div{
-    width: 150px; height: 150px;
+    width: 150px; height: 150px; position: absolute;
 }
 #wrap div.redBox{
-    background-color: #f00; 
-    /* left: 0px; top: 0px; */
+    background-color: #f00; z-index: 100;
+    left: 10px; top: 10px;
 }
 #wrap div.greenBox{
-    background-color: #0f0; 
-    /* left: 0px; top: 0px; */
+    background-color: #0f0; z-index: 1;
+    left: 50px; top: 50px;
 }
 #wrap div.blueBox{
-    background-color: #00f; 
-    /* left: 0px; top: 0px; */
+    background-color: #00f; z-index: 10;
+    left: 90px; top: 90px;
 }
