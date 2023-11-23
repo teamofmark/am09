@@ -1,0 +1,10 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0; background-color: black;
+}
+header{
+    background-color: red; position: fixed; width: 100%; left: 0; top: 0;
+    height: 20%; color: white;
+}
