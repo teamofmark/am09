@@ -13,8 +13,8 @@ article,
 footer{
     position: absolute;
 }
-article,
-footer{
+aside,
+article{
     height: 80%; top: 20%;
 }
 aside{
