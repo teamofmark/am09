@@ -6,5 +6,25 @@ body{
 }
 header{
     background-color: red; position: fixed; width: 100%; left: 0; top: 0;
-    height: 20%; color: white;
+    height: 20%; color: white; z-index: 1;
+}
+aside,
+article,
+footer{
+    position: absolute;
+}
+article,
+footer{
+    height: 80%; top: 20%;
+}
+aside{
+    width: 20%; background-color: green; left: 0; font-size: 18px; font-weight: bold;
+    color: white;
+}
+article{
+    width: 70%; background-color: blue; right: 0; color: white;
+}
+footer{
+    background-color: orange; width: 100%;
+    left: 0; top: 100%; font-size: 24px; line-height: 55px;
 }
