@@ -146,3 +146,17 @@
     border-radius: 0 15px 15px 0;
 }
 /* todo https://css-tricks.com/examples/nth-child-tester/ */
+
+.shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+.shapeSelector h2:first-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:last-of-type{
+    color: #f06;
+}
+/* todo 위 결과를 child로 변환해보기 */
+/* .shapeSelector h1:last-child{color: #30f;}
+.shapeSelector h2:nth-child(2){color: #0c6;}
+.shapeSelector h3:nth-child(4){color: #f06;} */
