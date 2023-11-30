@@ -8,7 +8,7 @@ body{
 div:first-of-type{
     width: 50%; height: 50%; background-color: #262626; position: absolute;
     left: 25%; top: 25%;
-
+    min-height: 285px;
 }
 div:first-of-type nav{
     margin-bottom: 25px;
@@ -67,5 +67,9 @@ div:first-of-type fieldset ul li input[type='password']:focus{
     color: white;
 }
 div:first-of-type input[type='submit']{
-    
+    width: 90%; margin: 0 auto; display: block; line-height: 36px; padding: 0;
+    border: none; background-color: #3a3a3a; color: #ea0e52;
+}
+div:first-of-type input[type='submit']:hover{
+    background-color: #ea0e52; color: black; cursor: pointer;
 }
