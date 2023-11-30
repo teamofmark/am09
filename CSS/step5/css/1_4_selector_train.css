@@ -1,0 +1,23 @@
+div:first-of-type{
+    max-width: 960px; margin: 0 auto;
+}
+div:first-of-type fieldset{
+    border-width: 1px; border-color: #05f; padding: 15px 20px 25px; margin: 0;
+}
+div:first-of-type fieldset:not(:last-of-type){
+    margin-bottom: 25px;
+}
+div:first-of-type fieldset label{
+    display: inline-block; line-height: 20px; vertical-align: middle;
+}
+div:first-of-type fieldset input[type='checkbox']{
+    vertical-align: -20%;
+}
+div:first-of-type fieldset textarea{
+    display: block; width: 100%; box-sizing: border-box; padding: 10px 1%;
+    margin-top: 25px; height: 150px; border-color: #05f; resize: none;
+    transition-duration: 0.75s;
+}
+div:first-of-type fieldset input[type='checkbox']:checked+textarea{
+    height: 0px; padding: 0px 1%;
+}
