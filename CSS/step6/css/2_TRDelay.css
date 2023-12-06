@@ -43,23 +43,23 @@ ul{
     content: ''; display: block; clear: both;
 }
 .delay3 ul li{
-    display: block; float: left; width: 20%; height: 0; transition-duration: 3s;
+    display: block; float: left; width: 20%; height: 0; transition-duration: 1s;
 }
 .delay3 ul li:first-child{
     transition-timing-function: cubic-bezier(1,0,1,-0.01);
 }
 /* todo 가속도 임의설정값 넣어보기 */
 .delay3 ul li:nth-child(2){
-    transition-timing-function: ;
+    transition-timing-function: linear;
 }
 .delay3 ul li:nth-child(3){
-    transition-timing-function: ;
+    transition-timing-function: ease;
 }
 .delay3 ul li:nth-child(4){
-    transition-timing-function: ;
+    transition-timing-function: ease-in;
 }
 .delay3 ul li:nth-child(5){
-    transition-timing-function: ;
+    transition-timing-function: ease-in-out;
 }
 .delay3 ul:hover li{
     height: 300px; background-color: #ff0;
