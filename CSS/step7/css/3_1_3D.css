@@ -11,8 +11,8 @@ div span{
 }
 div.rotater span:nth-of-type(1){background-color: red; animation-name: hori;}
 div.rotater span:nth-of-type(2){background-color: green; animation-name: verti;}
-div.rotater span:nth-of-type(3){background-color: blue; animation-name: ;}
-div.rotater span:nth-of-type(4){background-color: yellow; animation-name: ;}
+div.rotater span:nth-of-type(3){background-color: blue; animation-name: depth;}
+div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate3D;}
 @keyframes hori{
     from{
         transform: rotateX(0deg);
@@ -27,17 +27,17 @@ div.rotater span:nth-of-type(4){background-color: yellow; animation-name: ;}
         transform: rotateY(360deg);
     }
 }
-@keyframes {
+@keyframes depth{
     from{
-
+        transform: rotateZ(0deg);
     }to{
-
+        transform: rotateZ(360deg);
     }
 }
-@keyframes {
+@keyframes rotate3D{
     from{
-
+        transform: rotate3d(0,0,0,0deg);
     }to{
-
+        transform: rotate3d(1,1,1,360deg);
     }
 }
