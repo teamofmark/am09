@@ -1,0 +1,90 @@
+body{
+    margin: 0 auto; width: 70%;
+}
+ul{
+    padding: 0; list-style: none;
+}
+ul li:first-child{
+    border-bottom: 1px solid deeppink; background-color: #505050;
+}
+ul li:last-child{
+    border-bottom: 1px solid deeppink;
+}
+ul li:nth-child(2n+1):not(:first-child){
+   background-color: #e9e9e9; 
+}
+ul li:nth-child(2n){
+    background-color: #fafafa;
+}
+ul li:nth-child(2n+3):hover{
+    background-color: darkblue;
+}
+ul li:nth-child(2n):hover{
+    background-color: darkorange;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li span{
+    display: block; float: left; padding: 15px 2%; box-sizing: border-box;
+    color: #999;
+}
+ul li:first-child span:nth-child(2){
+    color: palegreen;
+}
+ul li:not(:first-child):hover span{
+    color: paleturquoise;
+}
+ul li:not(:first-child,:nth-child(2n+1)):hover span:nth-child(2){
+    color: white;
+}
+ul li:not(:first-child) span:nth-child(2){
+    color: orangered;
+}
+ul li span:nth-child(2n+1){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 40%;
+}
+ul li span:nth-child(4){
+    width: 30%;
+}
+div:first-of-type{
+    position: relative; width: 50%; margin: 0 auto 15px; padding: 0 3%;
+}
+div:first-of-type a{
+    text-decoration: none; color: #555; display: block; text-align: center;
+    font-size: 12px; line-height: 23px;
+}
+div:first-of-type > a{
+    position: absolute; width: 3%; top: 0;
+}
+div:first-of-type > a:nth-of-type(1){
+    left: 0;
+}
+div:first-of-type > a:nth-of-type(2){
+    right: 0;
+}
+div:first-of-type ol{
+    margin: 0; padding: 0;
+}
+div:first-of-type ol:after{
+    content: ''; display: block; clear: both;
+}
+div:first-of-type ol li{
+    display: block; float: left; width: 9%;
+}
+div:first-of-type ol li:not(:first-child){
+    margin-left: 1.11%;
+}
+div:first-of-type ol li a:hover{
+    background-color: darkorchid; color: violet; border-radius: 5px;
+}
+form fieldset{
+    border: none; padding: 0; margin: 0; text-align: center;
+}
+form fieldset input[type='submit']{
+    border: 1px solid darkorchid; background-color: lavender; color: darkorchid;
+    text-transform: uppercase;
+}
