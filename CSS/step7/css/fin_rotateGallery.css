@@ -1,0 +1,56 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0 auto; width: 1000px; background-color: black;
+}
+section{
+    position: relative; height: 100%; perspective: 1500px;
+    /* ! 출력장치의 해상도(resolution)를 초과하지 못함. */
+}
+section .moveMent{
+    position: absolute; left: 50%; top: 20%; transform-style: preserve-3d;
+    animation: rotater 15s linear 0s infinite;
+    /* animation-name:rotater;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; */
+}
+/*
+    ? movement : 통돌이
+*/
+@keyframes rotater {
+    0%{
+        transform: rotateY(0deg);
+    }100%{
+        transform: rotateY(360deg);
+    }
+}
+section .moveMent .pic{
+    position: absolute; left: 0; top: 0; backface-visibility: hidden;
+    margin-left: -107px;
+}
+section .moveMent .pic:nth-child(1){transform: rotateY(0deg) translateZ(-370px);}
+/* ? margin: 20px 가량 / .cell에서 margin-bottom: 20px; 이 필요  */
+section .moveMent .pic:nth-child(2){transform: rotateY(36deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(3){transform: rotateY(72deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(4){transform: rotateY(108deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(5){transform: rotateY(144deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(6){transform: rotateY(180deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(7){transform: rotateY(216deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(8){transform: rotateY(252deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(9){transform: rotateY(288deg) translateZ(-370px);}
+section .moveMent .pic:nth-child(10){transform: rotateY(324deg) translateZ(-370px);}
+section .moveMent .pic .cell{
+    margin-bottom: 20px; width: 215px; height: 121px; transition-duration: 0.5s;
+}
+section .moveMent .pic .cell:hover{
+    transform: scale(1.2) translateZ(0px);
+}
+section .moveMent .pic .cell img{
+    width: 100%; opacity: 0.5;
+}
+section .moveMent .pic .cell:hover img{
+    opacity: 1;
+}
