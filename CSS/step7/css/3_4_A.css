@@ -1,0 +1,32 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative;
+    animation-name: rotate3D;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    transform-style: preserve-3d;
+}
+@keyframes rotate3D {
+    0%{
+        transform: rotateX(90deg) rotateY(60deg);
+    }100%{
+        transform: rotateX(450deg) rotateY(60deg);
+    }
+}
+div span{
+    width: 200px; height: 100px; display: block; position: absolute; left: 0; top: 0;
+    opacity: 0.3;
+}
+div span:nth-of-type(1){
+    background-color: red;
+}
+div span:nth-of-type(2){
+    background-color: green; transform: rotateY(60deg); transform-origin: left top;
+}
+div span:nth-of-type(3){
+    background-color: blue; transform: rotateY(-60deg); transform-origin: right top;
+    width: 100px;
+}
