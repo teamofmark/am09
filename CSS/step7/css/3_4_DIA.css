@@ -5,15 +5,15 @@ div{
     width: 200px; position: relative;
     animation-name: rotate3D;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-timing-function: ease;
     transform-style: preserve-3d;
 }
 @keyframes rotate3D{
     0%{
-        transform: rotate3d(0,0,0,0deg);
+        transform: rotateX(90deg) rotateY(45deg);
     }100%{
-        transform: rotate3d(1,1,1,360deg);
+        transform: rotateX(450deg) rotateY(45deg);
     }
 }
 div span{
