@@ -1,4 +1,17 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        font-family: 'Playfair Display'; background-color: palevioletred; text-align: center;
+    }
+    h1{
+        font-size: 24px; line-height: 30px; font-weight: 500;  color: white;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 12px; line-height: 18px; font-weight: 300; color: purple;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 767px) and (orientation: portrait){
     body{
         font-family: 'Roboto'; background-color: magenta; text-align: center;
     }
