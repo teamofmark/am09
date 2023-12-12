@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px){
     body{
-        font-family: 'Roboto'; background-color: salmon; text-align: center;
+        font-family: 'Roboto'; background-color: magenta; text-align: center;
     }
     h1{
         font-size: 24px; line-height: 30px; font-weight: 500;  color: brown;
@@ -13,7 +13,20 @@
 }
 /* todo mobile - 사용자의 해상도가 768미만일 때 */
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation:landscape){
+    body{
+        font-family: 'Playfair Display'; background-color: palegreen; color: forestgreen;
+    }
+    h1{
+        font-size: 30px; line-height: 42px; font-weight: 300;
+    }
+    p{
+        font-size: 16px; line-height: 22px; font-weight: 500;
+    }
+}
+/* ? tablet - 사용자 해상도가 768 이상 1280미만 일 때 */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation:portrait){
     body{
         font-family: 'Roboto'; background-color: paleturquoise; color: forestgreen;
     }
