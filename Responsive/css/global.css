@@ -1,14 +1,17 @@
+@media screen and (max-width: 767px){
 
+}
+/* todo mobile - 사용자의 해상도가 768미만일 때 */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     body{
-        font-family: 'Playfair Display'; background-color: blue; color: white;
+        font-family: 'Roboto'; background-color: paleturquoise; color: forestgreen;
     }
     h1{
-        font-size: 32px; line-height: 40px; font-weight: 700;
+        font-size: 28px; line-height: 40px; font-weight: 300;
     }
     p{
-        font-size: 16px; line-height: 22px; font-weight: 400;
+        font-size: 14px; line-height: 20px; font-weight: 500;
     }
 }
 /* ? tablet - 사용자 해상도가 768 이상 1280미만 일 때 */
