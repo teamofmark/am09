@@ -142,5 +142,34 @@ a{
     footer > div div:nth-of-type(3) ul{
         clear: left;
     }
+    /* todo. SNS ICON 배치하기 */
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 5px;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat;
+        background-size: contain;
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{
+        background-image: url('../images/ico_sns_01.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{
+        background-image: url('../images/ico_sns_03.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{
+        background-image: url('../images/ico_sns_04.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{
+        background-image: url('../images/ico_sns_06.png');
+    }
 }
 /* ? desktop */
