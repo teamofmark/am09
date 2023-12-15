@@ -26,5 +26,57 @@
         max-width: 120px;
     }
     /* ? CI figure Fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') left top / cover no-repeat;
+        /* !tempCode */
+        padding: 200px 0;
+    }
+    section.videoArea a{
+        display: block; font-size: 45px; color: white; border: 3px solid white;
+        margin: 0 auto 30px; border-radius: 50px; text-align: center; box-sizing: border-box;
+        width: 100px; padding: 23px 0 26px 5px;
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white; font-weight: 900; text-align: center;
+    }
+    /* ? videoArea Fin */
+
+    section.expArea{
+        text-align: center;
+    }
+    section.expArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 10px;
+    }
+    section.expArea > p{
+        font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75);
+        margin-bottom: 15px;
+    }
+    section.expArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.expArea ul li{
+        float: left; width: 33.33%; display: block; padding: 120px 3.5% 40px; box-sizing: border-box;
+        background-repeat: no-repeat; background-position: center 30px;
+    }
+    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    section.expArea ul li:not(:nth-child(3n)){
+        border-right: 1px solid rgba(0,0,0,0.2);
+    }
+    section.expArea ul li:nth-child(1){background-image: url('../images/ico_01.png');}
+    section.expArea ul li:nth-child(2){background-image: url('../images/ico_02.png');}
+    section.expArea ul li:nth-child(3){background-image: url('../images/ico_03.png');}
+    section.expArea ul li:nth-child(4){background-image: url('../images/ico_04.png');}
+    section.expArea ul li:nth-child(5){background-image: url('../images/ico_05.png');}
+    section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
+    section.expArea ul li h3{
+        font-size: 14px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
+    }
+    section.expArea ul li p{
+        font-size: 14px; font-weight: 300; color: rgba(51,51,51,0.75); line-height: 22px;
+    }
+    /* ? expArea Fin */
 }
 /* ? desktop */
