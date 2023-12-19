@@ -85,24 +85,24 @@ section[class$='Area'] > hr{
         height: 350px;
     }
     header > div nav ul li{
-        display: inline-block;
+        display: /*inline-block*/block;
     }
-    header > div nav ul li:not(:first-child){
+    /* header > div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header > div nav ul li a{
         line-height: 50px; display: block; font-size: 13px; color: white; font-weight: 900;
     }
-    header > div nav ul li a:hover,
+    /* header > div nav ul li a:hover, */
     header > div nav ul li a.active{
         color: #00e0d0;
     }
     /* ? header GNB Fin */
     header > div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header > div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/ 55px; display: block;
     }
     header > div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; padding-bottom: 22px;
