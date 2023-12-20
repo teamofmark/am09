@@ -1,4 +1,9 @@
-
+.mont{
+    font-family: 'Montserrat';
+}
+.crim{
+    font-family: 'Crimson Pro';
+}
 
 @media screen and (min-width: 1280px) {
     
