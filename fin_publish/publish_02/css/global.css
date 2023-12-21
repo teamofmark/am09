@@ -1,3 +1,6 @@
+body{
+    background-color: #e4e5e7;
+}
 .mont{
     font-family: 'Montserrat';
 }
@@ -6,6 +9,22 @@
 }
 
 @media screen and (min-width: 1280px) {
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-symbols-rounded{
+        width: 5.12%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block; color: #3e425a;
+    }
 }
 /* ?desktop */
