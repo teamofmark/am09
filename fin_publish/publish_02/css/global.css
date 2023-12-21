@@ -11,10 +11,14 @@ input[type='checkbox'],
 input[type='radio']{
     display: none;
 }
+a{
+    text-decoration: none;
+}
 /* ? A/U */
 
 @media screen and (min-width: 1280px) {
-    header > div{
+    header > div,
+    footer > div{
         max-width: 1170px; margin: 0 auto;
     }
 
@@ -77,5 +81,65 @@ input[type='radio']{
         font-family: inherit; letter-spacing: 1px;
     }
     /* ? header Fin */
+    
+    .paging{
+        position: relative; background-color: white; border-radius: 5px;
+        clear: both;
+    }
+    .paging > a{
+        position: absolute; top: 0; text-align: center; width: 17%; line-height: 90px;
+        font-size: 18px; font-weight: 600; color: #3a405b;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        text-align: center; padding: 20px 17%; box-sizing: border-box;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; width: 50px; line-height: 50px; border-radius: 25px;
+        font-size: 14px; color: #3a405b; font-weight: 600; background-color: white;
+        transition: box-shadow 0.3s ease-out;
+    }
+    .paging ol li a:hover{
+        box-shadow: 0 5px 8px rgba(168,172,185,0.62); color: #b9bed1;
+    }
+    /* ? pager Fin */
+    footer{
+        background-color: #222328;
+    }
+    footer > div{
+        padding: 60px 0; position: relative;
+    }
+    footer > div:first-child{
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    footer > div span{
+        display: block; position: absolute; right: 0; top: 60px;
+    }
+    footer > div:first-child h2{
+        position: absolute; left: 0; top: 60px; width: 7.86%; max-width: 92px;
+    }
+    footer > div:first-child h2 img{
+        width: 100%; min-width: 78px;
+    }
+    footer > div:first-child ul{
+        padding: 0 10%; text-align: center;
+    }
+    footer > div:first-child ul li{
+        display: inline-block;
+    }
+    footer > div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer > div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 600;
+    }
 }
 /* ?desktop */
