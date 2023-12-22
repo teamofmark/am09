@@ -88,7 +88,7 @@
     }
     section.slideArea > div ul li figure figcaption{
         position: absolute; max-width: 460px; width: 32.85%; color: white;
-        left: 0; top: 0;
+        left: 15%; top: 20%;
         /* todo absolute 좌표  */
     }
     section.slideArea > div ul li figure figcaption dl{
@@ -106,5 +106,13 @@
         border-radius: 21px;
     }
     /* ?slideArea Fin */
+
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 10px; line-height: 56px;
+        padding: 0 1.7%; box-sizing: border-box; margin-bottom: 30px;
+    }
 }
 /* ?desktop */
