@@ -14,6 +14,15 @@ input[type='radio']{
 a{
     text-decoration: none;
 }
+.selectBox{
+    display: inline-block; box-sizing: border-box;
+    background: url('../images/bg_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image:none; background-color: transparent;
+    appearance: none; font-family: inherit; font-weight: 600; font-size: 11px;
+    color: #343e5c; padding: 10px 20px 10px 0;
+}
 /* ? A/U */
 
 @media screen and (min-width: 1280px) {
