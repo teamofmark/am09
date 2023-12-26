@@ -160,5 +160,22 @@
         text-align: right;
     }
     /* ?sortBar Fin */
+
+    .contentArea aside{
+        width: 23.07%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 10px; margin-bottom: 30px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+
+    
+    .contentArea section{
+        width: 74.35%; margin-left: 2.58%; float: left;
+    }
+
 }
 /* ?desktop */
