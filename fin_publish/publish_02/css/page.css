@@ -200,10 +200,10 @@
         background-color: white; border-radius: 10px;
     }
     .contentArea aside fieldset:not(:last-of-type){
-        padding: 70px 0 20px;
+        padding: 55px 0 20px;
     }
     .contentArea aside fieldset:last-of-type{
-        padding-top: 50px;
+        padding-top: 35px;
     }
     /* 
         ! legend 배치
@@ -211,6 +211,7 @@
         * 2. 해당 높이의 절반이 곧 fieldset 상단 선 기준 (top: 0;) 수치.
         * 3. 2번의 대상은 relative / top 으로 배치 하고 부모 fieldset의 상단 pad 별도 계산 적용
         * 4. legend의 0 기준으로 추가 가산 수치만큼 top 더주기
+        * 5. legend 하단 padding(1번항목)만큼 벌어진 격차 fieldset 상단 padding에서 빼주기
     */
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px;
@@ -242,7 +243,25 @@
     .contentArea aside fieldset label[for*='dlvr']{
         width: 49%; margin-bottom: 0; line-height: 50px;
     }
-
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7;
+    }
+    .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
+        background: url('../images/off_radio.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='radio'] + label[for*='dlvr']{
+        background: url('../images/off_radio.png') no-repeat 15.15% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
+    /* ? leftAside Fin */
     
     .contentArea section{
         width: 74.35%; margin-left: 2.58%; float: left;
