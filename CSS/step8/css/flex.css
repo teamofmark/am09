@@ -23,6 +23,22 @@
         ? wrap-reverse(개행하되 역배치)
     */
 }
-.flexContainer.wrap .flexItem{
+.flexContainer.wrap .flexItem,
+.flexContainer.flow .flexItem{
     width: 500px;
+}
+
+.flexContainer.flow{
+    flex-flow: row-reverse wrap-reverse;
+    /* ? flex-flow : <directionValue> | <wrapValue> */
+}
+.flexContainer.justifyContent{
+    justify-content: space-evenly; margin: 0; padding: 0;    
+}
+.flexContainer.justifyContent .flexItem,
+.flexContainer.alignContent .flexItem{
+    margin: 0;
+}
+.flexContainer.alignContent{
+    align-content: flex-end; height: 400px; flex-wrap: wrap;
 }
