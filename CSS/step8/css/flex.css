@@ -15,3 +15,14 @@
         ? column-reverse : bottom to top
     */
 }
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse; flex-direction: row-reverse;
+    /* 
+        ? nowrap(개행불허. 1행 모두 배치. default. flexItem Width 자동축소)
+        ? wrap(width 초과시 개행)
+        ? wrap-reverse(개행하되 역배치)
+    */
+}
+.flexContainer.wrap .flexItem{
+    width: 500px;
+}
