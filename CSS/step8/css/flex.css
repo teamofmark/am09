@@ -33,12 +33,16 @@
     /* ? flex-flow : <directionValue> | <wrapValue> */
 }
 .flexContainer.justifyContent{
-    justify-content: space-evenly; margin: 0; padding: 0;    
+    justify-content: space-evenly; padding: 0;    
 }
 .flexContainer.justifyContent .flexItem,
 .flexContainer.alignContent .flexItem{
     margin: 0;
 }
 .flexContainer.alignContent{
-    align-content: flex-end; height: 400px; flex-wrap: wrap;
+    align-content: space-evenly; justify-content: flex-end; height: 400px; flex-wrap: wrap;
+    padding: 0; 
+}
+.flexContainer.alignContent .flexItem{
+    width: 500px;
 }
