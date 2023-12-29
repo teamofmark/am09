@@ -89,3 +89,14 @@
 .flexContainer.alignSelf .flexItem:nth-of-type(2){
     line-height: 100px;
 }
+
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 0;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: -2;
+}
