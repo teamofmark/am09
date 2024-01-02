@@ -1,0 +1,38 @@
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto'; background-color: #635f59;
+}
+header nav, .container{
+    max-width: 1170px; margin: 0 auto;
+}
+.container .row article{
+    transition-duration: 0.75s; transition-timing-function: ease-out; 
+}
+.container .row >[class$='1']{background-color:#b6ff00;}
+.container .row >[class$='2']{background-color: #0094ff;}
+.container .row >[class$='3']{background-color: #ff00dc;}
+.container .row >[class$='4']{background-color: #dfd8ca;}
+.container .row >[class$='8']{background-color: #b91646;}
+
+/* ? A/U */
+
+
+@media screen and (min-width: 960px){
+    header{
+        background-color: white; position: fixed; width: 100%;
+    }
+    header nav{
+        padding: 10px 0;
+    }
+    header nav ul li{
+        width: 19%; display: inline-block; text-align: center;
+    }
+    header nav #MUI_on,
+    header nav ul li.mobileUI{
+        display: none;
+    }
+    /* leafEffect... 만들기 */
+}
+/* ? desktop -> 1024px 일 때 */
