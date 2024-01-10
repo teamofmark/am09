@@ -16,6 +16,9 @@ header nav, .container{
 .container .row >[class$='4']{background-color: #dfd8ca;}
 .container .row >[class$='8']{background-color: #b91646;}
 
+header nav ul li a{
+    font-weight: 700;
+}
 /* ? A/U */
 
 
@@ -33,6 +36,19 @@ header nav, .container{
     header nav ul li.mobileUI{
         display: none;
     }
-    /* leafEffect... 만들기 */
+    header nav ul li a{
+        text-decoration: none; text-transform: uppercase; display: inline-block;
+        font-size: 14px; color: #635f59; padding: 20px; border: 5px solid white;
+        transition-property: background-color, border;
+        transition-duration: 1s, 0.5s;
+        transition-delay: 0.2s, 0.1s;
+    }
+    header nav ul li:hover a{
+        background-color: #0cf; border-color: #0cf; color: white;
+        border-radius: 10px 0;
+    }
+    .container{
+        padding-top: 85px;
+    }
 }
 /* ? desktop -> 1024px 일 때 */
