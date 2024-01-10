@@ -20,5 +20,25 @@
 
 */
 @media screen and (min-width: 960px) {
-    
+    .row {
+        overflow: hidden;
+        width: 100%;
+      }
+      [class*='span'] {
+        float: left;
+        padding: 10px 1%;
+      }
+      .span_1 {
+        width: 6.5%;
+      }
+      .span_2 {
+        width: 15%;
+      }
+      .span_3 {
+        width: 23.5%;
+      }
+      .span_4 {
+        width: 32%;
+      }
+      
 }
