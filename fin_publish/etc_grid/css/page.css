@@ -20,6 +20,61 @@
 .span_8{.span(8);}
 */
 
+@media screen and (max-width: 767px) {
+    .row {
+        overflow: hidden;
+        width: 100%;
+      }
+      [class*='span']{
+        float: left;
+        padding: 10px 1%;
+        box-sizing: border-box;
+      }
+      [class*='span']:first-child{
+        padding: 10px 0;
+      }
+      .span_1,.span_2,.span_3{
+        width: 25%;
+      }
+      .span_4{
+        width: 50%;
+      }
+      .span_8{
+        width: 45%;
+      }
+      /* ? grid less */
+
+      .container .row.line1 article.span_4{
+        height: 286px;
+      }
+      /* .container .row.line1 article.span_2:nth-child(6),
+      .container .row.line1 article.span_2:nth-child(7),
+      .container .row.line1 article.span_2:nth-child(8),
+      .container .row.line1 article.span_2:nth-child(9) */
+      .container .row.line1 article.span_2:nth-child(n+6):nth-child(-n+9){
+        width: 50%;
+      }
+      .container .row.line1 article:not(.span_4){
+        height: 143px;
+      }
+      /* * line1 */
+
+      .container .row.line2 article.span_2:nth-child(4),
+      .container .row.line2 article.span_2:last-child{width:50%;}
+      .container .row.line2 article{height:143px;}
+      /*line2 Fin*/
+      
+      .container .row.line3 article.span_3:last-child{width:100%;}
+      .container .row.line3 article{height:200px;}
+      /*line3 Fin*/
+      
+      .container .row.line4 article.span_2:nth-child(5){width:40%;}
+      .container .row.line4 article.span_2:last-child{width:30%;}
+      .container .row.line4 article{height:195px;}
+      /*line4 Fin*/
+}
+/* ? mobile */
+
 @media screen and (min-width: 768px) and (max-width: 959px) {
     .row {
         overflow: hidden;
