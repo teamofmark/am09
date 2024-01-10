@@ -29,13 +29,30 @@ header nav ul li a{
     header nav{
         padding: 10px 0;
     }
-    header nav ul li{
-        width: 19%; display: inline-block; text-align: center;
-    }
-    header nav #MUI_on,
-    header nav ul li.mobileUI{
+    header nav #MUI_on{
         display: none;
     }
+    header nav #MUI_on:checked + ul{
+        height: 340px;
+    }
+    header nav ul{
+        height: 18px; overflow: hidden; transition: height 1s ease-out;
+    }
+    header nav ul li{
+        display: /*inline-*/block; text-align: center;
+        /* width: 19%; */
+    }
+    header nav ul li.mobileUI label{
+        display: block; width: 30px; margin: 0 auto;
+    }
+    header nav ul li.mobileUI label span{
+        width: 30px; height: 3px; border-top: 3px solid #635f59; display: block;
+        transition: border-top .5s ease-out;
+    }
+    header nav ul li.mobileUI label:hover span{
+        border-top: 3px solid #ff00dc;
+    }
+    
     header nav ul li a{
         text-decoration: none; text-transform: uppercase; display: inline-block;
         font-size: 14px; color: #635f59; padding: 20px; border: 5px solid white;
@@ -48,7 +65,7 @@ header nav ul li a{
         border-radius: 10px 0;
     }
     .container{
-        padding-top: 85px;
+        padding-top: /*85px*/ 40px;
     }
 }
 /* ? mobile*/
