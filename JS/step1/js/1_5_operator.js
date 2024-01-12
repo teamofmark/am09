@@ -44,3 +44,9 @@
     ? 접근 연산자
     * .
 */
+// * case.1 10이 저장된 변수a, 숫자 20, 그리고 30을 더해서 result 변수에 저장후 출력. 
+function numbOP1(){
+    var a = 10;
+    var result = a+20+30;
+    console.log('합산 : ' + result);
+}
