@@ -68,3 +68,12 @@ function bgColorRandom(){
         $("body").css("background-color", hexCode);
     },1000);
 }
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수, 실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환
+    * 2. parseFloat(value); - 실수형변환
+*/
