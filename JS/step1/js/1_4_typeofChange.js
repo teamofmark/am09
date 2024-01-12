@@ -89,32 +89,37 @@ function numbString(){
 // todo. -1 암시적형변환 이용해보기
 function todo1(){
     var test = 100;
-    var result = test;
+    var result = test + "";
     // todo typeof로 자료형 검수 및 출력
+    console.log(typeof(result) + " = " + result);
 }
 // todo. -2 String 이용해보기
 function todo2(){
     var test = 100;
-    var result = test;
+    var result = String(test);
     // todo typeof로 자료형 검수 및 출력
+    console.log(typeof(result) + " = " + result);
 }
 // todo. -3 toString 이용해보기
 function todo3(){
     var test = 100;
-    var result = test;
+    var result = test.toString();
     // todo typeof로 자료형 검수 및 출력
+    console.log(typeof(result) + " = " + result);
 }
 // todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기.
 
 // todo. -1 parse 이용해보기
 function todo4(){
     var test = '100.51';
-    var result = test + 150 + '20';
+    var result = parseFloat(test) + 150 + parseInt('20');
     // todo typeof로 자료형 검수 및 출력
+    console.log(typeof(result) + " = " + result);
 }
 // todo. -2 Number 이용해보기
 function todo5(){
     var test = '100.51';
-    var result = test + 150 + '20';
+    var result = Number(test) + 150 + Number('20');
     // todo typeof로 자료형 검수 및 출력
+    console.log(typeof(result) + " = " + result);
 }
