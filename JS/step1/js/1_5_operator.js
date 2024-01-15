@@ -57,3 +57,41 @@ function numbOP2(){
     var result = a*b/10;
     console.log('복합연산 : ' + result);
 }
+// *case.3 ul, li 구조의 tag를 html page에 삽입 후 출력.
+function operatorEx(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS..!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// *case.4 연산자가 뒤로 올 경우
+function numberPlusAfter(){
+    // !실행먼저하지않기
+    var number = 10;
+    alert(number++); //? 예상결과 : 10 / 11 / 10(++), -> 10을 확인했을 때 이미 11로 변경된.
+    alert(number++); //? 예상결과 : 20 / 12 / 11, --> 11을 확인했을 때 이미 12로 변경된.
+    alert(number++); //? 예상결과 : 30 / 13 / 12 ---> 12를 확인했을 때 이미 13으로 변경된.
+}
+// *case.5 연산자가 앞으로 올 경우
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); //? 예상결과 : 11
+    alert(++number); //? 예상결과 : 12
+    alert(++number); //? 예상결과 : 13
+}
+// todo. 증감연산자복합.
+function numberPlusTodo(){
+    var number = 10;
+    console.log(number++); // ? 출력숫자 : 10 / 현재숫자 : 11 
+    console.log(--number); // ? 출력숫자 : 10 / 현재숫자 : 10  
+    console.log(++number); // ? 출력숫자 : 11 / 현재숫자 : 11  
+    console.log(number--); // ? 출력숫자 : 11 / 현재숫자 : 10  
+    console.log(number++); // ? 출력숫자 : 10 / 현재숫자 : 11 
+    console.log(++number); // ? 출력숫자 : 12 / 현재숫자 : 12  
+    console.log(--number); // ? 출력숫자 : 11 / 현재숫자 : 11  
+    console.log(number++); // ? 출력숫자 : 11 / 현재숫자 : 12  
+    console.log(++number); // ? 출력숫자 : 13 / 현재숫자 : 13  
+    console.log(number); // ? 출력&현재숫자 : 13. 
+}
