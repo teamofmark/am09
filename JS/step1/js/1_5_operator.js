@@ -95,3 +95,29 @@ function numberPlusTodo(){
     console.log(++number); // ? 출력숫자 : 13 / 현재숫자 : 13  
     console.log(number); // ? 출력&현재숫자 : 13. 
 }
+
+// *case.6 숫자 10이 담긴 변수a 와 숫자20이 담긴 변수b 의 크기를 비교하여 결과를 출력.
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a<b;
+    console.log("a > b ? " + result);
+}
+// *case.7 숫자 10이 담긴 변수a 와 숫자 20이 담긴 변수b 가 같은지 비교하여 결과를 출력.
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log("a != b ? " + result);
+}
+// *case.8 a변수에는 '남자', b변수에는 '웹퍼블리셔' 라는 값이 저장되어 있다. 담겨있는 두 값중 하나라도 맞는지 result 변수에 저장후 출력.
+function logicalOperator(){
+    var a = '남자';
+    var b = '웹퍼블리셔';
+    var result = (a=="남자")&&(b=="웹퍼블리셔");
+    console.log('결과 = ' + result);
+}
+// todo. 다음 코드의 결과를 예상후 문제점 수정하기.
+function compareTodo(){
+    console.log(30 > 20 && 20 > 10); //? 예상 : 
+}
