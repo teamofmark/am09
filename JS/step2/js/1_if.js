@@ -113,3 +113,25 @@ function avgScore(){
         alert('평균' + avg + '점 \n' + '가 입니다. 맞겠는데?');
     }
 }
+// *case. 5 사용자 id를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = window.prompt('사용자의 아이디');
+    if(userID == "Mark"){
+        alert("접속을 승인합니다.");
+    }else{
+        alert("잘못된 ID 입니다.");
+    }
+}
+/*
+axios.get('/user?ID=12345')
+    .then(function(response){
+        console.log(response);
+    })
+    .catch(function (error){
+        console.log(error);
+    })
+    .finally(function(){
+        
+    });
+*/
+// todo. 사용자 id "mark"와 password "1234"를 입력받고 "둘 다 맞을 경우"에만 승인메시지("Mark님으로 확인되었습니다.") 출력. 거부메시지 ("ID 혹은 PASSWORD가 틀렸습니다.") 출력.
