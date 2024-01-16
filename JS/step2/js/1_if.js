@@ -52,7 +52,18 @@ function lastDayEx(){
 }
 // todo. 현재 시각이 본인에게 아침 / 점심 / 저녁 먹을 시간? 알려주는 조건문 짜기
 function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
     // ?선언부 - 시간정보가져와서 시간추출하기
     
     // ? 세끼 시간을 if문으로 짜기 / alert(xx먹을시간!);
+    if(hour < 10){
+        alert("아침먹을시간!");
+    }
+    else if(hour < 15){
+        alert("점심먹을시간!");
+    }
+    else{
+        alert("저녁먹을시간!");
+    }
 }
