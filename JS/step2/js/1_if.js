@@ -67,3 +67,23 @@ function mealTime(){
         alert("저녁먹을시간!");
     }
 }
+// *case. 3 양,음수 판별해보기
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요','양,음수상관없음');
+    console.log(typeof(numb) + ' = ' + numb);
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('입력된 데이터가 0이거나 올바르지 않습니다.');
+    }
+}
+// todo. 홀수 짝수 판별
+function oddOrEven(){
+    // ? prompt를 이용하여 숫자 입력받기
+
+    // ? alert('짝수!'); 출력하기
+    // ? alert('홀수!'); 출력하기
+    // ? alert('문구작성'); 예외처리 문구 출력하기
+}
