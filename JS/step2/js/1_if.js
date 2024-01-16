@@ -81,9 +81,15 @@ function numbJudgment(){
 }
 // todo. 홀수 짝수 판별
 function oddOrEven(){
-    // ? prompt를 이용하여 숫자 입력받기
+    var numb = prompt('숫자를 입력하세요','홀,짝을 구분해드립니다.');// ? prompt를 이용하여 숫자 입력받기
 
-    // ? alert('짝수!'); 출력하기
-    // ? alert('홀수!'); 출력하기
-    // ? alert('문구작성'); 예외처리 문구 출력하기
+    if(numb%2==0){
+        alert('짝수!');
+    }// ? alert('짝수!'); 출력하기
+    else if(numb%2==1){
+        alert('홀수!');
+    }// ? alert('홀수!'); 출력하기
+    else{
+        alert('올바른 값을 입력하세요.');
+    }// ? alert('문구작성'); 예외처리 문구 출력하기
 }
