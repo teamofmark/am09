@@ -50,3 +50,9 @@ function lastDayEx(){
         rootDiv.appendChild(p);
     }
 }
+// todo. 현재 시각이 본인에게 아침 / 점심 / 저녁 먹을 시간? 알려주는 조건문 짜기
+function mealTime(){
+    // ?선언부 - 시간정보가져와서 시간추출하기
+    
+    // ? 세끼 시간을 if문으로 짜기 / alert(xx먹을시간!);
+}
