@@ -27,3 +27,26 @@ function amORpm(){
         alert('오후입니다.');
     }
 }
+// *case. 2 말일인가  아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    if(day<30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+function lastDayEx(){
+    const rootDiv = document.getElementById("root");
+    
+    const getLastDayFromMonth = (month = 1) =>{
+        return new Date(2024,month,0).getDate();
+    }
+    for(let i = 1; i <= 12; i++){
+        const p = document.createElement("p");
+        const lastDay = getLastDayFromMonth(i);
+        p.innerText = `2024년 ${i}월 ${lastDay}일 마지막 날은 ${lastDay}.`;
+        rootDiv.appendChild(p);
+    }
+}
