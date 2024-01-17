@@ -135,3 +135,17 @@ axios.get('/user?ID=12345')
     });
 */
 // todo. 사용자 id "mark"와 password "1234"를 입력받고 "둘 다 맞을 경우"에만 승인메시지("Mark님으로 확인되었습니다.") 출력. 거부메시지 ("ID 혹은 PASSWORD가 틀렸습니다.") 출력.
+function userInfoCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{ // if(userID!="Mark"||userPW!="1234") 
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+function userInfoCheck1(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
