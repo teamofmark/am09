@@ -37,3 +37,35 @@ function lotto(){
             break;
     }
 }
+// todo. switch로 만드는 간단한 계산기
+function calculator(){
+    var firstNumb = window.prompt("첫번째 숫자를 입력하세요.");
+    var operator = window.prompt("사칙연산자중 하나를 입력하세요.(+,-,*,/)");
+    var lastNumb = window.prompt("두번째 숫자를 입력하세요.");
+
+    // todo.1 prompt를 통해 들어오는 문자형을 숫자형으로 변환 단계
+    firstNumb = Number(firstNumb);
+    lastNumb = Number(lastNumb);
+
+    // console.log(typeof(firstNumb));
+    // console.log(typeof(lastNumb));
+    // todo.2 switch문을 작성하여 계산기가 작동되게하기
+    // ? alert(값) (ex>2+1을 입력했을 때 3만 출력)
+    switch (operator) {
+        case "+":
+            alert(firstNumb+lastNumb);
+            break;
+        case "-":
+            alert(firstNumb-lastNumb);
+            break;
+        case "*":
+            alert(firstNumb*lastNumb);
+            break;
+        case "/":
+            alert(firstNumb/lastNumb);
+            break;
+        default:
+            alert("잘못된 값이 입력되었습니다.");
+            break;
+    }
+}
