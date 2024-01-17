@@ -149,3 +149,21 @@ function userInfoCheck1(){
     var userPW = window.prompt("사용자의 비밀번호");
     (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
 }
+// todo. 사용자 id "mark"와 password"1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력
+// ? case. 1 둘 다 맞은경우 = "Mark님으로 확인되었습니다."
+// ? case. 2 둘 다 틀린경우 = "모든정보가 맞지않습니다."
+// ? case. 3 아이디만 틀린경우 = "ID가 존재하지 않습니다."
+// ? case. 4 패스워드만 틀린경우 = "password가 틀렸습니다."
+function userInfoCheck2(){
+    var userID = window.prompt("사용자의 아이디");
+    var userPW = window.prompt("사용자의 비밀번호");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else if(userID!="Mark"&&userPW!="1234"){
+        alert("모든 정보가 맞지 않습니다.");
+    }else if(userID!="Mark"){
+        alert("ID가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        alert("Password가 틀렸습니다.");
+    }
+}
