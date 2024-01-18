@@ -80,5 +80,10 @@ function favorFruit(){
 function arrayFor(){
     var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
     // todo. 0.변수,1.연산자,2.형변환,3.조건문 if.....출력되게
-    
+    for(var i = 0; i < data.length; i++){
+        document.write(i +"."+data[i]+"<br>");
+    }
+    // todo. 과제 -_-... 0 -> 첫번째, 1 -> 두번째, 2 -> 세번째 ....로 변형 출력.
+    // todo. 1 switch를 활용한 방법.
+    // todo. 2 array를 활용한 방법.
 }
