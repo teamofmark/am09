@@ -42,9 +42,9 @@ function namePrint500(){
 }
 // todo. 1 - 10까지 출력되는 반복문을 여러가지로 직접 짜보기.
 function answer1(){
-    for (var i =1; i<=10; i+=2){
-        document.write(i + "<br>");
-        document.write((i+1) + "<br>");
+    for (var i =1; i<=10; i+=2){ //? 10보다 작거나 같을 때 (1~10)만 반복수행, 루프가 끝난후 i에 2를 더함.
+        document.write(i + "<br>"); //? 1,3,5,7,9
+        document.write((i+1) + "<br>"); //? 2,4,6,8,10
     }
 }
 function answer2(){
@@ -66,4 +66,19 @@ function answer5(){
     for (var i = 1; i<=10; i++){
         document.write(i+"<br>");
     }
+}
+// *case. 3 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력하기.
+function favorFruit(){
+    var array = ["귤","포도","딸기","메론","수박"]; //? array(배열) -> data들이 저장되는 공간.
+    // *["귤"] -> data[0] -> array[0]
+    for(var i = 0; i < array.length; i++){
+        // console.log(i);
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 js단원명을 배열을통해 출력해보자.
+function arrayFor(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    // todo. 0.변수,1.연산자,2.형변환,3.조건문 if.....출력되게
+    
 }
