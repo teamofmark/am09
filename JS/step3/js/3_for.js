@@ -17,3 +17,45 @@ for (var index = 0; index < 10; index++) {
     
 }
 */
+
+// ! 단일 for문
+// * case.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for (var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo. 이름을 1,000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for (var i = 1; i <= 1000; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// *case.2 1,000번 출력될 이름 에서 홀수 번째만 출력하기.
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// todo. 1 - 10까지 출력되는 반복문을 여러가지로 직접 짜보기.
+function answer1(){
+    for (var i =1; i<=10; i+=2){
+        document.write(i + "<br>");
+        document.write((i+1) + "<br>");
+    }
+}
+function answer2(){
+
+}
+function answer3(){
+
+}
+function answer4(){
+
+}
+function answer5(){
+
+}
