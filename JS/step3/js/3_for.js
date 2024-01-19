@@ -77,13 +77,42 @@ function favorFruit(){
     }
 }
 // todo. 지금까지 배웠던 js단원명을 배열을통해 출력해보자.
+    // todo. 과제 -_-... 0 -> 첫번째, 1 -> 두번째, 2 -> 세번째 ....로 변형 출력.
+    // todo. 1 switch를 활용한 방법.
 function arrayFor(){
     var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
     // todo. 0.변수,1.연산자,2.형변환,3.조건문 if.....출력되게
+    var swapNumb = '';
     for(var i = 0; i < data.length; i++){
-        document.write(i +"."+data[i]+"<br>");
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            case 6:
+                swapNumb = '일곱';
+                break;
+            default:
+                i = "x";
+                break;
+        }
+        document.write(swapNumb + "번째 내용 = " + data[i] + '<br>');
     }
-    // todo. 과제 -_-... 0 -> 첫번째, 1 -> 두번째, 2 -> 세번째 ....로 변형 출력.
-    // todo. 1 switch를 활용한 방법.
-    // todo. 2 array를 활용한 방법.
+    
 }
+// todo. 2 array를 활용한 방법.
