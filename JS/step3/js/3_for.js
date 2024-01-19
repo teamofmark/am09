@@ -189,3 +189,28 @@ function runBreak(){
         // todo 대화창에서 확인을 누르면 계속 진행되고 / 취소를 누르면 중단 되게.
     }
 }
+
+// ! 다중 for
+
+// *case.1 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for (var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 역반절피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--) {//? 1. ifor = 10~1 까지 수행
+        for (var j = 0; j < i; j++) { //? jfor = j가 i보다 작을때 까지 반복 수행 10,9,8,7,6....
+            star += '*';//? 변수 star에 반복생성된 만큼 *을 넣음.
+        }
+        star += '<br>';//? ifor 만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star);
+}
