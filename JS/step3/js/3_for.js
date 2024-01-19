@@ -123,3 +123,69 @@ function arrayFor2(){
         document.write(swapNumb[i] + "번째 내용 = " + data[i] + "<br>");
     }
 }
+// * case. 4  continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+// *case. 4-1 continue문제
+
+function continueEx(){
+    let text = '';
+    for (let i = 0; i < 10; i++){
+        if (i == 3){
+            continue;
+        }
+        text = text + i;
+    }
+    console.log(text); //? 예상 결과 : 0124567689
+
+}
+// *case. 4-2 continue문제
+
+function runContinue(){
+    var output = 0;
+    for (var i = 1; i <= 10; i++){
+        if (i % 2 == 1){
+            continue;
+        }
+        output += i; //? 예상 : ?,?,?,?,?
+        console.log(output); //? 최종결과 : 
+    }
+}
+
+// *case. 5  break
+function forBreak(){
+    for (var i = 1; i <= 10; i++){
+        break;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+// *case. 5-1 break 문제
+function breakEx(){
+    var i = 0;
+
+    while(i < 6){
+        if(i == 3){
+            break;
+        }
+        i = i + 1;
+    }
+    console.log(i); //? 예상결과 :  3
+}
+
+// *case. 5-2 break 문제
+function runBreak(){
+    for (var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+            //? break가 구동되려면 if는 true = confirm 확인(true)/취소(false)
+           break; 
+        }
+        // todo 대화창에서 확인을 누르면 계속 진행되고 / 취소를 누르면 중단 되게.
+    }
+}
