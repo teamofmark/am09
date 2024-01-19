@@ -116,3 +116,10 @@ function arrayFor(){
     
 }
 // todo. 2 array를 활용한 방법.
+function arrayFor2(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    var swapNumb = ["첫","두","세","네","다섯","여섯","일곱"];
+    for (var i = 0; i < data.length; i++){
+        document.write(swapNumb[i] + "번째 내용 = " + data[i] + "<br>");
+    }
+}
