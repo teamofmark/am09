@@ -38,5 +38,10 @@ function sumParam(num1, num2){
     * 배열이 필요하다면 변환하여 사용할 수는 있다.
 */
 function sumAll(){
-    
+    console.log(typeof(arguments) + ':' + arguments.length);
+    var willReturn = 0;
+    for(var i = 0; i<arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
 }
