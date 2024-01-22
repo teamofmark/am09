@@ -214,3 +214,10 @@ function reverseHalfPyramid(){
     }
     document.write(star);
 }
+// todo. pyramid 만들기 - 과제
+function pyramid(){
+    var star = '';
+    // *. 반복시켜야되는 대상 수 - &nbsp;, *, <br> / 만큼의 for문을 작성.
+    // !. 각 루프가 할당해야하는 대상을 정확히 지정하기. (ex> i loop, s loop, e loop...)
+    // * 한번 반복이 완성 할 때 형태가 star 변수에 어떻게 담기는지 예측하면서 작성.
+}
