@@ -67,11 +67,30 @@ function showInfo(){
 
 
     !ex.1 함수f(x)안에 넣는 값이 매개변수, 결과로 나오는 x*x 가 리턴값.
-        function f(x) { return x * x; }
-        alert(f(3));
+       * function f(x) { return x * x; }
+       * alert(f(3));
 
     !ex.2 alert에서 매개변수를 두개를 선언하면 추가된 매개변수를 무시한다.
     //*(매개변수가 초과 됐을 시) 또한 원래 함수의 매개변수보다 적게 입력하면 undefined를 출력한다.
         alert('기존매개변수', '추가매개변수');
         prompt('기존매개변수');
 */
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+function infiniteSum(){
+    var sum = 0; //?
+    var count = 1; //?
+    while(true){ //? 무한반복
+        var value = parseInt(window.prompt("숫자만 입력해라.")); //?
+        if(value ==0){ //?
+            document.write("종료."); //?
+            return; //?
+        }
+        sum += value; //?
+        document.write(count + ". " + sum + "<br>"); //?
+        count++; //?
+    }
+    document.write("총 " + count + "번 실행함."); //?
+}
