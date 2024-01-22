@@ -45,3 +45,16 @@ function sumAll(){
     }
     console.log(willReturn);
 }
+function sumAllEX(){
+    var willReturn = 0;
+    for(var i in arguments){ //? for in loop는 ie9이하 작업 불가.
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// *case. 4 "자신의 이름"의 나이는 "자신의 나이"세 입니다. 를 arguments를 이용해 만들어보기.
+function showInfo(){
+    console.log(" 0번방 = " + arguments[0]);
+    console.log(" 1번방 = " + arguments[1]);
+    alert(arguments[0] +"의 나이는" + arguments[1] + "세 입니다.");
+}
