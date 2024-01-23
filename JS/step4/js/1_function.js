@@ -80,17 +80,84 @@ function sumReturn1(num1,num2){
     return result;
 }
 function infiniteSum(){
-    var sum = 0; //?
-    var count = 1; //?
+    var sum = 0; //? sum 변수에 0 선언및초기화
+    var count = 1; //? count 변수에 1  선언및초기화
     while(true){ //? 무한반복
-        var value = parseInt(window.prompt("숫자만 입력해라.")); //?
-        if(value ==0){ //?
-            document.write("종료."); //?
-            return; //?
+        var value = parseInt(window.prompt("숫자만 입력해라.")); //? prompt로 입력받은 문자를 정수형변환. -> value변수에
+        if(value ==0){ //? 만약에 위 value가 0과 같다면
+            document.write("종료."); //? body에 종료 메시지 출력
+            return; //? - 함수 즉시 종료
         }
-        sum += value; //?
-        document.write(count + ". " + sum + "<br>"); //?
-        count++; //?
+        sum += value; //? if 조건에 해당하지 않는다면 현재 sum 변수에 입력된 value를 더해서 대입하라.
+        document.write(count + ". " + sum + "<br>"); //? body에  1. xx(sum) <br> 를 출력해라.
+        count++; //? 현재 count 변수를 증가시켜라
     }
-    document.write("총 " + count + "번 실행함."); //?
+    document.write("총 " + count + "번 실행함."); //? - 함수 즉시 종료됨으로 인하여  실행 안됨.
+}
+// todo.1 구구단 출력을 함수로 만들기.
+function printGugudan(numb){
+    for (var i = 2; i <= numb; i++){
+        document.write(i + "단 출력", "<br>");
+        for(var m = 1; m <= numb; m++){
+            document.write(i + 'x' + m + '=' + (i*m),"<br>");
+        }
+        document.write("<br>");
+    }
+}
+// todo.2 다음 실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 함수 만들기.
+function calculator(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자입니다.";
+            break;
+
+    }
+    return result;
+}
+//todo 3. 위의 예제에 추가로 사칙연산 부분을 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+function calculator2(op, numb1, numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = add(numb1,numb2);
+            break;
+        case "-":
+            result = sub(numb1,numb2);
+            break;
+        case "*":
+            result = mul(numb1,numb2);
+            break;
+        case "/":
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자입니다.";
+            break;
+    }
+    return result;
+}
+function add(a,b){
+    return a + b;
+}
+function sub(numb1,numb2){
+    return numb1 - numb2;
+}
+function mul(numb1,numb2){
+    return numb1 * numb2;
+}
+function div(numb1,numb2){
+    return numb1 / numb2;
 }
