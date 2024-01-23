@@ -161,3 +161,26 @@ function mul(numb1,numb2){
 function div(numb1,numb2){
     return numb1 / numb2;
 }
+// *case. 5 함수를 변수에 담기.
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+
+// *case. 6 매개변수 값으로 함수를 사용하기.
+function hi1(){
+    console.log("Hello!");
+}
+function hi2(){
+    console.log("안녕");
+}
+function execute(func){
+    func();
+}
+// *case. 7 button click 시 매개변수 값으로 넘긴 함수 호출하기.
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+$(function(){
+    $("#runEx7").click(welcome);
+});
