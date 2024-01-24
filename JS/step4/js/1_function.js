@@ -184,3 +184,24 @@ function welcome(){
 $(function(){
     $("#runEx7").click(welcome);
 });
+// *case. 8 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write("hi. hello?");
+    },1000); //? m/s 기준.
+}
+// *case. 9 함수를 매개변수로 전달받아 반복호출하기.
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+/*
+? callFunctionTenTimes(function(){
+?     document.write('hello..!');
+? });
+todo. 사용하기 불편한 상태인 현 상태를 편하게 기명함수를 활용하여 해결하기.
+*/
+function justFunction(){
+    document.write('hello..!');
+}
