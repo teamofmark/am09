@@ -54,9 +54,8 @@ function keyControl(){
         // * w: 87(Ypos-), d: 68(Xpos+), s: 83(Ypos+), a: 65(Xpos-)
         switch(e.keyCode){
             case 87:
-                currentYpos -= range; // todo
+                currentYpos -= range;
                 break;
-            // todo
             case 68:
                 currentXpos += range;
                 break;
@@ -67,6 +66,7 @@ function keyControl(){
                 currentXpos -= range;
                 break;
         }
+        // todo. 자유분방한 원 가둬두기
 
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos);
