@@ -3,6 +3,8 @@ $(document).ready(function(){
     toggleCheck();
     // todo passwordComponent
     toggleTodo();
+    // *case. 2
+    tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -33,5 +35,11 @@ function toggleTodo(){
             $toggleTarget.text("visibility_off");
             $toggleInput.attr("type","password");
         }
+    });
+}
+
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        
     });
 }

@@ -3,8 +3,8 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
 
     // *case. 2 x/yAxis 원움직이기
-    $("#btnDetailMove").click(detailMoveCircle);
-
+    // $("#btnDetailMove").click(detailMoveCircle);
+    detailMoveCircleExt();
     // *case. 3 방향키조작
     keyControl();
 });
@@ -43,6 +43,34 @@ function detailMoveCircle(){
     }
 
 }
+// *exp.2ext function grouping
+function detailMoveCircleExt(){
+    var $circle = null;
+    circleInit();
+    $("#btnDetailMove").click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+    circleMovCommand(xpos, ypos);
+}
+function circleMovCommand(xpos, ypos){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){
+        alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
+    }
+}
+
+
 function keyControl(){
     var $circle = $(".circleKey");
     var range = 50;
