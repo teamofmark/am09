@@ -65,28 +65,35 @@
             display: block;
         }
         /* *case. 3 */
-        .accComponent{
+        .accComponent,
+        .accComponent2{
             margin: 0; padding: 0; list-style: none;
         }
-        .accComponent li h3{
+        .accComponent li h3,
+        .accComponent2 div h2{
             background-color: palegoldenrod; line-height: 50px;
             padding: 0 2%; box-sizing: border-box; margin: 0;
         }
-        .accComponent li h3:after{
+        .accComponent li h3:after,
+        .accComponent2 div h2:after{
             content: '▼'; display: block; float: right; font-size: 14px;
         }
-        .accComponent li h3+p{
+        .accComponent li h3+p,
+        .accComponent2 div h2+p{
             font-size: 14px; line-height: 20px; margin: 0; padding: 25px 2%;
             background-color: lightgray;
             display: none;
         }
-        .accComponent li h3.active{
+        .accComponent li h3.active,
+        .accComponent2 div h2.active{
             background-color: palegreen; color:forestgreen;
         }
-        .accComponent li h3.active:after{
+        .accComponent li h3.active:after,
+        .accComponent2 div h2.active:after{
             content: '▲';
         }
-        .accComponent li h3.active+p{
+        .accComponent li h3.active+p,
+        .accComponent2 div h2.active+p{
             display: block;
         }
     </style>
@@ -140,5 +147,19 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </li>
     </ul>
+    <div class="accComponent2">
+        <div>
+            <h2>accTitle1</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div>
+            <h2>accTitle2</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div>
+            <h2>accTitle3</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
 </body>
 </html>
