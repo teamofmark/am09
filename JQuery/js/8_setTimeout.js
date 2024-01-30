@@ -32,5 +32,8 @@ function scoreCount(count,$score,$circle,playState){
 }
 // todo 재시작 기능 만들기.
 function restart(){
-
+    playState = true; // ? playState 변수 true로 변경
+    count = 0; // ? count 0으로 초기화
+    $score.text(count + "점");// ? text함수로 해당 count 다시출력
+    scoreCount(count,$score,$circle,playState);// ? scoreCount 함수 parameter 포함 실행.
 }
