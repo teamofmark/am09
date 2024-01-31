@@ -31,15 +31,25 @@ function gameStart(){
 // ? 원움직이는함수
 function moveCircle(){
     $circle.css({
-        left: Math.floor(Math.random()*($panel.width() - $circle.width()))
+        left: Math.floor(Math.random()*($panel.width() - $circle.width())),
+        top: Math.floor(Math.random()*($panel.height() - $circle.height()))
         // todo top 작성해보기
     });
 }
 // ? 점수집계함수
 function scoreCount(){
-
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
 }
 // ? 게임종료함수
 function gameEnd(){
-    clearInterval(timerID);
+    setTimeout(function(){
+        playState = false;
+        clearInterval(timerID);
+        alert("게임종료. 너의 점수는" + count + "점 이다.");
+        count = 0;
+        $score.text(count);
+    },10000);
 }
