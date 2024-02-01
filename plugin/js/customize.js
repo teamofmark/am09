@@ -10,7 +10,10 @@ $(document).ready(function(){
         randomStart: false, //? default: false. slide 노출 순서를 random으로 전환.
 
         // *infiniteLoop, hideControlOnEnd 충돌
-        infiniteLoop: false, //? default : true. slide간 전환 무한반복.
-        hideControlOnEnd: true //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
+        infiniteLoop: true, //? default : true. slide간 전환 무한반복.
+        hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제.
+    
+        // *adaptiveHeight
+        adaptiveHeight: true
     });
 });
