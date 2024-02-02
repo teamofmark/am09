@@ -1,0 +1,24 @@
+/* ? reset */
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+/* ? caption css */
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 70%;
+    left: 0;
+    background: rgba(255, 80, 80, 0.75);
+    width: auto;
+}
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: 'Segoe UI';
+    display: block;
+    font-size: 22px;
+    padding: 10px;
+}
