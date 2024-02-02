@@ -32,6 +32,20 @@ $(document).ready(function(){
         // * controler
         controls: true, //? default: true. control button 켜기 끄기.
         nextSelector: '.btn_next', //? 공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공.
-        prevSelector: '.btn_prev' //? 공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
+        prevSelector: '.btn_prev', //? 공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
+        nextText: '다음',
+        prevText: '이전',
+
+        // * auto
+        auto: true, //? default: false. slide 자동전환 켜기. false로 설정시 autoControls에서 작동가능.
+        autoControls: true, //? default: false. 시각장애인들을 배려 하는것.
+        autoControlsCombine: true,  //? default : false. play/pause toggle.
+        autoStart: true, //? default: true. (false : autoConrols로 시작)화면 준비가 완료되면 바로 자동전환 시작? 중지?
+        pause: 4000, //? default: 4000(m/s). 자동전환시 멈춰있는 시간.
+        autoDelay: 1500, //? default: 0(m/s). 자동시작 전 지연시간 설정. (autoStart가 true일 경우 사용. systemDelay고려)
+        autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
+        autoControlsSelector: '.newAutoControls', //? auto button 뼈대 제공
+        startText: '시작', // ?생성된 뼈대 안에 text 변경
+        stopText: '중지',
     });
 });
