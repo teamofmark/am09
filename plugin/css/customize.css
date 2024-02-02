@@ -22,3 +22,36 @@
     font-size: 22px;
     padding: 10px;
 }
+/* ?pager - indicator */
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+.bx-wrapper .bx-pager-item{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: #000;
+}
