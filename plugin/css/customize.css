@@ -93,3 +93,23 @@
 .customPager li a img{
     width: 100%; display: block;
 }
+/* ? controls customize - 1 */
+
+.bx-wrapper .bx-controls-direction a{
+    height: 100%; top: 0; background-color: white; margin-top: 0;
+}
+.bx-wrapper .bx-next{
+    right: 0px; background: url('../images/controls_right.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-prev{
+    left: 0px; background: url('../images/controls_left.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus{
+    background-position: center; background-image: url('../images/controls_left_hover.png');
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus{
+    background-position: center; background-image: url('../images/controls_right_hover.png');
+}
+/* ? controls customize - 1 */
