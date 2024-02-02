@@ -113,3 +113,13 @@
     background-position: center; background-image: url('../images/controls_right_hover.png');
 }
 /* ? controls customize - 1 */
+
+[class^='btn_']{
+    width: 50px; line-height: 25px; background-color: black; border-radius: 5px; 
+    display: inline-block;
+}
+[class^='btn_'] a{
+    display: block; font-size: 14px; color: white; text-decoration: none;
+    text-align: center;
+}
+/* ? controls customize - 2 */

@@ -31,6 +31,7 @@ $(document).ready(function(){
 
         // * controler
         controls: true, //? default: true. control button 켜기 끄기.
-        
+        nextSelector: '.btn_next', //? 공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공.
+        prevSelector: '.btn_prev' //? 공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공.
     });
 });
