@@ -9,6 +9,28 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/N1M2_qY2wD4?si=rZS5SvpX2V7gzt55" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <embed src="https://www.youtube.com/embed/N1M2_qY2wD4?si=rZS5SvpX2V7gzt55" width="560" height="315">
     <!-- <iframe width="1280" height="1024" src="https://www.toxnfill.com/" frameborder="0"></iframe> -->
-    <video src="videos/file_example_MP4_480_1_5MG.mp4" controls muted autoplay loop preload="auto" poster=""></video>
+    <video controls muted autoplay loop preload="auto" poster="images/thumbNail.png">
+        <source src="videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="videos/file_example_MP4_640_3MG.mp4" type="video/mp4">
+        <source src="videos/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+    </video>
+    <!-- 
+        ? 장치별 해상도에 따른 영상출력을 분기하는 방식.
+        * ex> TV (3860px)에서는 1280해상도의 mp4를 재생
+        * ex> tablet (768px~2160px)에서는 640해상도의 mp4를 재생..
+        ! 장치가 출력할 수 있는 최대 해상도는 물리적으로 한정되어있는데 불필요하게 고화질로 많은 용량을 소비할 필요는 없기 때문.
+     -->
+    <!--
+        !autoplay는 video, audio 동일 속성값, 자동 재생을 시킵니다.     
+        !controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
+        !loop는 video, audio 동일 속성값, 반복 재생을 시키는 속성값. 
+        !preload는 video, audio 동일 속성값, 스트리밍 방식이 아닌 백그라운드 다운로드를 통해 재생. 
+        !muted는 video, audio 동일 속성값, 미디어 객체를 불러왔을때, 초기 설정을 mute 상태로 불러오는 속성값. 
+        !src는 video, audio 동일 속성값, 미디어 객체를 지정하는 속성값. 
+        !poster 는 video 전용 속성값, video객체를 불러오지 못하거나 thumbNail로 이미지(autoplay off)를 출력 시키는 속성값`. 
+        !width, height는 video 전용 속성값, video 객체 영역의 크기를 정하는 속성값. 
+        !source는 여러 파일을 클라이언트 환경에 따라 다르게 적용할 수 있다.
+    -->
+    <audio src="audios/file_example_MP3_1MG.mp3" controls></audio>
 </body>
 </html>
