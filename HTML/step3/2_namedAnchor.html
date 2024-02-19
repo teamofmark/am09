@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>namedAnchor</title>
+    <style>
+        html,body{
+            margin: 0; height: 100%;
+        }
+        /* ul#menu{
+            position: fixed; right: 0; top: 0; background-color: white;
+        } */
+        div{
+            height: 100%;
+        }
+        #page1{
+            background-color: palevioletred;
+        }
+        #page2{
+            background-color: palegoldenrod;
+        }
+        #page3{
+            background-color: palegreen;
+        }
+        #page4{
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            <a href="#page1"> page1 바로가기</a>
+        </li>
+        <li>
+            <a href="#page2"> page2 바로가기</a>
+        </li>
+        <li>
+            <a href="#page3"> page3 바로가기</a>
+        </li>
+        <li>
+            <a href="#page4"> page4 바로가기</a>
+        </li>
+        <li>
+            <a href="1_hyperlink.html#targetAnchor">하이퍼링크목록 바로가기</a>
+        </li>
+    </ul>
+    <!-- ? (ul#menu>li*5>a{page$바로가기})+(#page$*4>{$page}+a{menu}) -->
+    <!-- ? #page$*4>{$page}+a{menu} -->
+    <div id="page1">
+        1번 페이지
+        <a href="#menu">메뉴로</a>
+    </div>
+    <div id="page2">
+        2번 페이지
+        <a href="#menu">메뉴로</a>
+    </div>
+    <div id="page3">
+        3번 페이지
+        <a href="#menu">메뉴로</a>
+    </div>
+    <div id="page4">
+        4번 페이지
+        <a href="#menu">메뉴로</a>
+    </div>
+</body>
+</html>
