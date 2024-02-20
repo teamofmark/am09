@@ -8,14 +8,39 @@
 <body>
     <table>
         <caption>month / Savings Table</caption>
+        <colgroup>
+            <col style="background-color: red; color: white; width: 200px;">
+            <!-- ? 1열 -->
+            <col style="background-color: yellow; width: 150px;">
+        </colgroup>
+        <!-- ? column + group : 열의 그룹 -->
         <thead>
             <tr>
                 <th>Month</th>
                 <th>Savings</th>
+                <!-- ? tableHeading -> 분류제목 -->
             </tr>
         </thead>
-        <tfoot></tfoot>
-        <tbody></tbody>
+        <!-- ? 상단분류를 지니고 있는 표일 경우 사용 -->
+        <tfoot>
+            <tr>
+                <th>Sum</th>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+        <!-- ? 결과(결산)값을 지닐 경우 사용 -->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+                <!-- ?tableData -> 데이터 -->
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <!-- ? 표의 분류에따른 data가 표시되는 공간 -->
     </table>
 </body>
 </html>
