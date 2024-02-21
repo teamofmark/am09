@@ -7,8 +7,50 @@
 </head>
 <body>
     <form>
-        <label for="userID">아이디 : </label>
-        <input type="text" id="userID">
+        <fieldset>
+            <legend>HTML4 Input</legend>
+            <!-- ? ex> 회원가입시 - 필수정보 / 부가정보의 input을 fieldset으로 감싸다.-->
+            <ul>
+                <li>
+                    <label for="userID">아이디 : </label>
+                    <!-- ? label : display default - inline -->
+                    <input type="text" id="userID">
+                    <!-- ? input : display default - inline-block(기능을수행하는 tag's-img,iframe,video..) -->
+                    <!-- ! input의 id는 backEnd가 직접적으로 사용하는 id이기 때문에 상호협의하에... -->
+                    <!-- 
+                        * 상식적인 선 내에서의 web상 naming규칙을 따라야함.
+                        ? 1. 한글,띄어쓰기,특문,숫자나 대문자가 앞에오거나 행위 금지.
+                        ? 2. 영문키워드 2개이상을 조합해야 함.(예약어개념 - programing Language가 이미 선점한 단어 사용금지)
+                    -->
+                </li>
+                <li>
+                    <label for="userPW">비밀번호 : </label>
+                    <input type="password" id="userPW">
+                </li>
+                <li>
+                    <!-- todo (input:radio#btn_radio$+label{item$})*4 -->
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                    <label for="btn_radio1">item1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">item2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">item3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">item4</label>
+                </li>
+                <li>
+                    <!-- todo (input:checkbox#btn_chk$+label{item$})*4 -->
+                    <input type="checkbox" id="btn_chk1" checked>
+                    <label for="btn_chk1">item1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">item2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">item3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">item4</label>
+                </li>
+            </ul>
+        </fieldset>
     </form>
 </body>
 </html>
