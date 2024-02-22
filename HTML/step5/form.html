@@ -92,11 +92,17 @@
             <ul>
                 <li>
                     <label for="userName">이름 : </label>
-                    <input type="text" id="userName" placeholder="이름 ">
+                    <input type="text" id="userName" placeholder="8자 이내로 입력하세요." maxlength="8" autofocus required readonly>
                     <!-- 
                         ! placeholder는 시각적표기만 가능하고 음성변환은 불가능
                         ? 대안 :  title="이름을 입력하세요"
                      -->
+                     <!--
+                        * required : 필수입력 필드, maxlength : 최대글자 제한 , autofocus : 자동초점
+                        ! readonly : 읽기전용 (server에 저장이 된적이 있는 data를 불러오기)
+                        ! disabled : 비활성화 (입력자체를 막아 server에 저장 자체가 불가능함.)
+                        ! enabled : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)
+                      -->
                 </li>
             </ul>
         </fieldset>
