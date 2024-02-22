@@ -104,6 +104,20 @@
                         ! enabled : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)
                       -->
                 </li>
+                <li>
+                    <label for="secEmailAddr">보조이메일 : </label>
+                    <input type="email" id="secEmailAddr">
+                    <!--type을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @ 버튼이 생긴다. placeholder(ie10이하지원불가)-->
+                </li>
+                <li>
+                    <label for="webURL">웹사이트 : </label>
+                    <input type="url" id="webURL" required>
+                    <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
+                </li>
+                <li>
+                    <label for="userCell">전화번호 : </label>
+                    <input type="tel" id="userCell">
+                </li>
             </ul>
         </fieldset>
         <div>
