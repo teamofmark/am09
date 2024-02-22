@@ -30,7 +30,7 @@
                 <li>
                     <!-- todo (input:radio#btn_radio$+label{item$})*4 -->
                     <input type="radio" name="radioGroup" id="btn_radio1" checked>
-                    <label for="btn_radio1">국민</label>
+                    <label for="btn_radio1">item1</label>
                     <input type="radio" name="radioGroup" id="btn_radio2">
                     <label for="btn_radio2">item2</label>
                     <input type="radio" name="radioGroup" id="btn_radio3">
@@ -78,9 +78,32 @@
                     <br>
                     <input type="button" value="비밀번호확인">
                     <br>
+                    <button type="submit">
+                        우편번호확인
+                        <!-- ! display: inline인 대상들만 삽입가능.(a,label 제외) -->
+                        <!-- ? defaultAct : submit(전송) -->
+                    </button>
+                    <br>
                 </li>
             </ul>
         </fieldset>
+        <fieldset>
+            <legend>HTML5 Input</legend>
+            <ul>
+                <li>
+                    <label for="userName">이름 : </label>
+                    <input type="text" id="userName" placeholder="이름 ">
+                    <!-- 
+                        ! placeholder는 시각적표기만 가능하고 음성변환은 불가능
+                        ? 대안 :  title="이름을 입력하세요"
+                     -->
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+        </div>
     </form>
 </body>
 </html>
