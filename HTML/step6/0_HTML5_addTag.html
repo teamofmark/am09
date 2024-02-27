@@ -41,7 +41,7 @@
             </figure>
         </li>
     </ul>
-    <time datetime="2024-02-26:10:54:00T09:00">2024년 02월 26일 오전 10시 54분</time>
+    <time datetime="2024-02-26:10:54:00T09:00Z">2024년 02월 26일 오전 10시 54분</time>
     <!--
         ? 날짜, 시간 기록을 하는 time 마크업은
         ? 1. datetime은 브라우저에서 인식하는 날짜 부분이다. yyyy-mm-dd 형식을 따른다.
@@ -49,5 +49,58 @@
         ? 2. pubdate(문서작성날짜)는 삭제-
         ? 3. 브라우저에 표시될 내용
         -->
+    <progress value="30" max="100"></progress>
+    <meter value="90" max="100" min="10" low="20" high="80"></meter>
+    <ruby>
+        韓 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
+    <address>
+        <span>인천광역시 부평구 부평동 194-23 SBS아카데미컴퓨터아트학원 부평점</span>
+        <a href="https://www.incheon.sbsart.com">사이트바로가기</a>
+        <a href="tel:+82324370111">032-437-0111</a>
+        <a href="mailto:privacy@koreaedugroup.com">이메일보내기</a>
+    </address>
+    <!-- ! footer Tag(page 하단 공통요소)에 많이 포함됨. -->
+
+    <!-- ! IE 지원 불가 Tag's - crossBrowsing Issue -->
+    <details>
+        <summary>Copyright 1999 - 2024</summary>
+        <!-- ? 확정구조 - 이하는 무엇을 쓰든 상관없음. -->
+        <p>- by Refsnes Data. All Rights Reserved.</p>
+    </details>
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome</p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free.
+            </p>
+        </article>
+    </main>
+    <!-- 
+        ? 가장최상위 = body > main - page마다 한번씩 (주관적 : mainPage일때 가장 바깥쪽 선언시)
+     -->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">
+        100 +
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+
+    <!-- ! IE / safari 지원불가 -->
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!-- ! 대부분 브라우저 지원 불가 -->
+    <dialog open>This is an open dialog window</dialog>
 </body>
 </html>
