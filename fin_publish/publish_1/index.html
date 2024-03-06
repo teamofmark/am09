@@ -146,6 +146,7 @@
         <a href="#">WE ARE HIRING</a>
     </section>
     <!-- ? team Fin -->
+    
     <section class="worksArea">
         <!-- todo 구조화해보기 -->
         <h2>
@@ -170,5 +171,61 @@
         <a href="#">LOAD MORE</a>
     </section>
     <!-- ? worksArea Fin -->
+
+    <section class="talkArea">
+        <!-- ! validation : div사용이 유리함 -->
+        <p>
+            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+            <strong>JANE GALADRIEL</strong>
+            <span>CEO TENGKUREP</span>
+        </p>
+        <div>
+            <a href="#">&lt;</a>
+            <ul>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumbNail Example"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumbNail Example"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumbNail Example"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumbNail Example"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumbNail Example"></a></li>
+            </ul>
+            <a href="#">&gt;</a>
+        </div>
+    </section>
+    <!-- ? peopleSay Fin -->
+    <section class="contactArea">
+        <!-- ! validation : div사용이 유리함 + section이 title을 사용하는 방식 -->
+        <form>
+            <fieldset>
+                <!-- ? 본래 목적은 성격이 다른 두 group의 input들을 나눌 때 / 한 개의 group을 boxing할 때도 사용함. -->
+                <legend>GIVE US A GOOD NEWS</legend>
+                <!-- todo input:text+input:email+input:text+textarea+input:submit -->
+                <input type="text" placeholder="Name" title="userName">
+                <input type="email" placeholder="Email" title="userEmail">
+                <input type="text" placeholder="Subject" title="postSubject">
+                <textarea placeholder="Your Message" title="insert ur message"></textarea>
+                <input type="submit" value="SUBMIT">
+            </fieldset>
+        </form>
+        <!-- 
+            todo bannerList Box 직접 구조화 해보기 
+            div>h3+ul>li*10>a>img
+        -->
+        <div>
+            <h3>OUR HAPPY CLIENT</h3>
+            <ul>
+                <li><a href="#"><img src="images/ban_01.png" alt="ZARA"></a></li>
+                <li><a href="#"><img src="images/ban_02.png" alt="MANGO"></a></li>
+                <li><a href="#"><img src="images/ban_03.png" alt="BARNEYS NEWYORK"></a></li>
+                <li><a href="#"><img src="images/ban_04.png" alt="GUCCI"></a></li>
+                <li><a href="#"><img src="images/ban_05.png" alt="Calvin Klein"></a></li>
+                <li><a href="#"><img src="images/ban_06.png" alt="Nike"></a></li>
+                <li><a href="#"><img src="images/ban_07.png" alt="CONVERSE"></a></li>
+                <li><a href="#"><img src="images/ban_08.png" alt="PUMA"></a></li>
+                <li><a href="#"><img src="images/ban_09.png" alt="LEVIS"></a></li>
+                <li><a href="#"><img src="images/ban_10.png" alt="BILLABONG"></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- ? contact Fin -->
 </body>
 </html>
