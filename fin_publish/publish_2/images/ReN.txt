@@ -1,0 +1,27 @@
+*공통접두 / 개별접미(bg_numb)
+*개별접두 / 공통접미(numb_bg)
+*공통접두/분류명/개별...(bg_section_01)
+
+배경 : bg(background)
+- bg_arrow, 
+(기본정렬(D/sort) : 숫자 > 알파벳 / 초성)
+
+로고 : logo.png
+-pri : logo_pri(or header)
+-sec : logo_sec(or footer)
+
+아이콘 : ico_numb (다량 - 분류명)
+-sns_01~03
+
+* slice 순서 시안 대조 확인필요
+
+예 : sample / example / ex...
+- 한가지 양식으로 통일(dummyData : 가짜 -> 삭제)
+- sample_slider.png, 
+- sample_product01~15
+- sample_face 
+
+불릿 : bullet -> bul_cart, bul_search, bul_check
+
+input : status(on-off, active-deactive) / category(radio,check...)
+- on_radio-off_radio / on_check-off_check
