@@ -21,3 +21,6 @@
 .btn.cancel{
     color: gray; border-color: gray; border-style: solid;
 }
+#cliName{
+    line-height: 21px; font-size: 12px; border: 1px solid salmon; background-color: lightpink;
+}
