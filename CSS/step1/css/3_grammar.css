@@ -1,0 +1,35 @@
+h1{
+    font-size: 12px; color: #f03;
+}
+img{
+    width: 150px; border: 3px solid #3f3;
+}
+ul,ol,dl{
+    color: #60f;
+}
+/* ? grouping */
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 25px; text-decoration: underline;
+}
+dl{
+    font-size: 35px;
+}
+dl dt{
+    color: orange;
+}
+dl dd{
+    color: brown;
+}
+
+ul li figure img{
+    width: 50px; border: none;
+}
+ul li figure figcaption dl dt{
+    color: skyblue;
+}
+ul li figure figcaption dl dd{
+    font-size: 50px;
+}
