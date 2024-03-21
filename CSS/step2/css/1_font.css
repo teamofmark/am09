@@ -21,7 +21,7 @@ black - 900
 
 */
 
-body{font-family:"Nanum Gothic";}
+body{font-family:"Noto Sans KR";}
 /*body에 전역으로 웹폰트 본고딕을 부여하면 이하 객체들의 폰트가 일괄적으로 본고딕으로 적용됨*/
 
 h1{font-size:20px; line-height:25px; color:#06F;}
@@ -53,7 +53,9 @@ p.w_nowrap{width:150px; white-space:nowrap; text-overflow:ellipsis; overflow:hid
 
 .v_alignTest img{width:200px; vertical-align:middle;}
 
-.v_alignTest span{vertical-align:10%;}
+.v_alignTest span{
+	/* vertical-align:; */
+}
 
 	/*
 	baseline: 문자의 밑선에 맞추어 정렬(default)
