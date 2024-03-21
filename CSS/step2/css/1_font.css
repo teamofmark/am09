@@ -54,17 +54,17 @@ p.w_nowrap{width:150px; white-space:nowrap; text-overflow:ellipsis; overflow:hid
 .v_alignTest img{width:200px; vertical-align:middle;}
 
 .v_alignTest span{
-	/* vertical-align:; */
+	vertical-align: -100%;
 }
 
 	/*
 	baseline: 문자의 밑선에 맞추어 정렬(default)
 	middle: 문자의 중앙을 기준으로 해서 정렬
+	top: 위쪽에 정렬
+	bottom : 아래쪽 정렬
 	sub : 아래첨자
 	super : 위 첨자
 	text-top:문자의 윗선을 밑선으로 해서 정렬
-	top: 위쪽에 정렬
-	bottom : 아래쪽 정렬
 	% : 퍼센트로 정렬 위치를 지정 (
 		후처리 = 높이가 낮은 대상. 그 대상의 높이기준
 		또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
@@ -80,3 +80,19 @@ p.w_nowrap{width:150px; white-space:nowrap; text-overflow:ellipsis; overflow:hid
     ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
     ! 대상들의 display 속성의 간섭을 받는다. (ex> display:block 인 div 끼리 불가)
 */
+
+p.t_indent{
+	text-indent: 200px; font-size: 24px;
+}
+
+button.test{
+	background: url("https://via.placeholder.com/150x50?text=blahblahButton");
+	border: none; width: 150px; line-height: 50px; font-size: 12px;
+	text-indent: -9999px;
+}
+a{
+	display: block; line-height: 24px;
+}
+a.t_deco_N{
+	text-decoration: none; text-transform: none; color: #090;
+}
