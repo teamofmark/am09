@@ -1,0 +1,16 @@
+html,body{
+    height:100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-color: skyblue; height: 100%;
+}
+.wrap .topLine input{
+    background-color: transparent; border: 1px solid blue; line-height: 24px;
+}
+.wrap p{
+    background-color: rgba(255,255,255,0.5);
+    /* ? 함수 : function - f(x) = 기능. */
+}
