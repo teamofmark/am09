@@ -91,8 +91,21 @@ button.test{
 	text-indent: -9999px;
 }
 a{
-	display: block; line-height: 24px;
+	display: block; line-height: 24px; margin-bottom: 20px;
 }
 a.t_deco_N{
 	text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+	text-decoration: underline; text-transform: lowercase; color: #0cf;
+}
+a.t_deco_O{
+	text-decoration: overline; text-transform: capitalize; color: #96c;
+}
+/* 
+	? class 등의 programing 상의 표기 시에는 예약어 회피를 해야 하기 때문에 keyWord 2개이상 조합.
+	* textDeco 이런 방식으로..(두번째 keyword부터 앞자)
+*/
+a.t_deco_T{
+	text-decoration: line-through; text-transform: uppercase; color: #f63;
 }
