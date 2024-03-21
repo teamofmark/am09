@@ -109,3 +109,12 @@ a.t_deco_O{
 a.t_deco_T{
 	text-decoration: line-through; text-transform: uppercase; color: #f63;
 }
+p.DR_ltr{
+	/* direction: ltr; */
+	text-align: left;
+}
+p.DR_rtl{
+	/* direction: rtl; */
+	text-align: center;
+}
+/* ! text-align은 inline,inline-block 속성 tag를 정렬할 수 있다. */
