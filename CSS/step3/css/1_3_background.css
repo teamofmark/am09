@@ -3,5 +3,29 @@ html,body{
 }
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    /* 
+        ? 적용 대상이 n개 일때, 관련 속성값이 하나라면 n개의 대상에게 모두 적용. 
+        * 분리가 필요 할때 식별자 (,)
+    */
+    background-repeat: no-repeat;
+    background-size: 50%;
+    /*
+        ? cover : 무조건 꽉 채움.(size가 작은 image면 강제로 늘려서 채움. - imgSize가 클때 사용.
+        ? contain : image의 가로,세로중 적용면적에 먼저 닿는 쪽에서 멈춤. != 100%와는 다름
+        * 100% = width -> image의 종횡비와 상관없이 무조건 너비 100%. contain과는 다름.
+        ! 100% 25% = width+height -> 권장되지않음. ? 종횡비가 깨짐. / 작은 image - icon,bullet..(ex> 10px 10px)
+    */
+    background-position: center;
+    /*
+        ? vertical-align의 중앙은 middle / background의 중앙은 center(대부분 css). = shorthand 문법.
+        * css는 동일한 속성값이 반복되면 줄여 쓰는 것이 가능.
+    */
+    background-attachment: fixed;
+    /* 
+        ? default : scroll / fixed - 고정. 많이 사용됨.
+    */
+}
+p{
+    height: 2000px;
 }
