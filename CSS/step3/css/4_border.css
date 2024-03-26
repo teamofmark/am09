@@ -13,14 +13,14 @@ div{
 }
 .multiBox{
     /* ? 속성별분리 / 방향별분리 */
-    /* border-width: 1px 3px 10px 25px;
+    border-width: 1px 3px 10px 25px;
     border-style: solid dotted dashed double;
-    border-color: #1958b7 #f06 #60f #fc6; */
+    border-color: #1958b7 #f06 #60f #fc6;
     /* todo 방향별 분리 실습 */
-    border-top: ;
-    border-right: ;
-    border-bottom: ;
-    border-left: ;
+    /* border-top: 1px solid #1958b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #60f;
+    border-left: 25px double #fc6; */
     /*solid : 직선 , dotted : 점선 dashed : 자르는선 double : 두줄의 선*/
     /*
     border 개별 설정
