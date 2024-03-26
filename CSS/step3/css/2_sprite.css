@@ -19,3 +19,30 @@ ul li{
     float: left; width: 160px; height: 140px; background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
 }
+ul li strong{
+    background-color: rgba(0,0,0,0.5); color: white;
+}
+ul li.captain{
+    background-position: 0px 0px;
+}
+ul li.wolverine{
+    background-position: 0px 0px;
+}
+ul li.thor{
+    background-position: 0px 0px;
+}
+ul li.ironman{
+    background-position: 0px 0px;
+}
+ul li.spiderman{
+    background-position: 0px 0px;
+}
+ul li.superman{
+    background-position: 0px 0px;
+}
+ul li.rangerRed{
+    background-position: 0px 0px;
+}
+ul li.rangerBlue{
+    background-position: 0px 0px;
+}
