@@ -44,3 +44,12 @@ div{
 .insetBox{
     border: 20px inset #666;
 }
+.radiusBox{
+    background-color: black; color: yellow;
+    border-radius: 10px 20px 30px;
+}
+.circleBox{
+    background-color: midnightblue; color: cyan; text-align: center;
+    width: 500px; height: 500px;  line-height: 500px; border-radius: 250px;
+    /* width: 50vw; height: 50vw; border-radius: 25vw; font-size: 2vw; line-height: 50vw; */
+}
