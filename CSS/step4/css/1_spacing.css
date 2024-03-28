@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    margin: 10px;
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+}
