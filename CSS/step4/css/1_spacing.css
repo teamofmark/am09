@@ -8,3 +8,22 @@ body{
 .firstDiv article{
     background-color: #039; color: white;
 }
+.secondDiv{
+    background-color: #ddd; margin: 20px 30px;
+    /*
+        ! 같은방향에서 margin이 충돌하게 되면 - 서로 값이 상쇄 됨.
+        ? 같은방향에서 만날 일이 없게 만들면 됨.
+    */
+    padding: 0 30px 30px;
+}
+.secondDiv p{
+    margin-bottom: 30px;
+}
+.secondDiv article{
+    background-color: #930;
+    /* margin: 30px; */
+}
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 10px; margin:0 auto;
+    text-align: center;
+}
