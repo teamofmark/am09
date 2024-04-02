@@ -1,0 +1,7 @@
+*{margin: 0; padding: 0;}
+/* ? ul, dl, dd, figure - margin or padding or both */
+ul:after{content: ''; display: block; clear: both;}
+ul li{width: 16.66%; float: left; display: block; border: 1px solid black; box-sizing: border-box;}
+ul li figure img{width: 100%; display: block;}
+/* ! display: inline-block - 강제마진 = 남는공간. -> block. -(input,img..기능) width: 100%; */
+ul li figure figcaption dl{text-align: center; background-color: yellow;}
