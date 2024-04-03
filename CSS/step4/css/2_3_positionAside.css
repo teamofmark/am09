@@ -47,3 +47,27 @@ body,
     background-color: palegoldenrod; padding-left: 270px;
 }
 /* todo. 배웠던 font관련 css를 가지고 page를 이쁘게 꾸며보기. */
+.wrap article h2,
+.wrap article blockquote,
+.wrap article q{
+    margin-bottom: 100px;
+}
+.wrap article h2{
+    font-size: 40px; color: forestgreen; font-weight: bold;
+}
+.wrap article blockquote{
+    border: 5px solid olive; padding: 30px; box-sizing: border-box;
+    font-size: 26px;
+}
+.wrap article q{
+    font-size: 21px; display: block;
+}
+.wrap article div:not(:last-child){
+    margin-bottom: 50px;
+}
+.wrap article div h3{
+    color: purple; font-size: 30px; margin-bottom: 50px;
+}
+.wrap article div p{
+    font-size: 21px; line-height: 40px; color: darkolivegreen;
+}
