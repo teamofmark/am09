@@ -47,3 +47,9 @@
     background-color: yellow; border: 5px solid yellow;
     width: 30px; height: 30px;
 }
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; line-height: 40px;
+}
