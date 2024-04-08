@@ -90,3 +90,18 @@
     /* ? type='radio'에도 사용 가능함. / select -> :selected로 선택 가능. */
     line-height: 0px;
 }
+.statusSelector input:focus{
+    border: 10px solid red;
+}
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:enabled::placeholder{
+    color: yellow;
+}
+.statusSelector input:disabled{
+    background-color: lightgray; color: gray;
+}
+.statusSelector input:disabled::placeholder{
+    color: white;
+}
