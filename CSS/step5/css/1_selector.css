@@ -105,3 +105,26 @@
 .statusSelector input:disabled::placeholder{
     color: white;
 }
+.virtualSelector ul{
+    list-style: none; margin: 30px 0; padding: 0; overflow: hidden;
+}
+.virtualSelector ul li{
+    width: 14.28%; float: left; text-align: center; margin: 0; padding: 15px;
+    box-sizing: border-box;
+}
+.virtualSelector ul :first-child{
+    border-radius: 50px 0 0 50px;
+}
+.virtualSelector ul :last-child{
+    border-radius: 0 50px 50px 0;
+}
+.virtualSelector ul :nth-child(2n+1){
+    background-color: #444; color: white;
+}
+.virtualSelector ul :nth-child(2n){
+    background-color: #09f;
+}
+/* 
+    ? 홀수의 조건 : 짝수의 최소수로 나눈 나머지가 1인 숫자.
+    ? 짝수의 조건 : 짝수의 최소수로 나눈 나머지가 0인 숫자.
+*/
