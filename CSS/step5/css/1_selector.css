@@ -82,3 +82,11 @@
 .stringAttrSelector h1[title^='남자']{
     color: blue;
 }
+.statusSelector input[type='checkbox']+label{
+    display: inline-block; line-height: 20px; overflow: hidden; vertical-align: text-top;
+    transition-duration: 0.75s;
+}
+.statusSelector input[type='checkbox']:checked+label{
+    /* ? type='radio'에도 사용 가능함. / select -> :selected로 선택 가능. */
+    line-height: 0px;
+}
