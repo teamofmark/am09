@@ -128,3 +128,16 @@
     ? 홀수의 조건 : 짝수의 최소수로 나눈 나머지가 1인 숫자.
     ? 짝수의 조건 : 짝수의 최소수로 나눈 나머지가 0인 숫자.
 */
+/* .shapeSelector h1:last-of-type{
+    color: #30f;
+}
+.shapeSelector h2:first-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:nth-of-type(2){
+    color: #f06;
+} */
+/* todo. child로 같은결과 나오게 해보기. */
+.shapeSelector :last-child{color: #30f;}
+.shapeSelector :nth-child(2){color: #0c6;}
+.shapeSelector :nth-child(4){color: #f06;}
