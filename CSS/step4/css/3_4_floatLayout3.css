@@ -1,0 +1,127 @@
+body{
+    margin:0 auto; width:960px;
+}
+header{
+    background-color:#6ff; position:relative;
+}
+header h1{
+    font-size:16px; width:250px; background-color:#66f; color:#fff; 
+    text-align:center; margin:0 auto; line-height: 40px;
+}
+header div{
+    position: absolute; right: 0; top: 24px;
+    /* line-height: 40px; <- input 계열 역시 내려받지 못한다.*/ 
+    /*line-height: 26 일때 -> 27px top*/
+}
+header div:after{
+    content: ''; display: block; clear: both;
+}
+header div input{
+    display: block; float: left; width: 20%; padding: 6px 0; box-sizing: border-box;
+    font-size: 14px; border: 1px solid darkslategray;
+    /* line-height: 26px; */
+}
+header div input#searchBar{
+    width: 80%; padding: 7px 0; background-color: lightpink;
+}
+header nav{
+    background-color:#3cf;
+}
+header nav ul{
+    text-align: center; margin: 0; padding: 0;
+}
+header nav ul li{
+    display:inline-block;
+}
+header nav ul li.marginLeft{
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration:none; color:#000;
+    display: block; line-height: 40px;
+}
+header nav ul li a:hover{color:#fff;}
+
+/* .wrap{overflow:hidden;} */
+.wrap:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+.wrap img{
+    display: block; margin-bottom:30px;
+}
+.wrap div{
+    width:310px; border:1px solid #999; float:left;
+    box-sizing: border-box;
+}
+.wrap div h3{
+    margin: 0 0 20px;
+}
+.wrap div.latest2,
+.wrap div.latest3{
+    margin-left: 15px;
+}
+.wrap div ul{
+    padding: 0; margin: 0; list-style: none;
+}
+footer{
+    background-color:#069; color:#fff; line-height: 40px; text-align:center;
+}
+
+ /* body{
+    margin:0 auto; padding:0; width: 960px; 
+}
+header{
+    background-color: #6cc; position: relative;
+}
+header h1{
+    font-size: 16px; width: 250px; background-color: #66c;
+    color: springgreen; text-align: center; margin:0 auto;
+    padding: 10px 0;
+}
+header .searchBox{
+    position: absolute; right: 0; top: 27px;
+}
+
+header nav{
+    background-color: #dac;
+}
+header nav ul{
+    padding: 10px 0; text-align: center; margin: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li:not(:first-child){
+    margin-left: 50px;
+}
+header nav ul li a{
+    text-decoration: none; color: slateblue;
+}
+header nav ul li a:hover{
+    color: sienna;
+}
+
+.wrap:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.wrap .imgBox{
+    margin-bottom: 30px;
+}
+.wrap .imgBox img{
+    width: 100%;
+}
+.wrap article{
+    border: 1px solid #66c;
+    margin-top: 0; margin-bottom: 0; float: left;
+    width: 310px; padding: 0;
+}
+.wrap article:not(:first-of-type){
+    margin-left: 12px;
+}
+.wrap li{
+    display: block;
+}
+footer{
+    background-color: #069; color: #fff; padding: 10px 0; 
+    text-align:center;
+} */
