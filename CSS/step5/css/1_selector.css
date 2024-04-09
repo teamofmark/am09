@@ -149,7 +149,15 @@
     text-decoration: underline; line-height: 30px; font-size: 14px; color: #090;
     text-underline-offset: 10px;
 }
-
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint)". ";
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; font-weight: bold; color: deeppink;
+}
 /*
 전후 문자선택자
 ::before : 선택된 태그의 앞 공간을 선택한다.
