@@ -141,3 +141,37 @@
 .shapeSelector :last-child{color: #30f;}
 .shapeSelector :nth-child(2){color: #0c6;}
 .shapeSelector :nth-child(4){color: #f06;}
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    text-decoration: underline; line-height: 30px; font-size: 14px; color: #090;
+    text-underline-offset: 10px;
+}
+
+/*
+전후 문자선택자
+::before : 선택된 태그의 앞 공간을 선택한다.
+::after : 선택된 태그의 뒷 공간을 선택한다.
+counter-increment:rint -> rint(인수에  가까운 정수 반환) 라는 카운터 이름을 만들어 낸다.
+content:counter(rint) -> 카운터가 태그의 갯수 만큼 하나씩 올라가며 출력 되게 한다.
+"-" => - 를 출력해라 / attr(data-page) => data-page로 설정 되어있는 부분을 출력하라.
+/ "page" => page를 출력하라.
+
+ul , ol 등의 리스트 형식에서 count를 사용 할 때는 counter-reset을 하고 사용 하는 것을
+권장
+ex > counter-reset: 카운터이름 0;
+.backandfrontSelector ul li{counter-increment:rint;} -> 카운터이름을 선언
+.backandfrontSelector ul li{counter-reset:rint 0;} -> 카운터 초기화
+.backandfrontSelector p::before{content:counter(rint) ".";} -> 카운터 시작
+.backandfrontSelector p::after{content:"-" attr(data-page) "page"; font-weight:bold; color:deeppink;} -> 출력
+
+
+data- 라는 것은 사용자 지정 속성으로 웹 표준에서 인정 해주는 개인 자율에 의한
+속성 지정법이다.
+대부분의 솔루션, 템플릿, jquery등에서 널리 이용 되고 있으니, 반드시 알아 둘 것.
+
+ex> data-roll="listview" 라고 선언 하면 jquery mobile ui 템플릿에서 기본으로 공급하는
+모바일에서의 리스트 출력 작동법 및 스타일 이 된다.
+*/
