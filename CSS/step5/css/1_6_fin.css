@@ -67,3 +67,27 @@ ul li mark{
     position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
     background-color: rgba(127,255,0,0.5);
 }
+div{
+    max-width: 400px; margin: 0 auto; position: relative; line-height: 30px;
+}
+div a{
+    text-decoration: none; font-size: 14px; padding: 5px; display: block;
+}
+div > a{
+    position: absolute; top: 0;
+}
+div > a:first-of-type{
+    left: 0;
+}
+div > a:last-of-type{
+    right: 0;
+}
+div ol{
+    padding: 0 25px; margin: 0; text-align: center;
+}
+div ol li{
+    display: inline-block;
+}
+div ol li a:hover{
+    color: red;
+}
