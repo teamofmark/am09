@@ -25,3 +25,45 @@ fieldset select{
     position: absolute; right: 0; width: 25%; background-color: lightseagreen;
     padding: 5px 0; border-color: lightskyblue; min-width: 150px;
 }
+h2{
+    padding: 30px 0; margin: 0; color: #555;
+}
+h2 strong{
+    color: seagreen;
+}
+h2 strong:not(:nth-of-type(2)){
+    text-transform: capitalize;
+}
+h2 strong:nth-of-type(2){
+    text-transform: uppercase;
+}
+ul{
+    margin: 0 0 30px; padding: 0; list-style: none;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li:first-child{
+    border-width: 3px 0 1px; border-style: solid none; border-color: darkgreen;
+    padding: 10px 0;
+}
+ul li:nth-child(2n){
+    background-color: #cacaca;
+}
+ul li:not(:first-child){
+    border-bottom: 1px solid mediumpurple; position: relative;
+}
+ul li span{
+    display: block; float: left; padding: 10px 2.5%; font-size: 14px;
+    word-break: break-all;
+}
+ul li span:nth-child(2){
+    width: 35%;
+}
+ul li span:not(:nth-child(2)){
+    width: 15%;
+}
+ul li mark{
+    position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px;
+    background-color: rgba(127,255,0,0.5);
+}
