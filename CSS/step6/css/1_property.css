@@ -77,5 +77,16 @@ div{
     ! height가 정해져 있지 않은 상태에서는 상,하 padding, border는 안으로 들어오지 못함.
 */
 .shadowProperty h1{
-    
+    text-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+    /* * -shadow: [xAxis] [yAxis] [blur] [spread] [color] */
 }
+.shadowProperty p{
+    width: 300px; height: 300px; border: 3px solid #f00;
+}
+.shadowProperty p:first-of-type{
+    box-shadow: 8px 10px 2px rgba(255,100,100,0.7);
+}
+.shadowProperty p:last-of-type{
+    box-shadow: inset 8px 10px 2px rgba(255,100,100,0.7);
+}
+/* http://css3generator.com */
