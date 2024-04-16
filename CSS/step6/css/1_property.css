@@ -63,3 +63,19 @@ div{
 .opacityProperty ul li figure figcaption dl dd{
     font-size: 14px; color: limegreen;
 }
+.boxsizingProperty div{
+    width: 100%; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+/* 
+    ! height가 정해져 있지 않은 상태에서는 상,하 padding, border는 안으로 들어오지 못함.
+*/
+.shadowProperty h1{
+    
+}
