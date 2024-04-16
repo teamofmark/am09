@@ -1,0 +1,20 @@
+body, ul, dl, dt, dd, figure{
+    margin: 0; padding: 0;
+}
+div{
+    margin-bottom: 30px;
+}
+.displayProperty span:nth-child(1){
+    display: block; background-color: #fc9393; width: 50%;
+}
+.displayProperty span:nth-child(2){
+    display: inline-block; background-color: #94fc93; width: 25%;
+    padding: 30px; margin: 30px;
+}
+.displayProperty span:nth-child(3){
+    display: inline; width: 75%; background-color: #93c5fc;
+    padding: 30px; margin: 30px;
+}
+.displayProperty span:nth-child(4){
+    display: none;
+}
