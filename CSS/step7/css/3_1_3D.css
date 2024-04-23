@@ -65,3 +65,19 @@ div span{
     ! z축은 깊이를 표현함에 있어, 단면 디스플레이의 특성상
     ! 큰 차이를 보이지 못한다. (-는 운동방향 이 반대로)
 */
+.scaler span{
+    background-color: #ff00dc; animation-name: scale3D;
+}
+@keyframes scale3D {
+    from{
+        transform: scale3d(0,0,0);
+    }
+    to{
+        transform: scale3d(1,1,1);
+    }
+}
+/* 
+    ? scale3d(x축scale, y축scale, z축scale)
+    * scale3d는 벡터방식으로 크기 확장을 한다.
+    ! 1이 100%의 scale, 0.1 = 10%의 scale
+*/
