@@ -1,4 +1,41 @@
 
+@media screen and (max-width: 767px) and (orientation: landscape){
+    body{
+        font-family: "Merriweather"; background-color: lightskyblue; text-align: right;
+    }
+    h1{
+        font-size: 28px; line-height: 34px; margin-bottom: 25px; color: seagreen;
+    }
+    article h2{
+        font-size: 24px; line-height: 30px; margin-bottom: 15px; color: green;
+    }
+    article p{
+        font-size: 14px; line-height: 20px; color: slateblue;
+    }
+    article p:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+}
+/* todo mobile Device - 사용자 해상도가 767이하 실행 되는 구간 - 가로보기 */
+
+@media screen and (max-width: 767px) and (orientation: portrait){
+    body{
+        font-family: "Roboto"; background-color: lightgray; text-align: center;
+    }
+    h1{
+        font-size: 18px; line-height: 24px; margin-bottom: 20px; color: darkslategray;
+    }
+    article h2{
+        font-size: 16px; line-height: 22px; margin-bottom: 15px; color: darkgray;
+    }
+    article p{
+        font-size: 14px; line-height: 20px; color: black;
+    }
+    article p:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+}
+/* ? mobile Device - 사용자 해상도가 767이하 실행 되는 구간 - 세로보기 */
 
 @media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
     body{
