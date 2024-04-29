@@ -1,0 +1,20 @@
+
+
+@media screen and (min-width: 1280px){
+    body{
+        font-family: "Merriweather"; background-color: lightblue;
+    }
+    h1{
+        font-size: 32px; line-height: 48px; margin-bottom: 30px; color: mediumslateblue;
+    }
+    article h2{
+        font-size: 28px; line-height: 34px; margin-bottom: 20px; color: mediumvioletred;
+    }
+    article p{
+        font-size: 14px; line-height: 20px; color: midnightblue;
+    }
+    article p:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+}
+/* ? Desktop Device - 사용자 해상도가 1280이상 일 때 실행 되는 구간 */
