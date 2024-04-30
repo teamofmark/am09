@@ -2,7 +2,31 @@
 
 @media screen and (min-width: 1280px) {
     header{
-        padding: 15px 0 70px; background: url('../images/bg_01.png')
+        padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
+    }
+    header div{
+        max-width: 940px; margin: 0 auto; position: relative;
+    }
+    header div h1{
+        max-width: 128px;
+    }
+    header div h1 *{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav{
+        position: absolute; right: 0; top: 0; padding-left: 130px; width: 100%; box-sizing: border-box; text-align: right;
+    }
+    header div nav ul li{
+        display: inline-block;
+    }
+    header div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header div nav ul li a{
+        
     }
 }
 /* ? dekstop */
