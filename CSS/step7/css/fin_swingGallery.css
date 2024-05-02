@@ -37,5 +37,5 @@ section .moveMent .pic .cell{
     transform: rotateZ(10deg);
 }
 section .moveMent .pic .cell:hover{
-    opacity: 1; transform: scale(1.3) translateZ(0px);
+    opacity: 1; transform: scale(1.3);
 }
