@@ -136,7 +136,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;
         position: relative;
     }
     section.worksArea h2 a{
@@ -170,7 +170,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px; font-size: 16px; line-height: 26px;
+        max-width: /*770px*/728px; margin: 0 auto 45px; color: white; padding-top: 70px; font-size: 16px; line-height: 26px;
         font-weight: 400; background: url('../images/quote.png') no-repeat center top;
     }
     section.talkArea p > *{
@@ -183,7 +183,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -192,7 +192,7 @@
         font-size: 22px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        /*max-width: 310px;*/ width: /*33%*/40%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
