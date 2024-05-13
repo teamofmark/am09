@@ -80,17 +80,17 @@ input[type='checkbox'].mui{
         margin-bottom: 3px;
     }
     header div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header div nav ul li:not(:first-child){
+    /* header div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header div nav ul li a{
         color: white; font-weight: 900; font-size: 13px; display: block;
         line-height: 50px;
     }
-    header div nav ul li a.active,
-    header div nav ul li a:hover{
+    header div nav ul li a.active
+    /*,header div nav ul li a:hover*/{
         color: #00e0d0;
     }
     /* ?header GNB Fin */
