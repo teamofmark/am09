@@ -195,6 +195,9 @@ input[type='checkbox'].mui{
     /* footer > div div:nth-of-type(3) ul{
         float: left; width: 45%; margin-left: 8%;
     } */
+    footer > div div:nth-of-type(3) ul{
+        text-align: center;
+    }
     /* todo. sns Icon's 배치해오기 */
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
