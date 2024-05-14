@@ -1,4 +1,16 @@
-
+body{
+    background-color: #e4e5e7;
+}
+.mont{
+    font-family: 'Montserrat';
+}
+.crim{
+    font-family: 'Crimson Pro';
+}
+/* input:not([type='checkbox'],[type='radio']){
+    font-family: inherit;
+} */
+/* ? A/U */
 
 @media screen and (min-width: 1280px) {
     
