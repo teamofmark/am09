@@ -145,28 +145,29 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;
-        position: relative;
+        font-size: /*22px*/ 18px; font-weight: 700; color: #413d4b; position: relative;
+        /* max-width: 728px; margin: 0 auto 70px; */ 
     }
     section.worksArea h2 a{
-        position: absolute; right: 0; top: 8px; font-size: 14px; font-weight: 300; color: inherit;
+        position: absolute; right: /*0*/3%; /*top: 8px;*/ font-size: /*14px*/12px; font-weight: 300; color: inherit;
+        line-height: 18px;
         /* * width: 20%; display: inline-block; margin-left: auto; */
         /* * float: right; display: block; line-height: 22px; */
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
     }
     section.worksArea ul li{
         width: 16.66%; float: left; line-height: 0;
-    }
+    } */
     section.worksArea ul li a{
         display: block;
     }
     section.worksArea ul li a img{
-        width: 100%;
+        width: 100%; display: block;
     }
     section.worksArea a.btn_more{
         max-width: 140px; margin: 0 auto;
@@ -179,7 +180,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: /*770px*/728px; margin: 0 auto 45px; color: white; padding-top: 70px; font-size: 16px; line-height: 26px;
+        max-width: /*728px*/ 600px; margin: 0 auto 45px; color: white; padding-top: 70px; font-size: 16px; line-height: 26px;
         font-weight: 400; background: url('../images/quote.png') no-repeat center top;
     }
     section.talkArea p > *{
@@ -192,7 +193,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: /*940px*/728px; margin: 0 auto;
+        max-width: /*728px*/600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -201,7 +202,7 @@
         font-size: 22px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        /*max-width: 310px;*/ width: /*33%*/40%;
+        width: /*40%*/80%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
@@ -231,22 +232,22 @@
     }
     /* ? talkArea Fin */
     
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left;
-    }
+    } */
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
     }
     section.contactArea form fieldset{
-        width: 50%;
+        /* width: 50%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset > *:not([type='submit'],legend){
         border: 1px solid rgba(0,0,0,0.1); padding: 14px 20px; font-size: 14px; font-weight: 300; display: block;
@@ -259,14 +260,14 @@
         height: 200px; resize: none;
     }
     section.contactArea form fieldset .btn_more{
-        background-color: transparent; min-width: 120px;
+        background-color: transparent; min-width: 120px; margin-left: auto;
     }
     /* ? leftAside Fin */
 
     /* todo rightAside */
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 10%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; clear: both;
     }
