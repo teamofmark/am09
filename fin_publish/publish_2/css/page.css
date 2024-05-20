@@ -105,5 +105,29 @@
     }
     /* ? slideArea Fin */
 
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 5px; line-height: 56px; padding: 0 1.7%;
+        box-sizing: border-box; margin-bottom: 30px;
+    }
+    .contentArea > form fieldset label{
+        display: inline-block; vertical-align: middle; font-weight: 600;
+    }
+    .contentArea > form fieldset label:not([for='freeShipCheck']){
+        font-size: 11px; color: #a1a7bd; text-transform: uppercase;
+    }
+    .contentArea > form fieldset span.sbSelect{
+        margin-left: 3.4%;
+    }
+    .contentArea > form fieldset label[for='sb_keywords'],
+    .contentArea > form fieldset label[for='ship_Select']{
+        margin-left: 1.28%; padding-left: 2.56%; border-left: 2px solid rgba(0,0,0,0.05);
+    }
+    .contentArea > form fieldset input:not([type='checkbox']){
+        
+    }
+
 }
 /* ? desktop */
