@@ -192,6 +192,81 @@
     }
     /* ? sideMenu Fin */
     
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        margin-bottom: 10px; padding: 60px 0 20px;
+
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 33px;
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px; box-sizing: border-box;
+        border-bottom: 1px solid #f0f2f7; position: relative; width: 100%; top: 33px;
+    }
+    /* 
+        ! legend 배치
+        * 1. legend 실제 높이 구하기 (fontsize,padding,border...)
+        * 2. 1번높이의 절반(13.5 -> 13)이 곧 fieldset 상단 선 기준 top 0의 수치.
+        * 3. 그 상태에서 psd의 fieldset 상단선과 legend사이 간격인 20을 가산하면 33px. 이게 top position 값.
+        * 4. relative 좌표가 발생한 상태라 부모 높이의 변화가 없음으로 부모의 padding-top은 저 둘의 합산을 적용
+        ? 마지막 fieldset 같은 경우 legend 의 영점인 top 33px을 기준으로 내리면 "T" 라인을 만들수 있음.
+        ! 만약 가감이 필요할 경우 5배수 관계로 이동하되 잔여부분은 짝수화 하여 정리하면 끝. 
+    */
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
+        padding-left: 20.37%; box-sizing: border-box; line-height: 18px;
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset span{
+        width: 18%; display: inline-block; text-align: center; font-size: 11px; color: #b8bfd3;
+        font-weight: 400; line-height: 20px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 80%;
+    }
+    .contentArea aside fieldset label[for*='condition']{
+        width: 100%;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width:49%; margin-bottom: 0; line-height: 50px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7;
+    }
+    /* todo. radio image / checkbox image 적용해보기 */
+    /* 
+        ? 1. 배경 위치 계산(마지막 fieldset은 다름)
+        ? 2. 기본 배경 설정 (off_~~.png)
+        ? 3. 작동 배경 설정 (input이 check됐을때 뒤에있는 label의 배경은 -> on_~~~.png)
+
+    */
+    .contentArea aside fieldset input[type='radio']+label:not([for*='dlvr']){
+        background: url('../images/off_radio.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='radio']+label[for*='dlvr']{
+        background: url('../images/off_radio.png') no-repeat 15.15% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked+label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox']+label{
+        background: url('../images/off_check.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked+label{
+        background-image: url('../images/on_check.png');
+    }
+    /* ? aside Fin */
+
     .contentArea section{
         width: 74.35%; margin-left: 2.58%; float: left;
     }
