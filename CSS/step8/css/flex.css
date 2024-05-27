@@ -50,7 +50,8 @@
 .flexContainer.justifyContent{
     justify-content: space-evenly; padding: 0;
 }
-.flexContainer.justifyContent .flexItem{
+.flexContainer.justifyContent .flexItem,
+.flexContainer.alignContent .flexItem{
     margin: 0;
     /* 
         justify-content : 
@@ -62,5 +63,21 @@
         space-between (flexItem 중 처음은 좌측기준, 마지막은 우측기준, 나머지는 동일간격으로 정렬)
         space-around (모든 flexItem은 처음,마지막 사이를  동일간격으로 정렬 외 나머지 배치)
         space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.)
+    */
+}
+.flexContainer.alignContent{
+     height: 400px; flex-wrap: wrap; justify-content: space-evenly; align-content: space-evenly;
+     padding: 0;
+     /* 
+        ! align(yAxis) :
+        * flex container의 cross Axis를 기준으로 flexItem을 수직 정렬한다.
+
+        * stretch : (cross start - cross end 까지 꽉찬 (높이) - default.
+        * flex-start (cross Start 기준으로 정렬.)
+        * flex-end (cross End 기준으로 정렬.)
+        * center (flexContainer의 주축 중앙에 정렬.)
+        * space-between (첫 행은 flexContainer cross start 기준, 마지막 행은 flexContainer cross end 기준. 나머지 균등.)
+        * space-around (모든 flexItem은 처음, 마지막 사이를 동일 간격으로 정려 외 나머지 배치)
+        * space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목간의 공간에 모두 균등 배분)
     */
 }
