@@ -153,3 +153,62 @@
     * flex-start - 내부 공간 기준으로 자신의 위치를 좌측으로 맞추기
     * flex-end - 내부 공간 기준으로 자신의 위치를 우측으로 맞추기
 */
+
+.flexContainer.orderItem .flexItem.order1{
+    order: 2; background-color: darkkhaki; color: black;
+}
+.flexContainer.orderItem .flexItem.order2{
+    order: 1; background-color: darkorange; color: black;
+}
+.flexContainer.orderItem .flexItem.order3{
+    order: 2;
+}
+/* 
+    ? order:
+    *  flexContainer flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다.
+*/
+
+.flexContainer.flexShortHand{
+    width: 50%; margin: 0; padding: 0;
+    /* ? shrink test */
+    /* max-width: 300px; */
+}
+.flexContainer.flexShortHand .flexItem{
+    margin: 0; padding: 0; word-break: break-all;
+}
+.flexContainer.flexShortHand .flexItem:first-child{
+    /* * grow */
+    /* flex-grow: 2; flex-basis: 0; */
+    /* * shrink */
+    flex-shrink: 2; flex-basis: 150px;
+}
+.flexContainer.flexShortHand .flexItem:first-child~*{
+    /* * grow */
+    /* flex-grow: 1; flex-basis: 0; */
+    /* * shrink */
+    flex-shrink: 1; flex-basis: 150px;
+}
+/* 
+    ? flex : [grow] [shrink] [basis];
+    ? flex-grow(팽창(확장)비) :
+    * item증가비율 설정. default: 0. -> 빈 공간을 알아서 확장하여 채우지 않는다.
+    ! 음수 비허용. 양수 입력시 '총 증가 내부 팽창지수(grow합산)의 너비중 입력된 비율만큼의 너비 설정.
+    ! 단, max-width가 설정되면 해당 수치를 넘지 않는다.
+    * ex> item x 3. -> grow 1. 각 1/3(33.33%) 너비 설정.
+
+    ?ex.1 > 만약 전체 너비 (300px)의 item 3개에 개별적으로 grow가 부여되었다면?
+    todo. flexItem:first-child{flex-grow:2;} -> 0(basis) + (300/4)*2 = 150.
+    todo. flexItem:first-child~*{flex-grow:1;} -> 0(basis) + (300/4)*1 = 75.
+    ? why 3(x) 4? = first 2 +  ~* 1 + 1.
+
+
+    ? flex-shrink(수축비):
+    ! 기준되는 부모(절대)가 줄어들 때 item의 수축비를 정한다. default: 1.
+    ! 음수 비허용. 양수 입력 시 '총 수축 내부수축지수(shrink합산)의 너비 중 입력된 비율 만큼 수축될 수 있다.
+    ! 단, min-width가 설정되면 해당 수치를 넘지 않는다. (basis -> max로 변환 가동)
+    * example. item이 3개이고 item들에게 shrink가 1이 부여된다면 각각 1/3의 수축비를 갖게된다.
+    ?ex. 2 > 만약 수축중인 부모 너비가 300px인 item 4개(각너비 150px)에  shrink를 부여하면?
+    todo. 초과되는 수치인 150 에 대한. shrink총합인 4를 나눈 37.5가 곧 shrink: 1이된다.
+    todo. flexItem:first-child{flex-shrink: 2;} -> 150(대상너비) - (150/4)*2 = 75;
+    todo. flexItem:first-child~*{flex-shrink: 1;} -> 150(대상너비) - (150/4)*1 = 112.5;
+*/
