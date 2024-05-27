@@ -121,3 +121,20 @@
 .flexContainer.justifyItems:hover{
     justify-items: center;
 }
+
+.flexContainer.alignSelf{
+    background-color: salmon;
+}
+.flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: center;
+    /* 
+        ?align-self
+        * stretch - 요소들중 가장 높은 것을 기준으로 자신의 높이를 맞추기
+        * flex-start - 요소들중 가장 높은 것의 윗선을 기준으로 자신을 맞추기
+        * center - 요소들중 가장 높은 것의 중앙을 기준으로 자신을 맞추기
+        * flex-end - 요소들중 가장 높은 것의 밑선을 기준으로 자신을 맞추기
+    */
+}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 60px;
+}
