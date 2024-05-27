@@ -212,3 +212,51 @@
     todo. flexItem:first-child{flex-shrink: 2;} -> 150(대상너비) - (150/4)*2 = 75;
     todo. flexItem:first-child~*{flex-shrink: 1;} -> 150(대상너비) - (150/4)*1 = 112.5;
 */
+/*
+
+    basis:
+    !item의 너비를 정한다. 기본값은 auto 이며 다양한 단위 percentages(%) || ems || rems || pixels 를 사용 할 수있다.
+    auto : 안의 컨텐츠의 길이만큼 너비가 늘어난다.
+    
+
+    !주의
+    !1. shorthand로 묶어 사용할 시엔 따로 auto라고 선언하지 않으면 0이 된다.
+    !2. width와 중복될 경우 basis가 우선시 되기 떄문에 중복하여 사용할 필요없다.
+    !3. content 값은 사용 할 수 없다. 만약 어쩔수 없는 상황이라면 auto로 풀고 width를 사용하지 말아야 한다.
+
+    ?ex.3 > 만약 전체 너비(300px) 를 item 3개의 너비(width:150px)합(150*3 = 450px) 이 넘어가는 상황이 된다면 ?
+    
+    item기본 크기 + ( free space / 수축지수 총 합 ) * flex-shrink 값 = flex item 크기.
+    150+(-150/3)*1=100
+    이런식으로 자동 수축된다.
+
+    * 생략되는 형식
+    flex: none;
+    flex-grow:0; flex-shrink:0; flex-basis:auto; 상태가 된다.
+
+    flex: <flex-grow>
+    flex-shrink:1; flex-basis:0; 상태가 된다.
+
+    flex: <flex-basis>
+    flex-grow:1; flex-shrink:1; 상태가 된다.
+
+    flex: <flex-grow> <flex-shrink>
+    flex-basis:0; 상태가 된다.
+
+    flex: <flex-grow> <flex-basis>
+    flex-shrink:1; 상태가 된다.
+
+    flex: <flex-grow> <flex-shrink> <flex-basis>
+    생략한 속성 없음.
+
+    todo 자주 사용되는 형식
+    1. flex: 0 1 auto; : 확장비는 존재 하지 않고 (남은공간을 채우지 않는다.), 수축만 일어나며 컨텐츠의 너비만큼 너비가 설정된다.
+    2. flex: none; : 확장비, 수축비 모두 존재하지 않는다.(남은공간을 채우지도 수축도 일어나지 않는다.)  컨텐츠의 너비만큼 너비가 설정된다.
+    3. flex: auto; : 1 1 auto 와 같다. 확장비, 수축비 모두 컨텐츠 갯수만큼 비율로 분배되어 갖게 되고, 컨텐츠의 너비만큼 너비가 설정된다.
+    !만약 그 너비가 컨텐츠 보다 작을땐 item이 container의 너비를 넘는다. (스크롤바 발생) word-break : break-all 로 제어.
+
+
+    ! 모든 항목에서 알아둬야할 사항.
+    ! 1. 플렉스 아이템의 크기가 각자 다른 경우 남은공간은 균등하게 분배되지 않고 플렉스 아이템 크기에 정비례하여 분배 된다.
+    ! 2. container 와 item에 적용된 margin,padding의 영향으로 오차가 발생 될 수 있다.
+*/
