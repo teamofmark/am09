@@ -138,3 +138,18 @@
 .flexContainer.alignSelf .flexItem:nth-of-type(2){
     line-height: 60px;
 }
+.flexContainer.justifySelf{
+    width: 220px; display: grid; background-color: lightgreen;
+}
+.flexContainer.justifySelf .flexItem:first-of-type{
+    justify-self: stretch;
+}
+.flexContainer.justifySelf:hover .flexItem:first-of-type{
+    justify-self: center;
+}
+/* 
+    ?justify-self
+    * stretch - 내부 공간 기준으로 자신의 너비 맞추기
+    * flex-start - 내부 공간 기준으로 자신의 위치를 좌측으로 맞추기
+    * flex-end - 내부 공간 기준으로 자신의 위치를 우측으로 맞추기
+*/
