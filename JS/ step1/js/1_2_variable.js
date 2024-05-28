@@ -58,3 +58,12 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// * var(선언) 이름; -> 변수생성
+
+var userName;
+userName = "mark";
+userName = "Jang";
+
+// * 다수동시선언 및 초기화
+var radius,pi; //? 선언 = undefined
+radius = 10, pi = 3.14159265; //? 초기화.
