@@ -67,3 +67,8 @@ userName = "Jang";
 // * 다수동시선언 및 초기화
 var radius,pi; //? 선언 = undefined
 radius = 10, pi = 3.14159265; //? 초기화.
+
+// * 변수의 특성
+var cup = 'Coffee'; //? 컵에 커피를 담았다.
+var cup = 'Green Tea'; //? 새 컵에 녹차를 담았다.
+var cup = 'Water'; //? 또다른 새컵에 물을 담았다.
