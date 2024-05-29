@@ -70,5 +70,17 @@ radius = 10, pi = 3.14159265; //? 초기화.
 
 // * 변수의 특성
 var cup = 'Coffee'; //? 컵에 커피를 담았다.
-var cup = 'Green Tea'; //? 새 컵에 녹차를 담았다.
-var cup = 'Water'; //? 또다른 새컵에 물을 담았다.
+cup = 'Green Tea'; //? 컵에 커피를 버리고 녹차를 담았다.
+cup = 'Water'; //? 컵에 녹차를 버리고 물을 담았다.
+
+console.log('현재 컵에 담긴 것은 ' + cup + '입니다.');
+
+// * 연산자 사용시
+var numbValue = 10; //? numbValue 변수에 10을 담았다. - 자료형 : 숫자. -> ''를 감싸면 문자로 변경됨(일영)
+numbValue = numbValue + 20;// ? numbValue에 20을 더하자.
+
+// * 자신의 나이를 변수에 담고 출력하되 20년 뒤 나이를 연산해보자.
+var cliAge = 44;
+console.log("나의 나이는 현재" + cliAge + "세 이고,");
+cliAge = cliAge + 20;
+console.log('20년 뒤에는' + cliAge + '세 이다.');
