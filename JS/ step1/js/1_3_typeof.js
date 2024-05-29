@@ -50,3 +50,13 @@ function check2(){
     // ? log함수를 이용해서 출력. ex> 로그인 된 상태 인가? = false.(boolean).
     console.log("로그인 된 상태 인가? " + loginStatus + "(" + typeof(loginStatus) + ")" );
 }
+// * case.5 test변수를 선언하고 초기화 하지 않은 상태의 자료형 check.
+function check3(){
+    var test;
+    console.log("초기화 하지 않은 변수의 자료유형은" + typeof(test) + "입니다.");
+}
+// * case.6 obj변수에 null로 초기화를 해서 자료형 check.
+function check4(){
+    var obj = null;
+    console.log("obj에 담긴 값의 자료유형은" + typeof(obj) + "입니다.");
+}
