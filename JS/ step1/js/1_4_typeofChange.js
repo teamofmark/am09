@@ -54,3 +54,24 @@ function stringNumb(){
     var result = test1.toString();
     console.log('변환 후 : ' + typeof(result) + ' = ' + result);
 }
+// *case.5-1 background-color / Random
+function bgColorRandom(){
+    setInterval(function(){
+        var bgColor = Math.random()*0xfff; //? 0000 0000 0000 0000 0000 1111 1111 1111;
+        console.log(bgColor);
+        bgColor = parseInt(bgColor);
+        console.log(bgColor);
+        bgColor = bgColor.toString(16);
+        console.log(bgColor);
+        $("body").css("background-color", "#" + bgColor);
+    },1000);
+}
+// *case. 6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정,실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환.
+    * 2. parseFloat(value); - 실수형변환.
+*/
