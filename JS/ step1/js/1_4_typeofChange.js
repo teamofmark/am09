@@ -14,6 +14,25 @@
 // *case.1 자신의 나이를 입력받고 20을 더한 값 출력.
 function agePlus(){
     var age = window.prompt('나이입력');
+    console.log(typeof(age) + ' = ' + age);
     var result = parseInt(age) + 20;
+    console.log(typeof(result) + ' = ' + result);
     console.log(result);
+}
+// *case.2 강제 숫자 - 문자형 변환
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 10;
+    console.log("result의 자료유형은" + typeof(result) + "값은" + result);
+}
+// *case.3 강제 불린 - 숫자형 변환
+function forcedNumber(){
+    var result = 2 + true;
+    console.log("result의 자료유형은" + typeof(result) + "값은" + result);
+}
+// *case.4 강제 불린 - 문자형 변환
+function forcedString2(){
+    var a = '2';
+    var result = a + true;
+    console.log("result의 자료유형은" + typeof(result) + "값은" + result);
 }
