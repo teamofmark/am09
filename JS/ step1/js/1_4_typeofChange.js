@@ -36,3 +36,21 @@ function forcedString2(){
     var result = a + true;
     console.log("result의 자료유형은" + typeof(result) + "값은" + result);
 }
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환
+
+    ? .toString()
+    * Number.toString(); - 문자형(진수)변환
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
+*/
+function stringNumb(){
+    var test1 = 15;
+    console.log('변환 전 : ' + typeof(test1) + ' = ' + test1);
+     //? var result = String(test1); 전역함수 String.
+    var result = test1.toString();
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
