@@ -104,13 +104,13 @@ function todo3(){
 // todo. 2-1 parse형변환
 function todo4(){
     var test = "100.51";
-    var result = test + 150 + "20";
+    var result = parseFloat(test) + 150 + parseInt("20");
     console.log(typeof(result) + " = " + result); //todo. typeof로 검수시 정상 연산 및 출력 되게하기
 }
 
 // todo. 2-2 Number형변환
 function todo5(){
     var test = "100.51";
-    var result = test + 150 + "20";
+    var result = Number(test) + 150 + Number("20");
     console.log(typeof(result) + " = " + result); //todo. typeof로 검수시 정상 연산 및 출력 되게하기
 }
