@@ -62,3 +62,24 @@ function mealTime(){
     }
     // ? 시간정보가 '??먹을 시간!' 이라는 메시지를 출력할 수 있게 만들기.
 }
+
+// *case. 3 양,음수 판별 함수
+function numbJudgment(){
+    var numb = window.prompt('숫자를입력하세요','양/음수 상관없음');
+    console.log(typeof(numb) + ' = ' + numb);
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else{
+        alert('0이거나 입력값이 올바르지 않습니다.');
+    }
+}
+// todo. prompt를 통해 입력받은 숫자가 홀수인지 짝수인지 판별하는 함수
+function oddOrEven(){
+    // ? 1. prompt를 통해 입력받기
+
+    // ? 2. 조건문을 통해 짝수 조건 잡기
+        // ? 2-1. 외 나머지 조건을 통해 홀수 조건 잡기
+        // ? 2-2. 외 전체 조건을 통해 예외처리하기
+}
