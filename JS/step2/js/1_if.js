@@ -28,3 +28,37 @@ function amORpm(){
         alert('오후입니다.');
     }
 }
+// *case.2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    // console.log(day);
+    if(day<30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+// ! 말일 쉽게 구하기
+function lastDayEx(){
+    function endOfMonth(date){
+        return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    }
+    dt = new Date();
+    console.log(endOfMonth(dt).toString());
+}
+// todo. 현재 시각이 아침 / 점심 / 저녁 먹을 시간인지 알려주는 함수 만들어보기
+function mealTime(){
+    var date = new Date();
+    var hour = date.getHours();
+    // ? 시간정보 가져와 담기
+    
+    if(hour<11){
+        alert('아침먹을시간');
+    }else if(hour<15){
+        alert('점심먹을시간');
+    }else{
+        alert('저녁먹을시간');
+    }
+    // ? 시간정보가 '??먹을 시간!' 이라는 메시지를 출력할 수 있게 만들기.
+}
