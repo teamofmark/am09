@@ -15,3 +15,16 @@
 	alert('종료');
     
 */
+// *case.1 현재시간이 오후인가 오전인가
+function amORpm(){
+    // * 내가 할 줄 모르는 기능 -> 검색.. -> Refns(JS MDN) -> 영문 (핵심키워드) -> ex> js date call
+    var date = new Date();
+    var hour = date.getHours();
+    // ? 선언
+    if(hour<12){
+        alert('오전입니다.');
+    }
+    if(hour>=12){
+        alert('오후입니다.');
+    }
+}
