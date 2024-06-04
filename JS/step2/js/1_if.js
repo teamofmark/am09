@@ -132,6 +132,15 @@ function userIDCheck(){
 }
 // *case. 6  사용자 id "Mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
 function userInfoCheck(){
+    // const validateEmail = (email) =>{
+    //     return email.match(
+    //         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    //     );
+    // }
+    // const validate = () =>{
+    //     // ? 판별 / 조건 / 비교
+    // }
+
     var userID = prompt("사용자의 아이디");
     var userPW = prompt("사용자의 패스워드");
     if(userID == "Mark" && userPW == "1234"){
@@ -140,4 +149,25 @@ function userInfoCheck(){
         alert("ID 혹은 Password가 틀렸습니다.");
     }
     // (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
+//todo.5 사용자 id "mark"와 password"1234"의 정보가 틀릴 경우 틀린 정보에 대한 오류 메시지 출력.
+function userInfoCheck2(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 패스워드");
+    if(userID=="Mark"&&userPW=="1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }
+    // ? console.log("Mark님으로 확인되었습니다.");
+    else if(userID!="Mark"&&userPW!="1234"){
+        console.log("모든 정보가 맞지않습니다.");
+    }
+    // ? console.log("모든 정보가 맞지않습니다.");
+    else if(userID!="Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }
+    // ?console.log("ID가 존재하지 않습니다.");
+    else if(userPW!="1234"){
+        console.log("password가 틀렸습니다.");
+    }
+    // ?console.log("password가 틀렸습니다.");
 }
