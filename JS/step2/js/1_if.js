@@ -89,5 +89,55 @@ function oddOrEven(){
         alert('올바른 값을 입력하세요.');
         // ? 2-2. 외 전체 조건을 통해 예외처리하기(올바른 값을 입력하세요.)
     }
+}
 
+// *case. 4 다음 세 과목의 점수를 입력받고 평균을 구한 후 수,우,미,양,가를 출력하라.
+function avgScore(){
+    var koreanScore = prompt("점수를 입력하시오.");
+    var englishScore = prompt("점수를 입력하시오.");
+    var mathScore = prompt("점수를 입력하시오.");
+    var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore))/3;
+
+    if(avg > 100 || avg < 0){
+        // todo 1. avg가 100이 넘어가거나 0보다 모자를 때는 "점수 똑바로 입력해라." 경고창.
+        alert("점수 똑바로 입력하라.");
+    }else if(avg >= 90){
+        alert("평균" + avg + "점 - 수.");
+    }else if(avg >= 80){
+        alert("평균" + avg + "점 - 우.");
+    }else if(avg >= 70){
+        alert("평균" + avg + "점 - 미.");
+    }else if(avg >= 60){
+        alert("평균" + avg + "점 - 양.");
+    }else{
+        alert("평균" + avg + "점 - 가.");
+    }
+    // todo
+    /*
+        todo 2. 외 90이상일경우 "평균 xx점 - 수" 경고창.
+        todo 3. 외 80이상일경우 "평균 xx점 - 우" 경고창.
+        todo 4. 외 70이상일경우 "평균 xx점 - 미"
+        todo 5. 외 60이상일경우 "평균 xx점 - 양"
+        todo 6. 외 나머지일경우 "평균 xx점 - 가"
+    */
+}
+// *case. 5 사용자 id를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = prompt("사용자의 아이디");
+    if(userID=="Mark"){
+        alert("접속을 승인합니다.");
+    }else if(userID!="Mark"){
+        alert("잘못된 ID입니다.");
+    }
+}
+// *case. 6  사용자 id "Mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 패스워드");
+    if(userID == "Mark" && userPW == "1234"){
+        alert("Mark님으로 확인 되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+    // (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
 }
