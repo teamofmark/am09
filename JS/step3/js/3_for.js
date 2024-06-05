@@ -17,3 +17,18 @@ for (var index = 0; index < 10; index++) {
     
 }
 */
+// * case.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+      document.write(i+"."+userName,"<br>");
+    }
+}
+// todo. 1,000번 출력중 홀수 번째만 출력되게 해보기.
+function namePrint500(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+      document.write(i+"."+userName,"<br>");
+    }
+}
+// todo. 1 - 10 까지 출력되는 반복문을 짜는데 최대한 많은 케이스를 짜오기.
