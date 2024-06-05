@@ -49,5 +49,23 @@ function calculator(){
     lastNumb = Number(lastNumb);
 
     // todo. switch 문을 이용해서 각 상황에 맞는 연산을 하게 하고 사칙연산자 이외 값이 입력될 경우 "잘못된 값이 입력되었습니다." 출력
+
+    switch(operator){
+        case "+":
+            alert(firstNumb+lastNumb);
+            break;
+        case "-":
+            alert(firstNumb-lastNumb);
+            break;
+        case "*":
+            alert(firstNumb*lastNumb);
+            break;
+        case "/":
+            alert(firstNumb/lastNumb);
+            break;
+        default:
+            alert("잘못된 값이 입력되었습니다.");
+            break;
+    }
     
 }
