@@ -58,3 +58,19 @@ function answer5(){
       document.write((11-i)+"<br>"); //? 1~10번 까지 출력
   }
 }
+// * case.2 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력.
+function favorFruit(){
+  var array = ['포도','사과','바나나','망고','딸기'];
+  // ? 배열(array) - data들이 저장되는 방.(C/R/U/D) -> ['data'(0),'data1'(1),'data2'(2)]
+  // ! data는 입력 및 저장되는 순서대로 0 부터 증가 되는 것이 기본 이다.
+  console.log(array.length);
+  for(var i = 0; i < array.length; i++){
+    // ? target.length = 대상(target)의 갯수를 구해온다.
+    alert(array[i]);
+  }
+}
+// todo. 지금까지 배운 js단원명을 배열 활용하여 출력.
+function arrayFor(){
+  var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+  
+}
