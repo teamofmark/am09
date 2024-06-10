@@ -108,3 +108,40 @@ function arrayFor2(){
     document.write(swapNumb + '번째 내용 = ' + data[i] + '<br>');
   }
 }
+// *case.3 역반복
+function reverseFavorFruit(){
+  var array = ['딸기','메론','수박','참외'];
+  for(var i = array.length-1; i>=0; i--){
+    document.write(array[i],'<br>');
+  }
+}
+// *case.4 continue문
+function forContinue(){
+  for (var i = 0; i <= 10; i++){
+    continue;
+    document.write(i + '<br>');
+  }
+  document.write('최종 i = ' + i + '<br>');
+}
+// *case.5 continueEX
+function continueEx(){
+  var text= '';
+  for (var i = 0; i<10; i++){
+    if(i==3){
+      continue;
+    }
+    text += i;
+  }
+  console.log(text);
+}
+// todo 1~10까지 의 총합중 홀수는 제외한 짝수끼리의 총합을 구하기
+function runContinue(){
+  var output = 0;
+  for (var i = 1; i <= 10; i++){
+    if(i%2 == 1){
+      continue;
+    }
+    output += i;
+    console.log(output);
+  }
+}
