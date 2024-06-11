@@ -145,3 +145,30 @@ function runContinue(){
     console.log(output);
   }
 }
+// *case.6 break문
+function forBreak(){
+  for(var i = 1; i <= 10; i++){
+    break;
+    document.write(i +'<br>');
+  }
+  document.write('최종 i = ' + i + '<br>');
+}
+function breakEx(){
+  var i = 0;
+  while (i < 10){
+    if(i == 3){
+      break;
+    }
+    i += 1;
+  }
+  console.log(i);
+}
+// todo. 간단한 break활용
+function runBreak(){
+  for(var i = 0; true; i++){
+    alert(i + '번째 반복문');
+    if(confirm('계속할래?')){
+      break;
+    }
+  }
+}
