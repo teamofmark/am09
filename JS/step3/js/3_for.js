@@ -167,7 +167,7 @@ function breakEx(){
 function runBreak(){
   for(var i = 0; true; i++){
     alert(i + '번째 반복문');
-    if(confirm('계속할래?')){
+    if(!confirm('계속할래?')){
       break;
     }
   }
