@@ -16,3 +16,28 @@ function sumParam(numb1,numb2){
     var result = numb1 + numb2;
     alert("두 수의 합은 = " + result);
 } 
+// *case. 2 매개변수의 자리가 없어도 있는 것처럼 보이는 arguments(가변인자함수)
+
+function sumAll(){
+    // console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for(var i = 0; i < arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
+}
+
+function sumAllEX(){
+    let willReturn = 0;
+    for(var i in arguments){ //? IE10이상 사용 가능
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// *case.3 "자신의 이름"의 나이는 "나이"세 입니다. 를 arguments를 이용해 만들어보기
+// ! data의 입력순서를 arguments내에서 조작 할 수 없다.
+function showInfo(){
+    console.log("index[0] = " + arguments[0]);
+    console.log("index[1] = " + arguments[1]);
+    alert(arguments[0] + "의 나이는" + arguments[1] + "세 입니다.");
+}
