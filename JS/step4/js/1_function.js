@@ -57,3 +57,63 @@ function showInfo(){
         alert('기존매개변수', '추가매개변수');
         prompt('기존매개변수');
 */
+// * case.4 두 수를 매개변수로 받고, 두 값을 더한 결과값을 리턴하는 함수.
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    // alert(result);
+    return result;
+}
+// alert(sumReturn1(10,20));
+// *case. 5 무한루프를 돌면서 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수
+// ! 단, 입력값이 0이면 즉시 실행 중단.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(prompt('숫자만 입력해라.'));
+        if(value == 0){
+            document.write("종료");
+            return;
+            /*
+                ? break / return : break는 속한 반복루프를 종료 시키는 반면 return은 속한 함수 전체를 종료
+            */
+        }
+        sum += value;
+        document.write(count + '. ' + sum + '<br>');
+        count++;
+    }
+    document.write('총' + count + '번 실행함.');
+}
+
+// todo. x단 출력을 함수로 만들기
+function printGugudan(numb){
+    for (var i = 2; i <= numb; i++){
+        document.write(i+'단 출력.',"<br>");
+        for(var m = 1; m <= numb; m++){
+            document.write(i + 'x' + m + '=' + (i*m),"<br>");
+        }
+        document.write("<br>");
+    }
+}
+// todo. x단 출력을 함수로 만들기 - 과제
+function printGugudan2(numb){
+    // ! 위 풀이된 예제를 return 으로 작동되게 변경하기. => 내부에 출력부(write,log,alert..) 금지.
+}
+// 실행구문 - document.write(printGugudan(15));
+
+// * case.6 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 계산기 만들기.
+
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
