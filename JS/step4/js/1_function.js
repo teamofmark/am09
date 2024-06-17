@@ -211,3 +211,14 @@ function hi2(){
 function execute(func){
     func(); //? 함수 실행식 = 입력되는 매개변수인 func는 반드시 함수여야 함.
 }
+// *case. 9 button click -> 매개변수값으로 넘긴 함수 실행.
+$(document).ready(function(){
+    $("#runEx9").click(hi2); //? querySelector();
+});
+
+// *case. 10 1초마다 매개변수 값으로 넘긴 익명 함수 호출.
+function loopStart(){
+    setInterval(function(){
+        document.write('HI?,HELLO!',"<br>");
+    },1000);
+}
