@@ -194,3 +194,20 @@ function mul(numb1,numb2){
 function div(numb1,numb2){
     return numb1 / numb2;
 }
+
+// *case. 7 함수를 변수에 담기.
+function hello(name){
+    console.log(name +'환영합니다.');
+}
+var func = hello; //? func 변수는 곧 hello 함수.
+
+// *case. 8 매개'변수'에 함수를 사용하기.
+function hi1(){
+    console.log("Hello");
+}
+function hi2(){
+    console.log('안녕하세요.');
+}
+function execute(func){
+    func(); //? 함수 실행식 = 입력되는 매개변수인 func는 반드시 함수여야 함.
+}
