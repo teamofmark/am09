@@ -98,8 +98,17 @@ function printGugudan(numb){
 // todo. x단 출력을 함수로 만들기 - 과제
 function printGugudan2(numb){
     // ! 위 풀이된 예제를 return 으로 작동되게 변경하기. => 내부에 출력부(write,log,alert..) 금지.
+    var data = '';
+    for (var i = 2; i <= numb; i++){
+        data += i + '단 출력' + '<br>';
+        for(var m = 1; m <= numb; m++){
+            data += i + '*' + m + '=' + (i*m)+'<br>';
+        }
+        data += '<br>';
+    }
+    return data;
 }
-// 실행구문 - document.write(printGugudan(15));
+// 실행구문 - document.write(printGugudan2(15));
 
 // * case.6 다음실행구문으로 전달받은 매개변수로 계산하여 결과를 출력하는 계산기 만들기.
 
