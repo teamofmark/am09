@@ -4,6 +4,12 @@ $(document).ready(function(){
 
     // *case. 2
     $("#btnCheck").click(sayHello);
+
+    // *case. 3
+    $("#btnAddBorder").click(addBorder);
+
+    // todo
+    $("#btnTextChange").click(textChange);
 });
 function colorChange(){
     var $divs = $("div");
@@ -12,4 +18,16 @@ function colorChange(){
 
 function sayHello(){
     alert('Hello');
+}
+
+function addBorder(){
+    $("#panel").css("border","5px solid black");
+}
+function textChange(){
+    $("#panel2").css({
+        "font-size" : "25px", //! or fontSize
+        "color" : "green",
+        "font-weight" : "bold",
+        "line-height" : "31px"
+    });
 }
