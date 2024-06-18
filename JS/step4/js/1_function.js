@@ -222,3 +222,20 @@ function loopStart(){
         document.write('HI?,HELLO!',"<br>");
     },1000);
 }
+// *case. 11 함수를 매개변수로 전달받아 반복호출하기
+function callFunctionTenTimes(otherFunction){
+    for (var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('function Loop','<br>');
+}
+// *case. 12 return value로 함수를 사용하기
+function createHello(){
+    function hello(user){
+        document.write(user + 'Welcome!');
+    }
+    return hello;
+}
+var result = createHello();
