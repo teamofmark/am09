@@ -55,7 +55,7 @@ function circleEvent(){
 }
 function circleMovCommand(xpos,ypos){
     // todo. 이전 통합 구조와 반대의 조건식으로 구동하게 만들기
-    if(xpos ypos...){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos < 0){ //? x,y 값이 0보다 작거나 380보다 클때
         alert("잘못됐는데?");
     }else{
         $circle.css({
