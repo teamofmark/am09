@@ -5,6 +5,9 @@ $(document).ready(function(){
     // *case.2 x,yAxis 움직임
     // $("#btnDetailMove").click(detailMoveCircle);
     detailMoveCircleExt();
+
+    // *case.3 keyBoard로 움직임
+    keyControl();
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -63,4 +66,16 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log(e.keyCode);
+        // ? w () a () s () d ()
+    });
 }
