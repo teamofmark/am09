@@ -76,6 +76,36 @@ function keyControl(){
 
     $(document).keydown(function(e){
         console.log(e.keyCode);
-        // ? w () a () s () d ()
+        // ? w (87 Ypos-) a (65 Xpos-) s (83 Ypos+) d (68 Xpos+)
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+        }
+        // todo. 집나가는 원 가두기
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        // (currentXpos > 0) ? $circle.css("left",currentXpos) : currentXpos = 0;
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
     });
 }
