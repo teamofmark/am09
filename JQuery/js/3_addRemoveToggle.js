@@ -3,8 +3,6 @@ $(document).ready(function(){
     toggleTodo();
     tabUI();
     accControl(".accComponent li > :first-child");
-    // todo
-    // accControl(원하는대상);
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
