@@ -1,6 +1,10 @@
 $(document).ready(function(){
     toggleCheck();
     toggleTodo();
+    tabUI();
+    accControl(".accComponent li > :first-child");
+    // todo
+    // accControl(원하는대상);
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -37,3 +41,18 @@ function toggleTodo(){
         }
     });
 }
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        // var activeTab = $(this).attr("data-tabNumb");
+        $(".tabMenu li").removeClass("activated");
+        $(this).addClass("activated");
+        // todo. click한 li에 해당하는 tabPage 작동시키기 (ex>tab1 li click -> tab1 div activated.)
+        $(".tabPage").removeClass("activated");
+        $("#" + $(this).text()).addClass("activated");
+    });
+}
+function accControl(target){
+    $(target).click(function(){
+        $(this).toggleClass("active");
+    });
+};
