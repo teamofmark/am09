@@ -1,6 +1,6 @@
 $(document).ready(function(){
     imgAlignHori();
-    imgAlignMix();
+    imgAlignMix(6);
 });
 
 // *case. 1 xAxisFold
@@ -22,7 +22,7 @@ function imgAlignHori(){
     });
 }
 // todo. x,yAxis Fold
-function imgAlignMix(){
+function imgAlignMix(count){
     var img = $(".imgContainerMix img");
     var xpos = 0;
     var ypos = 0;
@@ -32,7 +32,7 @@ function imgAlignMix(){
         var imgHeight = img.height();
         for(var i = 0; i < imgLength; i++){
             var image = img.eq(i);
-            xpos = (i%3)*imgWidth;
+            xpos = (i%count)*imgWidth;
             console.log("currentXpos : " + xpos);
             /*
                 ? x pattern
@@ -41,7 +41,7 @@ function imgAlignMix(){
                 * 6(x0) 7(x1) 8(x2)
                 * .....
             */
-           ypos = parseInt(i/3)*imgHeight;
+           ypos = parseInt(i/count)*imgHeight;
            console.log("currentYpos : " + ypos);
             /*
                 ? y pattern
