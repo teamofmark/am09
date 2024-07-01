@@ -38,6 +38,18 @@ function moveCircle(){
         ! Math.ceil method : 매개변수 = num : 실수값. 리턴값 = 입력값이 실수 인 경우 올림한 정수값 (ex 10.2 = 11)
     */
 }
+function scoreCount(){
+    if(playState == true){
+        count ++;
+        $score.text(count);
+    }
+}
 function gameEnd(){
-
+    setTimeout(function(){
+        playState = false;
+        clearInterval(timerID);
+        alert("게임종료. 너의 점수는 " + count + "점 이다.");
+        count = 0;
+        $score.text(count);
+    },10000);
 }
