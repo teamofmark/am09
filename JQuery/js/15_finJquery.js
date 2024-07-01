@@ -49,7 +49,14 @@ function updateFishPosition(){
     console.log("5. 물고기 움직임 정상");
 }
 function displayFishPositionInfo(){
-
+    var info = "";
+    // todo. 0~2번 물고기 각각 현재 왼쪽좌표값 불러서 전광판 ($info)에 출력(.html())하기
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + "번 물고기 :" + $fish.position().left + "px <br>";
+    }
+    $info.html(info);
+    console.log("6. 물고기 위치 표시 정상.");
 }
 function checkGoalFish(){
 
