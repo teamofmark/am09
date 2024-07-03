@@ -1,0 +1,19 @@
+.bx-wrapper .bx-caption{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 50%;
+    background: rgba(240, 80, 80, 0.75);
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+}
+.bx-wrapper .bx-caption span{
+    color: darkblue;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 0px 10px;
+}
+/* ? caption Customize */
