@@ -10,13 +10,18 @@ $(document).ready(function(){
          randomStart: false, //? default: false. slide 노출 순서를 random으로 전환.
 
         //  * infiniteLoop, hideControlOnEnd 충돌
-        infiniteLoop: false, //? default : true. slide간 전환 무한반복.
-        hideControlOnEnd: true, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
+        infiniteLoop: true, //? default : true. slide간 전환 무한반복.
+        hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
     
-        adaptiveHeight: false, //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
+        adaptiveHeight: true, //? default : false. slide img 높이에 따라 frame 자체가 유동적으로 변함.
         adaptiveHeightSpeed: 500, //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed 동기화
         video: true, //? default: false. video 활성화.(slide에 video가 있을 시만) fitvids.js를 연결해두면 iframe,video등의 width,height 자동설정 가능. 
     
-        captions: true
+        captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 이미지 위로 보여준다.
+        easing: 'ease-in-out', //? default : null. slide간 전환 가속도 설정. CSS timing-function option 사용가능.
+        responsive: true, //? default: true. slider 자체 반응형 켜기.
+
+        // *pager - indicator
+        pager: true //? default: true. pager 켜기/끄기
     });
 });

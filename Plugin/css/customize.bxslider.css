@@ -17,3 +17,36 @@
     padding: 0px 10px;
 }
 /* ? caption Customize */
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+.bx-wrapper .bx-pager-item {
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    zoom: 1;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;   
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: #000;
+}
