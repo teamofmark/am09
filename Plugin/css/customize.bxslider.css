@@ -1,3 +1,6 @@
+.bx-wrapper{
+    margin: 0 auto;
+}
 .bx-wrapper .bx-caption{
     position: absolute; bottom: 0; top: 0; left: 50%; background: rgba(240, 80, 80, 0.75);
     width: 50%; height: 50px; line-height: 50px; text-align: right;
