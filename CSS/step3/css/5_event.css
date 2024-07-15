@@ -1,9 +1,0 @@
-a{
-    text-decoration: none; font-size: 20px; padding: 15px; display: inline-block;
-}
-/* ! 아래 정리된 event는 a Tag에만 사용할 수 있는 것이 아니다. */
-a:link{color: olive;} /*  ? href가 사용된 평상시 상태 */
-a:visited{color: #c00;} /* ? href로 방문한 적이 있는 상태 */
-a:hover{color: deeppink; text-decoration: underline;} /* ? cursor over - hover. */
-a:active{color: limegreen; text-decoration: overline;} /* ? active - 대상을 click한 경우*/
-a:focus{color: lightskyblue; text-decoration: line-through;} /* ? focus - 초점이 맞춰진 상태 / accEventHandler - 접근성 이벤터 되도록 사용 말 것. */
