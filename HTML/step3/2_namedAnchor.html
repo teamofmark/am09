@@ -8,9 +8,9 @@
         html,body{
             margin: 0; height: 100%; scroll-behavior: smooth;
         }
-        /* ul#menu{
+        ul#menu{
             position: fixed; right: 0; top: 0; background-color: white;
-        } */
+        }
         div{
             height: 100%;
         }
@@ -31,15 +31,15 @@
 <body>
     <!-- (ul#menu>li*5>a{page$바로가기})+(#page$*4>{$page}+a{메뉴로}) -->
     <ul id="menu">
-        <li><a href="">page1바로가기</a></li>
-        <li><a href="">page2바로가기</a></li>
-        <li><a href="">page3바로가기</a></li>
-        <li><a href="">page4바로가기</a></li>
-        <li><a href="">page5바로가기</a></li>
+        <li><a href="#page1">page1바로가기</a></li>
+        <li><a href="#page2">page2바로가기</a></li>
+        <li><a href="#page3">page3바로가기</a></li>
+        <li><a href="#page4">page4바로가기</a></li>
+        <li><a href="1_hyperlink.html#targetAnchor" target="_blank">이전파일의 지정위치 바로가기</a></li>
     </ul>
-    <div id="page1">1page<a href="">메뉴로</a></div>
-    <div id="page2">2page<a href="">메뉴로</a></div>
-    <div id="page3">3page<a href="">메뉴로</a></div>
-    <div id="page4">4page<a href="">메뉴로</a></div>
+    <div id="page1">    1page</div>
+    <div id="page2">2page</div>
+    <div id="page3">3page</div>
+    <div id="page4">4page</div>
 </body>
 </html>
