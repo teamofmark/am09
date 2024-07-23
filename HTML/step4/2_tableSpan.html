@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colspan, rowspan</title>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+        table td[colspan],
+        table td[rowspan]{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- todo table>caption{테이블셀병합알아보기}+tbody>tr*3>td*3{-$} -->
+    <table>
+        <caption>테이블셀병합알아보기</caption>
+        <tbody>
+            <tr>
+                <td colspan="3">1-1 1-2 1-3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2-1 3-1</td>
+                <td>2-2</td>
+                <td rowspan="2">2-3 3-3</td>
+            </tr>
+            <tr>
+                <td>3-2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
