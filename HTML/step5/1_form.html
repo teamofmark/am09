@@ -31,13 +31,13 @@
                 <!-- todo li>(input:radio#btn_radio$+label{radio$})*4 -->
                 <li>
                     <input type="radio" name="radioGroup" id="btn_radio1" checked>
-                    <label for="btn_radio1">radio1</label>
+                    <label for="btn_radio1">국민</label>
                     <input type="radio" name="radioGroup" id="btn_radio2">
-                    <label for="btn_radio2">radio2</label>
+                    <label for="btn_radio2">신한</label>
                     <input type="radio" name="radioGroup" id="btn_radio3">
-                    <label for="btn_radio3">radio3</label>
+                    <label for="btn_radio3">하나</label>
                     <input type="radio" name="radioGroup" id="btn_radio4">
-                    <label for="btn_radio4">radio4</label>
+                    <label for="btn_radio4">기업</label>
                 </li>
                 <!--
                     입력 태그 타입 radio는 라디오 버튼이며, name 을 같은 이름으로 여러 항목을 지정시 그룹화 된다. 또한 label을 이용
@@ -63,6 +63,34 @@
                     2. value 값은 기존 input 과 동일
                     3. checked 옵션 역시 radio input 과 동일
                 -->
+                <!-- todo li>label{직업 선택: }+select#selectJob>option*4 -->
+                <li>
+                    <label for="selectJob">직업 선택: </label>
+                    <select id="selectJob">
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                    <!--
+                        select는 선택항목을 목록형의 단축메뉴 형식으로 만드는 입력 양식이다.
+                        항목 수만큼의 option 이 필요하고, 이안의 value로 값을 정해 전달한다.
+                        multiple 속성값을 이용해 다중 선택을 지원 할수 있고, size 속성값을 이용해 초기 노출 목록수를 제어할수 있다.
+                        optgroup으로 중간 그룹을 설정할 수 있다.
+                    -->
+                </li>
+                <!-- todo li>input:image+input:button+input:file+input:submit+input:reset -->
+                <li>
+                    <input type="image" src="https://via.placeholder.com/150x50?text=button" alt="imgBtnExample">
+                    <input type="button" value="아이디중복체크">
+                    <input type="file" name="" id="">
+                    <input type="submit" value="전송">
+                    <input type="reset" value="취소">
+                </li>
             </ul>
         </fieldset>
     </form>
