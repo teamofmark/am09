@@ -17,13 +17,20 @@
                     <label for="userID">ID : </label>
                     <input type="text" id="userID" placeholder="아이디를 입력하세요.">
                 </li>
+                    <!-- ! input의 id는 backEnd가 직접적으로 사용하는 id이기 때문에 상호협의하에... -->
+                    <!-- 
+                        * 상식적인 선 내에서의 web상 naming규칙을 따라야함.
+                        ? 1. 한글,띄어쓰기,특문,숫자나 대문자가 앞에오거나 행위 금지.
+                        ? 2. 영문키워드 2개이상을 조합해야 함.(예약어개념 - programing Language가 이미 선점한 단어 사용금지)
+                    -->
+                    <!--입력 태그 타입 text는 텍스트를 삽입할 때 사용되며, label과 연결이 없을 시 title이 항상 제공 되어야 한다.  maxlength를 이용해 최대 글자를 제어할수있다.-->
                 <li>
                     <label for="userPW">PW : </label>
                     <input type="password" id="userPW" placeholder="비밀번호를 입력하세요.">
                 </li>
                 <!-- todo li>(input:radio#btn_radio$+label{radio$})*4 -->
                 <li>
-                    <input type="radio" name="radioGroup" id="btn_radio1">
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
                     <label for="btn_radio1">radio1</label>
                     <input type="radio" name="radioGroup" id="btn_radio2">
                     <label for="btn_radio2">radio2</label>
@@ -32,6 +39,30 @@
                     <input type="radio" name="radioGroup" id="btn_radio4">
                     <label for="btn_radio4">radio4</label>
                 </li>
+                <!--
+                    입력 태그 타입 radio는 라디오 버튼이며, name 을 같은 이름으로 여러 항목을 지정시 그룹화 된다. 또한 label을 이용
+                    하여 해당 항목과 버튼을 연결해줄 필요가 있다.
+                    value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.
+                    checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다.
+                    그리고 cheackbox와는 달리 하나의 항목만 선택 가능하다.
+                -->
+                <!-- todo li>(input:checkbox#btn_chk$+label{check$})*4 -->
+                <li>
+                    <input type="checkbox" id="btn_chk1" checked>
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+                <!--
+                    1. 입력태그타입 checkbox는 다중 선택을 지원 하는 input이며, label을 이용하여 해당 항목과 연결
+                    해야 한다.
+                    2. value 값은 기존 input 과 동일
+                    3. checked 옵션 역시 radio input 과 동일
+                -->
             </ul>
         </fieldset>
     </form>
