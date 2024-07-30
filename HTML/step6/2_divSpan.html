@@ -5,46 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div Layout</title>
     <style>
-        .header {
+        header {
             background-color: red;
             margin-bottom: 20px;
             text-align: center;
         }
 
-            .header .nav li {
+            header nav li {
                 display: inline-block;
                 width: 19%;
                 background-color: blue;
                 color: white;
             }
 
-        .section {
+        section {
             background-color: red;
             margin-bottom: 20px;
         }
 
-            .section > * {
+            section > * {
                 height: 500px;
                 display: inline-block;
             }
 
-            .section .article {
+            section article {
                 background-color: yellow;
                 width: 80%;
             }
 
-            .section .aside {
+            section aside {
                 background-color: green;
                 width: 18%;
             }
 
-        .footer {
+        footer {
             text-align: center;
             background-color: orange;
         }
     </style>
 </head>
 <body>
-    
+    <header>
+        <!-- ? divide : 영역(공간)을 분할하다. -->
+        <span>global Header</span>
+        <nav>
+            <!-- ul>li*5{menu$} -->
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article><span>articleData</span></article>
+        <aside><span>asideContent</span></aside>
+    </section>
+    <footer>
+        <span>global Footer</span>
+    </footer>
 </body>
 </html>
