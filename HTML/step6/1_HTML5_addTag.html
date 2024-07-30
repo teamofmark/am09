@@ -52,12 +52,12 @@
         <a href="https://earth.google.com/web/search/sbs%ec%95%84%ec%b9%b4%eb%8d%b0%eb%af%b8%ec%bb%b4%ed%93%a8%ed%84%b0%ed%95%99%ec%9b%90+%eb%b6%80%ed%8f%89%ec%a0%90/@37.49230827,126.72433337,19.37237253a,1102.39597293d,35y,-0h,0t,0r/data=CigiJgokCfttPNFMv0JAEbhMBB2xvkJAGZFK_gCvrl9AIYJefEL8rV9AOgMKATA" target="_blank">지도보기</a>
     </address>
 
-    <!-- ! IE 지원 불가 -->
+    <!-- ! 이하 IE 지원 불가 -->
     <details>
         <summary>Copyright 1999-2024</summary>
         <p>- by Refsnes Data. All rights Reserved.</p>
     </details>
-    
+
     <ul>
         <li>User <bdi>hrefs</bdi>: 60 points</li>
         <li>User <bdi>jdoe</bdi>: 80 points</li>
@@ -65,5 +65,67 @@
     </ul>
     <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
     
+    <form action="demo_keygen.asp" method="get">
+        UserName <input type="text" name="security">
+        Encryption <keygen name="security">
+        <input type="submit" value="confirm">
+    </form>
+    
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, Firefox and internet Explorer are the most used browsers today.</p>
+        <article>
+            <h2>Google Chrome(CR)</h2>
+            <p>
+                Google Chrome is a free, open-source webBrowser developed by Google.
+                released in 2008.
+            </p>
+        </article>
+    </main>
+
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0 <input type="range" id="a" value="50"> 100
+        +
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+
+    <!--
+        <p>
+            This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery
+            <wbr>longwordthatwillbreakatspecific<wbr>
+            placeswhenthebrowserwindowisresized.
+        </p>
+        wbr로 감싸져있는 문장을 사이즈가 줄어들시 한줄로 떨어지게 처리 해준다. 지원종료
+    -->
+    <!-- !이하 IE 7,8,9, safari지원불가 -->
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="InternetExplorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Safari">SF</option>
+        <option value="Opera">O</option>
+    </datalist>
+
+    <!--대부분 브라우저 지원불가-->
+
+    <table>
+        <tr>
+            <th>January <dialog open>This is an open dialog window</dialog></th>
+            <th>February</th>
+            <th>March</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+    <!--해당 객체의 간단한 대화상자를 생성해 낼 수있다. 
+        open 값을 제하면, 안보이고
+        넣으면 보인다. 크롬, 오페라만 지원-->
 </body>
 </html>
