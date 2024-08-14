@@ -11,3 +11,13 @@
 .btn.modify{
     background-color: darkcyan; color: cyan; border-color: forestgreen;
 }
+.btn.delete{
+    background-color: rgb(90,0,0); color: red; border-color:darkred;
+}
+.btn.confirm{
+    background-color:slateblue; color: white; border-style: dashed;
+    border-color: midnightblue;
+}
+.btn.cancel{
+     color: gray; background-color: lightgray; border: gray;
+}
