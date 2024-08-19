@@ -21,3 +21,13 @@
 .btn.cancel{
      color: gray; background-color: lightgray; border: gray;
 }
+/*  ! 절대 금지 form{
+    width: 500px; height:500px; background-color: yellow; display: block;
+} */
+label[for^='user']{
+    display: block;
+}
+#userName{
+    border: 1px solid #eaeaea; line-height: 21px; font-size: 12px; padding: 5px 15px;
+    color: green;
+}
