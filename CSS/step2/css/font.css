@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* 
+    thin - 100
+    extraLight - 200
+    light - 300
+    regular - 400
+    medium - 500
+    semiBold - 600
+    bold - 700
+    extraBold - 800
+    black - 900
+*/
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    /*
+    웹폰트로드하는방법
+    1. 영어권이냐 ? 영어권이아니냐
+    
+    - 영어권 : alternate(대체).
+    - 비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경. (해당폰트에 영문이없을시)
+    (한글,영어) : 대부분 비 영어권 font 는 알파벳 이 기본 포함되기때문에 일반적으로는 앞에 영문font, 뒤에 비영어권폰트 설정.
+    - 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
+    
+    */
+}
+h1{
+    font-size: 20px; line-height: 26px; color: #06f;
+    /* ? -size : px,rem,em,vw,vh */
+    /* ? line-height : 30px 미만(size)일 경우 평균 + 6px, size보다 작게되면 글자가 겹치게 됨. 높이(height)로활용가능 */
+    /*  
+        ? color : hex == rgb > hsl 
+        * HEX - 16진수를 이용한 COLOR, 0~9-A~F = 16. #eaeaea -> 무채색 #ff01eb -> 적색계열
+        * RGB - rgb(red,green,blue) / LV - 255 -> rgba(red,green,blue,alpha) - a : 투명도
+        * HSL - (hue, saturate, lightness) / hsla - a : 투명도
+    */
+}
