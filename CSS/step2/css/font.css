@@ -89,3 +89,20 @@ p.t_indent{
     background: url("https://via.placeholder.com/150x50?text=blahblahButton");
     border: none; width: 150px; line-height: 50px; font-size: 12px; text-indent: -9999px;
 }
+a{
+    display: block; margin-bottom: 30px;
+}
+a.t_deco_N{text-decoration: none; text-transform: none; color: #090;}
+a.t_deco_U{text-decoration: underline; text-transform: lowercase; color: #0cf;}
+a.t_deco_O{text-decoration: overline; text-transform: capitalize; color: #93c;}
+a.t_deco_T{text-decoration: line-through; text-transform: uppercase; color: #f63;}
+
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: center;
+}
+/* ! text-align은 inline,inline-block 속성 tag를 정렬할 수 있다. */
