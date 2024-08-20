@@ -82,3 +82,10 @@ bottom : 아래쪽 정렬
 ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
 ! 대상들의 display 속성의 간섭을 받는다. (ex> display:block 인 div 끼리 불가)
 */
+p.t_indent{
+    font-size: 40px; text-indent: 200px;
+}
+.test{
+    background: url("https://via.placeholder.com/150x50?text=blahblahButton");
+    border: none; width: 150px; line-height: 50px; font-size: 12px; text-indent: -9999px;
+}
