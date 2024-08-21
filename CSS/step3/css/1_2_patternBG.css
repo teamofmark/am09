@@ -1,0 +1,19 @@
+/* todo. patternBackground 전체영역에 적용해보기 */
+html,body,.wrap{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-image: url("../images/pt.gif");
+    background-repeat: repeat;
+}
+.wrap p{
+    background-color: rgba(0, 204, 255, 0.5); padding: 20px; margin-bottom: 20px;
+}
+.wrap button{
+    background-image: url("../images/pt_ex.png");
+    background-repeat: repeat-x; padding: 0 20px;
+    color: white; border: 3px solid limegreen; line-height: 75px;
+}
