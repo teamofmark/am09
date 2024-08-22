@@ -1,1 +1,30 @@
-*
+*{
+    margin: 0; padding: 0;
+}
+h1{
+    text-align: center; margin-bottom: 20px;
+}
+ul{
+    width: 640px; margin: 0 auto;
+    /* ! display block인 공간을 중앙으로 보내는 법(부모영역보다 자신의 너비가 작아야됨) */
+}
+ul:after{
+    content: ""; display: block; clear: both; visibility: hidden;
+}
+ul li{
+    float: left; display: block; width: 160px; height: 140px;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+}
+ul li strong{
+    background-color: rgba(100,0,0,0.3); padding: 10px;
+}
+ul li.captain{background-position: 0px 0px;}
+ul li.wolverine{background-position: 0px 0px;}
+ul li.thor{background-position: 0px 0px;}
+ul li.ironman{background-position: 0px 0px;}
+/* todo */
+ul li.spiderman{background-position: 0px 0px;}
+ul li.superman{background-position: 0px 0px;}
+ul li.rangerRed{background-position: 0px 0px;}
+ul li.rangerBlue{background-position: 0px 0px;}
