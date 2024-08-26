@@ -1,0 +1,23 @@
+
+
+div{
+    width: 300px; height: 150px; margin-bottom: 10px;
+}
+.singleBox{
+    border: 3px solid #60f;
+}
+.multiBox{
+    /* border-width: 1px 3px 10px 25px;
+    border-style: solid dotted dashed double;
+    border-color: #1958b7 #f06 #fc6 #0cf; */
+    /* ? 속성별 분리 : top,right,bottom,left순으로 속성을 분리하여 기입 */
+
+    border-top: 1px solid #1958b7;
+    border-right: 3px dotted #f06;
+    border-bottom: 10px dashed #fc6;
+    border-left: 25px double #0cf;
+    /* todo 방향별 분리 : 각 방향에 width,style,color를 줄여 기입*/
+}
+.searchField{
+    padding-left: 65px; display: block; width: 100%;
+}
