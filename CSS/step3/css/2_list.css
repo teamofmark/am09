@@ -1,0 +1,48 @@
+ul,ol{
+    font-size: 24px;
+}
+ul li.circle{
+    list-style: circle;
+}
+ul li.disc{
+    list-style: disc;
+}
+ul li.square{
+    list-style: square;
+}
+ol{
+    list-style: lower-alpha;
+    /* ! 기본적으로 css는 동일 값이 존재할 경우 부모에게 내려받는 언어 이기 때문에 자손에게 직접 적용하지 않는다. */
+}
+ol li{
+    /* display: block; */
+    /* ! li의 display defaultValue = list-item 이라는 속성인데, 이를 변경하면 bullet이 삭제된다. */
+}
+/* ol li.decimal{
+    list-style: decimal;
+}
+ol li.lower-alpha{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+}
+ol li.none{
+    list-style: none;
+} */
+
+ul.custom{
+    list-style: none;
+    /* list-style-image: url('../images/bul_li.gif');
+    list-style-position: inside; */ padding: 0;
+}
+ul.custom li{
+    padding-left: 20px;
+    background: url('../images/bul_li.gif') left center no-repeat;
+}
