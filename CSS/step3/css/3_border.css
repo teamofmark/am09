@@ -19,5 +19,10 @@ div{
     /* todo 방향별 분리 : 각 방향에 width,style,color를 줄여 기입*/
 }
 .searchField{
-    padding-left: 65px; display: block; width: 100%;
+    padding-left: 65px; display: block; width: 100%; font-size: 18px; line-height: 50px;
+    background-image: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'), url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-position: 20px center, right 20px center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    border-width: 0 0 1px;
 }
