@@ -46,3 +46,4 @@ ul.custom li{
     padding-left: 20px;
     background: url('../images/bul_li.gif') left center no-repeat;
 }
+/* ! 기존 list-style-image 방식은 제어에 어려움이 있어 배경방식으로 대체하여 사용한다. */
