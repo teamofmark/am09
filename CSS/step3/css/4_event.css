@@ -1,0 +1,9 @@
+a{
+    text-decoration: none; font-size: 50px; display: inline-block; margin-left: 100px;
+    line-height: 60px; padding: 0 15px;
+}
+a:link{color: lightseagreen; background-color: rgba(0,100,0,0.3);}
+a:visited{color: lightcoral; background-color: rgba(100,0,0,0.3);}
+a:hover{color: deeppink; background-color: rgba(100,0,100,0.5); border-radius: 50px;} /* ***** : 제일 중요 */
+a:active{color: cyan; background-color:midnightblue;}
+a:focus{color: black; background-color: lightgray; border: 3px solid chartreuse;}
