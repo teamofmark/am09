@@ -13,3 +13,26 @@ body{
 .secondDiv article{
     background-color: #930; margin: 10px;
 }
+.centerDiv{
+    width: 300px; border: 5px solid #33f; padding: 30px; margin: 0 auto;
+    text-align: center;
+    /* 
+        ! padding은 본래 대상의 크기에 가산된다. border도 마찬가지. 
+    */
+    /* 
+        0(상하) auto(좌우)는 좌측과 우측에 browser가
+        자신의 width - 대상의 width /2 를통해 공통마진을 부여.
+        그래서 가운데 위치할 수 있음. 
+    */
+}
+.centerDiv article{
+    margin: 50px; background-color: #f33; color: white;
+    /* ! margin과 부모의 padding 은 섞이지 않는다. 무조건 가산됨. */
+}
+.paddingDiv{
+    padding: 10px 20px; border: 3px solid #333; background-color: #ff3; width:300px;
+    box-sizing: border-box;
+    /* 
+        ! box-sizing: border-box; 를 설정하면 padding 및 border의 사이즈는 더이상 width에 가산되지 않는다.  
+    */
+}
