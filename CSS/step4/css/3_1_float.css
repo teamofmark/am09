@@ -1,0 +1,18 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1{
+    background-color: rgba(135, 206, 250, 0.5);
+}
+.wrap .exam_1:after{
+    content: ''; display: block; clear: both;
+}
+.wrap .exam_1 img{
+    float: left; margin: 0 40px 20px 0;
+}
+.wrap .exam_1 p{
+    font-size: 24px; line-height: 30px;
+}
