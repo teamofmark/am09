@@ -10,6 +10,15 @@
 .wrap .exam_1:after{
     content: ''; display: block; clear: both;
 }
+/* 
+    ? :afterCanceler
+    ! 적용대상 - float들의 부모에게.
+    * float를 끊어내는 용도. -> clear = float가 아닌 마지막 대상이 존재 할 때 사용 가능.
+    * 1. :after - 후위 선택자.
+    * 2. content -  content 넣어주는 속성. (ex> 1 -> 1이 들어감. img -> img들어감) = 빈 문자열(emptyString)
+    * 3. display: block - width: 100%;
+    * 4. clear - clear = floatCounter(취소). float : left,right. = both(양쪽다)
+*/
 .wrap .exam_1 img{
     float: left; margin: 0 40px 20px 0;
 }
