@@ -1,0 +1,6 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto; background-color: rgba(100,40,10,0.5);
+}
