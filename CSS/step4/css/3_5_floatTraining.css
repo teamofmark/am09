@@ -1,0 +1,22 @@
+body,figure{margin: 0;}
+ul{margin: 0; padding: 0; list-style: none;}
+
+ul:after{
+    content: ''; display: block; clear: both;
+}
+ul li{
+    float: left; width: 33.33%; border: 1px solid red; box-sizing: border-box;
+}
+ul li figure > *{float: left; width: 48%; margin-bottom: 10px;}
+ul li figure img{
+    margin-right: 4%;
+}
+ul li figure figcaption{
+    border-bottom: 1px solid #555;
+}
+ul li figure figcaption dl dt{
+    font-size: 24px; margin-bottom: 35px;
+}
+ul li figure figcaption dl dd{
+    font-size: 14px; line-height: 24px;
+}
