@@ -40,3 +40,22 @@
     background-color: skyblue; text-align: center; line-height: 55px;
     /* padding: 15px 0; */
 }
+.wrap section:after{
+    content: ''; display: block; clear: both;
+}
+.wrap section article{
+    float: left; width: 33.33%;
+}
+.wrap section article h3{
+    background-color: rgba(0,0,0,0.5); line-height: 35px; text-align: center;
+    color: lightpink;
+}
+.wrap section article ul{
+    padding-left: 20px; list-style-position: inside;
+}
+.wrap section article ul li{
+    border-bottom: 1px solid brown; line-height: 35px; font-size: 14px;
+}
+.wrap footer{
+    background-color: rgba(50,0,255,0.8); line-height: 55px; color: white; text-align: center;
+}
