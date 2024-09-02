@@ -1,0 +1,15 @@
+*{margin: 0; padding: 0;}
+ul:after{
+    content: ''; display: block; clear: both;
+}
+ul li{
+    width: 16.66%; float:left; display: block; border: 1px solid black;
+    box-sizing: border-box;
+    /* calc(16.66% - 2px); */
+}
+ul li figure img{
+    width: 100%; display: block;
+}
+ul li figure figcaption dl{
+    background-color: yellow; text-align: center;
+}
