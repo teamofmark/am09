@@ -1,8 +1,21 @@
-
-#wrap div{
-    width: 150px;
-    height: 150px; position: absolute;
+#wrap{
+    width: 300px; height: 200px; background-color: #999; margin: 0 auto; position: relative;
+    overflow-y: scroll;
 }
-#wrap .redBox{background-color:#f00;}
-#wrap .greenBox{background-color:#0f0;}
-#wrap .blueBox{background-color:#00f;}
+#wrap div{
+    width: 150px; height: 150px; position: absolute;
+    /* ! position: absolute - 선언과 동시에 위로 뜬다. 좌표 설정 전에는 원래 렌더된 위치에 고정됨. */
+}
+#wrap .redBox{background-color:#f00; left: 10px; top: 10px; z-index: 10;}
+    /* ? (x,y)pos(position) -  top(y), right(x), bottom(y), left(x)*/
+#wrap .greenBox{background-color:#0f0; left: 50px; top: 50px; z-index: 100;}
+#wrap .blueBox{background-color:#00f; left: 90px; top: 90px; z-index: 1;}
+/*
+    좌표의 기준이 될 부모의 객체에 position:relative; 를 선언
+    그것을 기준으로 움직일 자식 객체에게 position:absolute; 를 선언
+    그렇게 되면 부모객체의 위치를 기준으로 자식객체가 움직이게 됨
+    
+    부모객체의 높이를 정해주면 자식객체가 부모객체를 뚫고 나오는 현상을 방지할수있음.
+    만약 잘리는 부분을 scroll 로 처리하고 싶다면 overflow에 scroll을, 잘리게 둘 것이라면
+    hidden;을 부여한다.
+*/
