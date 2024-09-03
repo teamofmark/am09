@@ -21,3 +21,14 @@ body{
     position: absolute; width: 50px; height: 50px; top: 50px; left: 50px;
     background-color: #0ff;
 }
+.position_F{
+    position: fixed; background-color: #9f9; width: 100%; left: 0; top: 0; line-height: 55px;
+    /* ! fixed : 선언하는 순간 위로 뜸. 좌표 인계전까진 최초위치 유지. 너비 상실됨 (absolute). absolute의 기준가능*/
+    /* * 화면상에 고정됨. 무조건 browser의 좌측상단을 기준으로 함. */
+    padding: 0 4%;
+}
+.position_S{
+    position: sticky; background-color: blueviolet; width: 100%; line-height: 55px;
+    top: 55px; left: 0;
+}
+/* ! position 적용 이전상태로 돌리는 방법(취소) : static */
