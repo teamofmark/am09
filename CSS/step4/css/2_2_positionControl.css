@@ -1,0 +1,23 @@
+body{
+    margin: 0; height: 3000px;
+}
+.position_A{
+    position: absolute; width: 150px; height: 150px; background-color: #fc0; top: 300px;
+    left: 700px;
+    /* 
+        ! position 사용시 browser상에 horizontalScroll발생에 유의 하여야 한다.
+        ? 100% - (targetWidth(%) + posValue(이동한%)) = margin
+        ? targetWidth(%) + posValue(이동한%) + margin = 100%
+        * 컴퓨터 언어는 작성 순서가 중요하다. 동시 처리가 불가능 하기 때문에 작성순서가 곧 실행순서와 같다.
+        (top -> left)   
+    */
+}
+.position_R{
+    position: relative; width:150px; height: 150px; background-color:#0f0; margin: 0 auto;
+    top: 300px;
+    /* ! position relative는 좌표 값이 입력되는 순간의 위치를 기준으로 작동한다. - 위험함. */
+}
+.position_R .position_A2{
+    position: absolute; width: 50px; height: 50px; top: 50px; left: 50px;
+    background-color: #0ff;
+}
