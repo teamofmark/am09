@@ -1,0 +1,38 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap aside{
+    width: 250px; height: 100%; position: fixed; background-color: paleturquoise;
+    padding: 30px 15px; box-sizing: border-box;
+}
+.wrap aside header{
+    margin-bottom: 50px;
+}
+.wrap aside header h1{
+    text-align: center;
+}
+.wrap aside header h1 a{
+    display: block;
+}
+.wrap aside nav{
+    text-align: center;
+}
+.wrap aside nav ul{
+    list-style: none;
+}
+.wrap aside nav ul li a{
+    display: block; font-size: 20px; line-height: 26px; color: green; text-decoration: none;
+}
+.wrap aside footer{
+    position: absolute; bottom: 30px; background-color: midnightblue; width: 220px; 
+    text-align: center; line-height: 24px;
+}
+.wrap aside footer cite{
+    font-style: normal; font-size: 12px; color: white;
+}
+/* aside Fin */
+
+
+.wrap article{
+    padding-left: 265px;
+}
