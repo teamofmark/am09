@@ -20,9 +20,13 @@
 .wrap aside nav ul{
     list-style: none;
 }
+.wrap aside nav ul li:not(:last-child){
+    margin-bottom: 10px;
+}
 .wrap aside nav ul li a{
     display: block; font-size: 20px; line-height: 26px; color: green; text-decoration: none;
 }
+/* todo a hover event (밑줄,색상) */
 .wrap aside footer{
     position: absolute; bottom: 30px; background-color: midnightblue; width: 220px; 
     text-align: center; line-height: 24px;
@@ -34,5 +38,27 @@
 
 
 .wrap article{
-    padding-left: 265px;
+    padding-left: 265px; background-color: palegoldenrod;
+}
+
+.wrap article >*:not(div){
+    margin-bottom: 100px;
+}
+.wrap article h2{
+    font-size: 40px; color: forestgreen; font-weight: bold;
+}
+.wrap article blockquote{
+    border: 5px solid olive; padding: 30px; box-sizing: border-box; font-size: 26px;
+}
+.wrap article q{
+    display: block;
+}
+.wrap article div:not(:last-child){
+    margin-bottom: 50px;
+}
+.wrap article div h3{
+    font-size: 30px; margin-bottom: 50px; color: purple;
+}
+.wrap article div p{
+    font-size: 21px; line-height: 40px; color: darkolivegreen;
 }
