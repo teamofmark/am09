@@ -36,3 +36,6 @@
 .attrSelector fieldset ul li input{
     padding: 5px; vertical-align: middle;
 }
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid lightyellow; color: maroon;
+}
