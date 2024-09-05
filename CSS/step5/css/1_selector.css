@@ -39,3 +39,16 @@
 .attrSelector fieldset ul li input[type='text']{
     background-color: salmon; border: 3px solid lightyellow; color: maroon;
 }
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px;
+    /* background-color: black; border: 5px solid yellow; 적용불가 */
+    accent-color: red;
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 25px; height: 25px;
+    /* background-color: limegreen; border: 5px dotted yellowgreen; 적용불가 */
+    accent-color: pink;
+}
