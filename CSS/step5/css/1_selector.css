@@ -52,3 +52,17 @@
     /* background-color: limegreen; border: 5px dotted yellowgreen; 적용불가 */
     accent-color: pink;
 }
+.directSelector > h1{
+    font-size: 28px; color: #66f; text-decoration: underline;
+}
+.directSelector > span{
+    font-size: 22px; color: #906; display: block; line-height: 40px;
+    text-decoration: underline;
+}
+
+.sameSelector h1~h2{
+    background-color: #999;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
