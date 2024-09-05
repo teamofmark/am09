@@ -105,3 +105,22 @@
 .stringAttrSelector h1[title ^= "남자"]{
     color: blue;
 }
+
+/* 상태선택자 (statusSelector) */
+.statusSelector input[type='checkbox'] + label{
+    display: inline-block; overflow-y: hidden; line-height: 20px; vertical-align: middle;
+    transition-duration: 0.35s;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    line-height: 0px;
+}
+/* ! radio = checked. select = selected */
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:enabled::placeholder{
+    color: yellow;
+}
+.statusSelector input:disabled{
+    background-color: lightgrey; color: lightslategray;
+}
