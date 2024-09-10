@@ -158,3 +158,31 @@
 }
 .virtualSelector table tr th{background-color:#6CF; }
 .virtualSelector table tr td{text-align:center;}
+
+/* .shapeSelector h1:nth-of-type(2){
+    color: #30f;
+}
+.shapeSelector h2:first-of-type{
+    color: #0c6;
+}
+.shapeSelector h3:last-of-type{
+    color: #f06;
+} */
+/* todo. -child로 변환하여 동일한 결과 나오게 하기 */
+.shapeSelector :last-child{
+    color: #30f;
+}
+.shapeSelector :nth-child(2){
+    color: #0c6;
+}
+.shapeSelector :nth-child(4){
+    color: #f06;
+}
+/* 
+    * -of-type : 형제관계중 대상으로 지정된 tag를 선택하는 선택자.
+
+    * -child : 부모가 바라보는 자손관계중(내부중첩) 대상으로 지정된 tag를 선택하는 선택자.
+
+    ? 둘 다 수열식을 사용 할 수 있다.
+    ? 앞에 tag를 적는 방식이 유사하기 때문에 혼동 될 수 있다. 
+*/
