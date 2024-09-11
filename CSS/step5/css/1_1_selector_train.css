@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+article{
+    max-width: 1000px;
+    /* ? max- : 최대수치. 최대로 커질수 있는 수치 */
+    /* ? min- : 최소수치. 최소로 줄어들 수 있는 수치 */
+    /* ! max or min %로 사용하는 상황은 일반적이지 않다. */
+}
+article:not(:last-of-type){
+    margin-bottom: 30px;
+}
+article:after{
+    content: ''; display: block; clear: both;
+}
+article > :first-child{
+    width: 150px; background-color: gray; float: left; line-height: 110px;
+    font-size: 100px; margin: 0 20px 5px 0; text-align: right; color: white;
+}
+article p{
+    font-size: 14px;
+}
+article p :first-child{
+    color: #09f; background-color: transparent;
+}
+article p :first-child:not(mark){
+    text-decoration: underline;
+}
