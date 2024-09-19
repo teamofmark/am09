@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector example - PRAF</title>
+    <link rel="stylesheet" href="css/1_5_selector_train.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>공용자원신청서</legend>
+            <ul>
+                <li>
+                    <label for="applyPart">신청자부서 : </label>
+                    <input type="text" id="applyPart">
+                </li>
+                <li>
+                    <label for="applyName">신청자이름 : </label>
+                    <input type="text" id="applyName">
+                </li>
+                <li>
+                    <label for="selectRE">공용자원선택 : </label>
+                    <select id="selectRe">
+                        <option value="SI">SI</option>
+                        <!-- SI : System Integration - 새로 시스템을 구축하는 포지션 -->
+                        <option value="SM">SM</option>
+                        <!-- SM : System Maintenance or Management - 구축된 시스템을 유지/보수 포지션-->
+                        <option value="PM">PM</option>
+                        <!-- PM : Product Manager - 모든 결정 권한을 지님. -->
+                        <option value="PL">PL</option>
+                        <!-- PL : Product Leader - 기술 계열 관련 총 책임자. -->
+                    </select>
+                </li>
+                <li>
+                    <label for="useDate">사용시작일 : </label>
+                    <input type="date" id="useDate">
+                </li>
+                <li>
+                    <label for="endDate">사용종료일 : </label>
+                    <input type="date" id="endDate">
+                </li>
+                <li>
+                    <input type="checkbox" id="replayMe">
+                    <label for="replayMe">이 신청의 응답을 나에게 보냅니다.</label>
+                </li>
+            </ul>
+            <input type="submit" value="신청">
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>
+</body>
+</html>
