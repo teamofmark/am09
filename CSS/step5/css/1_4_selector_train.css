@@ -11,5 +11,20 @@ div:first-of-type fieldset label{
     display: inline-block; line-height: 20px; vertical-align: middle;
 }
 div:first-of-type fieldset textarea{
-    display: block; width: 100%; box-sizing: border-box; padding: 10px 1%; resize: none;
+    display: block; width: 100%; box-sizing: border-box; padding: 10px 1%; resize: none; height: 150px; border-color: #05f;
+    margin-top: 25px; transition-duration: 0.75s;
 }
+div:first-of-type fieldset input[type='checkbox']:checked+textarea{
+    height: 0px; padding: 0px 1%;
+}
+/* 
+    ? 부모 margin , padding 과 textarea width의 관계
+    * 1. 부모(fieldset)와 자식(textarea)의 기본 css 확인.
+    * 2. textarea의 스크롤바 및 width % 로 인한 간섭수정.
+    * 3. 이후 부모의 간섭요소 (margin, padding, border..)
+    *    등을 제거하여 부모 자식간 간섭을 없애준다.
+    ! resize : none; 임의로 textarea의 크기조절을 못하게
+*/
+/* 
+    ! 변형에 필요한 요소만 적을 것.
+*/
