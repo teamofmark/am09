@@ -20,16 +20,5 @@ ul li:nth-child(n+4):nth-child(-n+6){
     width: 33.33%; background-color: green;
 }
 /* todo */
-ul li:nth-child(7),
-ul li:nth-child(8),
-ul li:nth-child(9),
-ul li:nth-child(10){
-    width: 25%; background-color: yellow;
-}
-ul li:nth-child(11),
-ul li:nth-child(12),
-ul li:nth-child(13),
-ul li:nth-child(14),
-ul li:nth-child(15){
-    width: 20%; background-color: pink;
-}
+ul li:nth-child(n+7):nth-child(-n+10){width:25%; background-color:yellow;}
+ul li:nth-child(n+11):nth-child(-n+15){width:20%; background-color:pink;}
