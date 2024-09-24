@@ -1,0 +1,50 @@
+body,ul,dl,dt,dd,figure{
+    margin: 0; padding: 0;
+}
+div{
+    margin-bottom: 30px;
+}
+.displayProperty span:not(:nth-child(1)){
+    padding: 10px; margin: 10px;
+}
+.displayProperty span:nth-child(1){
+    display: block; width: 50%; background-color: #fc9393;
+}
+.displayProperty span:nth-child(2){
+    display: inline-block; background-color: #94fc93; width: 25%;
+}
+.displayProperty span:nth-child(3){
+    display: inline; width: 75%; background-color: #93c5fc; text-align: center;
+}
+.displayProperty span:nth-child(4){
+    display: none;
+}
+/*
+    ? display의 속성은 총 4가지
+    * block = block이 되게 되면 width:100%의 값을 갖는 위에서 아래로 나열되는 객체가 된다.
+    * inline-block = inline-block이 되면 width의 값을 가질수 있고, inline 타입으로 (옆으로) 나열되는 객체가 된다.
+    * inline = inline이 되면 width등의 크기나 간격 등의 값을 가질수 없고 옆으로는 나열 되지만, 간격을 벌릴수 없는 객체가 된다.
+    * none = 대상이 보이지 않는다. (렌더 자체가 안된다.)
+*/
+.visibilityProperty span{
+    background-color: #ff6a00; display: block; border: 1px solid black;
+    height: 250px;
+}
+.visibilityProperty span:first-child{
+    visibility: visible;
+}
+.visibilityProperty span:nth-child(2){
+    visibility: hidden;
+}
+.visibilityProperty input[type='checkbox']:checked ~ table{
+    visibility: visible;
+}
+.visibilityProperty table{
+    visibility: collapse; border-spacing: 0;
+}
+/*
+    ? visibility의 속성은 총 3가지
+    * visibility : visible  = 보여주다.
+    * visibility : hidden = 감추다.(영역보존)
+    * visibility : collapse = none과 달리 실제 존재는 하되 무너져있다.(data받기 용이)
+*/
