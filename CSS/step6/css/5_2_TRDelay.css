@@ -57,7 +57,7 @@ ul{
     height: 300px;
 }
 /* todo 직접 가속도 구현하여 넣어보기 */
-.delay3 ul li:nth-child(1){transition-timing-function: ; background-color: ;}
+.delay3 ul li:nth-child(1){transition-timing-function: cubic-bezier(0,.99,1,-0.02); background-color: ;}
 .delay3 ul li:nth-child(2){transition-timing-function: ; background-color: ;}
 .delay3 ul li:nth-child(3){transition-timing-function: ; background-color: ;}
 .delay3 ul li:nth-child(4){transition-timing-function: ; background-color: ;}
