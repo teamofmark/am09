@@ -1,0 +1,25 @@
+div{
+    width: 200px; height: 200px; border: 5px solid black; margin: 0 auto;
+}
+div span{
+    display: block; height: 200px;
+    transform-origin: left top;
+}
+div:first-of-type span{
+    background-color: red; transform: rotate(10deg);
+}
+div:nth-of-type(2) span{
+    background-color: green; color: white; transform: translateX(100px) rotate(10deg);
+}
+div:nth-of-type(3) span{
+    background-color: blue; color: white; transform: translate(100px,100px) rotate(10deg);
+}
+div:nth-of-type(4) span{
+    background-color: brown; color: white; transform: translate(100px,100px) rotate(10deg) skewX(10deg);
+}
+div:nth-of-type(5) span{
+    background-color: orange; color: white; transform: translate(100px,100px) rotate(10deg) skew(10deg,10deg);
+}
+div:nth-of-type(6) span{
+    background-color: pink; color: white; transform: translate(100px,100px) rotate(10deg) skew(10deg,10deg) scale(1.2);
+}
