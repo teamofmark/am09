@@ -56,6 +56,17 @@ div span{
         transform: rotate3d(0,0,0,0deg) translate3d(0px, 0px, 0px);
     }
     100%{
-        transform: rotate3d(1,1,1,360deg) translate3d(100px,0px,0px);
+        transform: rotate3d(1,1,1,360deg) translate3d(100px,100px,100px);
+    }
+}
+.scaler span{
+    background-color: #ff00dc; animation-name: scale3D;
+}
+@keyframes scale3D {
+    0%{
+        transform: scale3d(0,0,0); box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    }
+    100%{
+        transform: scale3d(1,1,1); box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
     }
 }
