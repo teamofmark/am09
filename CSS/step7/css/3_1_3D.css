@@ -13,12 +13,49 @@ div span{
 .rotater span:nth-of-type(1){background-color: red; animation-name: hori;}
 @keyframes hori{
     0%{
-
+        transform: rotateX(0deg);
     }
     100%{
-
+        transform: rotateX(360deg);
     }
 }
-.rotater span:nth-of-type(2){background-color: blue; animation-name: ;}
-.rotater span:nth-of-type(3){background-color: green; animation-name: ;}
-.rotater span:nth-of-type(4){background-color: yellow; animation-name: ;}
+.rotater span:nth-of-type(2){background-color: blue; animation-name: verti;}
+@keyframes verti{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.rotater span:nth-of-type(3){background-color: green; animation-name: depth;}
+@keyframes depth{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate3D;}
+@keyframes rotate3D{
+    0%{
+        /* transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); */
+        transform: rotate3d(0,0,0,0deg);
+    }
+    100%{
+        /* transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+.translater span{
+    background-color:aqua; animation-name: trans3D;
+}
+@keyframes trans3D {
+    0%{
+        transform: rotate3d(0,0,0,0deg) translate3d(0px, 0px, 0px);
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg) translate3d(100px,0px,0px);
+    }
+}
