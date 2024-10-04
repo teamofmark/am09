@@ -1,0 +1,44 @@
+body{
+    width: 200px; margin: 200px auto;
+    perspective: 300px;
+}
+div{
+    width: 200px; height: 200px; position: relative; animation-name: playBox;
+    animation-duration: 3s; animation-iteration-count: infinite;
+    animation-timing-function: linear; transform-style: preserve-3d;
+}
+@keyframes playBox {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+div span{
+    width: 200px; height: 200px; position: absolute; left: 0; top: 0; opacity: 0.5;
+    backface-visibility: visible;
+}
+div span:nth-of-type(1){background-color: red; transform:rotateY(0deg) translateZ(100px);}
+div span:nth-of-type(2){background-color: green; transform:rotateY(90deg) translateZ(100px);}
+div span:nth-of-type(3){background-color: blue; transform:rotateY(180deg) translateZ(100px);}
+div span:nth-of-type(4){background-color: cyan; transform:rotateY(270deg) translateZ(100px);}
+div span:nth-of-type(5){background-color: magenta; transform:rotateX(90deg) translateZ(100px);}
+div span:nth-of-type(6){background-color: yellow; transform:rotateX(270deg) translateZ(100px);}
+
+/*  
+    transform-origin이 설정 되어있지 않기 때문에 모든 종이는 가운데를 중심으로 작동하게 된다.    
+    first-of-type :  각도없이 z축으로만 100픽셀 만큼 이동 하게 된다.
+    nth-of-type(2) : 90도의 각을 가진 상태로 z축으로 100픽셀 만큼(면의 절반) 이동 하게된다.
+    nth-of-type(3) : first-of-type와 같아보이지만 180도 회전한 상태로 기준점이 반대가 됨으로, z축에서 100px 이동하는것이 first-of-type와는 반대 방향으로 이동하게된다.
+    nth-of-type(4) : 마찬가지로 nth-of-type(2)가 180도 회전한 상태로 기준점이 반대가 됨으로, z축에서 100px 이동하는 것이 nth-of-type(2)와는 반대 방향으로 이동하게 된다.
+    nth-of-type(5) : x축으로 90도 만큼 회전하여 z축으로 100픽셀 만큼 이동 하게 된다.(아래로)
+    last-of-type :  x축으로 270도 만큼 회전하여 (nth-of-type(5) 가 180도 회전한 상태) z축으로 100픽셀 만큼 이동 하게 된다.(위로)
+    ?perspective
+    ! 대상 면적 x2가 적당. 너무 높은 값 자제. (2000px정도 limit) 대상3D원근처리
+    ?transform-style
+    todo flat : 자식요소의 3차원 속성 무시.
+    * preserve-3d 자식요소의 3차원 속성 유지.  translate3d(X,Y,Z) 지정된 크기만큼 이동한다.
+    ?backface-visibility(이면가시성)
+    *visible : default. 이면을 보이겠다.
+    *hidden : 이면을 보이지 않겠다.
+*/
