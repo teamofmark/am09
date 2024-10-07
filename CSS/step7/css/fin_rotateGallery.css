@@ -1,0 +1,22 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0 auto; width: 1000px; background-color: black;
+}
+section{
+    position: relative; height: 100%; perspective: 1500px;
+}
+
+section .moveMent{
+    position: absolute; left: 50%; top: 20%; transform-style: preserve-3d;
+    animation-name: rotater; animation-duration: 15s; animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotater {
+    0%{
+        transform: rotateY(0deg);
+    }100%{
+        transform: rotateY(360deg);
+    }
+}
