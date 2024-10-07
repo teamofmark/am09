@@ -20,8 +20,16 @@ section .moveMent{
         transform: rotateY(360deg);
     }
 }
+/*
+	backface-visibility로 뒷부분이 투영되는 효과를 막는다. (이면 가시성 - 이면을 보여주거나(visible) 숨김(hidden))
+	.pic은 열의 역할을 하는데, 한장으로 모아 각각 정해진 각도로 분배 시킨다. 
+	돌아가는 열(.pic)이 유동적으로 움직이는데 고정하고 싶다면 margin-left: .pic_width / 2; 로 고정한다.
+	그렇게 하면 모든 열의 정 중앙을 중심으로 각도 변환이 일어나기 때문.
+	유동적으로 움직이는 이유는 transform-orgin을 설정하지 않아서 기본이 중앙이라고 생각 되지만 rotateY의 시작위치가 모두 다름으로 그에 따른 오차가 발생한다.
+	그렇기 때문에 원하지 않는 다면, 강제로 고정 해줘야함. 
+*/
 section .moveMent .pic{
-    position: absolute; left: 0; top: 0;
+    position: absolute; left: 0; top: 0; margin-left: -107px;
     backface-visibility: hidden;
 }
 section .moveMent .pic:nth-child(1){transform: rotateY(0) translateZ(-370px);}
