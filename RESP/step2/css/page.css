@@ -1,5 +1,28 @@
 /* ? M/Q (MediaQuery) - @media {device-screen} and (min-width:1280px - 1280px이상일때) and... */
 /* font-family: 'Playfair Display'; */
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    body{
+        font-family: 'Playfair Display'; background-color: lightpink;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; background-color: lightcoral;
+        margin-bottom: 30px; text-align: right;
+    }
+    article{
+        background-color: lightyellow; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: saddlebrown; color: lightsalmon; font-size: 24px; line-height: 30px;
+        margin-bottom: 20px; text-align: right;
+    }
+    article p{
+        background-color: sandybrown; font-size: 16px; line-height: 22px; padding: 20px;
+        color: brown;
+    }
+}
+/* ? tablet - 사용자의 해상도가 768px 이상, 1280 미만 일 때 */
+
 @media screen and (min-width: 1280px){
     body{
         font-family: 'Lato'; background-color: lightblue;
