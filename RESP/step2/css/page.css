@@ -1,0 +1,22 @@
+/* ? M/Q (MediaQuery) - @media {device-screen} and (min-width:1280px - 1280px이상일때) and... */
+/* font-family: 'Playfair Display'; */
+@media screen and (min-width: 1280px){
+    body{
+        font-family: 'Lato'; background-color: lightblue;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; background-color: lightgreen; margin-bottom: 30px;
+    }
+    article{
+        background-color: lightgray; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: seagreen; color: lightgreen; font-size: 24px; line-height: 30px;
+        margin-bottom: 20px;
+    }
+    article p{
+        background-color: lightyellow; font-size: 16px; line-height: 22px; padding: 20px;
+        color: brown;
+    }
+}
+/* ? desktop - 사용자의 해상도가 1280px 이상일 때 */
