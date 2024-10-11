@@ -1,6 +1,6 @@
-
 header div nav ul li a,
-header div > ul li p{
+header div > ul li p,
+footer > div *{
     font-family: 'Roboto';
 }
 header div > ul li h2{
@@ -16,6 +16,9 @@ a{
 /* ? All Use */
 
 @media screen and (min-width: 1280px) {
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
@@ -63,6 +66,58 @@ a{
     header div > ul li p{
         font-size: 14px; color: white; font-weight: 300; line-height: 24px; max-width: 780px; margin: 0 auto 45px;
         text-align: center;
-     }
+    }
+    header div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    /* todo. indicator 제작 */
+    /* ! active class = :hover event와 동일 */
+    header div ol{
+        text-align: center;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; width: 8px; height: 8px; border: 1px solid rgba(255,255,255,0.8); border-radius: 4px;
+        text-indent: -9999px;
+    }
+    header div ol li a.active,
+    header div ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* * header Fin */
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 31%; margin: 0 0 70px 3.5%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    footer > div div h2{
+        margin-bottom: 20px;
+    }
+    footer > div div:first-of-type h2{
+        line-height: 0;
+    }
+    footer > div div:not(:first-of-type) h2{
+        line-height: 50px; color: white; font-size: 15px; font-weight: 900;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px; color: white;
+    }
+    footer > div div:not(:nth-of-type(3)) a{
+        color: inherit;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        font-weight: 300;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    
 }
 /* ? desktop */
