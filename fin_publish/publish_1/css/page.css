@@ -13,5 +13,18 @@
     #about figcaption{
         float: left; margin-left: 10%; width: 65%;
     }
+    #about figcaption > *:not(a){
+        margin-bottom: 20px;
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
+    }
+    #about figcaption a{
+        max-width: 120px;
+    }
+    /* ? CI figure Fin */
 }
 /* ? desktop */
