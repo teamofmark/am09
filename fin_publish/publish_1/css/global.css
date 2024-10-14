@@ -18,6 +18,10 @@ a{
     font-family: 'Hammersmith One'; font-size: 16px; font-weight: 400; text-align: center; color: #00e0d0;
     border: 1px solid #00e0d0; display: block; padding: 11px 0.5%;
 }
+[class$='Area'] > hr{
+    /* width: 3%; min-width: 50px; */
+    width: 50px; border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
+}
 /* ? All Use */
 
 @media screen and (min-width: 1280px) {
