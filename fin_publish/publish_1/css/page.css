@@ -1,6 +1,17 @@
 
 
 @media screen and (min-width: 1280px) {
-    
+    #about{
+        padding-left: 7%;
+    }
+    #about:after{
+        content: ''; display: block; clear: both;
+    }
+    #about img{
+        float: left; width: 25%; max-width: 235px;
+    }
+    #about figcaption{
+        float: left; margin-left: 10%; width: 65%;
+    }
 }
 /* ? desktop */
