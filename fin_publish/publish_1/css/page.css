@@ -138,5 +138,38 @@
         max-width: 140px; margin: 0 auto;
     }
     /* ? teamArea Fin */
+    
+    /* todo. worksArea 완성 시키기 */
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        position: relative;
+    }
+    section.worksArea h2 a{
+        position: absolute; right: 0; top: 0; font-size: 14px; font-weight: 300; line-height: 22px; color: #413d4b;
+        /* color: inherit */
+        /* h2가 상,하 padding을 보유할 경우 positioning보다는 float: right 가 훨씬 나은 방법 */
+    }
+    section.worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.worksArea ul li{
+        width: 16.66%; float: left;
+    }
+    section.worksArea ul li *{
+        display: block;
+    }
+    section.worksArea ul li a img{
+        width: 100%;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140pxs; margin: 0 auto;
+    }
+    /* ? worksArea Fin */
 }
 /* ? desktop */
