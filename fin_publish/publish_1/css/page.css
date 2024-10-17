@@ -2,16 +2,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     #about{
-        padding-left: 7%;
+        padding-left: /*7%*/ 3.5%;
     }
     #about:after{
         content: ''; display: block; clear: both;
     }
     #about img{
-        float: left; width: 25%; max-width: 235px;
+        float: left; width: /*25%*/32%; max-width: 235px;
     }
     #about figcaption{
-        float: left; margin-left: 10%; width: 65%;
+        float: left; margin-left: /*10%*/8%; width: /*65%*/60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 20px;
@@ -66,8 +66,9 @@
         content: ''; display: block; clear: both;
     }
     section.expArea ul li{
-        float: left; width: 33.33%; display: block; padding: 120px 3.5% 40px; box-sizing: border-box;
+        float: left; width: 33.33%; display: block; padding: 120px /*1.56vw*/3.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
+        /*무너지는부분 해결방법 2번 - min-height: 296px; */ 
     }
     section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.2);        
@@ -83,7 +84,10 @@
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
 
     section.expArea ul li h3{
-        font-size: 14px; color: #413d4b; font-weight: 900; margin-bottom: 20px;
+        color: #413d4b; font-weight: 900; margin-bottom: 20px;
+        font-size: /*14px*/12px; /* 무너지는 부분 해결방법 1번*/
+        /* font-size: 14px; 무너지는 부분 해결방법 2번*/
+        /* font-size: 1.82vw; margin-bottom: 2.6vw; */
     }
     section.expArea ul li p{
         font-size: 14px; color: rgba(51,51,51,0.75); font-weight: 300; line-height: 22px;
