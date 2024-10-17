@@ -111,7 +111,7 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 70px;
+        max-width: /*940px*/ 728px; margin: 0 auto 70px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
@@ -124,7 +124,7 @@
     }
     section.teamArea ul li figure{
         background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
-        padding-top: 230px;
+        padding-top: /*230px*/180px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
@@ -148,7 +148,7 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/ 728px; margin: 0 auto 70px;
         position: relative;
     }
     section.worksArea h2 a{
@@ -184,7 +184,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 40px; color: white; padding-top: 65px;
+        max-width: /*770px*/728px; margin: 0 auto 40px; color: white; padding-top: 65px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -198,7 +198,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/ 728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -207,7 +207,7 @@
         font-size: 22px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/ 41%;
     }
     section.talkArea div ul li{
         float: left; display: block; width: 19%;
