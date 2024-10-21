@@ -1,19 +1,22 @@
 
 @media screen and (max-width: 767px) {
     #about{
-        padding-left: /*7%*/ 3.5%;
+        /* padding-left: 3.5%; */ text-align: center;
     }
-    #about:after{
+    /* #about:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     #about img{
-        float: left; width: /*25%*/32%; max-width: 235px;
+        /*float: left;*/ width: /*32%*/50%; max-width: 235px;
     }
+    /*
     #about figcaption{
-        float: left; margin-left: /*10%*/8%; width: /*65%*/60%;
+        float: left; margin-left: 8%; width: 60%;
     }
+    */
     #about figcaption > *:not(a){
-        margin-bottom: 20px;
+        margin-bottom: /*20px*/30px;
+        /* ! 수평 (x) / 수직 스크롤이 너무 길게 생긴다? => 상관없음.*/
     }
     #about figcaption h2{
         font-size: 22px; font-weight: 700; color: #413d4b;
@@ -22,7 +25,7 @@
         font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
     }
     #about figcaption a{
-        max-width: 120px;
+        max-width: 120px; margin: 0 auto;
     }
     /* ? CI figure Fin */
 
@@ -41,13 +44,10 @@
     /* ? video Fin */
     /* todo. expertise 완성해보기 */
     /* 
-        * 1. global - font, guide 설정 셋팅하기.
-        * 2. 첫 title(h2), 첫 문단(p), 구분선(hr)-module
-        * 3. list 처리
-        *   3-1. float 배치 (afterCancel)
-        *   3-2. border 처리
-        *   3-3. background-image 처리
-        *   3-4. 부제(h3), 관련문단(p) 처리
+        ! way1 Drop.
+        1. float 해제. (:afterCancel제거)
+        2. 관련속성 제거. (border...)
+        3. 관련속성 변경. (border...)
     */
     section.expArea{
         text-align: center;
@@ -65,9 +65,8 @@
         content: ''; display: block; clear: both;
     }
     section.expArea ul li{
-        float: left; width: 33.33%; display: block; padding: 120px /*1.56vw*/3.5% 40px; box-sizing: border-box;
+        float: left; width: 33.33%; display: block; padding: 120px 3.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
-        /*무너지는부분 해결방법 2번 - min-height: 296px; */ 
     }
     section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.2);        
@@ -84,9 +83,7 @@
 
     section.expArea ul li h3{
         color: #413d4b; font-weight: 900; margin-bottom: 20px;
-        font-size: /*14px*/12px; /* 무너지는 부분 해결방법 1번*/
-        /* font-size: 14px; 무너지는 부분 해결방법 2번*/
-        /* font-size: 1.82vw; margin-bottom: 2.6vw; */
+        font-size: 12px; 
     }
     section.expArea ul li p{
         font-size: 14px; color: rgba(51,51,51,0.75); font-weight: 300; line-height: 22px;
