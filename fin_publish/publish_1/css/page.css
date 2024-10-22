@@ -93,7 +93,7 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center; color: white;
-        padding: 70px 0;
+        padding: 70px /*0*/ 3%;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -108,7 +108,10 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: /*940px*/ 728px; margin: 0 auto 70px;
+        list-style: none;
+    }
+    /* section.teamArea ul{
+        max-width: 728px; margin: 0 auto 70px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
@@ -118,10 +121,13 @@
     }
     section.teamArea ul li:not(:first-child){
         margin-left: 2%;
+    } */
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://via.placeholder.com/220x230') center top / contain no-repeat;
-        padding-top: /*230px*/180px;
+        background: url('https://via.placeholder.com/220x230') center top / /*contain*/cover no-repeat;
+        padding-top: 180px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px 0;
