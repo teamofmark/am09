@@ -89,5 +89,21 @@ a{
     .paging > a:last-of-type{
         right: 0; border-left: 1px solid #f0f2f7;
     }
+    .paging ol{
+        text-align: center; padding: 20px 17%; box-sizing: border-box;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; width: 50px; line-height: 50px; border-radius: 25px;
+        font-size: 14px; color: #3a405b; font-weight: 600; background-color: white;
+        transition: box-shadow 0.3s ease-out;
+    }
+    .paging ol li a.active,
+    .paging ol li a:hover{
+        box-shadow: 0 5px 8px rgba(168,172,185,0.62); color: #b9bed1;
+    }
+    /* ? pager Fin */
 }
 /* desktop */
