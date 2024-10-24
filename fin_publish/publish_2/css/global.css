@@ -14,10 +14,18 @@ input[type='checkbox']{
 a{
     text-decoration: none;
 }
+.selectBox{
+    display: inline-block; box-sizing: border-box; background: url('../images/bg_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image: none; background-color: transparent; appearance: none; font-family: inherit;
+    font-size: 11px; font-weight: 600; padding: 10px 20px 10px 0; color: #343e5c;
+}
 
 @media screen and (min-width: 1280px) {
     header > div,
     header + nav .slideNav,
+    .contentArea,
     footer > div{
         max-width: 1170px; margin: 0 auto;
     }
