@@ -190,6 +190,20 @@
     .contentArea aside nav ul > li:hover ol li a{
         font-size: 11px; padding: 15px 7%; opacity: 1; border-bottom: 1px solid #dfe4ee;
     }
+    /* ? 2depth menu */
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 55px 0 20px; margin-bottom: 30px;
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 33px;
+    }
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; padding: 0 7% 15px; border-bottom: 1px solid #f0f2f7;
+        box-sizing: border-box; width: 100%; position: relative; text-transform: uppercase; top: 33px;
+    }
 
     .contentArea section{
         width: 74%; float: left; margin-left: 3%;
