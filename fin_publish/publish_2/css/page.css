@@ -261,5 +261,21 @@
     .contentArea section{
         width: 74%; float: left; margin-left: 3%;
     }
+    .contentArea section h3{
+        display: none;
+    }
+    .contentArea section ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .contentArea section ul li{
+        display: block; float: left; width: 31%; background-color: white; border-radius: 5px;
+        margin: 0 0 30px 3.5%; min-height: 380px;
+    }
+    .contentArea section ul li:nth-child(1),
+    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(6),
+    .contentArea section ul li:nth-child(9){
+        margin-left: 0;
+    }
 }
 /* desktop */
