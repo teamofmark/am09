@@ -1,0 +1,42 @@
+/* 
+    display: flex;
+    ? 부모를 기준으로 자손을 배치(display: flex-item)하는 방식. - 부모요소는 block으로 배치해야할 때.
+    display: inline-flex;
+    ? 부모를 기준으로 자손을 배치(display: flex-item)하는 방식.- 부모요소가 inline-block으로 배치해야할 때.
+*/
+.flexContainer{
+    margin: 10px; padding: 15px; border-radius: 25px; background-color: #a4a4a4;
+    display: flex;
+}
+.flexContainer:last-of-type{
+    margin-bottom: 300px;
+}
+.flexContainer .flexItem{
+    margin: 10px; padding: 20px; color: white; text-align: center; border-radius: 25px;
+    background-color: black;
+}
+.flexContainer.test{
+    width: 48%; display: inline-flex; box-sizing: border-box;
+}
+.flexContainer.direction{
+    flex-direction: column-reverse;
+    /* 
+        flex-direction:
+        flexContainer의 주축(mainAxis) 방향을 설정.
+        ? row(ltr)-default, row-reverse(rtl), column(TopToBottom), column-reverse(BottomToTop)
+    */
+}
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse;
+    /* 
+    
+        nowrap-default: 개행불허. 1행에 모두배치. flexItem width 가능한 범위까지 자동축소.
+        wrap : width초과시 개행. 
+        wrap-reverse : width초과시 개행하되 역배치.
+    */
+}
+.flexContainer.wrap .flexItem{
+    width: 500px;
+    /* width: calc(33% - 30px); box-sizing: border-box; */
+    /* max-width, min-width... */
+}
