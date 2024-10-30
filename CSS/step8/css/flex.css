@@ -29,7 +29,8 @@
 .flexContainer.wrap{
     flex-wrap: wrap-reverse;
     /* 
-    
+        flex-wrap:
+        * flex-wrap은 flexContainer의 width보다 flexItem들의 width 총합이 큰 경우 개행 여부 결정.
         nowrap-default: 개행불허. 1행에 모두배치. flexItem width 가능한 범위까지 자동축소.
         wrap : width초과시 개행. 
         wrap-reverse : width초과시 개행하되 역배치.
@@ -39,4 +40,39 @@
     width: 500px;
     /* width: calc(33% - 30px); box-sizing: border-box; */
     /* max-width, min-width... */
+}
+
+.flexContainer.flow{
+    flex-flow: row-reverse wrap-reverse;
+    /* 
+        flex-flow:
+        direction / wrap을 줄여 쓸 수(shorthand)있다.
+        <flex-direction> | <flex-wrap>
+    */
+}
+.flexContainer[class$='Content']{
+    padding: 0;
+}
+.flexContainer[class$='Content'] .flexItem{
+    margin: 0;
+}
+.flexContainer.flow .flexItem{
+    width: 33.33%; max-width: 500px; min-width: 300px;
+}
+.flexContainer.justifyContent{
+    justify-content: space-around;
+    /* 
+    justify-content : 
+
+    -manual(직접사이간격을구함)-
+    flex-start (flexItem을 부모기준 좌측정렬)
+    center (flexItem을 부모기준 중앙정렬)
+    flex-end (flexItem을 부모기준 우측정렬)
+
+    -auto(flex가 자동으로 사이간격을 구함)
+    space-between (flexItem중 1-좌측,L-우측 / 외 나머지는 동일간격으로 정렬)
+    space-evenly (여유공간을 flex항목사이의 공간 및 시작선 및 끝선과 flex항목간의 공간에 모두 균등하게 배분)
+    space-around (flexItem간 간격을 최대한 넓게 쓰되 좌,우측 경계에는 닿지 않게(item너비초과불가))-비중요
+
+    */
 }
