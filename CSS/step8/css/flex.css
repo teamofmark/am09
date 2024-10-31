@@ -63,7 +63,7 @@
     justify-content: space-around;
     /* 
     justify-content : 
-
+    flexContainer의 mainAxis를 기준으로 flexItem을 수평(direction에따라 다름)정렬
     -manual(직접사이간격을구함)-
     flex-start (flexItem을 부모기준 좌측정렬)
     center (flexItem을 부모기준 중앙정렬)
@@ -75,4 +75,20 @@
     space-around (flexItem간 간격을 최대한 넓게 쓰되 좌,우측 경계에는 닿지 않게(item너비초과불가))-비중요
 
     */
+}
+.flexContainer.alignContent{
+    height: 400px;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* flex-flow: column wrap; */
+    /* 
+        align :
+        flexContainer의 crossAxis를 기준으로 flexItem을 수직(direction에따라 다름)정렬
+
+        stretch(crossAxis start 에서 end까지 잡아 늘린다.)
+    */
+}
+.flexContainer.alignContent .flexItem{
+    width: 33%; max-width: 300px; min-width: 150px;
 }
