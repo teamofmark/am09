@@ -185,3 +185,17 @@
     * center - 부모 공간 기준(자손중 가장 큰)으로 자신의 위치를 중앙으로 맞추기
     * flex-end -부모 공간 기준(자손중 가장 큰)으로 자신의 위치를 하단으로 맞추기
 */
+
+.flexContainer.orderItem .flexItem:first-of-type{
+    order: 1; background-color: lightgreen; color: green; font-weight: bold;
+}
+.flexContainer.orderItem .flexItem:nth-of-type(3){
+    order: 2; background-color: lightblue; color: midnightblue; font-weight: bold;
+}
+.flexContainer.orderItem .flexItem:last-of-type{
+    order: -1; background-color: lightpink; color: deeppink; font-weight: bold;
+}
+/* 
+    order :
+    flexContainer의 flexItem을 orderNumber(default : 0)로 정렬 순서를 바꾼다. (적을수록 <- / 클수록 ->)
+*/
