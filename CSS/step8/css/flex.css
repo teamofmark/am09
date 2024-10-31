@@ -98,3 +98,23 @@
 .flexContainer.alignContent .flexItem{
     width: 33%; max-width: 300px; min-width: 150px;
 }
+.flexContainer.justifyItems{
+    background-color: yellow; width: 300px; display: grid;
+    justify-items: stretch;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
+.flexContainer.justifyItems .flexItem{
+    margin: 1px;
+}
+/* 
+    justify-items:
+    * flexItem들을 flexContainer Width 기준으로 수평방향정렬
+    * justify-items 속성은 모든 flexItem에 적용됨.
+
+    stretch ( crossStart에서 end까지 잡아 늘림)
+    flex-start (crossStart 기준으로 정렬)
+    flex-end (crossEnd 기준으로 정렬)
+    center (flexContainer의 주축 중앙 정렬)
+*/
