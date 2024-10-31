@@ -87,6 +87,12 @@
         flexContainer의 crossAxis를 기준으로 flexItem을 수직(direction에따라 다름)정렬
 
         stretch(crossAxis start 에서 end까지 잡아 늘린다.)
+        flex-start (flexItem 행 간격 없이 (stack))
+        flex-end (flexContainer의 cross end 기준으로 행 간격 없이)
+        center (flexContainer의 cross axis 중앙 기준으로 행 간격 없이)
+        space-between (첫 행은 flexContainer cross start 기준, 마지막 행은 flexContainer cross end 기준, 나머지 행 균등하게)
+        space-around (모든 flexItem은 처음,마지막 사이를  동일간격으로 정렬 외 나머지 배치)
+        space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
     */
 }
 .flexContainer.alignContent .flexItem{
