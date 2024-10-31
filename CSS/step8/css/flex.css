@@ -118,3 +118,27 @@
     flex-end (crossEnd 기준으로 정렬)
     center (flexContainer의 주축 중앙 정렬)
 */
+.flexContainer.alignItems{
+    background-color: orange;
+    align-items: baseline;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-start;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+/* 
+    align-items:
+    * flexItem을 line-height(contentHeight)기준으로 flexContainer의 수직 방향으로 정렬한다.
+    * align-items 속성은 모든 flexItem에 적용된다.
+
+    * stretch (cross Start 에서 End까지 꽉찬 높이)
+    * flex-start (cross Start 기준으로 정렬.)
+    * flex-end (cross End 기준으로 정렬.)
+    * center  (flexContainer의 주축 중앙에 정렬.)
+    * baseline (안의 컨텐츠 End 기준으로 정렬.)
+*/
