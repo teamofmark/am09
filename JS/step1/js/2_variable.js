@@ -58,3 +58,8 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+// * 만들기
+
+var userName; //? 선언
+userName = 'Mark'; //? 선언 및 초기화
