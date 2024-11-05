@@ -63,3 +63,24 @@
 
 var userName; //? 선언
 userName = 'Mark'; //? 선언 및 초기화
+
+// * case.1 동시 선언 및 동시 초기화
+var radius, pi; //? 한번에 선언 - undefined.
+radius = 10, pi = 3.14159265; //? 한번에 초기화 - 10, 3.14159265;
+
+// * case.2 변수의 특성
+var cup = 'Coffee';
+cup = 'Green Tea';
+cup = 'Water';
+
+// document.write('Drink' + cup + '...!');
+
+// * case.3 연산자 사용
+var value = 10; //? value 변수 선언 및 10 초기화
+value = value + 20;
+
+// todo. 자신의 현 나이를 변수에 담고 1회 log로 출력하되 20년 뒤 나이 또한 연산하여 1회 log로 출력하기.
+var cliAge = 44;
+console.log('나의 현재 나이는 ' + cliAge + '세 이고,');
+cliAge = cliAge + 20;
+console.log('20년 뒤 나이는 ' + cliAge + '세 이다.');
