@@ -95,19 +95,37 @@ function numbString(){
 // todo. 1-1 암시적형변환
 function todo1(){
     var test = 100;
-    var result = test; // todo.
-    console.log(자료형검수 + " = " + result); // ! 결과 : string = 100
+    var result = test + ""; // todo.
+    console.log(typeof(result) + " = " + result); // ! 결과 : string = 100
 }
 // todo. 1-2 String 형변환
 function todo2(){
     var test = 100;
-    var result = test; // todo.
-    console.log(자료형검수 + " = " + result); // ! 결과 : string = 100
+    var result = String(test); // todo.
+    console.log(typeof(result) + " = " + result); // ! 결과 : string = 100
 }
 
 // todo. 1-3 toString 형변환
 function todo3(){
     var test = 100;
-    var result = test; // todo.
-    console.log(자료형검수 + " = " + result); // ! 결과 : string = 100
+    var result = test.toString(); // todo.
+    console.log(typeof(result) + " = " + result); // ! 결과 : string = 100
+}
+// todo. 문자형을 숫자형으로 변환하여 연산이 가능하게 만들기.
+// todo. 2-1 parse 형변환
+function todo4(){
+    var test = "100.51";
+    var result = test + 150 + "20"; // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270
+}
+function todo4(){
+    var test = "100.51";
+    var result = test + 150 + "20"; // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270.51
+}
+// todo. 2-2 Number 형변환
+function todo6(){
+    var test = "100.51";
+    var result = test + 150 + "20"; // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270.51
 }
