@@ -61,3 +61,18 @@ function stringtoNumb(){
     var result = test1.toString();
     console.log('변환 후 : ' + typeof(result) + ' = ' + result);
 }
+// !tune - randomBackgroundColor
+function bgColorRandom(){
+    setInterval(()=>{
+        var bgColor = Math.random()*0xfff;
+        // ? 0x = 16진. 15*16^3 + 15*16^2 + 15*16^1 + 15*16^0 - 최대수치.
+        // ! 2진 표현시 0000 0000 0000 0000 1111 1111 1111 1111
+        console.log(bgColor);
+        bgColor = parseInt(bgColor);
+        console.log(bgColor);
+        bgColor = bgColor.toString(16);
+        console.log(bgColor);
+        // document.querySelector("body").style.backgroundColor="#"+bgColor;
+        $("body").css("background-color","#"+bgColor);
+    },500);
+}
