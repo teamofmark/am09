@@ -115,17 +115,17 @@ function todo3(){
 // todo. 2-1 parse 형변환
 function todo4(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 
+    var result = parseInt(test) + 150 + parseInt("20"); // todo. 
     console.log(typeof(result) + " = " + result); //! number = 270
 }
-function todo4(){
+function todo5(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 
+    var result = parseFloat(test) + 150 + parseInt("20"); // todo. 
     console.log(typeof(result) + " = " + result); //! number = 270.51
 }
 // todo. 2-2 Number 형변환
 function todo6(){
     var test = "100.51";
-    var result = test + 150 + "20"; // todo. 
+    var result = Number(test) + 150 + Number("20"); // todo. 
     console.log(typeof(result) + " = " + result); //! number = 270.51
 }
