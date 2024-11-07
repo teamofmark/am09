@@ -60,12 +60,60 @@ function numbOP2(){
     console.log('복합연산 : ' + result);
 }
 // todo. 1 숫자 5를 2로 나누었을 때 나머지 값이 몇인지 result 변수에 저장후 console에 출력.
-
+function numbOP3(){
+    var result = 5%2;
+    console.log(result);
+}
 // todo. 2 'hi'가 담긴 변수 a 와 'WEB'이 담긴 변수 b를 합쳐 'hiWEB'을 console에 출력.
+function stringOP(){
+    var a = 'hi';
+    var b = 'web';
+    console.log(a+b);
+}
 
 // todo. 3 다음 코드를 복합대입연산자를 이용하여 간소화 해보기.
 function compareOperator(){
     var a = 10;
-    a = a + 20;
+    // a = a + 20;
+    a+=20;
     console.log('a = ' + a);
+}
+// case.3 ul안에 li구조의 tag들을 삽입하여 html에 출력.
+function operatorEx(){
+    var list = ''; // 무엇이든 다 담을 수 있는 변수
+    list += '<ul>';
+    list += '   <li>Hello</li>';
+    list += '   <li>JS...!</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+// case.4 연산자가 뒤로 올 경우-
+function numberPlusAfter(){
+    var number = 10;
+    alert(number++); // todo. 결과값 : 11(x) -> 10 -> 11
+    alert(number++); // todo. 결과값 : 12(x) -> 11
+    alert(number++); // todo. 결과값 : 13(x) -> 12
+    console.log(number);
+}
+// case.5 연산자가 앞으로 올 경우-
+function numberPlusBefore(){
+    var number = 10;
+    alert(++number); // todo. 결과값 : 11
+    alert(++number); // todo. 결과값 : 12
+    alert(++number); // todo. 결과값 : 13
+
+}
+// todo. 증감 연산자적용의 이해 
+function numberPlusTodo(){
+    var number = 10;
+    console.log(number++); // todo. 출력 : 10 / 현재 : 11 
+    console.log(--number); // todo. 출력 : 10 / 현재 : 10  
+    console.log(++number); // todo. 출력 : 11 / 현재 : 11  
+    console.log(number--); // todo. 출력 : / 현재 :  
+    console.log(number++); // todo. 출력 : / 현재 :  
+    console.log(++number); // todo. 출력 : / 현재 :  
+    console.log(--number); // todo. 출력 : / 현재 :  
+    console.log(number++); // todo. 출력 : / 현재 :  
+    console.log(++number); // todo. 출력 : / 현재 :  
+    console.log(number); // todo. 최종결과 : 13.
 }
