@@ -15,3 +15,35 @@
 	alert('종료');
     
 */
+// case.1 현재시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date(); //? YYYY-MM-DD-HH-MM-SS
+    // console.log(date);
+    var hour = date.getHours();
+    // console.log(hour);
+    
+    if(hour < 12){
+        alert('오전입니다.');
+    }else{
+        alert('오후입니다.');
+    }
+}
+// * case.2 말일인가 아닌가
+function lastDay(){
+    var date = new Date();
+    var day = date.getDate();
+    console.log(day);
+    if(day<30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+function lastDayEx(){
+    function endOfMonth(date){
+        return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    }
+    dt = new Date(); 
+        
+    console.log(endOfMonth(dt).toString());
+}
