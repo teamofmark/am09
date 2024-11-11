@@ -146,3 +146,8 @@ function logicalOperator2(){
     var result = (a=="남자") || (b=="웹퍼블리셔");
     console.log("result = " + result);
 }
+// todo. 다음 코드의 실행하여 문제점을 찾아 수정하기
+function compareOperator3(){
+    console.log(30 > 20 && 20 > 10); //? false
+    // ! true > 10 -> 1 > 10 -> false.
+}
