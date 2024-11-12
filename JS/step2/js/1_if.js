@@ -93,4 +93,73 @@ function avgScore(){
     var avg = (Number(koreanScore) + Number(englishScore) + Number(mathScore))/3;
     console.log(avg);
     // 조건문 완성 예정
+    // ! else를 어찌 활용 하느냐(사용자발생에러)에 따라 if문의 연장길이가 결정된다.
+    if(avg > 100 || avg < 0){
+        alert('점수 똑바로 입력하라.');
+        // ? return , break 중단
+    }else if(avg >= 90){
+        alert('평균' + avg.toFixed(2) + '점 \n' + '수 입니다.');
+    }else if(avg >= 80){
+        alert('평균' + avg.toFixed(2) + '점 \n' + '우 입니다.');
+    }else if(avg >= 70){
+        alert('평균' + avg.toFixed(2) + '점 \n' + '미 입니다.');
+    }else if(avg >= 60){
+        alert('평균' + avg.toFixed(2) + '점 \n' + '양 입니다.');
+    }else if(avg >= 50){
+        alert('평균' + avg.toFixed(2) + '점 \n' + '가 입니다.');
+    }else{
+        alert('잘못된 값이 입력되었습니다.');
+    }
+}
+// case. 5 사용자의 아이디를 입력받아 맞다면 승인 메시지 출력.
+function userIDCheck(){
+    var userID = prompt("사용자의 아이디");
+    if(userID =="Mark"){
+        alert('접속을 승인합니다.');
+    }else{
+        alert('잘못된 ID 입니다.');
+    }
+}
+/*
+const axios = require('axios');
+axios.get('/user?ID=Mark')
+.then(function(){
+    성공실행부
+})
+.catch(function(error){
+    에러실행부
+});
+.finally(function(){
+    상시실행부
+});
+*/
+// todo 사용자 id "mark"와 password "1234"를 입력받고 둘 다 맞을 경우에만 승인 메시지 출력.
+function userInfoCheck(){
+    var userID = prompt('아이디를 입력하세요');
+    var userPW = prompt('패스워드를 입력하세요');
+    if(userID=="Mark"&&userPW=="1234"){
+        alert('Mark님으로 확인되었습니다.'); // 둘 다 맞는 경우 실행
+    }else{
+        alert('ID 혹은 password가 틀렸습니다.'); // 둘 중 하나라도 틀린 경우 실행
+    }
+}
+// ! 삼항처리
+function userInfoCheck1(){
+    var userID = prompt('아이디를 입력하세요');
+    var userPW = prompt('패스워드를 입력하세요');
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다."):alert("ID 혹은 password가 틀렸습니다.");
+}
+// case. 6 사용자 id "Mark"와 password "1234"의 정보가 틀릴경우 틀린 정보에 대한 오류메시지 출력.
+function userInfoCheck2(){
+    var userID = prompt('아이디를 입력하세요');
+    var userPW = prompt('패스워드를 입력하세요');
+    if(userID=="Mark"&&userPW=="1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" && userPW != "1234"){
+        console.log("모든 정보가 맞지않습니다.");
+    }else if(userID!="Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        console.log("password가 틀렸습니다.");
+    }
 }
