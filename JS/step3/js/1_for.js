@@ -17,3 +17,39 @@ for (var index = 0; index < 10; index++) {
     
 }
 */
+
+// case.1 자신의 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 1; i <= 10; i++){
+        document.write(i + '.' + userName + '<br>');
+    }
+}
+// case.2 자신의 이름을 1000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i<=1000; i++){
+        document.write(i+'.'+userName+'<br>');
+    }
+}
+// todo. 1,000번 출력중 홀수 번째만 나오게 해보자.
+function namePrint500(){
+    for(var i = 1; i<=1000; i+=2){
+        document.write(i+'.'+userName+'<br>');
+    }
+}
+// case.3 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력하라.
+function favorFruit(){
+    var array = ['포도','사과','딸기','메론','수박'];
+    // ? array(배열) - data들이 저장되는 방. -> ex> ['data'[0],'data1'[1],'data2[2]'];
+    for(var i = 0; i < array.length; i++){
+        console.log(array[i]);
+    }
+}
+// case.4 지금까지 배웠던 JS단원명을 배열을 활용해 출력해보기.
+function arrayFor(){
+    var data = ["변수","자료유형변환","연산자","조건문if","조건문switch","반복문for"];
+    for(var i = 0; i<data.length; i++){
+        document.write(i + "번째 내용 " + data[i] + '<br>');
+    }
+}
