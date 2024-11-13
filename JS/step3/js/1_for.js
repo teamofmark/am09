@@ -49,7 +49,9 @@ function favorFruit(){
 // case.4 지금까지 배웠던 JS단원명을 배열을 활용해 출력해보기.
 function arrayFor(){
     var data = ["변수","자료유형변환","연산자","조건문if","조건문switch","반복문for"];
+    var swapNumb = ["첫","두","세","네","다섯","여섯"];
     for(var i = 0; i<data.length; i++){
-        document.write(i + "번째 내용 " + data[i] + '<br>');
+        document.write(swapNumb[i] + "번째 내용 " + data[i] + '<br>');
     }
 }
+// todo. switch 로 변형해오기
