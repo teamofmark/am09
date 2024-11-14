@@ -14,4 +14,5 @@ function btnMouseEx(){
     }else{
         document.write("올바른값을 입력하세요.");
     }
+    // -> if x 1 , else x 1 줄여보기
 }
