@@ -80,9 +80,6 @@ function arrayFor2(){
             case 5:
                 swapNumb = '여섯';
                 break;
-            case 6:
-                swapNumb = '일곱';
-                break;
             default:
                 i = 'x';
                 break;
