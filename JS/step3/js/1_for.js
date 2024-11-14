@@ -153,6 +153,12 @@ function runBreak(){
 }
 function runBreak2(){
     var swapNumb = ['첫','두','세','네','다섯']; //? 배열값을 변화시키면 자동으로 반응하는 경고창.
-
+    for(var i = 0; true; i++){
+        alert(swapNumb[i] + '번째 반복문');
+        if( i == swapNumb.length-1){
+            break;
+        }
+    }
+    document.write('지정된 배열값' + swapNumb.length + '모두 출력 완료');
     // todo 출력문 : 반복이 완료된 이후 "지정된 배열값 [배열수] 모두출력완료"
 }
