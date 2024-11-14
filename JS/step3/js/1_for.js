@@ -87,3 +87,72 @@ function arrayFor2(){
         document.write(swapNumb + "번째 내용 =" + data[i] + '<br>');
     }
 }
+// case.5 역반복배열
+function reverseFavorFruit(){
+    var array = ['포도','사과','딸기','메론','수박'];
+    for(var i = array.length - 1; i>=0; i--){ //? 정반복(정방향출력) / 역반복 (역방향출력)
+        document.write(array[i]+"<br>");
+    }
+}
+// case.6 continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i+"<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function continueEx(){
+    var text = '';
+    for(var i = 0; i<10; i++){
+        if(i == 3){
+            continue;
+        }
+        // filter - 특정조건이 아닐때 함수실행금지 (ex> popupBtn x 10 라 가정 할 때 9개는 동일한 팝업을 출력해야됨. 1개는 예외 -> if(btnName=="???"){continue})
+        text = text+i;
+    }
+    console.log(text);
+}
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i<=10; i++){
+        if(i%2==1){
+            continue;
+        }
+        // continue filter 만들어보기
+        output += i; //todo continue를 이용하여 (2,6,12,20,30)만 출력되게 만들어라.
+        console.log(output);
+    }
+}
+// case.7 break
+function forBreak(){
+    for(var i = 1; i <= 10; i++){
+        break;
+        document.write(i+"<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function breakEx(){
+    var i = 0;
+    while(i<6){
+        if(i == 3){
+            break;
+        }
+        i = i + 1;
+    }
+    console.log(i);
+}
+// todo
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + "번째 반복문");
+        if(!confirm('계속할래?')){
+            break;
+        }
+    }
+}
+function runBreak2(){
+    var swapNumb = ['첫','두','세','네','다섯']; //? 배열값을 변화시키면 자동으로 반응하는 경고창.
+
+    // todo 출력문 : 반복이 완료된 이후 "지정된 배열값 [배열수] 모두출력완료"
+}
