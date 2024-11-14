@@ -55,3 +55,38 @@ function arrayFor(){
     }
 }
 // todo. switch 로 변형해오기
+function arrayFor2(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 for"];
+    // ? 치환 배열을 짜는방법 var swapNumb = ["첫","두"..];
+    var swapNumb = '';
+    for (var i = 0; i < data.length; i++) {
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            case 6:
+                swapNumb = '일곱';
+                break;
+            default:
+                i = 'x';
+                break;
+        }
+        document.write(swapNumb + "번째 내용 =" + data[i] + '<br>');
+    }
+}
