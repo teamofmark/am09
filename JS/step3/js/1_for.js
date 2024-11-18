@@ -162,3 +162,28 @@ function runBreak2(){
     document.write('지정된 배열값' + swapNumb.length + '모두 출력 완료');
     // todo 출력문 : 반복이 완료된 이후 "지정된 배열값 [배열수] 모두출력완료"
 }
+// ! 다중 for
+// case.1 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i>=1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo 피라미드
+// ! &nbsp;(공백문자), 반복문 총 3개(공백+별+줄바꿈 / 단, 별은 홀수출력이 되어야만 피라미드 모양)
