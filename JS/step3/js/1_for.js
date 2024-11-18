@@ -187,3 +187,16 @@ function reverseHalfPyramid(){
 }
 // todo 피라미드
 // ! &nbsp;(공백문자), 반복문 총 3개(공백+별+줄바꿈 / 단, 별은 홀수출력이 되어야만 피라미드 모양)
+function pyramid(){
+    var star = '';
+    for(var i = 1; i<= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';// ! &nbsp; loop 역반복
+        }
+        for(var s = 0; s < 2*i-1; s++){
+            star += '*';// ! * loop 정반복
+        }
+        star += '<br>';// ! <br> loop
+    }
+    document.write(star);
+}
