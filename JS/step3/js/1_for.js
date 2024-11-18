@@ -200,3 +200,18 @@ function pyramid(){
     }
     document.write(star);
 }
+function pyramidEx(){
+    for(var i = 0; i < 10; i++)  {
+        for(var j=9; j > i; j--)  {
+          // space
+          document.write('&nbsp');
+        }
+        for(var j=0; j <= i; j++)  {
+          document.write('*');
+        }
+        for(var j=1; j <= i; j++)  {
+          document.write('*');
+        }
+        document.write('<br>');
+      }      
+}
