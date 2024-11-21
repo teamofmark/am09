@@ -232,3 +232,10 @@ function hi2(){
 function execute(func){
     func();
 }
+// case.10 버튼을 클릭했을 때 매개변수값으로 전달받은 함수 실행하기
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+$(document).ready(function(){
+    $("#runEx10").click(welcome);
+});
