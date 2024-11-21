@@ -105,8 +105,8 @@ function infiniteSum(){
     while(true){
         var value = parseInt(window.prompt("숫자만 입력해라."));
         if(value == 0){
-            document.write("종료");
-            break; //  return; return 은 함수를 빠져나오지만, break는 루프를 빠져나오기 때문에 "총 x 번 실행함 구문이 출력"
+            document.write("종료","<br>");
+            return; //  return; return 은 함수를 빠져나오지만, break는 루프를 빠져나오기 때문에 "총 x 번 실행함 구문이 출력"
         }
         
         sum += value;
@@ -114,4 +114,16 @@ function infiniteSum(){
         count++;
     }
     document.write("총 "+count+"번 실행함.");
+}
+// csae.7 무한곱셈공식 생성 - 어느 곳에서나 출력이 가능한.
+function printGugudan(numb){
+    var data = '';
+    for(var i = 2; i<=numb; i++){
+        data += i + "단 출력"+"<br>";
+        for(var m = 1; m <= numb; m++){
+            data += i + "x" + m + " = " + (i*m)+"<br>";
+        }
+        data += "<br>";
+    }
+    return data;
 }
