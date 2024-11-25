@@ -237,5 +237,61 @@ function welcome(){
     alert("환영합니다. 반갑습니다.");
 }
 $(document).ready(function(){
-    $("#runEx10").click(welcome);
+    $("#runEx10").click(welcome); 
 });
+// case.11 1초마다 매개변수 값으로 넘긴 익명 함수 호출
+function loopStart(){
+    setInterval(function(){
+        document.write("hi, hello");
+    },1000);
+}
+
+// case.12 함수를 매개변수로 전달받아 반복호출 하기
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('hello?','<br>');
+}
+
+// lastCase. returnValue로 함수를 사용하기
+function createHello(){
+    function hello(user){
+        document.write(user+'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
+
+
+/*
+? 리터럴
+    * 현재까지 변수를 만들 때 사용하던 방식
+
+    *ex 리터럴방식
+    var age = 10, var name = "mark"
+    
+    *ex 객체방식
+    var age = new Number(10);
+    var name = new String("Mark");
+
+    * ex.1 함수만드는 방법의 4가지
+    var hello = function(name){ //? 리터럴방식
+        alert(name + "hello");
+    }
+    hello("mark");
+
+    function hello(name){ //? 일반함수방식
+        alert(name + "hello");
+    }
+    hello("mark");
+
+    var hello2 = new Function("name", "alert(name+'hello');"); //? 객체방식 (실용도없음)
+    hello2("mark");
+
+    (function(name){ //? 익명함수확장 (재사용이 목적이 아닌 다른 함수간의 충돌을 막기위함.)
+        document.write(name + "님 환영합니다.");
+    })("mark");
+*/
