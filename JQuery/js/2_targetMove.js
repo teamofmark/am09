@@ -5,6 +5,9 @@ $(document).ready(function(){
     // case.2 입력된 x,y value를 가져와 원움직이기
     // $("#btnDetailMove").click(detailMoveCircle);
     detailMoveCircleExt();
+
+    // case.3 keyControl
+    keyControl();
 });
 // case.1
 function moveCircle(){
@@ -75,4 +78,36 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+
+// case.3 keyControl
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+    // ? key입력받는 방법 - PsyElectronicSign -> softwareEngineering(true and false) -> language
+    $(document).keydown(function(e){
+        console.log("입력한 key Code : " + e.keyCode);
+        // * w: 87(yPos-), d:68(xPos+), s:83(yPos+), a:65(xPos-)
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+        }
+        // 집 나간원 잡아오기 - 집못나가게
+        
+    
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
+    });
 }
