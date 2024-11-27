@@ -5,6 +5,8 @@ $(document).ready(function(){
     toggleTodo();
     // case. 2 tabUI
     tabUI();
+    // case. 3 accComponent
+    accControl(".accComponent li h3");
 });
 // case. 1
 function toggleCheck(){
@@ -54,5 +56,12 @@ function tabUI(){
 
         $(".tabPage").removeClass("activated");
         $("#" + activeTab).addClass("activated");
+    });
+}
+// case. 3
+function accControl(target){
+    $(target).click(function(){
+        // $(this).toggleClass("active");
+        $(this).next().slideToggle();
     });
 }
