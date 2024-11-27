@@ -3,6 +3,8 @@ $(document).ready(function(){
     toggleCheck();
     // todo.
     toggleTodo();
+    // case. 2 tabUI
+    tabUI();
 });
 // case. 1
 function toggleCheck(){
@@ -42,4 +44,15 @@ function toggleTodo(){
     // ? target.attr() = 대상의 모든 attr을 불러와 / 
     // ? target.attr("attr이름") = 대상의 해당 attr을 불러와 /
     // ? target.attr("attr이름","attr값") = 대상의 해당 attr 값을 바꿔라
+}
+// case. 2
+function tabUI(){
+    $(".tabMenu li").click(function(){
+        var activeTab = $(this).attr("data-tabNumb");
+        $(".tabMenu li").removeClass("activated");
+        $(this).addClass("activated");
+
+        $(".tabPage").removeClass("activated");
+        $("#" + activeTab).addClass("activated");
+    });
 }
