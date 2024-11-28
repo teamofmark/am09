@@ -2,7 +2,7 @@ $(document).ready(function(){
     // case.1 xAxis 로 imgs 펼치기
     imgAlignHori();
     // todo. x,yAxis 로 imgs 펼치기
-    imgAlignMix();
+    imgAlignMix(5);
 });
 // case.1
 function imgAlignHori(){
@@ -23,7 +23,7 @@ function imgAlignHori(){
     });
 }
 // todo
-function imgAlignMix(){
+function imgAlignMix(count){
     var img = $(".imgContainerMix img");
     var xpos = 0;
     var ypos = 0;
@@ -32,8 +32,8 @@ function imgAlignMix(){
         var imgHeight = img.height();
         for(var i = 0; i < imgLength; i++){
             var image = img.eq(i);
-            xpos = (i%3)*imgHeight; //? 0,1,2,0,1,2... -> 3을 넘지 못한다. (ex> 3/3 = 0)
-            ypos = parseInt(i/3)*imgHeight; //? 0,0,0,1,1,1,2,2,2.... -> 3배수관계일때 1씩 증가
+            xpos = (i%count)*imgHeight; //? 0,1,2,0,1,2... -> 3을 넘지 못한다. (ex> 3/3 = 0)
+            ypos = parseInt(i/count)*imgHeight; //? 0,0,0,1,1,1,2,2,2.... -> 3배수관계일때 1씩 증가
             image.css({
                 "left" : xpos,
                 "top" : ypos
