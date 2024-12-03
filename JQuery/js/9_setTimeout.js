@@ -36,4 +36,8 @@ function scoreCount(count, $score, $circle, playState){
 }
 function restart(){
     // todo 재시작 기능 만들어보기
+    playState = true;
+    count = 0;
+    $score.text(count + "점");
+    scoreCount(count, $score, $circle, playState);
 }
