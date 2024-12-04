@@ -1,0 +1,4 @@
+@import url('reset.css');
+@import url('jquery.bxslider.css');
+@import url('customize.bxslider.css');
+/* ! 실제 작업 시 global,page css에 분산 처리 */
