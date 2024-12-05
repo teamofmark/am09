@@ -26,23 +26,26 @@
 }
 /* ? pager customize */
 .bx-wrapper .bx-pager{
-    text-align: center; font-size: .85em; font-family: Arial; font-weight: bold;
-    color: #666; padding-top: 20px;
+    text-align: center; padding-top: 20px;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto{
-    position: absolute; bottom: -30px; width: 100%;
+    bottom: -50px;
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item{
-    display: inline-block; vertical-align: bottom;
+    vertical-align: middle;
+}
+.bx-wrapper .bx-pager-item:not(:first-of-type){
+    margin-left: 20px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a{
-    text-indent: -9999px; display: block; width: 10px; height: 10px;
-    margin: 0 5px; outline: 0; border-radius: 5px;
+    margin: 0; border-radius: 0px; box-sizing: border-box; width: 15px; height: 15px;
+    transition: all .35s ease-out;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus{
-    background: #000;
+    background: #9370d8; border: 2px solid #8b008b; padding: 5px;
+    transform: rotate(-45deg);
 }
