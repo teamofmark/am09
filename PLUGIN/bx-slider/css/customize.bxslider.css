@@ -1,0 +1,48 @@
+/* ? bxSlider frame REset */
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    margin-bottom: 160px;
+}
+/* ? caption customize */
+.bx-wrapper .bx-caption{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    background: rgba(255, 80, 80, 0.75);
+    width: 70%;
+    transition: all .35s ease-out;
+}
+.bx-wrapper .bx-caption span{
+    color: black;
+    font-family: Arial;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+}
+.bx-wrapper .bx-caption:hover{
+    width: 100%; left: 0; background: rgba(80,80,255,0.75);
+}
+/* ? pager customize */
+.bx-wrapper .bx-pager{
+    text-align: center; font-size: .85em; font-family: Arial; font-weight: bold;
+    color: #666; padding-top: 20px;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto{
+    position: absolute; bottom: -30px; width: 100%;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item{
+    display: inline-block; vertical-align: bottom;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    text-indent: -9999px; display: block; width: 10px; height: 10px;
+    margin: 0 5px; outline: 0; border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background: #000;
+}

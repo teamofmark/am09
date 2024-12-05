@@ -24,8 +24,13 @@ $(function(){
     
         // ? 비중요
         easing: 'ease-in- out', //? default : null. slide간 전환 가속도 설정. CSS timing-function option 사용가능.
-        responsive: true //? default: true. slider 자체 반응형 켜기.
+        responsive: true, //? default: true. slider 자체 반응형 켜기.
 
         // *caption
+        captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 이미지 위로 보여준다.
+    
+        // *pager - indicator
+        pager: true, //? default: true. pager 켜기/끄기
+        pagerType: 'full' //? default : full-circle, short-count
     });
 });
