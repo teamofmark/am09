@@ -13,9 +13,19 @@ $(function(){
     
         // *infiniteLoop, hideControlOnEnd 상호 충돌.
         infiniteLoop: false, //? default : true. slide간 전환 무한반복.(fade)
-        hideControlOnEnd: true, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
+        hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
     
         // *adaptiveHeight
-        adaptiveHeight: true //? default : false. slide content높이에 따라 frame이 적응형으로 변환.
+        adaptiveHeight: true, //? default : false. slide content높이에 따라 frame이 적응형으로 변환.
+        adaptiveHeightSpeed: 750, //? default : 500.  adaptiveHeight 작동속도. 특이사항없으면 speed 동기화
+    
+        // *video
+        video: true, //! default : false. video 종횡비활성화(slide에 video가 있을 때만!!)
+    
+        // ? 비중요
+        easing: 'ease-in- out', //? default : null. slide간 전환 가속도 설정. CSS timing-function option 사용가능.
+        responsive: true //? default: true. slider 자체 반응형 켜기.
+
+        // *caption
     });
 });
