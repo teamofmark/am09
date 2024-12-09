@@ -37,4 +37,13 @@ $(function(){
         pagerCustom: '.customPager'
         // ! customize - 1. bx원형을 수정(대상찾아 css변경). 2. bx뼈대만을 제공받아 직접 style잡는 방법. 3. 뼈대조차 내가 직접 짜서 만드는 방법.
     });
+    createCustomPager(".slider");
 });
+function createCustomPager(target){
+    var slideLength = $(target).children("li").length;
+    console.log(slideLength);
+    for(var i = 0; i < slideLength; i++){
+        $(".customPager").append("<li><a data-slide-index='"+ i +"'><img src='images/wallpaper"+ (i+1) +".jpg' alt='slide"+ (i+1)+"'></a></li>");
+    }
+    $(".customPager li:first-of-type a").addClass("active");
+}
