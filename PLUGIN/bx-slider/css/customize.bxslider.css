@@ -117,3 +117,34 @@
 [class^='btn_'] a{
     display: block; font-size: 14px; color: white; text-decoration: none; text-align: center;
 }
+
+
+.newAutoControls{
+    margin-bottom: 150px;
+}
+.newAutoControls .bx-controls-auto:after{
+    content: ''; display: block; clear: both;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item{
+    width: 50%; float: left;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item a{
+    display: block; text-indent: -9999px; padding: 10px 0; border-width: 3px;
+    border-style: solid; border-color: transparent; transition: border-color .35s ease-out;
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item a.active{
+    border-color: rgb(0,0,0);
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-start{
+    background: url('../images/auto_play.png') center / 24px no-repeat rgba(0, 99, 145, 0.5);
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-start.active{
+    background-color: rgba(0, 99, 145, 1);
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-stop{
+    background: url('../images/auto_stop.png') center / 24px no-repeat rgba(247, 50, 50, 0.5);
+}
+.newAutoControls .bx-controls-auto .bx-controls-auto-item .bx-stop.active{
+    background-color: rgba(247, 50, 50, 1);
+}
+/* ? autoConrols customize */

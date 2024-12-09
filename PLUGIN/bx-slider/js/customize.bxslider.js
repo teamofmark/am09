@@ -42,7 +42,20 @@ $(function(){
         nextSelector: ".btn_next", //? default : '',공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공. 
         prevSelector: ".btn_prev", //? default : '',공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공. 
         nextText: "다음", //? default : 'next' controler 뼈대 안에 text 변경
-        prevText: "이전" //? default : 'prev'
+        prevText: "이전", //? default : 'prev'
+        
+        // * auto
+        auto: true,//? default: false. slide 자동전환 켜기
+        autoControls: true, //? default : false. auto기능이 켜져있어야 함. 접근성위배인 auto를 완화시킴. auto켜고 끄기
+        autoStart: true, //? default: true. controls동작방식을 play로 둘지 pause로 놓을지 결정.(접근성측면에서는 중지상태 권장)
+        pause: 4000, //? default : 4000(m/s). 자동전환시 멈춰있는 시간.
+        autoDelay: 1500, //? default: 0(m/s). 자동시작 전 지연시간 설정(autoStart가 true일때 systemDelay고려)
+        autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
+        stopAutoOnClick: true, //? default: false. controls button click할 때 자동전환 중지.
+        autoControlsCombine: false, //? default : false.  play/pause button -> toggle(1개) or active(2개)
+        autoControlsSelector: '.newAutoControls', //? auto button 뼈대 제공
+        startText: '시작', // ?생성된 뼈대 안에 text 변경
+        stopText: '중지'
     });
     createCustomPager(".slider");
 });
