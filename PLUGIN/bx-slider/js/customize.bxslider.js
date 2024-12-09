@@ -31,6 +31,9 @@ $(function(){
     
         // *pager - indicator
         pager: true, //? default: true. pager 켜기/끄기
-        pagerType: 'full' //? default : full-circle, short-count
+        pagerType: 'full', //? default : full-circle, short-count
+        //? pagerShortSeparator: '/' default : / . 숫자사이 식별자 변경
+        pagerSelector: '.newPager'
+        // ! customize - 1. bx원형을 수정(대상찾아 css변경). 2. bx뼈대만을 제공받아 직접 style잡는 방법. 3. 뼈대조차 내가 직접 짜서 만드는 방법.
     });
 });

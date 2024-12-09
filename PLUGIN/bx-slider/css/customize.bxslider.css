@@ -3,7 +3,7 @@
     box-shadow: none;
     border: none;
     background: transparent;
-    margin-bottom: 160px;
+    margin-bottom: 50px;
 }
 /* ? caption customize */
 .bx-wrapper .bx-caption{
@@ -48,4 +48,22 @@
 .bx-wrapper .bx-pager.bx-default-pager a:focus{
     background: #9370d8; border: 2px solid #8b008b; padding: 5px;
     transform: rotate(-45deg);
+}
+/* ? pagerSelector customize */
+.newPager .bx-pager.bx-default-pager{
+    text-align: center;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link{
+    text-decoration: none; padding: 17px 20px; display: block; background-color: #eaeaea;
+    border-radius: 40px; font-size: 14px; color: black;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active,
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link:hover{
+    font-weight: bold; color: white; background-color: black;
 }
