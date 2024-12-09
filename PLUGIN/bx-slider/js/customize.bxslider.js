@@ -34,8 +34,15 @@ $(function(){
         pagerType: 'full', //? default : full-circle, short-count
         //? pagerShortSeparator: '/' default : / . 숫자사이 식별자 변경
         //? pagerSelector: '.newPager' default : ''. 지정된 공간내에 pager 뼈대 제공 받기
-        pagerCustom: '.customPager'
+        pagerCustom: '.customPager',
         // ! customize - 1. bx원형을 수정(대상찾아 css변경). 2. bx뼈대만을 제공받아 직접 style잡는 방법. 3. 뼈대조차 내가 직접 짜서 만드는 방법.
+    
+        // *controler
+        controls: true, //? default: true. control button 켜기 끄기.
+        nextSelector: ".btn_next", //? default : '',공간 생성 및 class 부여 하면 controler 다음버튼 뼈대 제공. 
+        prevSelector: ".btn_prev", //? default : '',공간 생성 및 class 부여 하면 controler 이전버튼 뼈대 제공. 
+        nextText: "다음", //? default : 'next' controler 뼈대 안에 text 변경
+        prevText: "이전" //? default : 'prev'
     });
     createCustomPager(".slider");
 });

@@ -86,3 +86,34 @@
 .customPager li a img{
     width: 100%; display: block;
 }
+
+/* ?controls customize - 1 */
+.bx-wrapper .bx-controls-direction a{
+    height: 100%; top: 0; margin-top: 0; background-color: rgba(255,255,255,0.5);
+    transition: background-color .5s ease-out;
+}
+.bx-wrapper .bx-controls-direction a:hover{
+    background-color: rgba(255,255,255,1);
+}
+.bx-wrapper .bx-prev{
+    left: 0px; background: url('../images/controls_left.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-next{
+    right: 0px; background: url('../images/controls_right.png') center / 24px no-repeat;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus{
+    background-position: center; background-image: url('../images/controls_left_hover.png');
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus{
+    background-position: center; background-image: url('../images/controls_right_hover.png');
+}
+/* ? controls customize - 2*/
+[class^='btn_']{
+    width: 50px; line-height: 25px; background-color: black; border-radius: 10px;
+    display: inline-block;
+}
+[class^='btn_'] a{
+    display: block; font-size: 14px; color: white; text-decoration: none; text-align: center;
+}
