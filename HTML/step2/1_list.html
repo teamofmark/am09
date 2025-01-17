@@ -8,9 +8,55 @@
 <body>
     <!-- todo ul>li*3{번호없는목록$} -->
     <ul>
-        <li>번호없는목록1</li>
-        <li>번호없는목록2</li>
-        <li>번호없는목록3</li>
+        <li type="circle">번호없는목록1</li>
+        <li type="disc">번호없는목록2</li>
+        <li type="square">번호없는목록3</li>
+    </ul>
+    <p>
+        unoredered list(비 순차적 목록)의 약자 <br>
+        사전적 의미는 중요하지 않다. <br>
+        속성값은 3개 circle, disc, square 가 있으나 이것 역시 외울필요는 없다. (html5 미지원) <br>
+        중요한 것은 레이아웃 구성시 navigation, board, sitemap 등 목록형태의 컨텐츠를 표현 할 수 있는 layoutBlock
+        이라는 점.
+    </p>
+    <!-- todo ol>li*5{번호있는목록$} -->
+    <ol>
+        <li type="A">번호있는목록1</li>
+        <li type="a">번호있는목록2</li>
+        <li type="I">번호있는목록3</li>
+        <li type="i">번호있는목록4</li>
+        <li type="decimal">번호있는목록5</li>
+    </ol>
+    <p>
+        ol은 ordered list의 약자이다. <br>
+        사전적의미는 중요하지 않다. <br>
+        속성값은 4개(+@) "A,a,I,i"가 있으나 ul 과 마찬가지로 중요하지 않다. <br>
+        중요한 것은 layout 구성시 번호로 정렬되야 하는 목록형태의 컨텐츠를 표현 할 수 있는 layout block 이라는 점.
+    </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+    </dl>
+    
+정가289,000원
+할인율10%260,100원
+
+    <ul>
+        <li>
+            <img src="https://placehold.co/150" alt="">
+            <dl>
+                <dt>노스페이스 눕시 패딩 남녀공용 하이브리드 다운 볼 자켓 NJ1DP60</dt>
+                <dd><del>정가289,000원</del></dd>
+                <dd><mark>할인율10%</mark>260,100원</dd>
+            </dl>
+        </li>
+        <li>
+            <img src="https://placehold.co/150" alt="">
+            <dl>
+                <dt>제네시스 GV80 20년1월~23년10월 HUD유 센터유 DUB 레더에디션 가죽 대쉬보드커버</dt>
+                <dd>67,000원</dd>
+            </dl>
+        </li>
     </ul>
 </body>
 </html>
