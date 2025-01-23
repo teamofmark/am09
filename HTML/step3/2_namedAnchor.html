@@ -6,7 +6,10 @@
     <title>namedAnchor</title>
     <style>
         html,body{
-            margin: 0; height: 100%; scroll-behavior: smooth;
+            margin: 0; height: 100%; scroll-behavior: smooth; font-size: 40px;
+        }
+        #menuList{
+            position: fixed; right: 0; top: 0; background-color: white;
         }
         div{
             height: 100%;
@@ -26,6 +29,19 @@
     </style>
 </head>
 <body>
-    
+    <!-- (ul>li*5>a{page$바로가기.})+(#page$*4>{$page}+a{menu}) -->
+    <!-- ul>li*5>a{page$바로가기.} -->
+    <ul id="menuList">
+        <li><a href="#page1">page1바로가기.</a></li>
+        <li><a href="#page2">page2바로가기.</a></li>
+        <li><a href="#page3">page3바로가기.</a></li>
+        <li><a href="#page4">page4바로가기.</a></li>
+        <li><a href="1_hyperlink.html#targetAnchor" target="_blank">하이퍼링크목록 목표지점</a></li>
+    </ul>
+    <!-- #page$*4>{$page}+a{메뉴로.} -->
+    <div id="page1">1page<a href="#menuList">메뉴로.</a></div>
+    <div id="page2">2page<a href="#menuList">메뉴로.</a></div>
+    <div id="page3">3page<a href="#menuList">메뉴로.</a></div>
+    <div id="page4">4page<a href="#menuList">메뉴로.</a></div>
 </body>
 </html>
