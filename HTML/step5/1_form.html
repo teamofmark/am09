@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - tag's</title>
+</head>
+<body>
+    <form>
+        <!-- 
+            form은 input 내 data's 담아서 전송하는 역할을 해준다.
+            감싸는 위치는 input's 와 가장 가까운 공간 Tag여야 한다.
+        -->
+        <fieldset>
+            <!-- 
+                서로 다른 2개 이상의 data group이 존재 할 때 물리적 공간 구분 용도로 사용되는 Tag.
+                주변 공간 Tag와 분리되는 공간을 만들고 싶을 때도 사용 가능.
+            -->
+            <legend>HTML4 Input's</legend>
+            <!-- 
+                분리된 fieldset group 주제에 맞는 이름을 적는 Tag.(필수 아님)
+            -->
+            <ul>
+                <li>
+                    <label for="userID">userID : </label>
+                    <input type="text"  id="userID">
+                    <!-- 
+                        :text - 모든 문자 입력 가능 (문자 > 특수,숫자) - 사용도가 가장 높음.
+                        input - display: inline-block;(기능을 수행하는 Tag's = img,iframe,embed,video,audio....)
+                        block(위에서 아래로 떨어지는, width: 100%) + inline(width:auto, 옆으로 붙어나옴)
+                        = inline-block - width: auto, 옆으로 붙어나옴, width 증가 시킬 수 있고, 공간단위로 위에서 아래로 떨어짐.
+                    -->
+                    <!-- ! input의 id는 backEnd가 직접적으로 사용하는 id이기 때문에 상호협의하에... -->
+                    <!-- 
+                        * 상식적인 선 내에서의 web상 naming규칙을 따라야함.
+                        ? 1. 한글,띄어쓰기,특문,숫자나 대문자가 앞에오거나 행위 금지.
+                        ? 2. 영문키워드 2개이상을 조합해야 함.(예약어개념 - programing Language가 이미 선점한 단어 사용금지)
+                    -->
+                </li>
+                <li>
+                    <!-- label+input:password -->
+                    <label for="userPW">userPW : </label>
+                    <input type="password" id="userPW">
+                    <!-- :password - 실질적인 암호화 처리가 된 data -->
+                </li>
+                <!-- li>(input:radio#btn_radio$+label{radio$})*4 -->
+                <li>
+                    <input type="radio" name="" id="btn_radio1">
+                    <label for="btn_radio1">radio1</label>
+                    <input type="radio" name="" id="btn_radio2">
+                    <label for="btn_radio2">radio2</label>
+                    <input type="radio" name="" id="btn_radio3">
+                    <label for="btn_radio3">radio3</label>
+                    <input type="radio" name="" id="btn_radio4">
+                    <label for="btn_radio4">radio4</label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
