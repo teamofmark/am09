@@ -128,5 +128,32 @@
             </ul>
         </fieldset>
     </form>
+    <form>
+        <fieldset>
+            <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <!-- label[for='userEmail']{이메일 :}+input:email#userEmail -->
+                    <label for="userEmail">이메일 :</label>
+                    <input type="email" id="userEmail" maxlength="16" autofocus placeholder="16자이내로 입력하세요.">
+                    <!-- 
+                        :email - emailAddr 전문적으로 입력 받는 field. required(필수) attr을 부여 하면 email주소양식 자동 검수.
+                        1. touchKeypad 일 경우(tablet,smartPhone) 키패드 배열에 @가 추가된다.
+                        2. required (필수) - 모든 input 사용가능
+                        3. maxlength(최대자수제한) - 입력이 되는 모든 field 사용가능
+                        4. autofocus - page가 열릴 때 자동으로 초점을 맞춰주는 기능 (시각장애인들에게 정보전달에 방해가 되지 않는 선에서 사용)
+                        5. placeholder - 시각적 입력정보 안내를 넣는 것.
+                    -->
+                </li>
+                <li>
+                    <label for="userWebUrl">웹사이트 : </label>
+                    <input type="url" id="userWebUrl" required>
+                </li>
+                <li>
+                    <input type="submit" value="전송">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
 </body>
 </html>
