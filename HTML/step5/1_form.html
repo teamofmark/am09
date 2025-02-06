@@ -183,6 +183,44 @@
                      -->
                 </li>
                 <li>
+                    <label for="typeDate">연,월,일 선택 : </label>
+                    <input type="date" id="typeDate">
+                    <!-- 연도,월,날짜 선택 가능한 달력 UI. / 꾸미기가 어렵고 순정상태의 모바일이나 태블릿 등에 호환이 좋음. -->
+                </li>
+                <li>
+                    <label for="typeDateTime">연,월,일,시,분 선택 : </label>
+                    <input type="datetime-local" id="typeDateTime">
+                    <!-- 연도,월,날짜,시각,분 선택 가능한 달력 UI. / 꾸미기가 어렵고 순정상태의 모바일이나 태블릿 등에 호환이 좋음. -->
+                </li>
+                <li>
+                    <label for="typeTime">시간 선택 : </label>
+                    <input type="time" id="typeTime">
+                    <!-- 시각 선택 가능한 달력 UI. / 꾸미기가 어렵고 순정상태의 모바일이나 태블릿 등에 호환이 좋음. -->
+                </li>
+                <li>
+                    <label for="typeMonth">월 선택 :</label>
+                    <input type="month" id="typeMonth">
+                    <!-- 월 선택 가능한 달력 UI. / 꾸미기가 어렵고 순정상태의 모바일이나 태블릿 등에 호환이 좋음. / 국내에선 잘 사용되지 않음-->
+                </li>
+                <li>
+                    <label for="typeWeek">주 선택 : </label>
+                    <input type="week" id="typeWeek">
+                    <!-- 주 선택 가능한 달력 UI. / 꾸미기가 어렵고 순정상태의 모바일이나 태블릿 등에 호환이 좋음. / 국내에선 잘 사용되지 않음-->
+                </li>
+                <!-- <li>
+                        <input type="datetime" > / 전체브라우저 지원 불가 됨
+                </li> -->
+                <li>
+                    <label for="searchField">검색 : </label>
+                    <input type="search" id="searchField">
+                    <!-- 검색 전용 input. 특징은 우측에 reset button이 제공됨. 자동완성기능 (autocomplete)- backEnd. style이 safari에서 지원이 안됨 -->
+                </li>
+                <li>
+                    <label for="typeColor">색상선택 : </label>
+                    <input type="color" id="typeColor">
+                    <!-- colorPicker : 지정된 색상 코드 (Hex:16진) - 를 기준으로 -,+ @ value를 설정하고 그 안에 일치하는 결과를 가져오기 위한 input -->
+                </li>
+                <li>
                     <input type="submit" value="전송">
                 </li>
             </ul>
