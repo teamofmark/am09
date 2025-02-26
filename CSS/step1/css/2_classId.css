@@ -1,0 +1,22 @@
+.classEx1{
+    color: red;
+}
+.btn{
+    padding: 10px 30px; border: 1px solid black; font-size: 12px; display: inline-block;
+    text-decoration: none; color: inherit;
+}
+.btn.create{
+    background-color: white; color: black; border: none;
+}
+.btn.modify{
+    background-color: darkcyan; color: cyan; border-color: forestgreen;
+}
+.btn.delete{
+    background-color: rgb(90,0,0); color: red; border-color: darkred;
+}
+.btn.confirm{
+    background-color: slateblue; color: white; border-style: dashed; border-color: midnightblue;
+}
+.btn.cancel{
+    color: gray; background-color: lightgray; border: gray;
+}
