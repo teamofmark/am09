@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: 'Noto Sans KR';
+}
+/*
+    -weight(굵기)
+    thin(psd../hairLine...) - 100(code)
+    extraLight - 200
+    light - 300
+    regular - 400 (default-굵기가 지정되지 않았을 때 기본 값)
+    medium - 500
+    semibold - 600
+    bold - 700
+    extraBold - 800
+    black - 900
+*/
