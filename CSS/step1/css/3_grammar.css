@@ -27,12 +27,12 @@ dd{
     color: brown;
 }
 /* todo */
-/* 선행되는 위치 안에 img{
+section ul li figure img{
     width: 50px; height: 50px;
 }
-선행되는 위치 안에 dt{
+section ul li figure figcaption dl dt{
     color: skyblue;
 }
-선행되는 위치 안에 dd{
+section ul li figure figcaption dl dd{
     font-size: 50px;
-} */
+}
