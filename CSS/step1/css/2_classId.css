@@ -20,3 +20,13 @@
 .btn.cancel{
     color: gray; background-color: lightgray; border: gray;
 }
+
+#userName{
+    border: 1px solid #eaeaea; line-height: 30px; font-size: 24px; color: green;
+}
+/* 
+    id는 duplicate err = 한 page 내에서 동일한 id가 한개만 허용된다.
+    전체 system입장  = 한 역할의 id는 하나여야 한다.
+    (ex> 회원가입- 사용자이름(userName) / 회원정보 - 사용자이름(userName) / 주문정보 - 사용자이름(userName) ) 
+    (회원가입 - 사용자이름(createUserName) / 회원정보 - 사용자이름(readUserName) / 주문정보 - 사용자 이름(purchaseUserName)) - 올바르지않음
+*/
