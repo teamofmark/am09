@@ -18,3 +18,7 @@ h1{
     font-size: 70px; font-weight: 100;
 }
 /* todo, h2 - h3 직접 적용 해보기 (크기,굵기,색상) */
+
+h2{font-size:15px; line-height:21px; color:#966;}
+
+h3{font-size:13px; line-height:19px; color:#F90;}
