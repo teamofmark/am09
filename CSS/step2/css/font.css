@@ -48,3 +48,28 @@ p.w_nowrap{
     /* white-space: nowrap; text-overflow: ellipsis; overflow: hidden; */
     white-space: nowrap; overflow-x: scroll;
 }
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+/* 
+    vertical-align : 수직정렬 
+    1. display: inline,inline-block인 애들 끼리만
+    2. 높은 애를 기준으로 preset Setting (preset? - 이미 약속된 값 : top, middle, bottom...)
+    3. 작은 애에게 수동 수치를 입력하여 나머지 부분을 보정 할 수 있다.
+*/
+/*
+baseline: 문자의 밑선에 맞추어 정렬(default)
+middle: 문자의 중앙을 기준으로 해서 정렬
+sub : 아래첨자
+super : 위 첨자
+text-top:문자의 윗선을 밑선으로 해서 정렬
+top: 위쪽에 정렬
+bottom : 아래쪽 정렬
+% : 퍼센트로 정렬 위치를 지정 (
+    후처리 = 높이가 낮은 대상. 그 대상의 높이기준
+    또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
+    )
+*/	
