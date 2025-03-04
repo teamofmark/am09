@@ -22,3 +22,29 @@ h1{
 h2{font-size:15px; line-height:21px; color:#966;}
 
 h3{font-size:13px; line-height:19px; color:#F90;}
+
+/* line-height: 줄간 */
+
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+}
+/*
+     letter-spacing : 자간. &nbsp;(공백문자) - 공백에도 자간이 적용되는 어색한 부분이 있다. 포토샵 수치와 완전 다른 개념으로 적용.
+    photoshop : 자간 100 -> 일반적으로 css 10px 과 같음. = 시안상에서 자간을 많이 사용하면 할 수록 자간처리를 다 해야 하기 때문에 안좋음.
+*/
+p.word{
+    word-spacing: 10px;
+}
+/* word-spacing - 단간. (단어사이간격). 국내 사용 불가(띄어쓰기 규칙이 latin어 계열과 다르기 때문) */
+p.w_normal{
+    width: 150px; border: 3px solid black; line-height: 22px; white-space: normal;
+}
+/* default CSS : ex> font-size: 16px; font-weight: regular, whilte-space:normal...... bodyTag - margin: 8px;.... */
+p.w_nowrap{
+    width: 150px; border: 3px solid black; line-height: 22px;
+    /* white-space: nowrap; text-overflow: ellipsis; overflow: hidden; */
+    white-space: nowrap; overflow-x: scroll;
+}
