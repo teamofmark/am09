@@ -73,3 +73,25 @@ bottom : 아래쪽 정렬
     또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
     )
 */	
+p.t_indent{
+    text-indent: 200px; font-size: 20px;
+}
+button.test{
+    background: url('http://placehold.co/150x50?text=blahblahButton');
+    border: none; width: 150px; height: 50px; text-indent: -9999px;
+}
+a{
+    display: block; line-height: 42px;
+}
+a.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+a.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #0cf;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #96c;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: #f63;
+}
