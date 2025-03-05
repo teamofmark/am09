@@ -95,3 +95,15 @@ a.t_deco_O{
 a.t_deco_T{
     text-decoration: line-through; text-transform: uppercase; color: #f63;
 }
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: right;
+}
+fieldset{
+    text-align: right;
+}
+/* text-align: 글자뿐만 아니라 inline,inline-block Tag's 정렬 가능 */
