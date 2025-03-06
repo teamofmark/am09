@@ -21,4 +21,22 @@
     display: block;
     width: 160px;
     height: 140px;
+    background-image: url('../images/sprite.png');
+    background-repeat: no-repeat;
   }
+  ul li.captain{
+    background-position: 0px 0px;
+  }
+  ul li.wolverine{
+    background-position: -160px 0px;
+  }
+  ul li.thor{
+    background-position: -320px 0px;
+  }
+  ul li.ironman{
+    background-position: -480px 0px;
+  }
+  ul li.spiderman{
+    background-position: 0px -140px;
+  }
+  /* 이하 나머지 실습 */
