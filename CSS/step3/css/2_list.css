@@ -1,0 +1,39 @@
+/* ul{list-style: circle;} - 효율적인 예 */
+/* ul li {list-style: circle;} - 비 효율적인 예*/
+ul li.circle{
+    list-style: circle;
+}
+ul li.disc{
+    list-style: disc;
+}
+ul li.square{
+    list-style: square;
+}
+
+ol li.decimal{
+    list-style: decimal;
+}
+ol li.lower-alpha{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+}
+ol li.none{
+    list-style: none;
+}
+
+ul.custom{
+    list-style: none;
+    list-style-image: url('../images/bul_li.gif');
+    list-style-position: inside;
+}
+/* ul.custom li{
+    background: url('../images/bul_li.gif') no-repeat left center; padding-left: 20px;
+} */
