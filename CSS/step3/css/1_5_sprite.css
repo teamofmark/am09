@@ -40,3 +40,15 @@
     background-position: 0px -140px;
   }
   /* 이하 나머지 실습 */
+ul li.spiderman {
+  background-position: 0px -140px;
+}
+ul li.superman {
+  background-position: -160px -140px;
+}
+ul li.rangerRed {
+  background-position: -320px -140px;
+}
+ul li.rangerBlue {
+  background-position: -480px -140px;
+}
