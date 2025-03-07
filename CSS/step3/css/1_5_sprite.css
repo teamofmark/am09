@@ -52,3 +52,6 @@ ul li.rangerRed {
 ul li.rangerBlue {
   background-position: -480px -140px;
 }
+ul li strong{
+  background-color: rgba(0,0,0,0.5); color: white; padding: 5px 10px; text-transform: uppercase;
+}
