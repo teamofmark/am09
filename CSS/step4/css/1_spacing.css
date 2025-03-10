@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+.firstDiv{
+    /* margin-top: 10px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    margin-left: 10px; */
+    margin: 10px;
+    /* secondDiv 와 만나는 margin-bottom 10px은 상쇄됨 - 그렇기 때문에 margin - top을 안쓰고 bottom을 주로 사용 한다. */
+    background-color: #555;
+}
+.firstDiv article{
+    background-color: #039; color: white;
+
+}
+.secondDiv{
+    background-color: #ddd; margin: 30px;
+}
+.secondDiv article{
+    background-color:#930;
+}
