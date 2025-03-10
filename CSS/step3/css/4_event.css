@@ -32,3 +32,9 @@ input#radioType1{
     accent-color: magenta;
 }
 /* todo. volume, progress accent-color 실습 */
+input#volType1{
+    accent-color: lime;
+}
+progress{
+    accent-color: blueviolet;
+}
