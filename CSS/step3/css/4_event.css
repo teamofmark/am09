@@ -1,0 +1,34 @@
+a{
+    font-size: 40px; margin-left: 20px; display: inline-block;
+}
+a:link{
+    /* js 등을 이용 하면 일반Tag에도 href attr을 부여할 수 있음. = :link 상태 그래서 eventSelector 라고 함. */
+    color: olive; 
+}
+a:visited{
+    /* - 방문한 적이 있는 상태 - ex> google -> 파란색 링크(:link상태) -> 클릭을 하게되면 나중에 같은 검색어로 검색 했을 때 클릭했던 것만 보라색으로 변경.(:visited) */
+    color: red;
+}
+a:hover{
+     /* - mouse Cursor가 올라간 상태 - 제일 중요, 제일 많이 사용 */
+     color: #3cf;  text-decoration: none; font-size: 50px;
+}
+a:active{
+    /* - mouse Click - 누르고 있는 상태 (press)도 사용이 되긴 하나 이것은 click이 풀리지 않아서 일어나는 현상.(press는 아님) */
+    color: yellow;
+}
+input#userName:focus{
+    background-color: lightgreen;
+    border: 2px solid forestgreen;
+    outline: none;
+    /* outline - 색약,색맹들을 위해 대상에 초점이 맞춰지는 상황일 때 browser가 제공하는 선이 발생되는..
+        (되도록 비수정 을 권장함)
+    */
+}
+input#chkType1{
+    accent-color: red; width: 25px; height: 25px;
+}
+input#radioType1{
+    accent-color: magenta;
+}
+/* todo. volume, progress accent-color 실습 */
