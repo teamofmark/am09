@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/2_float.css">
 </head>
 <body>
+    <!-- 
+        1. 공간 = display: block; -> width: 100%; 좌,우를 차지하는 성향.(자신외 아무것도 올리지 않음.)
+
+        2. web = 공간들의 배치 -> 상,하 (x) 좌,중,우(o) -> 위 1번조건과 상충되는 내용.
+
+        3. 해결 방안.
+
+            -1. float : img옆에 text 붙히기. 주목적 - 단점: 기존 block을 무효화. / 좌,우 서로의 높이가 다를경우 layout이 무너진다.
+
+            -2. grid : float의 단점인 높이가 틀릴경우 layout이 무너지는 현상을 효율적으로 관리.
+                            단점 - 열로 바라보는 배치 방식이라 좌,우의 줄어듬에 있어 적응성이 낮음.
+
+            -3. flex : 위 두 단점 뿐만이 아니라 기존 공간배치에 어려움을 모두 쉽게 바꿔냄.
+                            단점 - 세부설정및조정이 굉장히 난이도가 높음.
+     -->
     <div class="wrap">
         <div class="exam_1">
             <img src="https://placehold.co/150" alt="undefined">
