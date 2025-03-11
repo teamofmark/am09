@@ -1,0 +1,20 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 960px; margin: 0 auto; background-color: #ffc;
+}
+/* 
+    body wrap을 사용할 수 없을 때
+header,.wrap,footer{
+    width: 960px; margin: 0 auto; 
+} */
+ header{
+    background-color: #cff;
+ }
+ header nav{
+    background-color: #9f9;
+ }
+ .wrap{
+    
+ }
