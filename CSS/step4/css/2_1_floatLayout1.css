@@ -16,5 +16,18 @@ header,.wrap,footer{
     background-color: #9f9;
  }
  .wrap{
-    
+    margin-bottom: 50px; background-color: red;
+ }
+ .wrap:after{
+    content: ''; display: block; clear: both;
+ }
+ .wrap aside,
+ .wrap section{
+    height: 800px; float: left;
+ }
+ .wrap aside{
+    width: 200px;  background-color: rgba(255,255,0,0.5); 
+}
+ .wrap section{
+    width: 760px; background-color: rgba(255,0,255,0.5);
  }
