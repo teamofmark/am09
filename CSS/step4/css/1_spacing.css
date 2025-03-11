@@ -15,8 +15,41 @@ body{
 
 }
 .secondDiv{
-    background-color: #ddd; margin: 30px;
+    background-color: #aaa;
+    margin: 30px 30px 0;
+    padding: 0 0 50px 30px;
+    /* 2. 그렇기 때문에 padding을 올바르게 사용해야 함 */
 }
 .secondDiv article{
     background-color:#930;
+    /* 1. margin-bottom: 50px; margin-left: 30px; <- 잘못 사용된 예 : 하단 마진은 부모를 밀어내지 못함*/
 }
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 10px;
+    margin: 0 auto;
+    /* (부모너비 - 대상너비) / 2 -> 0 auto(좌,우 공통배분) */
+    /* margin-left: auto; */
+    /* (부모너비 - 대상너비) -> -left: auto(좌 자동배분) */
+}
+.centerDiv article{
+    margin: 10px;
+}
+
+.paddingDiv{
+    width: 100px; background-color: #ff3; padding: 20px; border: 10px solid black;
+    box-sizing: content-box;
+    /* box-sizing: border-box(border,padding 내부합산) , content-box(border,padding 외부합산) */
+}
+
+.paddingDiv article{
+    background-color: #039; color: white;
+}
+.test {
+    margin: 0; padding: 0; list-style: none;
+}
+.test li{
+    float: left; width: 30.33%; background-color: lightgreen; height: 300px; padding: 0 1.5%; border: 1px solid black;
+}
+/* 
+    위 상황 처럼 border는 % 연산이 불가함으로 단위가 다른 연산을 해야되는 상황 일 때  box-sizing 처리를 해주면 원활하게 계산가능
+*/
