@@ -1,0 +1,44 @@
+*{
+    margin: 0; padding: 0;
+}
+/* 이하 배경은 float 관련 check. */
+.wrap{
+    width: 960px; margin: 0 auto; background-color: rgba(100,40,10,0.5);
+}
+.wrap header{
+    background-color: #ff6a00;
+}
+.wrap header:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header h1{
+    width: 130px; background-color: rgba(200,50,10,0.8); font-size: 20px; color: white; text-align: center;
+    line-height: 60px; float: left;
+    /* padding: 20px 0; - 줄바꿈등의 상황으로 line-height를 사용할 수 없을 때 */
+}
+.wrap header nav{
+    width: 830px; float: left; background-color: rgba(10,50,200,0.8);
+}
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    display: inline-block;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 60px;
+}
+/*
+float 구성이 가능하나 a 안의 글자변화가 발생시 규칙이 무너짐을 확인 할 수 있다.
+.wrap header nav ul{
+    margin: 0 auto; width: 600px; list-style: none;
+}
+.wrap header nav ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header nav ul li{
+    float: left; margin-left: 20px; width: 100px;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px; display: block; text-align: center;
+} */
