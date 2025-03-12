@@ -54,3 +54,15 @@ float 구성이 가능하나 a 안의 글자변화가 발생시 규칙이 무너
  .wrap section article{
     width: 33.33%; float: left;
  }
+ .wrap section article h3{
+    background-color: rgba(0,0,0,0.5); padding: 10px; color: lightpink; text-align: center;
+ }
+ .wrap section article ul{ 
+    padding-left: 20px;
+ }
+ .wrap section article ul li{
+    font-size: 14px; line-height: 35px; border-bottom: 1px solid saddlebrown;
+ }
+ .wrap footer{
+    background-color: rgba(50,0,255,0.8); color: white; line-height: 55px; text-align: center;
+ }
