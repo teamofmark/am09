@@ -1,0 +1,19 @@
+*{
+    margin: 0; padding: 0;
+}
+ul:after{
+    content: ''; display: block; clear: both;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    width: calc(16.66% - 2px); float: left; border: 1px solid black;
+    /* box-sizing: border-box; */
+}
+ul li figure img{
+    width: 100%; display: block;
+}
+ul li figure figcaption dl{
+    background-color: yellow; text-align: center;
+}
