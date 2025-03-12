@@ -42,3 +42,15 @@ float 구성이 가능하나 a 안의 글자변화가 발생시 규칙이 무너
 .wrap header nav ul li a{
     color: white; line-height: 55px; display: block; text-align: center;
 } */
+ .wrap section{
+    margin-bottom: 300px;
+ }
+ .wrap section h2{
+    background-color: #0cf; text-align: center;  font-size: 30px; padding: 15px 0;
+ }
+ .wrap section:after{
+    content: ''; display: block; clear: both;
+ }
+ .wrap section article{
+    width: 33.33%; float: left;
+ }
