@@ -1,0 +1,44 @@
+body{
+    width: 960px; margin: 0 auto;
+}
+header{
+        background-color:#6ff; position: relative;
+}
+header h1{
+    width: 250px; margin: 0 auto; font-size: 16px; text-align: center; line-height: 40px;
+    background-color: #66f; color: lightpink;
+}
+header div{
+    position: absolute; right: 0; top: 25px;
+}
+header div:after{
+    content: ''; display: block; clear: both;
+}
+header div input{
+    display: block; float: left; box-sizing: border-box; font-size: 14px;
+    border: 1px solid darkslateblue; line-height: 26px;
+}
+header div input#searchBar{
+    width: 80%; background-color: lightpink;
+}
+header div input#searchButton{
+    width: 20%; 
+}
+header nav{
+    background-color: #3cf;
+}
+header nav ul{
+    text-align: center; margin: 0; padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li.marginLeft{
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration: none; color: #000; display: block; line-height: 40px;
+}
+header nav ul li a:hover{
+    color: white;
+}
