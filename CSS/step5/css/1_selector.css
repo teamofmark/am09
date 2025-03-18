@@ -1,0 +1,18 @@
+
+.tagSelector h1{color:#0c0; font-size:20px;}
+.tagSelector p{color:#0cf; font-size:15px;}
+.tagSelector span{color:#336; font-size:13px;}
+
+/*태그선택자 사용법*/
+
+.idSelector p#paragraph1{font-size:16px; text-decoration:underline;}
+.idSelector p#paragraph2{color:#09F; text-decoration:line-through;}
+.idSelector p#paragraph3{font-weight:bold; text-decoration:overline;}
+
+/*ID선택자 사용법*/
+
+.classSelector p.f_size{font-size:20px;}
+.classSelector p.f_weight{font-weight:bold;}
+.classSelector p.f_color{color:#9cf;}
+
+/*CLASS 선택자 사용법 + 다중 클래스 지정 */
