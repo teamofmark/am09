@@ -62,5 +62,25 @@
             </fieldset>
         </form>
     </div>
+    
+    <div class="directSelector">
+        <h1>이 부분은 directSelector의 직계 h1 입니다.</h1>
+        <div class="indirect">
+            <h1>
+                이 부분은 directSelector의 직계 indirect안의 h1 <br>
+                부모의 구조가 다름으로 밖에 h1과 같은 영향을 받지 못함.
+            </h1>
+        </div>
+        <span>
+            이 부분은 directSelector의 직계 span
+            <span>
+                이 부분은 directSelector의 직계 span안에 span <br>
+                부모의 구조가 동일함으로 밖에 위치한 span과 같은 영향을 받음.
+                <span>
+                    textSelectors
+                </span>
+            </span>
+        </span>
+    </div>
 </body>
 </html>

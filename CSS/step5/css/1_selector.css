@@ -37,3 +37,22 @@
 .attrSelector fieldset ul li input{
     padding: 5px; vertical-align: middle;
 }
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid crimson; color: maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime; color: forestgreen;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 25px; height: 25px; accent-color: brown;
+    /* background-color: brown; border: 5px solid yellow; */
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 25px; height: 25px; accent-color: orange;
+}
+.directSelector > h1{
+    font-size:28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 18px; color: #906; line-height: 40px;
+}
