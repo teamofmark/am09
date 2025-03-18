@@ -16,3 +16,24 @@
 .classSelector p.f_color{color:#9cf;}
 
 /*CLASS 선택자 사용법 + 다중 클래스 지정 */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: lightseagreen;
+    border-radius: 20px 0 20px;
+}
+.attrSelector fieldset legend{
+    border: 1px solid slateblue; background-color: #555; color: white; padding: 10px;
+    border-radius: 10px 0 10px;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    color: white; font-size: 14px; line-height: 30px; margin-bottom: 10px;
+}
+.attrSelector fieldset ul li label{
+    width: 100px; display: inline-block;
+}
+.attrSelector fieldset ul li input{
+    padding: 5px; vertical-align: middle;
+}
