@@ -98,3 +98,6 @@
     color: gray; background-color: white;
     /* border: 1px solid gray; */
 }
+.eventSelector a:focus{ /* ? 대상:에 초점이 맞춰진 상태.*/
+    border: 3px solid deeppink;
+}
