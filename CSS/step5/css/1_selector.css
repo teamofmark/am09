@@ -56,3 +56,28 @@
 .directSelector > span{
     font-size: 18px; color: #906; line-height: 40px;
 }
+.sameSelector h1~h2{
+    background-color: #999;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: deeppink;
+}
+.stringAttrSelector img[src$='png']{
+    width: 100px; border: 3px solid red;
+}
+/* jpg, gif 선택해서 개별적인 css 적용 */
+.stringAttrSelector img[src$='jpg']{
+    width: 200px; border: 5px solid #0f0;
+}
+.stringAttrSelector img[src$='gif']{
+    width: 300px; border: 10px solid #00f;
+}
+.stringAttrSelector h1[title*='제목']{
+    color: green;
+}
+.stringAttrSelector h1[title^='남자']{
+    color: blue;
+}
+.stringAttrSelector h1[title ~='탈의실']{
+    color: deeppink;
+}
