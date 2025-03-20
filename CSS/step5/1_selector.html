@@ -139,5 +139,26 @@
         <h2>second heading h2</h2>
         <h1>second heading h1</h1>
     </div>    
+
+    <div class="textSelector">
+        <h1>앞 글자만 선택하여 css를 적용.</h1>
+        <p>
+            첫 줄에 해당하는 부분만 선택 하여 css를 적용 한다.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </div>
+
+    <!-- .backandfrontSelector>h1+p[data-page=""]*2 -->
+    <div class="backandfrontSelector">
+        <h1>전위(:before) 그리고 후위(:after) 선택자</h1>
+        <p data-page="52">
+            지금 작성 되는 글 앞에는 counter 함수를 이용한 숫자 1이 붙고,
+            뒤에는 markup에서 선언된 data-page value : 52가 나올것이다.
+        </p>
+        <p data-page="273">
+            지금 작성 되는 글 앞에는 counter 함수를 이용한 숫자 2가 붙고,
+            뒤에는 markup에서 선언된 data-page value : 273이 나올것이다.
+        </p>
+    </div>
 </body>
 </html>
