@@ -162,3 +162,26 @@
 .textSelector p::first-line{
     color: #090; line-height: 30px; font-size:  14px; text-decoration: underline;
 }
+
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content : counter(rint) "."; color: deeppink; font-weight: bold; font-size: 24px;
+}
+.backandfrontSelector p::after{
+    content: ' - ' attr(data-page) "page"; color: deeppink; font-weight: bold; font-size: 24px;
+}
+.reactionSelector *{
+    color: #fff;
+}
+.reactionSelector *::selection{
+    background-color: black; color: yellow; font-size: 30px; font-weight: bold;
+    text-decoration: underline;
+}
+
+.notSelector input:not([type='password'],[type='submit']){
+    background-color: red; border: 5px solid green;
+}
+
+/* ! 모든 선택자 중에 유일하게 부정의 의미를 담은 선택자 이기 때문에 중요함. */
