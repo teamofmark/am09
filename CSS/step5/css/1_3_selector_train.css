@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+html{
+    height: 100%;
+}
+body{
+    margin: 0; height: 100%; font-family: 'Lato'; background-color: black;
+}
+div:first-of-type{
+    width: 50%; height: 50%; background-color: #262626; position: absolute;
+    left: 25%; top: 25%;
+    /* min-height: ????; */
+}
+div:first-of-type nav{
+    margin-bottom: 25px;
+}
+div:first-of-type nav ul{
+    margin: 0; padding: 0; list-style: none;
+}
+div:first-of-type nav ul:after{
+    content: ''; display: block; clear: both;
+}
+div:first-of-type nav ul li{
+    float: left; width: 25%; background-color: #3a3a3a;
+}
+div:first-of-type nav ul li a{
+    display: block; text-decoration: none; text-align: center; font-size: 12px;
+    text-transform: capitalize; padding: 10px 0; color: #ea0e52;
+}
+div:first-of-type nav ul li a:hover,
+div:first-of-type nav ul li.currentStat a{
+    background-color: #ea0e52; color: white;
+}
+/* nav Fin */
+div:first-of-type h1{
+    font-size: 14px; font-weight: 700; color: white; text-align: center; text-transform: capitalize;
+    margin: 0 0 25px;
+}
+div:first-of-type fieldset{
+    border: none; padding: 0; width: 90%; margin: 0 auto 25px;
+    /* border: 1px solid yellow; */
+}
+div:first-of-type fieldset ul{
+    margin: 0; padding: 0;
+}
+div:first-of-type fieldset ul li{
+    display: block;
+}
+div:first-of-type fieldset ul li:after{
+    content: ''; display: block; clear: both;
+}
+div:first-of-type fieldset ul li *{
+    display: block; float: left; line-height: 36px; font-size: 12px;
+}
+div:first-of-type fieldset ul li:first-child{
+    margin-bottom: 25px;
+}
+div:first-of-type fieldset ul li label{
+    width: 15%; text-align: center; background-color: #ea0e52; font-weight: bold;
+    color: white; text-transform: uppercase;
+}
+div:first-of-type fieldset ul li input{
+    width: 80%; padding: 0 2.5%; border: none;
+}
+div:first-of-type fieldset ul li input:focus{
+    background-color: #ea0e52;
+}
+div:first-of-type fieldset ul li input[type='password']:focus{
+    color: white;
+}
+div:first-of-type input[type='submit']{
+    width: 90%; margin: 0 auto; display: block; border: none; line-height: 36px;
+    padding: 0; background-color: #3e3e3e; color: #ea0a52;
+}
+div:first-of-type input[type='submit']:hover{
+    background-color: #ea0e52; color: black; cursor: pointer;
+}
