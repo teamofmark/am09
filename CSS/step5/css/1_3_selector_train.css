@@ -7,8 +7,7 @@ body{
 }
 div:first-of-type{
     width: 50%; height: 50%; background-color: #262626; position: absolute;
-    left: 25%; top: 25%;
-    /* min-height: ????; */
+    left: 25%; top: 25%; min-height: 290px; max-height: 400px;
 }
 div:first-of-type nav{
     margin-bottom: 25px;
