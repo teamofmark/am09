@@ -1,0 +1,41 @@
+fieldset:first-of-type{
+    max-width: 460px; margin: 0 auto; border-color: darkblue; border-radius: 10px;
+}
+fieldset:first-of-type legend{
+    background-color: darkblue; color: white; font-size: 14px; padding: 10px; border-radius: 10px;
+}
+fieldset:first-of-type ul{
+    padding: 0; list-style: none; font-size: 14px;
+}
+fieldset:first-of-type ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+fieldset:first-of-type ul li:last-child{
+    text-align: right;
+}
+fieldset:first-of-type ul li label:first-child{
+    display: inline-block; min-width: 100px;
+}
+fieldset:first-of-type ul li > *:not(label){
+    vertical-align: middle; padding: 5px 10px; border: 1px solid seagreen;
+    transition: all 0.35s ease-out;
+}
+fieldset:first-of-type ul li > *:not(label):hover,
+fieldset:first-of-type ul li > *:not(label):focus{
+    background-color: #949494; border-color: #000;
+}
+fieldset:first-of-type ul li input[type='checkbox']+label{
+    padding: 10px; background-color: #fff; transition-duration: .35s;
+}
+fieldset:first-of-type ul li input[type='checkbox']:checked+label{
+    padding: 5px; background-color: #6a5acd; color: #fff; font-size: 12px; border-radius: 5px;
+}
+fieldset:first-of-type > input{
+    display: block; float: left; width: 45%; border: none; line-height: 34px; color: white;
+}
+fieldset:first-of-type input[type='submit']{
+    background-color: navy;
+}
+fieldset:first-of-type input[type='reset']{
+    background-color: darkred; margin-left: 10%;
+}
