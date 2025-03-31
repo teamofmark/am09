@@ -42,3 +42,21 @@ ul{
 .delay2 ul:hover li:nth-child(4){background-color: slategray;}
 .delay2 ul:hover li:nth-child(5){background-color: yellow;}
 .delay2 ul:hover li:nth-child(6){background-color: seagreen;}
+
+.delay3 ul{
+    height: 300px; background-color: #000;
+}
+.delay3 ul:after{
+    content: ''; display: block; clear: both;
+}
+.delay3 ul li{
+    float: left; width: 20%; height: 0; transition-duration: 3s;
+}
+.delay3 ul:hover li{
+    height: 300px;
+}
+.delay3 ul li:nth-child(1){background-color: #e04; transition-timing-function: cubic-bezier(1,0,1,-0.02);}
+.delay3 ul li:nth-child(2){background-color: #0e4; transition-timing-function: cubic-bezier(1,0,0,1);}   
+.delay3 ul li:nth-child(3){background-color: #40e; transition-timing-function: cubic-bezier(1,.66,0,.36);}
+.delay3 ul li:nth-child(4){background-color: #440; transition-timing-function: cubic-bezier(0,.98,1,-0.01);}
+.delay3 ul li:nth-child(5){background-color: #044; transition-timing-function: cubic-bezier(0,.98,0,.98);}
