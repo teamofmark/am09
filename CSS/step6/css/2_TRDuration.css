@@ -33,5 +33,10 @@ body{
     left: 97%;
 }
 .durationEX4{
-    
+    width: 50%; height: 300px; transition-duration: 2s; color: #000;
+    border-width: 3px; border-style: solid; border-color: #f00 #ff6a00 #ffd800 #4cff00;
+    margin-bottom: 200px;
+}
+.durationEX4:hover{
+    margin: 0 25% 200px; border-color: #00ff90 #0094ff #0026ff #b200ff; color: #0094ff;
 }
