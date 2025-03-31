@@ -22,3 +22,16 @@ body{
 .durationEX2:hover{
     padding: 0px; font-size: 0px; line-height: 0px;
 }
+.durationEX3{
+    position: relative; height: 23px; background-color: #808080; margin: 50px 0;
+}
+.durationEX3 .moveSpan{
+    background-color: #000; width: 3%; height: 23px; position: absolute; left: 0; top: 0; transition-duration: 2s;
+    /* display 속성이 positioning 이 이루어지면 상실됨. = inline 이어도 규격을 가질 수 있다. */
+}
+.durationEX3:hover .moveSpan{
+    left: 97%;
+}
+.durationEX4{
+    
+}
