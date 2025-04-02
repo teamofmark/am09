@@ -2,7 +2,7 @@ body{
     width: 200px; margin: 200px auto;
 }
 div{
-    width: 200px; height: 200px;
+    width: 200px;
 }
 div span{
     display: block; height: 200px; animation-iteration-count: infinite;
@@ -22,25 +22,38 @@ div span{
 }
 @keyframes verti{
     0%{
-        transform: ;
+        transform: rotateY(0deg);
     }
     100%{
-        transform: ;
+        transform: rotateY(360deg);
     }
 }
 @keyframes depth{
     0%{
-        transform: ;
+        transform: rotateZ(0deg);
     }
     100%{
-        transform: ;
+        transform: rotateZ(360deg);
     }
 }
 @keyframes rotate3D{
     0%{
-        transform: ;
+        /* transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); */
+        transform: rotate3d(0,0,0,0deg);
     }
     100%{
-        transform: ;
+        /* transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); */
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
+.translater span{
+    background-color: brown; color: white; animation-name: trans3D;
+}
+@keyframes trans3D{
+    0%{
+        transform: rotate3d(0,0,0,0deg) translate3d(0px,0px,0px) scale3d(0,0,0);
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg) translate3d(0px,0px,0px) scale3d(1,1,1);
     }
 }
