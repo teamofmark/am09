@@ -40,3 +40,12 @@ div span:nth-of-type(5){
 div span:nth-of-type(6){
     background-color: cyan; transform: rotateX(270deg); height: 200px;
 }
+/*
+    다이아만들기
+    transform-origin이 설정 되어있지 않기 때문에 모든 종이는 가운데를 중심으로 작동하게 된다.    
+    1. 4장의 종이를 position:absolute; left:0; top:0; 을 통해 한장으로 모은다.
+    2. first-of-type 는 회전 없이 100px만큼 z축으로 이동한다.
+    3. nth-of-type(2)는 Y축을 기준으로 90도만큼 기울이고, 100 px 만큼 z축으로 이동한다.
+    4. nth-of-type(3)은 first-of-type의 반대이기 때문에,  first-of-type와 같아보이지만 180도 회전한 상태로 기준점이 반대가 됨으로, z축에서 100px 이동하는것이 first-of-type와는 반대 방향으로 이동하게된다.
+    5. last-of-type는 nth-of-type(2) 와 같아 보이지만 180" 회전한 상태로 기준점이 반대가 됨으로 z축에서 100px 이동 하는것이 nth-of-type(2) 와는 반대 방향으로 이동하게 된다.
+*/
