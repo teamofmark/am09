@@ -32,3 +32,11 @@ div span:nth-of-type(3){
 div span:nth-of-type(4){
     background-color: yellow; transform: rotateY(270deg) translateZ(100px);
 }
+/* todo */
+div span:nth-of-type(5){
+    background-color: magenta; transform: rotateX(90deg) translateZ(100px);
+    height: 200px;
+}
+div span:nth-of-type(6){
+    background-color: cyan; transform: rotateX(270deg); height: 200px;
+}
