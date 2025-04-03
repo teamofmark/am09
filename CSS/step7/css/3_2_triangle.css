@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{width:200px; margin:200px auto;}
+div{width:200px; position:relative;
+	animation-name:rotate3D;
+	animation-iteration-count:infinite;
+	animation-duration:3s;
+	animation-timing-function:ease;
+	transform-style:preserve-3d;
+}
+div span{width:200px; height:100px; display: block;
+position:absolute;
+left:0; top:0;
+opacity:0.3;
+}
+
+div span:first-of-type
+{background-color:red; transform:rotateY(0deg); transform-origin:left top;}
+div span:nth-of-type(2)
+{background-color:green; transform:rotateY(60deg); transform-origin:left top;}
+div span:last-of-type
+{background-color:blue; transform:rotateY(-60deg); transform-origin:right top;}
+
+@keyframes rotate3D{
+	from{
+		transform:rotate3D(0,0,0, 0deg);
+		}to{
+			transform:rotate3D(1,1,1, 360deg);
+		}
+	}
+/* 
+    ? 삼각형 만들기
+    * 1. position:absolute; left:0; top:0; 3장의 종이를
+    * 한 가운데 모으기
+    * 2. transform-origin으로 좌측 상단을 기준으로 만든후,
+    * 3. 2번째 종이에 60도의 각도를 준다.
+    ! (첫번째 종이는 밑면이라서 각도가 필요 없다.)
+    * 4. 3번째 종이에는 반대방향의 동일 각도를 줘야한다.
+    * 중심점 역시 반대에 위치해야 함으로 transform-origin
+    * 을 right top으로 변경하고, -60도의 각도를 준다.
+    ? why 60' : 정삼각형의 조건 = 세변의 길이가 같고
+    ? 세 내각의 합이 180도여야 한다.
+*/
