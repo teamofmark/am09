@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* todo. 맘에드는 영문 글꼴 2개만 가져오기(fonts.google.com) */
+
+@import url('pc.css') screen;
+@import url('print.css') print;
 
 /*
     반응형 (responive) : 적응형(Adaptive)이후 단계로 장치의 변화나 화면 크기의 변화에 따라 내부 Layout요소들이
