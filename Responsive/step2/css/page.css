@@ -13,13 +13,6 @@
 }
 
 @media screen and (max-width: 767px) and (orientation: portrait){
-    body{
-        background-color: lightpink;
-    }
-    h1{
-        font-size: 32px; line-height: 40px; background-color: lightpink; margin-bottom: 30px;
-        text-align: right;
-    }
     article{
         background-color: skyblue; margin-bottom: 30px; padding: 30px;
     }
