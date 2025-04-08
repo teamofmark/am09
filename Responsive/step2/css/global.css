@@ -1,6 +1,11 @@
 
 
-@media screen and (min-width: 1280px) {
-    
+@media screen and (min-width: 1280px){
+    body{
+        background-color: lightblue;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; background-color: lightgreen; margin-bottom: 30px;
+    }
 }
 /* desktop Code */
