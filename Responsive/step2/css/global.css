@@ -1,5 +1,16 @@
 
 
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    body{
+        background-color: lightpink;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; background-color: lightpink; margin-bottom: 30px;
+        text-align: right;
+    }
+}
+/* tablet Code */
+
 @media screen and (min-width: 1280px){
     body{
         background-color: lightblue;
