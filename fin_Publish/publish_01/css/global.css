@@ -20,6 +20,11 @@ ul,ol{
 /* All / Using */
 
 @media screen and (min-width:1280px) {
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+
+
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
@@ -87,5 +92,15 @@ ul,ol{
         background-color: #00e0d0; border-color:#00e0d0;
     }
     /* header fin */
+
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 31%; margin: 0 0 70px 3.5%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
 }
 /* desktop */
