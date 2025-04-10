@@ -72,6 +72,20 @@ ul,ol{
         max-width: 120px; margin: 0 auto;
     }
     /* todo. indicator 완성해보기 */
-    
+    header div ol{
+        text-align: center;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px; width:8px; height:8px;
+        border:1px solid rgba(255,255,255,0.8); border-radius: 5px;
+    }
+    header div ol li a.active,
+    header div ol li a:hover{
+        background-color: #00e0d0; border-color:#00e0d0;
+    }
+    /* header fin */
 }
 /* desktop */
