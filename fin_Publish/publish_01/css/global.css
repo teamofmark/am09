@@ -153,5 +153,40 @@ ul,ol{
         clear: left;
     }
     /* todo. SNS ICON 구현해보기 */
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+        /* 먼저 붙히고 규격 잡아야함 */
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 5px; /* margin 처리 */
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: block; background-repeat: no-repeat; background-size: contain; text-indent: -9999px;
+        /* 규격 잡힌 li에 a 공간 꽉 채우기. 배경 공통속성 넣기. 글자 밀어내기 */
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{ 
+       background-image: url('../images/ico_sns_01.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{ 
+       background-image: url('../images/ico_sns_02.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{ 
+       background-image: url('../images/ico_sns_03.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{ 
+       background-image: url('../images/ico_sns_04.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{ 
+       background-image: url('../images/ico_sns_05.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{ 
+       background-image: url('../images/ico_sns_06.png');
+        /*배경 이미지 넣기*/
+    }
 }
 /* desktop */
