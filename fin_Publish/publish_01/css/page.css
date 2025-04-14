@@ -4,25 +4,30 @@
     /* todo. figure part */
     /* 1. global code 찾아 넣어주기 */
     #about{
-         /* img 가 좌측 guide에 붙어있지 않음 - 간격 계산해서 여백 처리 */
+        padding-left: 7%; /* img 가 좌측 guide에 붙어있지 않음 - 간격 계산해서 여백 처리 */
     }
     #about:after{
-        /* float 해제 */
+        content: ''; display: block; clear: both;/* float 해제 */
     }
     #about img{
-        /* img 규격및 설정 */
+        float: left; width: 25%; max-width: 235px;/* img 규격및 설정 */
     }
     #about figcaption{
-        /* figcaption 규격및 설정 */
+        float: left; margin-left: 10%; width: 65%;/* figcaption 규격및 설정 */
+    }
+    #about figcaption > *:not(a){
+        margin-bottom: 20px;
     }
     #about figcaption h2{
-        /* title 설정 */
+        font-size: 22px; font-weight: 700; color: #413d4b;/* title 설정 */
     }
     #about figcaption p{
+        font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
         /* paragraph 설정 */
     }
     #about figcaption a.btn_more{
-        /* module 규격 */
+       max-width: 120px; /* module 규격 */
     }
+    /* CI figure Fins */
 }
 /* desktop */
