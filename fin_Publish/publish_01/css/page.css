@@ -1,6 +1,28 @@
 
 
 @media screen and (min-width:1280px) {
-    
+    /* todo. figure part */
+    /* 1. global code 찾아 넣어주기 */
+    #about{
+         /* img 가 좌측 guide에 붙어있지 않음 - 간격 계산해서 여백 처리 */
+    }
+    #about:after{
+        /* float 해제 */
+    }
+    #about img{
+        /* img 규격및 설정 */
+    }
+    #about figcaption{
+        /* figcaption 규격및 설정 */
+    }
+    #about figcaption h2{
+        /* title 설정 */
+    }
+    #about figcaption p{
+        /* paragraph 설정 */
+    }
+    #about figcaption a.btn_more{
+        /* module 규격 */
+    }
 }
 /* desktop */
