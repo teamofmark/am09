@@ -188,5 +188,18 @@ ul,ol{
        background-image: url('../images/ico_sns_06.png');
         /*배경 이미지 넣기*/
     }
+
+    footer > div div:last-of-type{
+        clear: left; font-weight: 400;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
 }
 /* desktop */
