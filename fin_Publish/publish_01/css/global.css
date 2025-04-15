@@ -2,11 +2,17 @@ header div nav ul li a,
 header div > ul li p,
 #about figcaption p,
 section.videoArea  h2,
+section.expArea ul,
+section.teamArea ul,
+section.teamArea ul+p,
 footer div *{
     font-family: 'Roboto';
 }
 header div > ul li h2,
-#about figcaption h2{
+#about figcaption h2,
+section.expArea > *:not(ul),
+section.teamArea h2,
+section.teamArea h2+p{
     font-family: 'Playfair Display';
 }
 a{
@@ -20,11 +26,15 @@ ul,ol{
     border: 1px solid #00e0d0; color: #00e0d0; padding: 12px 0.6%;
     box-sizing: border-box;
 }
-
+[class$='Area'] p+hr{
+    width: 50px; border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
+    /* ? width가 가변될 경우 -> page | width가 고정될 경우 module. */
+}
 /* All / Using */
 
 @media screen and (min-width:1280px) {
     #about,
+    section.expArea,
     footer > div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
