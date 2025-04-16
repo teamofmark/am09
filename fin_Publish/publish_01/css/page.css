@@ -139,5 +139,11 @@
         max-width: 140px; margin: 0 auto;
     }
     /* teamArea Fin */
+    /* 
+        1. font - global 설정
+        2. 부모공간 설정(.worksArea) -> 제목부 설정(h2>a = 이점활용)
+        3. ul -> 6열 float
+        4. li img -> 종횡비를 맞춰서 계속 화면크기에 대비 커지고 줄어들어야 함(adaptive=적응)
+    */
 }
 /* desktop */
