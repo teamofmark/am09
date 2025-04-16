@@ -108,7 +108,36 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 70px;
+        max-width: 940px; margin: 0 auto 70px; 
     }
+    section.teamArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.teamArea ul li{
+        width: 23.5%; float: left; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
+    section.teamArea ul li figure{
+        background: url('https://placehold.co/220x230') center top / contain no-repeat; padding-top: 230px;
+        /* 반응형,적응형에 취약함 */
+    }
+    section.teamArea ul li figure figcaption{
+        border: 1px solid rgba(255,255,255,0.5); padding: 20px;
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300; color: rgba(250,250,250,0.7);
+    }
+    section.teamArea ul + p{
+        margin-bottom: 25px; font-weight: 300; 
+    }
+    section.teamArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* teamArea Fin */
 }
 /* desktop */
