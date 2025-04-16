@@ -145,5 +145,59 @@
         3. ul -> 6열 float
         4. li img -> 종횡비를 맞춰서 계속 화면크기에 대비 커지고 줄어들어야 함(adaptive=적응)
     */
+    section.worksArea{
+        padding: 70px 0;
+    }
+    section.worksArea h2{
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        position: relative;
+        /* display:flex; justify-content: space-between; */
+    }
+    section.worksArea h2 a{
+        position: absolute; right: 0; font-size: 14px; font-weight: 300; color: #413d4b; line-height: 22px;
+        /* float: right; display: inherit; line-height: 22px; */
+    }
+    section.worksArea ul{
+        list-style: none; margin-bottom: 70px;
+    }
+    section.worksArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.worksArea ul li{
+        width: 16.66%; float: left;
+    }
+    section.worksArea ul li *{
+        /* display: inline; -> block ? click, touch작동문제 */ display: block;
+    }
+    section.worksArea ul li a img{
+        /* display: inline-block; -> width = contentWidth ? 가변불가(강제마진4px), inline-block을 block으로 전환한다고 width: 100%자동아님  */
+         width: 100%;
+    }
+    section.worksArea a.btn_more{
+        max-width: 140px; margin: 0 auto;
+    }
+    /* worksArea fin */
+
+    section.talkArea{
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0; text-align: center;
+    }
+    section.talkArea h2{
+        /* validation passing */
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        background: url('../images/quote.png') no-repeat center top;
+        font-size: 16px; line-height: 26px; font-weight: 400;
+    }
+    section.talkArea p *{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin: 40px 0 0; font-size: 14px; font-weight: 900;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
+    }
 }
 /* desktop */
