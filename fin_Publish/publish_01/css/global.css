@@ -39,6 +39,193 @@ ul,ol{
 }
 /* All / Using */
 
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    #about,
+    section.expArea,
+    section.contactArea,
+    footer > div{
+        max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+
+
+    header{
+        padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
+    }
+    header div{
+        max-width:940px; margin: 0 auto; position: relative;
+    }
+    header div h1{
+        max-width: 128px;
+    }
+    header div h1 *{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav{
+        position: absolute; right: 0; top: 0; padding-left:130px; width: 100%; box-sizing: border-box;
+        text-align: right;
+    }
+    header div nav ul li{
+        display: inline-block;
+    }
+    header div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header div nav ul li a{
+        display: block; font-size: 13px; font-weight: 900; color: white; line-height: 50px;
+    }
+    header div nav ul li a.active,
+    header div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? header GNB Fin */
+
+    header div > ul{
+        margin-bottom: 125px;
+    }
+    header div > ul li{
+        padding-top: 165px;
+    }
+    header div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; max-width: 775px; text-align: center;
+        line-height: 24px; margin: 0 auto 50px;
+    }
+    header div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    /* todo. indicator 완성해보기 */
+    header div ol{
+        text-align: center;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px; width:8px; height:8px;
+        border:1px solid rgba(255,255,255,0.8); border-radius: 5px;
+    }
+    header div ol li a.active,
+    header div ol li a:hover{
+        background-color: #00e0d0; border-color:#00e0d0;
+    }
+    /* header fin */
+
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer > div div:not(:last-of-type){
+        float: left; width: 31%; margin: 0 0 70px 3.5%;
+    }
+    footer > div div:first-of-type{
+        margin-left: 0;
+    }
+    footer > div div h2{
+        margin-bottom: 20px;
+        /* 타이틀 밑 컨텐츠들이 어느정도 정리 된 이후 계산하기 편함. - 25px? 하단  text(line-height) = 20px */
+    }
+    footer > div div:not(:first-of-type) h2{
+        font-size: 15px; font-weight: 900; color: white; line-height: 50px;
+    }
+    footer > div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px; color: white;
+    }
+    footer > div div:not(:nth-of-type(3)) a{
+        color: inherit;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        font-weight: 300;
+    }
+    footer > div div:nth-of-type(2) address{
+        /* default: font-style: italic; -> normal; */
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px;
+        background-repeat: no-repeat; background-position: left 5px;
+        /* 동일속성을 우선 정리 */
+    }
+    footer > div div:nth-of-type(2) address span:first-of-type{
+        background-image: url('../images/bul_map.png'); margin-bottom: 15px;
+    }
+    footer > div div:nth-of-type(2) address span:last-of-type{
+        background-image: url('../images/bul_phone.png'); 
+    }
+    footer > div div:nth-of-type(3) input{
+        float: left; margin-bottom: 25px; display: block; box-sizing: border-box;
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: 70%; font-size: 14px; border:1px solid rgba(255,255,255,0.5);
+        line-height: 43px; padding: 0 15px; background-color: transparent; color: white;
+    }
+    footer > div div:nth-of-type(3) input[type='email']::placeholder{
+        color: rgba(255,255,255,0.75);
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: 25%; margin-left: 5%; text-indent: -9999px; border: none; line-height: 43px;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+    }
+    footer > div div:nth-of-type(3) ul{
+        clear: left;
+    }
+    /* todo. SNS ICON 구현해보기 */
+    footer > div div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+        /* 먼저 붙히고 규격 잡아야함 */
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: 5px; /* margin 처리 */
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: block; background-repeat: no-repeat; background-size: contain; text-indent: -9999px;
+        /* 규격 잡힌 li에 a 공간 꽉 채우기. 배경 공통속성 넣기. 글자 밀어내기 */
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{ 
+       background-image: url('../images/ico_sns_01.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{ 
+       background-image: url('../images/ico_sns_02.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{ 
+       background-image: url('../images/ico_sns_03.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{ 
+       background-image: url('../images/ico_sns_04.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{ 
+       background-image: url('../images/ico_sns_05.png');
+        /*배경 이미지 넣기*/
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{ 
+       background-image: url('../images/ico_sns_06.png');
+        /*배경 이미지 넣기*/
+    }
+
+    footer > div div:last-of-type{
+        clear: left; font-weight: 400;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
+}
+/* tablet */
+
 @media screen and (min-width:1280px) {
     #about,
     section.expArea,
