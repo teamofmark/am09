@@ -245,5 +245,58 @@
         3. 좌측공간 처리 - 타이틀, input's 전체너비 다 쓸 수 있는 상황으로..
         4. 우측공간 처리 - banner's -> 2열 구성 (*img의 최대너비를 넘어서는 안된다)
     */
+    section.contactArea:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea h2{
+        display: none;
+    }
+    section.contactArea form fieldset,
+    section.contactArea div{
+        float: left;
+    }
+    section.contactArea form fieldset legend,
+    section.contactArea div h3{
+        font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
+    }
+    section.contactArea form fieldset{
+        width: 49%;
+    }
+    section.contactArea form fieldset > *:not([type='submit'],legend){
+        border: 1px solid rgba(0,0,0,0.1); padding: 14px 20px; font-size: 14px; font-weight: 300; display: block;
+        width: 100%; box-sizing: border-box; margin-bottom: 20px;
+    }
+    section.contactArea form fieldset > *:not([type='submit'],legend)::placeholder{
+        color: rgba(65,61,75,0.5);
+    }
+    section.contactArea form fieldset textarea{
+        height: 200px; resize: none;
+    }
+    section.contactArea form fieldset .btn_more{
+        background-color: transparent; cursor: pointer; min-width: 120px;
+    }
+
+    section.contactArea div{
+        width: 40%; margin-left: 11%;
+    }
+    section.contactArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block;
+    }
+    section.contactArea div ul li:nth-child(2n+1) a{
+        text-align: left;
+    }
+    section.contactArea div ul li:nth-child(2n) a{
+        text-align: right;
+    }
+    section.contactArea div ul li a img{
+        width: 100%; max-width: 162px;
+    }
+    /* contactArea Fin */
 }
 /* desktop */
