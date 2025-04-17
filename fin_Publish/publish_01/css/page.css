@@ -199,5 +199,44 @@
     section.talkArea p span{
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
+    section.talkArea div{
+        max-width: 940px; margin: 0 auto;
+    }
+    section.talkArea div > *{
+        display: inline-block; vertical-align: middle;
+    }
+    section.talkArea div > a{
+        font-size: 21px; color: #9f9f9f;
+    }
+    section.talkArea div ul{
+        max-width: 310px; width: 33%;
+    }
+    section.talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
+    section.talkArea div ul li a{
+        display: block; text-align: center;
+    }
+    section.talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a,
+    section.talkArea div ul li:not(.active):hover a{
+        padding: 0;
+    }
+    section.talkArea div ul li:not(.active) a img{
+        width: 65%; transition: width 0.35s ease-in-out;
+    }
+    section.talkArea div ul li.active a img,
+    section.talkArea div ul li:not(.active):hover a img{
+        width: 100%;
+    }
+    /* talkArea Fin */
 }
 /* desktop */
