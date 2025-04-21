@@ -148,13 +148,11 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;
         position: relative;
-        /* display:flex; justify-content: space-between; */
     }
     section.worksArea h2 a{
         position: absolute; right: 0; font-size: 14px; font-weight: 300; color: #413d4b; line-height: 22px;
-        /* float: right; display: inherit; line-height: 22px; */
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
@@ -166,10 +164,9 @@
         width: 16.66%; float: left;
     }
     section.worksArea ul li *{
-        /* display: inline; -> block ? click, touch작동문제 */ display: block;
+        display: block;
     }
     section.worksArea ul li a img{
-        /* display: inline-block; -> width = contentWidth ? 가변불가(강제마진4px), inline-block을 block으로 전환한다고 width: 100%자동아님  */
          width: 100%;
     }
     section.worksArea a.btn_more{
@@ -185,7 +182,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width:/* 770px*/ 728px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -199,7 +196,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -208,7 +205,7 @@
         font-size: 21px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 700px; width: /*33%*/60%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
@@ -237,13 +234,6 @@
         width: 100%;
     }
     /* talkArea Fin */
-    /* 
-        todo. contactArea
-        1. global - font,guide...설정
-        2. 큰 공간 (2개) float 배치 - (*form은 css적용할 수 없음)
-        3. 좌측공간 처리 - 타이틀, input's 전체너비 다 쓸 수 있는 상황으로..
-        4. 우측공간 처리 - banner's -> 2열 구성 (*img의 최대너비를 넘어서는 안된다)
-    */
     section.contactArea:after{
         content: ''; display: block; clear: both;
     }
