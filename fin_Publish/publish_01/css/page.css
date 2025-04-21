@@ -42,15 +42,6 @@
         font-size: 16px; color: white; text-align: center; font-weight: 900;
     }
     /* video Fin */
-    /* todo expertise 완성해보기 */
-    /* 
-        1. global - font, guide.. 설정
-        2. 첫 제목(h2), 첫 문단(p), 구분선(hr-module)
-        3. list float 배치
-            -1. float 배치 (afterCancel)
-            -2. border처리(수동 or 자동(1번,2번 상/우 | 3번 상))
-            -3. background icon 처리 및 부제(h3),관련문단(p)처리
-    */
     section.expArea{
         text-align: center;
     }
@@ -138,12 +129,6 @@
         max-width: 140px; margin: 0 auto;
     }
     /* teamArea Fin */
-    /* 
-        1. font - global 설정
-        2. 부모공간 설정(.worksArea) -> 제목부 설정(h2>a = 이점활용)
-        3. ul -> 6열 float
-        4. li img -> 종횡비를 맞춰서 계속 화면크기에 대비 커지고 줄어들어야 함(adaptive=적응)
-    */
     section.worksArea{
         padding: 70px 0;
     }
