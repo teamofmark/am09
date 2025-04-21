@@ -119,8 +119,8 @@
         margin-left: 2%;
     }
     section.teamArea ul li figure{
-        background: url('https://placehold.co/220x230') center top / contain no-repeat; padding-top: 230px;
-        /* 반응형,적응형에 취약함 */
+        background: url('https://placehold.co/220x230') center top / contain no-repeat;
+        padding-top: /*230px*/180px; /* 반응형,적응형에 취약함 */
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(255,255,255,0.5); padding: 20px;
