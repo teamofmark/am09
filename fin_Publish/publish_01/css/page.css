@@ -2,19 +2,17 @@
 
 
 @media screen and (min-width:768px) and (max-width: 1279px) {
-    /* todo. figure part */
-    /* 1. global code 찾아 넣어주기 */
     #about{
-        padding-left: 7%; /* img 가 좌측 guide에 붙어있지 않음 - 간격 계산해서 여백 처리 */
+        padding-left: /*7%*/3.5%; 
     }
     #about:after{
-        content: ''; display: block; clear: both;/* float 해제 */
+        content: ''; display: block; clear: both;
     }
     #about img{
-        float: left; width: 25%; max-width: 235px;/* img 규격및 설정 */
+        float: left; width: /*25%*/ 32%; max-width: 235px;
     }
     #about figcaption{
-        float: left; margin-left: 10%; width: 65%;/* figcaption 규격및 설정 */
+        float: left; margin-left: /*10%*/ 8%; width:/* 65%*/ 60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 20px;
@@ -85,7 +83,7 @@
     section.expArea ul li:nth-child(5){background-image: url('../images/ico_05.png');}
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
     section.expArea ul li h3{
-        font-size: 14px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
+        font-size: /*14px*/12px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
     }
     section.expArea ul li p{
         font-size: 14px; font-weight: 300; color: rgba(51,51,51,0.75); line-height: 22px;
@@ -109,7 +107,7 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 70px; 
+        max-width: /*940px*/728px; margin: 0 auto 70px; 
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;

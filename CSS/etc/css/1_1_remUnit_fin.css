@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{font-size:15px;}
+
+body{margin:0;}
+
+.wrap{width:75rem; background-color:#fcf; margin:0 auto;}
+
+.wrap header{line-height:3rem; background-color:#C30;}
+
+.wrap section:after{
+    content:''; display: block; visibility: hidden; clear: both;
+}
+.wrap section aside
+{float:left; width:20rem; line-height:30rem; background-color:#0ff;}
+
+.wrap section article
+{float:left; width:55rem; line-height:30rem; background-color:#fc6;}
+
+.wrap footer{height:3rem; background-color:#3c6;}
