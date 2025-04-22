@@ -1,17 +1,22 @@
 
 @media screen and (max-width: 767px) {
-    #about{
-        padding-left: /*7%*/3.5%; 
+    /* #about{
+        padding-left: 3.5%; 
     }
     #about:after{
         content: ''; display: block; clear: both;
+    } */
+    #about{
+        text-align: center;
     }
     #about img{
-        float: left; width: /*25%*/ 32%; max-width: 235px;
+        /*float: left; width: 32%;*/ width: 50%; max-width: 235px;
     }
+    /*
     #about figcaption{
-        float: left; margin-left: /*10%*/ 8%; width:/* 65%*/ 60%;
+        float: left; margin-left:  8%; width: 60%;
     }
+    */
     #about figcaption > *:not(a){
         margin-bottom: 20px;
     }
@@ -23,7 +28,7 @@
         /* paragraph 설정 */
     }
     #about figcaption a.btn_more{
-       max-width: 120px; /* module 규격 */
+       max-width: 120px; margin: 0 auto;
     }
     /* CI figure Fin */
 
@@ -52,19 +57,20 @@
     section.expArea hr{
         border-color: rgba(65,61,75,0.3);
     }
-    section.expArea ul:after{
+    /* section.expArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.expArea ul li{
-        width: 33.33%; float: left; display: block; padding: 120px 3.5% 40px; box-sizing: border-box;
+        /*width: 33.33%; float: left;*/ display: block; padding: 120px /*3.5%*/2.5% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
     }
-    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+    /* section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:not(:nth-child(3n)){
         border-right: 1px solid rgba(0,0,0,0.2);
-    }
+    } */
     section.expArea ul li:nth-child(1){background-image: url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image: url('../images/ico_02.png');}
     section.expArea ul li:nth-child(3){background-image: url('../images/ico_03.png');}
@@ -72,7 +78,7 @@
     section.expArea ul li:nth-child(5){background-image: url('../images/ico_05.png');}
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
     section.expArea ul li h3{
-        font-size: /*14px*/12px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
+        font-size: /*12px*/14px; font-weight: 900; color: #413d4b; margin-bottom: 20px;
     }
     section.expArea ul li p{
         font-size: 14px; font-weight: 300; color: rgba(51,51,51,0.75); line-height: 22px;
@@ -81,7 +87,7 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center;
-        padding: 70px 0; color: white;
+        padding: 70px /*0*/3%; color: white;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -95,8 +101,8 @@
     section.teamArea hr{
         border-color: rgba(255,255,255,0.2);
     }
-    section.teamArea ul{
-        max-width: /*940px*/728px; margin: 0 auto 70px; 
+    /* section.teamArea ul{
+        max-width: 728px; margin: 0 auto 70px; 
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
@@ -106,9 +112,12 @@
     }
     section.teamArea ul li:not(:first-child){
         margin-left: 2%;
+    } */
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://placehold.co/220x230') center top / contain no-repeat;
+        background: url('https://placehold.co/220x230') center top / /*contain*/cover no-repeat;
         padding-top: /*230px*/180px; /* 반응형,적응형에 취약함 */
     }
     section.teamArea ul li figure figcaption{
@@ -131,21 +140,21 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;
+        font-size: /*22px*/18px; font-weight: 700; color: #413d4b; /*max-width: 728px; margin: 0 auto 70px;*/
         position: relative;
     }
     section.worksArea h2 a{
-        position: absolute; right: 0; font-size: 14px; font-weight: 300; color: #413d4b; line-height: 22px;
+        position: absolute; right: 0; font-size: /*14px*/12px; font-weight: 300; color: #413d4b; line-height: 22px;
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
     }
     section.worksArea ul li{
         width: 16.66%; float: left;
-    }
+    } */
     section.worksArea ul li *{
         display: block;
     }

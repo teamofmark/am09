@@ -42,6 +42,8 @@ ul,ol{
 @media screen  and (max-width: 767px) {
     #about,
     section.expArea,
+    section.teamArea ul,
+    section.worksArea h2,
     section.contactArea,
     footer > div{
         /*max-width: 728px;*/ max-width: 600px;  margin: 0 auto; padding: 70px /*0*/3%;
