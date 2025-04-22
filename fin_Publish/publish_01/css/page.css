@@ -167,14 +167,14 @@
     /* worksArea fin */
 
     section.talkArea{
-        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0; text-align: center;
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px /*0*/3%; text-align: center;
     }
     section.talkArea h2{
         /* validation passing */
         display: none;
     }
     section.talkArea p{
-        max-width:/* 770px*/ 728px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width:/* 728px*/600px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -188,7 +188,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: /*940px*/728px; margin: 0 auto;
+        max-width: /*728px*/600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -197,7 +197,7 @@
         font-size: 21px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 700px; width: /*33%*/60%;
+        max-width: /*700px*/600px; width: /*60%*/80%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
@@ -226,22 +226,22 @@
         width: 100%;
     }
     /* talkArea Fin */
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left;
-    }
+    } */
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
     }
     section.contactArea form fieldset{
-        width: 49%;
+        /* width: 49%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset > *:not([type='submit'],legend){
         border: 1px solid rgba(0,0,0,0.1); padding: 14px 20px; font-size: 14px; font-weight: 300; display: block;
@@ -257,9 +257,9 @@
         background-color: transparent; cursor: pointer; min-width: 120px;
     }
 
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 11%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; clear: both;
     }
