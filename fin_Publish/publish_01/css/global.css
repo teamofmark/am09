@@ -78,6 +78,9 @@ ul,ol{
     header div nav input[type='checkbox'].mui{
         display: none;
     }
+    header div nav input[type='checkbox']:checked + ul{
+        height: 350px;
+    }
     header div nav ul{
         height: 0; overflow: hidden; transition: height 0.5s ease-in-out;
     }
@@ -91,17 +94,17 @@ ul,ol{
     header div nav ul li a{
         display: block; font-size: 13px; font-weight: 900; color: white; line-height: 50px;
     }
-    header div nav ul li a.active,
-    header div nav ul li a:hover{
+    header div nav ul li a.active
+    /*,header div nav ul li a:hover*/{
         color: #00e0d0;
     }
     /* ? header GNB Fin */
 
     header div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header div > ul li{
-        padding-top: 165px;
+        padding-top: /*165px*/55px;
     }
     header div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
