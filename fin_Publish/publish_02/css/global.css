@@ -1,4 +1,14 @@
+body{
+    background-color: #e4e5e7;
+}
+/* todo. tajam font's -> grouping, portland font's -> module (font-family) */
 
+.mont{
+    font-family: 'Montserrat';
+}
+.crim{
+    font-family: 'Crimson Pro';
+}
 
 @media screen and (min-width: 1280px) {
     
