@@ -10,7 +10,64 @@ body{
     font-family: 'Crimson Pro';
 }
 
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 1280px) {
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div::after{
+        content: ''; display: block; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-icons{
+        /* google material icons 등등 svg iconPackage 들은 css 적용시 class 같이 적기 */
+        width: 5.12%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block;
+        /* -_-? label - display : inline = width?(x) */
+    }
+    header > div h1{
+        width: 10.68%; max-width: 125px;
+    }
+    header > div h1 a{
+        display: block; padding:  32px 0; text-align: right;
+    }
+    header > div h1 a img{
+        width: 100%; max-width: 92px;
+    }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 600; color: #343e5c;
+        line-height: 90px;
+    }
+    header > div div{
+        width: 29.5%; font-size: 11px; color: #343e5c; text-align: right;
+        line-height: 90px;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
 }
 /* desktop */
