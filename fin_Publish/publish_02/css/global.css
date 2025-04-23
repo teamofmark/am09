@@ -69,5 +69,51 @@ a{
     header > div div *:not(input){
         display: inline-block;
     }
+    header > div div strong{
+        padding-left:25px; line-height: 17px; font-weight: 600;
+        background: url('../images/bul_cart.png') left top / contain no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
+        text-align: center; font-weight: 400; margin-left: 5px;
+    }
+    header > div div input[type='button']{
+        font-size: 11px; font-weight: 600; padding: 8px 15px; border: 2px solid #e3e8f0;
+        border-radius: 16px; background-color: white; letter-spacing: 1px; margin-left: 25px;
+        font-family: inherit;
+        /* ? margin px? - 부모공간에 여유가 있고, 환산하기에는 너무 적은 수치. 어차피 %환산해도 inline-block이니까 drop.. */
+    }
+    /* header Fin */
+
+    .paging{
+        position: relative; clear: both;
+        background-color: white; border-radius: 5px;
+    }
+    .paging > a{
+        position: absolute; top: 0; text-align: center; width: 16.66%; line-height: 90px;
+        font-size: 18px; font-weight: 600; color: #3a405b;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        text-align: center; padding: 20px 17%; box-sizing: border-box;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        display: block; width: 50px; line-height: 50px; border-radius: 25px;
+        font-size: 14px; color: #3a405b; font-weight: 600; background-color: white;
+        transition: box-shadow .3s ease-out;
+    }
+    .paging ol li a.active,
+    .paging ol li a:hover{
+        box-shadow: 0 5px 8px rgba(168,172,185,0.62); color: #b9bed1;
+    }
+    /* pager Fin */
 }
 /* desktop */
