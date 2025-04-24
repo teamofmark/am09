@@ -20,6 +20,7 @@ a{
 
 @media screen and (min-width: 1280px) {
     header > div,
+    header + nav div,
     footer > div{
         max-width: 1170px; margin: 0 auto;
     }

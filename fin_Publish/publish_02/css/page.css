@@ -1,6 +1,45 @@
 
 
 @media screen and (min-width: 1280px) {
-    
+    header + nav{
+        background-color: white;
+    }
+    header + nav div:after{
+        content: ''; display: block; clear: both;
+    }
+    header + nav div > *{
+        float: left;
+    }
+    header + nav div ul{
+        width: 80%;
+    }
+    header + nav div ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header + nav div ul li:not(:last-child){
+        float: left;
+    }
+    header + nav div ul li:last-child{
+        float: right;
+    }
+    header + nav div ul li a{
+        display: block; font-size: 11px; color: #b9bed1; line-height: 56px; font-weight: 600;
+        letter-spacing: 1px;
+    }
+    header + nav div ul li a:hover,
+    header + nav div ul li a.active{
+        color: #343e5c;
+    }
+
+    header + nav div input[type='search']{
+        width: 17%;  margin-left: 3%; padding: 19px 2% 19px 4%; box-sizing: border-box;
+        border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
+        background: url('../images/bul_search.png') no-repeat 10% center;
+        font-size: 14px; font-weight: 600; font-family: inherit; color: #343e5c;
+    }
+    header + nav div input[type='search']::placeholder{
+        color: #a1a8bd;
+    }
+    /* ?slider Nav Fin */
 }
 /* desktop */
