@@ -19,7 +19,8 @@ a{
 }
 
 @media screen and (min-width: 1280px) {
-    header > div{
+    header > div,
+    footer > div{
         max-width: 1170px; margin: 0 auto;
     }
     header{
@@ -115,5 +116,67 @@ a{
         box-shadow: 0 5px 8px rgba(168,172,185,0.62); color: #b9bed1;
     }
     /* pager Fin */
+    
+    footer{
+        background-color: #222328;
+    }
+    footer > div{
+        padding: 60px 0; position: relative;
+    }
+    footer > div span{
+        position: absolute; display: block; right: 0; top: 60px;
+    }
+    footer > div:first-child{
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    footer > div:first-child h2{
+        position: absolute; left: 0; top: 60px; max-width: 92px; width: 7.86%; min-width: 78px;
+    }
+    footer > div:first-child h2 img{
+        width: 100%; display: block;
+    }
+    footer > div:first-child ul{
+        padding: 0 10%; text-align: center;
+    }
+    footer > div:first-child ul li{
+        display: inline-block;
+    }
+    footer > div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer > div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 600;
+    }
+    footer > div:first-child span{
+        width: 8.97%;
+    }
+    footer > div:first-child span a{
+        display: inline-block; width: 24px; height: 18px;
+        background-repeat: no-repeat; text-indent: -9999px;
+        /* text-align: left; */
+    }
+    footer > div:first-child span a:nth-child(1){
+        background-image: url('../images/sns_01.png'); background-position: left;
+    }
+    footer > div:first-child span a:nth-child(2){
+        background-image: url('../images/sns_02.png'); background-position: 5px;
+    }
+    footer > div:first-child span a:nth-child(3){
+        background-image: url('../images/sns_03.png'); background-position: right;
+    }
+    footer > div:nth-child(2) p{
+        max-width: 510px; font-size: 14px; font-style: italic; font-weight: 400; line-height: 22px;
+        color: rgba(255,255,255,0.3); width: 50%;
+    }
+    footer > div:nth-child(2) span{
+        text-align: right; width: 50%;
+    }
+    footer > div:nth-child(2) span a{
+        font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block; font-weight: 600;
+    }
+    footer > div:nth-child(2) span a:last-of-type{
+        margin-left: 2.56%;
+    }
+    /* footer Fin */
 }
 /* desktop */
