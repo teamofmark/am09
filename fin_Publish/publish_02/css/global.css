@@ -18,6 +18,17 @@ a{
     text-decoration: none;
 }
 
+.selectBox{
+    display: inline-block; box-sizing: border-box; background: url('../images/bg_arrow.png') no-repeat right center;
+}
+.selectBox select{
+    border: none; box-shadow: none; background-image: none; background-color: transparent; appearance: none;
+    font-family: inherit; font-weight: inherit;
+    padding: 10px 20px 10px 10px; box-sizing: border-box; font-size: 11px; color: #343e5c;
+}
+/* .selectBox.active{
+    background-image:
+} */
 @media screen and (min-width: 1280px) {
     header > div,
     header + nav div,
