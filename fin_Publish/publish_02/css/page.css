@@ -78,6 +78,32 @@
         background-color: white;
     }
 
+    section.slideArea > div ul li{
+        display: block;
+    }
+    section.slideArea > div ul li figure{
+        position: relative;
+    }
+    section.slideArea > div ul li figure img{
+        width: 100%; display: block;
+    }
+    section.slideArea > div ul li figure figcaption{
+        position: absolute; left: 15%; top: 20%;  width: 32.85%; max-width: 460px; color: white;
+    }
+    section.slideArea > div ul li figure figcaption dl{
+        margin-bottom: 60px;
+    }
+    section.slideArea > div ul li figure figcaption dl dt{
+        font-size: 42px; font-weight: 900; line-height: 50px; margin-bottom: 25px;
+    }
+    section.slideArea > div ul li figure figcaption dl dd{
+        font-size: 16px; font-weight: 400; line-height: 24px;
+    }
+    section.slideArea > div ul li figure figcaption input[type='button']{
+        width: 35.86%; background-color: #2754eb; font-size: 11px; font-weight: 600; line-height: 42px; border-radius: 21px;
+        color: white; border: none; letter-spacing: 1px;
+    }
+    /* slider Fin */
     
 }
 /* desktop */
