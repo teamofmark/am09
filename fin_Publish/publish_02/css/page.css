@@ -146,5 +146,55 @@
     .contentArea > form fieldset label[for='freeShipCheck']{
         margin-left: 2.56%;
     }
+    .contentArea > form fieldset label[for='freeShipCheck']{
+        padding-left: 2.56%; font-size: 13px; color: #343e5c; transition: background 0.5s ease-out;
+    }
+    .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
+        background: url('../images/bul_check.png') no-repeat left center;
+    }
+    .contentArea > form fieldset .shipSelect select{
+        text-align: right;
+    }
+    /* ?sortBar Fin */
+
+    .contentArea aside{
+        width: 23%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 5px; margin-bottom: 30px;
+    }
+    .contentArea aside nav ul *{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        /* depth menu Open - button or text.. 절대 a등의 버튼으로 만들면 안된다. */
+        font-size: 13px; color: #343e5c; font-weight: 600; padding: 15px 7%;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right; transform: rotate(0deg);
+        transition: transform 0.5s ease-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(180deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; font-weight: 600; color: #a1a7bd; opacity: 0; padding: 0px 7%;
+        transition: all .3s ease-in-out;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; padding: 15px 7%; border-bottom: 1px solid #dfe4ee; opacity: 1;
+    }
+    /* depthMenu Fin */
+
+    .contentArea section{
+        margin-left: 2.56%; width: 74.44%; float: left;
+    }
+    
 }
 /* desktop */
