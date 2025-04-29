@@ -210,10 +210,37 @@
         ! 만약 가감이 필요할 경우 5배수 관계로 이동하되 잔여부분은 짝수화 하여 정리하면 끝.
     */
     .contentArea aside fieldset legend{
-        font-size: 11px; color: #343e5c; font-weight: 700; border-bottom: 1px solid red;
+        font-size: 11px; color: #343e5c; font-weight: 700; border-bottom: 1px solid #f0f2f7;
         text-transform: uppercase; padding: 0 7% 15px; box-sizing: border-box; width: 100%;
         position: relative; top: 33px;
     }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
+        padding-left: 20%; box-sizing: border-box; line-height: 20px; /*checkbox기준*/
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 78%;
+        /* 우측 depthmenu arrow 기준으로 맞춘수치 + inline-block 특성 고려(4px) */
+    }
+    .contentArea aside fieldset span{
+        width: 13%; display: inline-block; text-align: right; font-size: 11px; color: #b8bfd3;
+        font-weight: 400; line-height: 20px;
+    }
+    .contentArea aside fieldset label[for*='condition']{
+        width: 100%;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; margin-bottom: 0; line-height: 50px;       
+    }
+    /* todo. 준비해놓은 checkbox, radio img로 동작 구현해보기 */
 
     .contentArea section{
         margin-left: 2.56%; width: 74.44%; float: left;
