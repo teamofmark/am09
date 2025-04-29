@@ -191,6 +191,29 @@
         font-size: 11px; padding: 15px 7%; border-bottom: 1px solid #dfe4ee; opacity: 1;
     }
     /* depthMenu Fin */
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 60px 0  20px; margin-bottom: 10px;
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 33px;
+    }
+    /* 
+        ! legend 배치
+        * 1. legend 실제 높이 구하기 (fontsize,padding,border...)
+        * 2. 1번높이의 절반(13.5 -> 13)이 곧 fieldset 상단 선 기준 top 0의 수치.
+        * 3. 그 상태에서 psd의 fieldset 상단선과 legend사이 간격인 20을 가산하면 33px. 이게 top position 값.
+        * 4. relative 좌표가 발생한 상태라 부모 높이의 변화가 없음으로 부모의 padding-top은 저 둘의 합산을 적용
+        ? 마지막 fieldset 같은 경우 legend 의 영점인 top 33px을 기준으로 내리면 "T" 라인을 만들수 있음.
+        ! 만약 가감이 필요할 경우 5배수 관계로 이동하되 잔여부분은 짝수화 하여 정리하면 끝.
+    */
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; border-bottom: 1px solid red;
+        text-transform: uppercase; padding: 0 7% 15px; box-sizing: border-box; width: 100%;
+        position: relative; top: 33px;
+    }
 
     .contentArea section{
         margin-left: 2.56%; width: 74.44%; float: left;
