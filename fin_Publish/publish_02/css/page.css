@@ -241,9 +241,66 @@
         width: 49%; margin-bottom: 0; line-height: 50px;       
     }
     /* todo. 준비해놓은 checkbox, radio img로 동작 구현해보기 */
+    .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
+        background: url('../images/off_radio.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='radio'] + label[for*='dlvr']{
+        background: url('../images/off_radio.png') no-repeat 15.15% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
+     /* aside Fin */
 
     .contentArea section{
         margin-left: 2.56%; width: 74.44%; float: left;
+    }
+    .contentArea section h3{
+        display: none;
+    }
+    .contentArea section ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .contentArea section ul li{
+        float: left; display: block; width: 31%; background-color: white; border-radius: 5px;
+        margin: 0 0 30px 3.5%; min-height: 380px;
+    }
+    .contentArea section ul li:nth-child(5){
+        width: 65.5%;
+    }
+    .contentArea section ul li:nth-child(1),
+    .contentArea section ul li:nth-child(4),
+    .contentArea section ul li:nth-child(6),
+    .contentArea section ul li:nth-child(9){
+        margin-left: 0;
+    }
+    .contentArea section ul li figure img{
+        display: block; width: 100%; border-radius: 10px;
+    }
+    .contentArea section ul li:not(:nth-child(5),:nth-child(11)) figure img{
+        margin-bottom: 30px;
+    }
+    .contentArea section ul li figure figcaption dl{
+        text-align: center; padding: 0 7.5%;
+        /* text의 너비만 중요한 것이 아닌 최대 자수가 몇인지 알아내야 함 = cardSlot height를 지정하기 편함 */
+    }
+    .contentArea section ul li figure figcaption dl dt{
+        font-size: 16px; color: #1c1e23; font-weight: 600; line-height: 20px; margin-bottom: 10px;
+    }
+    .contentArea section ul li figure figcaption dl dd:not(:last-of-type){
+        font-size: 12px; color: #b8bfd3; font-weight: 500;
+    }
+    .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:not(:last-of-type){
+        margin-bottom: 10px;
+    }
+    .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
+        font-size: 14px; color: #343e5c; font-weight: 600;
     }
     
 }
