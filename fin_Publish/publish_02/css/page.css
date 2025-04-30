@@ -281,12 +281,12 @@
         margin-left: 0;
     }
     .contentArea section ul li figure img{
-        display: block; width: 100%; border-radius: 10px;
+        display: block; width: 100%; border-radius: 5px;
     }
     .contentArea section ul li:not(:nth-child(5),:nth-child(11)) figure img{
         margin-bottom: 30px;
     }
-    .contentArea section ul li figure figcaption dl{
+    .contentArea section ul li:not(:nth-child(5)) figure figcaption dl{
         text-align: center; padding: 0 7.5%;
         /* text의 너비만 중요한 것이 아닌 최대 자수가 몇인지 알아내야 함 = cardSlot height를 지정하기 편함 */
     }
@@ -302,6 +302,31 @@
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
         font-size: 14px; color: #343e5c; font-weight: 600;
     }
-    
+    .contentArea section ul li:nth-child(5) figure img{
+        border-radius: 5px 5px 0 0;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption{
+        position: relative; padding: 15px 45% 15px 4%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
+        position: absolute; left: 2%; top: -293px;
+        background-color: black; color: white; font-size: 12px; padding: 5px 8px;
+        border-radius: 5px; font-weight: 600; letter-spacing: 1px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span{
+        position: absolute; right: 4%; top: 20px; width: 40%;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a{
+        display: block; width: 50%; float: left; text-align: center; line-height: 30px;
+        border: 2px solid #f0f2f7; box-sizing: border-box; font-size: 11px; color: #3a405b;
+        font-weight: 600; text-transform: uppercase;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:first-of-type{
+        border-radius: 17px 0 0 17px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
+        border-radius: 0 17px 17px 0; border-left: none;
+    }
+
 }
 /* desktop */
