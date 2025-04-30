@@ -327,6 +327,19 @@
     .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
         border-radius: 0 17px 17px 0; border-left: none;
     }
+    .contentArea section ul li:nth-child(11){
+        position: relative; background-color: transparent;
+    }
+    .contentArea section ul li:nth-child(11) figure figcaption dl{
+        position: absolute; left: 0; top: 40px; width: 100%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(11) figure figcaption dl dd:nth-child(2){
+        display: none;
+    }
+    .contentArea section ul li:nth-child(11) figure figcaption dl dd{
+        color: rgba(28,30,35,0.5);
+    }
+    /* content Section Fin */
 
 }
 /* desktop */
