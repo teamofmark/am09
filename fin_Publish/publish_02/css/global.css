@@ -33,6 +33,7 @@ a{
     header > div,
     header + nav div,
     .contentArea,
+    section.bestArea,
     footer > div{
         max-width: 1170px; margin: 0 auto;
     }
