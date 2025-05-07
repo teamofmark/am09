@@ -52,3 +52,45 @@
 .flexContainer.flow .flexItem{
     width: 33.33%; max-width: 500px; min-width: 300px;
 }
+
+.flexContainer[class$='Content']{
+    padding: 0;
+}
+.flexContainer[class$='Content'] .flexItem{
+    margin: 0;
+}
+.flexContainer.justifyContent{
+    background-color: cyan;
+    justify-content: space-around;
+    /* 
+        justify-content (default : xAxis) : 
+        flex container의 main axis를 기준으로 flexItem을 수평(direction: row) 정렬한다.
+        
+        flex-start (flexItem을 좌측 기준정렬)
+        flex-end (flexItem을 우측 기준정렬)
+        center (flexItem을 가운데 기준정렬)
+        space-between(flexItems중 처음은 좌측, 마지막은 우측, 나머지는 중앙 기준 동일 간격)
+        space-evenly(여유 공간을 flexitems 사이의 공간 및 시작,끝선과 flexitems간의 공간에 모두 균등 배분)
+        space-around(flexItems 사이의 공간을 최대한 넓게 쓸 수 있게 연산 후 남은 잔여 공간을 /2 나누어 공간 경계 에 배분)
+    */
+}
+.flexContainer.alignContent{
+    background-color: orange; flex-wrap: wrap;
+    height: 400px;
+    align-content: space-between; justify-content: space-between;
+    /* 
+        align(default : yAxis)
+        flexContainer의 crossAxis를 기준으로 flexItem을 수직(direction: row) 정렬한다.
+
+        stretch(default) : flexItems 부모높이 기준으로 잡아 늘린다.
+        flex-start : flexItem 들을 부모 높이 기준 위로
+        flex-end : flexItem 들을 부모 높이 기준 밑으로
+        center : flexItem 들을 부모 높이 기준 중앙으로
+        space-between(flexItems중 처음은 상측, 마지막은 하측, 나머지는 중앙 기준 동일 간격)
+        space-evenly(여유 공간을 flexitems 사이의 공간 및 시작,끝선과 flexitems간의 공간에 모두 균등 배분)
+        space-around(flexItems 사이의 공간을 최대한 높게 쓸 수 있게 연산 후 남은 잔여 공간을 /2 나누어 공간 경계 에 배분)
+    */
+}
+.flexContainer.alignContent .flexItem{
+    width: 33.33%; max-width: 500px; min-width: 300px;
+}
