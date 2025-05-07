@@ -41,3 +41,14 @@
 .flexContainer.wrap .flexItem{
     width: 500px;
 }
+
+.flexContainer.flow{
+    flex-flow: row-reverse wrap; background-color: green;
+    /* 
+        flex-flow: <flex-direction> | <flex-wrap>;
+        direction, wrap을 줄여 쓸 수(shorthand)있다.
+    */
+}
+.flexContainer.flow .flexItem{
+    width: 33.33%; max-width: 500px; min-width: 300px;
+}
