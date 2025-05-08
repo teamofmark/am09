@@ -131,3 +131,29 @@
     * align-items 속성은 모든 flexItem에 적용된다.
     * flex-start / center / flex-end / stretch / baseline
 */
+.flexContainer.justifySelf{
+    width: 300px; display: grid;  background-color: violet;
+}
+.flexContainer.justifySelf .flexItem:first-of-type{
+    justify-self: stretch;
+}
+.flexContainer.justifySelf:hover .flexItem:first-of-type{
+    justify-self: center;
+}
+/* 
+    justify-self : 
+    * 지정된 flexitem에만 justify 적용
+    * flex-start / center / flex-end / stretch
+*/
+.flexContainer.alignSelf{
+    background-color: ivory;
+}
+.flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: flex-end;
+}
+.flexContainer.alignSelf:hover .flexItem:first-of-type{
+    align-self: center;
+}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
