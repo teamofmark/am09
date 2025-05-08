@@ -94,3 +94,40 @@
 .flexContainer.alignContent .flexItem{
     width: 33.33%; max-width: 500px; min-width: 300px;
 }
+.flexContainer.justifyItems{
+    background-color: yellow; width: 300px;
+    display: grid; justify-items: stretch;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: flex-start;
+}
+.flexContainer.justifyItems .flexItem{
+    margin: 1px;
+}
+/* 
+    justify-items :
+    * flexItems - parentWidth 기준으로 수평방향 정렬.
+    * justify-items 속성은 모든 flexItem에 적용된다.
+
+    * space 3형제 사용불가 (why? 부모가 기준이 되어주는 속성)
+    * flex-start / center / flex-end / stretch
+*/
+.flexContainer.alignItems{
+    align-items: baseline;
+    background-color: sandybrown;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.alignItems:hover{
+    align-items: flex-start;
+}
+/* 
+    align-items :
+    * flexItems - items(H/higher) 기준으로 수직방향 정렬.
+    * align-items 속성은 모든 flexItem에 적용된다.
+    * flex-start / center / flex-end / stretch / baseline
+*/
