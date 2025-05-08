@@ -157,3 +157,16 @@
 .flexContainer.alignSelf .flexItem:nth-of-type(2){
     line-height: 100px;
 }
+.flexContainer.orderItem .flexItem.order1{
+    background-color: lightgreen; font-weight: bold; color: green; order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    background-color: lightblue; font-weight: bold; color: blue; order: -1;
+}
+.flexContainer.orderItem .flexItem.order3{
+    background-color: lightsalmon; font-weight: bold; color: darkred; order: -2;
+}
+/* 
+    order:
+    flex container의 flexItem을 0(default)을 기본으로 적은 수일수록(음수가능) 먼저 배치한다. 
+*/
