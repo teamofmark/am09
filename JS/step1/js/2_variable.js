@@ -58,3 +58,36 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// ? 만들기 (ex> 선언(function) 이름(name)(){}) - 선언(var) 이름(name); -> 변수를 선언하였다. 
+// ! var(용도정의없는 기본변수) | ECMA Script이후 파생된 let(상시 - 언제든 값을 변환하고 변경하며 옮길 수 있는) / const(고정 - 함부로 값을 변환하거나 변경해서는 안되는)
+
+// case.1 변수(전역) 만들기
+var userName; //? 변수를 선언만 한 것(만들기만) 
+
+// case.2 변수 선언 및 초기화
+var userAge = 45; //?userAge 는 이제 45와 같다. -> userAge에 45가 대입되었다.
+
+// case.3 동시 선언 및 초기화
+var radius, pi; //? 한번에 선언
+radius = 10, pi = 3.14159265; //? 한번에 초기화
+
+// case.4 변수의 특성
+var cup = 'Coffee';
+cup = 'Tea';
+cup = 'juice';
+// ! 위 변수의 변화를 기술 하자면 - 최초 컵에는 커피를 담았다가 버리고 차를 담고 또 버리고 주스를 담았다.
+// alert(cup);
+// document.write(cup);
+// console.log(cup);
+
+// case.5 연산자 사용시
+var numbVal = 10;
+// todo. numbVal 에 20을 더하라.
+numbVal += 20;
+// console.log(numbVal + 20);
+
+// todo. 자신의 나이를 cliAge 변수에 담고, 출력하되 다음 줄에서는 20년 뒤 나이를 출력해보자.(log)
+var cliAge = 45;
+console.log("저의 현재 나이는" + cliAge + "세 이고,");
+cliAge = cliAge + 20;
+console.log("20 년 뒤에는 " + cliAge + "세 입니다.");
