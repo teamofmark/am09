@@ -2,5 +2,9 @@
 function callAlert(){
     alert("안농?");
 }
-document.write("안농??");
-console.log('안노오옹?');
+function callWrite(){
+    document.write("안농??");
+}
+function callLog(){
+    console.log('안노오옹?');
+}
