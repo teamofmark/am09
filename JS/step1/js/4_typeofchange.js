@@ -72,3 +72,19 @@ function bgColorRandom(){
         document.querySelector("body").style.backgroundColor="#"+bgColor;
     },1000);
 }
+function fixtoNumb(){
+    var pi = 3.14159265359;
+    console.log("변환 전 : " + typeof(pi) + ' = ' + pi);
+    var result = pi.toFixed(2);
+    console.log("변환 후 : " + typeof(result) + ' = ' + result);
+}
+
+// *case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수, 실수 구분없이 형변환.
+
+    ? parse
+    * 1. parseInt(value); - 정수형변환
+    * 2. parseFloat(value); - 실수형변환
+*/
