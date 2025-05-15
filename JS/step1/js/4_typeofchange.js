@@ -79,7 +79,7 @@ function fixtoNumb(){
     console.log("변환 후 : " + typeof(result) + ' = ' + result);
 }
 
-// *case.6 test에 들어있는 문자를 숫자로 형변환.
+// *case.6 test에 들어있는 문자를 숫자로 형변환. (문자인 상태의 숫자를 - 알파벳, 한글 (x))
 /*
     ? Number
     * Number(value); - 정수, 실수 구분없이 형변환.
@@ -88,3 +88,42 @@ function fixtoNumb(){
     * 1. parseInt(value); - 정수형변환
     * 2. parseFloat(value); - 실수형변환
 */
+function numbString(){
+    var test = '300.15625';
+    console.log("변환 전 : " + typeof(test) + ' = ' + test);
+    // var result = Number(test) + 20;
+    // var result = parseInt(test);
+    var result = parseFloat(test);
+    console.log("변환 후 : " + typeof(result) + ' = ' + result);
+}
+// todo. 변수 test에 들어있는 숫자 100을 문자형으로 변형. result로 출력(typeof 검수 필요)
+// todo.1 - String 을 이용한 문자형변환
+function todo1(){
+    var test = 100;
+    var result = String(test);
+    console.log(typeof(result) + " = " + result);
+}
+// todo.2 - toString 을 이용한 문자형변환
+function todo2(){
+    var test = 100;
+    var result = test.toString();
+    console.log(typeof(result) + " = " + result);
+
+}
+// todo.3 - 암시적형변환을 이용한 문자형변환 (??? libFunc 사용하면 안됨. js의 암시적형변환을 이용해야함)
+function todo3(){
+    var test = 100;
+    console.log(typeof(result) + " = " + result);
+}
+// todo.4 이번엔 반대로 문자형을 숫자로 변환 할 것인데 마찬가지로 typeof 검수 필요 (parse)
+function todo4(){
+    var test = "100.51";
+    var result = parseInt(test) + 150 + parseInt("20");
+    console.log(typeof(result) + " = " + result);
+}
+// todo.5 위 상황을 Number 전역함수로 대체한다면?
+function todo5(){
+    var test = "100.51";
+    var result = Number(test) + 150 + Number("20");
+    console.log(typeof(result) + " = " + result);
+}
