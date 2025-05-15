@@ -113,6 +113,7 @@ function todo2(){
 // todo.3 - 암시적형변환을 이용한 문자형변환 (??? libFunc 사용하면 안됨. js의 암시적형변환을 이용해야함)
 function todo3(){
     var test = 100;
+    var result = test + '';
     console.log(typeof(result) + " = " + result);
 }
 // todo.4 이번엔 반대로 문자형을 숫자로 변환 할 것인데 마찬가지로 typeof 검수 필요 (parse)
