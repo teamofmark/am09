@@ -37,6 +37,7 @@ function amORpm(){
 // todo. 현재 일자가 말일 인가 말일이 아닌가
 // ? 말일을 절대적으로 구하지는 못할테니 그냥 30과 비교 하였을때로 조건문 잡아서 처리
 
+
 // ! 나중에 알아보게 되면 사용할 말일 구하기
 function lastDayEx(){
     function endOfMonth(date){
