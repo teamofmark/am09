@@ -14,6 +14,25 @@
 
 for (var index = 0; index < 10; index++) {
     console.log(index);
-    
 }
 */
+// 단일 for - for를 한 번만 사용 하는 것
+
+// case.1 이름을 10번 출력해보자.
+function namePrint10(){
+    var userName = "Mark";
+    for(var i = 1; i <= 10; i++){
+        console.log(i + '. ' + userName);
+    }
+}
+// case.2 이름을 1,000번 출력해보자.
+function namePrint1000(){
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i++){
+        console.log(i + '. ' + userName);
+    }
+}
+// todo. 위 1,000번 출력 예제에서 홀수 번째만 출력 될 수 있도록 반복문을 짜오기(1,2,3,4...(X) 1,3,5,7,9...(O))
+function namePrint500(){
+    
+}
