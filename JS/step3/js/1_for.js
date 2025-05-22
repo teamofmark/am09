@@ -79,3 +79,34 @@ function arrayForES6(){
     */
 }
 
+//  case.4 역반복으로 배열 호출하기.
+function reverseFavorFruit(){
+    var arr = ['딸기','메론','수박','귤'];
+    for(var i = arr.length-1; i >= 0; i--){
+        console.log(arr[i]);
+    }
+}
+
+// case.5 for에서의 continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i =" + i + "<br>");
+}
+function continueEx(){
+    let text = '';
+    for(let i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text += i;
+    }
+    console.log(text);
+}
+// todo. 과제2 continue를 활용하여 1 ~ 10까지 의 총합을 구하되, 짝수들만 더하여 총합을 출력해라.
+// ! 결과 2, 6, 12, 20, 30 만 출력되야 함.
+function todoContinue(){
+    
+}
