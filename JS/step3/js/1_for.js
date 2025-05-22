@@ -34,5 +34,44 @@ function namePrint1000(){
 }
 // todo. 위 1,000번 출력 예제에서 홀수 번째만 출력 될 수 있도록 반복문을 짜오기(1,2,3,4...(X) 1,3,5,7,9...(O))
 function namePrint500(){
-    
+    var userName = "Mark";
+    for(var i = 1; i <= 1000; i+=2){
+        console.log(i + '. ' + userName);
+    }
+}
+// case.3 자신이 좋아하는 과일 4개를 배열로 배치하고 alert으로 출력.
+function favorFruit(){
+    var data = ["딸기","메론","수박","귤","샤인머스캣"];
+    // ? 배열을 선언하는 방법 - 대부분 배열은 무조건 변수에 담는다.
+    for(var i = 0; i < data.length; i++){
+        console.log(data[i]);
+    }
+}``
+// todo. 지금까지 배웠던 JS단원을 다음 화면과 같이 출력해보기
+function arrayFor(){
+    var data = ["변수","형변환","연산자","조건문if","조건문switch","반복문while","반복문for"];
+    var swapNumb = ["첫","두","세","네","다섯","여섯","일곱"];
+    for(var i = 0; i < data.length; i++){
+        document.write(swapNumb[i] + "번째 내용 = " + data[i]+"<br>");
+    }
+}
+// todo.과제 위 배열식을 switch문으로 변환하여 같은 결과를 출력해보기 (swapNumb배열 사용금지)
+
+// ! tune.todo - ECMA Script
+function arrayForES6(){
+    let data = ["변수","형변환","연산자","조건문if","조건문switch","반복문while","반복문for"];
+    for (let i = 0; i < data.length; i++){
+        const element = data[i];
+        document.write((i+1) + " 번째 내용 = " + element + "<br>" );
+    }
+    /*
+    for(const key in object){
+        if(Object.prototype.hasOwnProperty.call(object,key)){
+            const element = object[key];
+        }
+    }
+    arrayFor.forEach(element =>{
+
+    });
+    */
 }
