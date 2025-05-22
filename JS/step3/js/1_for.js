@@ -56,7 +56,10 @@ function arrayFor(){
     }
 }
 // todo.과제 위 배열식을 switch문으로 변환하여 같은 결과를 출력해보기 (swapNumb배열 사용금지)
-
+function arrayFor2(){
+    var data = ["변수","형변환","연산자","조건문if","조건문switch","반복문while","반복문for"];
+    // ! swapNumb 배열 사용 금지
+}
 // ! tune.todo - ECMA Script
 function arrayForES6(){
     let data = ["변수","형변환","연산자","조건문if","조건문switch","반복문while","반복문for"];
@@ -75,3 +78,4 @@ function arrayForES6(){
     });
     */
 }
+
