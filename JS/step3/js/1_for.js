@@ -147,3 +147,70 @@ function todoContinue(){
         console.log(output);
     }   
 }
+
+// case.6 for에서의 break
+function forBreak(){
+    for(var i =1; i <= 10; i++){
+        break;
+        document.write(i +"<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function breakEx(){
+    var i = 0;
+    while(i < 100){
+        if(i == 3){
+            break;
+        }
+        i += 1;
+    }
+    console.log(i);
+}
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + "번째 반복문");
+        if(!confirm("계속할까?")){
+            // ? confirm : libFunction 중 하나인데, 두개의 선택지를 제공하는 다이얼로그. = cancel-> false / confirm -> true.
+            break;
+        }
+    }
+}
+// todo. 배열값을 변화시키면 자동으로 반응하는 경고창 만들기.
+function runBreak2(){
+    var swapNumb = ['첫','두','세','네','다섯','여섯']; //? 배열값을 변화시키면 자동으로 반응하는 경고창.
+    for(var i = 0; true; i++){
+        console.log(swapNumb[i] + "번째 반복문");
+        if(i == swapNumb.length - 1){
+            break;
+        }
+    }
+    document.write('지정된 배열값 : ' + swapNumb.length + '개. 출력 완료' + "<br>");
+}
+// ! 다중 for
+
+// case.1 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i<=10; i++){ //? 1. ifor = 1~10 까지 수행
+        for(var j = 0; j < i; j++){//? 2. jfor = j가 i보다 작을때 까지 반복 수행 *,**,***,****,*****......
+            star += '*';//? 변수 star에 생성된 *을 넣음.
+        }
+        star += '<br>';//? ifor 만큼 <br>을 변수 star에 넣음
+    }
+    document.write(star);//? 완성된 반절 피라미드출력.
+}
+// case.2 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >=1; i--){//? 1. ifor = 10~1 까지 수행
+        for(var j = 0; j < i; j++){ //? jfor = j가 i보다 작을때 까지 반복 수행 10,9,8,7,6....
+            star += '*';//? 변수 star에 반복생성된 만큼 *을 넣음.
+        }
+        star += '<br>';//? ifor 만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star);//? 완성된 역반절 피라미드출력.
+}
+// todo. 완성형 피라미드 그려오기 (위 두개의 상황을 응용하면 됨)
+function pyramid(){
+    
+}
