@@ -59,6 +59,36 @@ function arrayFor(){
 function arrayFor2(){
     var data = ["변수","형변환","연산자","조건문if","조건문switch","반복문while","반복문for"];
     // ! swapNumb 배열 사용 금지
+    var swapNumb = '';
+    for(var i = 0; i<data.length; i++){
+    switch(i){
+        case 0:
+            swapNumb = "첫";
+            break;
+        case 1:
+            swapNumb = "두";
+            break;
+        case 2:
+            swapNumb = '세';
+            break;
+        case 3:
+            swapNumb = '네';
+            break;
+        case 4:
+            swapNumb = '다섯';
+            break;
+        case 5:
+            swapNumb = '여섯';
+            break;
+        case 6:
+            swapNumb = '일곱';
+            break;
+        default:
+            i = 'x';
+            break;
+    }
+    document.write(swapNumb + "번째 내용 = " + data[i] + '<br>');
+    }
 }
 // ! tune.todo - ECMA Script
 function arrayForES6(){
@@ -108,5 +138,12 @@ function continueEx(){
 // todo. 과제2 continue를 활용하여 1 ~ 10까지 의 총합을 구하되, 짝수들만 더하여 총합을 출력해라.
 // ! 결과 2, 6, 12, 20, 30 만 출력되야 함.
 function todoContinue(){
-    
+    var output = 0;
+    for(var i = 1; i <= 10; i++){
+        if(i%2 == 1){
+            continue;
+        }
+        output += i;
+        console.log(output);
+    }   
 }
