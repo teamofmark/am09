@@ -212,5 +212,15 @@ function reverseHalfPyramid(){
 }
 // todo. 완성형 피라미드 그려오기 (위 두개의 상황을 응용하면 됨)
 function pyramid(){
-    
+    var star = '';
+    for(var i = 1; i <= 10; i++){ //? 줄바꿈 반복 = i
+        for(var e = 10; e>=i; e--){ //? 역반복 - 공백문자 반복 = e
+            star += "&nbsp;";
+        }
+        for(var s = 0; s < 2*i-1; s++){ //? 정반복 - 별문자 중 홀수 번째(i가 들어와서 홀수화 되어야함) 만 반복 = s 
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
 }
