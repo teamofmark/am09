@@ -17,3 +17,25 @@ function pwCheck(){
         }
     }
 }
+//* exp.2 while Continue
+function whileContinue(){
+    var i=1;
+    while(i<=10){ //? 총 10회 반복
+        i++; //? i 초기값부터 10번증가
+        continue; //? for문과 마찬가지로 continue로 인해 아래 로직 수행 불가.
+
+        document.write(i+"<br>");
+    }
+    document.write("최종 i = "+ i + "<br>"); //? 최종결과만 출력.
+}
+
+//* exp.3 while Break
+function whileBreak(){
+    var i = 1;
+    while(i<=10){//? 총 10회 반복
+        break;//? for문과 마찬가지로 break로 인해 루프 실행불가.
+        i++;
+        document.write(i+"<br>");
+    }
+    document.write("최종 i = "+ i + "<br>"); //? 최종결과만 출력.
+}
