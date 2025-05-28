@@ -40,3 +40,19 @@ function whileBreak(){
     document.write("최종 i = "+ i + "<br>"); //? 최종결과만 출력.
 }
 //todo. end가 입력될 때 까지 숫자를 계속해서 입력받아 입력값 합을 출력하고, prompt에는 몇번 수행 했는가에 대한 "x 번째 입력" 이 표시되야함. 
+function sumNumb(){
+    var i = 1; //? 카운트 변수
+    var result = 0; //? 결과를 담을 변수
+    while(true){
+        var numb = window.prompt(i + "번째 입력"); //? 무한루프로 입력받는 부분
+        if(numb=="end"){//? esc- end라는 값이 입력되면
+            alert("입력이 종료되었습니다.");
+            break; //? loop 죽이고 종료 경고창 출력
+        }else if(numb=="" || numb == " "){ //? 예외처리부 - 후에는 pattern 등을 이용.
+            alert("입력된 값이 잘못되었습니다. 다시 입력하세요.");
+        }
+        result += Number(numb); //? 결과변수에 형변환후 더해서 저장
+        document.write("현재까지의 총합 : " + result + "<br>"); //? 저장되는 result 출력
+        i++; //? 수행완료시 카운트 증가.
+    }
+}
