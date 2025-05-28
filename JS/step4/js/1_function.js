@@ -108,3 +108,24 @@ document.write(testValue);
     결과 = 2
     결과 = 잘못된 연산자 입니다.
 */
+function calculator(op,numb1,numb2){
+    var result = '';
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자입니다.";
+            break;
+    }
+    return result; 
+}
