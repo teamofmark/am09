@@ -88,11 +88,12 @@ function sumReturn1(num1,num2){
     var result = num1 + num2;
     return result;
 }
+/*
 var testValue = sumReturn1(13,26);
 console.log(testValue);
 alert(testValue);
 document.write(testValue);
-
+*/
 // case. 7 다음 실행구문으로 전달받은 매개변수를 계산하여 결과 출력하는 함수 만들기.
 /*
     //* 실행구문
@@ -147,5 +148,34 @@ document.write(div(20, 10) + "<br>");
 
 // case. 8 함수를 변수에 담기
 function hello(name){
-    console.log(name + "님. 환영합니다.");
+    return name + "님. 환영합니다.";
 }
+var func = hello;
+
+// case. 9 매개변수에 함수를 담기
+function hi1(){
+    // return "hello?";
+    console.log("hello?");
+}
+function hi2(){
+    // return "안농?";
+    console.log("안농?");
+}
+function execute(func){
+    func();
+}
+// case. 10 button click -> 매개변수값으로 넘긴 함수 실행하기 
+function welcome(){
+    alert("환영합니다. 호갱님");
+}
+$(document).ready(function(){
+    $("#case10").click(welcome);
+});
+// case. 11 return value로 함수를 전달하기
+function createHello(){
+    function hello(user){
+        document.write(user + "welcome!");
+    }
+    return hello;
+}
+var result = createHello();
