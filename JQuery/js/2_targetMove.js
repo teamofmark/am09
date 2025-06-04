@@ -3,6 +3,8 @@ $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
     // case.2 x,y Axis 움직임(value가져오기)
     detailMoveCircleExt();
+    // case.3 방향키 조작으로 원 움직이기
+    keyControl();
 });
 function moveCircle(){
     var $circle = $(".circle"); //? init - 처리해야하는 프로그래밍의 대상(들)을 선언 및 초기화
@@ -40,4 +42,14 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var cuurentYpos = 0;
+
+    $(document).keydown(function(e){
+        console.log("입력한 키? : " + typeof(e.keyCode) + e.keyCode);
+    })
 }
