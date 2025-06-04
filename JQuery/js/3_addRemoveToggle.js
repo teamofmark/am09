@@ -1,5 +1,6 @@
 $(document).ready(function(){
     toggleCheck();
+    toggleTodo();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -14,6 +15,22 @@ function toggleCheck(){
             // target[대상]].text("다른글자") = 대상의 글자를 "다른글자"로 바꿔라
         }else{
             $checkTarget.text("check_box_outline_blank");
+        }
+    });
+}
+function toggleTodo(){
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var $toggleInput = $("#userPW");
+    var toggleStatus = false;
+
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $toggleTarget.text("visibility");
+            $toggleInput.attr("type","text");
+        }else{
+            $toggleTarget.text("visibility_off");
+            $toggleInput.attr("type","password");
         }
     });
 }
