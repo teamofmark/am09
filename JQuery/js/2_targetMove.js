@@ -47,9 +47,27 @@ function keyControl(){
     var $circle = $(".circleKey");
     var range = 50;
     var currentXpos = 0;
-    var cuurentYpos = 0;
+    var currentYpos = 0;
 
     $(document).keydown(function(e){
         console.log("입력한 키? : " + typeof(e.keyCode) + e.keyCode);
+        // w(Ypos -) : 87, a(Xpos -) : 65, s(Ypos +) : 83,  d(Xpos +) : 68
+        // w or a or s or 일 때만 -_-? 
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+        }
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
     })
 }
