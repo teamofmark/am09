@@ -1,6 +1,7 @@
 $(document).ready(function(){
     toggleCheck();
     toggleTodo();
+    tabUI(".tabMenu li",".tabPage");
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -32,5 +33,17 @@ function toggleTodo(){
             $toggleTarget.text("visibility_off");
             $toggleInput.attr("type","password");
         }
+    });
+}
+function tabUI(clicker,target){
+    $(clicker).click(function(){
+        var activeTab = $(this).attr("data-tabNumb");
+        console.log(activeTab);
+        // 
+        $(clicker).removeClass("activated");
+        $(this).addClass("activated");
+        // 
+        $(target).removeClass("activated");
+        $("#" + activeTab).addClass("activated");
     });
 }
