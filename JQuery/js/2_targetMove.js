@@ -68,6 +68,18 @@ function keyControl(){
                 break;
         }
         //todo 조건부 - 각 분할 = x가 0보다 작을때, x가 380보다 클때, y가 0보다 작을 때, y가 380보다 클때 - 각 좌표를 어찌 처리하는가?
+        if(currentXpos <= 0){
+            currentXpos = 0;
+        }
+        if(currentXpos >=380){
+            currentXpos = 380;
+        }
+        if(currentYpos <= 0){
+            currentYpos = 0;
+        }
+        if(currentYpos >= 380){
+            currentYpos = 380;
+        }
 
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos);
