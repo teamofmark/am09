@@ -96,3 +96,8 @@ function checkGoalFish(){
         alert("우승!" + winnerList[0].index+"번 물고기!");
     }
 }
+function endGame(){
+    clearInterval(timerID);
+    timerID = -1;
+    console.log("9. 게임 종료");
+}
