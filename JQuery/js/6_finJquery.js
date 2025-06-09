@@ -18,6 +18,7 @@ var $fishWidth = 0;
 $(function(){
     init();
     fishStartPosition();
+    fishEvent();
 });
 function init(){
     $fishList = $(".fish");
@@ -35,4 +36,32 @@ function fishStartPosition(){
         });
     }
     console.log("2. 초기 위치 설정완료");
+}
+function fishEvent(){
+    $("#start").click(startGame);
+    console.log("3. 게임 시작 함수 불러오기 성공!");
+}
+function startGame(){
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition();// ? 물고기움직임
+            displayFishPositionInfo();// ? 움직인 물고기 위치표시
+            checkGoalFish();//  ? 결승선 도달감지
+        },200);
+        console.log("4.게임 정상 시작");
+    }
+}
+function updateFishPosition(){
+    for(var i = 0; i<$fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        var step = Math.ceil(Math.random()*30);
+        /*
+            ? Math.ceil : 매개변수 = num : 실수형 -> returnValue = 입력값이 실수일 때 올림 처리.(10.2=11)
+            ? Math.floor : 매개변수 = num : 실수형 -> returnValue = 입력값이 실수일 때 내림 처리.(10.2=10)
+            ? random: method, 매개변수 없음, 반환 값은 : 0 - 1 사이 소수 값
+        */
+        var newLeft = $fish.position().left + step;
+        $fish.css("left",newLeft);
+    }
+    console.log("5. 물고기 움직임 정상.");
 }
