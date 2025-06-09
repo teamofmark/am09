@@ -65,3 +65,34 @@ function updateFishPosition(){
     }
     console.log("5. 물고기 움직임 정상.");
 }
+function displayFishPositionInfo(){
+    var info = '';
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i +"번 물고기 : " + $fish.position().left.toFixed(2) + "px <br>";
+    }
+    $info.html(info);
+    console.log("6. 물고기 위치 표시 정상");
+}
+function checkGoalFish(){
+    var winnerList = [];
+    for(var i = 0; i<$fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                index: (i), position: fishCurrentPosition
+            });
+            console.log("7. 데이터 저장 성공.");
+        }
+    }
+    if(winnerList.length>0){
+        winnerList.sort(function(a,b){
+            return b.position - a.position;
+            // ? 내림차순 - 진행될수록 값이 점점 내려가거나(...4,3,2,1), 역순으로 나타나는것(...d,c,b,a)
+            // ? 오름차순 - 진행될수록 값이 점점 오르거나(1,2,3,4...), 정순으로 나타나는것(a,b,c,d...)
+        });
+        endGame(); //? 게임 종료 함수
+        console.log("8. 우승 물고기 선별 완료.");
+        alert("우승!" + winnerList[0].index+"번 물고기!");
+    }
+}
