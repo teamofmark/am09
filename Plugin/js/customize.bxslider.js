@@ -11,7 +11,7 @@ $(document).ready(function(){
     
         // *infiniteLoop, hideControlOnEnd 충돌.
         infiniteLoop: false, //? default : true. slide간 전환 무한반복.
-        hideControlOnEnd: false, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
+        hideControlOnEnd: true, //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
     
         // *adaptiveHeight
         adaptiveHeight: true, //? default : false. slide content높이에 따라 frame이 적응형으로 변환.
