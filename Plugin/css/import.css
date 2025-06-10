@@ -1,0 +1,3 @@
+@import url('reset.css');
+@import url('jquery.bxslider.css');
+@import url('customize.bxslider.css');/*실제프로젝트면 - global,page css에 넣어야 하는 내용*/
