@@ -21,5 +21,10 @@ $(document).ready(function(){
         captions: true, //? default: false. img's에 title attr을 부여하면 그 부분을 이미지 위로 보여준다.
         video: true, //! default : false. video 종횡비활성화(slide에 video가 있을 때만!!)
         responsive: true, //? default: true. slider 자체 반응형 켜기.
+
+        // *pager - indicator
+        pager: true, //? default: true. pager 켜기/끄기
+        pagerType: 'full', //? default: full-circle, short-count
+        pagerSelector: '.newPager'
     });
 });

@@ -1,0 +1,47 @@
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #666;
+    background: rgba(80, 80, 80, 0.75);
+    width: 50%;
+}
+
+/* pager Custom - 1 */
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #eee;
+    text-indent: -9999px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    transform: rotate(45deg);
+    transition: transform .5s ease-out;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #00f; transform: rotate(0deg);
+}
+
+/* ? pagerSelector customize */
+.newPager .bx-pager.bx-default-pager{
+    text-align: center;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item{
+    display: inline-block;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item:not(:first-of-type){
+    margin-left: 2%;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link{
+    text-decoration: none; padding: 17px 20px; display: block; background-color: #eaeaea;
+    border-radius: 40px; font-size: 14px; color: black;
+}
+.newPager .bx-pager.bx-default-pager .bx-pager-item a.bx-pager-link.active{
+    font-weight: bold; color: white; background-color: black;
+}
