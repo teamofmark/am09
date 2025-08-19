@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video,audio - 미디어 관련 태그</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JwvUvKeSYS8?si=tUEbiLdmfU1ZJLD6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <embed src="https://www.youtube.com/embed/JwvUvKeSYS8?si=tUEbiLdmfU1ZJLD6" width="560" height="315">
+    <!-- 
+        ? iframe : 외부에 있는 어떠한 대상이든 해당 위치로 불러올 수 있게 제작된 Tag. 
+        - 안좋은방식으로 사용됨이 감지되고 제거 대상에 오름.
+        - 왜 살아있지? = youtube -> iframe / youtube 를 google이 인수합병. -> w3c라는 기관에서 iframe을 제거하려고 하니? -> google - 님 나하고 싸우실? -> iframe에서 embed방식의 변환을해라.
+        -->
+    <!-- <iframe src="https://www.dodammedi.com/" width="1024" height="768" frameborder="0"></iframe> -->
+    <video controls>
+        <source src="videos/file_example_MP4_480_1_5MG.mp4" type="type/mp4">
+        <source src="videos/file_example_MP4_640_3MG.mp4" type="type/mp4">
+        <source src="videos/file_example_MP4_1280_10MG.mp4" type="type/mp4">
+    </video>
+</body>
+</html>
