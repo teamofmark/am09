@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>img - 이미지 태그</title>
+    <style>
+        img{
+            width: 100%; max-width: 1250px; display: block;
+        }
+        /* 
+            1. img는 본래 사이즈로 출력된다.
+            2. 이 사이즈는 css로 제어가 가능하다.
+            3. 주의할 점은 종횡비를 따라야하고, 본래의 사이즈(originSize)를 단 1px이라도 초과해서는 아니된다.
+        */
+    </style>
 </head>
 <body>
     <img src="images/file_example_PNG_1MB.png" alt="노을진 창가의 테이블에 놓인 맥북">
+    <img src="https://placehold.co/150" alt="이미지자리표시">
     <!-- 
         alt : alternateText 의 약자.
     -->
+    <p>
+        시각장애인들은 사진을 볼 수 없기 때문에 사진의 내용을 전달하기 위함. <br>
+        안정화된 최대 자수는 255자 이내 권장. 초과될 경우 본래 longdesc라는 attr이 있었으나,
+        현재는 사용불가로 전환되어 figure/figcaption구조가 권장된다.
+    </p>
 </body>
 </html>
