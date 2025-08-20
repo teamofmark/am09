@@ -14,10 +14,18 @@
         - 왜 살아있지? = youtube -> iframe / youtube 를 google이 인수합병. -> w3c라는 기관에서 iframe을 제거하려고 하니? -> google - 님 나하고 싸우실? -> iframe에서 embed방식의 변환을해라.
         -->
     <!-- <iframe src="https://www.dodammedi.com/" width="1024" height="768" frameborder="0"></iframe> -->
-    <video controls>
-        <source src="videos/file_example_MP4_480_1_5MG.mp4" type="type/mp4">
-        <source src="videos/file_example_MP4_640_3MG.mp4" type="type/mp4">
-        <source src="videos/file_example_MP4_1280_10MG.mp4" type="type/mp4">
+    <video controls autoplay muted loop preload="auto" poster="">
+        <source src="videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="videos/file_example_MP4_640_3MG.mp4" type="video/mp4">
+        <source src="videos/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+        <!-- 
+            <source media="(min-width: )" srcset="">
+            접근하는 장치의 해상도에 따라 영상의 해상도도 별도 제공 한다.
+            ex> mobile -> 280px(width) ~ 740px / 720p(영상해상도)를 넘어가지 않는다. -> 720p용 영상을 재생
+            ex> tablet -> 740px(width) ~ 1200px / 1080p(영상해상도)를 넘어가지 않는다. -> 1080p용 영상을 재생
+            ex> etc -> 1366px(width) ~ ???? / 1080p 이상(영상해상도)을 재생.
+        -->
+   
     </video>
 </body>
 </html>
