@@ -14,7 +14,7 @@
         - 왜 살아있지? = youtube -> iframe / youtube 를 google이 인수합병. -> w3c라는 기관에서 iframe을 제거하려고 하니? -> google - 님 나하고 싸우실? -> iframe에서 embed방식의 변환을해라.
         -->
     <!-- <iframe src="https://www.dodammedi.com/" width="1024" height="768" frameborder="0"></iframe> -->
-    <video controls autoplay muted loop preload="auto" poster="">
+    <video controls muted loop preload="auto" poster="images/thumbNail.jpg">
         <source src="videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
         <source src="videos/file_example_MP4_640_3MG.mp4" type="video/mp4">
         <source src="videos/file_example_MP4_1280_10MG.mp4" type="video/mp4">
@@ -25,7 +25,24 @@
             ex> tablet -> 740px(width) ~ 1200px / 1080p(영상해상도)를 넘어가지 않는다. -> 1080p용 영상을 재생
             ex> etc -> 1366px(width) ~ ???? / 1080p 이상(영상해상도)을 재생.
         -->
-   
+        <!-- 
+            poster attr : 
+            1. 재생환경이 원활하지 않을 때 띄우는 목적 - 자동재생시 (serv or cli side 문제발생시 )
+            2. 재생이 원활 할 때 영상의 겉표지로 사용하는 목적 (평상 대기 상태)
+            -->
     </video>
+    <audio src="audios/SampleAudio_0.4mb.mp3" controls></audio>
+
+    <!--
+    !autoplay는 video, audio 동일 속성값, 자동 재생을 시킨다.
+    !controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
+    !loop는 video, audio 동일 속성값, 반복 재생을 시키는 속성값. 
+    !preload는 video, audio 동일 속성값, 스트리밍 방식이 아닌 백그라운드 다운로드를 통해 재생. 
+    !muted는 video, audio 동일 속성값, 미디어 객체를 불러왔을때, 초기 설정을 mute 상태로 불러오는 속성값. 
+    !src는 video, audio 동일 속성값, 미디어 객체를 지정하는 속성값. 
+    !poster 는 video 전용 속성값, video객체를 불러오지 못하거나 thumbNail로 이미지(autoplay off)를 출력 시키는 속성값`. 
+    !width, height는 video 전용 속성값, video 객체 영역의 크기를 정하는 속성값. 
+    !source는 여러 파일을 클라이언트 환경에 따라 다르게 적용할 수 있다.
+    -->
 </body>
 </html>
