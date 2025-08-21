@@ -10,6 +10,9 @@
             height: 100%;
             scroll-behavior: smooth;
         }
+        ul#top{
+            position: fixed; right: 0; top: 0; background-color: white;
+        }
         div{
             height: 100%;
         }
@@ -28,6 +31,16 @@
     </style>
 </head>
 <body>
-    
+    <ul id="top">
+        <li><a href="#page1">page1바로가기</a></li>
+        <li><a href="#page2">page2바로가기</a></li>
+        <li><a href="#page3">page3바로가기</a></li>
+        <li><a href="#page4">page4바로가기</a></li>
+        <li><a href="hyperlink.html#targetAnchor" target="_blank">하이퍼링크목록 바로가기</a></li>
+    </ul>
+    <div id="page1">1번 페이지</div>
+    <div id="page2">2번 페이지</div>
+    <div id="page3">3번 페이지</div>
+    <div id="page4">4번 페이지</div>
 </body>
-</html>
+</html> 
