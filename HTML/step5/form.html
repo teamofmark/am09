@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- 
+            form : data를 운반하는 카트같은 태그.(ex> 회원가입? email,password,creditCard,address...)
+            * 개발자의 방식에 따라 form을 사용 안 할 수도 있음.
+            action - data를 운반하는 수단의 방식 (기본은 남겨놓되 / 개인작업물 등에는 빼기-웹표준관련 지적당함)
+            ! 절대 data외 언어가 들어오면 안되는 곳 (ex> css..) = data가 운반될 때 불필요한 logic이 같이 날라감..
+        -->
+        <fieldset>
+        <!-- fieldset : 입력양식 태그들이 다양한데 이 태그들을 성격으로 분류해서 그룹화 하는 tag(ex> 필수성격/부가성격) -->
+            <legend>HTML4 Input's</legend>
+            <!-- legend: fieldset Tag 전용 제목 태그-->
+            <ul>
+                <li>
+                    <label for="cliID">ID : </label>
+                    <!-- 
+                        label - 웹표준에 의하면 input과 반드시 동반 제공되어야 하는 태그.(for <-> id sync)
+                        * 연결 만으로 시각장애인들이 해당 input을 지정하기 편하고 동시에 어떠한 정보를 입력해야 하는지 자동으로 청각신호를 통해 제공받을 수 있다.
+                    -->
+                    <input type="text" id="cliID">
+                    <!-- 
+                        input - 입력양식을 type으로 구분하고, name으로 부르고(backend주사용, 퍼블리셔들은 비사용)
+                        ! input의 id는 backEnd가 직접적으로 사용하기 때문에 상호협의하에 사용해야 함.
+                        ? 먼저 이름을 짓는 경우 상식적인 범위 내에서의 web상 naming규칙을 따르기.
+                        ? 1. 한글,띄어쓰기,특문,숫자나 대문자가 앞에오는 행위 금지.
+                        ? 2. 영문키워드 2개이상을 조합해야 함.(? programing Language - 예약어우회를위함.)
+                        * type=text : 모든 문자(40여개국어,특문,숫자...)를 한 줄로 입력받는 양식.
+                    -->
+                </li>
+                <li>
+                    <!-- label+input:password#cliPW -->
+                    <label for="cliPW">PW : </label>
+                    <input type="password" id="cliPW">
+                    <!-- 
+                        type=password : 비밀번호를 입력받는 양식으로써 1차원적 물리방어에 속하는타입.
+                    -->
+                </li>
+                <li>
+                    <!-- (input:radio#btn_radio$+label[for="btn_radio$"]{check$})*4 -->
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                    <label for="btn_radio1">check1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">check2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">check3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">check4</label>
+                </li>
+                <li>
+                    <!-- (input:checkbox#btn_chk$+label[for="btn_chk$"]{check$})*4 -->
+                    <input type="checkbox" id="btn_chk1">
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
