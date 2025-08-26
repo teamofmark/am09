@@ -24,7 +24,7 @@
                         label - 웹표준에 의하면 input과 반드시 동반 제공되어야 하는 태그.(for <-> id sync)
                         * 연결 만으로 시각장애인들이 해당 input을 지정하기 편하고 동시에 어떠한 정보를 입력해야 하는지 자동으로 청각신호를 통해 제공받을 수 있다.
                     -->
-                    <input type="text" id="cliID">
+                    <input type="text" id="cliID" disabled>
                     <!-- 
                         input - 입력양식을 type으로 구분하고, name으로 부르고(backend주사용, 퍼블리셔들은 비사용)
                         ! input의 id는 backEnd가 직접적으로 사용하기 때문에 상호협의하에 사용해야 함.
@@ -32,6 +32,10 @@
                         ? 1. 한글,띄어쓰기,특문,숫자나 대문자가 앞에오는 행위 금지.
                         ? 2. 영문키워드 2개이상을 조합해야 함.(? programing Language - 예약어우회를위함.)
                         * type=text : 모든 문자(40여개국어,특문,숫자...)를 한 줄로 입력받는 양식.
+                    -->
+                    <!-- 
+                        readonly : 단 한번이라도 기록된 적이 있는 data -> 불러오되 수정 및 편집 불가 = ID
+                        disabled : 단 한번이라도 기록이 되어서는 안되는 data -> 선택으로 해제 or 잠금 = paymentMethod(결제수단선택 등..)
                     -->
                 </li>
                 <li>
@@ -53,6 +57,12 @@
                     <input type="radio" name="radioGroup" id="btn_radio4">
                     <label for="btn_radio4">check4</label>
                 </li>
+                <!-- 
+                    type=radio : 다중 일 선택하는 입력 태그.
+                    name을 통한 그룹화가 필요하다.
+                    초기 값 설정으로 전달할 값을 넣어 두는데 backendDeveloper 가 처리하게 둔다.
+                    초기 체크 상태 - checked attr을 넣어두기.
+                -->
                 <li>
                     <!-- (input:checkbox#btn_chk$+label[for="btn_chk$"]{check$})*4 -->
                     <input type="checkbox" id="btn_chk1">
@@ -63,8 +73,85 @@
                     <label for="btn_chk3">check3</label>
                     <input type="checkbox" id="btn_chk4">
                     <label for="btn_chk4">check4</label>
+                    <!-- 
+                        type=checkbox : 다중 다 선택하는 입력 태그.
+                        name을 통한 그룹화는 필요하나 퍼블리셔가 할 필요는 없다.(id, name 사용을 최소화 => class를 주로 사용)
+                        초기 값 설정으로 전달할 값을 넣어 두는데 backendDeveloper 가 처리하게 둔다.
+                        초기 체크 상태 - checked attr을 넣어두기.
+                    -->
+                </li>
+                <li>
+                    <label for="comment">comment : </label>
+                    <textarea id="comment" rows="10" cols="30"></textarea>
+                    <!-- 
+                        ! rows,cols attr은 css width, height로 대체
+                        내부 Tag 입력 불가.
+                        다행의 text를 소화하기 위함. - 공백을 문자로 취급 하기 때문에 불편.
+                        resize -> css에서 꺼줘야함.
+                        글꼴이 직접 적용해서 변경해야함. - crossBrowsing (모든 장치,화면에서 동일한 디자인이 출력)
+                    -->
+                </li>
+                <li>
+                    <label for="selectJob">직업 선택 : </label>
+                    <select id="selectJob">
+                        <option>선택하세요</option>
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                    <!-- 
+                        다중 일 선택하는 입력 태그 (목록을 압축해놓는 형태)
+                        - input radio,checkbox와 함께 외형이 변하지 않는 Tag중 하나.
+                        - 다양한 장치 및 환경의 순정상태 UI를 편하게 호출 사용이 가능.
+                        - optgroup을 통해 중간 그룹 설정이 가능하다.
+                        - invalidCheck(기본상태확인) - 맨 위 option에 dummyData(ex >선택하세요)를 넣어두면 편리.
+                    -->
                 </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <label for="userEmail">이메일 : </label>
+                    <input type="email" id="userEmail" autofocus>
+                    <!-- 
+                        type=email : email만 입력 받을 수 있게 설계된 입력 태그.(HTML5에서는 전용 입력태그들이 많이 태어남). touchScreen Keypad - @ 문자를 자동으로 꺼내준다.
+                        ? autofocus : 자동초점기능 - 잘못사용시 눈이 안보이는 사람들에게 이전 데이터를 전달 할 수 없게된다.(? 다음 방향으로 진행하기때문에)
+                        ? required : invalid(required-필수+email-양식)Check
+                    -->
+                </li>
+                <li>
+                    <label for="userURL">웹사이트 : </label>
+                    <input type="url" id="userURL" required>
+                    <!-- 
+                        type=url : url만 입력 받을 수 있게 설계된 입력 태그.
+                        touchScreen Keypad - 기본영문변환+ .com(extract)발생. 꾹 누르면 -> 여러 옵션표시
+                    -->
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>버튼 계열</legend>
+            <!-- input:image+input:button+button+input:file+input:submit+input:reset -->
+            <input type="image" src="https://placehold.co/50x20?text=button" alt="buttonImage">
+            <!-- image를 버튼으로 사용할 때 = a,js 로도 대체-->
+            <input type="button" value="호출">
+            <!-- 전송,초기화 외 나머지 모든 호출 - 웹 전용 -->
+            <button type="button">호출</button>
+            <!-- html5에서 태어난 버튼 - 모든 유형 소화가능(type의 변경으로) - 앱으로 많이 활용(react(web) <->reactNative(app)) -->
+            <label for="addtoFile" style="border: 1px solid red; padding: 10px; border-radius: 5px;">파일첨부</label>
+            <input type="file" id="addtoFile" style="display:none;">
+            <!-- 파일첨부 전용 버튼 - 외관변경 불가 = label을 design.-->
+            <input type="submit" value="확인">
+            <!-- 전송전용 버튼 - 반드시 form안에 있어야 함. -->
+            <input type="reset" value="취소">
+            <!-- 초기화전용 버튼 - 기존에 입력된 form내 양식을 초기화함 = 반드시 form안에 있어야 함. -->
         </fieldset>
     </form>
 </body>
