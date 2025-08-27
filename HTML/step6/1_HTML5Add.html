@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tag's - HTML5 에서 추가된 Tag's</title>
+    <style>
+        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li figure{position:relative;}
+        body > ul li figure img{width:100%;}
+        body > ul li figure:hover figcaption{display:block;}
+        body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
+        body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
+        body > ul li figure figcaption dl dt{font-size:24px;}
+        body > ul li figure figcaption dl dd{margin:0;}
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="https://placehold.co/150?text=example" alt="임시이미지">
+        <figcaption>
+            아직 정의되지 않은 이미지
+        </figcaption>
+    </figure>
+    <!-- 
+        ? figure : 흉상, 동상..상징적인 상
+        * 기존 - 상징적 의미를 담은 image와 그에 따른 설명글을 작성하게 제공.
+        * 현재 - image와 설명글 구성이면 사용 가능
+        * figcaption <- alt의 대용
+        ! figure >(직계)는 image+figcaption Tag만 사용 가능 = 확정구조.
+    -->
+    <ul>
+        <li>
+            <figure>
+                <img src="https://placehold.co/150?text=keyBoard" alt="임시">
+                <figcaption>
+                    <mark>사무용 교육에 적합</mark>
+                    <dl>
+                        <dt>[국내정품] 로지텍코리아 K120 NEW USB 유선 키보드 한글 키스킨</dt>
+                        <dd><strong>12,900원</strong>배송비2,500원</dd>
+                        <dd><strong>오늘출발</strong>16:00까지 주문 시</dd>
+                        <dd><mark>리뷰4.93</mark><span>찜 16</span></dd>
+                        <dd><cite>공식파트너 KH프라자</cite></dd>
+                        <dd><em>네이버플러스멤버십포인트 최대 129원</em></dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+        <!-- <li>
+            <mark>사무용 교육에 적합</mark>
+            <h4>[국내정품] 로지텍코리아 K120 NEW USB 유선 키보드 한글 키스킨</h4>
+            <strong>12,900원</strong>배송비2,500원
+            <strong>오늘출발</strong>16:00까지 주문 시
+            <mark>리뷰4.93</mark><span>찜 16</span>
+            <cite>공식파트너 KH프라자</cite>
+            <em>네이버플러스멤버십포인트 최대 129원</em>
+        </li> -->
+    </ul>
+</body>
+</html>
