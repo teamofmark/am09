@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form - 입력태그 모음</title>
 </head>
 <body>
     <form>
@@ -36,6 +36,7 @@
                     <!-- 
                         readonly : 단 한번이라도 기록된 적이 있는 data -> 불러오되 수정 및 편집 불가 = ID
                         disabled : 단 한번이라도 기록이 되어서는 안되는 data -> 선택으로 해제 or 잠금 = paymentMethod(결제수단선택 등..)
+                        disabled counter -> enabled : 평시 입력가능 상태
                     -->
                 </li>
                 <li>
@@ -134,6 +135,71 @@
                         touchScreen Keypad - 기본영문변환+ .com(extract)발생. 꾹 누르면 -> 여러 옵션표시
                     -->
                 </li>
+                <li>
+                    <!-- <label for="userPN">전화번호 : </label> -->
+                    <input type="tel" id="userPN" placeholder="-를 뺀 숫자만 입력하세요." title="전화번호를 - 뺀 숫자만 입력하세요.">
+                    <!-- 
+                        type=tel : 전화번호 전용 입력 태그.(fax번호포함)
+                        - "-"포함시키지 않고 공백없이 그냥 번호만 입력받게.(tel x 3 사용하는경우 -> 010 / 5665 / 8312 -> 안됨)
+
+                        * placeholder - 입력되기 전 메시지 상태.(시각장애인접근성 x)
+                        ? design sign - label이 없고 placeholder로만 구성된 input?
+                        todo - 1. placeholder -> label에 반영 -> css+js로 마치 placeholder처럼 작동하는 label을 제작. (난이도가있음)
+                        todo - 2. 접근성용 attr인 title attr을 사용.
+                    -->
+                </li>
+                <li>
+                    <label for="qty">수량 : </label>
+                    <input type="number"  id="qty" min="1" max="99" step="1" value="1">
+                    <!-- 
+                        type=number : 수량을 전용 입력받는 태그.
+                        * min-최소,max-최대,step-1회 스피너조작시 등락값,value-전송되는값
+                        * 숫자외 나머지 문자는 입력불가 -> 전화번호,카드번호 등...에 숫자만 입력하기위해 사용하면 안됨 
+                        todo - type=text 로 키코드자체를 잠그는 코드 or 숫자외 나머지 문자열이 입력되었을 때 공백으로 변환하는 코드
+                    -->
+                </li>
+                <li>
+                    <label for="sizeSet">사이즈 : </label>
+                    <input type="range" id="sizeSet" min="-2" max="2" step="1" value="0">
+                    <!-- 
+                        type=range : 범위중 일 값을 입력받는 태그.
+                        * 생김새는 number와 비슷하나 전혀 상관없고 신장,족적,손가락 등의 사이즈등을 입력받기에 적합.
+                        * 외형수정이 다소 어렵고 제공된 바벨외 추가 바벨설정은 불가(O버튼)
+                    -->
+                </li>
+                <li>
+                    <label for="typeDate">연,월,일 선택 :</label>
+                    <input type="date" id="typeDate">
+                    <!-- 
+                        type=date : 연,월,일을 달력 UI를 통해 입력 받는 Tag.
+                        * 가장 많이 사용하는 유형 = date / Reservation(예약), schedule(일정)관련 입력받는 Tag.
+                        * UI design - 장치기반에서 오는 UI. 수정 금지. (UI framework - 사용시에는 예외)
+                    -->
+                </li>
+                <li>
+                    <label for="typeDateTime">연,월,일,시,분 선택 : </label>
+                    <input type="datetime-local" id="typeDateTime">
+                    <!--연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeTime">시간 선택 : </label>
+                    <input type="time" id="typeTime">
+                    <!--시간 입력 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeMonth">월 선택 : </label>
+                    <input type="month" id="typeMonth">
+                    <!--연도,월 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeWeek">주 선택 : </label>
+                    <input type="week" id="typeWeek">
+                    <!--연도,주 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+            <!--<li>
+                    <input type="datetime" name="typeDatetime" />
+                    대부분 브라우저 지원불가
+                </li>-->
             </ul>
         </fieldset>
         <fieldset>
