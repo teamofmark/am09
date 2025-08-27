@@ -200,6 +200,24 @@
                     <input type="datetime" name="typeDatetime" />
                     대부분 브라우저 지원불가
                 </li>-->
+                <li>
+                    <!-- label[for='searchField']+input:search#searchField -->
+                    <label for="searchField">검색 : </label>
+                    <input type="search" id="searchField">
+                    <!-- 
+                        type=search : server 내 DB 들의 검색만을 위한 Tag.
+                        * reset UI가 제공 된다. - 입력되는 임시데이터를 개별 삭제할 수 있게 제공 되는 것.
+                        * 활용 -> backEnd. -> 각종 optional을 이용해서 효율적이고 빠른 검색기능을 제공 할 수 있다.(assistant기능 등..)
+                    -->
+                </li>
+                <li>
+                    <label for="typeColor">색상선택 : </label>
+                    <input type="color" id="typeColor">
+                    <!-- 
+                        type="color" : color값을 입력 받으면 해당 값을 16진 기존 Hex방식으로 변환하여 data로 활용할 수 있다.
+                        * 기존 데이터 상에 존재하는 일치 혹은 범위 일치 등의 컬러를 검출해 내는데에 도움을 준다.
+                    -->
+                </li>
             </ul>
         </fieldset>
         <fieldset>
