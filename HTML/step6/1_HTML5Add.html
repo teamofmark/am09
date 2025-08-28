@@ -89,5 +89,21 @@
         * 통상적으로는 footer Tag안에 일부로 취급되나, 상황에 따라 개별적인 페이지에 사용되기도 함.
         * mapApi(google map, naver map, kakao map..)를 동작시키기 위해서 a를 사용하기도 함.
     -->
+    <details>
+        <summary>Copyright 1999 - 2025</summary>
+        <!-- 확정구조 - 이하는 무엇을 사용해도 상관없음.(display: block계열 tag들) -->
+        <p> - by companyName. All rights Reserved.</p>
+    </details>
+    <!-- 
+        details - 어떠한 한 키워드(summary)를 기준으로 내용을 트리거(clickEvent)에따라 보이고 감추다.
+    -->
+    <form action="demo_keygen.asp" method="get">
+        Username: <input type="text" name="security">
+        Encryption: <keygen name="security">
+        <input type="submit" value="confirm">
+    </form>
+    <!--개발쪽 보안에 주된 사항이다. 보안키를 생성해내고, 
+        공개 키를 제출하는데, 개인 키는 로컬에 저장되게 하고, 
+        공개키를 서버로 전송시킨다.-->
 </body>
 </html>
