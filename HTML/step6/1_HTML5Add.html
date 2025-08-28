@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Tag's - HTML5 에서 추가된 Tag's</title>
     <style>
-        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li{border:1px solid black; width:250px; list-style:none; font-size: 12px;}
         body > ul li figure{position:relative;}
         body > ul li figure img{width:100%;}
         body > ul li figure:hover figcaption{display:block;}
         body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
         body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
-        body > ul li figure figcaption dl dt{font-size:24px;}
         body > ul li figure figcaption dl dd{margin:0;}
     </style>
 </head>
@@ -56,5 +55,26 @@
             <em>네이버플러스멤버십포인트 최대 129원</em>
         </li> -->
     </ul>
+    <time datetime="2025-08-28T09:04:00Z">2025년 8월 28일 오전 9시</time>
+    <!-- 
+        time - 날짜 및 시간을 출력하는 Tag.
+        ? 1. datetime attr 에 yyyy-mm-ddThh:mm:ssZ(그리니치시간대 - Zulu) 형식을 따른다.
+        ? 2. 위성시각을 전달받아 출력하는 방식은 Tag내부에서 처리.
+    -->
+    <progress value="20" max="100"></progress>
+    <!--
+    progress - download Status(chrome), loadingBar... = 진행상황이 모니터링 되고 끝이 정해져있는 경우
+    ? 실시간 반영이 되어야 한다.
+    -->
+    <meter value="80" max="100" min="10" high="90" low="20"></meter>
+    <!-- 
+    meter - diskUsingGraph(c:\,cloud...), 냉각수 게이지... = 현재 상태를 보여주기 
+    ? 실시간 반영이 안됨 = 갱신형 (ex> 갱신버튼을 누르거나, 전원이 꺼진상태에서 켜진다거나..)
+    -->
+
+    <ruby>
+        韓 <rt>かん</rt>
+    </ruby>
+    <!-- ? 일본어를 사용 할 시에 일반적인 읽기방법과 다르게 읽는 경우 rt로해당 부분을 처리해준다. 이외 부가문장이 필요하면 <rp></rp>사용-->
 </body>
 </html>
