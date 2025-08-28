@@ -105,5 +105,67 @@
     <!--개발쪽 보안에 주된 사항이다. 보안키를 생성해내고, 
         공개 키를 제출하는데, 개인 키는 로컬에 저장되게 하고, 
         공개키를 서버로 전송시킨다.-->
+    <main>
+        <h1>Web Browser's</h1>
+        <ul>
+            <li>
+                GoogleChome
+                <p>
+                    Google Chrome is a free. open-source webBrowser developed by Google, released in 2008.
+                </p>
+            </li>
+        </ul>
+    </main>
+    <!-- 
+        main - 전체 시스템 구성 페이지 중 메인페이지의 영역을 표시하는 Tag.(wrapper Tag)
+        ? 다중 페이지 ( 70page~~~)에서는 index.html(content영역(상,하단제외))에 사용
+        ? 단일 페이지 mainSector (최상단)에 사용
+    -->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50">
+        100
+        +
+        <input type="number" id="b" value="1">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!-- 
+        output - 출력 전용 Tag = 입력된 양식들 (input Tag's)의 연산 결과를 실시간으로 반영하며 출력하는 Tag.
+        ! form on~~~ < inlineScripting 방식의 code는 보안상 굉장히 취약하기 때문에 사용이 비권장.
+        *(framework내에서는 예외)
+    -->
+
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!--select와 유사함. 입력요소에 대한사전 정의 목록을 넣어두는데 활용.
+        동시에 사용자가 입력필드에 해당 옵션일부를 작성하면 일치되는 결과값 출력.
+        (자동완성기능)-->
+
+
+    <!--대부분 브라우저 지원불가-->
+
+    <table>
+        <tr>
+            <th>January <dialog open>This is an open dialog window</dialog></th>
+            <th>February</th>
+            <th>March</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+
+    <!--해당 객체의 간단한 대화상자를 생성해 낼 수있다. 
+        open 값을 제하면, 안보이고
+        넣으면 보인다. 크롬, 오페라만 지원-->
 </body>
 </html>
