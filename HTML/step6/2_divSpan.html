@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div Layout</title>
     <style>
-        .header {
+        header {
             background-color: red;
             margin-bottom: 20px;
             text-align: center;
         }
-            .header .nav li {
+            header nav li {
                 display: inline-block;
                 width: 19%;
                 background-color: blue;
                 color: white;
             }
-        .section {
+        section {
             background-color: red;
             margin-bottom: 20px;
         }
-            .section > * {
+            section > * {
                 height: 500px;
                 display: inline-block;
             }
-            .section .article {
+            section article {
                 background-color: yellow;
                 width: 80%;
             }
-            .section .aside {
+            section aside {
                 background-color: green;
                 width: 18%;
             }
-        .footer {
+        footer {
             text-align: center;
             background-color: orange;
         }
@@ -46,9 +46,9 @@
         * div : divide - 분리,분할하다.(나누기연산자). 공간 크기 제한이 없다.
         * span : span - 기간,범위를산정하다= 늘어남. - 작은 공간에만 사용할 수 있다.
     -->
-    <div class="header">
+    <header>
         <span>global Header</span>
-        <div class="nav">
+        <nav>
             <ul>
                 <li>menu1</li>
                 <li>menu2</li>
@@ -56,18 +56,18 @@
                 <li>menu4</li>
                 <li>menu5</li>
             </ul>
-        </div>
-    </div>
-    <div class="section">
-        <div class="article">
+        </nav>
+    </header>
+    <section>
+        <article>
             <span>text</span>
-        </div>
-        <div class="aside">
+        </article>
+        <aside>
             <span>quick menu</span>
-        </div>
-    </div>
-    <div class="footer">
+        </aside>
+    </section>
+    <footer>
         <span>global Footer</span>
-    </div>
+    </footer>
 </body>
 </html>
