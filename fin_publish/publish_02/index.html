@@ -7,8 +7,28 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
 </head>
 <body>
-    <span class="material-icons">
-        menu
-    </span>
+    <header>
+        <div>
+            <!-- js : input:button or button Tag -->
+             <label for="mui" class="material-icons">menu</label>
+             <!-- pureCSS type : js에 의존하지 않고 css만으로 해결하는 코드방식 -->
+             <h1><a href="index.html"><img src="images/logo.png" alt="welcome to portland"></a></h1>
+             <input type="checkbox" id="mui">
+             <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Devices</a></li>
+                    <li><a href="#">Delivery &amp; Payment</a></li>
+                    <li><a href="#">Guarantee</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+             </nav>
+             <div>
+                <strong>CART</strong><span>+99</span>
+                <input type="button" value="SIGN IN">
+             </div>
+        </div>
+    </header>
+    <!-- ? header Fin -->
 </body>
 </html>
