@@ -30,7 +30,85 @@
         </div>
     </header>
     <!-- ? header Fin -->
-     
+    <!-- ! 안좋은 케이스 = nav -> div-->
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Top Sales</a></li>
+                <li><a href="#">Brand Focus</a></li>
+                <li><a href="#" class="active">Hi-tech</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <input type="search" placeholder="I'm looking for ..." title="input ur searchKeyword">
+            <!-- ! search 입력부는 있으나 실행버튼이 없음 = form 사용불가 -->
+        </div>
+    </nav>
+    <!-- slide Nav Fin -->
+    <!-- 
+        slider
+        1. 내가 모든 기능을 구현 할 수 있는가?
+            - 기본 기능 : 제어부를 조작 했을 때 좌,우 움직임(슬라이드한장너비), 표시자(indicator)의 변환.
+            - 세부 기능 : 움직임의 방향전환, 표시자 모양 변경, 제어부 모양 변경, 안의 대상들의 변화(이동,색상,나타나고사라지고 등등...)
+        2. 가능 = 내 맘대로 구조를 짜면 됨.
+        3. 불가능 = 플러그인(plug-in) 사용하게 됨. -> 구조를 공급받게 됨 = 내 맘대로 구조를 짤 수 없음.
+     -->
+    <!-- ! 가능하다고 가정 했을 때 -->
+
+    <section>
+        <!-- ! 악수를 두었다... -> section이 아닌 div로 했어야함-->
+        <div>
+            <a href="#" class="btn_conL">&lt;</a>
+            <a href="#" class="btn_conR">&gt;</a>
+            <ol>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+            </ol>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/sample_slider.png" alt="example">
+                        <figcaption>
+                            <dl>
+                                <dt>iPhone 6 32Gb<br>Black</dt>
+                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                            </dl>
+                            <input type="button" value="Buy Now">
+                        </figcaption>
+                    </figure>
+                    <!-- <p><strong></strong><a href=""></a></p> -->
+                    <!-- <figure>
+                        <img src="" alt="">
+                        <figcaption>
+                            <h2></h2>
+                            <p></p>
+                            <input type="button" value="">
+                        </figcaption>
+                    </figure> -->
+                    <!-- <div>
+                        <img src="" alt="">
+                        <div>
+                            <h2></h2>
+                            <p></p>
+                            <input type="button" value="">
+                        </div>
+                    </div> -->
+                    <!-- <div>
+                        <img src="" alt="">
+                        <p><strong></strong><a href=""></a></p>
+                    </div> -->
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- slider Fin -->
+    <div>
+            
+    </div>
+    <!-- content -->
     <footer>
         <div>
             <h2>
