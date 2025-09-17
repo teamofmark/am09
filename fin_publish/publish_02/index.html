@@ -106,7 +106,152 @@
     </section>
     <!-- slider Fin -->
     <div>
-            
+        <form>
+            <fieldset>
+                <label for="sb_Select">Sort By:</label>
+                <span class="selectBox sbSelect">
+                    <select id="sb_Select">
+                        <option>BEST MATCH</option>
+                    </select>
+                </span>
+                <label for="sb_keywords">KEYWORDS</label>
+                <input type="search" id="sb_keywords" placeholder="ex> tablet">
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
+                <span>-</span>
+                <input type="text" id="range_maxprice">
+                <input type="checkbox" id="freeShipCheck">
+                <label for="freeShipCheck">Free Shipping</label>
+                <label for="ship_Select">SHIP TO :</label>
+                <span class="selectBox shipSelect">
+                    <select id="ship_Select">
+                        <option>USA</option>
+                        <option>Republic of Korea</option>
+                        <option>United Arab Emirates</option>
+                    </select>
+                </span>
+            </fieldset>
+        </form>
+        <!-- sortBar Fin -->
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Top Sales</a>
+                        <!-- ! 잘못된 케이스 : hoverEvent 가 tablet, mobile 에서는 touch로 변환 되기 때문에. 대안? a외 나머지 inline Tag-->
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Brand Focus</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Hi-Tech</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 2depth menu Fin -->
+            <form>
+                <fieldset>
+                    <legend>Available</legend>
+                    <input type="radio" name="ava_select" id="ava_str" checked>
+                    <label for="ava_str">In Storage</label>
+                    <span>45</span>
+                    <input type="radio" name="ava_select" id="ava_net">
+                    <label for="ava_net">In Online-Shop</label>
+                    <span>12</span>
+                    <!-- 
+                        공간구분없이 나열 -> 구조화는 얇아지고 css난이도는 상승.
+                        공간 구분 했을 때
+                        <ul>
+                            <li>
+                                <input type="radio" name="ava_select" id="ava_str">
+                                <label for="ava_str">In Storage</label>
+                                <span>45</span>
+                            </li>
+                        </ul>
+                    -->
+                </fieldset>
+                <fieldset>
+                    <!-- (input:checkbox#brand_op$+label[for='brand_op$']+span)*4 -->
+                    <legend>Brands<a href="#">All</a></legend>
+                    <input type="checkbox" id="brand_op1" checked>
+                    <label for="brand_op1">Apple</label>
+                    <span>32</span>
+                    <input type="checkbox" id="brand_op2">
+                    <label for="brand_op2">JBL</label>
+                    <span>14</span>
+                    <input type="checkbox" id="brand_op3">
+                    <label for="brand_op3">Bose</label>
+                    <span>3</span>
+                    <input type="checkbox" id="brand_op4">
+                    <label for="brand_op4">Nest</label>
+                    <span>5</span>
+                </fieldset>
+                <!-- todo. ID : condition_op1~5 -->
+                <fieldset>
+                    <legend>Condition<a href="#">See All</a></legend>
+                    <input type="checkbox" id="condition_op1" checked>
+                    <label for="condition_op1">New</label>
+                    <input type="checkbox" id="condition_op2">
+                    <label for="condition_op2">Manufacturer Refurbished</label>
+                    <input type="checkbox" id="condition_op3">
+                    <label for="condition_op3">Seller Refurbished</label>
+                    <input type="checkbox" id="condition_op4">
+                    <label for="condition_op4">Used</label>
+                    <input type="checkbox" id="condition_op5">
+                    <label for="condition_op5">For Parts or not Working</label>
+                </fieldset>
+                <!-- todo. ID : dlvr_free, dlvr_dollar - radioType = name??? dlvr_select-->
+                <fieldset>
+                    <legend>Delivery Options</legend>
+                    <input type="radio" name="dlvr_select" id="dlvr_free" checked>
+                    <label for="dlvr_free">Free</label>
+                    <input type="radio" name="dlvr_select" id="dlvr_dollar">
+                    <label for="dlvr_dollar">$4.99</label>
+                </fieldset>
+            </form>
+        </aside>
+        <!-- aside Fin -->
     </div>
     <!-- content -->
     <footer>
