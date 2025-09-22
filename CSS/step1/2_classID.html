@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS에서의 class, ID 활용법</title>
+    <link rel="stylesheet" href="css/2_classID.css">
+</head>
+<body>
+    <p class="classEx1">
+        단순 지정 활용
+    </p>
+    <button class="btn create" type="button">작성</button>
+    <button class="btn modify" type="button">수정</button>
+    <button class="btn delete" type="button">삭제</button>
+    <button class="btn confirm">확인</button>
+    <button class="btn cancel" type="reset">취소</button>
+    <a href="#" class="btn create">생성</a>
+    <a href="#" class="btn modify">정보수정</a>
+    <a href="#" class="btn delete">정보삭제</a>
+    <!-- confirm -->
+     <input type="submit" value="확인" class="btn confirm">
+     <a href="#" class="btn confirm">승인</a>
+     <!-- cancel -->
+      <input type="reset" value="취소" class="btn cancel">
+      <a href="#" class="btn cancel">결제취소</a>
+      <hr>
+      <form action="">
+        <label for="userName">userName</label>
+        <input type="text" id="userName">
+        <label for="userPW">userPassword</label>
+        <input type="password" id="userPW">
+        <label for="userEmail">userEmail</label>
+        <input type="email" id="userEmail">
+      </form>
+</body>
+</html>
