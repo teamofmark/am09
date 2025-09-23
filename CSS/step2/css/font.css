@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+h1,
+h2,
+h3{
+    font-family: 'Nanum Gothic';
+}
+/* 
+thin - 100
+extraLight - 200(폰트별표기방식상이)
+light - 300
+regular - 400
+medium - 500
+semiBold - 600
+bold - 700
+extraBold - 800
+black - 900
+*/
