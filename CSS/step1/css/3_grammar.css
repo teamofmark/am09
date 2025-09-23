@@ -1,0 +1,40 @@
+body{
+    font-size: 12px; 
+}
+h1{
+    font-size: 12px; color: #f03;
+}
+img{
+    width: 150px; border: 3px solid #3f3;
+}
+/* 부모 자손 관계 기입 */
+ul li{
+    font-size: 15px;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
+/* grouping */
+li{
+    color: #60f;
+}
+/* todo. dt, dd의 글자 사이즈를 35px로 변경해라. */
+/* todo. dt의 색상은 orange로, dd의 색상은 brown으로 변경해라 */
+dl{
+    font-size: 35px;
+}
+dl dt{
+    color: orange;
+}
+dl dd{
+    color: brown;
+}
+div ul li figure img{
+    width: 50px;
+}
+div ul li figure figcaption dl dt{
+    font-size: 24px; color: skyblue;
+}
+div ul li figure figcaption dl dd{
+    font-size: 18px; color: blue;
+}
