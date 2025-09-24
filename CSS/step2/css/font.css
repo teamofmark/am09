@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 h1,
 h2,
-h3{
+h3,
+p{
     font-family: 'Nanum Gothic';
 }
 /* 
@@ -14,4 +15,35 @@ semiBold - 600
 bold - 700
 extraBold - 800
 black - 900
+
+variable Font(변수형글꼴) : 변수 = 프로그래밍에서의 의미는 '담는그릇' -> weight(굵기)가 정해지지 않고 임의로 조정 사용 가능
+- 알아보는 방법  : 압축파일 내에 "variable,wgt" 키워드등 이 있는 파일 -> 존재 (일반 위 preset사용도 가능)
+*/
+/* 
+    주 언어, 부 언어 - 비 영어권 국가들 설정 방법(자국어가 있을 경우 or 식민지배를 받았거나..)
+    - 1. 앞에 사용되는 것이 주, 뒤에 사용되는 것이 부.
+    - 2. 만약 같은 언어권의 글꼴을 한 개 이상 사용을 한다면 그것은 대체(alternate)의 의미를 가짐.
+    - 3. ex> 영문폰트를 따로 쓰고, 한글폰트로 따로 쓰고 싶다면? / font-family: '영문폰트', '한글폰트';
+*/
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 10px;
+    /* ex> 10px -> photoshop(글꼴마다 상이) = 100 -> 1/10정도로 생각 */
+}
+p.word{
+    word-spacing: 10px;
+    /* 단어의 판정 기준 -> 띄어쓰기  */
+}
+p.w_normal{
+    width: 150px; line-height: 20px; border: 1px solid black; white-space: normal;
+}
+p.w_nowrap{
+    width: 150px; line-height: 20px; border: 1px solid black; white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
+}
+/* 
+    white-space - 남는공간의 설정 -> default: normal / nowrap(감싸지않는다) -> 부모공간을 뚫고 나감
+    - 후처리 : overflow(초과)-x(axis:축)? scroll(해당영역내에서 스크롤발생) or hidden(감추기)
+        - text-oveflow : 글자가 초과 되었을 때 ellipsis(생략)부호 발생시키기.
 */
