@@ -76,3 +76,20 @@ p.w_nowrap{
     ! 작은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
     ! 대상들의 display 속성의 간섭을 받는다. (ex> display:block 인 div 끼리 불가)
 */
+p.t_indent{
+    text-indent: 200px;
+    line-height: 20px;
+    /* padding-left: 200px; */
+}
+.indentTest{
+    background: url('https://placehold.co/150x50?text=blahblahButton');
+    width: 150px; border: 1px solid black; height: 50px; font-size: 16px;
+    text-indent: -9999px;
+}
+/* 
+    ! 위 방식대로 웹접근성 커버를 할 때 주의 사항.
+    - 1. 반드시 inline-block,block이어야 함 (inline은 안됨!!!)
+    - 2. text-align(부모에 적용하여 자손을 제어하는 정렬방식) 이 적용된 공간내에서는 css의 C(ascade) 때문에 indent대상에게도
+    해당 정렬 값이 적용되니까 indent 작동 불가.
+    ? 해결 방법 : indent대상에게 text-align: left; 로 설정 하면됨.
+*/
