@@ -36,11 +36,14 @@ p.word{
     word-spacing: 10px;
     /* 단어의 판정 기준 -> 띄어쓰기  */
 }
+p[class^='w_']{
+    width: 150px; line-height: 20px; border: 1px solid black; 
+}
 p.w_normal{
-    width: 150px; line-height: 20px; border: 1px solid black; white-space: normal;
+    white-space: normal;
 }
 p.w_nowrap{
-    width: 150px; line-height: 20px; border: 1px solid black; white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
+    white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
 }
 /* 
     white-space - 남는공간의 설정 -> default: normal / nowrap(감싸지않는다) -> 부모공간을 뚫고 나감
@@ -93,3 +96,22 @@ p.t_indent{
     해당 정렬 값이 적용되니까 indent 작동 불가.
     ? 해결 방법 : indent대상에게 text-align: left; 로 설정 하면됨.
 */
+a{
+    display: block; padding: 10px;
+}
+a.t_deco_N{color: #090; text-decoration: none; text-transform: none;}
+a.t_deco_U{color: #0cf; text-decoration: underline; text-transform: lowercase;}
+a.t_deco_O{color: #96c; text-decoration: overline; text-transform: capitalize;}
+a.t_deco_T{color: #f63; text-decoration: line-through; text-transform: uppercase;}
+
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: center;
+}
+/* ! direction != align*/
+/* text-align : left, center, right -> 정렬 대상의 부모에게 주어야 함. */
+/* ! text-align : 글자정렬? = 글자속성의 모든것(display: inline, inline-block) */
