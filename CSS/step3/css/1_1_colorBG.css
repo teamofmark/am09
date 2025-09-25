@@ -1,0 +1,29 @@
+html,
+body,
+.wrap{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-color: skyblue;
+    /* 
+        ? background : [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color]
+    */
+}
+.wrap .topLine{
+    background-color: lightcoral;
+}
+.wrap .topLine p{
+    background-color: lightseagreen;
+}
+.wrap .topLine input[type='text']{
+    background-color: transparent;
+    padding: 10px; border-width: 0 0 1px; border-style: solid; border-color: blue; margin-bottom : 50px;
+    outline: none;
+}
+.wrap > p{
+    background-color: lightgreen;
+}
+/* ? 예를들어 유지보수(S/M) PJ 에 투입 -> * > div{background-color: red;} code로 pageScan이 가능하다. */
