@@ -1,0 +1,18 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png'),url('../images/BackgroundBack.png');
+    /* , 를 구분자로 사용하여 n개의 배경 처리가 가능 - layered개념. 앞에 위치하는 이미지일 수록 위에 적용된다. */
+    /* f(x); - x라는것은 매개변수로 쓰이는데 이 값의 형태를 분명하게 해줘야 오류를 막을 수 있다.*/
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* -position: [xPos-default: left] [yPos-default: top]; */
+    background-attachment: fixed;
+}
+
+p{
+    height: 3000px;
+}
