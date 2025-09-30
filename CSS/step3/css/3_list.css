@@ -1,0 +1,45 @@
+ul li.circle{
+    list-style: circle;
+}
+ul li.disc{
+    list-style: disc;
+}
+ul li.square{
+    list-style: square;
+}
+ol li.decimal{
+    list-style: decimal;
+}
+ol li.lower-alpha{
+    list-style: lower-alpha;
+}
+ol li.upper-alpha{
+    list-style: upper-alpha;
+}
+ol li.lower-roman{
+    list-style: lower-roman;
+}
+ol li.upper-roman{
+    list-style: upper-roman;
+}
+ol li.none{
+    list-style: none;
+}
+/* li{
+    display: block;
+} */
+/*
+    위 기존 불릿들을 사용하는 것은 footer page's 법률 관련 약관,내용 페이지에서 사용된다.
+    li에 적용 하는 것이아니라 부모인 (ul,ol) 대상에게 적용되어야 한다.
+*/
+/* ul.custom{
+    list-style-image: url('../images/bul_li.gif');
+    list-style-position: outside;
+} */
+ ul.custom{
+    list-style: none; padding: 0;
+ }
+ ul.custom li{
+    background: url('../images/bul_li.gif') left center no-repeat;
+    padding-left: 20px;
+ }
