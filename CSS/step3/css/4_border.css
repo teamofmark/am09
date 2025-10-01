@@ -71,3 +71,9 @@ div{
     border-style: inset;
 }
 
+.radiusBox{
+    background-color: black; color: yellow; border-radius: 30px;
+}
+.circleBox{
+    
+}
