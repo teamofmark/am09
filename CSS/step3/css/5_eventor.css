@@ -1,0 +1,29 @@
+body,ul{
+    margin: 0; padding: 0;
+}
+ul li{
+    line-height: 30px; margin-bottom: 20px;
+}
+ul li a{
+    display: block; text-align: center; font-size: 20px; text-decoration: none; background-color: gray;
+}
+ul li a:link{
+    background-color: lightgray;
+}
+/* :link - link속성이 걸려있는 상태 */
+ul li a:visited{
+    background-color: lightcoral; color: red;
+}
+/* :visited - 방문한적이 있는 상태 */
+ul li a:hover{
+    background-color: lightseagreen; color: greenyellow; border: 1px solid green; cursor: default;
+}
+/* :hover - 대상위에 cursor가 올라 갔을 때. (cursor변경 필요시 - default (일반커서), pointer(이동의미의 handCursor)*/
+ul li a:active{
+    background-color: deeppink; color: pink;
+}
+/* :active - 대상에 click Event 가 일어 났을 때 */
+ul li a:focus{
+    border: 10px solid black;
+}
+/* :focus -  대상에 초점이 맞춰졌을 때 (선택or클릭or탭or엔터 상태) 구현된 이후 정지된 상태. 그렇기 때문에 click대용 불가능.*/
