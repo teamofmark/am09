@@ -75,5 +75,8 @@ div{
     background-color: black; color: yellow; border-radius: 30px;
 }
 .circleBox{
-    
+    background-color: midnightblue; text-align: center; color: cyan;
+    /* width: 500px; line-height: 500px; font-size: 30px; border-radius: 250px; height: 500px; */
+    width: 50vw; height: 50vw; border-radius: 25vw; font-size: 2vw; line-height: 50vw;
+    /* vw(Viewport-출력대상(browser)Witdh-너비) : 1vw -> viewportWidth = 1/100 = 1920 -> 19.2px반환  */
 }
