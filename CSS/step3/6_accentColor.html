@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - inputAccentColor</title>
+    <link rel="stylesheet" href="css/6_accentColor.css">
+</head>
+<body>
+    <h1>The Accent-color property</h1>
+    <div>
+        <h2>Accent color for checkboxe's</h2>
+        <ul>
+            <!-- li*2>input:checkbox#vehicle$[name='vehicle$']+label[for='vehicle$'] -->
+            <li><input type="checkbox" name="vehicle1" id="vehicle1"><label for="vehicle1">have a bike</label></li>
+            <li><input type="checkbox" name="vehicle2" id="vehicle2"><label for="vehicle2">have a car</label></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Accent color for radioButton's</h2>
+        <!-- ul>li*2>input:radio#language$[name='language']+label[for='language$'] -->
+        <ul>
+            <li><input type="radio" name="language" id="language1"><label for="language1">HTML</label></li>
+            <li><input type="radio" name="language" id="language2"><label for="language2">CSS</label></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Accent color for rangeField</h2>
+        <label for="volVal">Volume :</label>
+        <input type="range" id="volVal" min="0" max="10" step="1">
+    </div>
+    <div>
+        <h2>Accent color for progressField</h2>
+        <label for="fileDownload">Downloading Progress : </label>
+        <progress id="fileDownload" value="72" max="100">72%</progress>
+    </div>
+</body>
+</html>
