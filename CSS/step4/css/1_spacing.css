@@ -11,3 +11,29 @@ body{
 .secondDiv{
     background-color: #ddd; margin-top: 30px;
 }
+/* 
+    ! margin은 같은 방향에서 만나게 되면 서로 상쇄.(x : left, y: bottom)
+*/
+.centerDiv{
+    width: 300px; border: 1px solid #33f; padding: 10px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    /* 
+        (부모(browser)너비 - 대상(.centerDiv) 너비) / 2 를 통해 구해진 값을 좌,우에 적용.= 가운데 위치
+    */
+    text-align: center;
+    /* 
+        ! text-align은 적용된 대상의 자손들에게 적용. / 글자 속성(tag display: inline or inline-block)
+    */
+}
+.centerDiv article{
+    margin: 0 10px; background-color: #f33; color: white;
+    /* 
+        ! margin과 padding은 같은 방향에서 만날 경우 증산. = 부모너비측면에서 인식불가.
+    */
+}
+.paddingDiv{
+    background-color: #ff3; 
+    padding: 20px 40px; border: 5px solid #333; width: 300px; box-sizing: border-box;
+    /* padding: 20px 5%; width: 30%; border: 5px solid #333; */
+}
