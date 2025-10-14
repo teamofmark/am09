@@ -1,0 +1,31 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    width: 66.66%; margin: 0 auto; background-color: #ffc;
+}
+header{
+    background-color: #cff;
+}
+header nav{
+    background-color: #9f9;
+}
+.wrap{
+    margin-bottom: 20px; background-color: lightcoral;
+}
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+.wrap aside,
+.wrap section{
+    height: 800px; float: left;
+}
+.wrap aside{
+    width: 20%; background-color: #f96;
+}
+.wrap section{
+    width: 80%; background-color: #66f;
+}
+footer{
+    background-color: #f9f;
+}
