@@ -16,3 +16,9 @@
 #wrap .blueBox{
     background-color: blue; left: 90px; top: 90px; z-index: 1;
 }
+/* 
+    ? position : relative <-> absolute
+    * 상대좌표를 사용하는 relative와 절대좌표를 사용하는 absolute는 각 좌표 운영을 하기 보다 부모에 relative를 두어 기준을 세우고 자손에 absolute를 할당하여 운영함이 바람 직함.
+    * N개의 다수에게 positioning을 한다는 가정하 라면 맨 마지막에 작성된 구조가 맨 위로 올라오게 되는데 이 순서를 바꾸기 위해서는 z-index 라는 속성을 사용해야함 - 사용법 : 정수 만 / 최대 상수 : 9999 / 명확한 기준을 두고 사용함이 바람 직함
+    ! 무조건 9999 이런식의 사용은 바람직 하지 않음.
+*/
