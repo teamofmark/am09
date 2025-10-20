@@ -48,3 +48,14 @@
 .attrSelector fieldset ul li input[type='checkbox']{
     accent-color: blue; width: 25px; height: 25px;
 }
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color:#906; line-height: 40px;
+}
+/*
+    기존 띄어쓰기 - Descendant Selector(자손 선택자)  = 부모 내 모든 자손
+    > - Direct (Child) Selector - 직계자손
+*/
