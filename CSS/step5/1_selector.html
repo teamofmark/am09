@@ -92,11 +92,52 @@
         <h1 title="제목탈의실여자">여자</h1>
         <h1 title="탈의실여자">탈의실</h1>
     </div>
+
     <div class="eventSelector">
         <a href="#1">link - normal</a>
         <a href="#2">hover - mouse cursor over</a>
         <a href="#3">active - mouse button press(click)</a>
         <a href="#4">visited - VisitedStatus</a>
+    </div>
+
+    <div class="statusSelector">
+        <input type="checkbox" id="statusTest">
+        <label for="statusTest">눌러보세요. 사라집니다.</label>
+        <input type="text" disabled placeholder="사용자 아이디">
+        <input type="password" enabled placeholder="비밀번호 입력가능상태">
+    </div>
+
+    <ul class="virtualSelector">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+    <div class="shapeSelector">
+        <h1>first heading h1</h1>
+        <h2>first heading h2</h2>
+        <h3>first heading h3</h3>
+        <h3>second heading h3</h3>
+        <h2>second heading h2</h2>
+        <h1>second heading h1</h1>
+    </div>
+    <div class="textSelector">
+        <h1>앞 글자만 선택하여 css 적용</h1>
+        <p>
+            :first-line 선택자는 다 행 구조의 문단 등의 문장 집합체에서 첫 줄에 해당하는 부분만 선택하여 css를 적용한다.
+        </p>
+    </div>
+    <div class="backandfrontSelector">
+        <h1>before 그리고 after</h1>
+        <p data-page="52">
+            지금 작성 되는 글 앞에는 counter를 이용한 숫자가 1이 붙고, 뒤에는 markup에서 선언된 data-page값 52가 나올 것이다.
+        </p>
+        <p data-page="273">
+            지금 작성 되는 글 앞에는 counter를 이용한 숫자가 2가 붙고, 뒤에는 markup에서 선언된 data-page값 273이 나올 것이다.
+        </p>
     </div>
 </body>
 </html>

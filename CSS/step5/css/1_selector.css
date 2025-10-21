@@ -122,3 +122,70 @@
 }
 
 /*반응선택자 - 링크 수업 부분 과 동일*/
+
+.statusSelector input[type='checkbox'] + label{
+    line-height: 22px; display: inline-block; overflow: hidden;
+    /* transition: line-height 0.3s ease-out; */
+}
+.statusSelector input[type='checkbox']:checked + label{
+    line-height: 0px;
+}
+.statusSelector input{
+    display: block; margin: 10px 0;
+}
+.statusSelector input:enabled{
+    /* 모든 input default value */
+    background-color: black; color: yellow;
+}
+.statusSelector input:disabled{
+    background-color: lightgray; color: gray;
+}
+ul.virtualSelector{
+    overflow: hidden; margin: 0; padding: 0; list-style: none;
+}
+ul.virtualSelector li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px; float: left; text-align: center;
+}
+ul.virtualSelector li:first-child{
+    /* nth-child(1) */
+    border-radius: 20px 0 0 20px;
+}
+ul.virtualSelector li:last-child{
+    /* ! nth 대체 불가. ex> nth-child(7) ? 대상이줄어들면 불가*/
+    border-radius: 0 20px 20px 0;
+}
+ul.virtualSelector li:nth-child(2n){
+    background-color: #09f;
+}
+ul.virtualSelector li:nth-child(2n+1){
+    background-color: #444;
+}
+/* 
+    -child : 부모를 기준으로 선택하는 자손 선택자.
+    ex> :nth-child(2) -> 부모 기준으로 두번째 자손
+*/
+
+/* .shapeSelector h1:nth-of-type(2){color: #30f;} */
+/* .shapeSelector h2:first-of-type{color: #0c6;} */
+/* .shapeSelector h3:last-of-type{color: #f06;} */
+/* 
+    -of-type : 자신과 같은 대상을 기준으로 선택하는 형제 선택자.
+    ex> :nth-of-type(2) -> 부모 내 모든 태그들의 두번째 대상.
+*/
+/* todo. 위와 동일한 결과를 -child로 변환하여 적용해보기 */
+.shapeSelector :last-child{
+    color: #30f;
+}
+.shapeSelector :nth-child(2){
+    color: #0c6;
+}
+.shapeSelector :nth-child(4){
+    color: #f06;
+}
+
+.textSelector h1::first-letter{
+    font-size: 100px; color: #09f;
+}
+.textSelector p::first-line{
+    color: #090; font-size: 40px; line-height: 50px; text-decoration: underline;
+}
