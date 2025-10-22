@@ -189,3 +189,29 @@ ul.virtualSelector li:nth-child(2n+1){
 .textSelector p::first-line{
     color: #090; font-size: 40px; line-height: 50px; text-decoration: underline;
 }
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) ".";
+    /* 
+        함수 = 기능
+        f(x); = f가 기능. x가 재료.
+    */
+}
+.backandfrontSelector p::after{
+    content: '-' attr(data-page) "page"; font-weight: bold; color: deeppink;
+}
+.reactionSelector *{
+    color: white;
+}
+.reactionSelector *::selection{
+    background-color: #000; color: #ff0;
+    /* 
+        ? 특정 색의 취약한 사람들에게도 잘 보일수 있는 :selection 색상 값을 굳이 건드릴 이유는 없다.
+        * "웹접근성 고대비율" 검색을 해서 컬러를 만들어 내는 것을 권장
+    */
+}
+.notSelector input:not([type='submit'],[type='reset']){
+    background-color: blue; color: white;
+}
