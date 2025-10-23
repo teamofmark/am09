@@ -1,0 +1,52 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0; height: 100%; background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    width: 50%; height: 50%; background-color: #262626; position: absolute;
+    left: 25%; top: 25%;
+
+}
+div nav{
+    margin-bottom: 25px;
+}
+div nav ul{
+    margin: 0; padding: 0;
+}
+div nav ul:after{
+    content: ''; display: block; clear: both;
+}
+div nav ul li{
+    float: left; width: 25%; background-color: #3a3a3a; display: block;
+}
+div nav ul li a{
+    display: block; text-decoration: none; text-align: center; font-size: 12px;
+    padding: 10px 0; color: #ea0e52;
+}
+div nav ul li a:hover,
+div nav ul li.currentStat a{
+    background-color: #ea0e52; color: white;
+}
+/* ? tabNav Fin */
+
+div h1{
+    font-size: 14px; color: white; margin: 0 0 25px; text-align: center;
+}
+div fieldset{
+    border: none; padding: 0; width: 90%; margin: 0 auto 25px;
+}
+div fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+div fieldset ul li:after{
+    content: ''; display: block; clear: both;
+}
+div fieldset ul li:first-of-type{
+    margin-bottom: 25px;
+}
+div fieldset ul li *{
+    float: left; display: block; font-size: 12px; line-height: 36px;
+}
