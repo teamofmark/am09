@@ -1,0 +1,9 @@
+article{
+    max-width: 960px; margin: 0 auto;
+}
+article fieldset{
+    border-width: 1px; border-color: #05f; padding: 15px 20px 25px; margin: 0;
+}
+article fieldset:not(:last-of-type){
+    margin-bottom: 25px;
+}
