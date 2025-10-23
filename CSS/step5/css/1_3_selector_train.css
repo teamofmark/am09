@@ -7,8 +7,8 @@ body{
 }
 div{
     width: 50%; height: 50%; background-color: #262626; position: absolute;
-    left: 25%; top: 25%;
-
+    left: 25%; top: 25%; min-height: 300px; max-height: 400px;
+    /* max-width: 900px; */
 }
 div nav{
     margin-bottom: 25px;
@@ -49,4 +49,24 @@ div fieldset ul li:first-of-type{
 }
 div fieldset ul li *{
     float: left; display: block; font-size: 12px; line-height: 36px;
+}
+div fieldset ul li label{
+    width: 15%; text-align: center; background-color: #ea0e52; font-weight: bold;
+    color: white;
+}
+div fieldset ul li input{
+    width: 80%; border: none; padding: 0 2.5%;
+}
+div fieldset ul li input:focus{
+    background-color: #ea0e52;
+}
+div fieldset ul li input[type='password']:focus{
+    color: white;
+}
+div input[type='submit']{
+    width: 90%; margin: 0 auto; border: none; display: block; line-height: 36px; padding: 0;
+    background-color: #3e3e3e; color: #ea0e52;
+}
+div input[type='submit']:hover{
+    background-color: #ea0e52; color: black; cursor: pointer;
 }
