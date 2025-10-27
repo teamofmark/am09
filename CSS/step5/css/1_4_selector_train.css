@@ -7,3 +7,21 @@ article fieldset{
 article fieldset:not(:last-of-type){
     margin-bottom: 25px;
 }
+article fieldset label{
+    display: inline-block; line-height: 20px; vertical-align: middle;
+}
+article fieldset input[type='checkbox']{
+    accent-color: red;
+}
+article fieldset textarea{
+    /* input - 기본 padding, border*/
+    display: block; width: 100%; box-sizing: border-box; margin-top: 25px; height: 150px;
+    padding: 10px 1%; resize: none; border-color: #05f; transition-duration: 0.75s;
+}
+article fieldset input[type='checkbox']:checked+textarea{
+    height: 0px; padding: 0 1%;
+}
+/* 
+    ! textarea -> barbel 제거 관련 = resize:none;
+    ! transition 시 움직일 부분만 명확하게 수정 해야 함 = padding:  0 (x) / padding: 0 1%;
+*/
