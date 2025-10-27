@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector Example - Board</title>
+    <link rel="stylesheet" href="css/1_5_selector_fin.css">
+</head>
+<body>
+    <h1>
+        Design Jobs
+        <a href="#">post a job</a>
+    </h1>
+    <form>
+        <fieldset>
+            <input type="search" title="insert to search keyword's">
+            <input type="submit" value="search">
+            <select>
+                <option>freelance &Aacute; full-time</option>
+            </select>
+        </fieldset>
+    </form>
+    <section>
+        <h2>find jobs in <strong>new york</strong>,<strong>la</strong> &amp; <strong>london</strong></h2>
+        <!-- todo. 게시판 구조 짜보기 -->
+        <!-- 
+            ? table - 장점 : column , row 구분이 명확함. = float등 의 기술이 필요없음. / 단점: bullet배치가 어려움, layout 변경이 불가능.
+            ? list - 장점 : bullet배치가 쉽다, layout 변경이 가능. / 단점 : col, row 구분이 불확실함. 화면배치css가 반드시 필요 함.
+        -->
+        <ul>
+            <li>
+                <span>location</span>
+                <span>job title</span>
+                <span>company</span>
+                <span>R/T</span>
+            </li>
+            <li>
+                <span>United States</span>
+                <span>Front-end Developer</span>
+                <span>MS</span>
+                <span>full-time</span>
+                <mark>NEW</mark>
+            </li>
+            <li>
+                <span>Japan</span>
+                <span>JAVA Developer</span>
+                <span>TOYOTA</span>
+                <span>half-time</span>
+                <mark>NEW</mark>
+            </li>
+            <li>
+                <span>Philadelphia</span>
+                <span>WordPress Developer</span>
+                <span>google</span>
+                <span>remote</span>
+            </li>
+            <li>
+                <span>canada</span>
+                <span>UltimateMember Modifications</span>
+                <span>canada.go</span>
+                <span>full-time</span>
+            </li>
+            <li>
+                <span>United States</span>
+                <span>Front-end Developer</span>
+                <span>MS</span>
+                <span>full-time</span>
+                <mark>NEW</mark>
+            </li>
+            <li>
+                <span>Japan</span>
+                <span>JAVA Developer</span>
+                <span>TOYOTA</span>
+                <span>half-time</span>
+                <mark>NEW</mark>
+            </li>
+            <li>
+                <span>Philadelphia</span>
+                <span>WordPress Developer</span>
+                <span>google</span>
+                <span>remote</span>
+            </li>
+            <li>
+                <span>canada</span>
+                <span>UltimateMember Modifications</span>
+                <span>canada.go</span>
+                <span>full-time</span>
+            </li>
+            <li>
+                <span>United States</span>
+                <span>Front-end Developer</span>
+                <span>MS</span>
+                <span>full-time</span>
+                <mark>NEW</mark>
+            </li>
+            <li>
+                <span>Japan</span>
+                <span>JAVA Developer</span>
+                <span>TOYOTA</span>
+                <span>half-time</span>
+                <mark>NEW</mark>
+            </li>
+            <li>
+                <span>Philadelphia</span>
+                <span>WordPress Developer</span>
+                <span>google</span>
+                <span>remote</span>
+            </li>
+            <li>
+                <span>canada</span>
+                <span>UltimateMember Modifications</span>
+                <span>canada.go</span>
+                <span>full-time</span>
+            </li>
+        </ul>
+        <div>
+            <a href="#">&lt;</a>
+            <a href="#">&gt;</a>
+            <ol>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+            </ol>
+            <!-- data 출력방식 : reLoad(button) / reFresh(pager) 이 방법들은 혼용 불가.-->
+        </div>
+    </section>
+</body>
+</html>
