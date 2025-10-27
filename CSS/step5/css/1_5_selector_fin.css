@@ -1,0 +1,29 @@
+body{
+    width: 80%; margin: 0 auto; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin: 0; font-size: 30px; font-weight: normal; color: gray; position: relative;
+    padding: 15px 50% 15px 0;
+    /* ? positioning 대상과 그렇지 않은 대상이 서로 덮이지 않도록 막아주는 역할의 padding. */
+}
+h1 a{
+    position: absolute; right: 0; bottom: 0; font-size: 24px; color: forestgreen; width: 50%;
+    background-color: limegreen; text-align: right;
+}
+fieldset{
+    padding: 10px 40% 10px 0; position: relative; border-width: 2px 0 1px; border-style: solid none;
+    border-color: darkgreen;
+}
+fieldset input[type='search']{
+    width: 20%; border: 1px solid forestgreen; background-color: palegreen; min-width: 115px;
+    line-height: 24px;
+}
+fieldset input[type='submit']{
+    width: 10%; min-width: 60px; background-color: darkolivegreen; color: white;
+    border: 2px solid limegreen; line-height: 24px;
+}
+fieldset select{
+    position: absolute; right: 0; width: 25%; min-width: 150px; background-color: lightseagreen;
+    padding: 5px 0; border-color: lightskyblue;
+}
+/* fieldset code 설명전 */
