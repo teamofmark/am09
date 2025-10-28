@@ -55,7 +55,7 @@ section ul li:after{
 }
 section ul li span{
     display: block; float: left; padding: 10px 2.5%; font-size: 14px;
-
+    word-break: break-all;
 }
 section ul li span:not(:nth-child(2)){
     width: 15%;
@@ -67,3 +67,28 @@ section ul li mark{
     position: absolute; right: 0; top: 0; padding: 3px; font-size: 9px; background-color: rgba(127,255,0,0.5);
 }
 /* todo. 본인이 작성한 구조를 토대로 모양을 동일하게 구현 해보기 */
+
+section div{
+    max-width: 400px; margin: 0 auto; position: relative; line-height: 30px;
+}
+section div a{
+    text-decoration: none; font-size: 14px; padding: 5px; display: block;
+}
+section div > a{
+    position: absolute; top: 0;
+}
+section div > a:first-of-type{
+    left: 0;
+}
+section div > a:last-of-type{
+    right: 0;
+}
+section div ol{
+    padding: 0 25px; margin: 0; text-align: center;
+}
+section div ol li{
+    display: inline-block;
+}
+section div ol li a:hover{
+    color: red;
+}
