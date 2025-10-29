@@ -1,0 +1,36 @@
+body{
+    margin: 0; background-color: #333;
+}
+.wrap{
+    width: 70%; margin: 0 auto; 
+}
+.wrap a{
+    text-decoration: none; display: block;
+}
+.wrap ul{
+    list-style: none; margin: 0; padding: 0;
+}
+.wrap header{
+    position: relative; padding: 20px 40% 0 0; margin-bottom: 90px;
+}
+.wrap header h1{
+    margin: 0; color: white;
+}
+.wrap header nav{
+    position: absolute; right: 0; top: 25px; width: 40%;
+}
+.wrap header nav ul{
+    border-width: 1px 0; border-style: solid; border-color: #555;
+}
+.wrap header nav ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header nav ul li{
+    width: 20%; float: left; padding: 10px 0; min-width: 50px;
+}
+.wrap header nav ul li a{
+    color: white; font-size: 12px; text-align: center;
+}
+.wrap header nav ul li:not(:first-child) a{
+    border-left: 1px solid #e1e1e1;
+}
