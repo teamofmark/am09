@@ -32,5 +32,27 @@ body{
     color: white; font-size: 12px; text-align: center;
 }
 .wrap header nav ul li:not(:first-child) a{
-    border-left: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1; 
+}
+.wrap > ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap > ul li{
+    width: 30%; float: left; margin-bottom: 5%;
+}
+.wrap > ul li:not(:nth-child(3n+1)){
+    margin-left: 5%;
+}
+.wrap > ul li a{
+    background-color: black;
+}
+.wrap > ul li a img{
+    display: block; width: 100%; opacity: 0.5;
+    transition-duration: 0.5s;
+}
+.wrap > ul li a:hover img{
+    opacity: 1;
+}
+.wrap footer{
+    font-size: 12px; text-align: center; color: #a1a1a1;
 }
