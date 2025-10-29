@@ -1,18 +1,10 @@
 .redG {
-    background: #9b1f1f;
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
-    /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(135deg, #9b1f1f 0%, #d13327 41%, #c92520 58%, #ea7e7e 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b1f1f', endColorstr='#ea7e7e', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
 
     /*
         linear-gradient : 그라디언트의 형태 ex> radial-gradient 는 원형 그라디언트
-        deg : 그라디언트의 각도
+        deg(ree) : 그라디언트의 각도
         #color ?% : 색상블록 으로 컬러와 위치
     */
 }
@@ -70,3 +62,7 @@
 }
 
 /* http://www.colorzilla.com/gradient-editor 에서 제작 가능*/
+
+.testG{
+background: linear-gradient(to bottom,  #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
