@@ -26,3 +26,20 @@ body{
 .durationEX2:active{
     padding: 30px; font-size: 16px; line-height: 32px;
 }
+.durationEX3{
+    position: relative; height: 25px; background-color: #808080; margin-bottom: 50px;
+}
+.durationEX3 .moveSpan{
+    background-color: #000; width: 3%; height: 25px; position: absolute; left: 0; top: 0;
+    transition-duration: 0.5s;
+}
+.durationEX3:hover .moveSpan{
+    left: 97%;
+}
+.durationEX4{
+    width: 50%; height:300px; border-width: 3px; border-style: solid; border-color: #f00 #ff6a00 #ffd800 #4cff00;
+    transition-duration: 2s;
+}
+.durationEX4:hover{
+    margin: 0 25%; border-color: #00ff90 #0094ff #0026ff #b200ff; color: #0094ff;
+}
