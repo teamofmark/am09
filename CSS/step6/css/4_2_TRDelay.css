@@ -60,3 +60,7 @@ ul{
 }
 /* todo. 1,2,3,4,5번 각각의 li들에 배경색을 다르게 설정하고 가속도를 넣어보기*/
 .delay3 ul li:nth-child(1){background-color: lightcoral; transition-timing-function: cubic-bezier(1,0,1,0);}
+.delay3 ul li:nth-child(2){transition-timing-function: cubic-bezier(0,1.04,1,-0.01); background-color: lightgreen;}
+.delay3 ul li:nth-child(3){transition-timing-function: cubic-bezier(1,0,1,-0.01); background-color: lightskyblue;}
+.delay3 ul li:nth-child(4){transition-timing-function: cubic-bezier(1,0,0,1); background-color: lightgoldenrodyellow}
+.delay3 ul li:nth-child(5){transition-timing-function: cubic-bezier(1,.43,0,.63); background-color: lightpink;}
