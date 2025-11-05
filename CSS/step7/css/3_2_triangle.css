@@ -1,0 +1,37 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative;
+    animation-name: rotate3D;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    transform-style: preserve-3d;
+}
+@keyframes rotate3D {
+    0%{
+        transform: rotate3d(0,0,0,0deg);
+        /* transform: rotateX(90deg) rotateY(60deg);  A 만들기  */
+    }
+    100%{
+        transform: rotate3d(1,1,1,360deg);
+        /* transform: rotateX(450deg) rotateY(60deg);  A 만들기 */
+    }
+}
+div span{
+    width: 200px; height: 100px; display: block; position: absolute; opacity: 0.5; left: 0; top: 0;
+}
+div span:nth-child(1){
+    background-color: red;}
+div span:nth-child(2){
+    background-color: green;
+    transform: rotateY(60deg);
+    transform-origin: left top;
+}
+div span:nth-child(3){
+    background-color: blue;
+    transform: rotateY(-60deg);
+    transform-origin: right top;
+    /* width: 100px; A 만들기 */
+}
