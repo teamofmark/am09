@@ -1,0 +1,64 @@
+html,body{
+    height: 100%;
+}
+body{
+    width: 90%; margin: 0 auto;
+}
+aside{
+    height: 80%; float: left;  padding-top: 14%; box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 12px;
+}
+p strong{
+    display: block;
+}
+aside:first-of-type{
+    width: 50%;
+}
+aside:first-of-type footer{
+    color: #6800ff;
+}
+
+aside:last-of-type{
+    width: 45%; margin-left: 5%;
+}
+aside:last-of-type ul{
+    margin: 0; padding: 0; list-style: none;
+}
+aside:last-of-type ul li{
+    padding: 10px 5%; text-align: right; transition: padding 1s ease-out;
+    overflow-y: hidden;
+}
+aside:last-of-type ul li:hover{
+    padding: 5%; cursor: pointer;
+}
+aside:last-of-type ul li:nth-child(1){background-color: #ff5f5f;}
+aside:last-of-type ul li:nth-child(2){background-color: #ffaf6b;}
+aside:last-of-type ul li:nth-child(3){background-color: #e7ed66;}
+aside:last-of-type ul li:nth-child(4){background-color: #30b052;}
+aside:last-of-type ul li:nth-child(5){background-color: #7c8aff;}
+aside:last-of-type ul li:nth-child(6){background-color: #3a5fb7;}
+aside:last-of-type ul li:nth-child(7){background-color: #5800ff;}
+aside:last-of-type ul li p{
+    width: 80%; float: left; height: 0; opacity: 0; 
+    transition-property: height, opacity; transition-duration: 2s, 1s;
+}
+aside:last-of-type ul li:hover p{
+    height: 250px; opacity: 1;
+}
+aside:last-of-type ul li a{
+    color: #fff;
+}
+aside:last-of-type ul li a:before{
+    content: '+';
+}
+aside:last-of-type ul li:hover a{
+    color: #000;
+}
+aside:last-of-type ul li:hover a:before{
+    content: '>';
+}
