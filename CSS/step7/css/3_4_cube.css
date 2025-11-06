@@ -1,0 +1,43 @@
+body{
+    width: 200px; margin: 200px auto;
+    perspective: 300px;
+    /* ? perspective : 관점. = 바라보는 시각점 */
+}
+div{    
+    width: 200px; height: 200px; position: relative;
+    animation-name: playBox; animation-iteration-count: infinite; animation-duration: 3s;
+    animation-timing-function: linear; transform-style: preserve-3d;
+}
+@keyframes playBox{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+div span{
+    width: 200px; height: 200px; position: absolute; left: 0; top: 0; opacity: 0.5;
+    backface-visibility: visible;
+}
+/* div:hover span{
+    backface-visibility: hidden;
+} */
+/* todo 정육면체 큐브 완성하기 */
+div span:nth-child(1){background-color: red; transform: translateZ(100px);}
+div span:nth-child(2){background-color: green; transform: rotateY(90deg) translateZ(100px);}
+div span:nth-child(3){background-color: blue; transform: rotateY(180deg) translateZ(100px);}
+div span:nth-child(4){background-color: cyan; transform: rotateY(270deg) translateZ(100px);}
+div span:nth-child(5){background-color: magenta; transform: rotateX(90deg) translateZ(100px);}
+div span:nth-child(6){background-color: yellow; transform: rotateX(270deg) translateZ(100px);}
+
+/*
+    ?perspective
+    ! 대상 면적 x2가 적당. 너무 높은 값 자제. (2000px정도 limit) 대상3D원근처리
+    ?transform-style
+    todo flat : 자식요소의 3차원 속성 무시.
+    * preserve-3d 자식요소의 3차원 속성 유지.  translate3d(X,Y,Z) 지정된 크기만큼 이동한다.
+    ?backface-visibility(이면가시성)
+    *visible : default. 이면을 보이겠다.
+    *hidden : 이면을 보이지 않겠다.
+*/
