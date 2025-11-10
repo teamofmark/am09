@@ -5,3 +5,8 @@
     * 2. ip번호+port번호+/Responsive/step2/(index.html-생략가능) -> 접속하고자 하는 장치의 browser에서 입력
     todo. 192.168.100.48:5501/Responsive/step2
 */
+
+@media screen and (min-width: 1280px){
+
+}
+/* desktop */
