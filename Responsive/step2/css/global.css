@@ -1,0 +1,7 @@
+/*
+    * live server Device 연동 방법.
+    * 1-1. window 기준 "window Key + r" 입력 후 cmd 입력 enter. -> ipconfig enter.(ipV4)
+    * 1-2. mac 기준 wifi 설정 -> 세부사항 ip번호
+    * 2. ip번호+port번호+/Responsive/step2/(index.html-생략가능) -> 접속하고자 하는 장치의 browser에서 입력
+    todo. 192.168.100.48:5501/Responsive/step2
+*/
