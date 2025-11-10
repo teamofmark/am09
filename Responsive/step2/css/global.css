@@ -7,6 +7,11 @@
 */
 
 @media screen and (min-width: 1280px){
-
+    body{
+        background-color: lightblue;
+    }
 }
-/* desktop */
+/* 
+    desktop - display resolution 검색
+    https://en.wikipedia.org/wiki/Display_resolution
+*/
