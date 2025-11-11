@@ -9,19 +9,22 @@
 
 @media screen and (max-width: 767px) and (orientation: landscape){
     body{
-        
+        background-color: lightgoldenrodyellow; text-align: left;
     }
     h1{
-        
+        font-size: 24px; line-height: 30px; background-color: goldenrod;
+        margin-bottom: 30px; padding: 20px 0;
     }
     article{
-        
+        background-color: goldenrod; margin-bottom: 30px; padding: 30px;
     }
     article h2{
-        
+        background-color: goldenrod; color: brown; font-size: 18px; line-height: 24px;
+        margin-bottom: 20px;
     }
     article p{
-        
+        background-color: lightgoldenrodyellow; font-size: 14px; line-height: 20px; padding: 20px;
+        color: darkblue;
     }
 }
 
