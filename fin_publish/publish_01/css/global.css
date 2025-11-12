@@ -1,6 +1,87 @@
 
+header div nav ul li a,
+header div > ul li p{
+    font-family: 'Roboto';
+}
+header div > ul li h2{
+    font-family: 'Playfair Display';
+}
+
+a{
+    text-decoration: none;
+}
+.btn_more{
+    font-family: 'Hammersmith One'; font-weight: 400; font-size: 16px; color: #00e0d0; border: 1px solid #00e0d0;
+    padding: 10px 0.6%; display: block; text-align: center; box-sizing: border-box;
+}
+/* All / Use */
 
 @media screen and (min-width: 1280px) {
-    
+    header{
+        padding: 15px 0 70px;  background: url('../images/bg_01.png') left top / cover no-repeat;
+    }
+    header div{
+        max-width: 940px; margin: 0 auto; position: relative;
+    }
+    header div h1{
+        max-width: 128px;
+    }
+    header div h1 *{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav{
+        position: absolute; right: 0; top: 0; width: 100%; padding-left: 130px; box-sizing: border-box;
+        text-align: right;
+    }
+    header div nav ul li{
+        display: inline-block;
+    }
+    header div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header div nav ul li a{
+        display: block; line-height: 50px; color: white; font-size: 13px; font-weight: 900;
+    }
+    header div nav ul li a.active,
+    header div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? GNB Fin */
+    header div > ul{
+        margin-bottom: 125px;
+    }
+    header div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 23px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; max-width: 775px; text-align: center;
+        margin: 0 auto 50px; line-height: 24px;
+    }
+    header div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header div ol{
+        text-align: center;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px; width: 8px; height: 8px; border: 1px solid rgba(255,255,255,0.8);
+        border-radius: 5px;
+    }
+    header div ol li a.active,
+    header div ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* header fin */
+
 }
 /* desktop */
