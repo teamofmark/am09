@@ -142,7 +142,7 @@ a{
         width: 25%; margin-left: 5%; text-indent: -9999px; border: none;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
     }
-
+    /* todo. SNS ICON 배치하기  + 4번박스 완성시켜오기*/
     footer > div div:nth-of-type(3) ul{
         clear: left;
     }
