@@ -1,6 +1,54 @@
 
 
 @media screen and (min-width: 1280px) {
-    
+    #about{
+        padding-left: 7%;
+    }
+    #about:after{
+        content: ''; display: block; clear: both;
+    }
+    #about img{
+        float: left; width: 25%; max-width: 235px;
+    }
+    #about figcaption{
+        float: left; margin-left: 10%; width: 65%;
+    }
+    #about figcaption > *:not(a){
+        margin-bottom: 20px;
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
+    }
+    #about figcaption a.btn_more{
+        max-width: 120px;
+    }
+    /* ? CI about fin */
+
+    section.videoArea{
+        background: url('../images/bg_02.png') left top / cover no-repeat;
+        padding: 200px 0; /* ? temp(orary)Code */
+    }
+    section.videoArea a{
+        display: block; width: 100px; padding: 28px 0 21px 5px; /*window chrome : 23px 0 26px 5px; */
+        text-align: center; border-radius: 50px; color: white;
+        border: 3px solid white; box-sizing: border-box; font-size: 45px; margin: 0 auto 30px;
+    }
+    section.videoArea h2{
+        font-size: 16px; color: white; text-align: center; font-weight: 900;
+    }
+    /* ? Video FIn */
+    /* todo. expertise 완성해보기 */
+    /* 
+        * 1. global - font, guide 설정 셋팅하기.
+        * 2. 첫 title(h2), 첫 문단(p), 구분선(hr)-module
+        * 3. list 처리
+        *   3-1. float 배치 (afterCancel)
+        *   3-2. border 처리
+        *   3-3. background-image 처리
+        *   3-4. 부제(h3), 관련문단(p) 처리
+    */
 }
 /* desktop */
