@@ -173,5 +173,64 @@
         max-width: 140px; margin: 0 auto;
     }
     /* ? worksArea Fin */
+    section.talkArea{
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0; text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        background: url('../images/quote.png') no-repeat center top;
+        font-size: 16px; line-height: 26px; font-weight: 400;
+    }
+    section.talkArea p *{
+        display: block;
+    }
+    section.talkArea p strong{
+        margin-top: 40px; font-size: 14px; font-weight: 900;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
+    }
+    section.talkArea div{
+        max-width: 940px; margin: 0 auto;
+    }
+    section.talkArea div > *{
+        display: inline-block; vertical-align: middle;
+    }
+    section.talkArea div > a{
+        font-size: 22px; color: rgba(255,255,255,0.5);
+    }
+    section.talkArea div ul{
+        max-width: 310px; width: 33%;
+    }
+    section.talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
+    section.talkArea div ul li a{
+        display: block;
+    }
+    section.talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding .35s ease-in-out;
+    }
+    section.talkArea div ul li.active a,
+    section.talkArea div ul li:not(.active):hover a{
+        padding: 0;
+    }
+    section.talkArea div ul li:not(.active) a img{
+        width: 65%; transition: width .35s ease-in-out;
+    }
+    section.talkArea div ul li.active a img,
+    section.talkArea div ul li:not(.active):hover a img{
+        width: 100%;
+    }
+    /* ?talkArea Fin */
 }
 /* desktop */
