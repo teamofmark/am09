@@ -35,6 +35,199 @@ section[class$='Area'] > hr{
 }
 /* All / Use */
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    #about,
+    section.expArea,
+    section.contactArea,
+    /* section.worksArea h2, */
+    footer > div{
+        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
+        /* ! max-width로 통제 : 장점- 쉽다. 단점- 다양한 크기의 화면에 대응력이 떨어짐 */
+    }
+
+    header{
+        padding: 15px 0 70px;  background: url('../images/bg_01.png') left top / cover no-repeat;
+    }
+    header div{
+        max-width: /*940px*/728px; margin: 0 auto; position: relative;
+    }
+    header div h1{
+        max-width: 128px;
+    }
+    header div h1 *{
+        display: block;
+    }
+    header div h1 a img{
+        width: 100%;
+    }
+    header div nav{
+        position: absolute; right: 0; top: 0; width: 100%; padding-left: 130px; box-sizing: border-box;
+        text-align: right;
+    }
+    header div nav ul li{
+        display: inline-block;
+    }
+    header div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header div nav ul li a{
+        display: block; line-height: 50px; color: white; font-size: 13px; font-weight: 900;
+    }
+    header div nav ul li a.active,
+    header div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? GNB Fin */
+    header div > ul{
+        margin-bottom: 125px;
+    }
+    header div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header div > ul li h2{
+        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 23px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header div > ul li p{
+        font-size: 14px; color: white; font-weight: 300; max-width: 775px; text-align: center;
+        margin: 0 auto 50px; line-height: 24px;
+    }
+    header div > ul li a.btn_more{
+        max-width: 120px; margin: 0 auto;
+    }
+    header div ol{
+        text-align: center;
+    }
+    header div ol li{
+        display: inline-block;
+    }
+    header div ol li a{
+        display: block; text-indent: -9999px; width: 8px; height: 8px; border: 1px solid rgba(255,255,255,0.8);
+        border-radius: 5px;
+    }
+    header div ol li a.active,
+    header div ol li a:hover{
+        background-color: #00e0d0; border-color: #00e0d0;
+    }
+    /* header fin */
+
+
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    /* footer > div div:not(:last-of-type){
+        float: left; width: 31%; margin: 0 0 70px 3.5%;
+    } 
+    footer >div div:first-of-type{
+        margin-left: 0;
+    }*/
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        float: left; width: 47.5%; margin: 0 0 70px;
+    }
+    footer > div div:nth-of-type(2){
+        margin-left: 5%;
+    }
+    footer >div div h2{
+        margin-bottom: 20px;
+    }
+    footer >div div:not(:first-of-type) h2{
+        line-height: 50px; color: white; font-size: 15px; font-weight: 900;
+    }
+    footer >div div:not(:nth-of-type(3)){
+        font-size: 14px; line-height: 26px; color: white;
+    }
+    footer >div div:not(:nth-of-type(3)) a{
+        color: inherit;
+    }
+    footer > div div:nth-of-type(1),
+    footer > div div:nth-of-type(2){
+        font-weight: 300;
+    }
+    footer > div div:nth-of-type(2) address{
+        font-style: normal;
+    }
+    footer > div div:nth-of-type(2) address span{
+        display: block; padding-left: 30px;
+        background-repeat: no-repeat; background-position: left 5px;
+    }
+    footer > div div:nth-of-type(2) address span:first-of-type{
+        background-image: url('../images/bul_map.png'); margin-bottom: 15px;
+    }
+    footer > div div:nth-of-type(2) address span:last-of-type{
+        background-image: url('../images/bul_phone.png');
+    }
+    footer > div div:nth-of-type(3){
+        clear: left;
+    }
+    footer > div div:nth-of-type(3) input{
+        float: left; display: block; margin-bottom: 25px; box-sizing: border-box; line-height: 43px; 
+    }
+    footer > div div:nth-of-type(3) input[type='email']{
+        width: /*70%*/35%; font-size: 14px; font-weight: 300; border: 1px solid rgba(255,255,255,0.5);
+        background-color: transparent;  color: white; padding: 0 15px;
+    }
+    footer > div div:nth-of-type(3) input[type='email']::placeholder{
+        color: rgba(255,255,255,0.75);
+    }
+    footer > div div:nth-of-type(3) input[type='submit']{
+        width: /*25%*/10%; margin-left: /*5%*/2%; text-indent: -9999px; border: none;
+        background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
+    }
+    /* todo. SNS ICON 배치하기  + 4번박스 완성시켜오기*/
+    footer > div div:nth-of-type(3) ul{
+        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
+    }
+    footer > div div:nth-of-type(3) ul li{
+        /* resp이 일어날 시 떨어지게 inline-block or 비율상 줄어들게 만들 것? - float or flex */
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer > div div:nth-of-type(3) ul li:not(:first-child){
+        margin-left: /*5px*/ 5%;
+    }
+    footer > div div:nth-of-type(3) ul li a{
+        display: block; text-indent: -9999px; background-repeat: no-repeat; background-size: contain;
+        /* 
+            ? text-indent 가 -로 적용이 안될 때
+            1. 적용 대상의 display 상태가 inline일 경우
+            2. 적용 대상 혹은 그 부모로부터 text-align 이 left 이 아닐 경우
+        */
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(1) a{
+        background-image: url('../images/ico_sns_01.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(2) a{
+        background-image: url('../images/ico_sns_02.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(3) a{
+        background-image: url('../images/ico_sns_03.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(4) a{
+        background-image: url('../images/ico_sns_04.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(5) a{
+        background-image: url('../images/ico_sns_05.png');
+    }
+    footer > div div:nth-of-type(3) ul li:nth-child(6) a{
+        background-image: url('../images/ico_sns_06.png');
+    }
+
+
+    footer > div div:last-of-type{
+        clear: both; font-weight: 400;
+    }
+    footer > div div:last-of-type a{
+        display: inline-block;
+    }
+    footer > div div:last-of-type a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer > div div:last-of-type p{
+        float: right;
+    }
+}
+/* tablet */
+
 @media screen and (min-width: 1280px) {
     #about,
     section.expArea,
