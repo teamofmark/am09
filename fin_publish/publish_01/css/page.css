@@ -117,7 +117,7 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: 940px; margin: 0 auto 70px;
+        max-width: /*940px*/ 728px; margin: 0 auto 70px;
         /* ! 애시당초 구조화 할 때 div wrap을 사용 했으면 되었음 */
         list-style: none;
     }
@@ -132,7 +132,7 @@
     }
     section.teamArea ul li figure{
         background: url('https://placehold.co/220x230') center top / contain no-repeat;
-        padding-top: 230px;
+        padding-top: /*230px*/ 180px;
         /* ! padding으로 벌려 놓은 상태이기 때문에 이후 반응형에서 문제가 나타날 것 */
     }
     section.teamArea ul li figure figcaption{
