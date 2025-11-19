@@ -264,11 +264,27 @@
     section.contactArea form fieldset .btn_more{
         background-color: transparent; min-width: 120px;
     }
-
-
-
     section.contactArea div{
         width: 40%; margin-left: 11%;
     }
+    section.contactArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactArea div ul li{
+        width: 50%; float: left; display: block;
+    }
+    section.contactArea div ul li a{
+        display: block;
+    }
+    section.contactArea div ul li:nth-child(2n+1) a{
+        text-align: left;
+    }
+    section.contactArea div ul li:nth-child(2n) a{
+        text-align: right;
+    }
+    section.contactArea div ul li a img{
+        width: 100%; max-width: 162px;
+    }
+    /* ? contact Fin */
 }
 /* desktop */
