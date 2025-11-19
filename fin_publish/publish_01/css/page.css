@@ -2,16 +2,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     #about{
-        padding-left: 7%;
+        padding-left: /*7%*/ 3.5%; box-sizing: border-box;
     }
     #about:after{
         content: ''; display: block; clear: both;
     }
     #about img{
-        float: left; width: 25%; max-width: 235px;
+        float: left; width: /*25%*/ 32%; max-width: 235px;
     }
     #about figcaption{
-        float: left; margin-left: 10%; width: 65%;
+        float: left; margin-left: /*10%*/8%; width: /*65%*/60%;
     }
     #about figcaption > *:not(a){
         margin-bottom: 20px;
@@ -89,6 +89,15 @@
     section.expArea ul li p{
         font-weight: 300; font-size: 14px; color: rgba(51,51,51,0.75); line-height: 22px;
     }
+    /* 
+        ? 만약 float 열 배치가 무너질 경우 대처 방안
+        1. min-height를 가장 높이가 높은 대상을 기준으로 통일.
+        - 위 방법의 장점 : 간편함. 단점 : 높이의 차이가 많이 날 수록 컨텐츠가 적은 부분은 이쁘지 않음.
+        2. 유동성단위 활용
+        - 위 방법의 장점 : 어떤 사이즈에도 모두 동일하게 대응, 단점 : 내가 괴로움..
+        3. Javascript 처리
+        - 위 방법의 장점 : 모든 상황 제어가 가능하다. 단점 : 내가 괴로움..
+    */
     /* ? expArea Fin */
 
     section.teamArea{
