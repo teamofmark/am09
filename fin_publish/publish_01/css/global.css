@@ -194,7 +194,7 @@ section[class$='Area'] > hr{
     /* todo. SNS ICON 배치하기  + 4번박스 완성시켜오기*/
     footer > div div:nth-of-type(3) ul{
         /* float: left; width: 45%; margin-left: 8%; */
-        text-align: center;
+        text-align: center; clear: left;
     }
     footer > div div:nth-of-type(3) ul li{
         /* resp이 일어날 시 떨어지게 inline-block or 비율상 줄어들게 만들 것? - float or flex */

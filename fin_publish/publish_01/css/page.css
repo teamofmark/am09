@@ -1,19 +1,22 @@
 
 @media screen and (max-width: 767px) {
-    #about{
-        padding-left: /*7%*/ 3.5%; box-sizing: border-box;
+    /* #about{
+        padding-left:  3.5%; box-sizing: border-box;
     }
     #about:after{
         content: ''; display: block; clear: both;
+    } */
+    #about{
+        text-align: center;
     }
     #about img{
-        float: left; width: /*25%*/ 32%; max-width: 235px;
+        /*float: left;*/ width: /*32%*/ 50%; max-width: 235px;
     }
-    #about figcaption{
-        float: left; margin-left: /*10%*/8%; width: /*65%*/60%;
-    }
+    /* #about figcaption{
+        float: left; margin-left: 8%; width: 60%;
+    } */
     #about figcaption > *:not(a){
-        margin-bottom: 20px;
+        margin-bottom: /*20px*/30px;
     }
     #about figcaption h2{
         font-size: 22px; font-weight: 700; color: #413d4b;
@@ -22,7 +25,7 @@
         font-size: 14px; font-weight: 300; color: rgba(65,61,75,0.75); line-height: 22px;
     }
     #about figcaption a.btn_more{
-        max-width: 120px;
+        max-width: 120px; margin: 0 auto;
     }
     /* ? CI about fin */
 
