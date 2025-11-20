@@ -42,7 +42,7 @@ section[class$='Area'] > hr{
     section.contactArea,
     /* section.worksArea h2, */
     footer > div{
-        max-width: /*940px*/ 728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/600px; margin: 0 auto; padding: 70px /*0*/3%;
         /* ! max-width로 통제 : 장점- 쉽다. 단점- 다양한 크기의 화면에 대응력이 떨어짐 */
     }
 
@@ -50,10 +50,10 @@ section[class$='Area'] > hr{
         padding: 15px 0 70px;  background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header div{
-        max-width: /*940px*/728px; margin: 0 auto; position: relative;
+        max-width: /*728px*/600px; margin: 0 auto; position: relative; padding: 0 3%;
     }
     header div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float: left;
     }
     header div h1 *{
         display: block;
@@ -62,8 +62,8 @@ section[class$='Area'] > hr{
         width: 100%;
     }
     header div nav{
-        position: absolute; right: 0; top: 0; width: 100%; padding-left: 130px; box-sizing: border-box;
-        text-align: right;
+        /*position: absolute; right: 0; top: 0; width: 100%; padding-left: 130px; box-sizing: border-box;*/
+        text-align: right;  width: 50%; margin-left: 15%; float: right;
     }
     header div nav label.mui{
         padding: 5px 3px; border: 1px solid white; width: 22px; display: block;
@@ -78,12 +78,18 @@ section[class$='Area'] > hr{
     header div nav input[type='checkbox'].mui{
         display: none;
     }
+    header div nav ul{
+        height: 0px; overflow-y: hidden; transition: height 1s ease-out;
+    }
+    header div nav input[type='checkbox']:checked+ul{
+        height: 350px;
+    }
     header div nav ul li{
-        display: inline-block;
+        display: /*inline-*/block;
     }
-    header div nav ul li:not(:first-child){
+    /* header div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header div nav ul li a{
         display: block; line-height: 50px; color: white; font-size: 13px; font-weight: 900;
     }
@@ -93,10 +99,10 @@ section[class$='Area'] > hr{
     }
     /* ? GNB Fin */
     header div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/65px; display: block;
     }
     header div > ul li h2{
         font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 23px;
@@ -129,18 +135,15 @@ section[class$='Area'] > hr{
     footer{
         background: url('../images/bg_05.png') left top / cover no-repeat;
     }
-    /* footer > div div:not(:last-of-type){
-        float: left; width: 31%; margin: 0 0 70px 3.5%;
-    } 
-    footer >div div:first-of-type{
-        margin-left: 0;
-    }*/
-    footer > div div:nth-of-type(1),
+    /* footer > div div:nth-of-type(1),
     footer > div div:nth-of-type(2){
         float: left; width: 47.5%; margin: 0 0 70px;
-    }
+    } 
     footer > div div:nth-of-type(2){
         margin-left: 5%;
+    }*/
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
     }
     footer >div div h2{
         margin-bottom: 20px;
@@ -171,33 +174,34 @@ section[class$='Area'] > hr{
     footer > div div:nth-of-type(2) address span:last-of-type{
         background-image: url('../images/bul_phone.png');
     }
-    footer > div div:nth-of-type(3){
+    /* footer > div div:nth-of-type(3){
         clear: left;
-    }
+    } */
     footer > div div:nth-of-type(3) input{
         float: left; display: block; margin-bottom: 25px; box-sizing: border-box; line-height: 43px; 
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: /*70%*/35%; font-size: 14px; font-weight: 300; border: 1px solid rgba(255,255,255,0.5);
+        width: /*35%*/75%; font-size: 14px; font-weight: 300; border: 1px solid rgba(255,255,255,0.5);
         background-color: transparent;  color: white; padding: 0 15px;
     }
     footer > div div:nth-of-type(3) input[type='email']::placeholder{
         color: rgba(255,255,255,0.75);
     }
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: /*25%*/10%; margin-left: /*5%*/2%; text-indent: -9999px; border: none;
+        width: /*10%*/25%; /*margin-left: 2%;*/ text-indent: -9999px; border: none;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
     }
     /* todo. SNS ICON 배치하기  + 4번박스 완성시켜오기*/
     footer > div div:nth-of-type(3) ul{
-        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
+        /* float: left; width: 45%; margin-left: 8%; */
+        text-align: center;
     }
     footer > div div:nth-of-type(3) ul li{
         /* resp이 일어날 시 떨어지게 inline-block or 비율상 줄어들게 만들 것? - float or flex */
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: /*5px*/ 5%;
+        margin-left: /*5%*/ 2.5%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px; background-repeat: no-repeat; background-size: contain;
@@ -226,19 +230,18 @@ section[class$='Area'] > hr{
         background-image: url('../images/ico_sns_06.png');
     }
 
-
     footer > div div:last-of-type{
-        clear: both; font-weight: 400;
+        /*clear: both;*/ font-weight: 400; text-align: center;
     }
     footer > div div:last-of-type a{
         display: inline-block;
     }
     footer > div div:last-of-type a:not(:first-of-type){
-        margin-left: 30px;
+        margin-left: /*30px*/5%;
     }
-    footer > div div:last-of-type p{
+    /* footer > div div:last-of-type p{
         float: right;
-    }
+    } */
 }
 /* mobile */
 
