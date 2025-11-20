@@ -155,13 +155,11 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: 940px; margin: 0 auto 70px;
+        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/ 728px; margin: 0 auto 70px;
         position: relative;
     }
     section.worksArea h2 a{
         position: absolute; right: 0; font-size: 14px; font-weight: 300; line-height: 22px; color: inherit;
-        /* inline-block? - width, margin-left: auto */
-        /* float: right? - display: inherit; line-height: 22px; */
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
@@ -189,7 +187,7 @@
         display: none;
     }
     section.talkArea p{
-        max-width: 770px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*770px*/728px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -203,7 +201,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: 940px; margin: 0 auto;
+        max-width: /*940px*/728px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -212,7 +210,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: 33%;
+        max-width: 310px; width: /*33%*/ 50%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
