@@ -58,19 +58,20 @@
     section.expArea hr{
         border-color: rgba(65,61,75,0.3);
     }
-    section.expArea ul:after{
+    /* section.expArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.expArea ul li{
-        width: 33.33%; float: left; display: block; padding: 120px 2% 40px; box-sizing: border-box;
+        /*width: 33.33%; float: left;*/ display: block; padding: 120px /*2%*/3% 40px; box-sizing: border-box;
         background-repeat: no-repeat; background-position: center 30px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
     }
-    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+    /* section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:not(:nth-child(3n)){
         border-right: 1px solid rgba(0,0,0,0.2);
-    }
+    } */
 
     section.expArea ul li:nth-child(1){background-image: url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image: url('../images/ico_02.png');}
@@ -80,7 +81,7 @@
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
 
     section.expArea ul li h3{
-        font-weight: 900; font-size: 14px; color: #413d4b; margin-bottom: 20px;
+        font-weight: 900; font-size: /*14px;*/12px; color: #413d4b; margin-bottom: 20px;
     }
     section.expArea ul li p{
         font-weight: 300; font-size: 14px; color: rgba(51,51,51,0.75); line-height: 22px;
@@ -98,7 +99,7 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat;  text-align: center; color: white;
-        padding: 70px 0;
+        padding: 70px /*0*/3%;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -113,8 +114,12 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: /*940px*/ 728px; margin: 0 auto 70px;
-        /* ! 애시당초 구조화 할 때 div wrap을 사용 했으면 되었음 */
+        list-style: none;
+    }
+     /*
+    section.teamArea ul{
+        max-width: 728px; margin: 0 auto 70px;
+        ! 애시당초 구조화 할 때 div wrap을 사용 했으면 되었음 
         list-style: none;
     }
     section.teamArea ul:after{
@@ -126,9 +131,13 @@
     section.teamArea ul li:not(:first-child){
         margin-left: 2%;
     }
+    */
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
     section.teamArea ul li figure{
-        background: url('https://placehold.co/220x230') center top / contain no-repeat;
-        padding-top: /*230px*/ 180px;
+        background: url('https://placehold.co/220x230') center top / cover no-repeat;
+        padding-top: 180px; max-width: 300px; margin: 0 auto;
         /* ! padding으로 벌려 놓은 상태이기 때문에 이후 반응형에서 문제가 나타날 것 */
     }
     section.teamArea ul li figure figcaption{
@@ -148,24 +157,26 @@
     }
     /* ? teamArea Fin */
     section.worksArea{
-        padding: 70px 0;
+        padding-bottom: 70px;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/ 728px; margin: 0 auto 70px;
+        font-size: /*22px;*/18px; font-weight: 700; color: #413d4b; 
+        /* max-width: 728px; margin: 0 auto 70px; */
         position: relative;
     }
     section.worksArea h2 a{
-        position: absolute; right: 0; font-size: 14px; font-weight: 300; line-height: 22px; color: inherit;
+        position: absolute; right: 0; font-size: /*14px*/12px; font-weight: 300; line-height: 22px;
+        color: inherit;
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
     }
     section.worksArea ul li{
         width: 16.66%; float: left;
-    }
+    } */
     section.worksArea ul li *{
         display: block;
     }
@@ -177,13 +188,14 @@
     }
     /* ? worksArea Fin */
     section.talkArea{
-        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0; text-align: center;
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px /*0*/3%;
+        text-align: center;
     }
     section.talkArea h2{
         display: none;
     }
     section.talkArea p{
-        max-width: /*770px*/728px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*728px*/600px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url('../images/quote.png') no-repeat center top;
         font-size: 16px; line-height: 26px; font-weight: 400;
     }
@@ -197,7 +209,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: /*940px*/728px; margin: 0 auto;
+        max-width: /*728px*/ 600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -206,7 +218,7 @@
         font-size: 22px; color: rgba(255,255,255,0.5);
     }
     section.talkArea div ul{
-        max-width: 310px; width: /*33%*/ 50%;
+        max-width: /*310px*/400px; width:  /*50%*/ 80%;
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
@@ -236,18 +248,18 @@
     }
     /* ?talkArea Fin */
 
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;    
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left;
-    }
+    } */
     section.contactArea form fieldset{
-        width: 49%;
+        /* width: 49%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset legend,
     section.contactArea div h3{
@@ -265,11 +277,11 @@
         height: 200px; resize: none;
     }
     section.contactArea form fieldset .btn_more{
-        background-color: transparent; min-width: 120px;
+        background-color: transparent; min-width: 120px; margin-left: auto;
     }
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 11%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; clear: both;
     }

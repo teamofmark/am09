@@ -39,8 +39,9 @@ section[class$='Area'] > hr{
 @media screen and (max-width: 767px) {
     #about,
     section.expArea,
+    section.teamArea ul,
     section.contactArea,
-    /* section.worksArea h2, */
+    section.worksArea h2,
     footer > div{
         max-width: /*728px*/600px; margin: 0 auto; padding: 70px /*0*/3%;
         /* ! max-width로 통제 : 장점- 쉽다. 단점- 다양한 크기의 화면에 대응력이 떨어짐 */
