@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portLand</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="css/import.css">
+    <!-- 
+        todo. 1 import.css 생성
+        todo. 2 그 안에 필수파일 (reset,global,page) 제작 및 위에 Icon CDN import 안에 배치
+        todo. 3 시안 내에서 웹폰트 찾기 및 웹폰트 url import.css 안에 배치
+        todo. 4 필수파일중 global,page에 M/Q설정 해두기
+    -->
 </head>
 <body>
     <header>
-        <div>
+        <div class="mont">
             <!-- js : input:button or button Tag -->
              <label for="mui" class="material-icons">menu</label>
              <!-- pureCSS type : js에 의존하지 않고 css만으로 해결하는 코드방식 -->
@@ -32,7 +38,7 @@
     <!-- ? header Fin -->
     <!-- ! 안좋은 케이스 = nav -> div-->
     <nav>
-        <div>
+        <div class="slideNav mont">
             <ul>
                 <li><a href="#">Top Sales</a></li>
                 <li><a href="#">Brand Focus</a></li>
@@ -56,14 +62,14 @@
      -->
     <!-- ! 가능하다고 가정 했을 때 -->
 
-    <section>
+    <section class="slideArea">
         <h2>sliderSection</h2>
         <!-- ! 악수를 두었다... -> section이 아닌 div로 했어야함-->
         <div>
             <a href="#" class="btn_conL">&lt;</a>
             <a href="#" class="btn_conR">&gt;</a>
             <ol>
-                <li><a href="#">slide</a></li>
+                <li><a href="#" class="active">slide</a></li>
                 <li><a href="#">slide</a></li>
                 <li><a href="#">slide</a></li>
                 <li><a href="#">slide</a></li>
@@ -74,10 +80,10 @@
                         <img src="images/sample_slider.png" alt="example">
                         <figcaption>
                             <dl>
-                                <dt>iPhone 6 32Gb<br>Black</dt>
-                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                                <dt class="mont">iPhone 6 32Gb<br>Black</dt>
+                                <dd class="crim">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
                             </dl>
-                            <input type="button" value="Buy Now">
+                            <input type="button" value="Buy Now" class="mont">
                         </figcaption>
                     </figure>
                     <!-- <p><strong></strong><a href=""></a></p> -->
@@ -106,7 +112,7 @@
         </div>
     </section>
     <!-- slider Fin -->
-    <div>
+    <div class="contentArea mont">
         <form>
             <fieldset>
                 <label for="sb_Select">Sort By:</label>
@@ -425,7 +431,7 @@
         <!-- ? pager 임의확정구조 - 다른대안이 없음.-->
     </div>
     <!-- content Fin-->
-    <section>
+    <section class="bestArea mont">
         <h2>BEST SELLERS</h2>
         <ul>
             <li>
@@ -479,9 +485,9 @@
         </ul>
     </section>
     <!-- bestSeller's Fin -->
-    <section>
+    <section class="tosayArea crim">
         <div>
-            <h2>What Our Customers Have to Say</h2>
+            <h2 class="mont">What Our Customers Have to Say</h2>
             <p>Couple of Words About This Stories Section</p>
             <ul>
                 <li>
@@ -489,7 +495,7 @@
                         <img src="images/sample_face.png" alt="exampleFace">
                         <figcaption>
                             <dl>
-                                <dt>Celia Fields</dt>
+                                <dt class="mont">Celia Fields</dt>
                                 <dd>UX Expert</dd>
                             </dl>
                         </figcaption>
@@ -501,7 +507,7 @@
                         <img src="images/sample_face.png" alt="exampleFace">
                         <figcaption>
                             <dl>
-                                <dt>Alexander Lee</dt>
+                                <dt class="mont">Alexander Lee</dt>
                                 <dd>Founder</dd>
                             </dl>
                         </figcaption>
@@ -513,7 +519,7 @@
                         <img src="images/sample_face.png" alt="exampleFace">
                         <figcaption>
                             <dl>
-                                <dt>Lenora Sandoval</dt>
+                                <dt class="mont">Lenora Sandoval</dt>
                                 <dd>Product Manager</dd>
                             </dl>
                         </figcaption>
@@ -524,7 +530,7 @@
         </div>
     </section>
     <!-- quote's Section Fin -->
-    <footer>
+    <footer class="mont">
         <div>
             <h2>
                 <img src="images/logo_footer.png" alt="portland">
