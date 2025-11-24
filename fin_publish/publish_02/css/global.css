@@ -7,8 +7,41 @@ body{
 .crim{
     font-family: 'Crimson Pro';
 }
+input[type='radio'],
+input[type='checkbox']{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+/* A / U */
 
 @media screen  and (min-width: 1280px){
-    
+    header > div{
+        max-width: 1170px; margin: 0 auto;
+    }
+
+    header{
+        border-bottom: 1px solid #f0f2f7; background-color: white;
+    }
+    header > div:after{
+        content: ''; display: block; clear: both;
+    }
+    header > div > *{
+        float: left;
+    }
+    header > div label.material-icons{
+        width: 5.12%; max-width: 60px; line-height: 90px; box-sizing: border-box;
+        border-right: 1px solid #f0f2f7; display: block;
+    }
+    header > div h1{
+        width: 10.68%; max-width: 125px;
+    }
+    header > div h1 a{
+        display: block; padding: 31px 0; text-align: right;
+    }
+    header > div h1 a img{
+        width: 100%; max-width: 92px;
+    }
 }
 /* desktop */
