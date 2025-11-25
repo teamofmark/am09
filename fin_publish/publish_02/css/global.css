@@ -17,7 +17,8 @@ a{
 /* A / U */
 
 @media screen  and (min-width: 1280px){
-    header > div{
+    header > div,
+    footer div{
         max-width: 1170px; margin: 0 auto;
     }
 
@@ -40,8 +41,107 @@ a{
     header > div h1 a{
         display: block; padding: 31px 0; text-align: right;
     }
-    header > div h1 a img{
+    header > div h1 a img{  
         width: 100%; max-width: 92px;
     }
+    header > div nav{
+        width: 54.7%;
+    }
+    header > div nav ul{
+        text-align: right;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header > div nav ul li a{
+        display: block; font-size: 14px; font-weight: 600; color: #343e5c; line-height: 90px;
+    }
+    header > div div{
+        width: 29.5%; font-size: 11px; color: #343e5c; line-height: 90px; text-align: right;
+    }
+    header > div div *:not(input){
+        display: inline-block;
+    }
+    header > div div strong{
+        padding-left: 25px; line-height: 17px; font-weight: 600;
+        background: url('../images/bul_cart.png') left top / contain no-repeat;
+    }
+    header > div div span{
+        width: 24px; line-height: 24px; background-color: #e3e8f0; border-radius: 12px;
+        text-align: center; margin-left: 1%;
+    }
+    header > div div input[type='button']{
+        font-size: 11px; font-family: inherit; font-weight: 600;  padding: 8px 15px; border: 2px solid #e3e8f0;
+        background-color: transparent; border-radius: 16px; margin-left: 10%;
+    }
+
+    /* todo. footer */
+    footer{
+        background-color: #222328;
+    }
+    footer div{
+        padding: 60px 0; position: relative;
+    }
+    footer div span{
+        position: absolute; display: block; right: 0; top: 60px;
+    }
+    footer div:first-child{
+        border-bottom:  1px solid rgba(255,255,255,0.05);
+    }
+    footer div:first-child h2{
+        position: absolute; left: 0; top: 60px; width: 7.86%; max-width: 92px; min-width: 78px;
+    }
+    footer div:first-child h2 img{
+        width: 100%;
+    }
+    footer div:first-child ul{
+        padding: 0 10%; text-align: center; text-transform: uppercase;
+    }
+    footer div:first-child ul li{
+        display: inline-block;
+    }
+    footer div:first-child ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    footer div:first-child ul li a{
+        display: block; color: white; font-size: 12px; font-weight: 600; letter-spacing: 1px;
+    }
+    footer div:first-child span{
+        width: 10%; text-align: right;
+    }
+    footer div:first-child span a{
+        display: inline-block; width: 24px; height: 18px; background-position: center;
+        background-repeat: no-repeat; text-indent: -9999px; text-align: left;
+    }
+    footer div:first-child span a:not(:first-child){
+        margin-left: 10%;
+    }
+    footer div:first-child span a:nth-child(1){
+        background-image: url('../images/sns_01.png');
+    }
+    footer div:first-child span a:nth-child(2){
+        background-image: url('../images/sns_02.png');
+    }
+    footer div:first-child span a:nth-child(3){
+        background-image: url('../images/sns_03.png');
+    }
+    footer div:nth-child(2) p{
+        max-width: 520px; font-size: 14px; font-style: italic; font-weight: 400;
+        line-height: 22px; color: rgba(255,255,255,0.3);
+    }
+    footer div:nth-child(2) span{
+        width: 50%; text-align: right; padding-top: 15px;
+    }
+    footer div:nth-child(2) span a{
+        font-size: 11px; color: rgba(255,255,255,0.3); display: inline-block; font-weight: 600;
+        text-transform: uppercase; letter-spacing: 1px;
+    }
+    footer div:nth-child(2) span a:last-of-type{
+        margin-left: 2.13%;
+    }
+    /* footer Fin */
 }
 /* desktop */
