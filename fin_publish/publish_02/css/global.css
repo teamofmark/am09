@@ -78,6 +78,10 @@ a{
         background-color: transparent; border-radius: 16px; margin-left: 10%;
     }
 
+    .paging{
+        position: relative; background-color: white; border-radius: 5px; clear: both;
+    }
+
     /* todo. footer */
     footer{
         background-color: #222328;
