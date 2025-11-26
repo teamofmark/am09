@@ -1,6 +1,44 @@
 
 
 @media screen  and (min-width: 1280px){
-    
+    header+nav{
+        background-color: white;
+    }
+    header+nav .slideNav:after{
+        content: ''; display: block; clear: both;
+    }
+    header+nav .slideNav > *{
+        float: left;
+    }
+    header+nav .slideNav ul{
+        width: 80%;
+    }
+    header+nav .slideNav ul li:not(:first-child){
+        margin-left: 2.56%;
+    }
+    header+nav .slideNav ul li:not(:last-child){
+        float: left;
+    }
+    header+nav .slideNav ul li:last-child{
+        float: right;
+    }
+    header+nav .slideNav ul li a{
+        display: block; font-size: 11px; color: #b9bed1; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
+        line-height: 56px;
+    }
+    header+nav .slideNav ul li a.active,
+    header+nav .slideNav ul li a:hover{
+        color: #343e5c;
+    }
+    header+nav .slideNav input[type='search']{
+        width: 17%; margin-left: 3%; padding: 20px 2% 20px 4%; box-sizing: border-box;
+        border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
+        background: url('../images/bul_search.png') no-repeat 10% center;
+        font-family: inherit; font-weight: 600; font-size: 14px;
+    }
+    header+nav .slideNav input[type='search']::placeholder{
+        color: #a1a7db;
+    }
+    /* ? slideNav Fin */
 }
 /* desktop */
