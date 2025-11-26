@@ -81,7 +81,31 @@ a{
     .paging{
         position: relative; background-color: white; border-radius: 5px; clear: both;
     }
-
+    .paging > a{
+        position:absolute; top:0; line-height: 90px; width: 16.66%; font-size: 18px; font-weight: 700; color: #3a405b;
+        text-align: center;
+    }
+    .paging > a:first-of-type{
+        left: 0; border-right: 1px solid #f0f2f7;
+    }
+    .paging > a:last-of-type{
+        right: 0; border-left: 1px solid #f0f2f7;
+    }
+    .paging ol{
+        text-align: center; padding: 20px 17%; box-sizing: border-box; list-style: none;
+    }
+    .paging ol li{
+        display: inline-block;
+    }
+    .paging ol li a{
+        width: 50px; line-height: 50px; border-radius: 25px; font-size: 14px; font-weight: 600; color: #3a405b;
+        display: block; transition: box-shadow 0.3s ease-out;
+    }
+    .paging ol li a.active,
+    .paging ol li a:hover{
+        box-shadow: 0 5px 8px rgba(168,172,185,0.62); color: #b9bed1;
+    }
+    /* ? pager Fin*/
     /* todo. footer */
     footer{
         background-color: #222328;
