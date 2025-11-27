@@ -55,10 +55,10 @@
         position: absolute; top: 46%; z-index: 10;
     }
     section.slideArea div > a.btn_conL{
-        left: 11.78%;
+        left: 9.78%;
     }
     section.slideArea div > a.btn_conR{
-        right: 11.78%;
+        right: 9.78%;
     }
     section.slideArea div ol{
         position: absolute; bottom: 6%; left: 47.85%; z-index: 1;
@@ -88,7 +88,22 @@
         width: 100%; display: block;
     }
     section.slideArea > div ul li figure figcaption{
-        position: absolute; color: white; top: 0; left: 0;
+        position: absolute; color: white; top: 20%; left: 15%; width: 32.85%; max-width: 460px; color: white;
     }
+    section.slideArea > div ul li figure figcaption dl{
+        margin-bottom: 60px;
+    }
+    section.slideArea > div ul li figure figcaption dl dt{
+        font-size: 42px; font-weight: 900;  line-height: 50px; margin-bottom: 25px;
+    }
+    section.slideArea > div ul li figure figcaption dl dd{
+        font-size: 16px; font-weight: 400; line-height: 24px;
+    }
+    section.slideArea > div ul li figure figcaption input[type='button']{
+        width: 35.86%; background-color: #2754eb; font-size: 11px; font-weight: 600; line-height: 42px;
+        border-radius: 21px; color: inherit; text-transform: uppercase; border: none; letter-spacing: 1px;
+    }
+    /* ? sliderArea Fin */
+    
 }
 /* desktop */
