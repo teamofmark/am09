@@ -104,6 +104,19 @@
         border-radius: 21px; color: inherit; text-transform: uppercase; border: none; letter-spacing: 1px;
     }
     /* ? sliderArea Fin */
-    
+
+    .contentArea{
+        margin-bottom: 50px;
+    }
+    .contentArea > form fieldset{
+        background-color: white; border-radius: 5px; line-height: 56px; padding: 0 1.7%;
+        box-sizing: border-box; margin-bottom: 30px;
+    }
+    .contentArea > form fieldset label{
+        display: inline-block; vertical-align: middle; font-weight: 600;
+    }
+    .contentArea > form fieldset label:not([for='freeShipCheck']){
+        font-size: 11px; color: #a1a7bd; text-transform: uppercase;
+    }
 }
 /* desktop */
