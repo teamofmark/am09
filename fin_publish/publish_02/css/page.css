@@ -159,5 +159,45 @@
     }
     /* ? sortBar Fin */
 
+    .contentArea aside{
+        width: 23.07%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white; border-radius: 5px; margin-bottom: 30px;
+    }
+    .contentArea aside nav *{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color: #343e5c; font-weight: 600; padding: 15px 7%;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right; transform: rotate(0deg);
+        transition: transform .5s ease-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(-180deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; opacity: 0; font-weight: 600; color: #a1a7bd; padding: 0px 7%;
+        transition: all .3s ease-out;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; opacity: 1; padding: 15px 7%; border-bottom: 1px solid #dfe4ee;
+    }
+    /* ? sideMenu Fin */
+
+
+
+    .contentArea section{
+        margin-left: 2.56%; width: 74.37%; float: left;
+    }
+
 }
 /* desktop */
