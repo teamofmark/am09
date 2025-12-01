@@ -199,17 +199,50 @@
     .contentArea aside fieldset:not(:last-of-type){
         padding: 48px 0 20px;
     }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 28px;
+    }
     /* 
         ! legend 배치
         * 1. legend의 실제높이구하기 (fontsize,padding,border...)
         * 2. 1번높이의 절반(13.5 -> 13)이 곧 fieldset 상단 선 기준 top 0의 수치.
         * 3. 그 상태에서 psd의 fieldset 상단선과 legend사이 간격인 15(20)을 가산하면 28px(33px). 이게 top pos.
         * 4. relative 좌표가 발생한 상태라 부모 높이의 변화가 없음으로 부모의 padding-top은 저 둘의 합산으로 적용.
+        ! legend의 걸치는 부분때문에 가감이 필요한 상황이라면 5배수 관계로 처리.(내림)
     */
     .contentArea aside fieldset legend{
         font-size: 11px; color: #343e5c; font-weight: 700; border-bottom: 1px solid red; text-transform: uppercase;
-        width: 100%; padding: 0 0 15px; position: relative; top: 28px;
+        width: 100%; padding: 0 7% 15px; position: relative; top: 28px; box-sizing: border-box;
     }
+    .contentArea aside fieldset legend a{
+        float: right; color:#2754eb; border-bottom: 2px solid #c9d4fa;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block;
+        line-height: 20px; padding-left: 20%; box-sizing: border-box;
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset span{
+        width: 18%; display: inline-block; text-align: center; font-size: 11px; color: #b8bfd3;
+        font-weight: 400; line-height: 20px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 80%;
+    }
+    .contentArea aside fieldset label[for*='condition']{
+        width: 100%;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; margin-bottom: 0; line-height: 50px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid red;
+    }
+    /* todo. 작동방식에 따른 배경 처리 - label에 해주기 */
 
 
     .contentArea section{
