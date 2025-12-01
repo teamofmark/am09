@@ -193,6 +193,23 @@
     }
     /* ? sideMenu Fin */
 
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 48px 0 20px;
+    }
+    /* 
+        ! legend 배치
+        * 1. legend의 실제높이구하기 (fontsize,padding,border...)
+        * 2. 1번높이의 절반(13.5 -> 13)이 곧 fieldset 상단 선 기준 top 0의 수치.
+        * 3. 그 상태에서 psd의 fieldset 상단선과 legend사이 간격인 15(20)을 가산하면 28px(33px). 이게 top pos.
+        * 4. relative 좌표가 발생한 상태라 부모 높이의 변화가 없음으로 부모의 padding-top은 저 둘의 합산으로 적용.
+    */
+    .contentArea aside fieldset legend{
+        font-size: 11px; color: #343e5c; font-weight: 700; border-bottom: 1px solid red; text-transform: uppercase;
+        width: 100%; padding: 0 0 15px; position: relative; top: 28px;
+    }
 
 
     .contentArea section{
