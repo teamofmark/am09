@@ -32,3 +32,16 @@
         wrap(width 초과시 개행) - item width 설정시 %, max,min px설정 하여 원하는 타이밍 설정필요
         wrap-reverse(개행하되 역배치)
     */
+
+.flexContainer.flow{
+    flex-flow: row wrap;
+    /* 
+        -flow :
+        direction , wrap 을 줄여 쓸 수(shorthand)있다.
+        <flex-direction> | <flex-wrap>;
+        ? Refns 상에서 | (vertical-bar) 의미는 띄어쓰기.
+    */
+}
+.flexContainer.flow .flexItem{
+    width: 33.33%; max-width: 500px; min-width: 300px;
+}
