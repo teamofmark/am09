@@ -45,3 +45,45 @@
 .flexContainer.flow .flexItem{
     width: 33.33%; max-width: 500px; min-width: 300px;
 }
+.flexContainer[class*='justify']{
+    background-color: skyblue; padding: 0;
+}
+.flexContainer[class*='align']{
+    background-color: lightpink; padding: 0;
+}
+.flexContainer[class*='justify'] .flexItem,
+.flexContainer[class*='align'] .flexItem{
+    margin: 0;
+}
+.flexContainer.justifyContent{
+    justify-content: space-around;
+    /* 
+        justify-content : 
+        flex container의 main axis를 기준으로 flexItem을 수평 정렬한다.
+        
+        flex-start (flexItem을 좌측 기준정렬)
+        flex-end (flexItem을 우측 기준정렬)
+        center (flexItem을 가운데 기준정렬)
+        space-between (flexItem 중 처음은 좌측기준, 마지막은 우측기준, 나머지는 동일간격으로 정렬)
+        space-around (모든 flexItem은 처음,마지막 사이를  동일간격으로 정렬 외 나머지 배치)
+        space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.)
+    */
+}
+.flexContainer.alignContent{
+    height: 500px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /* 
+        align-content
+        flexContainer의 crossAxis를 기준으로 flexItem들을 수직정렬 한다.
+
+        ! stretch(flexItem 행간을 균등하게. crossStart(축의시작)에서 End(축의종료)까지 꽉찬높이.) - 기본
+        flex-start (flexItem 행 간격 없이 (stack))
+        flex-end (flexContainer의 cross end 기준으로 행 간격 없이)
+        center (flexContainer의 cross axis 중앙 기준으로 행 간격 없이)
+        space-between (첫 행은 flexContainer cross start 기준, 마지막 행은 flexContainer cross end 기준, 나머지 행 균등하게)
+        space-around (모든 flexItem은 처음,마지막 사이를  동일간격으로 정렬 외 나머지 배치)
+        space-evenly (여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분.) 
+    */
+}
