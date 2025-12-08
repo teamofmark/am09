@@ -58,3 +58,16 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// case.1 변수 선언 및 초기화 개념
+var userName; //선언. -> defaultDataType - undefined.
+userName = 'Mark';  // 초기화 -> dataType - string
+console.log(typeof(userName));
+
+// case.2 동시 선언 및 초기화
+var radius,pi; //? 동시 선언
+radius = 10, pi = 3.14159265; //? 동시 초기화
+
+// case.3 변수의특성
+var cup; //? 빈컵.
+//? var cup = 'Coffee';  무슨뜻 ? - 새로운 빈컵을 만들어서 커피를 담는다.
+cup = 'Coffee'; //? 위 빈컵을 가져다 커피를 담았다.
