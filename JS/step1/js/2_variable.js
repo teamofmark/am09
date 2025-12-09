@@ -71,3 +71,18 @@ radius = 10, pi = 3.14159265; //? 동시 초기화
 var cup; //? 빈컵.
 //? var cup = 'Coffee';  무슨뜻 ? - 새로운 빈컵을 만들어서 커피를 담는다.
 cup = 'Coffee'; //? 위 빈컵을 가져다 커피를 담았다.
+cup = 'Green Tea'; //? 커피가 비워지고 그린티가 담겼다.
+cup = 'Water' //? 그린티가 비워지고 물이 담겼다.
+
+// case. 4 연산자 사용시
+var numbVal = 10; //? numbVal이라고 하는 컵에 10이 담겼다.
+numbVal = numbVal + 20;// todo 현재 numbVal에 20을 더한다면?
+numbVal += 20;
+
+// case.5 자신의 현재 나이를 변수에 담고 출력하되 20년뒤 나이를 연산해서 출력해라.
+// todo. 자신의 나이를 변수로 선언 및 초기화
+var cliAge = 45;
+console.log('나의 나이는 현재' + cliAge + '세이고'); //todo. 현재나이 
+// todo. 자신의 나이를 불러와 20을 더한뒤 다시 담기.
+cliAge += 20;
+console.log('20년 뒤에는 ' + cliAge + '세이다.'); //todo. 미래나이 
