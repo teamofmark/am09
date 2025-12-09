@@ -11,3 +11,10 @@
     ? 명시적 형변환
     * method 나 lib Core func를 이용하여 강제로 숫자 -> 문자 로 변환.
 */
+// case.1 자신의 나이를 입력받고 20을 더한 값 출력.
+function agePlus(){
+    var age = window.prompt("나이를 입력하세요.");
+    // console.log(typeof(age));
+    var result = Number(age) + 20;
+    console.log(result);
+}
