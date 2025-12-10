@@ -35,3 +35,47 @@ function forcedString2(){
     var result = a + true;
     console.log("result의 자료유형은" + typeof(result) + "값은" + result);
 }
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    * String(value); - 전역함수. 모든 문자형 변환 가능 =? 편한데, 내의도된 문자형태가 아닐수도 있음.
+
+    ? .toString()
+    * Number.toString(); - 꼬리함수.(tailingFunction). 문자형(진수)변환
+
+    ?.toFixed()
+    * Number.toFixed(); - 실수문자형변환(소수점자리수를정함)
+*/
+// * case. 5-1
+function stringNumb(){
+    var test1 = 15;
+    console.log('변환 전 : ' + typeof(test1) + ' = ' + test1);
+    var result = String(test1);
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
+// * case. 5-2
+function stringtoNumb(){
+    var test1 = 15;
+    console.log('변환 전 : ' + typeof(test1) + ' = ' + test1);
+    var result = test1.toString();
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
+//  etc background-color (random)
+function bgColorRandom(){
+    setInterval(()=>{
+        var bgColor = Math.random()*0xfff;
+        console.log(bgColor);
+        bgColor = parseInt(bgColor);
+        console.log(bgColor);
+        bgColor = bgColor.toString(16);
+        console.log(bgColor);
+        document.querySelector("body").style.backgroundColor = "#" + bgColor;
+    },1000);
+}
+// * case. 5-3
+function fixtoNumb(){
+    var pi  = 3.14159265;
+    console.log('변환 전 : ' + typeof(pi) + ' = ' + pi);
+    var result = pi.toFixed(2);
+    console.log("변환 후 : " + typeof(result) + ' = ' + result);
+}
