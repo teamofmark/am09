@@ -120,3 +120,17 @@ function todo3(){
     var result = test.toString();
     console.log('변환 후 : ' + typeof(result) + ' = ' + result);
 }
+// todo. 2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기
+// todo. -1 parse형변환
+function todo4(){
+    var test = '100.51';
+    // todo. 아래 식을 연산이 가능하게
+    var result = parseInt(test) + 150 + parseInt("20");
+    console.log('test + 150 + 20의 연산 후 : ' + typeof(result) + ' = ' + result); //! 답이 270이 나와야함
+}
+function todo5(){
+    var test = '100.51';
+    // todo. 아래 식을 연산이 가능하게
+    var result = parseFloat(test) + 150 + Number("20");
+    console.log('test + 150 + 20의 연산 후 : ' + typeof(result) + ' = ' + result); //! 답이 270.51이 나와야함
+}
