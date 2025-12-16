@@ -122,3 +122,64 @@ function avgScore(){
     }
     // todo 단, 기본 오류 검수는 가능해야함 (성적이 비정상적으로 나옴 ex> 평균이 100을 넘거나 음수가나오는등)
 }
+// case.4 사용자 id("Mark")를 입력받아 맞다면 승인메시지출력
+function userIDCheck(){
+    var userID = window.prompt("사용자의 아이디");
+    if(userID=="Mark"){
+        alert("접속승인");
+    }else{
+        alert("잘못된 ID입니다.");
+    }
+}
+/*
+const axios = require('axios');
+
+axios.get('/user?ID=12345')
+    .than(function (response)){
+        console.log(response);
+    })
+    .catch(function(error){
+        console.log(error);
+    })
+    .finally(function(){
+        // 항상실행되는 영역
+    })
+*/
+// case.5 사용자 id "Mark"와 password "1234"를 입력받고 둘다 맞을 경우에만 승인메시지 출력
+function userInfoCheck(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+    if(userID == "Mark"&&userPW == "1234"){
+        alert("Mark 님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.")
+    }
+}
+// !
+function userInfoTune(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+
+    (userID == "Mark" && userPW == "1234")? alert("Mark 님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀릴경우 - 틀린정보에 대한 오류메시지 출력.
+function userInfoCheck2(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+    // todo.1 정상 일때 (승인) - Mark님으로 확인되었습니다.
+    if(userID == "Mark"&&userPW == "1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }
+    // todo.2 모두 비정상일때(비승인) - 모든 정보가 맞지않습니다.
+    else if(userID != "Mark"&& userPW != "1234"){
+        console.log("모든 정보가 맞지않습니다.");
+    }
+    // todo.3 아이디가 비정상일때(비승인) - 아이디가 존재하지않습니다.
+    else if(userID != "Mark"){
+        console.log("아이디가 존재하지않습니다.");
+    }
+    // todo.4 비밀번호가 비정상일때(비승인) - 비밀번호가 틀렸습니다.
+    else if(userPW != "1234"){
+        console.log("비밀번호가 틀렸습니다.");
+    }
+}
