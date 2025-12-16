@@ -4,7 +4,7 @@
 //todo hw.2 다음 코드를 간소화 시키시오.
 function btnMouseEx(){
     var clickBtn = window.prompt("누르실 마우스 버튼을 입력하세요 (왼쪽,오른쪽,가운데)");
-
+    // 아래 코드를 if x 1 , else x 1 로 줄여라
     if(clickBtn=="오른쪽"){
         document.write("오른쪽!");
     }else if(clickBtn=="왼쪽"){
