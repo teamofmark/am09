@@ -16,3 +16,63 @@ break는 switch 전유가 아님. 아무데나 쓸수 있음.
 
 default : 위 case에 걸리지 못한 값 (예외처리)일 때  실행 되는 부분
 */
+
+// case.1 if에서 처리했던 홀,짝수 구분을 switch화
+function switchGrammar(){
+    var input = Number(prompt('숫자를 입력하세요.'));
+
+    switch(input % 2){
+        case 0:
+            alert("짝수!");
+            break;
+        case 1:
+            alert("홀수!");
+            break;
+        default:
+            alert("숫자가아님!");
+            break;
+    }
+}
+// case.2 복권의 예를 들어보자. 입력값이 1= 1등10억!,  2 = 2등 5천!, 3 = 3등 3백!, 외나머지는 낙첨...
+
+function lotto(){
+    var numbValue = window.prompt("입력하실번호는?");
+    switch(numbValue){
+        case "1":
+            alert("1등 10억");
+            break;
+        case "2":
+            alert("2등 5천만원!");
+            break;
+        case "3":
+            alert("3등 300만원!");
+            break;
+        default:
+            alert("낙첨...");
+            break;
+    }
+}
+// todo. switch 문을 이용한 계산기
+function calculator(){
+    var firstNumb = Number(window.prompt("첫번째 숫자를 입력하세요."));
+    var operator = window.prompt("연산자를 입력하세요.");
+    var lastNumb = Number(window.prompt("두번째 숫자를 입력하세요."));
+
+    switch(operator){
+        case "+":
+            console.log(firstNumb + operator + lastNumb + " = " + (firstNumb + lastNumb));
+            break;
+        case "-":
+            console.log(firstNumb + operator + lastNumb + " = " + (firstNumb - lastNumb));
+            break;
+        case "x":
+            console.log(firstNumb + operator + lastNumb + " = " + (firstNumb * lastNumb));
+            break;
+        case "/":
+            console.log(firstNumb + operator + lastNumb + " = " + (firstNumb / lastNumb));
+            break;
+        default:
+            alert('올바른 연산자가 아닙니다.');
+            break;
+    }
+}
