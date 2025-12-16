@@ -99,11 +99,26 @@ function oddOrEven(){
 }
 // todo. 다음 세과목의 점수를 입력받고 평균을 구하되 소수점은 2자리까지만 출력하게 하고 이 결과를 토대로 수,우,미,양,가 등급을 출력해라.
 function avgScore(){
-    var koreanScore = prompt('국어점수를 입력하시오');
-    var englishScore = prompt('영어점수를 입력하시오');
-    var mathScore = prompt('수학점수를 입력하시오');
+    var koreanScore = Number(prompt('국어점수를 입력하시오'));
+    var englishScore = Number(prompt('영어점수를 입력하시오'));
+    var mathScore = Number(prompt('수학점수를 입력하시오'));
     // todo 평균구하기 -> 소수점절삭
+    var avg = ((koreanScore + englishScore + mathScore) / 3).toFixed(2);
+    console.log(typeof(avg) + " : " + avg);
 
     // todo 조건판별해서 점수범위에 따른 수( ~ 90), 우( 89~ 80), 미(79 ~70), 양( 69 ~ 60), 가(59~ )
+    if(avg > 100 || avg < 0){
+        alert('점수를 똑바로 입력하라.');
+    }else if(avg >= 90){
+        alert ('평균' + avg +'점 \n' + '수 입니다.');
+    }else if(avg >= 80){
+        alert ('평균' + avg +'점 \n' + '우 입니다.');
+    }else if(avg >= 70){
+        alert ('평균' + avg +'점 \n' + '미 입니다.');
+    }else if(avg >= 60){
+        alert ('평균' + avg +'점 \n' + '양 입니다.');
+    }else{
+        alert ('평균' + avg +'점 \n' + '가 입니다.');
+    }
     // todo 단, 기본 오류 검수는 가능해야함 (성적이 비정상적으로 나옴 ex> 평균이 100을 넘거나 음수가나오는등)
 }
