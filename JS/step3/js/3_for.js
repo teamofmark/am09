@@ -129,3 +129,53 @@ function arrayFor3(){
         document.write(swapNumb + "번째 내용 = " + data[i] + '<br>');
     }
 }
+function arrayForES6(){
+    var data = ["변수", "연산자", "형변환", "조건문 if", "조건문 switch", "반복문 while", "반복문 for"];
+    for (let i = 0; i < data.length; i++) {
+        const element = data[i];
+        document.write(i + "번째 내용 =" + element + '<br>');
+    }
+} 
+
+//*exp.6 역반복 배열
+function reverseFavorFruit(){
+    var array = ['포도', '사과', '바나나', '망고'];
+
+    for (var i = array.length - 1; i >= 0; i--) {
+        document.write(array[i]);
+    }
+
+}
+// case.7 continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function continueEx(){
+    var text = '';
+    for(var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text = text + i;
+    }
+    console.log(text);
+}
+// todo. 1부터 10까지의 짝수만을 걸러내어 총합을 출력해라. (과정)
+function runContinue(){
+    var output = 0;
+    for(var i = 1; i <= 10; i++){
+    // todo.1 1부터 10까지의 총 10회 반복
+        // todo.2 홀수를 걸러낼수있는 continue filter를 장착
+        if(i%2==1){
+            continue;
+        }
+        // todo.3 짝수일 경우에만 지속적으로 더해서 대입하는 수식
+        output += i;
+        // todo.4  1회 반복시마다 위 조건으로 연산된 결과가 나올수있도록  출력문
+        console.log(output); // 2, 6, 12, 20, 30
+    }
+}
