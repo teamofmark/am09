@@ -98,3 +98,34 @@ function arrayFor2(){
     }
 }
 // todo. 위 결과를 switch문 형태로 변형해서 작성해보기(swapNumb배열이없는상태 일때)
+function arrayFor3(){
+    var data = ['변수','자료형','형변환','연산자','조건문 if','조건문 switch','반복문 for'];
+    var swapNumb = '';
+    for(var i = 0; i < data.length; i++){
+        swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            case 6:
+                swapNumb = '일곱';
+                break;
+        }
+        document.write(swapNumb + "번째 내용 = " + data[i] + '<br>');
+    }
+}
