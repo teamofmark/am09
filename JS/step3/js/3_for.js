@@ -179,3 +179,29 @@ function runContinue(){
         console.log(output); // 2, 6, 12, 20, 30
     }
 }
+// case.8 break
+function forBreak(){
+    for(var i = 1; i<=10; i++){
+        break;
+        document.write(i + '<br>');
+    }
+    document.write("최종 i = " +  i + "<br>"); //? ^^ 1.
+}
+function breakEx(){
+    var i = 0;
+    while(true){
+        if(i == 3){
+            break;
+        }
+         i+=1;
+    }
+    console.log(i); //? 
+}
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert("비밀번호가 틀렸습니다.");
+        if(!confirm("다시확인할까요?")){
+            break;
+        }
+    }
+}
