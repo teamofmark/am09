@@ -205,3 +205,49 @@ function runBreak(){
         }
     }
 }
+// ! 다중for
+// case.1 반절 피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// case.2 역반절 피라미드
+function reverseHalfPyramid(){
+    var star = '';
+    for(var i = 10; i >= 1; i--){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 완성형 피라미드
+function pyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';
+        }
+        for(var s = 0; s < 2*i-1; s++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+function pyramidCustom(n){
+    for (var i = 1; i <= n; i++){
+        var s = "";
+        for(var j = 1; j <=(2 * n - 1); j++){
+            (j >= n + 1 - i && j <= n - 1 + i)? s+= "*":s+=" ";
+        }
+        console.log(s);
+    }
+}
