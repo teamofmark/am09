@@ -78,3 +78,42 @@ function sumAllEX(){
     }
     return willReturn;
 }
+// case.4 return value를 변수에 저장하고 전달하기
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+var sumReturnVal = sumReturn1(13,26);
+
+// case.5 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수를 만들어보자.
+// ! 단 입력값이 0이면 즉시 실행을 멈추게 한다.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(prompt('숫자만 입력해라.'));
+        if(value == 0){
+            document.write("종료");
+            break;
+        }
+        sum += value;
+        document.write(count +". " + sum +"<br>");
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}
+// todo. x단 출력을 어디에서든 출력할수있게 만들기
+function printGugudan(numb){
+    var data = "";
+    for(var i = 2; i <= numb; i++){
+        data += i + "단 출력"+ "<br>";
+        for(var m = 1; m <= numb; m++){
+            data += i + "x" + m + " = " + (i*m)+"<br>";
+        }
+        data += "<br>";
+    }
+    return data;
+}
+// todo. 실행구문;
+// document.write(printGugudan(12));
+// console.log(printGugudan(12));
