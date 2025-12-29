@@ -162,3 +162,24 @@ document.write(sub(20, 10) + "<br>");
 document.write(mul(20, 10) + "<br>");
 document.write(div(20, 10) + "<br>");
 */
+function calculator2(op,numb1,numb2){
+    var result = "";
+    switch(op){
+        case "+" :
+            result = add(numb1,numb2);
+            break;
+    }
+    // ???
+}
+function add(numb1,numb2){ 
+   return numb1 + numb2;
+}
+function sub(){
+    // 빼기
+}
+function mul(){
+    //  곱하기
+}
+function div(){
+    // 나누기
+}
