@@ -237,3 +237,7 @@ function callFunctionTenTimes2(otherFunction) { // callFunctionTenTimes라는 �
         otherFunction(); // otherFunction 함수를 10번 출력하라.
     }
 }
+function justFunction(){
+   document.write('hello..!',"<br>");
+}
+callFunctionTenTimes2(justFunction);
