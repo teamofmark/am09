@@ -241,3 +241,12 @@ function justFunction(){
    document.write('hello..!',"<br>");
 }
 callFunctionTenTimes2(justFunction);
+// case. 8 returnValue로 함수를 사용하기.
+function createHello(){
+    function hello(user){
+        document.write(user + 'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
+result("mark");
