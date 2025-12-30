@@ -202,4 +202,38 @@ function div(numb1,numb2){
     // 나누기
     return numb1 / numb2;
 }
-// 
+// case.6 함수를 변수에 담을수 있는가?
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+hello("Mark");
+
+var func = hello;
+func("Stark");
+// case.7 매개변수 값으로 함수를 담을수 있는가?
+function hi1(){
+    console.log("Hello.");
+}
+function hi2(){
+    console.log("안녕하세요.");
+}
+function execute(func){
+    func();
+}
+//  todo.4 함수를 매개변수로 전달받아 반복호출하기
+
+function callFunctionTenTimes(otherFunction) { // callFunctionTenTimes라는 함수의 매개변수로 otherFunction 지정
+    for (var i = 0; i < 10; i++) {
+        otherFunction(); // otherFunction 함수를 10번 출력하라.
+    }
+}
+callFunctionTenTimes(function(){
+   document.write('hello..!');
+});
+// todo.5 위 예제를 기명함수로 변경해서 풀어보기 
+
+function callFunctionTenTimes2(otherFunction) { // callFunctionTenTimes라는 함수의 매개변수로 otherFunction 지정
+    for (var i = 0; i < 10; i++) {
+        otherFunction(); // otherFunction 함수를 10번 출력하라.
+    }
+}
