@@ -168,18 +168,38 @@ function calculator2(op,numb1,numb2){
         case "+" :
             result = add(numb1,numb2);
             break;
+        case "-" :
+            result = sub(numb1,numb2);
+            break;
+        case "*" :
+            result = mul(numb1,numb2);
+            break;
+        case "/" :
+            result = div(numb1,numb2);
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
     }
-    // ???
+    return result;
 }
 function add(numb1,numb2){ 
    return numb1 + numb2;
+   /*
+   var addResult = numb1 + numb2;
+   return addResult;
+   */
 }
-function sub(){
+function sub(numb1,numb2){
     // 빼기
+    return numb1 - numb2;
 }
-function mul(){
+function mul(numb1,numb2){
     //  곱하기
+    return numb1 * numb2;
 }
-function div(){
+function div(numb1,numb2){
     // 나누기
+    return numb1 / numb2;
 }
+// 
