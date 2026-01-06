@@ -1,6 +1,6 @@
 $(document).ready(function(){
     imgAlignHori();
-    imgAlignMix();
+    imgAlignMix(6);
 });
 function imgAlignHori(){
     var img = $(".imgContainer img");
@@ -19,7 +19,7 @@ function imgAlignHori(){
         img.css("left", 0);
     });
 }
-function imgAlignMix(){
+function imgAlignMix(count){
     var img = $(".imgContainerMix img");
     var xpos = 0;
     var ypos = 0;
@@ -28,8 +28,8 @@ function imgAlignMix(){
         var imgHeight = img.height();
         for(var i = 0; i < imgLength; i++){
             var image = img.eq(i);
-            xpos = (i%3)*imgHeight;
-            ypos = parseInt(i/3)*imgHeight;
+            xpos = (i%count)*imgHeight;
+            ypos = parseInt(i/count)*imgHeight;
             image.css({
                 "left" : xpos,
                 "top" : ypos
