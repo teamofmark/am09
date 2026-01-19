@@ -9,5 +9,22 @@
     <!-- <iframe src="http://sotongbooboo.co.kr/" width="1024" height="768" frameborder="0"></iframe> -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/b5VhiaJb7Rc?si=Cq8_OGcIjGttROqz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <embed src="https://www.youtube.com/embed/b5VhiaJb7Rc?si=Cq8_OGcIjGttROqz" width="560" height="315">
+    <video src="videos/file_example_MP4_480_1_5MG.mp4" controls loop muted preload="none" poster="images/thumbNail.png"></video>
+   <!--
+        ? autoplay는 video, audio 동일 속성값, 자동 재생을 시킨다.
+        ? controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
+        ? loop는 video, audio 동일 속성값, 반복 재생을 시키는 속성값. 
+        ? preload는 video, audio 동일 속성값, 스트리밍 방식이 아닌 백그라운드 다운로드를 통해 재생. 
+        ? muted는 video, audio 동일 속성값, 미디어 객체를 불러왔을때, 초기 설정을 mute 상태로 불러오는 속성값. 
+        ? src는 video, audio 동일 속성값, 미디어 객체를 지정하는 속성값. 
+        ? poster 는 video 전용 속성값, video객체를 불러오지 못하거나 thumbNail로 이미지(autoplay off)를 출력 시키는 속성값`. 
+        ? width, height는 video 전용 속성값, video 객체 영역의 크기를 정하는 속성값. 
+        ? source는 여러 파일을 클라이언트 환경에 따라 다르게 적용할 수 있다.
+        ! 트래픽(traffic)관리가 가능한 환경이면 video를 그렇지 않으면 iframe or embed.
+        * 트래픽 이란 ? 임대형태의 서버에서 1일 단위로 할당받는 송,수신용량의 총합
+        ? ex> 1일 트래픽이 100m -> 메인페이지가 1m라고 하였을 때 100명이 접속하면 사이트 차단.
+        ? = 영상은 용량이 큰 편이니까 트래픽 관리가 어려운 사이트일 경우 외부 youtube등을 활용함이 바람직.
+    -->
+    <audio src=""></audio>
 </body>
 </html>
