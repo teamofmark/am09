@@ -9,7 +9,11 @@
     <!-- <iframe src="http://sotongbooboo.co.kr/" width="1024" height="768" frameborder="0"></iframe> -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/b5VhiaJb7Rc?si=Cq8_OGcIjGttROqz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <embed src="https://www.youtube.com/embed/b5VhiaJb7Rc?si=Cq8_OGcIjGttROqz" width="560" height="315">
-    <video src="videos/file_example_MP4_480_1_5MG.mp4" controls loop muted preload="none" poster="images/thumbNail.png"></video>
+    <video controls autoplay loop muted preload="none" poster="images/thumbNail.png">
+        <source src="videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="videos/file_example_MP4_640_3MG.mp4" type="video/mp4">
+        <source src="videos/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+    </video>
    <!--
         ? autoplay는 video, audio 동일 속성값, 자동 재생을 시킨다.
         ? controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
@@ -25,6 +29,6 @@
         ? ex> 1일 트래픽이 100m -> 메인페이지가 1m라고 하였을 때 100명이 접속하면 사이트 차단.
         ? = 영상은 용량이 큰 편이니까 트래픽 관리가 어려운 사이트일 경우 외부 youtube등을 활용함이 바람직.
     -->
-    <audio src=""></audio>
+    <audio src="audios/file_example_MP3_1MG.mp3" controls></audio>
 </body>
 </html>
