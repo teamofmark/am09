@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a Tag - hyperLink</title>
+    <style> 
+        html, body, #targetAnchor{
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <h1>하이퍼링크 목록</h1>
@@ -18,8 +24,13 @@
         <li><a href="../../HTML.zip">파일다운로드</a></li>
         <!-- 경로를 맞게 입력하여 파일명을 기재 하였을 때 download기능. -->
         <li><a href="mailto:teamofmark@gmail.com?subject=질문있습니다.">이메일보내기</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href="tel+821056658312">걸기</a></li>
+        <li>
+            <a href="#targetAnchor">바로가기</a>
+        </li>
     </ul>
+    <div id="targetAnchor">
+        바로가기 목표지점
+    </div>
 </body>
 </html>
