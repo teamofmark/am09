@@ -6,7 +6,10 @@
     <title>namedAnchor</title>
     <style>
         html,body{
-            margin: 0; height: 100%; scroll-behavior: smooth;
+            margin: 0; height: 100%; scroll-behavior: smooth; 
+        }
+        #menu{
+            position: fixed; right: 0; top: 0; background-color: white;
         }
         div{
             height: 100%;
@@ -26,6 +29,17 @@
     </style>
 </head>
 <body>
-    
+    <!-- todo  (ul#menu>li*5>a{pageLink})+(#page$*4>{$page}+a[href="#menu"]{menu}) -->
+    <ul id="menu">
+        <li><a href="#page1">page1Link</a></li>
+        <li><a href="#page2">page2Link</a></li>
+        <li><a href="#page3">page3Link</a></li>
+        <li><a href="#page4">page4Link</a></li>
+        <li><a href="1_hyperLink.html#targetAnchor" target="_blank">hyperLink pageLink</a></li>
+    </ul>
+    <div id="page1">1page</div>
+    <div id="page2">2page</div>
+    <div id="page3">3page</div>
+    <div id="page4">4page</div>
 </body>
 </html>
