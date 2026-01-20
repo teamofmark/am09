@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table Tag</title>
+</head>
+<body>
+    <!-- 
+        ? table : 
+    -->
+    <table>
+        <caption>month / savings Table</caption>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+                <!-- th : table heading의 약자. 테이블내 분류명(제목)을 나타냄. -->
+            </tr>
+            <!-- tr : table row 의 약자로 "행"을 의미함. 이것만으로는 눈에보이지않는다. -->
+        </thead>
+        <!-- thead : 테이블의 상단을 뜻함. 분류명을 표기하고 각 열을 묶어낼때 사용. = 선택적 -->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+                <!-- td : table Data의 약자. 실제 데이터들을 의미함. -->
+            </tr>
+        </tbody>
+        <!-- 
+            tbody : 테이블 내 중앙 데이터들을 뜻함. 필수
+            ? 안써도 나오던데? - 개발자가 하자가 있는 걸 브라우저가 알아서 채우는것.
+        -->
+        <tfoot>
+            <tr>
+                <th>Sum : </th>
+                <td>$100</td>
+            </tr>
+        </tfoot>
+        <!-- tfoot : 테이블의 하단을 뜻함. 데이터의 총합, 통계 등의 결과가 표기되야 할 경우에만 사용 =선택적 -->
+    </table>
+</body>
+</html>
