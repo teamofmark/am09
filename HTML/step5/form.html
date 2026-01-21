@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - input Tag's</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>HTML4 Input's</legend>
+            <!-- ? data성격에 따른 title -->
+             <ul>
+                <li>
+                    <label for="userID">ID : </label>
+                    <!-- input과 연결되어 시각장애인들을 위한 보조 역할을 수행. -->
+                    <input type="text" name="" id="userID" placeholder="아이디를 입력하세요">
+                    <!-- type : 입력태그 유형. name : 입력태그의 그룹(backend). placeholder: 시각적보조요소 -->
+                    <!-- ! id를 선사용 해야 하기때문에 backend와 상호협의하에.. -->
+                    <!--
+                    만약 임의사용해야할 시 반드시 "2개이상의 키워드조합. 앞자 소문자, 띄어쓰기, 특문모두안됨"
+                    (camel방식) ex> cliUserId
+                    -->
+                </li>
+                <li>
+                    <!-- label[for="userPW"]{PW : }+input:password#userPW -->
+                    <label for="userPW">PW : </label>
+                    <input type="password" id="userPW">
+                </li>
+             </ul>
+        </fieldset>
+        <!-- ? data성격이 다른 input들을 그룹핑(grouping) -->
+    </form>
+    <!-- 
+        form tag는 input 내 data를 담아 전송하는 역할을 해준다. 감싸는 위치가 중요한데 
+        data input들을 포함시킬수 있는  공간을 확보하여 감싸주어야한다.
+     -->
+</body>
+</html>
