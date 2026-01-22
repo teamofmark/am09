@@ -97,6 +97,24 @@
                         ! multiple 속성값을 이용해 다중 선택을 지원 할 수는 있으나 사용법이 불편해 미사용.
                     -->
                 </li>
+                <li>
+                    <input type="image" src="https://placehold.co/150x50?text=button" alt="imgButton">
+                    <!-- 
+                        기본 : 전송. 이미지 자체를 버튼으로 사용해야 할 때 쓰는 버튼.
+                        ! css를 이용하면 어떠한 버튼이든 이미지화 할 수 있기 때문에 꼭 사용해야 하는 버튼은 아님
+                    -->
+                    <input type="button" value="비밀번호확인">
+                    <!-- 
+                        기본 : 호출 및 실행. 전송전 최종확인 UI, 모든 panel,popup등 호출. api 당기기(ex > 우편번호)
+                    -->
+                    <!-- ? 전송기능이 설정되지 않은 일반 버튼 -->
+                    <input type="file">
+                    <!-- 기본 : local(내컴퓨터) 파일 등록까지만 수행. -->
+                    <input type="submit" value="전송">
+                    <!-- 기본 : 전송. 속해있는 form내 모든 입력 양식 값들을 한번에 server로 전송. -->
+                    <input type="reset" value="취소">
+                    <!-- 기본 : 초기화. 작성되었던 모든 data를 초기화. (cache도 초기화) -->
+                </li>
              </ul>
         </fieldset>
         <!-- ? data성격이 다른 input들을 그룹핑(grouping) -->
