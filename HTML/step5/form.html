@@ -63,7 +63,40 @@
                     ! 4. value attr을 이용해 선택되었을 때 서버에 전송되는 값을 정할 수 있다. (backend)
                     ? 직관적인 내용을 값으로 전달 하면 안됨. (ex> 암구호 같은개념)
                 -->
-
+                <li>
+                    <label for="comment">comment : </label>
+                    <textarea id="comment" cols="30" rows="10">
+                        alskdfalksjfalsfjlaks
+                    </textarea>
+                    <!-- 
+                        텍스트영역
+                        ! 1.현재는 cols,rows를 사용하지 않고 css로 대체.
+                        2. tag 입력불가
+                        3. resize 기능이 불편하기때문에 css로 꺼야함
+                        4. 미리 값을 입력 할 경우 pre 태그처럼 공백을 그대로 표현함.
+                        5. 글꼴 역시 기본 글꼴로 적용되어 css로 변경해야함.
+                    -->
+                </li>
+                <li>
+                    <label for="selectJob">직업 선택 : </label>
+                    <select id="selectJob">
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                    <!-- 
+                        입력 선택(select)
+                        1. 많은 수량의 선택항목을 목록형태로 제공하여 메뉴를 단축시키는 태그.
+                        2. 항목 수 만큼의 option태그가 필요하고 radio,checkbox처럼 value로 값을 전달.
+                        3. optgroup을 통해 중간 그룹 분리가 가능 하다.
+                        ! multiple 속성값을 이용해 다중 선택을 지원 할 수는 있으나 사용법이 불편해 미사용.
+                    -->
+                </li>
              </ul>
         </fieldset>
         <!-- ? data성격이 다른 input들을 그룹핑(grouping) -->
