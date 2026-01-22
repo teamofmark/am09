@@ -27,6 +27,43 @@
                     <label for="userPW">PW : </label>
                     <input type="password" id="userPW">
                 </li>
+                <li>
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                    <label for="btn_radio1">radio1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">radio2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">radio3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">radio4</label>
+                </li>
+                <!-- 
+                    입력태그타입 radio(라디오 버튼)
+                    1. name으로 "반드시" 그룹핑(grouping)해야만 중에 하나(or) 선택으로 작동.
+                    2. 그렇기 때문에 id처럼 name 값을 직관적인 키워드2개 이상으로 구성.
+                    3. checked attr을 이용해서 선행선택을 활성화 할 수 있다.
+                    ! 4. value attr을 이용해 선택되었을 때 서버에 전송되는 값을 정할 수 있다. (backend)
+                -->
+                <!--todo. li>(input:checkbox#btn_chk$+label[for="btn_chk$"]{check$})*4 -->
+                <li>
+                    <input type="checkbox" id="btn_chk1" value="hby1" checked>
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2" value="hby2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+                <!-- 
+                    입력태그타입 checkbox(체크박스)
+                    1. name으로 우리가 그룹핑(grouping)할 필요 없음. 개별 작동(and toggle)로 작동에 지장없음.
+                    2. 그렇기 때문에 id값을 직관적인 키워드2개 이상으로 구성.
+                    3. checked attr을 이용해서 선행선택을 활성화 할 수 있다.
+                    ! 4. value attr을 이용해 선택되었을 때 서버에 전송되는 값을 정할 수 있다. (backend)
+                    ? 직관적인 내용을 값으로 전달 하면 안됨. (ex> 암구호 같은개념)
+                -->
+
              </ul>
         </fieldset>
         <!-- ? data성격이 다른 input들을 그룹핑(grouping) -->
