@@ -119,6 +119,86 @@
         </fieldset>
         <!-- ? data성격이 다른 input들을 그룹핑(grouping) -->
     </form>
+    <form action="">
+        <fieldset>
+            <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <label for="userEmail">이메일 : </label>
+                    <input type="email" id="userEmail" maxlength="16" autofocus required>
+                    <!-- 
+                        type="email" : email Address 전용. (키보드 셋팅 : 자동 @)
+                        maxlength : 최대 자수 제어
+                        autofocus : 자동 초점(activated)
+                        required : 필수. 양식점검 (valid or invalid 판단)
+                    -->
+                </li>
+                <li>
+                    <label for="userURL">웹사이트 :</label>
+                    <input type="url" id="userURL" value="https://www.sbsart.com" disabled >
+                    <!-- 
+                        type="url" : url address 전용. (키보드 셋팅 : 도메인 .com)
+                        ! readonly : 읽기전용 (server에 저장된 적이 있는 data 불러오기. 수정 및 삭제 불가)
+                        ! disabled : 비활성화 (입력 및 선택 자체를 막아 server에 전송 자체가 불가능하게)
+                        ! enabled : disabled의 counter - 활성화(입력 및 선택 가능. = 전송시 server저장.)
+                    -->
+                </li>
+                <li>
+                    <!--todo. label[for='userPN']{전화번호:}+input:tel#userPN[placeholder='-를뺀숫자만입력하세요.'] -->
+                    <label for="userPN">전화번호:</label>
+                    <input type="tel" id="userPN" placeholder="-를뺀숫자만입력하세요." title="-를 뺀 전화번호숫자만 입력하세요.">
+                    <!-- 
+                        1. 숫자만 입력받는 전화번호 전용 양식. 키보드 셋팅도 숫자만 나오게 변경됨
+                        2. title attr은 만약 label을 사용할 수 없을 시 시각장애인용 대체 속성으로 사용 가능함.
+                        ! 분할처리 하면 안됨 - 010(tel) / 5665(tel) / 8312(tel) 안됨 - 01056658312(tel) 한번에.
+                    -->
+                </li>
+                <li>
+                    <label for="qty">수량 :</label>
+                    <input type="number" id="qty" min="10" max="100" step="10" value="10" >
+                    <!-- 수량전용. 절대 숫자만 입력되는 용도로 사용해서는 안됨. 음수지원불가 -->
+                </li>
+                <li>
+                    <label for="sizeSet">사이즈 : </label>
+                    <input type="range" id="sizeSet" min="200" max="300" step="5">
+                    <!-- 범위내 값 설정 전용 ex> 가격대설정, 사이즈 범위설정.... 음수지원 -->
+                </li>
+                <!-- li*4>label+input -->
+                <li>
+                    <label for="typeDateTime">연,월,일,시,분 선택 :</label>
+                    <input type="datetime-local" id="typeDateTime">
+                </li>
+                <li>
+                    <label for="typeTime">시간 선택 :</label>
+                    <input type="time" id="typeTime">
+                </li>
+                <li>
+                    <label for="typeMonth">월 선택 :</label>
+                    <input type="month" id="typeMonth">
+                </li>
+                <li>
+                    <label for="typeWeek">주 선택 :</label>
+                    <input type="week" id="typeWeek">
+                </li>
+                <li>
+                    <label for="searchField">검색 : </label>
+                    <input type="search" id="searchField">
+                    <!-- 
+                        검색어 전용 : 자체 전송, 자체 리셋 "x"버튼 생김. 자동완성기능(autoComplete)지원-backend용
+                    -->
+                </li>
+                <li>
+                    <label for="typeColor">색상선택 :</label>
+                    <input type="color" id="typeColor">
+                    <!-- colorPicker 호출. 색상 데이터화 하여 정렬 및 호출 및 생성에 도움. (ex> imageScanner..) -->
+                </li>
+                <li>
+                    <input type="submit" value="전송">
+                    <input type="reset" value="초기화">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
     <!-- 
         form tag는 input 내 data를 담아 전송하는 역할을 해준다. 감싸는 위치가 중요한데 
         data input들을 포함시킬수 있는  공간을 확보하여 감싸주어야한다.
