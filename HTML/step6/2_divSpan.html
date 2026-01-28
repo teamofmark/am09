@@ -45,6 +45,23 @@
     </style>
 </head>
 <body>
-    
+<!-- (.header>span{globalHeader}+.nav>ul>li*5{menu$})+(.section>(.article>span{text})+(.aside>span{text}))+(.footer>span{globalFooter}) -->
+    <div class="header">
+        <span>globalHeader</span>
+        <div class="nav">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <div class="article"><span>text</span></div>
+        <div class="aside"><span>text</span></div>
+    </div>
+    <div class="footer"><span>globalFooter</span></div>
 </body>
 </html>
