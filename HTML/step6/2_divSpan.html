@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>only Div's layout</title>
     <style>
-        .header {
+        header {
             background-color: red;
             margin-bottom: 20px;
             text-align: center;
         }
 
-            .header .nav li {
+            header nav li {
                 display: inline-block;
                 width: 19%;
                 background-color: blue;
                 color: white;
             }
 
-        .section {
+        section {
             background-color: red;
             margin-bottom: 20px;
         }
 
-            .section > * {
+            section > * {
                 height: 500px;
                 display: inline-block;
             }
 
-            .section .article {
+            section article {
                 background-color: yellow;
                 width: 80%;
             }
 
-            .section .aside {
+            section aside {
                 background-color: green;
                 width: 18%;
             }
 
-        .footer {
+        footer {
             text-align: center;
             background-color: orange;
         }
@@ -46,9 +46,9 @@
 </head>
 <body>
 <!-- (.header>span{globalHeader}+.nav>ul>li*5{menu$})+(.section>(.article>span{text})+(.aside>span{text}))+(.footer>span{globalFooter}) -->
-    <div class="header">
+    <header>
         <span>globalHeader</span>
-        <div class="nav">
+        <nav>
             <ul>
                 <li>menu1</li>
                 <li>menu2</li>
@@ -56,12 +56,12 @@
                 <li>menu4</li>
                 <li>menu5</li>
             </ul>
-        </div>
-    </div>
-    <div class="section">
-        <div class="article"><span>text</span></div>
-        <div class="aside"><span>text</span></div>
-    </div>
-    <div class="footer"><span>globalFooter</span></div>
+        </nav>
+    </header>
+    <section>
+        <article><span>text</span></article>
+        <aside><span>text</span></aside>
+    </section>
+    <footer><span>globalFooter</span></footer>
 </body>
 </html>
