@@ -102,5 +102,30 @@
     <!-- 
         main(index)Page(멀티페이지-다중, 일반적인 사이트등..) or Sector(원페이지-랜딩)에서 단 한번만 사용 할 수 있는 최상위 "공간태그".
     -->
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0<input type="range" id="a" value="50">100
+        + 
+        <input type="number" id="b" value="50">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!--form에 지정된 스크립트 연산을 지정 input(id)들로 수행하여, 
+        결과값을 산출해내는 식이다.
+        range는 값을 마우스를 이용해 입력할 수 있고, number는 직접입력 
+        및 up,down버튼을 이용해 입력할수있다.-->
+
+    <input list="browsers" />
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!--select와 유사함. 입력요소에 대한사전 정의 목록을 넣어두는데 활용.
+        동시에 사용자가 입력필드에 해당 옵션일부를 작성하면 일치되는 결과값 출력.
+        (자동완성기능)-->
+    <dialog open>This is an open dialog window</dialog>
+    <!-- 팝업 전용 태그로써 간단한 대화상자를 생성 해 낼 수 있고, open attr로 열고 닫기가 가능하다. -->
 </body>
 </html>
