@@ -187,6 +187,38 @@
         <a href="#">LOAD MORE</a>
     </section>
     <!-- ? worksArea Fin -->
+
+    <!-- ! 효율이떨어지는구조 -->
+    <section id="peopleSay">
+        <!-- ? title 없음 : validation(유효성) 검수 -->
+        <p>
+            This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+            <strong>JANE GALADRIEL</strong>
+            <span>CEO TENGKUREP</span>
+        </p>
+        <!--
+        좌,우 움직이는 형태일 때 구조
+        <ul>
+            <li>
+                <p></p>
+            </li>
+        </ul>
+        -->
+        <!-- a+(ul>li*5>a>img[src="images/ex_01.png"][alt="thumb_Ex"])+a -->
+        <div>
+            <a href="#">&lt;</a>
+            <ul>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+                <li><a href="#"><img src="images/ex_01.png" alt="thumb_Ex"></a></li>
+            </ul>
+            <a href="#">&gt;</a>
+        </div>
+    </section>
+    <!-- ? peopleSay Fin -->
+
     <footer>
         <div>
             <div>
