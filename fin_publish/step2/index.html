@@ -85,7 +85,20 @@
     <!-- ! 잘못된 케이스 -->
     <div>
         <form>
-            <fieldset></fieldset>
+            <fieldset>
+                <label for="sb_Select">Sort By:</label>
+                <span class="selectBox">
+                    <select id="sb_Select">
+                        <option>BEST MATCH</option>
+                    </select>
+                </span>
+                <label for="sb_keywords">KEYWORDS</label>
+                <input type="search" id="sb_keywords" placeholder="ex> Tablet">
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
+                <span>-</span>
+                <input type="text" id="range_maxprice">
+            </fieldset>
         </form>
         <!-- ? sortBar -->
         <aside>
