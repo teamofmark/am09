@@ -11,7 +11,76 @@
     <header>
         <div>
             <label for="mui" class="material-icons">menu</label>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to portland">
+                </a>
+            </h1>
+            <input type="checkbox" id="mui">
+            <!-- 반응형 수업시에 JS를 안배운 상태라 button click을 대신하기위함-->
+             <!-- nav>ul>li*5>a -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Devices</a></li>
+                    <li><a href="#">Delivery &amp; Payment</a></li>
+                    <li><a href="#">Guarantee</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <strong>CART</strong>
+                <span>+99</span>
+                <input type="button" value="SIGN IN">
+            </div>
         </div>
     </header>
+    <!-- ? header fin -->
+    <!-- todo. sliderNav 구조화 직접실습해보기 -->
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Top Sales</a></li>
+                <li><a href="#">Brand Focus</a></li>
+                <li><a href="#">Hi-tech</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <input type="search" placeholder="I’m looking for ..." title="input ur searchKeyword">
+        </div>
+    </nav>
+    <!-- ? sliderNav Fin -->
+     <!-- ! 다음 슬라이더 구조는 JS 기능을 모두 본인이 작성할 수 있을 때 사용하는 구조-->
+    <section>
+        <h2>slider Sector</h2>
+        <div>
+            <a href="#" class="btn_conL">&lt;</a>
+            <a href="#" class="btn_conR">&gt;</a>
+            <!-- controler -->
+            <ol>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+            </ol>
+            <!-- indicator -->
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/sample_slider.png" alt="iPhone 6">
+                        <figcaption>
+                            <dl>
+                                <dt>iPhone 6 32Gb <br> Black</dt>
+                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                            </dl>
+                            <input type="button" value="Buy Now">
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ?slider Fin -->
 </body>
 </html>
