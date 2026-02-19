@@ -1,0 +1,30 @@
+.classEx1{
+    color: red;
+}
+/* ! 단순 지정 방식으로 활용하는 클래스 운영은 하지 말 것. */
+.btn{
+    padding: 10px 30px; border: 1px solid black; font-size: 12px; display: inline-block;
+    text-decoration: none; color: inherit;
+}
+.btn.create{
+    background-color: white; color: black; border: none;
+}
+.btn.modify{
+    background-color: lightskyblue; color: midnightblue; border-color: blue;
+}
+.btn.delete{
+    background-color: rgb(90,0,0); color: red; border-color:darkred;
+}
+.btn.confirm{
+    background-color:slateblue; color: white; border-style: dashed;
+    border-color: midnightblue;
+}
+.btn.cancel{
+     color: gray; background-color: lightgray; border: gray;
+}
+#userName{
+    border: 1px solid #eaeaea; line-height: 21px; font-size: 12px; padding: 5px 15px; color: green;
+}
+#userPW{
+    border: 1px dashed red; line-height: 21px; font-size: 16px; padding: 5px 10px; color: darkred;
+}

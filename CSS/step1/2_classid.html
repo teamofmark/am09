@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css에서 id와 class의 활용법</title>
+	<link rel="stylesheet" href="css/2_classid.css">
+</head>
+<body>
+	<p class="classEx1">
+		단순 지정 활용
+	</p>
+	<hr />
+	<button class="btn create">작성</button>
+	<button class="btn modify">수정</button>
+	<button class="btn delete">삭제</button>
+	<button class="btn confirm">확인</button>
+	<button class="btn cancel">취소</button>
+    <!-- create -->
+    <input type="button" value="글쓰기" class="btn create">
+	<a href="#" class="btn create">생성</a>
+	
+    <!-- modify -->
+    <input type="button" value="갱신" class="btn modify">
+    <a href="#" class="btn modify">정보수정</a>
+
+    <!-- delete -->
+    <input type="button" value="삭제" class="btn delete">
+    <a href="#" class="btn delete">정보삭제</a>
+
+    <!-- confirm -->
+    <input type="submit" value="확인" class="btn confirm">
+    <a href="#" class="btn confirm">승인</a>
+
+    <!-- cancel -->
+    <input type="reset" value="취소" class="btn cancel">
+    <a href="#" class="btn cancel">결제취소</a>
+
+	<hr />
+	<form action="#">
+		<label for="userName">userName</label>
+		<input type="text" name="userName" id="userName">
+		<label for="userPW">userPassWord</label>
+		<input type="password" name="userPW" id="userPW">
+		<label for="userEmail">userEmail</label>
+		<input type="email" name="userEmail" id="userEmail">
+	</form>
+</body>
+</html>
