@@ -2,3 +2,25 @@
 body{
     font-family: 'Nanum Gothic';
 }
+/* 
+thin - 100
+extraLight - 200(폰트별표기방식상이)
+light - 300
+regular - 400
+medium - 500
+semiBold - 600
+bold - 700
+extraBold - 800
+black - 900
+*/
+
+/*
+웹폰트로드하는방법
+1. 영어권이냐 ? 영어권이아니냐
+
+- 영어권 : alternate(대체).
+- 비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경. (해당폰트에 영문이없을시)
+(한글,영어) : 대부분 비 영어권 font 는 알파벳 이 기본 포함되기때문에 일반적으로는 앞에 영문font, 뒤에 비영어권폰트 설정.
+- 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
+
+*/
