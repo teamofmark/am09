@@ -20,3 +20,11 @@ dl dt{
 dl dd{
     color: brown;
 }
+
+div ul li figure figcaption dl dt{
+    font-size: 24px; color: skyblue;
+}
+div ul li figure figcaption dl dd{
+    font-size: 50px;
+}
+/* ! css 정규식 문법 : 부모로부터 자손까지 중간생략없이 모두 기입 */
