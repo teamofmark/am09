@@ -6,7 +6,7 @@ body{
 thin - 100
 extraLight - 200(폰트별표기방식상이)
 light - 300
-regular - 400
+regular - 400 (기본 굵기)
 medium - 500
 semiBold - 600
 bold - 700
@@ -24,3 +24,11 @@ black - 900
 - 비영어권 : 앞,뒤 폰트 모두 한글 font일 경우. alternate(대체).
 
 */
+h1{
+    font-size: 50px; color: #06f;
+    /* 
+        * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
+        * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
+        * hsla(hue,saturate,lightness,alpha(투명도));
+     */
+}
