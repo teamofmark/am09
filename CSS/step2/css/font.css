@@ -25,10 +25,17 @@ black - 900
 
 */
 h1{
-    font-size: 50px; color: #06f;
+    font-size: 50px; color: #0066ff; line-height: 56px;
     /* 
         * HEX - 16진 이용한 COLOR. 0~9-A~F = 16. #0066ff = #06f;. ex> #eaeaea -> 무채색.
         * RGB - rgb(red,green,blue); -> rgba(red,green,blue,alpha);
         * hsla(hue,saturate,lightness,alpha(투명도));
      */
+}
+/* todo */
+h2{
+    font-size: 25px; color: #966; line-height: 31px;
+}
+h3{
+    font-size: 18px; color: #f09; line-height: 24px;
 }
