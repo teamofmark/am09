@@ -4,3 +4,19 @@ body{
 ul,ol,dl{
     color: #60f;
 }
+ul li{
+    font-size: 15px; font-weight: bold;
+}
+ol li{
+    font-size: 20px; text-decoration: underline;
+}
+dl dt,
+dl dd{
+    font-size: 35px;
+}
+dl dt{
+    color: orange; 
+}
+dl dd{
+    color: brown;
+}
