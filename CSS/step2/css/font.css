@@ -41,5 +41,22 @@ h3{
 }
 
 p{
-    font-size: 14px;
+    font-size: 14px; line-height: 20px;
+}
+p.letter{
+    letter-spacing: -1px;
+    /* font마다 상이하지만 일반적으로는 1/100으로 사용. photoshop등 기준. 5px초과 힘듬 */
+}
+p.word{
+    word-spacing: 10px;
+    /* 단어간격 기준 = 띄어쓰기 의미. */
+}
+p.w_normal{
+    width: 150px; border: 1px solid black; white-space: normal;
+    /* width: 너비, height: 높이. */
+}
+p.w_nowrap{
+    width: 150px; border: 1px solid black; white-space: nowrap;
+    text-overflow: ellipsis; overflow: hidden;
+    /* white space 를 nowrap으로 설정후 overflow관련 속성을 설정하면 줄임처리를 만들 수 있다. */
 }
