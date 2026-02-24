@@ -81,3 +81,11 @@ button.test{
     background: url('https://placehold.co/150x50?text=blah blah Button');
     width: 150px; height: 50px; text-indent: -9999px;
 }
+
+a{
+    display: block; line-height: 30px;
+}
+a.t_deco_N{text-decoration: none; text-transform: none; color: #090;}
+a.t_deco_U{text-decoration: ; text-transform: ; color: ;}
+a.t_deco_O{text-decoration: ; text-transform: ; color: ;}
+a.t_deco_T{text-decoration: ; text-transform: ; color: ;}
