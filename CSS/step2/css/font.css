@@ -41,7 +41,7 @@ h3{
 }
 
 p{
-    font-size: 14px; line-height: 20px;
+    font-size: 14px; 
 }
 p.letter{
     letter-spacing: -1px;
@@ -52,11 +52,11 @@ p.word{
     /* 단어간격 기준 = 띄어쓰기 의미. */
 }
 p.w_normal{
-    width: 150px; border: 1px solid black; white-space: normal;
+    width: 150px; border: 1px solid black; white-space: normal; line-height: 20px;
     /* width: 너비, height: 높이. */
 }
 p.w_nowrap{
-    width: 150px; border: 1px solid black; white-space: nowrap;
+    width: 150px; border: 1px solid black; white-space: nowrap; line-height: 20px;
     text-overflow: ellipsis; overflow: hidden;
     /* white space 를 nowrap으로 설정후 overflow관련 속성을 설정하면 줄임처리를 만들 수 있다. */
 }
@@ -74,3 +74,10 @@ p.w_nowrap{
     ? 방향 = - 입력 아래, + 입력 위.
     ! display block속성은 안됨. = inlineblock <-> inline 들만 가능.
 */
+p.t_indent{
+    text-indent: 20px; font-size: 30px;
+}
+button.test{
+    background: url('https://placehold.co/150x50?text=blah blah Button');
+    width: 150px; height: 50px; text-indent: -9999px;
+}
