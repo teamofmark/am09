@@ -60,3 +60,17 @@ p.w_nowrap{
     text-overflow: ellipsis; overflow: hidden;
     /* white space 를 nowrap으로 설정후 overflow관련 속성을 설정하면 줄임처리를 만들 수 있다. */
 }
+.v_alignTest img{
+    vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -150%;
+}
+/* 
+    vertical-align : 수직정렬 규칙
+    1. 높이가 높은 대상이 높이가 낮은 대상을 정렬해야함. (preset사용) - 선처리 하다.
+    2. 상세조정이 필요할 경우 높이가 낮은 대상이 스스로 정렬하면 됨 (기준은 높이가 높은 대상) - 후처리 하다.
+    ? % = 글자 크기는 글자의 높이를 의미함. 100% = 글자의 크기 ex> 14px 100% = 14px;, 50% 7px;
+    ? 방향 = - 입력 아래, + 입력 위.
+    ! display block속성은 안됨. = inlineblock <-> inline 들만 가능.
+*/
