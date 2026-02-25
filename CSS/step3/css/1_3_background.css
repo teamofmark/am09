@@ -1,0 +1,27 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    /* 
+        ? 이하 모든 관련 속성들은 줄여쓰기 적용된 상태.
+        * 1. 대상이 n개 일때 구분을 ","로 짓기 때문에 나머지속성들도 분리적용 필요 시 ","로 구분.
+        * 2. 구분짓지않으면 하나의 값을 모든 대상이 공유함.
+        ! css 언어적 특징.
+    */
+    background-size: 50%;
+    /*
+        background-size : [width] [height];
+        ? background-size = 입력안했을 때 본래 image크기로 적용됨.
+        * 1. background-size는 고정단위 px 보다는 상대단위 % 사용. 화면및공간에 적응성향상(adaptive)
+        * 2. % = 기존 img Tag와 같은 방식. 종횡비를 따름. (ex> 너비가 변경되면 비율대로 높이도 변경)
+    */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 
+        ? background-position : 배경 위치 조정. 기본값 = left top. 입력순서 [x] [y]
+        * 1. background-position의 preset : xAxis = left,center,right / yAxis = top,center,bottom.
+        todo. 수치로 적용할 수 있는데 이부분은 내일 설명.
+    */
+}
