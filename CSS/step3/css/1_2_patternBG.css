@@ -1,0 +1,27 @@
+/* 
+    ? background-image -> defaultValue = pattern(반복) 됨.
+*/
+html,body,.wrap{
+   height: 100%; 
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-image: url("../images/pt.gif");
+    /* ? 이름(); = 함수(function) 실행.*/
+}
+.wrap p{
+    background-color: #0cf; padding: 0 40px; color: blue; margin-bottom: 20px;
+}
+.wrap button{
+    line-height: 50px; padding: 0 40px; color: white; border: none;
+    background-image: url('../images/pt_ex.png');
+    background-repeat: repeat-x;
+    /* 
+        ? repeat : 기본값. x,y축 모두 패턴허용.
+        no-repeat : 패턴중지 = 반복안함 
+        repeat-x : x축만 패턴허용
+        repeat-y : y축만 패턴허용
+    */
+}
