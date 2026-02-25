@@ -1,0 +1,20 @@
+/* 
+    background - color
+*/
+html,body,.wrap{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-color: skyblue;
+    /* background: [-image url] [-position] [repeat] [size] [-attatchment] ......  */
+}
+.wrap .topLine input{
+    background-color: transparent;
+    /* ? input's Tag. 기본적으로 배경색을 지님.*/
+}
+.wrap p{
+    background-color: lightcoral; padding: 20px;
+}
