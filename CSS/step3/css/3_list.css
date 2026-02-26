@@ -3,12 +3,14 @@ ul li.circle{
 }
 ul li.disc{
     list-style: disc;
+    /* 기본값 */
 }
 ul li.square{
     list-style: square;
 }
 ol li.decimal{
     list-style: decimal;
+    /* 기본값 */
 }
 ol li.lower-alpha{
     list-style: lower-alpha;
@@ -23,3 +25,20 @@ ol li.upper-roman{
     list-style: upper-roman;
 }
 /* 여기까지 비중요 */
+ol li.none{
+    list-style: none;
+}
+/* 
+    ! none이 적용된다는 것은 bullet을 쓰지 않는다는 뜻인데 이럴때는 부모에게 주는게 효율적
+    ex> ol li {list-style:none;} (x) -> ol{list-style: none;} (o)
+*/
+
+ul.custom{
+    list-style-image: url('../images/bul_li.gif');
+    list-style-position: outside;
+    /*
+        ? custom bullet 사용방법
+        ? -position : 기본 outside / depth 필요시 inside
+        ! 위의 코드들보다 background 운영이 훨씬 편함.
+    */
+}
