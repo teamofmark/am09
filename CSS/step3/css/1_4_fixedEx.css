@@ -1,0 +1,21 @@
+*{
+    margin: 0; padding: 0;
+}
+/* ? tempCode = 임시적용.*/
+html,body{
+    height: 100%;
+}
+body{
+    background: url('../images/example.jpg') center / cover no-repeat fixed;
+    /*
+        background shortHand(줄여쓰기)
+        ? background: [-image] [-position] / [-size] [-repeat] [-attachment] [-origin] [-clip] [-color];
+        ! 모든 속성을 입력한다는 가정 하에 위 순서 필수, 그게아니라면 position,size사이는 / 로 구분해야함.
+    */
+}
+div{
+    background-color: white;  margin-bottom: 15%; padding: 5%;
+}
+div h2{
+    font-size: 28px; margin-bottom: 20px;
+}
