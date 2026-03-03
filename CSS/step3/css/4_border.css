@@ -41,3 +41,30 @@ div{
     padding-left: 60px;
     /* ! inline-block = input's(select,textarea,img...) 등의 기존 태그들은 block으로 전환해도 사이즈 유지 */
 }
+
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #666;
+}
+.outsetBox{
+    border: 10px outset #666;
+}
+.outsetBox:hover{
+    border-style: inset;
+}
+.radiusBox{
+    background-color: black; color: yellow;
+    border-radius: 30px;
+}
+.circleBox{
+    background-color: midnightblue; color: cyan; text-align: center;
+    /* width: 500px; line-height: 500px; border-radius: 250px; height: 500px; */
+    width: 50vw; height: 50vw; border-radius: 25vw; font-size: 2vw; line-height: 50vw;
+    /* todo. 너비,높이를 설정 = 동 비(1:1) -> radius로 원깎기 -> 수직,수평정렬시키기 */
+    /* vw : viewportWidth 약자 -> 브라우저 너비를 기준으로 백분지수화 하여 1vw 기준 성립.(ex> 1920 -> 1vw=19.2px */
+}
