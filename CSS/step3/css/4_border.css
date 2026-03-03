@@ -31,3 +31,13 @@ div{
     border-left: 20px double #fc6;
     /* ? solid : 직선, dotted: 점선, dashed: 파선, double : 두줄의 선= 충분한 width가 있어야 보임. */
 }
+
+.searchField{
+    display: block; width: 100%; line-height: 50px; border-width: 0 0 1px; outline: none;
+    background: url('../images/chevron_right_FILL0_wght400_GRAD0_opsz48.svg'),url('../images/search_FILL0_wght400_GRAD0_opsz48.svg');
+    background-repeat: no-repeat;
+    background-position: 20px center, right 20px center;
+    background-size: 24px;
+    padding-left: 60px;
+    /* ! inline-block = input's(select,textarea,img...) 등의 기존 태그들은 block으로 전환해도 사이즈 유지 */
+}
