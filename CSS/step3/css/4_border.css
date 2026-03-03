@@ -5,3 +5,23 @@ div{
     width: 300px; height: 150px;
     margin-bottom: 10px;
 }
+.singleBox{
+    border: 3px solid #60f;
+    /* borderShortHand : [-width] [-style] [-color] 별도 지정 불가. 4면 선을 동일하게 처리할 경우 */
+}
+.multiBox{
+    /* 
+        ! 분리 방식 : 속성별 / 방향별
+    */
+    /*  
+        ? 속성별 : 값=방향 => 시계방향 = top right bottom left
+        ? 4방향 모두 기입 = 모두 별도.
+        ? 3방향 기입 = xAxis에서 남는것은 right. 그렇기 때문에 left,right를 하나로 묶음.
+        ? 2방향 기입 = xAxis,yAxis에 남은 값이 각 1개씩(top,right) 남았기 때문에 y축,x축 두개의 값으로 적용.
+        1방향 기입 = 위 예제(singleBox)와 동일.
+
+    */
+    border-width: 1px 5px 10px 20px;
+    border-style: solid dotted dashed double;
+    border-color: #1958b7 #f06 #6f6 #fc6;
+}
