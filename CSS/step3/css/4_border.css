@@ -21,7 +21,13 @@ div{
         1방향 기입 = 위 예제(singleBox)와 동일.
 
     */
-    border-width: 1px 5px 10px 20px;
+    /* border-width: 1px 5px 10px 20px;
     border-style: solid dotted dashed double;
-    border-color: #1958b7 #f06 #6f6 #fc6;
+    border-color: #1958b7 #f06 #6f6 #fc6; */
+    /* todo. 방향별 분리로 변경적용 */
+    border-top: 1px solid #1958b7;    
+    border-right: 5px dotted #f06;    
+    border-bottom: 10px dashed #6f6;    
+    border-left: 20px double #fc6;
+    /* ? solid : 직선, dotted: 점선, dashed: 파선, double : 두줄의 선= 충분한 width가 있어야 보임. */
 }
