@@ -34,11 +34,16 @@ ol li.none{
 */
 
 ul.custom{
-    list-style-image: url('../images/bul_li.gif');
-    list-style-position: outside;
+    list-style: none;
+    /* list-style-image: url('../images/bul_li.gif');
+    list-style-position: inside; */
     /*
         ? custom bullet 사용방법
         ? -position : 기본 outside / depth 필요시 inside
         ! 위의 코드들보다 background 운영이 훨씬 편함.
     */
+}
+ul.custom li{
+    padding-left: 15px;
+    background: url('../images/bul_li.gif') left center no-repeat;
 }
