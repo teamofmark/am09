@@ -1,0 +1,20 @@
+body,p{
+    /* 기본 마진 : 8px. */
+    margin: 0; font-size: 25px;
+}
+.firstDiv{
+    margin: 30px;
+    /* ! border shortHand(줄여쓰기)와 마찬가지로 방향별 처리가 동일함. */
+    background-color: #555;
+}
+.firstDiv p{
+    background-color: #039; color: white;
+    /* margin: 50px 0; */
+    /*
+         ! 자손의 margin으로 부모를 밀어내서는 안됨.
+        ? margin ? -> 형제관계들 끼리 서로 간격을 남기다(벌리다)
+    */
+}
+.secondDiv{
+    background-color: #ddd; margin: 20px;
+}
