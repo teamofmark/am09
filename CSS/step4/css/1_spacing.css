@@ -17,4 +17,40 @@ body,p{
 }
 .secondDiv{
     background-color: #ddd; margin: 20px;
+    /* 
+        ! margin은 방향성에 유의해야 한다.
+        ? firstDiv에서는 하단으로 30px을 밀고 있고 secondDiv에서는 상단으로 20px을 밀고있지만 결과는 50px이 아니라 30px이다.
+        ? 같은방향에서 충돌하면 상쇄되기 때문에.
+        todo. margin 상,하 에선 하단으로만 / 좌,우 에선 좌측으로만 = 되도록이면...
+    */
+}
+.centerDiv{
+    width: 300px;
+    border: 1px solid #33f;
+    text-align: center;
+    /* ? 단순 글자만 정렬하는 것이 아닌 inline or inline-block tag's 역시 적용대상이 됨 */
+    margin: 0 auto;
+    /* 
+        ? margin: 0 auto; = 공간 중앙 = 배치되야되는 공간 너비보다 적용대상 너비가 작아야 가능.
+        * 적용 수식 : (배치공간너비 - 적용대상너비) / 2 = 좌,우에 분배
+    */
+    padding: 10px;
+    /* 
+        ? padding = 부모가 주는 안쪽 여백
+        ! 너비나 높이에 가산됨 = border도 마찬가지, margin과 만나면 증산되니까 자손이 부모대상으로 margin사용하면 안됨.
+     */
+}
+.centerDiv p{
+    background-color: #f33; color: white;
+    margin: 0 10px; /* ! 부모를 밀어내는 잘못된 margin */
+}
+.paddingDiv{
+    padding: 10px 20px;
+    border: 3px solid #333;
+    background-color: #ff3c;
+    width: 100px;
+}
+.paddingDiv p{
+    background-color: #039;
+    color: white;
 }
