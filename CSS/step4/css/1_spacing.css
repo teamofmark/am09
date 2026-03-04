@@ -49,6 +49,14 @@ body,p{
     border: 3px solid #333;
     background-color: #ff3c;
     width: 100px;
+    box-sizing: border-box;
+    word-break: break-all; /*글자 줄바꿈 규칙 : default - normal , keep-all = 줄바꿈 안함, break-all = 글자단위로 모두 줄바꿈.*/
+    /* 
+        ? box-sizing : border-box (default : content-box)
+        * 1. width, padding은 %적용 가능 (수동계산가능), border는 %적용 불가.(수동계산불가)
+        * 2. 만약에 열배치를 한다고 가정하고 3열을 설정 한다고 했을 때, 33.33% 씩 너비를 할당하면 결국 border는 px이기 때문에 3열이 완성되지 못함.
+        todo. 그러니까 box-sizing을 사용하면 padding, border를 width안으로 삼켜서 해결.
+    */
 }
 .paddingDiv p{
     background-color: #039;
