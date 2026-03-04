@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+    font-size: 50px;
+    margin-left: 30px;
+    word-spacing: 15px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
+}
+a:link{
+    color: olive;
+}
+/* 
+    href 속성이 있고 평상시 상태 -> 이하 이벤트 전부 a태그에만 적용되는것 아님. 모든 태그에 적용가능.
+    ? href는 a것 아닌가... => js로 제어하면 모든 tag에 모든 attr접합가능. => 웹표준,접근성 불가
+*/
+a:visited{
+    color: #c00;
+}
+/* 
+    클릭(터치) 한 적이 있는 = 방문 or 실행 한 적이 있는 상태.
+*/
+a:hover{
+    color: #3cf; text-decoration: underline;
+}
+/* 
+    ! hover Event
+    * 모든 Tag에 마우스커서가 올라간 상태를 감지
+    ? 1. 쇼핑몰 카드슬롯에 커서를 올렸을 때 add to cart버튼이 등장 or 이미지가 변경 되거나 등
+    ? 2. 버튼 이벤트 -> 커서를 올렸을 때 배경이 사라지거나 or 나타나거나 or 도형이그려지거나...등
+    ? 3. gnb 이벤트 -> depth(중첩)메뉴. 1depth 메뉴에 커서를 올렸을 때 2depth 메뉴가 나오거나...
+    ! hover -> mouseCursor인식이지만 touchPad로 넘어가면 touchEvent로 자동변경됨
+*/
+a:active{
+    color: white;
+    /* 클릭시 = 터치시 상태 - 노출시간이 짧을 수밖에 없음 */
+}
+a:focus{
+    background-color: cyan;
+    /* 
+    초점 대상이 되었을 때 / test는 tab 과 shift tab으로...
+    ! click이 아니다. 대용금지
+    */
+}
