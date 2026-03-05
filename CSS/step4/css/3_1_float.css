@@ -20,3 +20,31 @@
 .wrap .exam_1:after{
     content: ''; display: block; clear: both;
 }
+/* 
+    ? :afterCanceler
+    ! 적용대상 - float들의 부모에게.
+    * float를 끊어내는용도. -> clear = floatCounter(중단시키는속성 or 값)
+    1. :after - 후위선택자.
+    2. content - html에없는 content를 넣어주는 속성 (ex> 1입력 -> 1이 들어감, url(); 입력 -> 대상들어감)
+    3. display: block - width: 100%
+    4. clear:both = float 양쪽 값(left,right) 다
+*/
+.wrap .exam_2{
+    background-color: lightseagreen; margin-bottom: 50px;
+}
+.wrap .exam_2:after{
+    content: ''; display: block; clear: both;
+}
+.wrap .exam_2 div{
+    width: 33.33%; height: 300px; background-color: slateblue;
+    float: left;
+}
+.wrap .exam_3{
+    background-color: orange;
+    /* clear: both; */
+    /*
+        ? float  대상이 아닌 .exam3이 끌려 올라간다고 해서 clear를 무턱대고 주게되면
+        ? .exam2번의 높이가 무너지는 현상은 해결이 된것이 아니기 때문에 margin등에서 추가 문제가 나타남.
+        todo. float 대상들 부모에 반드시 :afterCanceler를 줘라!.
+    */
+}
