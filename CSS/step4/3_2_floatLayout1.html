@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floatLayout 1</title>
+    <link rel="stylesheet" href="css/3_2_floatLayout1.css">
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+        <p>헤더 영역</p>
+        <nav>
+            <h2>Navigation</h2>
+            <p>내비게이션 영역</p>
+        </nav>
+    </header>
+    <!-- main>(aside>h2{Aside}+p{사이드바영역})+(section>(h2{Section}+p{섹션영역})+(article>h3{Article}+p)) -->
+    <main>
+        <aside>
+            <h2>Aside</h2>
+            <p>사이드바영역</p>
+        </aside>
+        <section>
+            <h2>Section</h2>
+            <p>섹션영역</p>
+            <article>
+                <h3>Article</h3>
+                <p></p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
