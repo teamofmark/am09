@@ -1,0 +1,52 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    width: 960px; margin: 0 auto; background-color: rgba(100,40,10,0.5);
+}
+/* .wrap header{
+    background-color: #ff6a00;
+}
+? header안 float test용    
+*/
+.wrap header:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header h1{
+    width: 130px; background-color: rgba(200,50,10,0.8); line-height: 55px; color: white;
+    font-size: 20px; text-align: center; float: left;
+}
+.wrap header nav{
+    width: 830px; background-color: rgba(10,50,200,0.8); float: left;
+}
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    display: inline-block;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px;
+}
+/* .wrap header nav ul{
+    width: 300px; margin: 0 auto; list-style: none; background-color: rgba(40,100,50,0.8);
+}
+.wrap header nav ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header nav ul li{
+    width: 20%; float: left;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px; display: block; text-align: center;
+} 
+    ! 이 방법은 메뉴를 구성하는 것에 부적합. 왜냐면 float속성 자체에 center가 없기 때문에...
+    ? 부모가 너비를 가진 상태에서 margin: 0 auto;로 중앙에 와야됨.
+    ? 이렇게되면 내부 float 자손들이 부모너비에 갇히기 때문에 컨텐츠 양에따른 대응력이 떨어짐.
+*/
+.wrap section{
+    margin-bottom: 300px;
+}
+.wrap section h2{
+    background-color: #0cf; text-align: center; line-height: 55px;
+}
