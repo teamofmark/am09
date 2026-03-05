@@ -50,3 +50,9 @@
 .wrap section h2{
     background-color: #0cf; text-align: center; line-height: 55px;
 }
+/* todo. article 구성 직접 float code짜보기 */
+
+.wrap footer{
+    background-color: rgba(50,0,255,0.8); color: white; line-height: 55px;
+    text-align: center;
+}
