@@ -1,0 +1,38 @@
+body{
+    margin: 0; height: 2000px;
+}
+.position_A{
+    width: 150px; height: 150px; background-color: #fc0;
+    position: absolute; left: 300px; top: 300px;
+    /* ? absolute는 화면 scroll 영향을 받는다. */
+    /* ! 좌표값 입력하기 전에는 현재 자신의 위치에서 떠오름.(fixed와 동일) */
+}
+.position_R{
+    position: relative; width: 150px; height: 150px; margin: 0 auto; background-color: #0f0;
+    margin-top: 50px;/* position fixed와 겹치지 않게 하기위함 */
+}
+.position_R .position_A2{
+    position: absolute; width: 50px; height: 50px; background-color: midnightblue; color: white;
+    left: 50px; top: 50px;
+}
+.position_F{
+    position: fixed; background-color: limegreen; left: 0; top: 0; width: 100%; height: 50px;
+    /* 
+        ? :fixed = scroll영향 받지 않음. 고정됨.
+        1. 무조건 browser 좌측 상단만을 기준으로 함.
+        2. 보통 header에 많이 사용하는데, 이렇게 되면 밑 컨텐츠들이 깔리기 때문에 그 컨텐츠들이 margin-top을 이용해서 header높이만큼 벌려야한다.
+    */
+    /* ! absolute와 마찬가지로 떠오름과 동시에 너비,높이 상실됨. */
+    /* ! 좌표값 입력하기 전에는 현재 자신의 위치에서 떠오름.(absolute와 동일) */
+}
+.position_S{
+    position:  sticky; width: 100px; height: 100px; left: 0; top: 50px;
+    background-color: blueviolet; color: violet;
+    /* 
+        ? :sticky = 부여하는순간 떠오름.
+        1. top좌표에서 마치 fixed처럼 고정됨. 이외에는 absolute처럼 scroll영향 받음.
+        2. 기존 float 공간 배치 구성에서도 사용 가능함. = 일반 block처럼 있다가 top에만 반응시키기 등이 가능함.= 이 때 중요한건 부모 공간이 반드시 필요함
+        ! 그래야 하단 감지가능. 그렇지 않으면 footer등의 위로 올라탐..
+    */
+    /* ! 모든 position 속성은 원상태로 복구 하려면 값을 "static"으로 변경해주면 됨 */
+}
