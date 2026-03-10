@@ -1,0 +1,31 @@
+body{
+    width: 960px; margin: 0 auto;
+}
+header{
+    background-color: #6ff; position: relative;
+}
+header h1{
+    background-color: #66f; width: 250px; font-size: 16px; color: white;
+    text-align: center; line-height: 40px; margin: 0 auto;
+}
+header div{
+    position: absolute; right: 0;
+
+}
+
+header nav{
+    background-color: #3cf;
+}
+header nav ul{
+    text-align: center; margin: 0; padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li:not(:first-child){
+    margin-left: 40px;
+}
+header nav ul li a{
+    text-decoration: none; color: black; display: block; line-height: 40px;
+}
+header nav ul li a:hover{color: #fff;}
