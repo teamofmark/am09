@@ -48,3 +48,29 @@
     /* 이상 코드들은 적용 안됨. select, date계열, file등은 마찬가지로 외형 수정이 어려운 태그들. */
     width: 25px; height: 25px; accent-color: black;
 }
+
+.directSelector > h1{
+    font-size: 28px; color: #66f;
+}
+.directSelector > span{
+    font-size: 22px; color:#906; line-height: 40px;
+    /* 
+        ? a > b: 직계선택자
+        1. a의 안에 직계 자손들만 선택할 수 있게 하는 선택자.
+        2. 내부로 css가 파고들지 못하게 막아주는 역할을 수행하는 중요 선택자.
+        ! a 와 b가 같은 tag로 반복된다면 bubbling(연쇄적용)이 일어나기 때문에 다채로운 구조를 짜도록해야된다.
+        ? 웹표준,웹접근성에 맞는 구조 = 다채로운구조.
+    */
+}
+.sameSelector h1~h2{
+    background-color: #999;
+}
+.sameSelector h1+h2{
+    font-size: 40px; color: #fcf;
+}
+/* 
+    ? a~b,a+b : 동위선택자.
+    1. a를 기준으로 형제관계들인 b를 선택하는 선택자.
+    2. 내가 원하는 데로 기준을 세우고 대상을 범위(~) 혹은 개별(+)로 선택할 수 있기 때문에 효율이 좋음.
+    ! ~은 범위 지정이기때문에 최초 기준이 되는 tag만 효력이 생긴다.
+*/
