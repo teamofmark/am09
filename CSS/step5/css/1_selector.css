@@ -36,3 +36,15 @@
 .attrSelector fieldset ul li input{
     padding: 5px; vertical-align: middle;
 }
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid lightyellow; color: maroon;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid lime; color: forestgreen;
+}
+.attrSelector fieldset ul li input[type='radio'],
+.attrSelector fieldset ul li input[type='checkbox']{
+    background-color: black; border: 5px solid yellow;
+    /* 이상 코드들은 적용 안됨. select, date계열, file등은 마찬가지로 외형 수정이 어려운 태그들. */
+    width: 25px; height: 25px; accent-color: black;
+}
