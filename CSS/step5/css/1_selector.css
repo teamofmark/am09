@@ -74,3 +74,62 @@
     2. 내가 원하는 데로 기준을 세우고 대상을 범위(~) 혹은 개별(+)로 선택할 수 있기 때문에 효율이 좋음.
     ! ~은 범위 지정이기때문에 최초 기준이 되는 tag만 효력이 생긴다.
 */
+.stringAttrSelector img[src$='png']{
+    width: 100px; border: 3px solid #f00;
+}
+/* todo. 나머지 두개 이미지에 직접 문자유형선택자 사용해보기 */
+.stringAttrSelector img[src$='jpg']{
+    width: 200px; border: 5px solid #0f0;
+}
+.stringAttrSelector img[src$='gif']{
+    width: 300px; border: 10px solid #00f;
+}
+.stringAttrSelector h1[title*='제목']{
+    color: red;
+}
+.stringAttrSelector h1[title^='남자']{
+    color: blue;
+}
+.stringAttrSelector h1[title ~= "탈의실"]{
+    color: deeppink;
+}
+/* 
+    ? 문자열속성값일치선택자 - 해당 문자열 유형으로 분리 적용
+    * *= : 해당 단어가 들어가는 모든 대상 선택. (전,후 상관없음.)
+    * ^= : 해당 단어로 "시작"하는 것만 선택.
+    * $= : 해당 단어로 "끝"나는 것만 선택.
+    |= : 해당 단어로 시작하고 -로 구분되는 대상 선택.
+    ~= : 띄어쓰기 기준. 해당 단어 포함.(사용가능대상 정해져있다. = 띄어쓰기가 가능한 attr)
+*/
+.statusSelector input:not([type='checkbox']){
+    display: block; margin-bottom: 20px;
+}
+.statusSelector input[type='checkbox']+label{
+    display: inline-block; overflow: hidden;
+    line-height: 20px; transition-duration: .75s;
+    /* 
+    crossBrowsing - 대응코드 vendorPrefix. 구시대유물.
+    -ms-transition-duration: .75s;
+    -webkit-transition-duration: .75s;
+    -moz-transition-duration: .75s;
+    -o-transition-duration: .75s;
+    */
+}
+.statusSelector input[type='checkbox']:checked+label{
+    line-height: 0px;
+}
+.statusSelector input[type='email']:disabled{
+    background-color: black; color: gray; padding: 10px;
+}
+/* 
+    ? 상태선택자 - input계열의 현 상태에 따라 선택하는 선택자.
+    * :checked = checkbox, radio.
+    :selected = select
+    ! disabled != readonly 완전 다른의미
+    * disabled = 한 번도 전송되거나 저장된적이 없는 입력 칸. -> 사용할 수 없는 상태.
+        ? ex> 온라인쇼핑몰에서 결제수단 선택할 때. 카드 or 계좌이체 or 핀텤(토스,네이버페이..)
+        ? counter attr = enabled.
+    * readonly = 한 번이라도 전송되거나 저장된적이 있는 입력 칸. -> 수정할 수 없는 상태.
+        ? ex> 회원가입할 때는 id 입력 가능 -> 가입 후 내 계정에서 id 수정 하려고 하면 불가능.
+        ? counter attr (x) = .removeAttr(); 함수 사용해서 제거밖에는 방법이없음.
+*/
