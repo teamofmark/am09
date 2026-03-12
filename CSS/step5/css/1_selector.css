@@ -121,6 +121,9 @@
 .statusSelector input[type='email']:disabled{
     background-color: black; color: gray; padding: 10px;
 }
+.statusSelector input[type='password']::placeholder{
+    color: red;
+}
 /* 
     ? 상태선택자 - input계열의 현 상태에 따라 선택하는 선택자.
     * :checked = checkbox, radio.
