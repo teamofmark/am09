@@ -220,3 +220,21 @@
     * 다수의 대상을 넣을 시에는 구분할 때 띄어 쓰기로 넣어주면 됨.
     ! 화면상에 들어가는 요소들을 처리하기에는 매우 적합하나 data가 들어오는 공간에는 사용 금지(ex> 총 금액 : 1,280,000원 -> 원을 :after content('원'); -> 금액은 Data = Data가 들어올때는 양호하나 만약 다시 재전송 되야할 경우 저 '원'이 딸려들어감
 */
+
+.reactionSelector *{
+    color: white;
+}
+.reactionSelector *::selection{
+    background-color: #000; color: #ff0;
+}
+/* 
+    ! ::selection - 사용시에는 반드시 접근성 고대비율을 준수해서 사용해야 함. 그렇지 않을시 특정 색에 취약한 사람들은 구분불가.
+*/
+
+.notSelector input:not([type='password'],[type='submit']){
+    background-color: lightseagreen;
+}
+/* 
+    ? :not = 부정선택자. 지정된 대상을 제외한 나머지에게 해당 style을 적용시킨다.
+    ! 복수대상 지정시 ,로 구분하는데 만약 복수대상의 수가 너무 많다면 이것은 구조 혹은 보는 시각에 문제가있다고 판단 해야함.
+*/
