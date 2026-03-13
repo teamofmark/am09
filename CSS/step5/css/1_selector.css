@@ -136,3 +136,87 @@
         ? ex> 회원가입할 때는 id 입력 가능 -> 가입 후 내 계정에서 id 수정 하려고 하면 불가능.
         ? counter attr (x) = .removeAttr(); 함수 사용해서 제거밖에는 방법이없음.
 */
+.virtualSelector ul{
+    overflow: hidden; list-style: none; margin: 30px 0; padding: 0;
+    background-color: ivory;
+    /* 
+        ? overflow: 초과 = float로 인한 높이 붕괴를 막는가?
+        * 1. li들 float가 된다.
+        * 2. ul(부모)의 밑선을 끌고 올라온다.
+        * 3. ul의 높이를 초과한다. = li들의 높이가.
+        * 4. ul의 높이가 초과됨을 overflow가 감지해서 다시 원상태로 돌려놓는다.
+        ! :after대신 사용하면 나중에 반응형에서 복잡해짐 = overflow:hidden -> 초과될시 감춰라.
+    */
+}
+.virtualSelector ul li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px; float: left;
+    text-align: center;
+}
+.virtualSelector ul li:first-child{
+    border-radius: 20px 0 0 20px;
+}
+.virtualSelector ul li:last-child{
+    border-radius: 0 20px 20px 0;
+}
+.virtualSelector ul li:nth-child(2n+1){
+    background-color: #09f;
+}
+.virtualSelector ul li:nth-child(2n){
+    background-color: #444; color: white;
+}
+/* 
+    ? 가상선택자 : -child = 부모기준에서 바라보는 순서.(tag는 중요하지 않음)
+    * first-child : 부모기준에서 바라보는 첫번째 자손.
+    * last-child : 부모기준에서 바라보는 마지막 자손.
+    * nth-child : 부모기준에서 바라보는 n번째 자손. = 수열식사용가능.
+    ? 수열식 ??? - 수의 규칙(pattern=syntex). 이 발생 되었을 때 수식으로 연쇄반응을 시키는 것.
+*/
+
+.shapeSelector h1:nth-of-type(2){color: #30f;}
+.shapeSelector h2:first-of-type{color: #0c6;}
+.shapeSelector h3:last-of-type{color: #f06;}
+/* todo. 위 세줄의 결과를 동일하게 child로 변환해서 나오게 해보기. */
+/* .shapeSelector h1:last-child{color: #30f;}
+.shapeSelector h2:nth-child(2){color: #0c6;}
+.shapeSelector h3:nth-child(4){color: #f06;} */
+/* 
+    ? 가상형태선택자 : -of-type = 자기와 같은 태그들끼리 의 순서.
+    * first-of-type : 자기들기준에서 바라보는 첫번째.
+    * last-of-type : 자기들기준에서 바라보는 마지막.    
+    * nth-of-type : 자기들기준에서 바라보는 n번째. = 수열식사용가능.
+*/
+.textSelector h1::first-letter{
+    font-size: 20px; color: #09f;
+}
+/* 비중요 */
+.textSelector p::first-line{
+    color: #090; text-decoration: underline; font-style: italic; font-size: 14px; line-height: 20px;
+}
+/* 
+    덜중요 - 첫줄 이니까. br의 영향을 받는다.
+    ! responsive(반응형) 입장에서는 br은 쥐약.
+    ? 그렇기 때문에 br 말고 adaptive(적응형) 상태를 유지 시켜놓으면 알아서 첫 줄을 계속 선택 해준다.
+*/
+.backandfrontSelector p{
+    counter-increment: rint;
+}
+.backandfrontSelector p::before{
+    content: counter(rint) ".";
+}
+.backandfrontSelector p::after{
+    content: "-" attr(data-page) "page"; font-weight: bold; color:  deeppink;
+}
+/* 
+    ? "rint"(내가지은이름)라 부르기로 한 카운터 이름을 생성
+    * counter() 라고 하는 함수 : 지정된 이름들을 세어주는 것. (counter(지정된이름) = 지정된이름의 갯수)
+*/
+/* 
+    ? attr() : 지정된 attribute의 값을 가져오는 함수.
+    * ex> img 의 src를 attr(src) 이런식으로 넣어주면 "https://placehold.co/150"이런 값이 넘어오게 됨.
+*/
+/* 
+    ? ::before(전위) & ::after(후위)
+    * content라는 속성에 넣어주면 그 대상이 각 위치에(before는 맨 위, after는 맨 아래 = 코드상에서) 나옴.
+    * 다수의 대상을 넣을 시에는 구분할 때 띄어 쓰기로 넣어주면 됨.
+    ! 화면상에 들어가는 요소들을 처리하기에는 매우 적합하나 data가 들어오는 공간에는 사용 금지(ex> 총 금액 : 1,280,000원 -> 원을 :after content('원'); -> 금액은 Data = Data가 들어올때는 양호하나 만약 다시 재전송 되야할 경우 저 '원'이 딸려들어감
+*/
