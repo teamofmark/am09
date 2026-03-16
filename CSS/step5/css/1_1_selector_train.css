@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+article{
+    max-width: 1000px; margin-bottom: 30px; overflow: hidden;
+    /* 
+        ? max-width : 최대너비설정
+        * width : 너비 - % 사용시 화면크기에따라 비율설정.(과하게 커질수 있음)
+        * 그렇기 때문에 "아무리 커져도 더이상은 커지지 못하게 막는" 속성.
+    */
+}
+article > :first-child{
+    float: left; margin: 0 20px 10px 0; width: 150px; line-height: 110px; font-size: 100px;
+    text-align: right; background-color: gray; color: white;
+}
+article p :first-child{
+    color: #09f; background-color: transparent;
+}
+article p :first-child:not(mark){
+    text-decoration: underline;
+}
