@@ -1,0 +1,29 @@
+body,ul,dl,dt,dd,figure{
+    margin: 0; padding: 0;
+}
+div{
+    margin-bottom: 30px;
+}
+.displayProperty span:nth-child(1){
+    display: block; width: 50%; background-color: #fc9393; padding: 30px;
+    box-sizing: border-box;
+}
+.displayProperty span:nth-child(2){
+    display: inline-block; background-color: #94fc93; width: 25%; padding: 30px;
+    /* margin: 30px 0;  */
+}
+.displayProperty span:nth-child(3){
+    display: inline; width: 75%; background-color: #93c5fc;
+    margin: 50px; padding: 30px;
+}
+.displayProperty span:nth-child(4){
+    background-color: #5c38fc; color: white; display: none;
+    /* ! 화면자체에 존재하지 않음. 부드러운 움직임등의 효과 적용도 어려움. 자칫잘못하면 serverData씹힘. */
+}
+/*
+    ? display의 속성은 총 4가지
+    * block = block이 되게 되면 width:100%의 값을 갖는 위에서 아래로 나열되는 객체가 된다.
+    * inline-block = inline-block이 되면 width의 값을 가질수 있고, inline 타입으로 (옆으로) 나열되는 객체가 된다.
+    * inline = inline이 되면 width등의 크기나 간격 등의 값을 가질수 없고 옆으로는 나열 되지만, 간격을 벌릴수 없는 객체가 된다.
+    * none = 대상이 보이지 않는다. (렌더 자체가 안된다.)
+*/
