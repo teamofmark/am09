@@ -1,0 +1,27 @@
+body{
+    width: 80%; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin: 0; font-size: 30px; font-weight: normal; color: gray; position: relative;
+    padding: 15px 30% 15px 0;
+    /* ? padding-right 30% = absolute a와 겹치지 않게. position을 다룰 때 중요 부분 */
+}
+h1 a{
+    position: absolute; right: 0; bottom: 0; font-size: 24px; color: forestgreen;
+}
+fieldset{
+    padding: 10px 40% 10px 0; position: relative; border-width: 2px 0 1px; border-style: solid none;
+    border-color: darkgreen;
+}
+fieldset input[type='search']{
+    width: 20%; border: 1px solid forestgreen; background-color: palegreen; line-height: 24px;
+    min-width: 115px;
+}
+fieldset input[type='submit']{
+    width: 10%; line-height: 24px; min-width: 60px; background-color: darkolivegreen; color: white;
+    border: 2px solid limegreen;
+}
+fieldset select{
+    position: absolute; right: 0; width: 25%; min-width: 150px; background-color: lightseagreen;
+    padding: 5px 0; border-color: lime;
+}
