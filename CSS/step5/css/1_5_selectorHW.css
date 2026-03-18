@@ -46,3 +46,41 @@ ul li span:nth-child(2){
 ul li span:nth-child(4){
     width: 30%;
 }
+div:first-of-type{
+    position: relative; width: 50%; margin: 0 auto 15px; padding: 0 3%;
+}
+div:first-of-type a{
+    text-decoration: none; color: #555; display: block; text-align: center; font-size: 14px;
+    line-height: 20px;
+}
+div:first-of-type > a{
+    position: absolute; top: 0;
+}
+div:first-of-type > a:first-of-type{
+    left: 0;
+}
+div:first-of-type > a:last-of-type{
+    right: 0;
+}
+div:first-of-type ol{
+    margin: 0; padding: 0;
+}
+div:first-of-type ol:after{
+    content: ''; display: block; clear: both;
+}
+div:first-of-type ol li{
+    display: block; float: left; width: 9%;
+}
+div:first-of-type ol li:not(:first-child){
+    margin-left: 1.11%;
+}
+div:first-of-type ol li a:hover{
+    background-color: darkorchid; color: violet; border-radius: 5px;
+}
+form fieldset{
+    border: none; padding: 0; margin: 0; text-align: center;
+}
+form fieldset input[type='submit']{
+    border: 1px solid darkorchid; background-color: lavender; color: darkorchid;
+    text-transform: uppercase;
+}
