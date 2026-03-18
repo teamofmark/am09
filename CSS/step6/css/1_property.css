@@ -75,3 +75,17 @@ div{
 .opacityProperty ul li:hover figure img{
     opacity: 1;
 }
+.boxsizingProperty div{
+    width: 500px; margin: 0 auto; border: 10px solid #ff6a00;
+    background-color: #fc9393; padding: 50px;
+}
+.boxsizingProperty div:first-child{
+    box-sizing: content-box;
+}
+.boxsizingProperty div:last-child{
+    box-sizing: border-box;
+}
+/* 
+    content-box : width = box in width + padding + border
+    border-box : width = box in width - (padding + border)
+*/
