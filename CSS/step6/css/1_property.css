@@ -27,3 +27,25 @@ div{
     * inline = inline이 되면 width등의 크기나 간격 등의 값을 가질수 없고 옆으로는 나열 되지만, 간격을 벌릴수 없는 객체가 된다.
     * none = 대상이 보이지 않는다. (렌더 자체가 안된다.)
 */
+
+.visibilityProperty span{
+    background-color:#ff6a00; display: block; border: 1px solid black;
+}
+.visibilityProperty span:first-child{
+    visibility: visible;
+}
+.visibilityProperty span:nth-child(2){
+    height: 500px; visibility: hidden;
+}
+.visibilityProperty input[type='checkbox']:checked~table{
+    visibility: visible;
+}
+.visibilityProperty table{
+    visibility: collapse; border-spacing: 0;
+}
+/*
+    ? visibility의 속성은 총 3가지
+    * visibility : visible  = 보여주다.
+    * visibility : hidden = 감추다.(영역보존)
+    * visibility : collapse = none과 달리 실제 존재는 하되 무너져있다.(data받기 용이)
+*/
