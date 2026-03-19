@@ -43,3 +43,13 @@ body{
     left: 97%;
 }
 /* ! transition은 무조건 변형전 속성으로부터 변형후 속성을 바라본다. */
+
+.durationEX4{
+    width: 50%; height: 300px; margin-bottom: 200px; color: #000;
+    border-width: 3px; border-style: solid; border-color: #f00 #ff6a00 #ffd800 #4cff00;
+    transition-duration: 2s;
+}
+.durationEX4:hover{
+    margin: 0 25% 200px; border-color: #4cff00 #0094ff #0026ff #b200ff;
+    color: #0094ff;
+}
