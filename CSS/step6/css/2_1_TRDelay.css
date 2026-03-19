@@ -1,0 +1,62 @@
+/* 
+    ? transition-delay : 변환-지연시간.
+    * -duration은 차등을두고 시작하는 것이 불가능 함. 모두 동시 시작.
+    ! 다수에게 움직임을 부여할 때 어색해진다. = 차례차례 움직여야 하는 것이 불가능 하니까 = delay필요.
+*/
+body{
+    margin: 0;
+}
+ul{
+    padding: 0; margin: 0; list-style: none;
+}
+.delay1{
+    width: 610px; border: 3px solid #3a00b6;
+}
+.delay1 span{
+    display: block; width: 10px; height: 50px; background-color: #0cf; margin: 5px;
+    transition-duration: 5s;
+}
+.delay1:hover span{
+    width: 600px;
+}
+.delay1:hover span:nth-child(1){transition-delay: 1s;}
+.delay1:hover span:nth-child(2){transition-delay: 2s;}
+.delay1:hover span:nth-child(3){transition-delay: 3s;}
+.delay1:hover span:nth-child(4){transition-delay: 4s;}
+.delay1:hover span:nth-child(5){transition-delay: 5s;}
+
+.delay2:after{
+    content: ''; display: block; clear: both;
+}
+.delay2 li{
+    width: 33.33%; float: left; height: 200px; transition-duration: 2s;
+}
+.delay2:hover li{
+    width: 50%;
+}
+.delay2 li:nth-child(1){transition-delay: 0s; background-color: lightcoral;}
+.delay2 li:nth-child(2){transition-delay: 0.5s; background-color: lightgreen;}
+.delay2 li:nth-child(3){transition-delay: 1s; background-color: lightskyblue;}
+.delay2 li:nth-child(4){transition-delay: 1.5s; background-color: lightslategray;}
+.delay2 li:nth-child(5){transition-delay: 2s; background-color: lightyellow;}
+.delay2 li:nth-child(6){transition-delay: 2.5s; background-color: lightseagreen;}
+.delay2:hover li:nth-child(1){background-color: coral;}
+.delay2:hover li:nth-child(2){background-color: green;}
+.delay2:hover li:nth-child(3){background-color: skyblue;}
+.delay2:hover li:nth-child(4){background-color: slategray;}
+.delay2:hover li:nth-child(5){background-color: yellow;}
+.delay2:hover li:nth-child(6){background-color: seagreen;}
+/* https://cubic-bezier.com */
+
+.delay3{height: 300px; margin-bottom: 200px; background-color: #000;}
+.delay3:after{content: ''; display: block; clear: both;}
+.delay3 li{float: left; width: 20%; height: 0px; transition-duration: 3s;}
+.delay3:hover li{height: 300px;}
+.delay3 li:nth-child(1){
+    transition-timing-function: cubic-bezier(0,.99,0,1); background-color: lightcoral;
+}
+/* todo. 이하 직접 원하는 가속도를 상상하고 구현해서 넣어보기 */
+.delay3 li:nth-child(2){transition-timing-function: cubic-bezier(0,1.04,1,-0.01); background-color: lightgreen;}
+.delay3 li:nth-child(3){transition-timing-function: cubic-bezier(1,0,1,-0.01); background-color: lightskyblue;}
+.delay3 li:nth-child(4){transition-timing-function: cubic-bezier(1,0,0,1); background-color: lightgoldenrodyellow}
+.delay3 li:nth-child(5){transition-timing-function: cubic-bezier(1,.43,0,.63); background-color: lightpink;}
