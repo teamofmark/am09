@@ -5,12 +5,43 @@ body{
     position:absolute; width: 200px; height: 200px; border-radius: 100px;
     background: linear-gradient(to bottom, #7db9f8 0%, #1e5799 100%);
     animation-name: moveCircle; animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* todo. cubiz bezier 사이트 방문해서 실제 공이 튕기는듯 한 가속도 값 찾아 적용해보기*/
+    animation-timing-function: cubic-bezier(.18,.47,.48,.84);
+    /* 
+        ?animation
+        1. -name : keyframes 정의하고 불러오는속성.
+        2. -duration : keyframes 재생에 필요한 시간.
+        3. -timing-function : 재생에 필요한 가속도.
+        4. -direction : 재생방향설정.
+        5. -iteration-count : 반복 횟수 설정.
+    */
 }
 @keyframes moveCircle{
+    /* 
+        ? keyframes
+        1. 0(from) ~ 100%(to) 사이 소수점 포함 입력 가능.
+        2. @의 의미는 css 단일속성으로 소화가 불가능한 기능들 (확장)
+    */
     0%{
         left: 0;
+        transform: rotate(0deg);
+        /* 
+            transform - 변형과 관련된 함수를 적용하는 css.
+            -rotate(); = libfunction = 이미 만들어져있는 기능.
+            ? 회전 - 각도단위 = degree -> deg 단위. 양,음수모두 사용가능. 양수일 경우 정시계방향.
+        */
     }
+    /* 50%{
+        left: 800px;
+        transform: rotate(360deg);
+    } */
     100%{
         left: 800px;
+        transform: rotate(360deg);
     }
+}
+.circle:hover{
+    animation-play-state: paused;
 }
