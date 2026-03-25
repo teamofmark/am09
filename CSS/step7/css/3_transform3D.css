@@ -56,10 +56,15 @@ div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate
 }
 @keyframes trans3D{
     0%{
-        transform: translate3d(0px,0px,0px);
+        transform: rotate3d(0,0,0,0deg) translate3d(0px,0px,0px) scale3d(0,0,0);
         /* ? translate3d([x],[y],[z]) */
+        /* * 각 축의 값만큼 해당 축으로 이동.  */
+        /* ! z축은 깊이를 표현함에 있어, 단면 디스플레이 특성상 큰 차이를 보이지 못한다. */
+        /* ? scale3d([x],[y],[z]) */
+        /* *vector방식을 크기를 늘리고 줄인다. = px단위대상은 조절시 주의. / 백분지수 1 = 100% */
+        /* ! 특정축만을 변환해서는 형태를 확인하기 어렵다. */
     }
     100%{
-        transform: translate3d(0px,0px,150px);
+        transform: rotate3d(1,1,1,360deg) translate3d(100px,150px,150px) scale3d(1,1,1);
     }
 }
