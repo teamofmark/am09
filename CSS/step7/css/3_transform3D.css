@@ -9,10 +9,10 @@ div span{
     animation-duration: 3s; animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
-div span:nth-of-type(1){background-color: red; animation-name: hori;}
-div span:nth-of-type(2){background-color: green; animation-name: verti;}
-div span:nth-of-type(3){background-color: blue; animation-name: depth;}
-div span:nth-of-type(4){background-color: yellow; animation-name: rotate3D;}
+div.rotater span:nth-of-type(1){background-color: red; animation-name: hori;}
+div.rotater span:nth-of-type(2){background-color: green; animation-name: verti;}
+div.rotater span:nth-of-type(3){background-color: blue; animation-name: depth;}
+div.rotater span:nth-of-type(4){background-color: yellow; animation-name: rotate3D;}
 @keyframes hori {
     0%{
         transform: rotateX(0deg);
@@ -43,5 +43,23 @@ div span:nth-of-type(4){background-color: yellow; animation-name: rotate3D;}
     }
     100%{
         transform: rotate3d(1,1,1,360deg);
+    }
+    /*
+     rotate3D(x좌표, y좌표, z좌표, 회전각도);
+     3개의 축을 동시 운용 할 경우(3D) 각 축의 기준점을 기재하면, 좌표가
+     생성된다. 그래서 그 해당 좌표를 기준으로 3d로 회전을 하게 됨.
+     만약 3개축이 모두 0일 경우 모든 축이 한점에 모이기 때문에 구현불가.
+    */
+}
+.translater span{
+    background-color: brown; color: white; animation-name: trans3D;
+}
+@keyframes trans3D{
+    0%{
+        transform: translate3d(0px,0px,0px);
+        /* ? translate3d([x],[y],[z]) */
+    }
+    100%{
+        transform: translate3d(0px,0px,150px);
     }
 }
