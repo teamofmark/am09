@@ -1,0 +1,26 @@
+/* 
+    ? index.xxx -> website를 browser가 읽어낼 때 맨 처음 찾는 파일 = 메인페이지.
+    * ex> https://www.naver.com -> https://www.naver.com/index.nhn
+    * backend -> index.jsp or php or asp....
+*/
+/* 
+    ? import.css -> 불러와서 넣다. - 분기파일
+    * webfont css, webIcon css -> 우선로드필수
+    * reset.css(tag default css 초기화), global.css(공통요소만), page.css(개별요소만)
+    * 순차적으로 로드하게 하기 위함, 파일관리가 용이, 내부에 숨겨져있어서 보안성도 좋고...
+*/
+/* 
+    반응형(responsive) : 적응형(adaptive)이후 단계로 장치자체의 변경이나 화면 크기의 변화에 따라 내부 layout element들이
+    변경 및 조정 되는 것을 말함.
+    크게 두 종류로 나뉘는데,
+    1. 장치상반응형(DeviceControlResp) : 장치의 접근을 통한 고유식별부호(S/N,M/N,MAC addr..)를 이용하여
+    모든 화면 관련 file들을 분리 및 장착시키는 반응형
+
+    2. 화면상반응형(ScreenResolutionResp) : 출력되는 장치(모니터,빔,스마트폰,태블릿...)의 화면크기(viewport)를 측정하고
+    이를 이용하여 분리된 source를 적용하는 반응형
+
+    ! etc. oneSource 를 버리고 아예 도메인분기 ex>  m.naver.com <-> naver.com 하는 방식이 있는데 효율이 바닥이라 권장되지 않음
+*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* ! webfont, webicon은 무조건 최상위 */
+@import url('pc.css') screen;
