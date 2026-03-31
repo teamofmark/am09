@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*todo.2 webfont 연결 = 시안참고 */
+@import url('reset.css');
+/*todo.3 reset.css 연결  */
+@import url('global.css');
+/*todo.4 global.css 생성 연결하기 mediaQuery desktop 범위 설정 */
+@import url('page.css');
+/*todo.5 page.css 생성 연결하기 mediaQuery desktop 범위 설정 */
