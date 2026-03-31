@@ -1,6 +1,73 @@
+/*
+    * live server Device 연동 방법.
+    !  반드시 장치가 liveserver를 켜놓은 컴퓨터와 동일한 인터넷환경인 (ex > wifi)에 접속되어있어야함.
+    * 1-1. window 기준 "window Key + r" 입력 후 cmd 입력 enter. -> ipconfig enter.(ipV4)
+    * 1-2. mac 기준 wifi 설정 -> 세부사항 ip번호
+    * 2. ip번호+port번호+/RESP/step2/(index.html-생략가능) -> 접속하고자 하는 장치의 browser에서 입력
+    todo. 192.168.100.48:5501/RESP/step2
+*/
+@media screen and  (max-width: 767px) and (orientation: landscape){
+    body{
+        background-color: lightslategrey; text-align: left;
+    }
+    h1{
+        font-size: 24px; line-height: 30px; background-color: gray;
+        margin-bottom: 30px; padding: 20px 0;
+    }
+    article{
+        background-color: darkgray; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: darkslategrey; color: cyan; font-size: 18px; line-height: 24px;
+        margin-bottom: 20px;
+    }
+    article p{
+        background-color: steelblue; font-size: 14px; line-height: 20px; padding: 20px;
+        color: lightblue;
+    }
+} 
+/* todo mobile Device - 사용자의 해상도가 767 이하 일 때 작성해보기 세로모드*/
+@media screen and  (max-width: 767px) and (orientation: portrait){
+    body{
+        background-color: lightsteelblue; text-align: center;
+    }
+    h1{
+        font-size:24px; line-height: 30px; background-color:lightblue; margin-bottom: 30px; padding: 20px 0;
+    }
+    article{
+        background-color: skyblue; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: midnightblue; color: cyan; font-size: 18px; line-height: 24px; margin-bottom: 20px;
+    }
+    article p{
+        background-color: steelblue; font-size: 14px; line-height: 20px; padding: 20px; color: darkblue;
+    }
+} 
+/* todo mobile Device - 사용자의 해상도가 767 이하 일 때 작성해보기 가로모드*/
 
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: lightyellow; text-align: center;
+    }
+    h1{
+        font-size: 28px; line-height: 34px; background-color: darkgoldenrod;
+        margin-bottom: 30px;
+    }
+    article{
+        background-color: yellowgreen; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: yellow; color: lightsalmon; font-size: 24px; line-height: 30px;
+        margin-bottom: 20px;
+    }
+    article p{
+        background-color: gold; font-size: 16px; line-height: 22px; padding: 20px;
+    }
+} 
+/* todo. tablet Device - 사용자의 해상도가 768px 이상 1279px 이하 일 때 가로모드*/
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1279px) and (orientation: portrait){
     body{
         background-color: lightpink;
     }
@@ -20,7 +87,7 @@
         color: brown;
     }
 } 
-/* ? tablet Device - 사용자의 해상도가 768px 이상 1279px 이하 일 때 */
+/* ? tablet Device - 사용자의 해상도가 768px 이상 1279px 이하 일 때 세로모드*/
 
 @media screen and (min-width: 1280px){
     body{
