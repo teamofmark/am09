@@ -3,6 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        반응형 페이지에는 viewport를 추가 하여, content 사이즈에 대한 유동폭을 선언 해줘야한다.
+        ex > 
+        width=240 이면 240px 고정
+        width=device-width 면 장치의 너비와 동기화
+        height 역시 마찬가지
+        
+        initial-scale=1.0 초기 확대 비율
+        user-scalable=no 확대 및 축소 가능 여부
+        minimum-scale = 최소 축소 비율
+        maximum-scale = 최대 확대 비율
+        target-densitydpi = dpi 지정 (medium-dpi)
+        
+        이외 추가적인 viewport 메타 는 운영체제 별 참고
+        Android : http://developer.android.com/guide/webapps/targeting.html
+        IOS : http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safarihtmlref/Articles/MetaTags.html  
+    -->
     <title>css 반응형 - 화면상</title>
     <link rel="stylesheet" href="css/import.css">
 </head>
