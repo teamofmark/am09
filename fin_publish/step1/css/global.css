@@ -1,4 +1,14 @@
-
+header div nav ul li a,
+header div > ul li p{
+    font-family: 'Roboto';
+}
+header div > ul li h2{
+    font-family: 'Playfair Display';
+}
+a{
+    text-decoration: none;
+}
+/* ?  A/U */
 
 @media screen and (min-width: 1280px) {
     header{
@@ -15,6 +25,38 @@
     }
     header div h1 a img{
         width: 100%; 
+    }
+    header div nav{
+        position: absolute; right: 0; top: 0; width: calc(100% - 130px);
+        text-align: right;
+    }
+    header div nav ul li{
+        display: inline-block;
+    }
+    header div nav ul li:not(:first-child){
+        margin-left: 2.65%;
+    }
+    header div nav ul li a{
+        line-height: 50px; display: block; font-size: 13px; font-weight: 900; color: white;
+    }
+    header div nav ul li a.active,
+    header div nav ul li a:hover{
+        color: #00e0d0;
+    }
+    /* ? header GNB fin */
+    header div > ul{
+        margin-bottom: 125px;
+    }
+    header div > ul li{
+        padding-top: 165px; display: block;
+    }
+    header div > ul li h2{
+        font-size: 32px; font-weight: 900; color: white; text-align: center; padding-bottom: 22px;
+        background: url('../images/border.png') no-repeat center bottom; margin-bottom: 30px;
+    }
+    header div > ul li p{
+        font-size: 14px; font-weight: 300; color: white; line-height: 24px; max-width: 775px;
+        margin: 0 auto 50px; text-align: center;
     }
 }
 /* ? desktop */
