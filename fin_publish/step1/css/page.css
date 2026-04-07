@@ -80,6 +80,47 @@
     section.expArea ul li:not(:nth-child(3n)){
         border-right: 1px solid rgba(0,0,0,0.2);
     }
-    /* ! 설명 하기전 */
+    /* 
+        ? border 규칙
+        * 1. 대상들의 x축 외곽선을 위로 볼지 아래로 볼지 결정 ->현재 위로 봄. (이유 : 마지막 라인은 불규칙 하기 때문에)
+        * 2. 범위지정 선택자 -> :시작범위:종료범위-> 현재 n(계속1씩증가): -n+3(3부터 계속 1씩감소) = 1부터 3까지 범위지정.
+        * 3. y축 외곽선을 좌로 볼지 우로 볼지 결정 -> 현재 우로 봄. (이유: 상관없지만 조금이나마 코드가 짧음 = 왼쪽으로 볼 경우 3n+1)
+    */
+    section.expArea ul li h3{
+        font-weight: 900; font-size: 14px; color: #413d4b; margin-bottom: 20px;
+    }
+    section.expArea ul li p{
+        font-weight: 300; line-height: 22px; color: rgba(51,51,51,0.75); font-size: 14px;
+    }
+    /* ? expArea Fin */
+
+    section.teamArea{
+        background: url('../images/bg_03.png') left top / cover no-repeat; padding: 70px 0;
+        text-align: center; color: white;
+    }
+    section.teamArea h2{
+        font-size: 22px; font-weight: 700; margin-bottom: 10px;
+    }
+    section.teamArea p{
+        font-size: 14px;
+    }
+    section.teamArea h2+p{
+        font-weight: 400; margin-bottom: 15px;
+    }
+    section.teamArea hr{
+        border-color: rgba(255,255,255,0.2);
+    }
+    section.teamArea ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.teamArea ul li{
+        width: 23.5%; float: left; display: block;
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left: 2%;
+    }
 }
 /* ? desktop */
