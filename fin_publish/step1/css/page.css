@@ -200,5 +200,33 @@
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
     }
+    section.talkArea div > a{
+        font-size: 22px; color: #9f9f9f;
+    }
+    section.talkArea div ul{
+        max-width: 310px; width: 33%;
+    }
+    section.talkArea div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkArea div ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkArea div ul li:not(:first-child){
+        margin-left: 1.25%;
+    }
+    section.talkArea div ul li a{
+        display: block;
+        /* text-align: center; */
+    }
+
+
+    section.talkArea div ul li:not(.active) a img{
+        width: 65%; transition: width .35s ease-in-out;
+    }
+    section.talkArea div ul li.active a img,
+    section.talkArea div ul li:not(.active):hover a img{
+        width: 100%;
+    }
 }
 /* ? desktop */
