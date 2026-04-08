@@ -217,10 +217,14 @@
     }
     section.talkArea div ul li a{
         display: block;
-        /* text-align: center; */
     }
-
-
+    section.talkArea div ul li:not(.active) a{
+        padding: 15px 0; transition: padding .35s ease-in-out;
+    }
+    section.talkArea div ul li.active a ,
+    section.talkArea div ul li:not(.active):hover a{
+        padding: 0;
+    }
     section.talkArea div ul li:not(.active) a img{
         width: 65%; transition: width .35s ease-in-out;
     }
@@ -228,5 +232,6 @@
     section.talkArea div ul li:not(.active):hover a img{
         width: 100%;
     }
+    /* ?talkArea Fin */
 }
 /* ? desktop */
