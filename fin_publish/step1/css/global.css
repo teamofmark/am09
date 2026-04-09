@@ -237,6 +237,9 @@ section[class$='Area'] > hr{
 /* todo mobile code 이관 */
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+    .mui{
+        display: none;
+    }
     #about,
     section.expArea,
     section.contactArea,
@@ -425,6 +428,9 @@ section[class$='Area'] > hr{
 /* ? tablet */
 
 @media screen and (min-width: 1280px) {
+    .mui{
+        display: none;
+    }
     #about,
     section.expArea,
     section.contactArea,
