@@ -57,16 +57,18 @@
     }
     section.expArea > p{
         font-size: 14px; font-weight: 400; color: rgba(47,45,53,0.75); margin-bottom: 15px;
+        line-height: 20px;
     }
     section.expArea hr{
         border-color: rgba(65,61,75,0.3);
     }
-    section.expArea ul:after{
+    /* section.expArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.expArea ul li{
-        width: 33.33%; float: left; display: block; padding: 120px 2% 40px; box-sizing: border-box;
-        background-repeat: no-repeat; background-position: center 30px; min-height: 275px;
+        /*width: 33.33%; float: left;*/ display: block; padding: 120px 2% 40px; box-sizing: border-box;
+        background-repeat: no-repeat; background-position: center 30px; /*min-height: 275px;*/
+        border-bottom: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:nth-child(1){background-image: url('../images/ico_01.png');}
     section.expArea ul li:nth-child(2){background-image: url('../images/ico_02.png');}
@@ -74,12 +76,12 @@
     section.expArea ul li:nth-child(4){background-image: url('../images/ico_04.png');}
     section.expArea ul li:nth-child(5){background-image: url('../images/ico_05.png');}
     section.expArea ul li:nth-child(6){background-image: url('../images/ico_06.png');}
-    section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
+    /* section.expArea ul li:not(:nth-child(n):nth-child(-n+3)){
         border-top: 1px solid rgba(0,0,0,0.2);
     }
     section.expArea ul li:not(:nth-child(3n)){
         border-right: 1px solid rgba(0,0,0,0.2);
-    }
+    } */
     /* 
         ? border 규칙
         * 1. 대상들의 x축 외곽선을 위로 볼지 아래로 볼지 결정 ->현재 위로 봄. (이유 : 마지막 라인은 불규칙 하기 때문에)
