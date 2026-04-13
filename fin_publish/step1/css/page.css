@@ -240,22 +240,22 @@
     }
     /* ?talkArea Fin */
 
-    section.contactArea:after{
+    /* section.contactArea:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.contactArea h2{
         display: none;
     }
-    section.contactArea form fieldset,
+    /* section.contactArea form fieldset,
     section.contactArea div{
         float: left;
-    }
+    } */
     section.contactArea form fieldset legend,
     section.contactArea div h3{
         font-size: 22px; font-weight: 700; color: #413d4b; margin-bottom: 35px;
     }
     section.contactArea form fieldset{
-        width: 49%;
+        /* width: 49%; */ margin-bottom: 50px;
     }
     section.contactArea form fieldset > *:not([type='submit'],legend){
         border: 1px solid rgba(0,0,0,0.1); padding: 15px 20px; font-size: 14px; font-weight: 300;
@@ -268,12 +268,12 @@
         height: 200px; resize: none;
     }
     section.contactArea form fieldset .btn_more{
-        background-color: transparent; min-width: 120px;
+        background-color: transparent; min-width: 120px; margin-left: auto;
     }
 
-    section.contactArea div{
+    /* section.contactArea div{
         width: 40%; margin-left: 11%;
-    }
+    } */
     section.contactArea div ul:after{
         content: ''; display: block; clear: both;
     }
