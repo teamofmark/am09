@@ -97,7 +97,7 @@
     /* ? expArea Fin */
 
     section.teamArea{
-        background: url('../images/bg_03.png') left top / cover no-repeat; padding: 70px 0;
+        background: url('../images/bg_03.png') left top / cover no-repeat; padding: 70px /*0*/3%;
         text-align: center; color: white;
     }
     section.teamArea h2{
@@ -107,25 +107,28 @@
         font-size: 14px;
     }
     section.teamArea h2+p{
-        font-weight: 400; margin-bottom: 15px;
+        font-weight: 400; margin-bottom: 15px; line-height: 20px;
     }
     section.teamArea hr{
         border-color: rgba(255,255,255,0.2);
     }
-    section.teamArea ul{
-        max-width: /*940px*/728px; margin: 0 auto 70px;
+    /* section.teamArea ul{
+        max-width: 728px; margin: 0 auto 70px;
     }
     section.teamArea ul:after{
         content: ''; display: block; clear: both;
-    }
+    } */
     section.teamArea ul li{
-        width: 23.5%; float: left; display: block;
+        /*width: 23.5%; float: left;*/ display: block;
     }
-    section.teamArea ul li:not(:first-child){
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
+    }
+    /* section.teamArea ul li:not(:first-child){
         margin-left: 2%;
-    }
+    } */
     section.teamArea ul li figure{
-        background: url('https://placehold.co/220x230') center top / contain no-repeat;
+        background: url('https://placehold.co/220x230') center top / /*contain*/cover no-repeat;
         padding-top: 180px;
     }
     section.teamArea ul li figure figcaption{
@@ -149,21 +152,21 @@
         padding: 70px 0;
     }
     section.worksArea h2{
-        font-size: 22px; font-weight:700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;
-        position: relative;
+        font-size: /*22px*/ 18px; font-weight:700; color: #413d4b; position: relative;
+        /* max-width: 728px; margin: 0 auto 70px; */
     }
     section.worksArea h2 a{
-        position:absolute; right: 0; top: 0; font-size: 14px; font-weight: 300; line-height: 22px; color: #413d4b;
+        position:absolute; right: 3%/*0*/; /*top: 0;*/ font-size: /*14px*/ 12px; font-weight: 300; line-height: 18px; color: #413d4b;
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
     }
     section.worksArea ul li{
         width: 16.66%; float: left;
-    }
+    } */
     section.worksArea ul li *{
         display: block;
     }

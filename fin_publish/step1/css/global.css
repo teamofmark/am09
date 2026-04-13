@@ -38,6 +38,8 @@ section[class$='Area'] > hr{
 @media screen and (max-width: 767px) {
     #about,
     section.expArea,
+    section.teamArea ul,
+    section.worksArea h2,
     section.contactArea,
     footer > div{
         max-width: /*728px*/600px; padding: 70px 3%; margin: 0 auto;
