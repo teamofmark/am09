@@ -179,14 +179,14 @@
     /* ? worksArea Fin */
     
     section.talkArea{
-        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0;
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px /*0*/3%;
         text-align: center;
     }
     section.talkArea h2{
         display: none;
     }
     section.talkArea p{
-        max-width: /*770px*/ 728px; margin: 0 auto 45px; color: white; padding-top: 70px;
+        max-width: /*728px*/600px; margin: 0 auto 45px; color: white; padding-top: 70px;
         background: url("../images/quote.png") no-repeat center top;
         font-size: 16px; line-height:26px; font-weight: 400;
     }
@@ -200,7 +200,7 @@
         font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
     }
     section.talkArea div{
-        max-width: /*940px*/ 728px; margin: 0 auto;
+        max-width: /*728px*/600px; margin: 0 auto;
     }
     section.talkArea div > *{
         display: inline-block; vertical-align: middle;
@@ -209,7 +209,8 @@
         font-size: 22px; color: #9f9f9f;
     }
     section.talkArea div ul{
-        max-width: 310px; width: /*33%*/40%;
+        max-width: 310px; width: /*40%*/ 80%;
+        /* ! 5열유지상태로는 mobile사용이 거의 불가능함. -> script로 처리 = 5열 ->3열 상태로 변환 */
     }
     section.talkArea div ul:after{
         content: ''; display: block; clear: both;
