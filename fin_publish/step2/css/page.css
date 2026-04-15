@@ -30,5 +30,31 @@
     header + nav .slideNav ul li a.active{
         color: #343e5c;
     }
+    header + nav .slideNav input[type='search']{
+        width: 17.44%; margin-left: 2.56%; padding: 20px 2% 20px 4%; box-sizing: border-box;
+        border-width: 0 1px; border-style: none solid; border-color: #f0f2f7;
+        background: url('../images/bul_search.png') no-repeat 10% center;
+        font-family: inherit; font-weight: 600; font-size: 14px;
+    }
+    header + nav .slideNav input[type='search']::placeholder{
+        color: #a1a7bd;
+    }
+    /* ?sliderNav Fin */
+    
+    section.slideArea{
+        background-color: #1c1e23; margin-bottom: 50px;
+    }
+    section.slideArea h2{
+        display: none;
+    }
+    section.slideArea > div{
+        max-width: 1400px; margin: 0 auto; position: relative;
+    }
+    section.slideArea > div > a{
+        display: block; width: 42px; padding: 10px 0 14px; font-size: 18px; color: white;
+        font-weight: 600; border: 2px solid rgba(255,255,255,0.2); text-align: center;
+        border-radius: 24px; position: absolute;
+    }
+
 }
 /* desktop */
