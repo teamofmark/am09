@@ -194,11 +194,39 @@
     .contentArea aside fieldset:not(:last-of-type){
         padding: 60px 0 20px;  margin-bottom: 30px;
     }
-    
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 33px; /*? legend 영점 */
+    }
 
     .contentArea aside fieldset legend{
         font-size: 11px; font-weight: 700; color:#343e5c; padding: 0 7% 15px; box-sizing: border-box;
         border-bottom: 1px solid red; width: 100%; text-transform: uppercase; position: relative; top: 33px;
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    
+    .contentArea aside fieldset label{
+        font-size: 13px; color: #343e5c; font-weight: 500; display: inline-block; box-sizing: border-box;
+        line-height: 20px; padding-left: 25%;
+    }
+    .contentArea aside fieldset span{
+        width: 18%; display: inline-block; text-align: center; font-size: 11px; color: #b8bfd3; font-weight: 400;
+        line-height: 20px;
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 80%;
+    }
+    .contentArea aside fieldset input[type='radio']+label:not([for*='dlvr']){
+        background: url('../images/off_radio.png') no-repeat 9.3% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked+label{
+        background-image: url('../images/on_radio.png');
     }
     /* 
         ! legend 배치
