@@ -158,7 +158,7 @@
         width: 23.07%; float: left;
     }
     .contentArea aside nav{
-        background-color: white;
+        background-color: white; border-radius: 5px; margin-bottom: 30px;
     }
     .contentArea aside nav ul li,
     .contentArea aside nav ul li a{
@@ -177,6 +177,38 @@
     .contentArea aside nav ul > li:hover > a:after{
         transform: rotate(0deg);
     }
+    .contentArea aside nav ul > li ol{
+        background-color: #f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size: 0px; font-weight: 600; color: #a1a8bd; padding: 0 7%; opacity: 0;
+        transition: all .3s ease-out;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size: 11px; padding: 15px 7%; opacity: 1; border-bottom: 1px solid #dfe4ee;
+    }
+    /* ? aside Menu Fin */
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 60px 0 20px;  margin-bottom: 30px;
+    }
+    
+
+    .contentArea aside fieldset legend{
+        font-size: 11px; font-weight: 700; color:#343e5c; padding: 0 7% 15px; box-sizing: border-box;
+        border-bottom: 1px solid red; width: 100%; text-transform: uppercase; position: relative; top: 33px;
+    }
+    /* 
+        ! legend 배치
+        * 1. legend 실제 높이 구하기 (fontsize,padding,border...)
+        * 2. 1번높이의 절반(13.5 -> 13)이 곧 fieldset 상단 선 기준 top 0의 수치.
+        * 3. 그 상태에서 psd의 fieldset 상단선과 legend사이 간격인 20을 가산하면 33px. 이게 top position 값.
+        * 4. relative 좌표가 발생한 상태라 부모 높이의 변화가 없음으로 부모의 padding-top은 저 둘의 합산을 적용
+        ? 마지막 fieldset 같은 경우 legend 의 영점인 top 33px을 기준으로 내리면 "T" 라인을 만들수 있음.
+        ! 만약 가감이 필요할 경우 5배수 관계로 이동하되 잔여부분은 짝수화 하여 정리하면 끝.
+    */
 
     .contentArea section{
         margin-left: 2.56%; width: 74.37%; float: left;
