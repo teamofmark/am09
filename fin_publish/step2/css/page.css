@@ -154,5 +154,32 @@
         text-align: right;
     }
     /* ? sortBar Fin */
+    .contentArea aside{
+        width: 23.07%; float: left;
+    }
+    .contentArea aside nav{
+        background-color: white;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; color:#343e5c; font-weight: 600; padding: 15px 7%;
+    }
+    .contentArea aside nav ul > li > a:after{
+        content: url('../images/bg_arrow.png'); float: right; transform:  rotate(-90deg);
+        transition: transform 0.5s ease-out;
+    }
+    .contentArea aside nav ul > li:hover > a:after{
+        transform: rotate(0deg);
+    }
+
+    .contentArea section{
+        margin-left: 2.56%; width: 74.37%; float: left;
+    }
 }
 /* desktop */
