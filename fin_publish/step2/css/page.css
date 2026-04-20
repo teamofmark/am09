@@ -303,5 +303,17 @@
     .contentArea section ul li:not(:nth-child(5)) figure figcaption dl dd:last-of-type{
         font-size: 14px; color: #343e5c; font-weight: 600;
     }
+    .contentArea section ul li:nth-child(5) figure img{
+        border-radius: 5px 5px 0 0;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption{
+        position: relative; padding: 15px 45% 15px 4.38%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption dl dd:last-of-type{
+        position:absolute; left: 2.19%; top: -290px; background-color: black; color: white;
+        font-weight: 600; font-size: 12px; padding: 5px 8px; border-radius: 5px;
+        letter-spacing: 1px;
+    }
+    /* todo. 5번 bp. 우측에 버튼 만들어보기 */
 }
 /* desktop */
