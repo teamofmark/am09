@@ -315,5 +315,44 @@
         letter-spacing: 1px;
     }
     /* todo. 5번 bp. 우측에 버튼 만들어보기 */
+    .contentArea section ul li:nth-child(5) figure figcaption span{
+        position: absolute; right: 4.38%; top: 20px; width: 40%;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a{
+        display: block; width: 50%; float: left; text-align: center; line-height: 30px;
+        border: 2px solid #f0f2f7; box-sizing: border-box; font-size: 11px; color: #3a405b;
+        font-weight: 600; text-transform: uppercase;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:first-of-type{
+        border-radius: 17px 0 0 17px;
+    }
+    .contentArea section ul li:nth-child(5) figure figcaption span a:last-of-type{
+        border-radius: 0 17px 17px 0; border-left: none;
+    }
+    .contentArea section ul li:nth-child(11){
+        position: relative; background-color: transparent; overflow-y: hidden;
+    }
+    .contentArea section ul li:nth-child(11) figure figcaption dl{
+        position: absolute; left: 0; top: 40px; width: 100%; box-sizing: border-box;
+    }
+    .contentArea section ul li:nth-child(11) figure figcaption dl dd:nth-child(2){
+        display: none;
+    }
+    .contentArea section ul li:nth-child(11) figure figcaption dl dd{
+        color: rgba(28,30,35,0.5) !important;
+        /* 
+            ! !important : css 모든 우선권 무시 및 탈취. -> 위험함.
+            ? 내가 입력하는 css가 환경으로인해(plugin,유지보수해야하는 상황,원본코드를 수정할수 없는 상황..)
+        */
+    }
+    /* ? contentSection 완성 */
+    /* todo. bestArea 처리 직접해보기. */
+    /* 
+        1. global guide 잡기
+        2.  section 설정 ( 배경, 굴곡도, 마진, 정렬 등)
+        3. li 들 설정 (float하기, border처리 등)
+        4. img 늘어나고 줄어들수 있게 설정 해두기
+        5. 글자(dt,dd,del) 정리 하기
+    */
 }
 /* desktop */
