@@ -410,5 +410,27 @@
     section.tosayArea div ul li:not(:first-child){
         margin-left: 8%;
     }
+    section.tosayArea div ul li figure{
+        margin-bottom: 20px;
+    }
+    section.tosayArea div ul li figure:after{
+        content: ''; display: block; clear: both;
+    }
+    section.tosayArea div ul li figure img{
+        float: left; display: block; width: 15%;
+    }
+    section.tosayArea div ul li figure figcaption{
+        float: left; margin-left: 7%; width: 78%;
+    }
+    section.tosayArea div ul li figure figcaption dl dt{
+        font-size: 14px; color: #3a405b; font-weight: 500; line-height: 20px; margin-bottom: 5px;
+    }
+    section.tosayArea div ul li figure figcaption dl dd{
+        font-size: 14px; font-style: italic; color: #b9bed1;
+    }
+    section.tosayArea div ul li p{
+        font-size: 16px; color: #3a405b; line-height: 24px;
+    }
+    /* ? tosayArea Fin */
 }
 /* desktop */
