@@ -1,0 +1,46 @@
+/* 
+    display: flex; = 부모요소가 flexBox상태가 되고 자손요소들이 flexItem으로 변함. = 부모통제
+*/
+.flexContainer{
+    margin: 10px; padding: 15px; border-radius: 25px; background-color: #a4a4a4;
+    display: flex;
+}
+.flexContainer .flexItem{
+    margin: 10px; padding: 20px; color: white; text-align: center; border-radius: 25px;
+    background-color: black;
+}
+.flexContainer.test{
+    width: 48%; display: inline-flex; box-sizing: border-box;
+}
+.flexContainer.direction{
+    flex-direction: column-reverse;
+    /* 
+        ? -direction : 
+        * flexContainer의 주축(mainAxis)방향을 설정한다.
+        row(ltr), row-reverse(rtl), column(TopTobottom), column-reverse(BottomToTop)
+    */
+}
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse;
+    /* 
+        ?-wrap
+        * flexContainer의 width보다 flexItem들의 width 총합이 큰 경우 한 줄로 나오게 할 것인지, 여러줄로 나오게 할 것인지 결정.
+        nowrap : 개행불허. 1행 모두 배치. default. flexItem width 가능한 범위까지 자동 축소.
+        wrap : 개행. item width 설정시 % 등 유동성단위, max or min 으로 원하는 타이밍 설정 가능.
+        wrap-reverse : 개행 하되 역배치.(위로 올라간다.)
+    */
+}
+.flexContainer.wrap .flexItem{
+    width: 500px;
+}
+.flexContainer.flow{
+    flex-flow: row wrap;
+    /* 
+    ? - flow :
+    * direction 과 wrap을 shorthand.
+    * <flex-direction> | <flex-wrap>;
+    */
+}
+.flexContainer.flow .flexItem{
+    width: 33.33%; max-width: 500px; min-width: 300px;
+}
