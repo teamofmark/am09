@@ -126,3 +126,39 @@
     center : flexContainer의 주축(중앙)으로 정렬
     baseline : 안의 컨텐츠(글자,이미지..)의 end기준으로 정렬.
 */
+
+.flexContainer.justifySelf{
+    width: 220px; display: grid; background-color: lightgreen;
+}
+.flexContainer.justifySelf .flexItem:first-of-type{
+    justify-self: stretch;
+}
+.flexContainer.justifySelf:hover .flexItem:first-of-type{
+    justify-self: center;
+}
+/* 
+    ? justify-self(자신):
+    * flexItem중 지정된 item에만 정렬 속성 적용.
+    stretch : 부모 공간 기준으로 자신의 너비를 꽉 채우기
+    flex-start : 부모 공간 기준으로 자신의 위치를 좌측으로 맞추기
+    flex-end : 부모 공간 기준으로 자신의 위치를 우측으로 맞추기
+    center : 부모 공간 기준으로 자신의 위치를 중앙으로 맞추기
+*/
+
+.flexContainer.alignSelf .flexItem:first-of-type{
+    align-self: center;
+}
+.flexContainer.alignSelf:hover .flexItem:first-of-type{
+    align-self: flex-start;
+}
+.flexContainer.alignSelf .flexItem:nth-of-type(2){
+    line-height: 80px;
+}
+/* 
+    ? align-self(자신):
+    * flexItem중 지정된 item에만 정렬 속성 적용.
+    stretch : item중 가장 높은 대상 기준으로 자신의 높이를 꽉 채우기
+    flex-start : item중 가장 높은 대상 기준으로 자신의 위치를 상단으로 맞추기
+    flex-end : item중 가장 높은 대상 기준으로 자신의 위치를 하단으로 맞추기
+    center : item중 가장 높은 대상 기준으로 자신의 위치를 중앙으로 맞추기
+*/
