@@ -53,7 +53,7 @@
 .flexContainer.justifyContent{
     justify-content: space-evenly;
     /* 
-        ? justify-content:
+        ? justify-content(부모기준):
         flexContainer의 main axis를 기준으로 flexItem을 수평(변경될수있음) 정렬한다.
         flex-start : flexitem들을 좌측 기준정렬.
         flex-end : flexitem들을 우측 기준정렬.
@@ -70,7 +70,7 @@
     justify-content: space-between;
     align-content: space-between;
     /* 
-        ? align-content
+        ? align-content(부모기준):
         flexContainer의 cross axis(y축=변경가능)를 기준으로 flexitem들을 수직정렬한다.
         stretch : cross start - end까지 꽉찬 높이
         flex-start : flexItem 행간 없이 위로 정렬.
@@ -82,6 +82,47 @@
         space-evenly : 부모공간 상단,하단, 내부 flexitem들 사이의 모든 간격을 균등하게 배분.
     */
 }
-.flexContainer.alignContent .flexItem{
+/* .flexContainer.alignContent .flexItem{
     width: 33.33%; max-width: 300px; min-width: 150px;
+} */
+.flexContainer.justifyItems{
+    background-color: yellow;
+    display: grid;
+    width: 300px;
+    justify-items: stretch;
 }
+.flexContainer.justifyItems:hover{
+    justify-items: center;
+}
+/* 
+    ? justify-items(아이템들=대상들):
+    * flexItem을 parent width 기준으로 flexContainer의 수평 방향으로 정렬.
+    * justify-items 속성은 모든 flexItem들이 적용 받음.
+    stretch : cross start에서  end까지 꽉찬 너비.
+    flex-start : cross start 기준(좌)으로 정렬
+    flex-end : cross End 기준(우)으로 정렬
+    center : flexContainer의 주축(중앙)으로 정렬
+*/
+.flexContainer.alignItems{
+    background-color: orange;
+    align-items: baseline;
+}
+.flexContainer.alignItems:hover{
+    align-items: center;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+/* 
+    ? align-items(아이템들=대상들):
+    * flexItem을 content(items) height를 기준으로 flexContainer의 수직 방향으로 정렬.
+    * align-items 속성은 모든 flexItem들이 적용 받음.
+    stretch : cross start에서  end까지 꽉찬 높이.
+    flex-start : cross start 기준(좌)으로 정렬
+    flex-end : cross End 기준(우)으로 정렬
+    center : flexContainer의 주축(중앙)으로 정렬
+    baseline : 안의 컨텐츠(글자,이미지..)의 end기준으로 정렬.
+*/
