@@ -53,7 +53,7 @@
 .flexContainer.justifyContent{
     justify-content: space-evenly;
     /* 
-        justify-content:
+        ? justify-content:
         flexContainer의 main axis를 기준으로 flexItem을 수평(변경될수있음) 정렬한다.
         flex-start : flexitem들을 좌측 기준정렬.
         flex-end : flexitem들을 우측 기준정렬.
@@ -63,4 +63,25 @@
         space-around : 모든 flexitem의 처음,마지막 사이를 동일간격으로 정렬. 외 나머지 배분(safefyPad)
         space-evenly : 부모공간 좌,우측과 내부 flexitem들 사이의 모든 간격을 균등하게 배분.
     */
+}
+.flexContainer.alignContent{
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    /* 
+        ? align-content
+        flexContainer의 cross axis(y축=변경가능)를 기준으로 flexitem들을 수직정렬한다.
+        stretch : cross start - end까지 꽉찬 높이
+        flex-start : flexItem 행간 없이 위로 정렬.
+        flex-end : flexItem 행간 없이 아래로 정렬.
+        center: flexItem 행간없이 중앙 정렬.
+        ? 공간배치 3형제
+        space-between : flexitem 1행은 상단, 마지막행은 하단. 나머지 동일 간격 배분.
+        space-around : 모든 flexitem의 1행,마지막 행 사이를 동일간격으로 정렬. 외 나머지 배분(safefyPad)
+        space-evenly : 부모공간 상단,하단, 내부 flexitem들 사이의 모든 간격을 균등하게 배분.
+    */
+}
+.flexContainer.alignContent .flexItem{
+    width: 33.33%; max-width: 300px; min-width: 150px;
 }
