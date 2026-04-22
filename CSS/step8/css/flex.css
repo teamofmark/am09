@@ -44,3 +44,23 @@
 .flexContainer.flow .flexItem{
     width: 33.33%; max-width: 500px; min-width: 300px;
 }
+.flexContainer[class$='Content']{
+    padding: 0;
+}
+.flexContainer[class$='Content'] .flexItem{
+    margin: 0;
+}
+.flexContainer.justifyContent{
+    justify-content: space-evenly;
+    /* 
+        justify-content:
+        flexContainer의 main axis를 기준으로 flexItem을 수평(변경될수있음) 정렬한다.
+        flex-start : flexitem들을 좌측 기준정렬.
+        flex-end : flexitem들을 우측 기준정렬.
+        center : flexitem들을 가운데 기준정렬.
+        ? 공간배치 3형제
+        space-between : flexitem 1번은 좌측, 마지막번은 우측. 나머지 동일 간격 배분.
+        space-around : 모든 flexitem의 처음,마지막 사이를 동일간격으로 정렬. 외 나머지 배분(safefyPad)
+        space-evenly : 부모공간 좌,우측과 내부 flexitem들 사이의 모든 간격을 균등하게 배분.
+    */
+}
