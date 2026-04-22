@@ -162,3 +162,17 @@
     flex-end : item중 가장 높은 대상 기준으로 자신의 위치를 하단으로 맞추기
     center : item중 가장 높은 대상 기준으로 자신의 위치를 중앙으로 맞추기
 */
+
+.flexContainer.orderItem .flexItem.order1{
+    background-color: lightgreen; color: forestgreen; font-weight: bold; order: 1;
+}
+.flexContainer.orderItem .flexItem.order2{
+    background-color: lightpink; color: deeppink; font-weight: bold; order: 2;
+}
+.flexContainer.orderItem .flexItem.order3{
+    background-color: lightblue; color: midnightblue; font-weight: bold; order: -1;
+}
+/* 
+    ? order :
+    flexContainer의 flexItem을 0(default)을 기본으로 낮은 수(음수가능)일수록 앞으로, 높은 수일수록 뒤로.
+*/
