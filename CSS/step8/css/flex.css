@@ -176,3 +176,77 @@
     ? order :
     flexContainer의 flexItem을 0(default)을 기본으로 낮은 수(음수가능)일수록 앞으로, 높은 수일수록 뒤로.
 */
+.flexContainer.flexShortHand{
+    width: 50%;
+    /* max-width: 300px; */
+    margin: 0; padding: 0;
+}
+.flexContainer.flexShortHand .flexItem{
+    word-break: break-all; margin: 0; padding: 0;
+}
+.flexContainer.flexShortHand .flexItem:first-child{
+    /* ? 팽창비 */
+    /* flex-grow: 2; flex-basis: 0; */
+    /* ? 수축비 */
+    flex-shrink: 2; flex-basis: 150px;
+}
+.flexContainer.flexShortHand .flexItem:first-child~*{
+    /* ? 팽창비 */
+    /* flex-grow: 1; flex-basis: 0; */
+    /* ? 수축비 */
+    flex-shrink: 1; flex-basis: 150px;
+}
+/* 
+    ? -grow(팽창비율) = 현재상황 2:1:1
+    ! item의 증가비율을 정한다. default: 0 = 빈 공간을 알아서 확장하여 채우지 않는다.
+    ! 음수 비허용. 양수 입력시 '총 증가 내부팽창지수(grow합산)의 너비중 입력된 비율만큼의 너비를 갖게 됨.
+    ! 통제가 필요하다면 max-width로 설정 할 수 있다.
+    * 팽창비 공식 : basis+(컨테이너너비/총증가내부팽창지수)*아이템비
+    ?ex > 만약 전체 너비(300px)의 item 3개에 개별적 grow가 부여되었을 때
+    todo. .flexItem:first-child{flex-grow: 2;} -> 0(basis) + (300/4)*2 = 150.
+    todo. .flexItem:first-child~*{flex-grow: 1;} -> 0(basis) + (300/4)*1 = 75.
+    ? 4? = 2:1:1 -> 2+1+1 ->4.
+
+    ? -shrink(수축비율) = 현재상황 2:1:1
+    ! 기준되는 부모가 줄어들 때 혹은 부모의 너비보다 아이템들 너비의 총합이 초과되었을 때 수축비를 정한다. default = 1.
+    ! 음수 비허용. 양수 입력시 '총 내부수축지수'(shrink합산)의 너비중 입력된 비율만큼 수축될 수 있다.
+    ! 통제가 필요하다면 min-width로 설정 할 수 있다.
+    * 수축비 공식 : basis - (각너비/총내부수축지수)*아이템비
+    ?ex > 만약 수축중(or 완료)인 부모너비가 300px인데, item3개 너비(150)의 총합은 450인 상태의 수축비는
+    todo. .flexItem:first-child{flex-shrink: 2;} -> 150(basis) - (150/4)*2 = 75.
+    todo. .flexItem:first-child~*{flex-shrink: 1;} -> 150(basis) - (150/4)*1 = 112.5.
+
+    ? -basis = item의 너비를 정하는데, 기본 값(defaultValue)은 auto.
+    * auto = 안의 컨텐츠 길이만큼 너비가 늘어남.
+
+    ? -shorhand : <-grow> | <-shrink> | <-basis>
+
+    flex: none;
+    flex-grow:0; flex-shrink:0; flex-basis:auto; 상태가 된다.
+
+    flex: <flex-grow>
+    flex-shrink:1; flex-basis:0; 상태가 된다.
+
+    flex: <flex-basis>
+    flex-grow:1; flex-shrink:1; 상태가 된다.
+
+    flex: <flex-grow> <flex-shrink>
+    flex-basis:0; 상태가 된다.
+
+    flex: <flex-grow> <flex-basis>
+    flex-shrink:1; 상태가 된다.
+
+    flex: <flex-grow> <flex-shrink> <flex-basis>
+    생략한 속성 없음.
+
+    todo 자주 사용되는 형식
+    1. flex: 0 1 auto; : 확장비는 존재 하지 않고 (남은공간을 채우지 않는다.), 수축만 일어나며 컨텐츠의 너비만큼 너비가 설정된다.
+    2. flex: none; : 확장비, 수축비 모두 존재하지 않는다.(남은공간을 채우지도 수축도 일어나지 않는다.)  컨텐츠의 너비만큼 너비가 설정된다.
+    3. flex: auto; : 1 1 auto 와 같다. 확장비, 수축비 모두 컨텐츠 갯수만큼 비율로 분배되어 갖게 되고, 컨텐츠의 너비만큼 너비가 설정된다.
+    !만약 그 너비가 컨텐츠 보다 작을땐 item이 container의 너비를 넘는다. (스크롤바 발생) word-break : break-all 로 제어.
+
+
+    ! 모든 항목에서 알아둬야할 사항.
+    ! 1. 플렉스 아이템의 크기가 각자 다른 경우 남은공간은 균등하게 분배되지 않고 플렉스 아이템 크기에 정비례하여 분배 된다.
+    ! 2. container 와 item에 적용된 margin,padding의 영향으로 오차가 발생 될 수 있다.
+*/
