@@ -9,7 +9,7 @@
 	4. 게임등에서 기록되는 레코드나 데이터(에너지 등)를 저장.
 	5. 쇼핑몰 장바구니의 상품목록 등 저장.
 	6. 게시판 목록 등.
-	
+    
 	주의사항
 	1. 숫자로 시작 할 수 없다. ( 에러가 나는 브라우저가 있다. )
 	2. 대,소문자를 구분한다. ( 전혀 다른 변수가 된다. )
@@ -58,3 +58,36 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// ? 변수 만들기 var(선언) 변수이름 = 담길 값(의무아님); = 선언된 후 값으로 초기화. -> var(선언) 변수이름; 선언.
+var userName = "Mark";
+var userAge = 99;
+function printLog(){
+    console.log(userName,userAge);
+}
+// case. 1 콤마로 구분 하며 선언 및 초기화 하기
+var radius = 10, pi = 3.14159265;
+
+// case. 2 콤마로 구분 하며 선언
+var radius2,pi2; //! 변수를 선언만 한다는 것은 undefined 자료유형 상태가 된다.
+radius2 = 1;
+pi2 = 3.14;
+
+// case. 3 변수의 특성 = 동일한이름의 변수 생성 하지 말 것. 하나의 변수 흐름을 계속 유지시켜야됨.
+var cup = 'Coffee'; //? 빈컵을 만들고 커피를 담았다.
+cup = 'Green Tea'; //? 컵에 담긴 커피를 버리고 녹차를 담았다.
+cup = 'Water'; //? 컵에 담긴 녹차를 버리고 물을 담았다.
+
+// case. 4 연산자 사용시
+var numbValue = 10;
+// ? numbValue = numbValue + 20; 만약 numbValue에 20을 더하다.
+numbValue += 20; //? 복합대입연산자사용시
+
+// todo. 자신의 나이를 변수에 담고 출력하되 20년 뒤 나이를 연산하여 문장으로 출력해보기.
+var cliName = "Mark";
+console.log("나의 이름은 " + cliName + " 다.");
+var cliAge = 99;
+console.log("현재 나이는 " + cliAge + " 세 이고,");
+// 현재나이 문장 출력 - 현재 나이는 [값] 세이고,
+cliAge += 20;
+console.log("20년 뒤에는 " + cliAge + "세 이다.");
+// 20년뒤 나이 문장 출력 - 20년 뒤에는 [연산된 값] 세 이다.
