@@ -33,3 +33,23 @@ function testTypeof(){
     var favorNumber = 1;
     console.log(typeof(favorNumber));
 }
+// case.2 자신의 영어이름을 engName 변수에 담아 자료형을 check.
+function textTypeof(){
+    var engName = "Mark";
+    console.log(typeof(engName));
+}
+// case.3 현재 자신이 춥다(true), 춥지않다(false)를 cold 변수에 담아 자료형을 check.
+function check1(){
+    var cold = false;
+    console.log("추위를 느끼고 있나?" + cold + "("+typeof(cold)+")");
+}
+// case.4 obj변수에 객체를 담을 예정이라 null로 초기화하고 자료형을 check.
+function check2(){
+    var obj = null;
+    console.log("obj에 담긴값의 자료유형은" + typeof(obj) + "입니다.");
+}
+// case.5 test 변수를 선언하고 초기화하지 않은 상태에서 자료형을 check.
+function check3(){
+    var test;
+    console.log("초기화 하지않은 변수의 자료유형은 " + typeof(test) + " 입니다.");
+}
