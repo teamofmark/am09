@@ -123,3 +123,21 @@ function todo3(){
     var result = test.toString(); // todo. 
     console.log(typeof(result) + " = " + result); //! string = 100
 }
+// todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기.
+// todo. 2-1 parse 형변환
+function todo4(){
+    var test = "100.51";
+    var result = parseInt(test) + 150 + parseInt("20"); // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270
+}
+function todo5(){
+    var test = "100.51";
+    var result = parseFloat(test) + 150 + parseInt("20"); // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270.51
+}
+// todo. 2-2 Number 형변환
+function todo6(){
+    var test = "100.51";
+    var result = Number(test) + 150 + Number("20"); // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270.51
+}
