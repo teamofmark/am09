@@ -103,9 +103,69 @@ function avgScore(){
     } else{
         alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼');
     }
-
     /* 
         todo
         1. 90~99 : 수, 80~89 : 우, 70~79 : 미, 60 ~69 : 양, 60미만 : 가. = alert으로 출력되게 만들기
     */
+}
+// case. 5 사용자 아이디를 입력받아 맞다면(가상의 아이디와 일치하는지) 승인 메시지 출력.
+function userIDCheck(){
+    var userID = prompt("사용자의 아이디");
+    if(userID == "Mark"){
+        alert("비밀번호 입력 페이지로 이동합니다.");
+    }else{
+        alert("잘못된 ID입니다.");
+    }
+}
+/*
+const axios = require('axios');
+axios.get('/user?ID=Mark')
+    .then(function (response){
+        console.log(response);
+    }) //? 성공
+    .catch(function (error){
+        console.log(error);
+    }) //? 오류
+    .finally(function (){
+        // ? 반복적으로 오류가 났을때 그림퍼즐 맞추기 api...등등.. = 항시실행영역
+    });
+*/
+// todo. 사용자 id "Mark"와 password "1234"를 입력받고 둘 다 맞을 경우에만 승인 메시지 출력.
+    // todo. 성공 메시지 : "Mark님으로 확인되었습니다."; -> 변수를 당겨서 [userID]님으로 확인되었습니다.
+    // todo. 오류 메시지 : "ID 혹은 Password가 틀렸습니다."
+function userInfoCheck(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 패스워드");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark 님으로 확인되었습니다.");
+    }else{
+        alert("ID 혹은 Password가 틀렸습니다.");
+    }
+}
+function userInfoCheck1(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 패스워드");
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID혹은 Password가 틀렸습니다.");
+    // ? (조건식)?(참일경우):(거짓일경우);
+}
+// todo. 사용자 id "Mark"와 password "1234"의 정보가 틀린 경우  틀린 정보에 대한 오류메시지 출력. 
+    // todo. 성공 메시지 : "Mark님으로 확인되었습니다.".
+    /*
+        todo.
+        오류메시지.1 : 모든 정보가 맞지 않습니다.
+        오류메시지.2 : 아이디가 존재하지 않습니다.
+        오류메시지.3 : 비밀번호가 틀렸습니다.
+    */
+function userInfoCheck2(){
+    var userID = prompt("사용자의 아이디");
+    var userPW = prompt("사용자의 패스워드");
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark 님으로 확인되었습니다.");
+    }else if(userID!="Mark"&&userPW!="1234"){
+        alert("모든 정보가 맞지 않습니다.");
+    }else if(userID!="Mark"){
+        alert("아이디가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        alert("비밀번호가 틀렸습니다.");
+    }
 }
