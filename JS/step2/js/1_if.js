@@ -92,7 +92,18 @@ function avgScore(){
     console.log(typeof(avg) + " : " + avg);
     if(avg > 100 || avg < 0){
         alert("점수를 똑바로 입력하세요.");
+    }else if (avg >= 90) {
+        alert('평균' + avg + '점 \n' + '수 입니다. 특급이구먼');
+    } else if (avg >= 80) {
+        alert('평균' + avg + '점 \n' + '우 입니다. 우수하구먼');
+    } else if (avg >= 70) {
+        alert('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼');
+    } else if (avg >= 60) {
+        alert('평균' + avg + '점 \n'  + '양 입니다. 망했구먼');
+    } else{
+        alert('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼');
     }
+
     /* 
         todo
         1. 90~99 : 수, 80~89 : 우, 70~79 : 미, 60 ~69 : 양, 60미만 : 가. = alert으로 출력되게 만들기
