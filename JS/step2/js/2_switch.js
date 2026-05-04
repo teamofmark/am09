@@ -17,3 +17,18 @@ break는 switch 전유가 아님. 아무데나 쓸수 있음.
 
 default : 위 case에 걸리지 못한 값 (예외처리)일 때  실행 되는 부분
 */
+// case.1 기본문법
+function switchGrammar(){
+    var input = Number(prompt("숫자만 입력"));
+    switch (input %2) {
+        case 0:
+            alert("짝수입니다");
+            break;
+        case 1:
+            alert("홀수 입니다.");
+            break;
+        default:
+            alert("숫자가 아닙니다.");
+            break;
+    }
+}
