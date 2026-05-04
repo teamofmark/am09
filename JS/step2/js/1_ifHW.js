@@ -14,4 +14,5 @@ function btnMouseEx(){
     }else{
         document.write("올바른값을 입력하세요.");
     }
+    // todo. 결과론 적으로 if x 1 / else x 1로 처리가능.
 }
