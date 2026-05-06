@@ -32,3 +32,53 @@ function switchGrammar(){
             break;
     }
 }
+// case.2 lotto과제를 switch로 변경.
+function lotto(){
+    var numbValue = prompt("입력하실 번호는?");
+    switch (numbValue) {
+        case "1":
+            alert("1등 10억!");
+            break;
+        case "2":
+            alert("2등 5천만원!");
+            break;
+        case "3":
+            alert("3등 300만원!");
+            break;
+        default:
+            alert("낙첨되었습니다.");
+            break;
+    }
+}
+// todo. switch문을 이용한 계산기
+// ? 첫번째 숫자와 연산자, 그리고 두번째 숫자를 입력받아 계산해주는 계산기
+function calculator(){
+    /*
+        todo.
+        1. 함수실행시 첫 번째 숫자를 입력받는 프롬프트 출력.
+        2. 첫 번째 숫자를 입력하면 연산자를 입력받는 프롬프트 출력.(단, % 나머지 연산자 제외 = 사칙연산만)
+        3. 연산자 입력하면 두 번째 숫자를 입력받는 프롬프트 출력.
+        4. 1,2,3 모두가 입력되면 수식과 답을 console에 출력. ( ex> 10+10 = 20)
+    */
+    var firstNumb = Number(prompt('첫번째 숫자를 입력하세요.'));
+    var operator = prompt("연산자를 입력하세요");
+    var lastNumb = Number(prompt('두번째 숫자를 입력하세요.'));
+    
+    switch(operator){
+        case "+":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb + lastNumb));
+            break;
+        case "-":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb - lastNumb));
+            break;
+        case "x":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb * lastNumb));
+            break;
+        case "/":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb / lastNumb));
+            break;
+        default :
+            alert("올바른 연산자가 아닙니다.");
+            break;
+    }
+}
