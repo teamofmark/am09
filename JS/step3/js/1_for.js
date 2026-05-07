@@ -83,5 +83,40 @@ function favorFruit(){
 }
 // todo. 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
 function arrayTodo(){
-    
+    var data = ['변수','연산자','형변환','조건문if','조건문 switch','반복문 for'];
+    var swapNumb = '';
+    for(var i = 0; i < data.length; i++){
+        // swapNumb = i;
+        switch(i){
+            case 0:
+                swapNumb = '첫';
+                break;
+            case 1:
+                swapNumb = '두';
+                break;
+            case 2:
+                swapNumb = '세';
+                break;
+            case 3:
+                swapNumb = '네';
+                break;
+            case 4:
+                swapNumb = '다섯';
+                break;
+            case 5:
+                swapNumb = '여섯';
+                break;
+            default:
+                swapNumb = 'x';
+                break;
+        }
+        document.write(swapNumb+'번째 내용 = ' + data[i] + '<br>');
+    }
+}
+function arrayTodo2(){
+    var data = ['변수','연산자','형변환','조건문if','조건문 switch','반복문 for'];
+    var swapNumb = ["첫","두","세","네","다섯","여섯"];
+    for(var i = 0; i < data.length; i++){
+        document.write(swapNumb[i] + " 번째 내용 = " + data[i] + "<br>");
+    }
 }
