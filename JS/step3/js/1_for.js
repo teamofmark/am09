@@ -120,3 +120,34 @@ function arrayTodo2(){
         document.write(swapNumb[i] + " 번째 내용 = " + data[i] + "<br>");
     }
 }
+
+// case.6 역반복배열
+function reverseFavorFruit(){
+    var fruitArr = ['메론','딸기','포도','키위','복숭아'];
+    for(var i = fruitArr.length - 1; i >= 0; i--){
+        document.write(fruitArr[i],'<br>');
+    }
+}
+// case.7 continue 문
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i+"<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function continueEx(){
+    var text = '';
+    for(var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text = text +i;
+    }
+    console.log(text);
+}
+
+// todo. continue활용 - 1~10까지 더하되 홀수는 걸러내고 짝수만 더하게 만들기
+function runContinue(){
+
+}
