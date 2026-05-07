@@ -64,3 +64,24 @@ function answer3(){
         document.write((11- i ) + "<br>");
     }
 }
+// case. 4 * 10개가 찍힌 결과를 출력하자.
+function star10(){
+    var star = "";
+    for(var i = 0; i < 10; i++){
+        star += "*";
+    }
+    document.write("result = " + star);
+}
+// case. 5 자신이 좋아하는 과일 4개를 배열로 배치하고, alert으로 출력해라.
+function favorFruit(){
+    var array = ['메론','딸기','포도','키위','복숭아'];
+    // ? 배열(array) - data들이 저장되는 방. -> ex) ['data'(0),'data1'(1),'data2'(2)......];
+    // ! data는 입력 및 저장되는 순서대로 0 부터 증가되게 되어있다.
+    for(var i = 0; i < array.length; i++){
+        alert(array[i]);
+    }
+}
+// todo. 지금까지 배웠던 JS를 배열을 활용해 출력해보자.
+function arrayTodo(){
+    
+}
