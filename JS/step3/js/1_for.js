@@ -149,5 +149,67 @@ function continueEx(){
 
 // todo. continue활용 - 1~10까지 더하되 홀수는 걸러내고 짝수만 더하게 만들기
 function runContinue(){
-
+    var output = 0;
+    for (var i = 1; i <= 10; i++) {
+        //조건문
+        if (i % 2 == 1) {
+            /*
+                i가 홀수일 경우 반복 중지 다음반복수행, 현재 다음 반복은 없다.
+                (1 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (2 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                (3 을 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 다시 반복문으로
+                (4 를 2로 나눈 나머지가 1과 일치 할경우  다음 반복을 수행하라.) 이탈후 output += i; 실행
+                ..
+                이조건으로 i값이 10보다 작거나 같을때까지 수행하여 출력하라.
+            */
+            continue;                
+        }
+        output += i; //(2, 6, 12, 20, 30)
+        //출력
+        console.log(output);
+    }
+}
+// case. 8 break
+function forBreak(){
+    for(var i = 1; i <= 10; i++){
+        break;
+        document.write(i+"<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function breakEx(){
+    var i = 0;
+    while(i < 6){
+        if(i == 3){
+            break;
+        }
+        i = i + 1;
+    }
+    console.log(i);
+}
+// case. 9 break활용
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + "번째 반복문");
+        if(!confirm('계속할거냐?')){
+            break;
+        }
+    }
+}
+/* 
+todo. 배열값을 변화시키면 자동으로 반응하는 경고창.
+todo. console에 "n"번째 반복문이라는 메시지가 떠야하고
+todo. 이 "n"번째라고 하는건 배열의 갯수로 규정된다.
+todo. length를 사용하는 것이 아니라 무한루프 상태에서 (배열의 갯수만큼만 반복이 실행=조건) 된이후에 break.
+todo.  "지정된 배열값 : 6개. 출력 완료" 라는 출력완료 메시지가 document 에 발생.
+*/
+function runBreak2(){
+    var swapNumb = ['첫','두','세','네','다섯','여섯'];
+    for(var i = 0; true; i++){
+        console.log(swapNumb[i] + '번째 반복문');
+        if(i == swapNumb.length-1){
+            break;
+        }
+    }
+    document.write('지정된 배열값:' + swapNumb.length + '개. 출력완료'+ '<br>');
 }
