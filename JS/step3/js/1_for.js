@@ -213,3 +213,24 @@ function runBreak2(){
     }
     document.write('지정된 배열값:' + swapNumb.length + '개. 출력완료'+ '<br>');
 }
+
+// ! 다중 for
+// case.1 반절피라미드
+function halfPyramid(){
+    var star = '';
+    for(var i =1; i<=10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';
+        }
+        star += '<br>';
+    }
+    document.write(star);
+}
+// todo. 역반절피라미드
+function reverseHalfPyramid(){
+    
+}
+// todo. 완성형피라미드
+function pyramid(){
+
+}
