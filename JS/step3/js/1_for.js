@@ -278,3 +278,13 @@ function pyramidCustom(n){
         document.write(s+"<br>");
     }
 }
+
+// todo. 구구단 숫자를 입력받아 무한으로 출력하는 for문
+// ? 1. 숫자입력받을 prompt 출력
+// ? 2. 숫자를 입력 받으면 해당 구구단을 출력.
+function gugudan(){
+    var guguNumb = prompt('구구단 숫자를 입력. 숫자제한 없음.');
+    for(var i = 1; i <= 9; i++){
+        document.write(guguNumb + 'x' + i + '=' + guguNumb*i + '<br>');
+    }
+}
