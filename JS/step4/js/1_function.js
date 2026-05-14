@@ -62,7 +62,25 @@ function showInfo(){
 
 // case.5 함수 f(x)안에 넣는 값이 매개변수. 그럼 출력은?
 function f(x){
-    alert(x*x);
-    document.write(x*x);
-    console.log(x*x);
+    return (x*x);
 }
+/*
+console.log(f(9));
+document.write(f(9));
+alert(f(9));
+*/
+// case.6 arguments + return 혼합
+function sumAllEx(){
+    var willReturn = 0;
+    for (var i in arguments){
+        // var i = 0; i<arguments.length; i++
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// case.7 returnValue를 변수에 저장하고 전달하기
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+var value = sumReturn1(13,26);
