@@ -70,9 +70,18 @@ function sumNumb(){
     var i = 1; //? 카운트 변수
     var result = 0; //? 매턴 마다 결과 담기
     while(true){
-        var numb = prompt(i+"번째입력");
-
+        var numb = prompt(i+"번째입력");//? 무한 루프로 입력받기.
+        if(numb=="end"){ //? end 라는 값과 일치하면
+            alert('입력이 종료되었습니다.');
+            break; //? 루프 중단 및 종료alert 출력
+        }else if(numb.trim() === "" || isNaN(Number(numb))){
+            // ? trim() = 공백정리함수 - 앞,뒤 공백 싹 제거
+            // ? isNAN = 대상이 숫자가 아니면 true, 숫자면 false를 반환하는 함수
+            alert("입력된 값이 잘못되었습니다. 다시 입력하세요.");
+            continue;
+        }
         result += parseInt(numb);
+        document.write("현재까지의 총합 : " + result + "<br>"); //? 저장된 result 값을 출력.
         i++;
     }
 }
