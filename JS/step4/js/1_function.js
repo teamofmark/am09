@@ -181,3 +181,15 @@ document.write(div(20, 10) + "<br>");
 function calculator2(){
 
 }
+function add(){
+
+}
+function sub(){
+
+}
+function mul(){
+
+}
+function div(){
+
+}
