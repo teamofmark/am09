@@ -161,9 +161,23 @@ function calculator(op,numb1,numb2){
     }
     return result;
 }
+// todo. 위 예제에 추가로 사칙연산부분을 함수로 변환하여 보다 편하게 사용할 수 있게 만들기.
+/* 
+//* 실행구문
+document.write(calculator2("+", 20, 10) + "<br>"); -> 위 1번예제와 동일하게 작동됨.
+document.write(add(20, 10) + "<br>"); ->이하 나머지는 전용 연산자 함수
+document.write(sub(20, 10) + "<br>");
+document.write(mul(20, 10) + "<br>");
+document.write(div(20, 10) + "<br>");
+    //* 결과 
+    결과 = 30 -> 위 1번예제와 동일하게 작동된 결과
+    결과 = 30 ->이하 나머지는 전용 연산자 함수 결과
+    결과 = 10
+    결과 = 200
+    결과 = 2
 
-    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
-    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
-    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
-    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
-    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    todo. 큰 함수= calculator2가 작은함수들 add,sub,mul,div를 가져다 사용하게 만들기.
+*/
+function calculator2(){
+
+}
