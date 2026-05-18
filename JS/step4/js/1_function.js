@@ -84,3 +84,43 @@ function sumReturn1(num1,num2){
     return result;
 }
 var value = sumReturn1(13,26);
+// 함수실행 자체가 변수 내에서 이루어졌다. -> 해당함수는 리턴을 가지고있다. -> 변수내로 함수실행결과가온다.
+/*
+console.log(value);
+alert(value);
+document.write(value);
+*/
+// case. 8 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 출력하는 함수
+// ! 단, 입력값이 0이면 즉시 실행 중지.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(window.prompt('숫자만 입력해라.'));
+        if(value==0){
+            document.write('종료. ');
+            return;
+            //  return; -> 함수부 종료. break; -> 해당로직(loop)을 종료. = 반복문 밖의 구문이 실행.
+        }
+        sum += value;
+        document.write(count + ". " + sum + "<br>");
+        count++;
+    }
+    document.write("총 " + count + "번 실행함.");
+}
+// todo. 기존 구구단형태를 "x"단 출력 방식의 함수로 만들어보기
+function printGugudan(numb){
+    var data = '';// 1. 결과를 담을 변수.
+    for(var i = 2; i <= numb; i++){
+    // 2. 대기어 반복 -> ? <br>
+        data += i + "단 출력" + "<br>";
+        for(var m = 1; m <= numb; m++){
+        // 3. 소기어 반복 -> 연산반복
+            data += i + "x" + m + "=" + (i*m) +"<br>";
+        }
+        data += '<br>';
+    }
+    return data;
+    // 5. 실행된위치로 결과반환
+}
+document.write(printGugudan(15));
