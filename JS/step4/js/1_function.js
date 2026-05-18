@@ -123,4 +123,20 @@ function printGugudan(numb){
     return data;
     // 5. 실행된위치로 결과반환
 }
-document.write(printGugudan(15));
+// document.write(printGugudan(15));
+
+// case. 9 다음 실행 구문으로 전달받은 매개변수를 계산하여 결과로 출력하는 함수
+/*
+    //* 실행구문
+    document.write("1 결과 =" + calculator("+", 20, 10) + "<br>");
+    document.write("2 결과 =" + calculator("-", 20, 10) + "<br>");
+    document.write("3 결과 =" + calculator("*", 20, 10) + "<br>");
+    document.write("4 결과 =" + calculator("/", 20, 10) + "<br>");
+    document.write("5 결과 =" + calculator("%", 20, 10) + "<br>");
+    //* 결과 
+    결과 = 30
+    결과 = 10
+    결과 = 200
+    결과 = 2
+    결과 = 잘못된 연산자 입니다.
+*/
