@@ -251,3 +251,31 @@ $(document).ready(function(){
     $("#runEx11").click(welcome);
     // jquery libFunc = click 안에도 execute함수처럼 (); 매개변수이름뒤에 실행식이 있다는걸 알수있다.
 });
+
+// case.12 1초마다 매개변수 값으로 넘긴 익명함수 호출
+function loopStart(){
+    setInterval(function(){
+        document.write('hello');
+    },1000);
+}
+// case. 13 함수를 매개변수로 전달받아 반복호출하기 실습
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+function justFunction(){
+    document.write('hello..!');
+}
+// callFunctionTenTimes(justFunction);
+
+// case. 14 returnValue로 함수 사용하기
+function createHello(){
+    function hello(user){
+        document.write(user + "welcome!");
+    }
+    return hello;
+}
+var result = createHello();
+result("Mark");
+// todo. 왜 결과가 MarkWelcome! 이 나오는지 주석으로 정리해오기
