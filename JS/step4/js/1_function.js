@@ -243,3 +243,11 @@ function execute(func){
     3. 다만 함수를 실행하기위해서 매개변수 이름뒤에 실행구문을 붙혔다. ();
     4. 그렇기 때문에 execute(hi1)을 하면 안에 있는 func(); -> hi1();로 변환되어 실행된다.
 */
+// case.11 버튼 클릭시 매개변수 값으로 넘긴 함수 호출하기
+function welcome(){
+    alert("환영! 반갑.");
+}
+$(document).ready(function(){
+    $("#runEx11").click(welcome);
+    // jquery libFunc = click 안에도 execute함수처럼 (); 매개변수이름뒤에 실행식이 있다는걸 알수있다.
+});
