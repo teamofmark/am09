@@ -216,3 +216,30 @@ function div(numb1,numb2){
     var divResult = numb1 / numb2;
     return divResult;
 }
+// case. 10 함수를 변수에 담기
+function hello(name){
+    console.log(name+'환영합니다.');
+}
+var func = hello;
+/*
+    1. 함수이름을 썼다 = 함수 자체가 온다.
+    2. 변수 func에 함수 이름을 썼다 = 변수에 함수 자체가 담긴다.
+    3. 변수는 곧 함수 자체다.
+    4. 변수를 함수식(); 으로 사용하고 매개변수를 넣으면 함수가 가동된다.
+*/
+// case. 11 매개변수에 함수 넣기
+function hi1(){
+    console.log("Hello");
+}
+function hi2(){
+    console.log("안녕하세요");
+}
+function execute(func){
+    func();
+}
+/*
+    1. 10번에서도 알 수 있듯이 변수에는 함수를 담을 수 있다.
+    2. execute 함수매개변수 func에 hi1,hi2 등의 함수를 담을수 있다.
+    3. 다만 함수를 실행하기위해서 매개변수 이름뒤에 실행구문을 붙혔다. ();
+    4. 그렇기 때문에 execute(hi1)을 하면 안에 있는 func(); -> hi1();로 변환되어 실행된다.
+*/
