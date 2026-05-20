@@ -13,3 +13,31 @@
     * 남는 경우가 있는데 이 현상을 클로저(closure)라 부르고, 이 현상을 일으키는 함수를 클로저함수.
     * 5. 멤버함수 - 멤버함수는 클래스 내부에 만들어 지며 이를 보통 메서드(method)라고 함.
 */
+// ! 중첩 함수
+// ? 지역변수처럼 함수 내부에서만 활용하는 함수. 중복 코드나 코드그룹핑을 내부에서 처리해야될 경우.
+// case.1 1초에 한 번씩 인사하기
+function sayHi(){
+    var count = 0;
+    setInterval(function(){
+        count++;
+        document.write(count + '. hi <br>');
+    },1000);
+}
+// case.2 중첩함수 주의사항
+function innerFunctionTest(){
+    var a = 10;
+    var b = 20;
+    var c = 30;
+    function outerFunc(){
+        var b = 200;
+        var c = 300;
+        function innerFunc(){
+            var c = 3000;
+            console.log('1. a = ' + a); //? 실행시 자신과 가장 인접한 함수 내의 지역변수부터 찾는다.
+            console.log('2. b = ' + b);
+            console.log('3. c = ' + c);
+        }
+        innerFunc();//? 실행되어야만 innerFunc가 활성화
+    }
+    outerFunc(); //? 실행되어야만 outerFunc가 활성화
+}
