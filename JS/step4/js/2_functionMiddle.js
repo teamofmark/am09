@@ -41,3 +41,83 @@ function innerFunctionTest(){
     }
     outerFunc(); //? 실행되어야만 outerFunc가 활성화
 }
+// case.3 callBack 함수를 이용한 사칙연산기 만들기
+function calculatorCallBack(op,numb1,numb2,callBack){
+    var result = '';
+    switch(op){
+        case "+":{
+            result = add(numb1,numb2);
+            break;
+        }
+        case "-":{
+            result = sub(numb1,numb2);
+            break;
+        }
+        case "*":{
+            result = mul(numb1,numb2);
+            break;
+        }
+        case "/":{
+            result = div(numb1,numb2);
+            break;
+        }
+        default:{
+            result = '잘못된 입력값 입니다.';
+            break;
+        }
+    }
+    callBack(result);
+}
+function add(numb1,numb2){
+    return numb1 + numb2;
+}
+function sub(numb1,numb2){
+    return numb1 - numb2;
+}
+function mul(numb1,numb2){
+    return numb1 * numb2;
+}
+function div(numb1,numb2){
+    return numb1 / numb2;
+}
+function addPrint(value){
+    document.write('두 수의 합은' + value);
+}
+function subPrint(value){
+    document.write('두 수의 차는 ' + value);
+}
+function mulPrint(value){
+    document.write('두 수의 곱은' + value);
+}
+function divPrint(value){
+    document.write('두 수의 나누기는' + value);
+}
+/*
+1. calculatorCallBack 함수에 마지막 인자는 함수라는 약속을 정의 한다.
+2. calculatorCallBack 함수 맨 마지막에는 그 인자를 통해 들어온 함수 실행식이 준비됨.
+3. calculatorCallBack 함수 안에서 처리된 결과를 담은 변수인 result를 마지막 인자로 들어온 함수에 넣는다.
+4. 이렇게되면 외부에있던 addPrint라는 함수가 calculatorCallBack 함수내에서 실행이 되면서 동시에
+인자로 전달 받은 result를 사용할 수 있는 상태가 된다.
+= 이렇듯 함수내부에서 다른 함수를 인자로 불러와 자신의 매개변수를 넣어 실행하는 함수를 콜백함수라 한다. 
+*/
+// case.4 return 대신 callBack??
+// ? 그렇지 않다. 구현부와 처리부가 나눠져 있지 않은 형태일 때 단순 값은 return이 훨씬 편하다.
+/*
+function sum(numb1, numb2){
+    return numb1 + numb2;
+}
+var result = sum(10,20);
+document.write('두 수 합' + result);
+*/
+/*
+function sum(numb1,numb2,callBack){
+    var temp = numb1 + numb2;
+    callBack(temp);
+}
+function result(value){
+    document.write ('두 수 합' + value);
+}
+sum(10,20,result);
+*/
+// ! a->b->c->d 형태의 순차적 처리 방식의 함수 연결 이라면 return이 유리
+// ! a<->d / b<->a / c<->d / b<->c... 등의 서로 필요에 따라 처리 순서가 계속 바뀌는 함수 연결이라면 callBack
