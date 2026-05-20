@@ -271,11 +271,11 @@ function justFunction(){
 
 // case. 14 returnValue로 함수 사용하기
 function createHello(){
-    function hello(user){
+    function hello(user){ //? user 매개변수 생성하는 hello 함수 생성.
         document.write(user + "welcome!");
     }
-    return hello;
+    return hello; //? createHello 가 호출되는 곳으로 생성된 hello함수 return
 }
-var result = createHello();
-result("Mark");
+var result = createHello(); //? createHello 호출부기 때문에 hello 함수가 들어옴.
+result("Mark"); //? reuslt = hello 함수와 같음.
 // todo. 왜 결과가 MarkWelcome! 이 나오는지 주석으로 정리해오기
