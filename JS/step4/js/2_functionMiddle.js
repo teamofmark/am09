@@ -149,3 +149,59 @@ function async(){
     },3000);
     document.write("1. 동작과 상관없이 바로 실행." + '<br>');
 }
+// case.5 클로저(closer(x) / 클로슈어=closure)
+// ? 함수 내부에 만든 지역변수가 안죽고 계속해서 값을 유지하여 함수 자체를 강제로 견인하는 함수.
+// 일반함수
+function addCount(){
+    var count = 0;
+    count ++;
+    return count;
+}
+// 클로저사용시
+function createCount(){
+    var count = 0;
+    function addCount(){
+        count++;
+        return count;
+    }
+    return addCount;
+}
+var counter = createCount();
+/*
+    ? createCount 함수 호출과 동시에 지역변수 count = 0을 초기화 및 생성.
+    ? 이후 내부 함수 addCount를 생성. 그것 자체를 return 한 후 함수 종료.
+    ? 결국 counter();가 실행되면 addCount(); 함수가 실행되는 것과 같은 결과
+    ? 왜 안죽어?
+    ! createCount함수가 종료되더라도 내부함수인 addCount안에서 createCount의 지역변수인 count를 사용 중인 상태가 유지됨.
+    ! 이 상태에서 함수 "외부로 return 되기 때문에 해당 지역변수는 삭제되지 못하고 남아있으니(클로저현상) addCount(클로저함수)가 실행 될 때 마다 해당 지역변수는 계속 값을 갱신하게 된다.
+*/
+// case. 5-1 사용중인 함수를 리턴해야만 클로저는 아니다.
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start(); //? 1. start함수 실행.
+        document.write('count Start');
+    });
+});
+function start(){
+    var count = 0; //? 2. count변수 선언 및 초기화
+    setInterval(function(){
+        count ++; //? 3. start함수 내부 setInterval 함수가 start함수의 count 지역변수 사용중.
+        document.write(count); //? 4. 계속 증가되는(사용중인) count가 1초간격으로 출력.
+    },1000);
+}//? 5. start함수가 종료되어도 삭제되지 못하고 계속 유지되면서 count 값이 이어져간다.(closure)
+
+// case. 5-2 익명함수 클로저
+function outerFunction(name){
+    var output = 'Hello?' + name + '...!'; //? 1. outerFunction 함수 실행시 output변수 초기화 및 생성
+    return function(){//? 2. 익명함수를 outerFunction이 실행된 위치로 return.
+        return output; //? 3. 익명함수로 지역변수 output을 return(closure)
+    }
+}
+var first = outerFunction("JavaScript");
+var second = outerFunction("JQuery");
+/*
+    ! closure를 사용하면 좋은 점은?
+    * 연관성 있는 변수와 기능을 하나의 함수로 묶어 놓고 독립적으로 여러개(번)을 실행시킬 수 있다.
+    ? 함수 내부에 data가 만들어지기 때문에 함수 외부에서 수정할 수 없는 data를 생성하는것 역시 가능.
+    ? 대표적인 데이터 유형에는 민감한 개인정보 = privateData 등이 있다.
+*/
