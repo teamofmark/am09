@@ -7,6 +7,8 @@ $(document).ready(function(){
     justColor();
     // case.2
     $("#btnCheck").click(sayHello);
+    // case.3
+    $("#btnAddBorder").click(addBorder);
 });
 function justColor(){
     var $divs = $("div");
@@ -14,4 +16,7 @@ function justColor(){
 }
 function sayHello(){
     alert('Hello!');
+}
+function addBorder(){
+   $("#panel").css("border","5px solid black"); 
 }
