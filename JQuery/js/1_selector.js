@@ -9,6 +9,8 @@ $(document).ready(function(){
     $("#btnCheck").click(sayHello);
     // case.3
     $("#btnAddBorder").click(addBorder);
+    // todo
+    $("#btnTextChange").click(textChange);
 });
 function justColor(){
     var $divs = $("div");
@@ -19,4 +21,19 @@ function sayHello(){
 }
 function addBorder(){
    $("#panel").css("border","5px solid black"); 
+}
+function textChange(){
+    // todo 글자 크기(25px), 색상(green),굵기(bold),줄간(31px) 변경
+    /*
+    $("#panel2").css("font-size","25px");
+    $("#panel2").css("color","green");
+    $("#panel2").css("font-weight","bold");
+    $("#panel2").css("line-height","31px");
+    */
+    $("#panel2").css({
+        "font-size" : "25px",
+        "color" : "green",
+        "font-weight" : "bold",
+        "line-height" : "31px" 
+    });
 }
