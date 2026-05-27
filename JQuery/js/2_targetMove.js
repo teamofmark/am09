@@ -81,6 +81,22 @@ function keyControl(){
         }
         // todo 해당 원이 프레임 밖을 나갈 수 없도록 가두기.
         
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;
+        }
+    //    (currentXpos > 0)? $circle.css("left",currentXpos) : currentXpos = 0;
+    //    (currentYpos > 0)? $circle.css("top",currentYpos) : currentYpos = 0;
+    //    (currentXpos < 380)? $circle.css("left",currentXpos) : currentXpos = 380;
+    //    (currentYpos < 380)? $circle.css("top",currentYpos) : currentYpos = 380;
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos);
     });
