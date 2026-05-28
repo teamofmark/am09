@@ -1,6 +1,7 @@
 $(document).ready(function(){
     toggleCheck();
     toggleTodo();
+    tabUI();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -31,5 +32,14 @@ function toggleTodo(){
             $toggleTarget.text('visibility_off');
             $toggleInput.attr('type','password');
         }
+    });
+}
+// case.2
+function tabUI(){
+    var $tabBtn = $(".tabMenu li");
+    var $tabPage = $(".tabPage");
+    $tabBtn.click(function(){
+        var activeTab = "#"+$(this).attr("data-tabNumb");
+        console.log(activeTab);
     });
 }
