@@ -1,5 +1,6 @@
 $(document).ready(function(){
     toggleCheck();
+    toggleTodo();
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -14,4 +15,9 @@ function toggleCheck(){
             $checkTarget.text("check_box_outline_blank");
         }
     });
+}
+function toggleTodo(){
+    // todo. text() -> text를 불러오거나 수정할때
+    // todo.  attr([attr이름],[attr값]) -> attr('type','password') -> attr '이름'의 '값'을 넣어라.
+    
 }

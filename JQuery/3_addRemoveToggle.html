@@ -14,6 +14,22 @@
         .cp span{
             display: inline-block; vertical-align: middle; line-height: 15px; cursor: default;
         }
+        /* todo */
+        .cp.password{
+            position: relative; font-size: 10px; font-weight: bold; max-width: 200px;
+        }
+        .cp.password label{
+            position:  absolute; left: 1%; top: 0; line-height: 34px; transition: top .35s ease-out;
+        }
+        .cp.password input:focus+label{
+            line-height: 10px; top: -10px;
+        }
+        .cp.password input{
+            padding: 7px 20px; display: block; width: 100%; box-sizing: border-box;
+        }
+        .cp.password span{
+            position: absolute; right: 10px; top: 10px; z-index: 1; display: block;
+        }
     </style>
 </head>
 <body>
@@ -21,6 +37,14 @@
     <div class="cp checkBox">
         <span class="material-icons checkIco">check_box_outline_blank</span>
         <span class="label checkLabel">checkBox Label</span>
+    </div>
+    <!-- todo. passwordComponent 만들어보기-->
+    <div class="cp password">
+        <form>
+            <input type="password" id="userPW">
+            <label for="userPW" class="pwLabel">PW</label>
+            <span class="material-icons toggleVisible">visibility_off</span>
+        </form>
     </div>
 </body>
 </html>
