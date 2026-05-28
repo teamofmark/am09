@@ -19,5 +19,17 @@ function toggleCheck(){
 function toggleTodo(){
     // todo. text() -> text를 불러오거나 수정할때
     // todo.  attr([attr이름],[attr값]) -> attr('type','password') -> attr '이름'의 '값'을 넣어라.
-    
+    var $toggleTarget = $(".material-icons.toggleVisible");
+    var $toggleInput = $("#userPW");
+    var toggleStatus = false;
+    $toggleTarget.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            $toggleTarget.text('visibility');
+            $toggleInput.attr('type','text');
+        }else{
+            $toggleTarget.text('visibility_off');
+            $toggleInput.attr('type','password');
+        }
+    });
 }
