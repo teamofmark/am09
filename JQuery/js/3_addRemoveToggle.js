@@ -2,6 +2,7 @@ $(document).ready(function(){
     toggleCheck();
     toggleTodo();
     tabUI();
+    accControl(".accComponent li h3");
 });
 function toggleCheck(){
     var $checkTarget = $(".material-icons.checkIco");
@@ -40,6 +41,17 @@ function tabUI(){
     var $tabPage = $(".tabPage");
     $tabBtn.click(function(){
         var activeTab = "#"+$(this).attr("data-tabNumb");
-        console.log(activeTab);
+        // ? this - 이벤트가 일어난 당사자.
+        // console.log(activeTab);
+        $(".tabMenu li").removeClass("activated"); //? removeClass - 해당클래스 제거.
+        $(this).addClass("activated"); //? addClass - 해당클래스 추가.
+        $(".tabPage").removeClass("activated");
+        $(activeTab).addClass("activated");
+    });
+}
+// case.3
+function accControl(target){
+    $(target).click(function(){
+        $(this).toggleClass("active"); //? toggleClass - 해당클래스를 넣었다 뺐다. (toggle script와 동일)
     });
 }

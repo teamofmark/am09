@@ -47,6 +47,29 @@
         .tabPage.activated{
             display: block;
         }
+        .accComponent{
+            margin: 0; padding: 0; list-style: none;
+        }
+        .accComponent li h3{
+            background-color: palegoldenrod; line-height: 50px; padding: 0 2%; box-sizing: border-box;
+            margin: 0;
+        }
+        .accComponent li h3:after{
+            content: '▼'; display: block; float: right; font-size: 14px;
+        }
+        .accComponent li h3 + p{
+            font-size: 14px; line-height: 20px; margin: 0; padding: 25px 2%; background-color: lightgray;
+            display: none;
+        }
+        .accComponent li h3.active{
+            background-color: palegreen; color: forestgreen;
+        }
+        .accComponent li h3.active:after{
+            content: '▲';
+        }
+        .accComponent li h3.active+p{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -74,5 +97,20 @@
     <div id="tab1" class="tabPage activated">tabPage1</div>
     <div id="tab2" class="tabPage">tabPage2</div>
     <div id="tab3" class="tabPage">tabPage3</div>
+    <!-- accComponent (accordion UI) -->
+    <ul class="accComponent">
+        <li>
+            <h3>accTitle1</h3>
+            <p>Lorem ipsum dolor sit amet, esse occaecat cupidatat exercitation voluptate sint sunt voluptate labor um laborum</p>
+        </li>
+        <li>
+            <h3>accTitle2</h3>
+            <p>Lorem ipsum dolor sit amet, esse occaecat cupidatat exercitation voluptate sint sunt voluptate labor um laborum</p>
+        </li>
+        <li>
+            <h3>accTitle3</h3>
+            <p>Lorem ipsum dolor sit amet, esse occaecat cupidatat exercitation voluptate sint sunt voluptate labor um laborum</p>
+        </li>
+    </ul>
 </body>
 </html>
