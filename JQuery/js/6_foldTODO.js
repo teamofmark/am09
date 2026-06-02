@@ -14,15 +14,19 @@ function gallery2(count){
     var $images=$("#imgContainer img");
     var $imgLength = $images.length;
     var xpos, ypos;
+    var containerW = $("#imgContainer").width();
+    var imgW =  containerW / count;
+    var imgH =  containerW / count;
+
     for(var i = 0; i<$imgLength; i++){
         var $image = $images.eq(i);
-        xpos = (i % count) * ;
-        ypos = parseInt(i / count) * ;
+        xpos = (i % count) * imgW;
+        ypos = parseInt(i / count) * imgH;
         $image.css({
             "left" : xpos,
             "top" : ypos,
-            "width" : ,
-            "height" : 
+            "width" : imgW,
+            "height" : imgH
         })
     }
 }
