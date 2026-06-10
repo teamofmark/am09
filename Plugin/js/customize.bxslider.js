@@ -22,6 +22,11 @@ $(document).ready(function(){
         // ! 건들지말것
         responsive: true, //? default: true. slider 자체 반응형 켜기.
 
-        captions: true
+        captions: true,
+
+        // *pager - indicator
+        pager: true,
+        pagerType: 'full', //? default: full = circle, short = count
+        // pagerShortSeparator: ' ~ ' short type 일때 식별자 '/' 변경
     });
 });
