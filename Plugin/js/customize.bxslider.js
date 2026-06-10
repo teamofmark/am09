@@ -28,5 +28,6 @@ $(document).ready(function(){
         pager: true,
         pagerType: 'full', //? default: full = circle, short = count
         // pagerShortSeparator: ' ~ ' short type 일때 식별자 '/' 변경
+        pagerSelector: '.newPager'
     });
 });
