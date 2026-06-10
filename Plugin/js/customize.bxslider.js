@@ -28,6 +28,7 @@ $(document).ready(function(){
         pager: true,
         pagerType: 'full', //? default: full = circle, short = count
         // pagerShortSeparator: ' ~ ' short type 일때 식별자 '/' 변경
-        pagerSelector: '.newPager'
+        // pagerSelector: '.newPager' default: ''. 공간 생성 및 class 부여 하면 pager 뼈대제공.
+        pagerCustom: '.customPager'
     });
 });
