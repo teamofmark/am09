@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list Tag's - 목록</title>
+</head>
+<body>
+    <ul>
+        <li type="circle">unorderedList1</li>
+        <li type="disc">unorderedList2</li>
+        <li type="square">unorderedList3</li>
+    </ul>
+    <p>
+        ul은 unorderedList 의 약자. <br>
+        속성값은 3개(bullet Type) circle, disc, square가 있으나 모두 css에서 처리해야함. <br>
+        <strong>중요한 것은 레이아웃을 구성 할 때 같은 형태의 3회 이상 반복이 일어나는 순서 상관없는 요소들을 처리한다.</strong>
+    </p>
+    <!-- ol>li*5{orderedList$} -->
+    <ol>
+        <li type="A">orderedList1</li>
+        <li type="a">orderedList2</li>
+        <li type="I">orderedList3</li>
+        <li type="i">orderedList4</li>
+        <li type="decimal">orderedList5</li>
+    </ol>
+    <p>
+        ol은 orderedList 의 약자. <br>
+        속성값은 5개+@(bullet Type) A,a,I,i,decimal등이  있으나 모두 css에서 처리해야함. <br>
+        <strong>중요한 것은 레이아웃을 구성 할 때 같은 형태의 3회 이상 반복이 일어나는 순서 상관있는 요소들을 처리한다.</strong>
+    </p>
+    <!-- ! 위 모든 ul , ol tag는 확정 구조임을 명심해야 한다.(직계자손 li만 사용가능) -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+    </dl>
+</body>
+</html>
