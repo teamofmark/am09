@@ -10,18 +10,39 @@
     <p>
         <b>진하게</b>
         <!-- b: bold -> 진하게 -->
-        <strong>진하게</strong>
+        <strong>진하게</strong><br>
         <!-- ? b와동일하지만 강세를준다. -->
-        <br>
         <!-- line-break : 개행태그. 이렇듯 기능(역할)을 수행하는 태그들은 markup형태가 아니다. 혼자만쓴다.-->
         <i>기울기</i>
         <!-- i: 외국어, 분류적인 성격을 띄는 단어나 문장, 전문기술용어, 손글씨 등등... 앞뒤문맥과구분되는텍스트 -->
-        <em>기울기</em>
+        <em>기울기</em><br>
         <!-- ? emphasized의 약자 -> i와동일하나 성조변화 -->
-        <br>
-        <mark>색상강조</mark>
+        <mark>색상강조</mark><br>
         <!-- ? 시각적 강조만 담당하며 그렇기 때문에 상대적으로 중요도 순위가 밀리는 곳에 사용.(글씨색,배경색등) -->
+        <sup>위</sup>첨자
+        <!-- superScript -->
+        <sub>아래</sub>첨자<br>
+        <!-- subScript  / super,sub 는 일반적인 사용이 없고 대부분 화학,수학,생물학,물리학 식등에서 사용된다. = 빈도수 낮음-->
+        <s>취소선</s>
+        <!-- 실제 취소나 삭제를 의미하지 않음 -->
+        <del>취소선(실제data상 삭제)</del><br>
+        <!-- 실제 취소나 삭제를 의미함. -->
+        <u>밑줄</u><br>
+        <!-- 주관적기준에서는 강조가 될 수 있으나 객관적 기준에서는 강조가 아님 -->
+        
+        <!-- <big>일부를 크게</big> 표현해
+         사용할 수 없는 태그 = 사용빈도수가 적어지거나 심각한 오류를 야기하는 tag는 사라질 수 있다. -->
+        <small>일부를 작게</small>
+        <!-- 같은 공간내에서 일부를 작게 표현해야할 때  -->
     </p>
+    <hr>
+    <!-- ? hr(horizontal Rule) 단순한 수평선이 아니라 선을 기준으로 위,아래 주제 자체가 바뀐다는 뜻-->
+    <blockquote>block상태 인용부</blockquote>
+    <q>인용문</q>
+    <!-- 
+        blockquote - display: block 인 인용부분 (내부에 다량의 텍스트 및 구조를 소화할 수 있음)
+        q(quote) - display: inline인 인용문장 (한 줄 분량의 인용 문이기 때문에 상위 구조에 포함되기 좋음ex>p)
+    -->
     <!-- <p>Lorem ipsum dolor sit amet, id elit sint cillum nostrud irure sit fugiat laborum
  incididunt quis nostrud aute tempor incididunt deserunt. Sit pariatur sint aute
  ipsum ullamco ea quis exercitation ipsum laboris pariatur labore duis excepteur
