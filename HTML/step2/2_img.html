@@ -6,7 +6,8 @@
     <title>img - 이미지 태그</title>
 </head>
 <body>
-    <img src="images/file_example_JPG_2500kB.jpg" alt="" style="width: 100%;">
+    <img src="images/file_example_JPG_2500kB.jpg" alt="노을진 창가의 탁자에 놓인 맥북에어" style="width: 100%;">
+    <img src="https://placehold.co/300x150?text=alternateImages" alt="임시이미지공간">
     <!-- 
         ! 경로 = Path = 파일이 있는 위치를 적는 방식
         ? 절대 경로(Absolute.Path) - 현재 존재하는 소프트웨어적 최상위 기준으로 부터 시작하여 모든 경로를 기술 하는 방식.
@@ -22,5 +23,11 @@
         "images/file_example_JPG_2500kB.jpg"
         ! 단, 상위 폴더를 칭해야 할 때 =  "../" 한번 사용 할 때마다 한단계 상위. = html상에서 사용되면 안됨.
     -->
+    <p>
+        alt(alternate Text) = 대체텍스트 <br>
+        시각장애인들은 이미지를 볼 수 없기 때문에 이미지의 내용을 전달하기 위함. <br>
+        안정화된 최대 자수는 255자 이내 권장. 이상 초과 될 경우 본래 longdesc라는 attr이 있었으나
+        현재는 사용 불가로 전환 됨. figure / figcaption tag를 사용해야함.
+    </p>
 </body>
 </html>
