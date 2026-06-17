@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img - 이미지 태그</title>
+</head>
+<body>
+    <img src="images/file_example_JPG_2500kB.jpg" alt="" style="width: 100%;">
+    <!-- 
+        ! 경로 = Path = 파일이 있는 위치를 적는 방식
+        ? 절대 경로(Absolute.Path) - 현재 존재하는 소프트웨어적 최상위 기준으로 부터 시작하여 모든 경로를 기술 하는 방식.
+        * ex.1 컴퓨터 > c:\0_Mark/HTML/step2/2_img.html
+        * ex.2 웹 개발 환경 > /(root)HTML/step2/2_img.html
+        * ex.3 고객 방문 환경 > DNS(ex >https://www.naver.com)/HTML/step2/2_img.html
+        ? / = root(개발환경 최상위폴더)
+        ? DNS = Domain Naming Service의 약자 
+        * ex> 172.101.18.3:5500/index.nhn = 네이버 메인페이지 라면 DNS 변환시 https://www.naver.com
+
+        ? 상대 경로(Relative.Path) - 현재 파일을 "불러오는 대상"의 위치로부터 "불러와지는대상"의 위치까지만 기술.
+        * ex.1 현재 img file 불러오기 > 같은 선상(동위선상)에 있는 "images"폴더를 적고 안에 파일명만 적으면 끝
+        "images/file_example_JPG_2500kB.jpg"
+        ! 단, 상위 폴더를 칭해야 할 때 =  "../" 한번 사용 할 때마다 한단계 상위. = html상에서 사용되면 안됨.
+    -->
+</body>
+</html>
