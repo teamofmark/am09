@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyper Link - 만능버튼</title>
+    <style> 
+        html, body, #targetAnchor{
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <h1>hyperLink List</h1>
@@ -17,10 +23,11 @@
             target 값은 현재 시스템에서 세션을 유지해야 할 경우는 _self / 
             그럴필요가 없을 때 (아예 시스템이 바뀌는 상황)는 _blank로 새탭으로 열어줘야함.
         -->
-        <li><a href="">button</a></li>
-        <li><a href="">button</a></li>
-        <li><a href="">button</a></li>
-        <li><a href="">button</a></li>
+        <li><a href="../step2.zip">download button</a></li>
+        <li><a href="mailto:teamofmark@gmail.com?subject='문의남깁니다.'">email send button</a></li>
+        <li><a href="tel:+821056658312">cell button</a></li>
+        <li><a href="#targetAnchor">button</a></li>
     </ul>
+    <div id="targetAnchor">targetPosition</div>
 </body>
 </html>
