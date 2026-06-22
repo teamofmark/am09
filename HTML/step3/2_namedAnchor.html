@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hyperLink - 간단한 onePageBase 제작.</title>
+    <style>
+        html,body{
+            margin: 0; height: 100%; scroll-behavior: smooth; 
+            font-size:40px !important;
+        }
+        ul#menu{
+            position: fixed; right: 0; top: 0; background-color: white;
+        }
+        div{
+            height: 100%;
+        }
+        #page1{
+            background-color: palevioletred;
+        }
+        #page2{
+            background-color: palegoldenrod;
+        }
+        #page3{
+            background-color: palegreen;
+        }
+        #page4{
+            background-color: paleturquoise;
+        }
+    </style>
 </head>
 <body>
     <!-- ? (ul#menu>li*5>a{$page})+(#page$*4>{$page}+a{menu}) -->
@@ -12,11 +36,11 @@
         <li><a href="#page2">2page</a></li>
         <li><a href="#page3">3page</a></li>
         <li><a href="#page4">4page</a></li>
-        <li><a href="">5page</a></li>
+        <li><a href="1_hyperlink.html#targetAnchor" target="_blank">hyperLink page</a></li>
     </ul>
-    <div id="page1">1page<a href="">menu</a></div>
-    <div id="page2">2page<a href="">menu</a></div>
-    <div id="page3">3page<a href="">menu</a></div>
-    <div id="page4">4page<a href="">menu</a></div>
+    <div id="page1">1page</div>
+    <div id="page2">2page</div>
+    <div id="page3">3page</div>
+    <div id="page4">4page</div>
 </body>
 </html>
