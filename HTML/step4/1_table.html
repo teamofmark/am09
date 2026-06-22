@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table Tag - 표 전용 태그</title>
+</head>
+<body>
+    <table>
+        <caption>month / savings Table</caption>
+        <colgroup>
+            <col style="background-color: lightpink; width: 150px;">
+            <col style="background-color: yellow; width: 150px;">
+        </colgroup>
+        <!-- 열을 묶어서 스타일(css)지정 할 때 사용 한다. -> selector로 대체가 가능. -->
+        <thead>
+            <tr>
+                <th>Month</th>
+                <!-- tableHeading - 분류명 / cell(칸) = 열(column)과 동일 -->
+                <th>Savings</th>
+            </tr>
+            <!-- tableRow - 행  -->
+        </thead>
+        <!-- thead는 테이블의 상단부(행) / 데이터의 분류 형식이 상단 분류일 경우 선택적 사용 -->
+        <tbody>
+            <tr>
+                <td>January</td>
+                <!-- tableData - 데이터 / cell(칸) = 열과 동일 -->
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <!-- tbody는 테이블의 실질적 데이터를 담당하는 부분. 필수 사용 -->
+        <tfoot>
+            <tr>
+                <th>Sum</th>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+        <!-- tfoot은 테이블의 하단부(행) / 데이터의 결산형식이 필요할 경우 선택적 사용 -->
+    </table>
+</body>
+</html>
