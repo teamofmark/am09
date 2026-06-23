@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form - input Tag's. 입력관련태그</title>
+</head>
+<body>
+    <form>
+        <!-- 
+            form은 input내 data 들을 담아 전송하는 역할을 수행한다.
+            감싸지는 위치에 따라 input과 그외 나머지 정보들을 서버로 보낼 수 있다.
+            전송방식에는 get / post 방식이 있다.
+        -->
+        <fieldset>
+            <legend>HTML4 Input's</legend>
+            <ul>
+                <li>
+                    <label for="cliID">사용자아이디 :</label>
+                    <!-- ? label - display: inline. / for는 인접한 input의 id와 동기화 -->
+                    <input type="text" id="cliID">
+                    <!-- 
+                        ? input - display: inline-block
+                        ! id는 backEnd가 직접적으로 사용하는 속성이기 때문에 상호 협의하에 작성하거나 상식적인 선 내 web상 naming 규칙을 따름.
+                        ? 1. 한글,띄어쓰기,특문 금지
+                        ? 2. 숫자나 대문자가 앞에오면 안됨
+                        ? 3. 영문키워드 2개이상을 조합해야 함. (모든 언어에는 예약어 개념이 존재 = 이미 선점된 단어들...)
+                        ! 만약 label사용이 불가능 할 시에 title을 항시 제공해야 한다.
+                    -->
+                    <!-- type: text - 모든문자를 담을 수 있음. -->
+                </li>
+                <li>
+                    <label for="cliPW">사용자 비밀번호 : </label>
+                    <input type="password" id="cliPW">
+                </li>
+                <li>
+                    <!-- (input:radio#btn_radio$[name='radioGroup']+label[for='btn_radio$']{radio$})*4 -->
+                    <input type="radio" name="radioGroup" id="btn_radio1" checked>
+                    <label for="btn_radio1">radio1</label>
+                    <input type="radio" name="radioGroup" id="btn_radio2">
+                    <label for="btn_radio2">radio2</label>
+                    <input type="radio" name="radioGroup" id="btn_radio3">
+                    <label for="btn_radio3">radio3</label>
+                    <input type="radio" name="radioGroup" id="btn_radio4">
+                    <label for="btn_radio4">radio4</label>
+                </li>
+                <!--
+                    입력 태그 타입 radio는 라디오 버튼이며, name 을 같은 이름으로 여러 항목을 지정시 그룹화 된다. 또한 label을 이용
+                    하여 해당 항목과 버튼을 연결해줄 필요가 있다.
+                    value 값설정으로 전달할 값을 넣어 둘 수 있으나, 비워두어도 상관없다.
+                    checked 를 이용하여 페이지가 로드 될때 초기 선택값을 넣어 둘 수 있다.
+                    그리고 cheackbox와는 달리 하나의 항목만 선택 가능하다.
+                -->
+                <li>
+                    <!--todo (input:checkbox#btn_chk$+label[for='btn_chk$']{check$})*4 -->
+                    <input type="checkbox" id="btn_chk1" checked>
+                    <label for="btn_chk1">check1</label>
+                    <input type="checkbox" id="btn_chk2">
+                    <label for="btn_chk2">check2</label>
+                    <input type="checkbox" id="btn_chk3">
+                    <label for="btn_chk3">check3</label>
+                    <input type="checkbox" id="btn_chk4">
+                    <label for="btn_chk4">check4</label>
+                </li>
+                <!--
+                    1. 입력태그타입 checkbox는 다중 선택을 지원 하는 input이며, label을 이용하여 해당 항목과 연결
+                    해야 한다.
+                    2. value 값은 기존 input 과 동일
+                    3. checked 옵션 역시 radio input 과 동일
+                -->
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>HTML5 Input's</legend>
+        </fieldset>
+    </form>
+</body>
+</html>
