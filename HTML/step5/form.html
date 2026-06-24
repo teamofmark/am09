@@ -18,7 +18,7 @@
                 <li>
                     <label for="cliID">사용자아이디 :</label>
                     <!-- ? label - display: inline. / for는 인접한 input의 id와 동기화 -->
-                    <input type="text" id="cliID">
+                    <input type="text" id="cliID" title="사용자의 아이디를 입력하세요">
                     <!-- 
                         ? input - display: inline-block
                         ! id는 backEnd가 직접적으로 사용하는 속성이기 때문에 상호 협의하에 작성하거나 상식적인 선 내 web상 naming 규칙을 따름.
@@ -68,6 +68,59 @@
                     2. value 값은 기존 input 과 동일
                     3. checked 옵션 역시 radio input 과 동일
                 -->
+                <li>
+                    <textarea title="하시고 싶은 말씀을 남겨주세요." cols="30" rows="10"></textarea>
+                    <!-- 
+                        ! 1. cols,rows attr은 css에서 사용해야 함.(삭제하라는 뜻)
+                        * 2. Tag 입력불가 - 입력시 다양성 표현 불가.
+                        * 3. resize 기능 은 css에서 꺼야함.
+                        * 4. font역시 직접 지정해야만 변경됨.
+                     -->
+                    <!--
+                        여러줄을 입력 할 수 있는 텍스트 상자인 textarea 는 cols로 가로 입력 너비, rows로 세로입력너비
+                        의 초기값을 설정 할 수 있다.
+                        주의사항은 pre와 마찬가지로 입력한 그대로를 보여주기 때문에, 초기 데이터 삽입시 공백부분에
+                        유의 해야 한다.
+                    -->
+                </li>
+                <li>
+                    <label for="selectJob">직업 선택 : </label>
+                    <select id="selectJob">
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                    <!-- 
+                        select는 선택항목의 목록형 단축메뉴 형식으로 만드는 입력 양식.
+                        항목 수만큼의 option이 필요하고, 이 안의 value로 값을 전달한다.
+                        optgroup으로 중간 그룹을 설정 할 수 있다.
+                        ! radio,checkbox처럼 외형 변경이 어렵다.
+                    -->
+                </li>
+                <li>
+                    <!-- input:image+input:button+input:file+input:submit+input:reset -->
+                    <input type="image" src="https://placehold.co/150x50?text=button" alt="imgButton">
+                        <!-- 1. image 는 버튼을 웹사이트 디자인에 맞게 디자인된 버튼을 사용할 때 사용 한다. -->
+                    <input type="button" value="비밀번호확인">
+                        <!-- 2. button 은 최종 확인 전송 및 페이지 양식 되돌리기, 파일 찾아보기 기능을 제외한 나머지 기능의 버튼 (우편번호, 검색, 추가, 삭제 등)에 사용한다. -->
+                    <input type="file">
+                    <!-- 3. file은 파일 찾아보기 버튼에 사용한다. -->
+                    <input type="submit" value="전송">
+                    <!-- 
+                        4. 해당 폼내 모든 input의 유효성을 검수하고 전송을 담당
+                        ! 반드시 form 안에 위치해야함.
+                    -->
+                    <input type="reset" value="취소">
+                    <!-- 
+                        5. reset은 해당 폼의 모든 양식 내용을 초기화(아예 없는상태) 시킬 때 사용한다.
+                        ! 반드시 form 안에 위치해야함.
+                    -->
+                </li>
             </ul>
         </fieldset>
         <fieldset>
