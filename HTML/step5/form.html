@@ -123,8 +123,34 @@
                 </li>
             </ul>
         </fieldset>
+    </form>
+    <form>
         <fieldset>
             <legend>HTML5 Input's</legend>
+            <ul>
+                <li>
+                    <label for="userEmail">사용자 이메일 :</label>
+                    <input type="email" id="userEmail" required readonly>
+                    <!-- 
+                    ! readonly : 읽기전용 (server에 저장이 된적이 있는 data를 불러오기)
+                    ! disabled : 비활성화 (입력자체를 막아 server에 저장 자체가 불가능함.)
+                    ! enabled : disabled의 counter - 활성화(입력가능 = 전송시 server저장가능)
+                    -->
+                    <!--type을 email로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 @ 버튼이 생긴다. placeholder(ie10이하지원불가)-->
+                </li>
+                <li>
+                    <label for="userURL">웹사이트 :</label>
+                    <input type="url" id="userURL" required>
+                    <!--type을 url로 설정하면, 모바일에서 해당 필드에 focus 되었을 때, 키보드를 열면서 영문과 .com 버튼이 생기고 누르고있으면 타 도메인으로 변경가능.-->
+                </li>
+                <!--
+                    ! live server 다른 장치 연결 방법
+                    1. 작업하는 컴퓨터와 확인하려는 장치가 같은 wifi에 접속 되어있어야 함
+                    2. 컴퓨터에서 windowKey + r -> cmd 엔터 -> ipconfig /all 엔터 -> ipv4 주소 확인 -> 확인하려는 장치 크롬에 ipv4주소 입력 -> 작업하는 컴퓨터에 열려있는 liveServer 포트번호(ex> :5500) 확인후 -> 확인하려는 장치 크롬에 입력된 ipv4주소 뒤에 붙혀서 입력 -> 이후 폴더명과 파일 명 까지 입력한 다음 이동을 누르면 live server가 연결된다.
+                -->
+            </ul>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
         </fieldset>
     </form>
 </body>
