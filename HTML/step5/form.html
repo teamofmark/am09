@@ -130,7 +130,7 @@
             <ul>
                 <li>
                     <label for="userEmail">사용자 이메일 :</label>
-                    <input type="email" id="userEmail" required readonly>
+                    <input type="email" id="userEmail" required disabled>
                     <!-- 
                     ! readonly : 읽기전용 (server에 저장이 된적이 있는 data를 불러오기)
                     ! disabled : 비활성화 (입력자체를 막아 server에 저장 자체가 불가능함.)
@@ -148,6 +148,64 @@
                     1. 작업하는 컴퓨터와 확인하려는 장치가 같은 wifi에 접속 되어있어야 함
                     2. 컴퓨터에서 windowKey + r -> cmd 엔터 -> ipconfig /all 엔터 -> ipv4 주소 확인 -> 확인하려는 장치 크롬에 ipv4주소 입력 -> 작업하는 컴퓨터에 열려있는 liveServer 포트번호(ex> :5500) 확인후 -> 확인하려는 장치 크롬에 입력된 ipv4주소 뒤에 붙혀서 입력 -> 이후 폴더명과 파일 명 까지 입력한 다음 이동을 누르면 live server가 연결된다.
                 -->
+                <li>
+                    <!-- (label[for='userPN']{전화번호:})+input:tel#userPN[placeholder='-를 뺀 숫자만 입력하세요.'] -->
+                    <label for="userPN">전화번호:</label>
+                    <input type="tel" id="userPN" placeholder="-를 뺀 숫자만 입력하세요.">
+                    <!-- 
+                        type을 tel로 설정하면 한줄로 전화번호 입력받는 양식 (-필수제외)
+                        ! placeholder는 시각적정보만 담기 때문에 만약 label없이 사용할 경우 같은 내용의 title 필수.
+                    -->
+                </li>
+                <li>
+                    <label for="qty">수량 :</label>
+                    <input type="number" id="qty" min="1" max="10" step="1" value="1">
+                    <!--
+                        상,하 버튼(스피너)으로 숫자를 기입하거나 입력받는 박스.
+                        min : 최저 / max : 최대 / step : 상승값 / value : 초기값
+                        ! 절대 숫자입력 대용으로 사용하면 안됨. 반드시 수량관련 부분에만 사용 할 것.
+                    -->
+                </li>
+                <li>
+                    <label for="sizeSet">사이즈 : </label>
+                    <input type="range" id="sizeSet" min="250" max="280" step="10" value="250">
+                    <!-- 슬라이드바로 범위중 하나의 값을 선택할 수 있는 인풋. -->
+                </li>
+                <li>
+                    <label for="typeDate">연,월,일 선택 : </label>
+                    <input type="date" id="typeDate">
+                    <!--연도,월,날짜 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeDateTime">연,월,일,시,분 선택 : </label>
+                    <input type="datetime-local" id="typeDateTime">
+                    <!--연도,월,날짜,시간 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeTime">시간 선택 : </label>
+                    <input type="time" id="typeTime">
+                    <!--시간 입력 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeMonth">월 선택 : </label>
+                    <input type="month" id="typeMonth">
+                    <!--연도,월 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="typeWeek">주 선택 : </label>
+                    <input type="week" id="typeWeek">
+                    <!--연도,주 선택 ie10 이하 지원불가(수동입력)-->
+                </li>
+                <li>
+                    <label for="searchField">검색 : </label>
+                    <input type="search" id="searchField">
+                    <!-- search는 검색어만 전문으로 입력받는 필드. x(자체리셋)버튼이 존재하고 자동완성기능(autocomplete)지원 -->
+                </li>
+                <li>
+                    <label for="typeColor">색상선택 : </label>
+                    <input type="color" id="typeColor">
+                    <!-- color chip을 기준으로 대상을 찾게 해주는 인풋 -->
+                </li>
             </ul>
             <input type="submit" value="전송">
             <input type="reset" value="취소">
