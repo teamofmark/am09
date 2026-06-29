@@ -5,46 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div Layout</title>
     <style>
-        .header {
+        header{
             background-color: red;
             margin-bottom: 20px;
             text-align: center;
         }
 
-            .header .nav li {
+            header nav li {
                 display: inline-block;
                 width: 19%;
                 background-color: blue;
                 color: white;
             }
 
-        .section {
+        section {
             background-color: red;
             margin-bottom: 20px;
         }
 
-            .section > * {
+            section > * {
                 height: 500px;
                 display: inline-block;
             }
 
-            .section .article {
+            section article {
                 background-color: yellow;
                 width: 80%;
             }
 
-            .section .aside {
+            section aside {
                 background-color: green;
                 width: 18%;
             }
 
-        .footer {
+        footer {
             text-align: center;
             background-color: orange;
         }
     </style>
 </head>
 <body>
-    
+    <!-- .header>span{globalHeader}+.nav>ul>li*5{menu$} -->
+    <header>
+        <!--
+            ? div - divide(분할)를 줄여서 만든 대형 공간 Tag. (display: block)
+            * web 2.0 시절에 태어나 대부분의 공간분할문제를 해결해 주던 Tag.
+            * 현재도 굉장히 많이 사용되는 Tag. = 무분별한 사용에 주의를 해야 한다.
+            * 어느공간에도 제약이 없는 Tag이기 때문에 - 상세한 공간태그들이 나중(HTML5)에 태어나서
+            * 포함관계에 대한 규칙성립불가.
+        -->
+        <span>globalHeader</span>
+        <!-- 
+            ? span - span(잘늘어나다)라는 의미의 소형 공간 Tag.(display: inline)
+            * 상동
+        -->
+        <nav>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- .section>(.article>span{text})+(.aside>span{quickMenu}) -->
+    <section>
+        <article><span>text</span></article>
+        <aside><span>quickMenu</span></aside>
+    </section>
+    <footer><span>global footer</span></footer>
 </body>
 </html>
