@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5에서 새로 추가된 잔여 Tag</title>
+    <style>
+        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li figure{position:relative;}
+        body > ul li figure img{width:100%;}
+        body > ul li figure:hover figcaption{display:block;}
+        body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
+        body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
+        body > ul li figure figcaption dl dt{font-size:24px;}
+        body > ul li figure figcaption dl dd{margin:0;}
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="https://placehold.co/150" alt="undefined Image">
+        <figcaption>아직 정의되지 않은 이미지</figcaption>
+        <!-- 
+            ? figure : 흉상,동상
+            * 상징적인 의미를 담은 image의 경우 사용할수 있는 Tag ( about us -> ci 공간...)
+            ! image의 비중(무게)이 text보다 많이 느껴질 경우 사용.
+            * img Tag의 alt대용으로 figcaption이 사용 가능 함.(웹접근성 측면에서도 좋음)
+        -->
+    </figure>
+    <ul>
+        <li>
+            <figure>
+                <img src="https://placehold.co/150?text=keyboardPicture" alt="제품사진자리">
+                <figcaption>
+                    <dl>
+                        <dt>
+                            <mark>삼성공식파트너모니칸</mark>
+                            삼성전자 무선키보드 SK-M1600B 멤브레인 키보드 수업용 사무용
+                        </dt>
+                        <dd>
+                            <strong>29,900원</strong><span>배송비무료</span>
+                        </dd>
+                        <dd><em>내일배송</em> 7.1.(수) 도착</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+</body>
+</html>
