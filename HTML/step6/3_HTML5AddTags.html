@@ -84,5 +84,37 @@
         <li>User <bdi>إيان</bdi>: 90 points</li>
     </ul>
     <!--bdi는 자신의 외부 텍스트와 다른 포맷으로 규정되는 텍스트를 분리하는데에 사용한다.(ex 다국어지원)-->
+
+    <form action="demo_keygen.asp" method="get">
+       <label for="userName">userName :</label> <input type="text" name="security" id="userName">
+       <!-- <label for="keygenType">Encryption : </label> <keygen name="security" id="keygenType"> -->
+       <input type="submit" value="confirm">
+    </form>
+    <!-- 
+        backend development 보안 주요사항.
+        보안키 생성 및 공개키 제출시에 개인 키는 개인에 저장되고 공개키만 서버로 전송
+    -->
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, FireFox, and Internet Explorer are the most used browsers today.</p>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>
+                Google Chrome is a free, open-source web Browser developed by Google, release in 2008.
+            </p>
+        </article>
+    </main>
+    <!-- 메인페이지 자체를 의미 / 단 한번의 사용을 권장. / 최상위구조(body > )에만 사용가능-->
+    
+    <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+        0<input type="range" id="a" value="50" step="1" min="1" max="100">100
+        +
+        <input type="number" id="b" value="50" step="1">
+        =
+        <output id="x" for="a b"></output>
+    </form>
+    <!-- 
+        output : form에 지정된 스크립트 연산처리를 출력하는 전용태그
+    -->
 </body>
 </html>
