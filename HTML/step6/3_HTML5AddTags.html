@@ -116,5 +116,29 @@
     <!-- 
         output : form에 지정된 스크립트 연산처리를 출력하는 전용태그
     -->
+    <input type="search" list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!-- 
+        select와 유사한 datalist. 입력요소에 대한 사전 목록을 넣어두는데 활용할 수 있고
+        동시에 사용자가 입력필드에 해당 옵션 일부를 작성하면 일치되는 결과값 출력 (ex 자동완성기능)
+        사용 방법은 input의 list attr에 id명을 기재하고 datalist tag에는 id를 적어준다. (label for 와 비슷..)
+    -->
+    <div style="margin: 200px 0;">
+        dialog Box
+        <dialog open>
+            this is an open dialog window
+        </dialog>
+        <!-- 
+            ? popup(dialog, alert, confirm, prompt, toast....)
+            등의 팝업을 표시하는 전용태그로 open attr로 출력을 제어할 수있다
+            ! chrome, opera가 안정적지원.
+        -->
+    </div>
 </body>
 </html>
