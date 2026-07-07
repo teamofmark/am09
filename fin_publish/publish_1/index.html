@@ -184,7 +184,40 @@
         </div>
     </section>
     <!-- ?peopleSay Fin -->
+    <section id="contact" class="contactArea">
+        <h2>contact US</h2>
+        <form>
+            <fieldset>
+                <legend>GIVE US A GOOD NEWS</legend>
+                <input type="text" placeholder="Name" title="userName">
+                <input type="email" placeholder="Email" title="userEmail">
+                <input type="text" placeholder="Subject" title="postSubject">
+                <textarea placeholder="Your Message" title="insert ur message"></textarea>
+                <input type="submit" value="SUBMIT">
+            </fieldset>
+        </form>
+        <div>
+            <h3>OUR HAPPY CLIENT</h3>
+            <!-- todo. 배너목록 -->
+        </div>
+    </section>
+    <!-- 
+        ! 위 구조는 개별적으로는 잘못된 부분이 없으나, 전체적으로 볼때 잘못된 부분이 많은케이스
+        ? 1. 두 영역의 대표 제목이 없음에도 section을 사용했다는 점
+        ? 2. form을 밖에 사용하고 fieldset을 사용하는 바람에 legend 전용 타이틀이 사용되고 이하에 있는 배너 공간에서는 h를 사용하면서 css의 통제력이 어려워졌다.
+        * 이하 구조를 참고하기
+    -->
+    <!-- <div id="contact" class="contactArea">
+        <div>
+            <h3></h3>
+            <form>
 
+            </form>
+        </div>
+        <div>
+            <h3></h3>
+        </div>
+    </div> -->
     <footer>
         <div>
             <div>
