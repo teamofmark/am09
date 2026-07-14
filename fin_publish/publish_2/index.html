@@ -33,6 +33,78 @@
     </header>
     <!-- ? header Fin -->
 
+    <nav>
+        <div>
+            <ul>
+                <li><a href="#">Top Sales</a></li>
+                <li><a href="#">Brand Focus</a></li>
+                <li><a href="#" class="active">Hi-tech</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <input type="search" placeholder="I’m looking for ..." title="insert ur search Keyword's">
+        </div>
+    </nav>
+    <!-- ? slider Nav Fin -->
+     <section>
+        <h2>slider Sector</h2>
+        <div>
+            <a href="#">&lt;</a>
+            <a href="#">&gt;</a>
+            <ol>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+                <li><a href="#">slide</a></li>
+            </ol>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/sample_slide.png" alt="slider Example">
+                        <figcaption>
+                            <dl>
+                                <dt>iPhone 6 32Gb<br>Black</dt>
+                                <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                            </dl>
+                            <input type="button" value="Buy Now">
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+     </section>
+     <!-- ? slider Fin - section사용할 필요는 굳이.... -->
+
+    <div>
+        <form>
+            <!-- ! form은 있어도 없는 Tag. ? -> css입력이 되면 안됨.  ? -> form 은 data장바구니인데.. css가 삽입되면 css를 data와 같이 전송해버림...-->
+            <fieldset>
+                <label for="sb_Select">Sort By:</label>
+                <span class="selectBox">
+                    <select id="sb_Select">
+                        <option>Best Match</option>
+                    </select>
+                </span>
+                <label for="sb_keywords">KEYWORDS</label>
+                <input type="search" id="sb_keywords" placeholder="ex> tablet">
+                <label for="range_minprice">PRICE</label>
+                <input type="text" id="range_minprice">
+                <span>-</span>
+                <input type="text" id="range_maxprice">
+                <input type="checkbox" id="freeShipCheck">
+                <label for="freeShipCheck">Free Shipping</label>
+                <label for="ship_Select">Ship to:</label>
+                <span class="selectBox">
+                    <select id="ship_Select">
+                        <option>United Arab Emirates</option>
+                    </select>
+                </span>
+            </fieldset>
+        </form>
+        <!-- ? sortBar Fin -->
+    </div>
+
     <footer>
         <div>
             <h2>
