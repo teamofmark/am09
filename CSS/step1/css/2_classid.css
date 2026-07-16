@@ -20,7 +20,7 @@
     background-color: darkcyan; color: cyan; border-color: forestgreen;
 }
 .btn.delete{
-    background-color: rgb(90,0,0); color: red; border-color:darkred;
+    background-color: lightpink; color: red; border-color:darkred;
 }
 .btn.confirm{
     background-color:slateblue; color: white; border-style: dashed;
