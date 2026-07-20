@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+h1{
+    font-size: 12px; color:#f03;
+}
+img{
+    width: 300px; border: 3px solid #3f3;
+}
+ul,ol{
+    /* ? ul,ol에 한번만 부여하여  자손들이 Cascade하게 만들기. */
+    color: #60f;
+}
+ul li{
+    /* ? 모든 li에 각자 부여 */
+    font-size: 18px; font-weight: bold;
+}
+ol li{
+    font-size: 14px;
+}
+dl dt,
+dl dd{
+    /* 
+        dt와 dd에 모두 따로 35px 글자크기를 부여한다.
+        ! 이렇게되면 dt x 10 , dd x 10 총 20번의 동일코드가 작동하게됨...
+        ? dl에 지정하면 단 한번의 적용으로 끝남.
+    */
+    font-size: 35px;
+}
