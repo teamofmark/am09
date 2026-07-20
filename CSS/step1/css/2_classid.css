@@ -29,3 +29,15 @@
 .btn.cancel{
      color: gray; background-color: lightgray; border: gray;
 }
+.inputBox{
+    line-height: 21px; font-size:12px; padding: 5px 15px;
+}
+#userName{
+    border: 1px solid green; color: green;
+}
+#userPW{
+    border: 2px dotted hotpink; color: deeppink;
+}
+#userID{
+    border: 2px dashed deepskyblue; color: darkblue;
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>css - id 와 class의 정의 및 활용법</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/2_classid.css">
+    <title>css - id 와 class의 정의 및 활용법</title>
 </head>
 <body>
     <div class="classEx1">
@@ -36,5 +37,15 @@
     <a href="#" class="btn delete">회원탈퇴</a>
     <input type="button" value="취소" class="btn cancel">
     <a href="#" class="btn cancel">주문취소</a>
+        <!-- label[for='userName']{userName}+input:text#userName -->
+    <form>
+        <label for="userName">userName</label>
+        <input type="text" id="userName" class="inputBox">
+        <label for="userPW">userPassword</label>
+        <input type="password" id="userPW" class="inputBox">
+        <label for="userID">userID</label>
+        <input type="email" id="userID" class="inputBox">
+        <input type="submit" value="전송">
+    </form>
 </body>
 </html>
