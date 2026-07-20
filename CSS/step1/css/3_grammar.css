@@ -27,3 +27,13 @@ dl dd{
     */
     font-size: 35px;
 }
+
+div ul li figure img{
+    width: 50px;
+}
+div ul li figure figcaption dl dt{
+    color: skyblue;
+}
+div ul li figure figcaption dl dd{
+    font-size: 50px; color: brown;
+}
