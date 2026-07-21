@@ -30,5 +30,45 @@ h3{
     - 비영어권 : 1번에 알파벳이 없을시 2번 글꼴로 영문 변경 ( 대부분 비 영어권 font는 알파벳기본포함)
     - 비영어권2 : 앞,뒤 글꼴 모두 비영어권 글꼴일 경우 영어권과 동일하게 대체 개념으로 작동.
     ? ex > 영문글꼴을 따로 쓰고 싶을 경우 1번에 영문폰트,2번에 한글폰트 순서로 불러오면됨.
-
 */
+p.letter{
+    letter-spacing: 10px;
+}
+p.word{
+    word-spacing: 10px;
+}
+p.w_normal{
+    width: 150px; white-space: normal; line-height: 20px;
+    border: 1px solid black;
+}
+p.w_nowrap{
+    width: 150px; white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis; line-height: 20px;
+    border: 1px solid black;
+}
+
+.v_alignTest img{
+    vertical-align:  middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+/* 
+    ? vertical-align (수직정렬)
+    * 1. display: inline, inline-block인 애들끼리만.
+    * 2. 높은 애를 기준으로 preset(ex > top, middle, bottom....)
+    * 3. 낮은 애가 높은 애를 기준으로 움직임.
+    * 4. 낮은 애에게 상대적 수치 (%)를 이용하여 나머지 부분을 더 움직일 수 있다.
+    ! 낮은애의 높이 를 기준으로 100%를 잡고, 양수일경우 위로, 음수일경우 아래로. 
+    ! 대상들의 display 속성의 간섭을 받는다. (ex> display:block 인 div 끼리 불가)
+	top: 위쪽 선 기준 정렬
+	bottom : 아래쪽 선 기준 정렬
+	middle: 문자의 중앙 선을 기준으로 해서 정렬
+	baseline: 문자의 평균 밑선에 맞추어 정렬(default)
+	sub : 아래첨자
+	super : 위 첨자
+	text-top:문자의 윗선을 밑선으로 해서 정렬
+	! % : 퍼센트로 정렬 위치를 지정 (
+		후처리 = 높이가 낮은 대상. 그 대상의 높이기준
+		또한 선처리 된 vertical-align의 방향에 따라 적용기준달라짐 (ex > top 이면 +%불가)
+		)
+*/	
