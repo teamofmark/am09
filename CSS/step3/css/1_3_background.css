@@ -1,0 +1,17 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* 
+        ? background-size - 배경이미지 크기 설정
+        1. %,px등의 다양한 단위 사용 가능.
+        2. 하나만 입력시 종횡비 가동(img Tag와 동일) / 두개 입력시 너비,높이 따로작동.
+        3. 고정프리셋
+            cover : 꽉 채움. 
+            contain : 종횡비로 꽉채움 (너비나 높이중 먼저 한계선에 닿는 부분 기준)
+    */
+}
