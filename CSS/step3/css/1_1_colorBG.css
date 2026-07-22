@@ -1,0 +1,16 @@
+html,body,.wrap{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-color: skyblue;
+}
+.wrap .topLine input{
+    padding: 15px; background-color: transparent; /*값의 변화가 있을 시 rgba(255,255,255,0); */
+}
+.wrap p{
+    padding: 15px; /*todo p tag backgroundcolor 바꿔보기*/
+    background-color: lightgreen;
+}

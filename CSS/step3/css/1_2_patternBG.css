@@ -1,0 +1,25 @@
+html,body,.wrap{
+    height: 100%;
+}
+body,p{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../images/pt.gif');
+    background-repeat: repeat;
+    /* 
+        ?-repeat : 이미지의 반복 기능
+        repeat(default) : x,y모두 반복
+        no-repeat: 모두 끄기
+        repeat-x : x 반복 / repeat-y : y 반복
+    */
+}
+.wrap button{
+    padding: 0 40px; line-height: 75px; color: white;
+    background-image: url('../images/pt_ex.png');
+    background-repeat: repeat-x;
+}
+.wrap p{
+    background-color: #0cf; padding: 20px; margin: 0 0 20px;
+    line-height: 300px;
+}
