@@ -3,9 +3,10 @@ html,body{
 }
 body{
     margin: 0;
-    background-image: url('../images/BackgroundFront.png');
+    background-image: url('../images/BackgroundFront.png'),url('../images/BackgroundBack.png');
+    /* ? -image : 배경이미지 설정. n개이상 사용 가능. */
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     /* 
         ? background-size - 배경이미지 크기 설정
         1. %,px등의 다양한 단위 사용 가능.
@@ -14,4 +15,18 @@ body{
             cover : 꽉 채움. 
             contain : 종횡비로 꽉채움 (너비나 높이중 먼저 한계선에 닿는 부분 기준)
     */
+    background-position: center;
+    /* 
+        ? -position : x,y축으로 구분하는데 하나만 적는 경우 x,y 둘 다 적용.
+        x preset - left center right
+        y preset - top center bottom
+        ! left,top 기준으로 설계 되어있기 때문에 right, bottom 기준으로 좌표를 입력하기 위해서는 방향명시 이후 수치를 적으면 된다. ex> right 10% bottom 10%;
+    */
+    background-attachment: fixed;
+    /* 
+        ? -attachment : 스크롤에 반응하는 방식. scroll(default), fixed(고정)
+    */
+}
+p{
+    font-size: 50px; height: 3000px;
 }
