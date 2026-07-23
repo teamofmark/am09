@@ -1,0 +1,26 @@
+*{
+    margin: 0; padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background: url('../images/example.jpg') center / cover no-repeat fixed;
+    /* 
+        ? background: [-image] [-position] / [-size] [-repeat] [-attachment] [-origin] [-clip] [-color]
+        ! position과 size 동시 사용시엔 반드시 / 로 구분지어야함.
+        * 그 외 순서에 큰 상관없음. ex> background: url(''); no-repeat center;
+    */
+    /* background-image: url('../images/example.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+div{
+    background-color: white; margin-bottom: 15%; padding: 8%;
+    /* height: 70%; box-sizing: border-box; */
+}
+div h2{
+    font-size: 28px; margin-bottom: 20px;
+}
