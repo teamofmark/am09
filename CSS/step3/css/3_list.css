@@ -26,3 +26,15 @@ ol li.upper-roman{
 ol li.none{
     list-style: none;
 }
+
+ul.custom{
+    /* list-style-image: url('../images/bul_li.gif');
+    list-style-position: inside; */
+    padding: 0 0 0 10px;
+}
+/* list-style-image or background*/
+ul.custom li{
+    list-style: none;
+    background: url('../images/bul_li.gif') left center  no-repeat;
+    padding: 0 0 0 20px;
+}
