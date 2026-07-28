@@ -1,0 +1,18 @@
+body,p{
+    margin: 0; font-size: 25px;
+}
+.firstDiv{
+    background-color: #555;
+    margin: 30px;
+    /* margin:30px 30px 50px;
+    padding: 0 50px 50px;
+    box-sizing: border-box; */
+}
+.firstDiv p{
+    background-color: #039; color: white;
+    margin: 50px;
+}
+.secondDiv{
+    background-color: #ddd; 
+    margin: 50px;
+}
