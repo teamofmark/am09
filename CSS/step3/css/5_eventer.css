@@ -1,0 +1,48 @@
+*{
+    margin: 0; padding: 0;
+}
+a{
+    text-decoration: none; font-size:50px; word-spacing: 15px; display: inline-block; border: 1px solid green;
+    margin-left: 30px; padding: 10px;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:focus{
+    border:5px dotted blue;
+}
+a:hover{
+    background-color: black; color: white;
+}
+a:active{
+    background-color:red; color: blue;
+}
+/* 일반 태그 테스트 */
+ul li{
+    line-height: 25px; text-align: center;
+}
+ul li:visited{
+    color: green;
+}
+ul li:focus{
+    border: 5px dotted blue;
+}
+ul li:hover{
+    background-color: black; color: white;
+}
+ul li:active{
+    background-color: red; color: blue;
+}
+ol li h3{
+    font-size: 24px; background-color: lightgreen;
+}
+ol li p{
+    font-size: 18px; line-height:24px; background-color: forestgreen; color: white;
+    display: none;
+}
+ol li:hover p{
+    display: block;
+}
