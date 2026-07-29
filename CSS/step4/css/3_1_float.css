@@ -1,0 +1,16 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap{
+    background-color: gray;
+}
+.wrap .exam_1{
+    background-color: lightskyblue;
+}
+
+.wrap .exam_1 img{
+    float: left; margin-right: 30px; margin-bottom: 30px;
+}
+.wrap .exam_1 p{
+    font-size: 24px; line-height: 30px; background-color: rgba(100,0,200,0.5);
+}
