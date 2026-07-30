@@ -1,0 +1,36 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background-color: #ffc;
+    width: 960px; margin: 0 auto;
+}
+header{
+    background-color: #cff;
+}
+header nav{
+    background-color: #9f9;
+}
+main{
+    /* background-color: deeppink; */
+    margin-bottom: 50px;
+}
+main:after{
+    content: ''; display: block; clear: both;
+}
+main aside,
+main section{
+ float: left; height: 500px;
+}
+main aside{
+    background-color:#f96; width: 200px; 
+}
+main section{
+    background-color: #66f; width: 760px;
+}
+main section article{
+    background-color: #6ff;
+}
+footer{
+    background-color: #f9f;
+}
