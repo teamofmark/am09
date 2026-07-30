@@ -7,10 +7,34 @@
 .wrap .exam_1{
     background-color: lightskyblue;
 }
-
+.wrap .exam_1:after{
+    content: ''; display: block; clear: both;
+}
+/* 
+    ? :afterCanceler
+    ! 적용대상 - float 적용대상 부모에게
+    * float를 끊어내는 용도. -> clear =  float가 아닌 마지막 대상이 존재 하지 않을 때 사용가능.
+    * 1. :after - 후위 선택자.
+    * 2. content -  content 넣어주는 속성. (ex> 1 -> 1이 들어감. img -> img들어감) = 빈 문자열(emptyString)
+    * 3. display: block - width: 100%;
+    * 4. clear - clear = floatCounter(취소). float : left,right. = both(양쪽다)
+*/
 .wrap .exam_1 img{
-    float: left; margin-right: 30px; margin-bottom: 30px;
+    float: left; margin-right: 30px;
+    /* margin-bottom: 30px; */
 }
 .wrap .exam_1 p{
     font-size: 24px; line-height: 30px; background-color: rgba(100,0,200,0.5);
 }
+.wrap .exam_2{
+    background-color: lightseagreen;
+}
+.wrap .exam_2:after{
+    content: ''; display: block; clear: both;
+}
+.wrap .exam_2 div{
+    width: 33.33%; height: 300px; background-color: slateblue; float: left;
+}
+/* .wrap .exam_3{
+    clear: left;
+} */
