@@ -4,9 +4,9 @@
 .wrap{
     width: 960px; margin: 0 auto; background-color: rgba(100,40,10,0.5);
 }
-.wrap header{
+/* .wrap header{
     background-color: #ff6a00;
-}
+} */
 .wrap header:after{
     content: ''; display: block; clear: both;
 }
@@ -17,3 +17,26 @@
 .wrap header nav{
     width: 830px; background-color: rgba(10,50,200,0.8); float: left;
 }
+.wrap header nav ul{
+    text-align: center;
+}
+.wrap header nav ul li{
+    /* display: list-item; = bullet표현되는 목록 */
+    display: inline-block;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px;
+}
+/* .wrap header nav ul{
+    width: 300px; margin: 0 auto; list-style: none;
+}
+.wrap header nav ul:after{
+    content: ''; display: block; clear: both;
+}
+.wrap header nav ul li{
+    float: left; width: 20%; text-align: center;
+}
+.wrap header nav ul li a{
+    color: white; line-height: 55px; 
+} */
+
