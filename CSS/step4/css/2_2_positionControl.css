@@ -1,0 +1,18 @@
+body{
+    margin: 0 ; height: 2000px;
+}
+.position_A{
+    background-color: #fc0;
+}
+.position_R{
+    background-color: #0f0;
+}
+.position_R .position_A2{
+    background-color: #0ff;
+}
+.position_F{
+    background-color: #f99;
+}
+.position_S{
+    background-color: #f3e;
+}
