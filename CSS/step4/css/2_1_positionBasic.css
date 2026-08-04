@@ -1,0 +1,35 @@
+p{
+    background-color: magenta;
+}
+#wrap{
+    margin: 0 auto; width: 300px; background-color: #999;
+    position: relative; height: 200px; top: 50px;
+    overflow-y: scroll;
+}
+#wrap div{
+    width: 150px; height: 150px;
+    position: absolute;
+}
+#wrap .redBox{background-color: red; left: 10px; top: 10px; z-index: 111;}
+#wrap .greenBox{background-color: green; left: 50px; top: 50px; z-index: 11;}
+#wrap .blueBox{background-color: blue; left: 90px; top: 90px; z-index: 1;}
+/* 
+    ? position:relative(상대)
+    1. 적용 즉시 뜨지 않음. 스스로가 현재 있던 위치가 기준좌표(x: 0, y: 0).
+    2. 기존 display 속성을 유지함. = width,margin,padding모두 정상작동, float등도 적용가능
+    ! 타 포지션들과는 달리 좌표가 인계되어 이동 하더라도 위로 떠오르지않음 (현재 계층 유지)
+*/
+/* 
+    ? position : absolute(절대)
+    1. 적용 즉시 위로 뜸. 바로 기준좌표를 찾아가지 못함.
+    2. 기존 display 속성을 상실함 = width가 사라짐(inline처럼)
+    3. 좌표가 인계되는 순간 자신의 상위 부모 계층 모두에 relative가 있는지 점검.
+        - true : 그 relative를 기준으로 함.
+        - false : browser 좌측 상단 기준으로 함.
+*/
+/* 
+    ? z-index Leveling
+    1. position 대상들은 태어나는 순서에 따라 위로 올라오는데 이 순서를 바꾸기 위함.
+    2. 최대상수 9999까지 총 1만개의 수를 사용할 수 있으나, 4~8개 내의 계층이면 모두 소화 가능함.
+    ! 개인이 알아보기 쉬운 기준을 세우는 것이 중요.
+*/
