@@ -2,17 +2,34 @@ body{
     margin: 0 ; height: 2000px;
 }
 .position_A{
-    background-color: #fc0;
+    background-color: #fc0; position: absolute; width: 150px; height:  150px;
+    left: 300px; top: 300px;
 }
 .position_R{
-    background-color: #0f0;
+    background-color: #0f0; width: 150px; height:  150px; position: relative; margin: 0 auto 50px;
+    /* top: 50px; */
 }
 .position_R .position_A2{
-    background-color: #0ff;
+    background-color: #099; width: 50px; height: 50px; top: 50px; left: 50px; position: absolute;
 }
 .position_F{
-    background-color: #f99;
+    background-color: #f99; position: fixed; width: 100%; line-height: 80px; left: 0; top: 0;
 }
+/* 
+    ? position: fixed
+    1. 무조건 browser 좌,상을 기준으로 움직인다.
+    2. browser scroll 영향을 받지 않는다.(고정)
+    ! position 해제 : static. -> 기존 display로 돌려놓음(position취소)
+*/
 .position_S{
-    background-color: #f3e;
+    background-color: #f3e; width: 150px; height: 150px; position: sticky;
+    left: 0; top: 80px;
 }
+/* 
+    ? position: sticky
+    1. 적용과 동시에 떠오름.
+    2. 상,하 개념에서의 특정위치 (window.scroll.offset().top)에 도달할 경우 fixed.
+    3. 그 외 상황일 때 absolute로 변환.
+    ! 현재 상황은 하단 감지 불가 ? 지정된 부모기준이 없어서... = 작동여부 확인시 상,하 모두 확인. (absolute->sticky->absolute)
+    ? ex> 부모 > 자손float -> 부모:after = 부모높이가 명확함. = 하단 감지가 됨.
+*/
