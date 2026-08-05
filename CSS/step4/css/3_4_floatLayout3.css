@@ -1,0 +1,41 @@
+body{
+    width: 960px; margin: 0 auto;
+}
+header{
+    background-color: skyblue; position: relative;
+}
+header h1{
+    font-size: 16px; text-align: center; line-height: 40px; background-color: violet;
+    width: 250px; color: white; margin: 0 auto;
+}
+header div{
+    position: absolute; right: 0; top:27px;
+}
+header div:after{
+    content: ''; display: block; clear: both;
+}
+header div input{
+    display: block; float: left; width: 20%; font-size: 14px; line-height: 26px; box-sizing: border-box;
+    border: 1px solid forestgreen;
+}
+header div input#searchBar{
+    width: 80%; background-color: lightcoral;
+}
+header nav{
+    background-color: darkblue;
+}
+header nav ul{
+    text-align: center; margin: 0; padding: 0;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li.marginLeft{
+    margin-left: 40px;
+}
+header nav ul li a{
+    color: lightblue; text-decoration: none; line-height: 40px; display: block;
+}
+header nav ul li a:hover{
+    color: #fff;
+}
