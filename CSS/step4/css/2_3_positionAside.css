@@ -1,0 +1,54 @@
+*{
+    margin: 0; padding: 0;
+}
+.wrap aside{
+    width: 250px; background-color: turquoise; padding: 30px 15px; box-sizing: border-box;
+    position:fixed; height: 100%;
+}
+.wrap aside header{
+    margin-bottom: 50px;
+}
+.wrap aside header h1 a{
+    text-align: center; display: block;
+}
+.wrap aside nav ul{
+    list-style: none;
+}
+.wrap aside nav ul li{
+    margin-bottom: 15px;
+}
+.wrap aside nav ul li a{
+    display: block; text-align: center; font-size: 20px; line-height: 26px; color: green;
+    text-decoration: none;
+}
+.wrap aside footer{
+    position: absolute; bottom: 30px; font-size: 12px; color: white;
+    /* ! fixed > absolute = fixed를 기준으로 움직일수있다. */
+    background-color: midnightblue;  width: 220px; text-align: center; line-height: 24px;
+}
+.wrap article{
+    padding-left: 265px; background-color: palegoldenrod;
+}
+.wrap article h2,
+.wrap article blockquote,
+.wrap article q{
+    margin-bottom: 100px;
+}
+.wrap article h2{
+    font-size: 40px; color: forestgreen; font-weight: bold;
+}
+.wrap article blockquote{
+    border: 5px solid olive; padding: 30px; box-sizing: border-box; font-size: 26px;
+}
+.wrap article q{
+    font-size: 22px; display: block;
+}
+.wrap article div{
+    margin-bottom: 50px;
+}
+.wrap article div h3{
+    color: purple; font-size: 30px; margin-bottom: 50px;
+}
+.wrap article div p{
+    font-size: 22px; line-height: 34px; color: darkgreen;
+}
