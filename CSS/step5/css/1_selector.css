@@ -119,3 +119,24 @@
     ? |= : 해당 단어로 시작하고 -으로 구분되는 대상 선택.
     ? ~= : 띄어쓰기 기준. 해당 단어 포함.
 */
+
+.eventSelector a{
+    display: block; margin-bottom: 30px; text-align: center; font-size: 14px;
+    line-height: 20px;
+}
+.eventSelector a:link{ /* ? 대상:link가 걸린 상태 = href attr을 지닌 상태. */
+    color: red; background-color: black; text-decoration: none;
+}
+.eventSelector a:hover{ /* ? 대상: mouse cursor가 올라간 상태. */
+    color: black; background-color: red; text-decoration: underline;
+}
+.eventSelector a:active{ /* ? 대상:click이 일어났을때*/
+    color: red; background-color: white; text-decoration: line-through;
+}
+.eventSelector a:visited{ /* ? 대상:을 방문한 적이 있는 상태 / 배경은 cursor를 올렸을 때 / 기존 선행속성들 영향을 받음*/
+    color: gray; background-color: white;
+    /* border: 1px solid gray; */
+}
+.eventSelector a:focus{ /* ? 대상:에 초점이 맞춰진 상태.*/
+    border: 3px solid deeppink;
+}
