@@ -140,3 +140,30 @@
 .eventSelector a:focus{ /* ? 대상:에 초점이 맞춰진 상태.*/
     border: 3px solid deeppink;
 }
+
+.statusSelector input[type='checkbox'] + label{
+    overflow: hidden; display: inline-block; height: 20px; transition-duration: 0.75s;
+    vertical-align: middle;
+}
+.statusSelector input[type='checkbox']:checked + label{
+    height: 0px;
+}
+.statusSelector input:enabled{
+    background-color: black; color: white;
+}
+.statusSelector input:enabled::placeholder{
+    color: deeppink;
+}
+.statusSelector input:disabled{
+    background-color: lightgray; color: gray;
+}
+.statusSelector input:disabled::placeholder{
+    color: gray;
+}
+/* 
+    ? enabled(활성화) -> default / disabled(비활성화) -> 변경된
+    ? 상태등을 지정할 때 사용하는 : or :: 의 차이점
+    1. 조작이 가능한 상태일 경우 : (ex> checkbox, radio - :checked, select - :selected)
+    2. 조작이 불가능한 상태일 경우 :: (ex> placeholder)
+    ! : -> 적용 해본 뒤  / 안될 경우 ::
+*/
