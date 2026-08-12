@@ -167,3 +167,39 @@
     2. 조작이 불가능한 상태일 경우 :: (ex> placeholder)
     ! : -> 적용 해본 뒤  / 안될 경우 ::
 */
+
+ul.virtualSelector{
+    list-style: none; margin: 30px 0; padding: 0;
+}
+ul.virtualSelector:after{
+    content: ''; display: block; clear: both;
+}
+ul.virtualSelector li{
+    width: 14.28%; box-sizing: border-box; margin: 0; padding: 15px; float: left; text-align: center;
+}
+ul.virtualSelector li:first-child{
+    border-radius: 20px 0 0 20px;
+}
+ul.virtualSelector li:last-child{
+    border-radius: 0 20px 20px 0;
+}
+ul.virtualSelector li:nth-child(2n+1){
+    background-color: #444; color: white;
+}
+ul.virtualSelector li:nth-child(2n){
+    background-color: #09f;
+}
+/* .shapeSelector h1:nth-of-type(2){color: #f06;}
+.shapeSelector h2:first-of-type{color: #0c6;}
+.shapeSelector h3:last-of-type{color: #30f;} */
+/* todo. -child로 같은결과 나오게 만들기 */
+.shapeSelector h1:last-child{color: #f06;}
+.shapeSelector h2:nth-child(2){color: #0c6;}
+.shapeSelector h3:nth-child(4){color: #30f;}
+/* 
+    ? 가상선택자 - 실제 존재하지 않는 구조(미래에 발생될 구조)를 미리 예상(수열) 해서 선택할 수 있음.
+    1. -child : 부모가 기준이 되어 바라보는 자손의 순서. 첫(first),마지막(last). = 태그 지정 필수 아님
+
+    2. -of-type : 자손들끼리 바라보는 순서. 첫(first),마지막(last). = 태그 지정 필수.
+    ! 의도한 상황이 만약 모든 첫번째 태그 등의 상황이라면 생략 가능.
+*/
