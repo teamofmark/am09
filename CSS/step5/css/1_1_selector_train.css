@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+article{
+    margin-bottom:30px; max-width:1000px;
+    /*
+        ? max-width : 최대너비(아무리 커져도 이이상으로는 못커진다.)
+        ? min-width : 최소너비(아무리 줄어들어도 이이하로는 줄어들지 못한다.)
+        ! 절대로 %로 설정하면 안됨. / -height 개념은 모두 동일한데 너비가 높이로 바뀌는것 뿐.(px만 사용하는건 동일)
+    */
+}
+article:after{
+    content: ''; display: block; clear: both;
+}
+article > :first-child{
+    float:left; margin:0 20px 10px 0; width:150px; line-height:110px;
+    font-size:100px; text-align:right;
+    background-color:gray; color:white;
+}
+article p{
+    font-size:14px;
+}
+
+article p :first-child{
+    color: #09f;
+    background-color: transparent;
+}
+
+article p :first-child:not(mark){
+    text-decoration: underline;
+}
+/* http://lipsum.com/ text sample */
