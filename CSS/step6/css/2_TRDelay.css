@@ -58,6 +58,7 @@ ul{
 .delay3 ul:hover li{
     height: 300px;
 }
+/* https://cubic-bezier.com - 가속도 만들기 */
 .delay3 ul li:nth-child(1){transition-timing-function:cubic-bezier(1,0,0,.97); background-color: lightcoral;}
 .delay3 ul li:nth-child(2){transition-timing-function:ease; background-color: lightgreen;}
 .delay3 ul li:nth-child(3){transition-timing-function:ease-in; background-color: lightskyblue;}
