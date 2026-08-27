@@ -1,0 +1,29 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0 auto; width: 90%;
+}
+aside{
+    float: left; height: 80%; padding-top: 14%; box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 12px;
+}
+p strong{
+    display: block;
+}
+aside:first-of-type{
+    width: 50%;
+}
+aside:first-of-type footer{
+    color: violet;
+}
+
+aside:last-of-type{
+    width: 45%; margin-left: 5%;
+}
+/* todo. 영상보고 모션대로 구현하기 */
