@@ -47,10 +47,22 @@ aside:last-of-type ul li:nth-child(7){background-color: #6800ff;}
 
 aside:last-of-type ul li p{
     width: 80%; float: left; height: 0; opacity: 0;
+    transition-property: height,opacity;
+    transition-duration: 2s, 1s;
+    transition-delay: 0s, 0.5s;
+}
+aside:last-of-type ul li:hover p{
+    height: 220px; opacity: 1;
 }
 aside:last-of-type ul li a{
     color: #fff;
 }
 aside:last-of-type ul li a::before{
     content: '+';
+}
+aside:last-of-type ul li:hover a{
+    color: #000;
+}
+aside:last-of-type ul li:hover a:before{
+    content: '>';
 }
