@@ -19,9 +19,34 @@ body{
 .circle{
     position: absolute; width: 200px; height: 200px; border-radius: 100px;
     background: linear-gradient(to bottom, #7db9f8 0%, #1e5799 100%);
+    animation-name: moveCircle; animation-duration: 2s; animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 /* 
-    ? transition : 시작(변화전) <-> 끝(변화후)
-    ? keyframe : 시작(변화전) <- 중간변화단계(최대 10000개) ->끝(변화후)
+    ! 성능저하문제 : animation > transition 
+    ? transition : 시작(변화전) <-> 끝(변화후) = 기존 대상에 직접 입력. 변화 감지 자동
+        -duration : 지속시간
+    ? keyframe : 시작(변화전) <- 중간변화단계(최대 10000개) ->끝(변화후) = 대상에 직접 연결.
+                        ? 각 중간변화단계 별 속성들을 모두 삽입하는 것이 가능
+        -duration : 상동
+    ? transform : 변형 = 굉장히 다양함(ex> rotate,skew,size,3d,2d,translate....)
+        ! transtion에 사용 가능? = 가능.
 */
-@key
+@keyframes moveCircle{
+    /* -duration을 4초로 증가 시켰을때 왕복
+    0%{
+        left: 0; transform: rotate(0deg);
+    }
+    50%{
+        left: 800px; transform: rotate(360deg);
+    }
+    100%{
+        left: 0; transform: rotate(0deg);
+    } */
+    0%{
+        left: 0; transform: rotate(0deg);
+    }
+    100%{
+        left: 800px; transform: rotate(360deg);
+    }
+}
