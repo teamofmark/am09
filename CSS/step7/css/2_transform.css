@@ -25,3 +25,6 @@ div:nth-of-type(4) span{
 div:nth-of-type(5) span{
     background-color: magenta; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg);
 }
+div:nth-of-type(6) span{
+    background-color: yellow; transform: rotate(10deg) translate(100px,50px) skew(10deg,10deg) scale(1.2);
+}
