@@ -1,0 +1,49 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative;
+    animation-name: rotate3D;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    transform-style: preserve-3d;
+}
+@keyframes rotate3D{
+    0%{
+        transform: rotateX(90deg)  rotateY(45deg);
+    }
+    100%{
+        transform: rotateX(450deg) rotateY(45deg);
+    }
+}
+div span{
+    width: 200px; height: 100px; position: absolute; left: 0; top: 0; opacity: 0.9;
+}
+div span:nth-of-type(1){
+    background-color: red; transform: rotateY(0deg) translateZ(100px);
+}
+div span:nth-of-type(2){
+    background-color: green; transform: rotateY(90deg) translateZ(100px);
+}
+div span:nth-of-type(3){
+    background-color: blue; transform: rotateY(180deg) translateZ(100px);
+}
+div span:nth-of-type(4){
+    background-color: yellow; transform: rotateY(270deg) translateZ(100px);
+}
+div span:nth-of-type(5){
+    background-color: magenta; transform: rotateX(90deg) translateZ(100px); height: 200px;
+}
+div span:nth-of-type(6){
+    background-color: cyan; transform: rotateX(-90deg); height: 200px;
+}
+/* 
+    1. 4개의 면체를 한장으로 모으기 (position: absolute; left: 0; top: 0;)
+    2. nth1 회전없이 100px z축 이동
+    3. nth2 y축을 기준으로 90도. 100px z축 이동.
+    4. nth3 nth1과 반대 = y축 기준으로 180도. 100px z축 이동.
+    5. nth4 nth2와 반대 = y축 기준으로 -90(or 270)도. 100px z축 이동.
+    6. nth5~6. 높이를 증가(200px? 벌어진 사면체 위,아래를 덮어야함) x축 기준으로 5번은 90도 / 6번은 -90(or 270)도.
+    7. 5번은 벌어진 사면체들의 높이만큼(100px) z축 이동.
+*/
