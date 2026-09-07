@@ -1,0 +1,15 @@
+body{
+    font-family: 'Roboto'; text-align: center;
+}
+h1{
+    background-color: lightskyblue;
+}
+article{
+    background-color: lightseagreen;
+}
+article h2{
+    padding: 10px; font-size: 16px; background-color: lightcoral;
+}
+article p{
+    padding: 10px; font-size: 12px; line-height: 18px; background-color: lightgoldenrodyellow;
+}

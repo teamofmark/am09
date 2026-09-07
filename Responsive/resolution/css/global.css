@@ -1,0 +1,65 @@
+/* ? M/Q 입력시 원칙 - 큰 장치(가장아래)부터 작은장치(맨위)순으로 작성 */
+
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: landscape){
+    body{
+        background-color: lightyellow; text-align: center;
+    }
+    h1{
+        font-size: 40px; line-height: 46px; background-color: darkgoldenrod; margin-bottom: 30px;
+    }
+    article{
+        background-color: yellowgreen; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: yellow; color: brown; font-size: 24px; line-height: 30px;
+        margin-bottom: 20px;
+    }
+    article p{
+        background-color: gold; font-size: 16px; line-height: 22px; padding: 20px;
+        color: darkorange;
+    }
+}
+/* ? minimum 768px ~ maximum 1279px screen ~ = tablet / landscape*/
+
+@media screen and (min-width:768px) and (max-width: 1279px) and (orientation: portrait){
+    body{
+        background-color: lightpink;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; background-color: lightcoral; margin-bottom: 30px;
+        text-align: right;
+    }
+    article{
+        background-color: lightyellow; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: saddlebrown; color: lightsalmon; font-size: 24px; line-height: 30px;
+        margin-bottom: 20px; text-align: right;
+    }
+    article p{
+        background-color: sandybrown; font-size: 16px; line-height: 22px; padding: 20px;
+        color: brown;
+    }
+}
+/* ? minimum 768px ~ maximum 1279px screen ~ = tablet / portrait */
+
+@media screen and (min-width: 1280px){
+    body{
+        background-color: lightblue;
+    }
+    h1{
+        font-size: 32px; line-height: 40px; background-color: lightgreen; margin-bottom: 30px;
+    }
+    article{
+        background-color: lightgray; margin-bottom: 30px; padding: 30px;
+    }
+    article h2{
+        background-color: seagreen; color: lightgreen; font-size: 24px; line-height: 30px;
+        margin-bottom: 20px;
+    }
+    article p{
+        background-color: lightyellow; font-size: 16px; line-height: 22px; padding: 20px;
+        color: brown;
+    }
+}
+/* ? minimum 1280px screen ~ = desktop */
