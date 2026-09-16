@@ -3,12 +3,18 @@ header div > ul li p,
 #about figcaption p,
 section.videoArea h2,
 section.expArea ul,
+section.teamArea ul,
+section.teamArea ul+p,
+section.worksArea h2 a,
 footer div *{
         font-family: 'Roboto';
 }
 header div > ul li h2,
 #about figcaption h2,
-section.expArea > *:not(ul){
+section.expArea > *:not(ul),
+section.teamArea h2,
+section.teamArea h2+p,
+section.worksArea h2{
     font-family: 'Playfair Display';
 }
 a{
@@ -16,7 +22,7 @@ a{
 }
 .btn_more{
     font-family: 'Hammersmith One'; font-weight: 400; text-align: center; display: block;
-    font-size: 16px; color: #00e0d0; border: 1px solid #00e0d0; padding: 12px 1%;
+    font-size: 16px; color: #00e0d0; border: 1px solid #00e0d0; padding: 12px 0.5%;
     box-sizing: border-box; background-color: transparent;
 }
 section[class$='Area'] > hr{
