@@ -163,5 +163,28 @@
     section.worksArea a.btn_more{
         max-width: 140px; margin: 0 auto;
     }
+
+    section.talkArea{
+        background: url('../images/bg_04.png') left top / cover no-repeat; padding: 70px 0;
+        text-align: center;
+    }
+    section.talkArea h2{
+        display: none;
+    }
+    section.talkArea p{
+        max-width: 770px; margin: 0 auto 45px; padding-top: 65px;
+        background: url('../images/quote.png') no-repeat center top;
+        font-size: 16px; line-height: 26px; letter-spacing: 1px; font-weight: 400;
+        color: rgba(255,255,255,0.85);
+    }
+    section.talkArea p *{
+        letter-spacing: 0; display: block; 
+    }
+    section.talkArea p strong{
+        font-size: 14px; font-weight: 900; color: white; margin-top: 40px;
+    }
+    section.talkArea p span{
+        font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.7);
+    }
 }
 /* ? desktop */
