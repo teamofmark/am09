@@ -34,12 +34,12 @@ section[class$='Area'] > hr{
     width: 50px; border-width: 2px 0 0; border-style: solid; margin: 0 auto 45px;
 }
 /* ? All Using */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (max-width: 767px) {
     #about,
     section.expArea,
     section.contactArea,
     footer>div{
-        max-width: /*940px*/728px; margin: 0 auto; padding: 70px 0;
+        max-width: /*728px*/600px; margin: 0 auto; padding: 70px /*0*/3%;
         /* ! max-width : 768px
             ? 1. safetyPadding : 2~3%. = 아무리 큰 태블릿이어도 쭉쭉 잘늘어남(적응성이좋음)
             ? 2. left,right : 24px 씩 절삭해서 720guide -> max-width로 사용할경우(max-width:720) 큰 태블릿에서 좌,우가 많이 남게됨..
@@ -49,10 +49,10 @@ section[class$='Area'] > hr{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
     }
     header div{
-        max-width: /*940px*/728px; margin: 0 auto; position: relative;
+        max-width: /*728px*/600px; margin: 0 auto; position: relative; padding: 0 3%;
     }
     header div h1{
-        max-width: 128px;
+        max-width: 128px; width: 35%; float:left;
     }
     header div h1 *{
         display: block;
@@ -61,15 +61,33 @@ section[class$='Area'] > hr{
         width: 100%;
     }
     header div nav{
-        position: absolute; right: 0; top: 0; width: calc(100% - 130px);
-        text-align: right;
+        /* position: absolute; right: 0; top: 0; width: calc(100% - 130px); */
+        text-align: right; width: 50%; margin-left: 15%; float: right;
     }
-    header div nav ul li{
+    header div nav label.mui{
+        padding: 5px 3px; border: 1px solid white; width: 22px; display: block; margin: 5px 0 0 auto;
+    }
+    header div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header div nav input[type='checkbox'].mui{
+        display: none;
+    }
+    header div nav ul{
+        height: 0; overflow-y: hidden; transition: height 1s ease-in-out;
+    }
+    header div nav input[type='checkbox']#mnav:checked + ul{
+        height: 350px;
+    }
+    /* header div nav ul li{
         display: inline-block;
-    }
-    header div nav ul li:not(:first-child){
+    } */
+    /* header div nav ul li:not(:first-child){
         margin-left: 2.65%;
-    }
+    } */
     header div nav ul li a{
         display: block; font-size: 13px; font-weight: 900; color: white;
         line-height: 50px;
@@ -80,7 +98,7 @@ section[class$='Area'] > hr{
     }
     /* ?header GNB Fin */
     header div > ul{
-        margin-bottom: 125px;
+        margin-bottom: 125px; clear: both;
     }
     header div > ul li{
         padding-top: 165px; display: block;
