@@ -84,7 +84,7 @@
 
     section.teamArea{
         background: url('../images/bg_03.png') left top / cover no-repeat; text-align: center;
-        color: white; padding: 70px 0;
+        color: white; padding: 70px /*0*/ 3%;
     }
     section.teamArea h2{
         font-size: 22px; font-weight: 700; margin-bottom: 10px;
@@ -99,21 +99,23 @@
         border-color: rgba(255,255,255,0.2);
     }
     section.teamArea ul{
-        max-width: /*940px*/728px; margin: 0 auto 70px; list-style: none;
+        /*max-width: 728px; margin: 0 auto 70px;*/ list-style: none;
     }
-    section.teamArea ul:after{
+    /* section.teamArea ul:after{
         content: ''; display: block; clear: both;
-    }
-    /* todo. 4열배치 완료하기 */
-    section.teamArea ul li{
+    } */
+    /* section.teamArea ul li{
         width: 23.5%; float: left;
-    }
+    } 
     section.teamArea ul li:not(:first-child){
         margin-left: 2%;
+    }*/
+    section.teamArea ul li:not(:last-child){
+        margin-bottom: 20px;
     }
     section.teamArea ul li figure{
-        background: url('https://placehold.co/220x230') center top / contain no-repeat;
-        padding-top: /*230px*/180px;
+        background: url('https://placehold.co/220x230') center top / /*contain*/ cover no-repeat;
+        padding-top: 180px;
     }
     section.teamArea ul li figure figcaption{
         border: 1px solid rgba(215,215,217,0.5); padding: 20px 2%;
@@ -142,20 +144,21 @@
         padding: 70px 0;
     } 
     section.worksArea h2{
-        font-size: 22px; font-weight: 700; color: #413d4b; max-width: /*940px*/728px; margin: 0 auto 70px;  position: relative;
+        font-size: /*22px*/ 18px; font-weight: 700; color: #413d4b; position: relative;
+        /* max-width: 728px; margin: 0 auto 70px;  */
     }
     section.worksArea h2 a{
-        position: absolute; right: 0; top: 0px; font-size: 14px; font-weight: 300; line-height: 22px; color: #413d4b;
+        position: absolute; right: /*0*/3%; /*top: 0px;*/ font-size: /*14px*/12px; font-weight: 300; line-height: /*22px*/18px; color: #413d4b;
     }
     section.worksArea ul{
         list-style: none; margin-bottom: 70px;
     }
-    section.worksArea ul:after{
+    /* section.worksArea ul:after{
         content: ''; display: block; clear: both;
     }
     section.worksArea ul li{
         width: 16.66%; float: left;
-    }
+    } */
     section.worksArea ul li *{
         display: block;
     }
