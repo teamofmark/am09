@@ -101,7 +101,7 @@ section[class$='Area'] > hr{
         margin-bottom: 125px; clear: both;
     }
     header div > ul li{
-        padding-top: 165px; display: block;
+        padding-top: /*165px*/55px; display: block;
     }
     header div > ul li h2{
        font-size: 32px; color: white; font-weight: 900; text-align: center; padding-bottom: 22px;
@@ -133,15 +133,15 @@ section[class$='Area'] > hr{
     footer{
         background: url('../images/bg_05.png') left top / cover no-repeat;
     }
-    /* footer > div div:not(:last-of-type){
-        float: left; width: 31%; margin: 0 0 70px 3.5%;
-    } */
-    footer > div div:nth-of-type(1),
+    /* footer > div div:nth-of-type(1),
     footer > div div:nth-of-type(2){
         float: left; width: 47.5%; margin: 0 0 70px;
     }
     footer > div div:nth-of-type(2){
         margin-left: 5%;
+    } */ 
+    footer > div div:not(:last-of-type){
+        margin-bottom: 30px;
     }
     footer > div div h2{
         margin-bottom: 20px;
@@ -182,7 +182,7 @@ section[class$='Area'] > hr{
         float: left; display: block; box-sizing: border-box; margin-bottom: 25px;
     }
     footer > div div:nth-of-type(3) input[type='email']{
-        width: /*70%*/35%; font-size: 14px; border: 1px solid rgba(255,255,255,0.5);
+        width: /*35%*/75%; font-size: 14px; border: 1px solid rgba(255,255,255,0.5);
         line-height: 43px; padding: 0 15px; background-color: transparent; color: white;
     }
     footer > div div:nth-of-type(3) input[type='email']::placeholder{
@@ -190,18 +190,19 @@ section[class$='Area'] > hr{
     }
     /* :valid / :invalid */
     footer > div div:nth-of-type(3) input[type='submit']{
-        width: /*25%*/10%; margin-left: /*5%*/2%; text-indent: -9999px; border: none; line-height: 43px;
+        width: /*10%*/25%; /*margin-left: 2%;*/ text-indent: -9999px; border: none; line-height: 43px;
         background: url('../images/btn_submit.png') no-repeat center rgba(255,255,255,0.5);
         /* ! text-indent 가 적용 안될시 확인해야 하는 부분 : display inline or 부모에서 text-align 내려오는부분 */
     }
     footer > div div:nth-of-type(3) ul{
-        /* clear: left; */ float: left; width: 45%; margin-left: 8%;
+        clear: left; text-align: center;
+        /* float: left; width: 45%; margin-left: 8%; */
     }
     footer > div div:nth-of-type(3) ul li{
         display: inline-block; width: 35px; line-height: 35px;
     }
     footer > div div:nth-of-type(3) ul li:not(:first-child){
-        margin-left: /*5px*/ 5.8%;
+        margin-left: /*5.8%*/ 2.5%;
     }
     footer > div div:nth-of-type(3) ul li a{
         display: block; text-indent: -9999px; background-repeat: no-repeat; background-size: contain;
@@ -214,17 +215,17 @@ section[class$='Area'] > hr{
     footer > div div:nth-of-type(3) ul li:nth-child(6) a{background-image: url('../images/ico_sns_06.png');}
     
     footer > div div:last-of-type{
-        clear: left; font-weight: 400;
+        /*clear: left;*/ text-align: center; font-weight: 400;
     }
     footer > div div:last-of-type a{
         display: inline-block;
     }
     footer > div div:last-of-type a:not(:first-of-type){
-        margin-left: 30px;
+        margin-left: /*30px*/ 5.5%;
     }
-    footer > div div:last-of-type p{
+    /* footer > div div:last-of-type p{
         float: right;
-    }
+    } */
 }
 /* ? mobile : 장치이관시 - horizontalScrollBar(수평스크롤) 발생시 해당 문제 찾아서 다시 적응성 작업후 이관 */
 
@@ -238,6 +239,9 @@ section[class$='Area'] > hr{
             ? 1. safetyPadding : 2~3%. = 아무리 큰 태블릿이어도 쭉쭉 잘늘어남(적응성이좋음)
             ? 2. left,right : 24px 씩 절삭해서 720guide -> max-width로 사용할경우(max-width:720) 큰 태블릿에서 좌,우가 많이 남게됨..
         */
+    }
+    .mui{
+        display: none;
     }
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
@@ -410,6 +414,9 @@ section[class$='Area'] > hr{
     section.contactArea,
     footer>div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
+    }
+    .mui{
+        display: none;
     }
     header{
         padding: 15px 0 70px; background: url('../images/bg_01.png') left top / cover no-repeat;
