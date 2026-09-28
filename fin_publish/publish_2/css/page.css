@@ -164,5 +164,14 @@
         text-align: right;
     }
     /* ?sortBar Fin */
+    
+    .contentArea aside{
+        width: 23.07%; float: left;
+    }
+
+
+    .contentArea section{
+        width: 74.37%; margin-left: 2.56%; float: left;
+    }
 }
 /* desktop */
