@@ -82,7 +82,7 @@
             <!-- ! form은 있어도 없는 Tag. ? -> css입력이 되면 안됨.  ? -> form 은 data장바구니인데.. css가 삽입되면 css를 data와 같이 전송해버림...-->
             <fieldset>
                 <label for="sb_Select">Sort By:</label>
-                <span class="selectBox">
+                <span class="selectBox sbSelect">
                     <select id="sb_Select">
                         <option>Best Match</option>
                     </select>
@@ -96,8 +96,9 @@
                 <input type="checkbox" id="freeShipCheck">
                 <label for="freeShipCheck">Free Shipping</label>
                 <label for="ship_Select">Ship to:</label>
-                <span class="selectBox">
+                <span class="selectBox shipSelect">
                     <select id="ship_Select">
+                        <option>USA</option>
                         <option>United Arab Emirates</option>
                     </select>
                 </span>
