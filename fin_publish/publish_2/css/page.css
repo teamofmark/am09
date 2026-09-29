@@ -202,6 +202,65 @@
     }
     /* 2depth */
 
+    .contentArea aside fieldset{
+        background-color: white; border-radius: 5px;
+    }
+    .contentArea aside fieldset:not(:last-of-type){
+        padding: 60px 0 20px;   margin-bottom: 30px;
+    }
+    .contentArea aside fieldset:last-of-type{
+        padding-top: 33px;
+    }
+
+    .contentArea aside fieldset legend{
+        font-size: 11px; color:#343e5c; font-weight: 700; padding: 0 7% 15px; box-sizing: border-box;
+        border-bottom: 1px solid #f0f2f7; text-transform: uppercase;
+        width: 100%; position: relative; top: 33px;
+    }
+    .contentArea aside fieldset legend a{
+        color: #2754eb; border-bottom: 2px solid #c9d4fa; float: right;
+    }
+    .contentArea aside fieldset label{
+        font-size: 13px; color:#343e5c; font-weight: 500; display: inline-block;
+        padding-left: 20%; box-sizing: border-box; line-height: 20px;
+    }
+    .contentArea aside fieldset label:not(:last-of-type),
+    .contentArea aside fieldset span:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    .contentArea aside fieldset span{
+        width: 18%; display: inline-block; text-align: center; font-size: 11px; color: #b8bfd3;
+        font-weight: 400; line-height: 20px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width: 80%;
+    }
+    .contentArea aside fieldset label[for*='condition']{
+        width: 100%;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width: 49%; margin-bottom: 0; line-height: 50px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']:last-of-type{
+        border-left: 1px solid #f0f2f7;
+    }
+    .contentArea aside fieldset input[type='radio'] + label:not([for*='dlvr']){
+        background: url('../images/off_radio.png') no-repeat 7.4% center;
+    }
+    .contentArea aside fieldset input[type='radio'] + label[for*='dlvr']{
+        background: url('../images/off_radio.png') no-repeat 14.8% center;
+    }
+    .contentArea aside fieldset input[type='radio']:checked + label{
+        background-image: url('../images/on_radio.png');
+    }
+    .contentArea aside fieldset input[type='checkbox'] + label{
+        background: url('../images/off_check.png') no-repeat 7.4% center;
+    }
+    .contentArea aside fieldset input[type='checkbox']:checked + label{
+        background-image: url('../images/on_check.png');
+    }
+    /* leftAside Fin */
 
     .contentArea section{
         width: 74.37%; margin-left: 2.56%; float: left;
