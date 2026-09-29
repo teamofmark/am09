@@ -265,5 +265,14 @@
     .contentArea section{
         width: 74.37%; margin-left: 2.56%; float: left;
     }
+    .contentArea section h3{
+        display: none;
+    }
+    .contentArea section ul:after{
+        content: ''; display: block; clear: both;
+    }
+    .contentArea section ul li{
+        float: left; display: block; width: 31%; background-color: white; border-radius: 5px;
+    }
 }
 /* desktop */
