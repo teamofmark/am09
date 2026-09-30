@@ -343,5 +343,13 @@
         color: rgba(28,30,35,0.5);
     }
     /* ? contentSection Fin */
+    
+    section.bestArea{
+        background-color: white; border-radius: 5px; margin-bottom: 50px; text-align: center;
+    }
+    section.bestArea h2{
+        font-size: 11px; font-weight: 600; line-height:55px; color: #343e5c;
+        text-transform: uppercase; border-bottom: 1px solid #f0f2f7;
+    }
 }
 /* desktop */
