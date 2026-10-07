@@ -58,3 +58,5 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+// ?case. 1 만들기
+var userName = 'mark';
