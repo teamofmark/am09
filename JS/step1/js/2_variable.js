@@ -59,4 +59,35 @@
     objClass.showName();
 */
 // ?case. 1 만들기
-var userName = 'mark';
+// var userName = 'mark';
+// var age = "99";
+// ?case. 2 콤마로 구분
+var userName = "Mark", age = "99";
+
+// ?case.3 선언과 초기화를 동시에-
+var radius, pi;
+radius = 10, pi = 3.14159265;
+
+// ?case.4 변수의 특성
+var cup;
+cup = 'Coffee';
+cup = 'Water';
+cup = 'Green Tea';
+//! var cup = 'Green Tea';
+
+document.write(cup);
+
+// ? case.5 연산자 사용시 변수
+var testValue= 10;
+testValue +=20;
+document.write(testValue+20);
+console.log(testValue);
+// todo. 1 자신의 이름과 나이를 변수에 담고 출력하되
+// todo. 2 20년 뒤 나이를 연산하여 문장으로 출력해보기.
+// ! 문자와 문자는 더하기 가능 ex> "나의 이름은" + 변수명 + "다."
+var cliName = "Mark";
+console.log('나의 이름은' + cliName + " 다.");
+var cliAge = 99;
+console.log('현재 나이는' + cliAge + " 세 이고,");
+cliAge += 20;
+console.log('20년 뒤에는 ' + cliAge + '세 이다.');
