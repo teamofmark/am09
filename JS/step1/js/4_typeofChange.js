@@ -11,3 +11,75 @@
     ? 명시적 형변환
     * method 나 lib Core func를 이용하여 강제로 숫자 -> 문자 로 변환.
 */
+// case.1 자신의 나이를 입력받고 20을 더한 값 출력.
+function agePlus(){
+    var age = window.prompt('나이 입력');
+    console.log(typeof(age));
+    var result = Number(age) + 20;
+    console.log(result);
+}
+
+// case.2 강제 숫자 - 문자형 변환.
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 10;
+    console.log('result의 자료유형은' + typeof(result) + '값은 ' + result);
+}
+// case.3 강제 불린 - 숫자형 변환.
+function forcedNumber(){
+    var result = 2 + true;
+    console.log('result의 자료유형은' + typeof(result) + '값은 ' + result);
+}
+// case.4 강제 불린 - 문자형 변환
+function forcedString2(){
+    var a = '2';
+    var result = a + true;
+    console.log('result의 자료유형은' + typeof(result) + '값은 ' + result);
+}
+// *case.5 test1에 들어있는 숫자를 문자로 명시적 형변환.
+/*
+    ? String
+    * String(value); - 문자형으로 변환
+
+    ? .toString()
+    * Number.toString(); - 문자형(진수)변환
+
+    ? .toFixed()
+    * Number.toFixed(); - (소수점자리수(반올림발생))실수문자형 변환.
+*/
+function stringNumb(){
+    var test1 = 15;
+    console.log('변환 전 : ' + typeof(test1) + ' = ' + test1);
+    var result = String(test1);
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
+function stringtoNumb(){
+    var test1 = 15;
+    console.log('변환 전 : ' + typeof(test1) + ' = ' + test1);
+    var result = test1.toString();
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
+function fixtoNumb(){
+    var pi = 3.14159265;
+    console.log('변환 전 : ' + typeof(pi) + ' = ' + pi);
+    var result = pi.toFixed(2);
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
+// todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형. result 로 출력(typeof 검수필요).
+// todo. 1-1 암시적형변환
+function todo1(){
+    var test = 100;
+    var result = test; // todo. 
+    console.log(typeof(result) + " = " + result); //! string = 100
+}
+// todo. 1-2 String 형변환
+function todo2(){
+    var test = 100;
+    var result = test; // todo. 
+    console.log(typeof(result) + " = " + result); //! string = 100
+}
+// todo. 1-3 toString 형변환
+function todo3(){
+    var test = 100;
+    var result = test; // todo. 
+    console.log(typeof(result) + " = " + result); //! string = 100
