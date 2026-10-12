@@ -66,21 +66,54 @@ function fixtoNumb(){
     console.log('변환 후 : ' + typeof(result) + ' = ' + result);
 }
 // todo.1 변수 test에 들어있는 숫자 100을 문자형으로 변형. result 로 출력(typeof 검수필요).
-// todo. 1-1 암시적형변환
+// todo. 1-1 암시적형변환을 이용해서
 function todo1(){
     var test = 100;
-    var result = test; // todo. 
+    var result = test + ''; // todo. 
     console.log(typeof(result) + " = " + result); //! string = 100
 }
-// todo. 1-2 String 형변환
+// todo. 1-2 String을 이용해서 형변환
 function todo2(){
     var test = 100;
-    var result = test; // todo. 
+    var result = String(test); // todo. 
     console.log(typeof(result) + " = " + result); //! string = 100
 }
-// todo. 1-3 toString 형변환
+// todo. 1-3 toString을 이용해서 형변환
 function todo3(){
     var test = 100;
-    var result = test; // todo. 
+    var result = test.toString(); // todo. 
     console.log(typeof(result) + " = " + result); //! string = 100
+}
+// case.6 test에 들어있는 문자를 숫자로 형변환.
+/*
+    ? Number
+    * Number(value); - 정수,실수 구분없이 형변환.
+
+    ? parse
+    * parseInt(value); - 정수형변환
+    * parseFloat(value); - 실수형변환
+*/
+function numbString(){
+    var test = '300.15625';
+    console.log('변환 전 : ' + typeof(test) + ' = ' + test);
+    var result = parseFloat(test) + 10;
+    console.log('변환 후 : ' + typeof(result) + ' = ' + result);
+}
+// todo.2 문자 형을 숫자 형으로 변환하여 연산이 가능하게 만들기.
+// todo. 2-1 parse 형변환
+function todo4(){
+    var test = "100.51";
+    var result = test + 150 + "20"; // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270
+}
+function todo5(){
+    var test = "100.51";
+    var result = test + 150 + "20"; // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270.51
+}
+// todo. 2-2 Number 형변환
+function todo6(){
+    var test = "100.51";
+    var result = test + 150 + "20"; // todo. 
+    console.log(typeof(result) + " = " + result); //! number = 270.51
 }
