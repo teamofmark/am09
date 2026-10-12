@@ -83,3 +83,4 @@ function todo3(){
     var test = 100;
     var result = test; // todo. 
     console.log(typeof(result) + " = " + result); //! string = 100
+}
