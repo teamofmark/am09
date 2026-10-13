@@ -101,3 +101,36 @@ function numberPlusTodo(){
     console.log(++number); // ? 출력 :  13 / 현재 : 13
     console.log(number); //? 최종 : 13
 }
+function compareOperator1(){
+    var a = 10;
+    var b = 20;
+    var result = a > b;
+    console.log('a > b = ' + result);
+}
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a==b;
+    console.log("a = b ? " + result);
+}
+function compareOperator3(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b;
+    console.log('a != b ?' + result);
+}
+function logicalOperator1(){
+    var a = '여자';
+    var b = '웹디자이너';
+    var result = (a=='여자')&&(b=='웹디벨로퍼');
+    console.log('result = ' + result);
+}
+function logicalOperator2(){
+    var a = '남자';
+    var b = '웹개발자';
+    var result = (a=='남자')||(b=='웹기획자');
+    console.log("result = " + result);
+}
+function compareOperator4(){
+    console.log(30 > 20 && 20 > 10);
+}
