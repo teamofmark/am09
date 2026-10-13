@@ -15,3 +15,50 @@
 	alert('종료');
     
 */
+// case.1 현재시간이 오후인가 오전인가
+function amORpm(){
+    var date = new Date();
+    var hour = date.getHours();
+    // console.log(typeof(hour) + ":" + hour);
+
+    if(hour < 12){
+        alert('오전입니다.');
+    }
+    if(hour >= 12){
+        alert('오후입니다.');
+    }
+}
+// ?case.2 말일인가 아닌가
+function lastDay(){
+    var date =  new Date();
+    var day = date.getDate();
+    // console.log(typeof(day) + ":" + day);
+    if(day < 30){
+        alert('아직 말일이 아닙니다.');
+    }else{
+        alert('말일입니다.');
+    }
+}
+
+function lastDayEx(){
+    function endOfMonth(date){
+        return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    }
+    dt = new Date();
+    console.log(endOfMonth(dt).toString());
+}
+// todo. 현재 내가 아침?점심?저녁? 먹을 시간인지 판단해주기
+function mealTime(){
+    var date = new Date();
+    // 1. 시간객체 불러오기
+    var hour = date.getHours();
+    // 2. 시간추출하기
+    if(hour < 11){
+        alert('아침먹을시간');
+    }else if(hour < 15){
+        alert('점심먹을시간');
+    }else{
+        alert('저녁먹을시간');
+    }
+    // 3. 조건문작성 (아침먹을조건,점심먹을조건,저녁먹을조건- 메시지 = alert으로출력)
+}
