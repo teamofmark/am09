@@ -90,14 +90,14 @@ function numberPlusAfter(){
 /*todo. 증감연산자복합.*/
 function numberPlusTodo(){
     var number = 10; 
-    console.log(number++); // ? 출력 : / 현재 : 
-    console.log(--number); // ? 출력 :  / 현재 : 
-    console.log(++number); // ? 출력 :  / 현재 : 
-    console.log(number--); // ? 출력 : / 현재 : 
-    console.log(number++); // ? 출력 : / 현재 :
-    console.log(++number); // ? 출력 :  / 현재 : 
-    console.log(--number); // ? 출력 : / 현재 :
-    console.log(number++); // ? 출력 :  / 현재 :
-    console.log(++number); // ? 출력 :  / 현재 : 
-    console.log(number); //? 최종 : 
+    console.log(number++); // ? 출력 : 10 / 현재 : 11
+    console.log(--number); // ? 출력 : 10  / 현재 : 10
+    console.log(++number); // ? 출력 :  11 / 현재 : 11
+    console.log(number--); // ? 출력 : 11 / 현재 : 10
+    console.log(number++); // ? 출력 : 10 / 현재 : 11
+    console.log(++number); // ? 출력 :  12 / 현재 : 12
+    console.log(--number); // ? 출력 :  11 / 현재 : 11
+    console.log(number++); // ? 출력 :  11 / 현재 : 12
+    console.log(++number); // ? 출력 :  13 / 현재 : 13
+    console.log(number); //? 최종 : 13
 }
