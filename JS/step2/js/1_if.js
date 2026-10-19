@@ -145,3 +145,23 @@ axios.get('/user?ID=12345')
         // 항상돌수있는부분
     });
 */
+// ! tune. 간소화
+function userInfoCheck1(){
+    var userID = prompt('사용자의 아이디');
+    var userPW = prompt('사용자의 패스워드');
+    (userID=="Mark"&&userPW=="1234")? alert("Mark님으로 확인되었습니다.") : alert("ID 혹은 Password가 틀렸습니다.");
+}
+// ? case. 6 사용자 id "Mark", password "1234"의 정보가 틀린 경우 틀린 정보에 대한 오류 메시지 출력.
+function userInfoCheck2(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompot('사용자의 패스워드');
+    if(userID == "Mark" && userPW == "1234"){
+        console.log("Mark님으로 확인되었습니다.");
+    }else if(userID != "Mark" && userPW !="1234"){
+        console.log("모든 정보가 맞지 않습니다.");
+    }else if(userID!="Mark"){
+        console.log("ID가 존재하지 않습니다.");
+    }else if(userPW!="1234"){
+        console.log("Password가 틀렸습니다.");
+    }
+}
