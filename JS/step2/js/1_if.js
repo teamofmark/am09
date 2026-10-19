@@ -76,3 +76,42 @@ function numbJudgment(){
     }
 }
 // ?case.4 홀,짝수 판별
+function oddOrEven(){
+    var numb = prompt('숫자를 입력하세요','홀,짝을 구분해드립니다.');
+    if(numb%2 == 0){
+        alert('짝수입니다.');
+    }else if(numb%2 == 1){
+        alert('홀수입니다.');
+    }else{
+        alert('올바른 값을 입력하세요.');
+    }
+}
+// todo. 다음 세 과목의 점수를 입력받아 평균을 구한 후 수~가 까지 성적 산출하기
+function avgScore(){
+// 1. 국어,영어,수학 점수를 입력 받을수 있게 만들기
+    var koreanScore = Number(prompt('국어점수를 입력하세요.'));
+    var englishScore = Number(prompt('영어점수를 입력하세요.'));
+    var mathScore = Number(prompt('수학점수를 입력하세요.'));
+// 2. 입력받은 세 숫자의 평균을 구하기.
+    var avg = ((koreanScore + englishScore + mathScore) / 3).toFixed(2);
+    console.log(typeof(avg) + " : " + avg);
+// 3. 조건판별 시작(~90: 수 / ~80: 우 / ~70: 미 / ~60: 양 / ~이하: 가 / 예외 : 음수이거나 100을 초과할때)
+    if(avg > 100 || avg < 0){
+        console.log('점수 똑바로 입력하라.');
+    }else if(avg >= 90){
+        console.log('평균' + '점 \n' + '수 입니다.');
+    }else if (avg >= 80) {
+            console.log('평균' + avg + '점 \n' + '우 입니다. 우수하구먼');
+    }else if (avg >= 70) {
+        console.log('평균' + avg + '점 \n'  + '미 입니다. 괜찮구먼');
+    } else if (avg >= 60) {
+        console.log('평균' + avg + '점 \n'  + '양 입니다. 망했구먼');
+    } else{
+        console.log('평균' + avg + '점 \n'  + '가 입니다. 맞겠구먼');
+    }
+}
+
+// ?case.5 사용자 id를 입력받아 맞다면 승인 메시지 출력
+function userIDCheck(){
+    
+}
