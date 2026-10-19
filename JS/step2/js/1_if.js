@@ -113,5 +113,35 @@ function avgScore(){
 
 // ?case.5 사용자 id를 입력받아 맞다면 승인 메시지 출력
 function userIDCheck(){
-    
+    var userID = prompt('사용자의 아이디');
+    if(userID == "Mark"){
+        alert('접속을 승인합니다.');
+    }else if(userID != "Mark"){
+        alert("잘못된 ID입니다.");
+    }
 }
+function userInfoCheck(){
+    var userID = prompt('사용자의 아이디');
+    var userPW = prompt('사용자의 패스워드');
+    if(userID=="Mark"&&userPW=="1234"){
+        alert("Mark님으로 확인되었습니다.");
+    }else{
+        //  if(userID!="Mark"||userPW!="1234")
+        alert("ID 혹은 password가 틀렸습니다.");
+    }
+}
+/*
+const axios = require('axios');
+axios.get('/user?ID=12345')
+    .than(function(response)){
+        // 성공핸들링
+        console.log(response);
+    })
+    .catch(function(error)){
+        // 오류핸들링
+        console.log(error);
+    })
+    .finally(function(){
+        // 항상돌수있는부분
+    });
+*/
