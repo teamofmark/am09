@@ -62,3 +62,17 @@ function mealTime(){
     }
     // 3. 조건문작성 (아침먹을조건,점심먹을조건,저녁먹을조건- 메시지 = alert으로출력)
 }
+// ? case.3  양,음수 판별
+function numbJudgment(){
+    var numb = prompt('숫자를 입력하세요.');
+    if(numb > 0){
+        alert('양수입니다.');
+    }else if(numb < 0){
+        alert('음수입니다.');
+    }else if(numb==0){
+        alert('0입니다.');
+    }else{
+        alert('잘못된 입력값 입니다.');
+    }
+}
+// ?case.4 홀,짝수 판별
