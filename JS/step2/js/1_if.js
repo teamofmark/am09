@@ -154,7 +154,7 @@ function userInfoCheck1(){
 // ? case. 6 사용자 id "Mark", password "1234"의 정보가 틀린 경우 틀린 정보에 대한 오류 메시지 출력.
 function userInfoCheck2(){
     var userID = window.prompt('사용자의 아이디');
-    var userPW = window.prompot('사용자의 패스워드');
+    var userPW = window.prompt('사용자의 패스워드');
     if(userID == "Mark" && userPW == "1234"){
         console.log("Mark님으로 확인되었습니다.");
     }else if(userID != "Mark" && userPW !="1234"){
