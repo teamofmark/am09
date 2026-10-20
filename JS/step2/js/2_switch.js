@@ -52,5 +52,24 @@ function lotto(){
     }
 }
 function calculator(){
-    
+    var firstNumb = Number(window.prompt('첫번째숫자를입력하세요.'));
+    var operator = window.prompt('연산자를 입력하세요');
+    var lastNumb = Number(window.prompt('두번째 숫자를 입력하세요.'));
+    switch(operator){
+        case "+":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb + lastNumb));
+            break;
+        case "-":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb - lastNumb));
+            break;
+        case "x":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb * lastNumb));
+            break;
+        case "/":
+            console.log(firstNumb + operator + lastNumb + "=" + (firstNumb / lastNumb));
+            break;
+        default:
+            alert('올바른 값이 아닙니다.');
+            break;
+    }
 }
