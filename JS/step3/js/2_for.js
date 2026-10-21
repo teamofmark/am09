@@ -116,3 +116,28 @@ function arrayFor3(){
         document.write(swapNumb +"번째 내용 = " + data[i] + '<br>');
     }
 }
+// case.4 역반복배열
+function reverseFavorFruit(){
+    var array = ['포도','딸기','수박','사과','키위','토마토'];
+    for(var i = array.length - 1; i >= 0; i--){
+        console.log(array[i]);
+    }
+}
+// case.5 for loop continue
+function forContinue(){
+    for(var i = 0; i <= 10; i++){
+        continue;
+        document.write(i + "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function continueEx(){
+    var text = '';
+    for(var i = 0; i < 10; i++){
+        if(i == 3){
+            continue;
+        }
+        text = text +i;
+    }
+    console.log(text); //? 
+}
