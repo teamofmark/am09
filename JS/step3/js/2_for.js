@@ -141,3 +141,53 @@ function continueEx(){
     }
     console.log(text); //? 
 }
+function runContinue(){
+    var output = 0;
+    //! 변수 초기화 : 담을 예정인 자료형에 따라 다르게 설정. ex> 문자열 -> '', 숫자 -> 0, DOM(tag)-> null..
+    for(var i = 1; i <= 10; i++){
+        if(i % 2 == 0){
+            continue;
+        } //? filter
+        output += i;
+        console.log(output);
+    }
+}
+// case.6 for loop break
+function forBreak(){
+    for(var i = 1; i<=10; i++){
+        break;
+        document.write(i+ "<br>");
+    }
+    document.write("최종 i = " + i + "<br>");
+}
+function forBreak(){
+    var i = 0;
+    while(i<6){
+        if(i == 3){
+            break;
+        }
+        i = i + 1;
+    }
+    console.log(i);
+}
+function runBreak(){
+    for(var i = 0; true; i++){
+        alert(i + '번째 반복문');
+        if(!confirm('계속할래?')){
+           break; 
+        }
+    }
+}
+
+/* 
+    todo. 배열값을 변화시키면 자동으로 반응하는 경고창.
+    todo. console에 "n"번째 반복문이라는 메시지가 떠야하고
+    todo. 이 "n"번째라고 하는건 배열의 갯수로 규정된다.
+    todo. 반복조건에 length를 사용하는 것이 아니라 무한루프 상태에서 (배열의 갯수만큼만 반복이 실행=조건) 된 이후에 break.
+    todo.  "지정된 배열값 : 6개. 출력 완료" 라는 출력완료 메시지가 document 에 발생.
+*/
+function runBreak2(){
+    var swapNumb = ['첫','두','세','네','다섯','여섯','일곱'];
+    //? 배열값을 변화시키면 자동으로 반응하는 경고창.
+
+}
