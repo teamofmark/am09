@@ -189,5 +189,11 @@ function runBreak(){
 function runBreak2(){
     var swapNumb = ['첫','두','세','네','다섯','여섯','일곱'];
     //? 배열값을 변화시키면 자동으로 반응하는 경고창.
-
+    for(var i = 0; true; i++){
+        console.log(swapNumb[i] + '번째 반복문');
+        if(i == swapNumb.length-1){
+            break;
+        }
+    }
+    document.write('지정된 배열값 : ' + swapNumb.length +'개. 출력완료' + '<br>');
 }
