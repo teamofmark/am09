@@ -178,7 +178,6 @@ function runBreak(){
         }
     }
 }
-
 /* 
     todo. 배열값을 변화시키면 자동으로 반응하는 경고창.
     todo. console에 "n"번째 반복문이라는 메시지가 떠야하고
@@ -196,4 +195,39 @@ function runBreak2(){
         }
     }
     document.write('지정된 배열값 : ' + swapNumb.length +'개. 출력완료' + '<br>');
+}
+// ! 다중 loop
+function halfPyramid(){
+    var star = '';
+    for(var i = 1; i<=10; i++){
+        for(var j = 0; j < i; j++){
+            star += '*';// ? j loop가 실행해야되는 부분 
+        }
+        star += '<br>';// ? i loop가 실행해야되는 부분
+    }
+    document.write(star);
+}
+function reverseHalfPyramid(){
+    var star = '';
+    for (var i = 10; i >= 1; i--) {//? 1. ifor = 10~1 까지 수행
+        for (var j = 0; j < i; j++) { //? jfor = j가 i보다 작을때 까지 반복 수행 10,9,8,7,6....
+            star += '*';//? 변수 star에 반복생성된 만큼 *을 넣음.
+        }
+        star += '<br>';//? ifor 만큼 <br>을 변수 star에 넣음.
+    }
+    document.write(star);
+}
+function pyramid(){
+    var star = '';
+    for(var i = 1; i <= 10; i++){
+        for(var e = 10; e >= i; e--){
+            star += '&nbsp;';
+            // ? e loop = 공백
+        }
+        for(var s = 0; s < 2*i-1; s++){
+            star += '*';
+        }
+        star+= '<br>';
+    }
+    document.write(star);
 }
