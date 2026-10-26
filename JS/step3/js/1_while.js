@@ -59,4 +59,11 @@ function sumNumb1(){
         document.write('현재까지의 총합 : ' + result + '<br>');
         i++;
     }
+    /*
+        do{
+        // 한번은 무조건 실행 되는 부분
+        }while(condition){
+        //  이후 반복할 부분
+        }
+    */
 }
