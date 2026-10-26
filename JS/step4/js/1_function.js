@@ -22,3 +22,10 @@ function commentFunc(){
     }
 }
 */
+// case.2 매개변수(parameter)가 있는 함수 만들기
+// ? 매개(가되어주는)변수, 인자, parameter, paramVal.....호칭 여러개.
+function commentParam(count,comment){
+    for(var i = 0; i < count; i++){
+        document.write(comment,"<br>");
+    }
+}

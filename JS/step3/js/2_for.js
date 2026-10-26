@@ -232,6 +232,21 @@ function pyramid(){
     document.write(star);
 }
 
+
+function pyramidCustom(n) {
+     //?var n = 6; 매개변수시 밖으로 
+    for (var i = 1; i <= n; i++) { //? 1~6. 초기 iloop시작.
+        var s = "";
+        for (var j = 1; j <= (2 * n - 1); j++) { //? 1~11. 초기 jloop 시작
+            (j >= n + 1 - i && j <= n - 1 + i) ? s += "*" : s += " ";
+            //? j가 6보다 크거나 같고 j가 6보다 작거나 같을때 *을 찍고 아닐땐 공백. loop.1 
+            // (j >= n + 1 - i && j <= n - 1 + i) ? s += "*" : s += "&nbsp;";
+        }
+        console.log(s);
+        // document.write(s + "<br>");
+    }
+}
+
 // case. 7 원하는 구구단 수를 입력받아 출력하는 for
 function gugudan(){
     var guguNumb = prompt('구구단숫자를 입력');
