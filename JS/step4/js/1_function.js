@@ -61,3 +61,42 @@ function showInfo(){
     * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대 되는 값.
     * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를 함수 외부로 전달하기 위해 사용하는 출력 부.
 */
+// case.4 Return의 기본 이해
+function f(x){
+    return x*x;
+}
+function sumAllEX(){
+    var willReturn = 0;
+    for(var i in arguments){
+        // var i = 0; i < arguments.length; i++ IE9까지는 사용불가
+        willReturn += arguments[i];
+    }
+    return willReturn;
+}
+// case.5 리턴되는 값(returnValue)을 변수에 저장하고 전달하기
+function sumReturn1(num1,num2){
+    var result = num1 + num2;
+    return result;
+}
+var returnVal = sumReturn1(13,26);
+
+// case.6 무한루프를 돌며 숫자를 입력받고 입력받은 수의 합을 화면에 출력하는 함수
+// ! 단, 입력값이 0 이면 즉시 실행 중지.
+function infiniteSum(){
+    var sum = 0;
+    var count = 1;
+    while(true){
+        var value = parseInt(prompt("숫자만 입력해라."));
+        if(value == 0){
+            document.write("종료. ");
+            return; //? break는 속한로직(loop)을 빠져나오지만, return은 함수 자체를 빠져나옴
+        }
+        sum += value;
+        document.write(count+". " + sum + "<br>");
+        count++;
+    }
+    document.write("총" + count + "번 실행함.");
+}
+function printGugudan(){
+    
+}
