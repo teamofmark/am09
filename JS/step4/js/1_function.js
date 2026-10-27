@@ -97,6 +97,14 @@ function infiniteSum(){
     }
     document.write("총" + count + "번 실행함.");
 }
-function printGugudan(){
-    
+function printGugudan(numb){
+    var data = '';
+    for(var i = 2; i<=numb; i++){
+        data += i + "단 출력" + "<br>";
+        for(var m = 1; m <= numb; m++){
+            data += i + 'x' + m + " = " + (i*m) + "<br>";
+        }
+        data += '<br>';
+    }
+    return data;
 }
