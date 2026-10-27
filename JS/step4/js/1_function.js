@@ -42,3 +42,22 @@ function sumParam(num1,num2){
     * 단, arguments는 array와 비슷해보이지만 length를 구하는 방식을 제외하고는 array와는 다르다.
     * 필요에 따라 array로 추가 변환하여 사용 할 수 있다.
 */
+function sumAll(){
+    console.log(typeof(arguments) + ' : ' + arguments.length);
+    var willReturn = 0;
+    for(var i = 0; i < arguments.length; i++){
+        willReturn += arguments[i];
+    }
+    console.log(willReturn);
+}
+// todo. "자신의 이름"의 나이는 "자신의 나이" 세 입니다. arguments를 이용해 만들어보기
+function showInfo(){
+    console.log(arguments[0] + "의 나이는" + arguments[1] + "세 입니다.");
+}
+
+/*
+    ?return (리턴)
+    * 함수 내부는 함수라는 범위 안에 갇히기 때문에, 한번 실행되면 함수 외부에서 접근 불가.
+    * 이 때 매개변수를 활용하면 함수 내부로 data를 전달 할 수 있는데, return value는 이와 반대 되는 값.
+    * 즉, 매개변수 값이 함수 외부에서 내부로 들어오는 입력 부라면, 리턴값은 함수 내부에서 처리한 결과를 함수 외부로 전달하기 위해 사용하는 출력 부.
+*/
