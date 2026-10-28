@@ -209,3 +209,39 @@ function hi2(){
 function execute(func){
     func();
 }
+// case.10 버튼 클릭시 매개변수값으로 넘긴 함수 호출하기
+function welcome(){
+    alert("환영합니다. 반갑습니다.");
+}
+/* 10-1. 기명함수 사용
+$(document).ready(function(){
+    $("#runEX10").click(welcome);
+});
+*/
+/*10-2. 익명함수 사용
+$(document).ready(function(){
+    $("#runEX10").click(function(){
+        alert("환영합니다. 반갑습니다.");
+    });
+});
+*/
+/* 10-3. 이벤트 객체사용
+$(document).ready(function(){
+    $("#runEX10").click(function(event){
+        console.log(event);
+        console.log(this);
+    });
+});
+*/
+/* 10-4. on 메서드 사용
+$(document).ready(function(){
+    $("#runEX10").on("click",function(){
+        alert("환영합니다. 반갑습니다.");
+    });
+});
+*/
+/* 10-5. 순수 JS 처리 - defer 문제가 있기 때문에 테스트시 script 최하단 이동 필요
+document.getElementById("runEX10").addEventListener("click", function(){
+    alert("환영합니다. 반갑습니다.");
+});
+*/
