@@ -213,11 +213,11 @@ function execute(func){
 function welcome(){
     alert("환영합니다. 반갑습니다.");
 }
-/* 10-1. 기명함수 사용
+/* 10-1. 기명함수 사용*/
 $(document).ready(function(){
     $("#runEX10").click(welcome);
 });
-*/
+
 /*10-2. 익명함수 사용
 $(document).ready(function(){
     $("#runEX10").click(function(){
@@ -245,3 +245,26 @@ document.getElementById("runEX10").addEventListener("click", function(){
     alert("환영합니다. 반갑습니다.");
 });
 */
+
+// case.11 매개변수로 전달받은 함수를 반복호출하기
+function callFunctionTenTimes(otherFunction){
+    for(var i = 0; i < 10; i++){
+        otherFunction();
+    }
+}
+/* 11-1 익명함수 사용시
+callFunctionTenTimes(function(){
+    document.write("hello..!");
+});*/
+// 11-2 기명함수 사용시
+function justFunction(){
+    document.write("hello..!");
+}
+// case.12 return Value로 함수 사용
+function createHello(){
+    function hello(user){
+        document.write(user+'welcome!');
+    }
+    return hello;
+}
+var result = createHello();
