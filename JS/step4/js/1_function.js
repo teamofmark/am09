@@ -155,20 +155,20 @@ document.write(sub(20, 10) + "<br>");
 document.write(mul(20, 10) + "<br>");
 document.write(div(20, 10) + "<br>");
 */
-function calculator2(op){ //? 종합 사칙연산기
+function calculator2(op,num1,num2){ //? 종합 사칙연산기
     var result = 0;
     switch(op){
         case "+":
-            result = //? 각 해당 함수 불러와 사용;
+            result = add(num1,num2);//? 각 해당 함수 불러와 사용;
             break;
         case "-":
-            result = //? 각 해당 함수 불러와 사용;
+            result = sub(num1,num2);//? 각 해당 함수 불러와 사용;
             break;
         case "*":
-            result = //? 각 해당 함수 불러와 사용;
+            result = mul(num1,num2);//? 각 해당 함수 불러와 사용;
             break;
         case "/":
-            result = //? 각 해당 함수 불러와 사용;
+            result = div(num1,num2);//? 각 해당 함수 불러와 사용;
             break;
         default:
             result = "잘못된 연산자 입니다.";
