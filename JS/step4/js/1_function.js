@@ -125,3 +125,71 @@ function printGugudan(numb){
     결과 = 2
     결과 = 잘못된 연산자 입니다.
 */
+function calculator(op,numb1,numb2){
+    var result = 0;
+    switch(op){
+        case "+":
+            result = numb1 + numb2;
+            break;
+        case "-":
+            result = numb1 - numb2;
+            break;
+        case "*":
+            result = numb1 * numb2;
+            break;
+        case "/":
+            result = numb1 / numb2;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+//todo 2. 위의 예제에 추가로 사칙연산 부분을 함수로 변환하여 보다 편하게 사용 할 수 있게 만들기.
+/* 
+//* 실행구문
+document.write(calculator2("+", 20, 10) + "<br>");
+document.write(add(20, 10) + "<br>");
+document.write(sub(20, 10) + "<br>");
+document.write(mul(20, 10) + "<br>");
+document.write(div(20, 10) + "<br>");
+*/
+function calculator2(op){ //? 종합 사칙연산기
+    var result = 0;
+    switch(op){
+        case "+":
+            result = //? 각 해당 함수 불러와 사용;
+            break;
+        case "-":
+            result = //? 각 해당 함수 불러와 사용;
+            break;
+        case "*":
+            result = //? 각 해당 함수 불러와 사용;
+            break;
+        case "/":
+            result = //? 각 해당 함수 불러와 사용;
+            break;
+        default:
+            result = "잘못된 연산자 입니다.";
+            break;
+    }
+    return result;
+}
+function add(numb1,numb2){ //? 더하기
+    var addResult = numb1 + numb2;
+    return addResult;
+    // return numb1+numb2;
+}
+function sub(numb1,numb2){ //? 빼기
+    var subResult = numb1 - numb2;
+    return subResult;
+}
+function mul(numb1,numb2){ //? 곱하기
+    var mulResult = numb1 * numb2;
+    return mulResult;
+}
+function div(numb1,numb2){ //? 나누기
+    var divResult = numb1 / numb2;
+    return divResult;
+}
