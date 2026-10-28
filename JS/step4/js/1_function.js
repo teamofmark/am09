@@ -193,3 +193,19 @@ function div(numb1,numb2){ //? 나누기
     var divResult = numb1 / numb2;
     return divResult;
 }
+
+// case.8 함수를 변수에 담기
+function hello(name){
+    console.log(name + "환영합니다.");
+}
+var func = hello;
+// case.9 함수를 매개변수에 담기
+function hi1(){
+    console.log('hello');
+}
+function hi2(){
+    console.log('안녕');
+}
+function execute(func){
+    func();
+}
