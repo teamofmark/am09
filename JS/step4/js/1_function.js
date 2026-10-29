@@ -261,10 +261,11 @@ function justFunction(){
     document.write("hello..!");
 }
 // case.12 return Value로 함수 사용
-function createHello(){
-    function hello(user){
-        document.write(user+'welcome!');
+function createHello(){ //? 1. 해당 함수 실행시 하단 로직 실행
+    function hello(user){ //? 2. 중첩함수 = 1번함수가 실행될때 만들어지는 함수(매개변수가있는)
+        document.write(user+'welcome!'); //? 3. 2번함수가 실행될때 출력되는 함수(write+매개변수)
     }
-    return hello;
+    return hello; //? 3. 1번함수가 실행될때 hello라는 함수를 호출부(1번함수가 실행된곳)로 보냄.
 }
-var result = createHello();
+var result = createHello(); //? 4. 1번함수가 실행된 위치 = result라는 변수에 담겨있음.
+// ? 결론 - result변수에는 1번함수가 실행된 위치로 받은 hello라는 함수가 들어오게됨.
