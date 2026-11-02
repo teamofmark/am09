@@ -1,8 +1,13 @@
 $(document).ready(function(){
+    // case.1
     $("#btnMoveCircle").click(moveCircle);
+    // case.2
     // $("#btnDetailMove").click(detailMoveCircle);
     detailMoveCircleExt();
+    // case.3
+    keyControl();
 });
+    // case.1
 function moveCircle(){
     var $circle = $(".circle");
     var xpos = window.prompt("0부터 380이하의 숫자만 입력하세요.");
@@ -14,6 +19,7 @@ function moveCircle(){
         alert("잘못된 수치입니다. 글안읽어요?");
     }
 }
+    // case.2
 function detailMoveCircle(){
     var $circle = $(".circleDetail");
     var xpos = $("#xpos").val();
@@ -55,4 +61,32 @@ function circleMovCommand(xpos,ypos){
             "top" : ypos
         });
     }
+}
+// case.3
+function keyControl(){
+    var $circle = $(".circleKey");
+    var range = 50;
+    var currentXpos = 0;
+    var currentYpos = 0;
+    $(document).keydown(function(e){
+        console.log("입력한 keyCode : " + typeof(e.keyCode) + e.keyCode);
+        // todo. w 87(ypos-), d 68(xpos+), s 83(ypos+), a 65(xpos -)
+        switch(e.keyCode){
+            case 87:
+                currentYpos -= range;
+                break;
+            case 83:
+                currentYpos += range;
+                break;
+            case 65:
+                currentXpos -= range;
+                break;
+            case 68:
+                currentXpos += range;
+                break;
+        }
+        // todo. 범위내로 움직임 고정하기
+        $circle.css("left",currentXpos);
+        $circle.css("top",currentYpos);
+    });
 }
