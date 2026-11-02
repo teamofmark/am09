@@ -5,7 +5,8 @@ $(document).ready(function(){
     // $("#btnDetailMove").click(detailMoveCircle);
     detailMoveCircleExt();
     // case.3
-    keyControl();
+    // keyControl();
+    keyControlExt();
 });
     // case.1
 function moveCircle(){
@@ -86,7 +87,47 @@ function keyControl(){
                 break;
         }
         // todo. 범위내로 움직임 고정하기
+        if(currentXpos < 0){
+            currentXpos = 0;
+        }
+        if(currentXpos > 380){
+            currentXpos = 380;
+        }
+        if(currentYpos < 0){
+            currentYpos = 0;
+        }
+        if(currentYpos > 380){
+            currentYpos = 380;  
+        }
         $circle.css("left",currentXpos);
         $circle.css("top",currentYpos);
+    });
+}
+
+function keyControlExt(){
+    const $circle = $(".circleKey");
+    const RANGE = 50;
+    const MAX_POS = 380;
+    const MIN_POS = 0;
+
+    let currentXpos = 0;
+    let currentYpos = 0;
+    const moveMap = {
+        87 : {y: -RANGE}, //W
+        83: {y: RANGE}, //S
+        65: {x:-RANGE}, //A
+        68: {x: RANGE} //D
+    }
+    $(document).on("keydown",function(e){
+        const move = moveMap[e.keyCode];
+        if(!move) return;
+        if(move.x !== undefined) currentXpos += move.x;
+        if(move.y !== undefined) currentYpos += move.y;
+        currentXpos = Math.max(MIN_POS, Math.min(currentXpos, MAX_POS));
+        currentYpos = Math.max(MIN_POS, Math.min(currentYpos, MAX_POS));
+        $circle.css({
+            left: currentXpos,
+            top: currentYpos
+        })
     });
 }
