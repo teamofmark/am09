@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $("#btnMoveCircle").click(moveCircle);
-    $("#btnDetailMove").click(detailMoveCircle);
+    // $("#btnDetailMove").click(detailMoveCircle);
+    detailMoveCircleExt();
 });
 function moveCircle(){
     var $circle = $(".circle");
@@ -28,5 +29,30 @@ function detailMoveCircle(){
         });
     }else{
         alert("잘못된 수치입니다. 글안읽어요?");
+    }
+}
+function detailMoveCircleExt(){
+    var $circle = null;
+    circleInit();
+    $("#btnDetailMove").click(circleEvent);
+}
+function circleInit(){
+    $circle = $(".circleDetail");
+}
+function circleEvent(){
+    var xpos = $("#xpos").val();
+    var ypos = $("#ypos").val();
+    xpos = parseInt(xpos);
+    ypos = parseInt(ypos);
+    circleMovCommand(xpos,ypos);
+}
+function circleMovCommand(xpos,ypos){
+    if(xpos > 380 || ypos > 380 || xpos < 0 || ypos <0){
+        alert("잘못된 수치입니다. 0 ~ 380 이내로 입력하세요.");
+    }else{
+        $circle.css({
+            "left" : xpos,
+            "top" : ypos
+        });
     }
 }
