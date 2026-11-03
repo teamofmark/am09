@@ -23,10 +23,12 @@ function toggleTodo(){
     $toggleTarget.click(function(){
         toggleStatus = !toggleStatus;
         if(toggleStatus){
-            // todo. 1 눈알모양 바꾸기 (이전예제와 동일)
-            // todo. 2 input type 변경 - ? 함수... attr이라는 함수 사용해보기.([attr-name],[attr-value])
+            $toggleTarget.text('visibility');// todo. 1 눈알모양 바꾸기 (이전예제와 동일)
+            $toggleInput.attr("type","text");// todo. 2 input type 변경 - ? 함수... attr이라는 함수 사용해보기.([attr-name],[attr-value])
+            // ? attr([attr-name]) = 해당attr의 값을 가져와라. / attr([attr-name],[attr-value]) = 해당 attr의 값을 바꿔라.
         }else{
-
+            $toggleTarget.text('visibility_off');
+            $toggleInput.attr("type","password");
         }
     });
 }
