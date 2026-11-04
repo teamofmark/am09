@@ -14,11 +14,15 @@
         .imgContainerCustom img{
             transition: all 0.5s ease-in-out; position: absolute; left: 0; top: 0;
         }
+        .imgContainerCustom+input,
         .imgContainerCustom~button{
             position: fixed; width: 150px; z-index: 1000; top: 0;
         }
-        .imgContainerCustom~button:last-of-type{
+        .imgContainerCustom~button:first-of-type{
             left: 150px;
+        }
+        .imgContainerCustom~button:last-of-type{
+            left: 300px;
         }
     </style>
 </head>
@@ -34,6 +38,7 @@
         <img src="https://placehold.co/200x200" alt="exImg">
         <img src="https://placehold.co/200x200" alt="exImg">
     </div>
+    <!-- <input type="number" id="colVal"> case.2 input으로 열을 제어 할 때 -->
     <button class="alignMix">정렬!</button>
     <button class="resetMix">원위치!</button>
 </body>
