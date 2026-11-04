@@ -10,9 +10,22 @@ $(document).ready(function(){
     $(".8way").click(function(){gallery(8,125,125)});
     $(".9way").click(function(){gallery(9,111,111)});
     $(".10way").click(function(){gallery(10,100,100)});*/
-    // todo.2 매개변수로 열만 전달후 함수내에서 이미지 크기를 연산하는 방식
+
+    /* todo.2 매개변수로 열만 전달후 함수내에서 이미지 크기를 연산하는 방식
+    $(".1way").click(function(){gallery2(1)});
+    $(".2way").click(function(){gallery2(2)});
+    $(".3way").click(function(){gallery2(3)});
+    $(".4way").click(function(){gallery2(4)});
+    $(".5way").click(function(){gallery2(5)});
+    $(".6way").click(function(){gallery2(6)});
+    $(".7way").click(function(){gallery2(7)});
+    $(".8way").click(function(){gallery2(8)});
+    $(".9way").click(function(){gallery2(9)});
+    $(".10way").click(function(){gallery2(10)});*/
+
+    
 });
-// todo. frame width 1500 = 각 열 버튼을 눌렀을때 1000을 나눠쓸수있게 만들어야함.= width,height변경
+
 function gallery(count,imgWidth,imgHeight){
     var $images = $("#imgContainer img");
     var $imgLength = $images.length;
@@ -26,6 +39,26 @@ function gallery(count,imgWidth,imgHeight){
             "top": ypos,
             "width": imgWidth,
             "height": imgHeight
+        });
+    }
+    
+}
+function gallery2(count){
+    var $images = $("#imgContainer img");
+    var $imgLength = $images.length;
+    var containerW = $("#imgContainer").width();
+    var imgW = containerW / count;
+    // var imgH = containerW / count; 직사각형일때는 변환 필요
+    var xpos, ypos;
+    for(i = 0; i<$imgLength; i++){
+        var $image = $images.eq(i);
+        xpos = (i % count) * imgW;
+        ypos = parseInt(i / count) * imgW;
+        $image.css({
+            "left": xpos,
+            "top": ypos,
+            "width": imgW,
+            "height": imgW
         });
     }
     
