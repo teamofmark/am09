@@ -32,9 +32,9 @@ function imgAlignMix(){
         for(var i = 0; i < imgLength; i++){
         var image = img.eq(i);
         // -2. 반복 안에서 n번째 image구하기
-        xpos = ;
+        xpos = (i%3)*imgHeight;
         // -3. x좌표 구하기 = 0,1,2,0,1,2... 패턴
-        ypos = ;
+        ypos = parseInt(i/3)*imgHeight;
         // -4. y좌표 구하기 = 0,0,0,1,1,1,2,2,2... 패턴
         image.css({
             "left" : xpos,
@@ -43,5 +43,11 @@ function imgAlignMix(){
         // -5. left, top css 적용
         }
     // todo.3 원위치 버튼 클릭시 기존 left,top 모두 0 으로 복구 처리.
+    $(".resetMix").click(function(){
+        img.css({
+            "left": 0,
+            "top": 0
+        })
+    });
     });
 }
