@@ -23,7 +23,7 @@ $(document).ready(function(){
     $(".9way").click(function(){gallery2(9)});
     $(".10way").click(function(){gallery2(10)});*/
 
-    
+    gallery3();
 });
 
 function gallery(count,imgWidth,imgHeight){
@@ -62,4 +62,28 @@ function gallery2(count){
         });
     }
     
+}
+function gallery3(){
+    var currentWay,xpos,ypos;
+    var $images = $("#imgContainer img");
+    var $imgLength = $images.length;
+    var containerW = $("#imgContainer").width();
+    var imgSize = $images.width();
+
+    $("[class$='way']").click(function(){
+        currentWay = parseInt($(this).attr("class").replace("way",""));
+        // console.log("현재 열 수 는 : " + currentWay + "열 이다. 자료 유형은" + typeof(currentWay) + "이다.");
+        for(var i = 0; i<$imgLength; i++){
+            var $image = $images.eq(i);
+            imgSize = containerW / currentWay;
+            xpos = (i % currentWay) * imgSize;
+            ypos = parseInt(i / currentWay) * imgSize;
+            $image.css({
+                "left" : xpos,
+                "top" : ypos,
+                "width" : imgSize,
+                "height" : imgSize
+            });
+        }
+    });
 }
