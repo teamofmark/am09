@@ -6,6 +6,7 @@ var $fishWidth = 0;
 $(function(){
     init();
     fishStartPosition();
+    initEvent();
 });
 function init(){
     $fishList = $(".fish");
@@ -24,3 +25,51 @@ function fishStartPosition(){
     }
     console.log("2. 초기 도열 완료.");
 } //? 초기 도열 함수
+function initEvent(){
+    $("#start").click(startGame);
+    console.log("3. 게임 시작 함수 불러오기 성공.");
+} //? 이벤트 처리 함수
+function startGame(){
+    if(timerID == -1){
+        timerID = setInterval(function(){
+            updateFishPosition();// ? 물고기 움직이기
+            displayFishPositionInfo();// ? 움직인 물고기 위치 출력
+            checkGoalFish();// ? 결승선 도달 감지
+        },200);
+    }
+    console.log("4. 게임 시작 상태 - 정상.");
+}
+function updateFishPosition(){
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        var step = Math.ceil(Math.random()*30);
+        var newLeft = $fish.position().left + step;
+        $fish.css("left",newLeft);
+    }
+    console.log("5. 물고기들 움직임 - 정상.");
+}// ? 물고기 움직이기
+function displayFishPositionInfo(){
+    var info = "";
+    for(var i = 0; i < $fishList.length; i++){
+        var $fish = $fishList.eq(i);
+        info += i + "번 물고기 : " + $fish.position().left.toFixed(2) + "px <br>";
+    }
+    $info.html(info);
+    console.log("6. 물고기 위치 표시 - 정상.");
+}// ? 움직인 물고기 위치 출력
+function checkGoalFish(){
+    var winnerList = [];
+    for(var i = 0; i < $fishList.length; i++){
+        var fishCurrentPosition = $fishList.eq(i).position().left;
+        if(fishCurrentPosition >= goalLine){
+            winnerList.push({
+                index: (i), 
+                position: fishCurrentPosition
+            });
+            // ! 세마리중 한마리의 왼쪽 좌표라도 goalLine수치보다 크거나 같을때 빈 배열에 세마리 값을 저장하라.
+            // ? 그 넘어간 한마리만 적으면 되지..왜 세마리를? = 인간기준? (ex> 380px 391px 370px)
+            // ? 1. 비교함수 .sort()를 사용하기 위해 배열에 저장해야함. = .push();
+            console.log("7. 데이터 저장 성공.",winnerList);
+        }
+    }
+}// ? 결승선 도달 감지

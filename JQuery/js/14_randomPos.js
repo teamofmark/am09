@@ -31,7 +31,7 @@ function gameStart(){
 function moveCircle(){
     $circle.css({
         left: Math.floor(Math.random()*($panel.width()-$circle.width())),
-        top: Math.ceil(Math.random()*($panel.height()-$circle.height()))
+top: Math.ceil(Math.random()*($panel.height()-$circle.height()))
     });
 }
 function gameEnd(){
