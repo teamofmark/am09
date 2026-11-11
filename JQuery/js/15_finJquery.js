@@ -69,7 +69,24 @@ function checkGoalFish(){
             // ! 세마리중 한마리의 왼쪽 좌표라도 goalLine수치보다 크거나 같을때 빈 배열에 세마리 값을 저장하라.
             // ? 그 넘어간 한마리만 적으면 되지..왜 세마리를? = 인간기준? (ex> 380px 391px 370px)
             // ? 1. 비교함수 .sort()를 사용하기 위해 배열에 저장해야함. = .push();
-            console.log("7. 데이터 저장 성공.",winnerList);
+            console.log("7. 데이터 저장 성공.");
+        }
+        if(winnerList.length>0){
+            winnerList.sort(function(a,b){
+                return b.position - a.position; //? 내림차순정렬 = position값(number) 기준
+            });
+            /*
+                ? 오름차순 -> 진행될수록 값이 커지거나(1,2,3,4...) 정순으로(a,b,c,d....) 나타나는 것.
+                ? 내림차순 -> 진행될수록 값이 작아지거나(...4,3,2,1) 역순으로(...d,c,b,a) 나타나는 것.
+            */
+           endGame();
+            console.log("8. 우승 물고기 선별 완료");
+            alert("우승!" + winnerList[0].index+"번 물고기!");
         }
     }
 }// ? 결승선 도달 감지
+function endGame(){
+    clearInterval(timerID);
+    timerID = -1;
+    console.log("9. 게임 종료.");
+}//? 게임 종료 함수
