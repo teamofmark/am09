@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{margin:0;}
+
+.emLayout{font-size:1vw; width: 99.1em;}
+/* 
+    ? vw : viewport Width > document Width
+    ? vh : viewport Height > document Height
+    ? 1920x1080 = viewport(W) = 1920, viewport(H) = 1080.
+    ! ex > 1vw = 19.2px, 1vh = 10.8px
+    ! ex > tablet min : 768px(1vw) = 7.68px; 1024px(1vh) = 10.24px; 
+*/
+header{font-size:1vw; padding:0.625em; background-color:#0cf; box-sizing: border-box;}
+
+section{font-size:1vw;}
+section:after{
+    content: ''; display: block; visibility: hidden; clear: both;
+}
+
+section > *{height:50em; float:left;}
+section aside{width:19.1em; background-color:#cc0;}
+section article{width:40em; background-color:#f9c;}
+section article.sub_article{width:40em; background-color:#9c9;}
+
+footer{font-size:15px; text-align:center; padding:1em; background-color:#66c; box-sizing: border-box;}
+
+

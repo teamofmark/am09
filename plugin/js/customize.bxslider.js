@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // ! fitVids 사용법 $("대상=비디오").fitVids();
     $('.bxslider').bxSlider({
         mode: 'horizontal',  //? default : horizontal(수평방향전환), vertical(수직방향전환), fade(사라지고나타나고)
         speed: 700, //? default : 500. 전환속도 제어
@@ -11,6 +12,15 @@ $(document).ready(function(){
 
         // 상충속성 : infiniteLoop, hideControlOnEnd
         infiniteLoop: false,  //? default : true. slide간 전환 무한반복.(수평상태에서는 비권장)
-        hideControlOnEnd: false  //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
+        hideControlOnEnd: false,  //? default : false. 0번 slide = prevBtn 삭제. last slide = nextBtn 삭제. infiniteLoop: false 필수
+    
+        //  adaptiveHeight
+        adaptiveHeight: true,  //? default : false. slide content높이에 따라 frame이 적응형으로 변환.
+        adaptiveHeightSpeed: 500, //? default : 500. adaptiveHeight 작동속도. 특이사항없으면 speed 동기화
+
+        easing: 'ease-in-out', //? default : null. slide간 전환 가속도 설정. easing plugin 채택
+        video: true,  //! default : false. video 종횡비 활성화(slide에 video가 있을 때만!!)
+        responsive: true,  //? default: true. slider 자체 반응형 켜기.
+        captions: true
     });
 });

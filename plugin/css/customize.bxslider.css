@@ -1,0 +1,18 @@
+.bx-wrapper {
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+.bx-wrapper .bx-caption {
+    bottom: 0;
+    left: 50%;
+    background: rgba(255, 80, 80, 0.75);
+    width: 50%;
+}
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: inherit;
+    display: block;
+    font-size: .85em;
+    padding: 20px 10px;
+}

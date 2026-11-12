@@ -1,0 +1,47 @@
+﻿html{
+    font-size:15px;
+}
+body,h1,h2,p{margin:0; padding:0;}
+
+.emLayout{
+    width: 75em; margin:0 auto; background-color:#f9f9f9;
+}
+.emLayout header{
+    padding:2em; margin-bottom:0.625em;
+    background-color: #ff6767;
+    font-size:10px;
+}
+.emLayout header h1{
+    font-size:2em; margin-bottom:0.625em;
+}
+.emLayout header p{
+    font-size:0.75em; line-height:1em;
+}
+
+.emLayout article{
+    padding:2em; margin-bottom:0.625em;
+    background-color:#5ab8ff;
+    font-size:10px;
+}
+.emLayout article h2{
+    font-size:1.5em; margin-bottom:0.625em;
+}
+.emLayout article p{
+    font-size: 0.75em; line-height:1em;
+}
+.emLayout footer{
+    padding:2em; background-color:#7eff81;
+    text-align: center;
+}
+.emLayout footer a{
+    font-size:0.75em; text-decoration: none; color:black;
+}
+
+/* 
+    ? em
+    * em은 단위가 입력된 요소에서 가장 가까운
+    !(동위선상제외, 자신포함, 기본 부모)
+    * font-size의 영향을 받는다.
+    * 연산방식은 rem과 동일하고 (px to em site참고)
+    ! font-size min : 6.6667px, etc px min : 1px
+*/
