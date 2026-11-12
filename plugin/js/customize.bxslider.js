@@ -31,3 +31,12 @@ $(document).ready(function(){
         pagerCustom: '.customPager'
     });
 });
+
+function createCustomPager(target){
+    var slideLength = $(target).children("li").length;
+    console.log(slideLength);
+    for(var i = 0; i < slideLength-2; i++){
+        $(".customPager").append("<li><a data-slide-index='"+ i +"'><img src='images/wallpaper"+ (i+1) +".jpg' alt='slide"+ (i+1)+"'></a></li>");
+    }
+    $(".customPager li:first-of-type a").addClass("active");
+}
