@@ -44,7 +44,7 @@ $(document).ready(function(){
         autoHover: true, //? default: false. onMouseOver상태일 때 자동전환 중지.(autoStart: true일 경우 사용가능).
         stopAutoOnClick: true, //? controler Button을 클릭 하였을 때 자동전환 중지.
         autoControlsCombine: false,  //? default : false.  play/pause button -> toggle(1개) or active(2개)
-        autoControlsSelector: '.newAutoControls', //? auto button 뼈대 제공
+        autoControlsSelector: '.newAutoControls',  //? auto button 뼈대 제공
         startText: '시작', // ?생성된 뼈대 안에 text 변경
         stopText: '중지',
     });
